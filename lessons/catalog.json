@@ -488,8 +488,8 @@
             {
               "page": 60,
               "path": "lessons/pages/page_60.json",
-              "questions": 10,
-              "interactive": 10,
+              "questions": 3,
+              "interactive": 3,
               "read_only": 0,
               "diagrams": 0
             },

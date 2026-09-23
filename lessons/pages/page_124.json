@@ -13,16 +13,17 @@
           "step_number": 1,
           "step_explanation": "تحديد اتجاه القطع: بما أن النقطتين لهما نفس الإحداثي الصادي (-5) وتختلفان في الإحداثي السيني (±2)، فهذا يعني أن القطع يفتح باتجاه محور الصادات السالب.",
           "step_assistant_solution": "المعادلة العامة هي x² = -4py",
+          "equation_template": "x² = {input_1}py",
           "inputs": [
             {
-              "input_id": "q3_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "4",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المعامل",
+              "correct_answer": "-4",
               "options": [
+                "-4",
                 "4",
-                "3",
-                "5",
-                "6"
+                "2",
+                "-2"
               ]
             }
           ],
@@ -35,32 +36,17 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_step1_input1",
-              "label": "ما هي صيغة معادلة القطع الموازي لمحور الصادات؟",
-              "correct_answer": "x² = -4py",
-              "options": [
-                "x² = -4py",
-                "y² = -4px",
-                "x² = 4py",
-                "y² = 4px"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x² = ",
-                "-",
                 {
-                  "input_id": "q3_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
                 "py"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -74,16 +60,28 @@
           "step_number": 1,
           "step_explanation": "تحليل احتماليات الدليل: النقطة (-3, 4) تعني إما أن y=4 (دليل أفقي) أو x=-3 (دليل رأسي).",
           "step_assistant_solution": "الحالات هي y=4 أو x=-3",
+          "equation_template": "y = {input_1} , x = {input_2}",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
-              "label": "كم احتمال لمعادلة القطع المكافئ في هذه المسألة؟",
-              "correct_answer": "احتمالان",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة y للدليل",
+              "correct_answer": "4",
               "options": [
-                "احتمال واحد",
-                "احتمالان",
-                "ثلاث احتمالات",
-                "لا يوجد حل"
+                "4",
+                "-4",
+                "3",
+                "-3"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة x للدليل",
+              "correct_answer": "-3",
+              "options": [
+                "-3",
+                "3",
+                "4",
+                "-4"
               ]
             }
           ],
@@ -94,9 +92,13 @@
           "layout": {
             "rows": [
               [
-                "كم احتمال لمعادلة القطع المكافئ في هذه المسألة؟ = ",
+                "y = ",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q2_s1_i1"
+                },
+                " , x = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
@@ -125,10 +127,11 @@
           "step_number": 1,
           "step_explanation": "إيجاد قيمة الثابت A من خلال تعويض إحداثيات النقطة (1,2) في معادلة القطع المعطاة.",
           "step_assistant_solution": "A = -16",
+          "equation_template": "{input_1}x² + 8y = 0",
           "inputs": [
             {
-              "input_id": "q5_step1_input1",
-              "label": "ما هي قيمة A بعد التعويض؟",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة A",
               "correct_answer": "-16",
               "options": [
                 "-16",
@@ -150,10 +153,10 @@
           "layout": {
             "rows": [
               [
-                "A = ",
                 {
-                  "input_id": "q5_step1_input1"
-                }
+                  "input_id": "q3_s1_i1"
+                },
+                "x² + 8y = 0"
               ]
             ]
           }

@@ -13,16 +13,17 @@
           "step_number": 1,
           "step_explanation": "نستخرج قيمة البؤرة من معادلة القطع المكافئ.",
           "step_assistant_solution": "p = √5",
+          "equation_template": "p = {input_1}√5",
           "inputs": [
             {
-              "input_id": "q17_step1_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "5",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المعامل",
+              "correct_answer": "1",
               "options": [
-                "5",
-                "4",
+                "1",
+                "-1",
                 "2",
-                "6"
+                "4"
               ]
             }
           ],
@@ -35,45 +36,44 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q17_step1_input",
-              "label": "ما هي قيمة p للقطع المكافئ؟",
-              "correct_answer": "√5",
-              "options": [
-                "√5",
-                "4√5",
-                "5",
-                "2√5"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "√",
+                "p = ",
                 {
-                  "input_id": "q17_step1_input_atom_1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                "√5"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "استخدام العلاقة بين المحاور والمعادلة القياسية لإيجاد a^2 و b^2.",
           "step_assistant_solution": "a^2 = 9, b^2 = 4",
+          "equation_template": "a^2 = {input_1}, b^2 = {input_2}",
           "inputs": [
             {
-              "input_id": "q17_step2_input",
-              "label": "ما هي قيمة a^2؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة a^2",
               "correct_answer": "9",
               "options": [
                 "9",
-                "13",
                 "4",
+                "13",
                 "5"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة b^2",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "9",
+                "5",
+                "13"
               ]
             }
           ],
@@ -91,9 +91,12 @@
               [
                 "a^2 = ",
                 {
-                  "input_id": "q17_step2_input"
+                  "input_id": "q1_s2_i1"
                 },
-                ", b^2 = 4"
+                ", b^2 = ",
+                {
+                  "input_id": "q1_s2_i2"
+                }
               ]
             ]
           }
@@ -110,16 +113,28 @@
           "step_number": 1,
           "step_explanation": "تحويل المعادلة kx^2 + hy^2 = 36 إلى الصيغة القياسية للقطع الناقص.",
           "step_assistant_solution": "x^2/(36/k) + y^2/(36/h) = 1",
+          "equation_template": "x^2 / ({input_1} / k) + y^2 / ({input_2} / h) = 1",
           "inputs": [
             {
-              "input_id": "q18_step1_input",
-              "label": "ما هي قيمة مقام x^2 في الصيغة القياسية؟",
-              "correct_answer": "36/k",
+              "input_id": "q2_s1_i1",
+              "label": "بسط مقام الحد الأول",
+              "correct_answer": "36",
               "options": [
-                "36/k",
-                "36/h",
-                "k/36",
-                "h/36"
+                "36",
+                "18",
+                "9",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "بسط مقام الحد الثاني",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "18",
+                "9",
+                "4"
               ]
             }
           ],
@@ -135,11 +150,15 @@
           "layout": {
             "rows": [
               [
-                "x^2/(",
+                "x^2 / (",
                 {
-                  "input_id": "q18_step1_input"
+                  "input_id": "q2_s1_i1"
                 },
-                ") + y^2/(36/h) = 1"
+                " / k) + y^2 / (",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " / h) = 1"
               ]
             ]
           }

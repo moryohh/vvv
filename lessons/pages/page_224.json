@@ -24,16 +24,17 @@
           "step_number": 1,
           "step_explanation": "الهدف هو إيجاد طول القطعة BE في المثلث القائم ABE باستخدام النسبة المثلثية للزاوية A المعلومة.",
           "step_assistant_solution": "BE = 5 cm",
+          "equation_template": "BE = {input_1} × sin(30°)",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "قيمة BE هي:",
-              "correct_answer": "5cm",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الوتر AB هي:",
+              "correct_answer": "10",
               "options": [
-                "5cm",
-                "10cm",
-                "2.5cm",
-                "7.5cm"
+                "10",
+                "5",
+                "15",
+                "20"
               ]
             }
           ],
@@ -49,10 +50,11 @@
           "layout": {
             "rows": [
               [
-                "قيمة BE هي: = ",
+                "BE = ",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " × sin(30°)"
               ]
             ]
           }
@@ -61,16 +63,28 @@
           "step_number": 2,
           "step_explanation": "الهدف هو إيجاد قياس الزاوية العائدة DEB باستخدام المثلث القائم DBE.",
           "step_assistant_solution": "45°",
+          "equation_template": "tan(DEB) = {input_1} / {input_2}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "قياس الزاوية العائدة DEB هو:",
-              "correct_answer": "45°",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة المقابل BD هي:",
+              "correct_answer": "5",
               "options": [
-                "45°",
-                "30°",
-                "60°",
-                "90°"
+                "5",
+                "10",
+                "2.5",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة المجاور BE هي:",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "10",
+                "2.5",
+                "1"
               ]
             }
           ],
@@ -86,8 +100,13 @@
           "layout": {
             "rows": [
               [
+                "tan(DEB) = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " / ",
+                {
+                  "input_id": "q1_s2_i2"
                 }
               ]
             ]

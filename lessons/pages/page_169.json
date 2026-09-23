@@ -13,9 +13,10 @@
           "step_number": 1,
           "step_explanation": "نحدد بؤرة القطع المكافئ المكافئة لبؤرة القطع الناقص.",
           "step_assistant_solution": "البؤرة هي (6,0)",
+          "equation_template": "c = {input_1}",
           "inputs": [
             {
-              "input_id": "q24_step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "ما هي قيمة c؟",
               "correct_answer": "6",
               "options": [
@@ -38,11 +39,10 @@
           "layout": {
             "rows": [
               [
-                "البؤرة هي (",
+                "c = ",
                 {
-                  "input_id": "q24_step1_input1"
-                },
-                ",0)"
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -59,9 +59,10 @@
           "step_number": 1,
           "step_explanation": "إيجاد نقاط التقاطع مع القطع المكافئ عند x=2.",
           "step_assistant_solution": "(2, 4) و (2, -4)",
+          "equation_template": "y = {input_1}",
           "inputs": [
             {
-              "input_id": "q25_step1_input1",
+              "input_id": "q2_s1_i1",
               "label": "ما هي قيم y عندما x=2؟",
               "correct_answer": "±4",
               "options": [
@@ -79,9 +80,9 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيم y عندما x=2؟ = ",
+                "y = ",
                 {
-                  "input_id": "q25_step1_input1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -99,9 +100,10 @@
           "step_number": 1,
           "step_explanation": "نستخدم تعريف محيط المثلث لإيجاد قيمة a.",
           "step_assistant_solution": "a = 10",
+          "equation_template": "2a = {input_1}",
           "inputs": [
             {
-              "input_id": "q26_step1_input1",
+              "input_id": "q3_s1_i1",
               "label": "ما هي قيمة 2a؟",
               "correct_answer": "20",
               "options": [
@@ -124,9 +126,9 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة 2a؟ = ",
+                "2a = ",
                 {
-                  "input_id": "q26_step1_input1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]

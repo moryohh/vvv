@@ -24,16 +24,28 @@
           "step_number": 1,
           "step_explanation": "نفرض أن الجذر التربيعي للعدد هو (x + yi) ونساوي مربعه بالعدد المركب المعطى لتكوين معادلتين.",
           "step_assistant_solution": "x^2 - y^2 = 7 و 2xy = 24",
+          "equation_template": "x^2 - y^2 = {input_1} و 2xy = {input_2}",
           "inputs": [
             {
-              "input_id": "q3_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الجزء الحقيقي",
               "correct_answer": "7",
               "options": [
                 "7",
-                "2",
-                "6",
-                "8"
+                "24",
+                "0",
+                "-7"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الجزء التخيلي",
+              "correct_answer": "24",
+              "options": [
+                "7",
+                "24",
+                "12",
+                "-24"
               ]
             }
           ],
@@ -46,30 +58,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_s1_i1",
-              "label": "ما هي المعادلة الناتجة عن مساواة الجزء الحقيقي؟",
-              "correct_answer": "x^2 - y^2 = 7",
-              "options": [
-                "x^2 - y^2 = 7",
-                "x^2 + y^2 = 7",
-                "2xy = 7",
-                "x - y = 7"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x^2 - y^2 = ",
                 {
-                  "input_id": "q3_s1_i1_atom_1"
+                  "input_id": "q1_s1_i1"
+                },
+                " و 2xy = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -83,16 +85,28 @@
           "step_number": 1,
           "step_explanation": "نساوي الجزء التخيلي من مربع العدد المركب بقيمة -6 لتحديد علاقة بين x و y.",
           "step_assistant_solution": "2xy = -6",
+          "equation_template": "y = {input_1}/{input_2}",
           "inputs": [
             {
-              "input_id": "q4_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q2_s1_i1",
+              "label": "البسط",
+              "correct_answer": "-3",
               "options": [
+                "-3",
                 "3",
-                "6",
-                "2",
-                "4"
+                "-6",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "المقام",
+              "correct_answer": "x",
+              "options": [
+                "x",
+                "2x",
+                "y",
+                "1"
               ]
             }
           ],
@@ -100,32 +114,20 @@
             "step_hint_text": "بما أن الجزء التخيلي 2xy يساوي -6، نقسم الطرفين على 2x.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q4_s1_i1",
-              "label": "ما هي قيمة y بدلالة x؟",
-              "correct_answer": "y = -3/x",
-              "options": [
-                "y = -3/x",
-                "y = 3/x",
-                "y = -6/x",
-                "y = 6/x"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "y = ",
-                "-",
                 {
-                  "input_id": "q4_s1_i1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                "/x"
+                "/",
+                {
+                  "input_id": "q2_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

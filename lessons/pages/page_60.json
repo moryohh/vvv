@@ -1,300 +1,26 @@
 {
-  "page_number": 60,
-  "page_id": 60,
-  "has_math_questions": true,
   "exam_questions": [
-    {
-      "question_number": "1",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^6",
-      "diagram": null,
-      "full_model_solution": "ω^6 = (ω^3)^2 = (1)^2 = 1",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "نستخدم خاصية القوى في الجذور التكعيبية للواحد الصحيح حيث أن ω^3 = 1، لذا نقوم بتبسيط ω^6 برفع ω^3 للقوة المناسبة.",
-          "step_assistant_solution": "1",
-          "inputs": [
-            {
-              "input_id": "q1_step1_input1",
-              "label": "ما هو ناتج ω^6؟",
-              "correct_answer": "1",
-              "options": [
-                "1",
-                "-1",
-                "ω",
-                "ω^2"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "تذكر أن أي قوة لـ ω هي من مضاعفات العدد 3 تساوي 1.",
-            "related_topics": [
-              {
-                "topic_title": "خصائص الجذور التكعيبية",
-                "explanation": "ω^3 = 1"
-              }
-            ]
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q1_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "question_number": "2",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^33",
-      "diagram": null,
-      "full_model_solution": "ω^33 = (ω^3)^11 = (1)^11 = 1",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "بما أن الأس 33 يقبل القسمة على 3، فإن ω^33 = 1.",
-          "step_assistant_solution": "1",
-          "inputs": [
-            {
-              "input_id": "q2_step1_input1",
-              "label": "ناتج ω^33 هو:",
-              "correct_answer": "1",
-              "options": [
-                "1",
-                "ω",
-                "-1",
-                "-ω"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "اقسم الأس على 3، إذا كان الباقي 0 فالناتج 1.",
-            "related_topics": []
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q2_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "question_number": "3",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^25",
-      "diagram": null,
-      "full_model_solution": "ω^25 = (ω^3)^8 * ω = 1 * ω = ω",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "نقسم الأس 25 على 3، نجد أن 25 = 3 * 8 + 1، إذاً ω^25 = ω^1 = ω.",
-          "step_assistant_solution": "ω",
-          "inputs": [
-            {
-              "input_id": "q3_step1_input1",
-              "label": "ما هو الناتج النهائي لـ ω^25؟",
-              "correct_answer": "ω",
-              "options": [
-                "ω",
-                "1",
-                "-1",
-                "ω^2"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "ابحث عن أقرب عدد للأس 25 يقبل القسمة على 3 وهو 24.",
-            "related_topics": []
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q3_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "question_number": "4",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^-5",
-      "diagram": null,
-      "full_model_solution": "ω^-5 = ω^-5 * ω^6 = ω^1 = ω",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "عند التعامل مع أسس سالبة، نضرب في ω مرفوعة لأي مضاعف للعدد 3 أكبر من القيمة المطلقة للأس السالب.",
-          "step_assistant_solution": "ω",
-          "inputs": [
-            {
-              "input_id": "q4_step1_input1",
-              "label": "ناتج ω^-5 هو:",
-              "correct_answer": "ω",
-              "options": [
-                "ω",
-                "ω^2",
-                "1",
-                "-ω"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "اضرب في ω^6 لتحويل الأس إلى موجب.",
-            "related_topics": []
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q4_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "question_number": "5",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^-2",
-      "diagram": null,
-      "full_model_solution": "ω^-2 = ω^-2 * ω^3 = ω^1 = ω",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "نضرب في ω^3 ليصبح الأس موجباً: -2 + 3 = 1.",
-          "step_assistant_solution": "ω",
-          "inputs": [
-            {
-              "input_id": "q5_step1_input1",
-              "label": "الناتج هو:",
-              "correct_answer": "ω",
-              "options": [
-                "ω",
-                "ω^2",
-                "1",
-                "-1"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "قاعدة الأسس: ω^-n * ω^m = ω^(m-n)",
-            "related_topics": []
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q5_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "question_number": "6",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^-58",
-      "diagram": null,
-      "full_model_solution": "ω^-58 * ω^60 = ω^2 = ω^2",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "نضرب في مضاعف للعدد 3 أكبر من 58 وهو 60، لنحصل على ω^2.",
-          "step_assistant_solution": "ω^2",
-          "inputs": [
-            {
-              "input_id": "q6_step1_input1",
-              "label": "الناتج هو:",
-              "correct_answer": "ω^2",
-              "options": [
-                "ω^2",
-                "ω",
-                "1",
-                "-ω^2"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "مضاعفات 3 هي: 3, 6, ..., 57, 60.",
-            "related_topics": []
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q6_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "question_number": "7",
-      "question_text": "جد ناتج ما يأتي بأبسط صورة: ω^-45",
-      "diagram": null,
-      "full_model_solution": "ω^-45 = (ω^3)^-15 = 1^-15 = 1",
-      "interactive_steps": [
-        {
-          "step_number": 1,
-          "step_explanation": "بما أن 45 يقبل القسمة على 3، فإن أي قوة لـ ω مرفوعة لأس يقبل القسمة على 3 هي 1.",
-          "step_assistant_solution": "1",
-          "inputs": [
-            {
-              "input_id": "q7_step1_input1",
-              "label": "الناتج هو:",
-              "correct_answer": "1",
-              "options": [
-                "1",
-                "ω",
-                "ω^2",
-                "-1"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "45 / 3 = 15 بدون باقي.",
-            "related_topics": []
-          },
-          "layout": {
-            "rows": [
-              [
-                {
-                  "input_id": "q7_step1_input1"
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    },
     {
       "question_number": "8",
       "question_text": "جد ناتج ما يأتي بأبسط صورة: 10 / (1 + ω)",
-      "diagram": null,
-      "full_model_solution": "1 + ω = -ω^2، إذاً 10 / -ω^2 = -10 / ω^2 = -10ω",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "استخدام خاصية 1 + ω + ω^2 = 0 لتعويض المقام بـ -ω^2 ثم التبسيط.",
-          "step_assistant_solution": "-10ω",
+          "equation_template": "10 / (1 + ω) = 10 / ({input_1}) = {input_2}",
           "inputs": [
             {
-              "input_id": "q8_step1_input1",
-              "label": "الناتج هو:",
+              "input_id": "q1_s1_i1",
+              "correct_answer": "-ω^2",
+              "options": [
+                "-ω^2",
+                "ω^2",
+                "-ω",
+                "ω"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
               "correct_answer": "-10ω",
               "options": [
                 "-10ω",
@@ -304,15 +30,16 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "استخدم حقيقة أن 1/ω^2 = ω.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "10 / (1 + ω) = 10 / (",
                 {
-                  "input_id": "q8_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                ") = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -323,17 +50,24 @@
     {
       "question_number": "9",
       "question_text": "جد ناتج ما يأتي بأبسط صورة: 3 / (ω^21 + ω^22)",
-      "diagram": null,
-      "full_model_solution": "ω^21 = 1، ω^22 = ω. المقام يصبح 1 + ω = -ω^2. النتيجة 3 / -ω^2 = -3ω",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "تبسيط الأسس أولاً (21 تقبل القسمة على 3، 22 تعطي ω)، ثم جمع الحدود في المقام.",
-          "step_assistant_solution": "-3ω",
+          "equation_template": "3 / (1 + ω) = 3 / ({input_1}) = {input_2}",
           "inputs": [
             {
-              "input_id": "q9_step1_input1",
-              "label": "الناتج هو:",
+              "input_id": "q2_s1_i1",
+              "correct_answer": "-ω^2",
+              "options": [
+                "-ω^2",
+                "ω^2",
+                "-ω",
+                "ω"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
               "correct_answer": "-3ω",
               "options": [
                 "-3ω",
@@ -343,15 +77,16 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "1+ω = -ω^2",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "3 / (1 + ω) = 3 / (",
                 {
-                  "input_id": "q9_step1_input1"
+                  "input_id": "q2_s1_i1"
+                },
+                ") = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
@@ -362,34 +97,24 @@
     {
       "question_number": "10",
       "question_text": "جد ناتج ما يأتي بأبسط صورة: 5 / (1 + ω^2)",
-      "diagram": null,
-      "full_model_solution": "1 + ω^2 = -ω. النتيجة 5 / -ω = -5ω^2",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "استخدام العلاقة 1 + ω^2 = -ω وتبسيط الكسر.",
-          "step_assistant_solution": "-5ω^2",
+          "equation_template": "5 / (1 + ω^2) = 5 / ({input_1}) = {input_2}",
           "inputs": [
             {
-              "input_id": "q10_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "-5",
+              "input_id": "q3_s1_i1",
+              "correct_answer": "-ω",
               "options": [
-                "-5",
-                "5",
-                "-6",
-                "-4"
+                "-ω",
+                "ω",
+                "-ω^2",
+                "ω^2"
               ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "1 / ω = ω^2",
-            "related_topics": []
-          },
-          "source_inputs": [
+            },
             {
-              "input_id": "q10_step1_input1",
-              "label": "الناتج هو:",
+              "input_id": "q3_s1_i2",
               "correct_answer": "-5ω^2",
               "options": [
                 "-5ω^2",
@@ -402,18 +127,22 @@
           "layout": {
             "rows": [
               [
+                "5 / (1 + ω^2) = 5 / (",
                 {
-                  "input_id": "q10_step1_input1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                "ω^2"
+                ") = ",
+                {
+                  "input_id": "q3_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }
   ],
+  "page_number": 60,
   "chapter_id": 1,
   "chapter_title": "الأعداد المركبة",
   "topic_id": "1-7",

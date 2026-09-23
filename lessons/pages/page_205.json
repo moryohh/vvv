@@ -12,11 +12,22 @@
         {
           "step_number": 1,
           "step_explanation": "الخطوة الأولى: إيجاد بؤرتي القطع الناقص لاستخدامهما كبؤرتين للقطع الزائد.",
-          "step_assistant_solution": "c^2 = 164 - 64 = 100، إذن c = 10 والبؤر (+-10, 0)",
+          "equation_template": "c^2 = 164 - 64 = {input_1}, إذن c = {input_2}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة c للقطع الزائد؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة c^2",
+              "correct_answer": "100",
+              "options": [
+                "100",
+                "228",
+                "64",
+                "164"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة c",
               "correct_answer": "10",
               "options": [
                 "10",
@@ -38,11 +49,14 @@
           "layout": {
             "rows": [
               [
-                "c^2 = 164 - 64 = 100، إذن c = 10 والبؤر (+-",
+                "c^2 = 164 - 64 = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", 0)"
+                ", إذن c = ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
           }
@@ -50,28 +64,28 @@
         {
           "step_number": 2,
           "step_explanation": "الخطوة الثانية: استخدام علاقة طول المحورين (2a + 2b = 28) وعلاقة القطع الزائد (c^2 = a^2 + b^2) لإيجاد قيم a و b.",
-          "step_assistant_solution": "بالتعويض نجد المعادلة التربيعية b^2 - 14b + 48 = 0 وحلها b=6 أو b=8.",
+          "equation_template": "b^2 - {input_1}b + {input_2} = 0",
           "inputs": [
             {
-              "input_id": "step2_input1_value_1",
-              "label": "ما هي قيم b الممكنة؟ — القيمة 1",
-              "correct_answer": "6",
+              "input_id": "q1_s2_i1",
+              "label": "معامل b",
+              "correct_answer": "14",
               "options": [
-                "6",
-                "10",
                 "14",
-                "5"
+                "28",
+                "7",
+                "10"
               ]
             },
             {
-              "input_id": "step2_input1_value_2",
-              "label": "ما هي قيم b الممكنة؟ — القيمة 2",
-              "correct_answer": "8",
+              "input_id": "q1_s2_i2",
+              "label": "الحد الثابت",
+              "correct_answer": "48",
               "options": [
-                "8",
-                "4",
-                "0",
-                "9"
+                "48",
+                "100",
+                "24",
+                "14"
               ]
             }
           ],
@@ -87,13 +101,15 @@
           "layout": {
             "rows": [
               [
+                "b^2 - ",
                 {
-                  "input_id": "step2_input1_value_1"
+                  "input_id": "q1_s2_i1"
                 },
-                ", ",
+                "b + ",
                 {
-                  "input_id": "step2_input1_value_2"
-                }
+                  "input_id": "q1_s2_i2"
+                },
+                " = 0"
               ]
             ]
           }

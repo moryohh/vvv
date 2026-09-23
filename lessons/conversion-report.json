@@ -41,26 +41,14 @@
   ],
   "processed_import": {
     "statistics": {
-      "boxes": 1062,
-      "steps": 509,
-      "pages": 203
+      "boxes": 1104,
+      "steps": 535,
+      "pages": 213
     },
     "retained_previous_pages": [
       {
         "page": 120,
         "reason": "invalid four-choice answer"
-      },
-      {
-        "page": 124,
-        "reason": "Extra data: line 150 column 1 (char 6079)"
-      },
-      {
-        "page": 125,
-        "reason": "Expecting property name enclosed in double quotes: line 75 column 19 (char 3451)"
-      },
-      {
-        "page": 126,
-        "reason": "Expecting ',' delimiter: line 54 column 1 (char 2720)"
       },
       {
         "page": 142,
@@ -69,14 +57,6 @@
       {
         "page": 149,
         "reason": "entry has no matching lesson content"
-      },
-      {
-        "page": 166,
-        "reason": "Extra data: line 122 column 1 (char 5592)"
-      },
-      {
-        "page": 169,
-        "reason": "Extra data: line 128 column 1 (char 5437)"
       },
       {
         "page": 17,
@@ -91,20 +71,8 @@
         "reason": "Expecting ',' delimiter: line 76 column 17 (char 3674)"
       },
       {
-        "page": 205,
-        "reason": "Extra data: line 109 column 1 (char 4350)"
-      },
-      {
-        "page": 208,
-        "reason": "Extra data: line 123 column 1 (char 5572)"
-      },
-      {
         "page": 211,
         "reason": "entry has no matching lesson content"
-      },
-      {
-        "page": 224,
-        "reason": "Extra data: line 91 column 1 (char 3957)"
       },
       {
         "page": 225,
@@ -113,14 +81,6 @@
       {
         "page": 238,
         "reason": "invalid four-choice answer"
-      },
-      {
-        "page": 39,
-        "reason": "Extra data: line 125 column 1 (char 4814)"
-      },
-      {
-        "page": 60,
-        "reason": "Extra data: line 72 column 1 (char 2084)"
       },
       {
         "page": 71,

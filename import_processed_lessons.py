@@ -48,6 +48,8 @@ def template_rows(step):
 
 def unwrap(source):
     if isinstance(source, list):
+        if source and all(isinstance(q, dict) and 'question_number' in q for q in source):
+            return {'exam_questions': source}
         lessons = source
     elif isinstance(source, dict):
         source = source.get('data', source)
@@ -59,6 +61,30 @@ def unwrap(source):
     return lessons[0].get('content')
 
 
+def parse_source(raw):
+    text = raw.decode('utf-8')
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as error:
+        if error.msg == 'Extra data':
+            parsed, offset = json.JSONDecoder().raw_decode(text)
+            # Some exports append only closing delimiters or whitespace.
+            if re.fullmatch(r'[\s}\],]*', text[offset:]):
+                return parsed
+        if '幕' in text:
+            text = re.sub(r'^\s*幕\s*$', '', text, flags=re.MULTILINE)
+        if ',\n' in text:
+            text = re.sub(r',\s*([}\]])', r'\1', text)
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError as second:
+            if second.msg == 'Extra data':
+                parsed, offset = json.JSONDecoder().raw_decode(text)
+                if re.fullmatch(r'[\s}\],]*', text[offset:]):
+                    return parsed
+            raise
+
+
 def main(archive):
     stats = Counter()
     skipped = []
@@ -68,10 +94,11 @@ def main(archive):
             page = int(re.search(r'page_(\d+)\.json$', name).group(1))
             existing = PAGES / f'page_{page}.json'
             try:
-                source = json.loads(zipped.read(name))
+                source = parse_source(zipped.read(name))
                 data = unwrap(source)
-                if not isinstance(data, dict) or int(data.get('page_number', -1)) != page:
+                if not isinstance(data, dict) or int(data.get('page_number', page)) != page:
                     raise ValueError('entry has no matching lesson content')
+                data['page_number'] = page
                 questions = data.get('exam_questions')
                 if not isinstance(questions, list):
                     raise ValueError('lesson has no question list')

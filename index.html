@@ -28,20 +28,14 @@ window.addEventListener('load',()=>{
         const separator=input.correct.includes(' و ')?' و ':input.correct.includes(' ، ')?' ، ':null;
         const pieces=separator?input.correct.split(separator).map(x=>x.trim()):[];
         const optionParts=separator?input.options.map(x=>x.split(separator).map(y=>y.trim())):[];
-        if(pieces.length>1&&optionParts.every(parts=>parts.length===pieces.length)){
+        if(pieces.length>1&&optionParts.every(parts=>parts.length===pieces.length)&&pieces.every((piece,index)=>{
+          const values=optionParts.map(parts=>parts[index]);return values.includes(piece)&&new Set(values).size===4;
+        })){
           const row=[];
           pieces.forEach((value,index)=>{
             if(index)row.push(separator);
             const id=`${input.id}_part_${index+1}`;
-            const choices=[...new Set(optionParts.map(parts=>parts[index]))];
-            const match=value.match(/\d+(?:[,.]\d+)?/);
-            if(match){let delta=1;while(choices.length<4&&delta<50){
-              const original=Number(match[0].replace(',','.'));
-              const proposed=String(original+delta).replace('.',match[0].includes(',')?',':'.');
-              const candidate=value.replace(match[0],proposed);
-              if(!choices.includes(candidate))choices.push(candidate);
-              delta++;
-            }}
+            const choices=optionParts.map(parts=>parts[index]);
             expanded.push({...input,id,label:`${input.label} — الجزء ${index+1}`,correct:value,options:choices});
             row.push({input_id:id});
           });

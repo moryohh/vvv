@@ -1,0 +1,1974 @@
+{
+  "title": "رياضيات السادس العلمي — العراق",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "الأعداد المركبة",
+      "topics": [
+        {
+          "id": "1-1",
+          "title": "الحاجة إلى توسيع مجموعة الأعداد الحقيقية",
+          "pages": [
+            {
+              "page": 4,
+              "path": "lessons/pages/page_4.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 5,
+              "path": "lessons/pages/page_5.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 6,
+              "path": "lessons/pages/page_6.json",
+              "questions": 4,
+              "interactive": 2,
+              "read_only": 2,
+              "diagrams": 1
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "title": "العمليات على مجموعة الأعداد المركبة",
+          "pages": [
+            {
+              "page": 7,
+              "path": "lessons/pages/page_7.json",
+              "questions": 6,
+              "interactive": 6,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 8,
+              "path": "lessons/pages/page_8.json",
+              "questions": 7,
+              "interactive": 1,
+              "read_only": 6,
+              "diagrams": 0
+            },
+            {
+              "page": 9,
+              "path": "lessons/pages/page_9.json",
+              "questions": 6,
+              "interactive": 2,
+              "read_only": 4,
+              "diagrams": 0
+            },
+            {
+              "page": 10,
+              "path": "lessons/pages/page_10.json",
+              "questions": 6,
+              "interactive": 3,
+              "read_only": 3,
+              "diagrams": 0
+            },
+            {
+              "page": 11,
+              "path": "lessons/pages/page_11.json",
+              "questions": 5,
+              "interactive": 5,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 12,
+              "path": "lessons/pages/page_12.json",
+              "questions": 5,
+              "interactive": 2,
+              "read_only": 3,
+              "diagrams": 0
+            },
+            {
+              "page": 13,
+              "path": "lessons/pages/page_13.json",
+              "questions": 9,
+              "interactive": 1,
+              "read_only": 8,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-3",
+          "title": "مرافق العدد المركب",
+          "pages": [
+            {
+              "page": 15,
+              "path": "lessons/pages/page_15.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 16,
+              "path": "lessons/pages/page_16.json",
+              "questions": 5,
+              "interactive": 3,
+              "read_only": 2,
+              "diagrams": 0
+            },
+            {
+              "page": 17,
+              "path": "lessons/pages/page_17.json",
+              "questions": 4,
+              "interactive": 3,
+              "read_only": 1,
+              "diagrams": 0
+            },
+            {
+              "page": 18,
+              "path": "lessons/pages/page_18.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 19,
+              "path": "lessons/pages/page_19.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 20,
+              "path": "lessons/pages/page_20.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-4",
+          "title": "العمليات ومساواة الأعداد المركبة",
+          "pages": [
+            {
+              "page": 21,
+              "path": "lessons/pages/page_21.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 22,
+              "path": "lessons/pages/page_22.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 23,
+              "path": "lessons/pages/page_23.json",
+              "questions": 7,
+              "interactive": 1,
+              "read_only": 6,
+              "diagrams": 0
+            },
+            {
+              "page": 24,
+              "path": "lessons/pages/page_24.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 25,
+              "path": "lessons/pages/page_25.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 26,
+              "path": "lessons/pages/page_26.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 27,
+              "path": "lessons/pages/page_27.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 28,
+              "path": "lessons/pages/page_28.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 29,
+              "path": "lessons/pages/page_29.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 30,
+              "path": "lessons/pages/page_30.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 31,
+              "path": "lessons/pages/page_31.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 32,
+              "path": "lessons/pages/page_32.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 33,
+              "path": "lessons/pages/page_33.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 34,
+              "path": "lessons/pages/page_34.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 35,
+              "path": "lessons/pages/page_35.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 36,
+              "path": "lessons/pages/page_36.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-5",
+          "title": "الجذور التربيعية للعدد المركب",
+          "pages": [
+            {
+              "page": 37,
+              "path": "lessons/pages/page_37.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 38,
+              "path": "lessons/pages/page_38.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 39,
+              "path": "lessons/pages/page_39.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 40,
+              "path": "lessons/pages/page_40.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 41,
+              "path": "lessons/pages/page_41.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 42,
+              "path": "lessons/pages/page_42.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 43,
+              "path": "lessons/pages/page_43.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-6",
+          "title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+          "pages": [
+            {
+              "page": 44,
+              "path": "lessons/pages/page_44.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 45,
+              "path": "lessons/pages/page_45.json",
+              "questions": 5,
+              "interactive": 2,
+              "read_only": 3,
+              "diagrams": 0
+            },
+            {
+              "page": 46,
+              "path": "lessons/pages/page_46.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 47,
+              "path": "lessons/pages/page_47.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 48,
+              "path": "lessons/pages/page_48.json",
+              "questions": 7,
+              "interactive": 2,
+              "read_only": 5,
+              "diagrams": 0
+            },
+            {
+              "page": 49,
+              "path": "lessons/pages/page_49.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 50,
+              "path": "lessons/pages/page_50.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 51,
+              "path": "lessons/pages/page_51.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 52,
+              "path": "lessons/pages/page_52.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 53,
+              "path": "lessons/pages/page_53.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 54,
+              "path": "lessons/pages/page_54.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 55,
+              "path": "lessons/pages/page_55.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 56,
+              "path": "lessons/pages/page_56.json",
+              "questions": 4,
+              "interactive": 2,
+              "read_only": 2,
+              "diagrams": 0
+            },
+            {
+              "page": 57,
+              "path": "lessons/pages/page_57.json",
+              "questions": 14,
+              "interactive": 2,
+              "read_only": 12,
+              "diagrams": 0
+            },
+            {
+              "page": 58,
+              "path": "lessons/pages/page_58.json",
+              "questions": 5,
+              "interactive": 1,
+              "read_only": 4,
+              "diagrams": 0
+            },
+            {
+              "page": 59,
+              "path": "lessons/pages/page_59.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-7",
+          "title": "الجذور التكعيبية للواحد الصحيح",
+          "pages": [
+            {
+              "page": 60,
+              "path": "lessons/pages/page_60.json",
+              "questions": 10,
+              "interactive": 10,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 61,
+              "path": "lessons/pages/page_61.json",
+              "questions": 5,
+              "interactive": 2,
+              "read_only": 3,
+              "diagrams": 0
+            },
+            {
+              "page": 62,
+              "path": "lessons/pages/page_62.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 63,
+              "path": "lessons/pages/page_63.json",
+              "questions": 4,
+              "interactive": 2,
+              "read_only": 2,
+              "diagrams": 0
+            },
+            {
+              "page": 64,
+              "path": "lessons/pages/page_64.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 65,
+              "path": "lessons/pages/page_65.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 67,
+              "path": "lessons/pages/page_67.json",
+              "questions": 5,
+              "interactive": 1,
+              "read_only": 4,
+              "diagrams": 0
+            },
+            {
+              "page": 68,
+              "path": "lessons/pages/page_68.json",
+              "questions": 13,
+              "interactive": 1,
+              "read_only": 12,
+              "diagrams": 0
+            },
+            {
+              "page": 69,
+              "path": "lessons/pages/page_69.json",
+              "questions": 13,
+              "interactive": 0,
+              "read_only": 13,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-8",
+          "title": "التمثيل الهندسي للأعداد المركبة",
+          "pages": [
+            {
+              "page": 70,
+              "path": "lessons/pages/page_70.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 71,
+              "path": "lessons/pages/page_71.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 3
+            },
+            {
+              "page": 72,
+              "path": "lessons/pages/page_72.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 73,
+              "path": "lessons/pages/page_73.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 74,
+              "path": "lessons/pages/page_74.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            }
+          ]
+        },
+        {
+          "id": "1-9",
+          "title": "الصيغة القطبية للعدد المركب",
+          "pages": [
+            {
+              "page": 76,
+              "path": "lessons/pages/page_76.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 77,
+              "path": "lessons/pages/page_77.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 78,
+              "path": "lessons/pages/page_78.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 79,
+              "path": "lessons/pages/page_79.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 80,
+              "path": "lessons/pages/page_80.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 81,
+              "path": "lessons/pages/page_81.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 82,
+              "path": "lessons/pages/page_82.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 83,
+              "path": "lessons/pages/page_83.json",
+              "questions": 8,
+              "interactive": 6,
+              "read_only": 2,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "1-10",
+          "title": "مبرهنة ديموافر",
+          "pages": [
+            {
+              "page": 84,
+              "path": "lessons/pages/page_84.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 85,
+              "path": "lessons/pages/page_85.json",
+              "questions": 5,
+              "interactive": 2,
+              "read_only": 3,
+              "diagrams": 0
+            },
+            {
+              "page": 86,
+              "path": "lessons/pages/page_86.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 87,
+              "path": "lessons/pages/page_87.json",
+              "questions": 4,
+              "interactive": 2,
+              "read_only": 2,
+              "diagrams": 0
+            },
+            {
+              "page": 88,
+              "path": "lessons/pages/page_88.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 89,
+              "path": "lessons/pages/page_89.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 90,
+              "path": "lessons/pages/page_90.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 91,
+              "path": "lessons/pages/page_91.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 92,
+              "path": "lessons/pages/page_92.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 94,
+              "path": "lessons/pages/page_94.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 95,
+              "path": "lessons/pages/page_95.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 96,
+              "path": "lessons/pages/page_96.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 97,
+              "path": "lessons/pages/page_97.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 98,
+              "path": "lessons/pages/page_98.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 99,
+              "path": "lessons/pages/page_99.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 100,
+              "path": "lessons/pages/page_100.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 101,
+              "path": "lessons/pages/page_101.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 102,
+              "path": "lessons/pages/page_102.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 103,
+              "path": "lessons/pages/page_103.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 104,
+              "path": "lessons/pages/page_104.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 105,
+              "path": "lessons/pages/page_105.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 106,
+              "path": "lessons/pages/page_106.json",
+              "questions": 15,
+              "interactive": 1,
+              "read_only": 14,
+              "diagrams": 0
+            },
+            {
+              "page": 107,
+              "path": "lessons/pages/page_107.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "القطوع المخروطية",
+      "topics": [
+        {
+          "id": "2-1",
+          "title": "القطوع المخروطية وأهمية دراستها",
+          "pages": [
+            {
+              "page": 109,
+              "path": "lessons/pages/page_109.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "title": "القطع المكافئ",
+          "pages": [
+            {
+              "page": 110,
+              "path": "lessons/pages/page_110.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 3
+            },
+            {
+              "page": 111,
+              "path": "lessons/pages/page_111.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 112,
+              "path": "lessons/pages/page_112.json",
+              "questions": 5,
+              "interactive": 2,
+              "read_only": 3,
+              "diagrams": 0
+            },
+            {
+              "page": 113,
+              "path": "lessons/pages/page_113.json",
+              "questions": 5,
+              "interactive": 5,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 114,
+              "path": "lessons/pages/page_114.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 115,
+              "path": "lessons/pages/page_115.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 116,
+              "path": "lessons/pages/page_116.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 117,
+              "path": "lessons/pages/page_117.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            }
+          ]
+        },
+        {
+          "id": "2-3",
+          "title": "انسحاب المحاور للقطع المكافئ",
+          "pages": [
+            {
+              "page": 119,
+              "path": "lessons/pages/page_119.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 120,
+              "path": "lessons/pages/page_120.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 121,
+              "path": "lessons/pages/page_121.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 3
+            },
+            {
+              "page": 122,
+              "path": "lessons/pages/page_122.json",
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 123,
+              "path": "lessons/pages/page_123.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 124,
+              "path": "lessons/pages/page_124.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 125,
+              "path": "lessons/pages/page_125.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 126,
+              "path": "lessons/pages/page_126.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 127,
+              "path": "lessons/pages/page_127.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 128,
+              "path": "lessons/pages/page_128.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 129,
+              "path": "lessons/pages/page_129.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 130,
+              "path": "lessons/pages/page_130.json",
+              "questions": 10,
+              "interactive": 1,
+              "read_only": 9,
+              "diagrams": 0
+            },
+            {
+              "page": 131,
+              "path": "lessons/pages/page_131.json",
+              "questions": 6,
+              "interactive": 1,
+              "read_only": 5,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "2-4",
+          "title": "القطع الناقص",
+          "pages": [
+            {
+              "page": 134,
+              "path": "lessons/pages/page_134.json",
+              "questions": 3,
+              "interactive": 2,
+              "read_only": 1,
+              "diagrams": 0
+            },
+            {
+              "page": 135,
+              "path": "lessons/pages/page_135.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 136,
+              "path": "lessons/pages/page_136.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 137,
+              "path": "lessons/pages/page_137.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 138,
+              "path": "lessons/pages/page_138.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 139,
+              "path": "lessons/pages/page_139.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 140,
+              "path": "lessons/pages/page_140.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 141,
+              "path": "lessons/pages/page_141.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "2-5",
+          "title": "انسحاب المحاور للقطع الناقص",
+          "pages": [
+            {
+              "page": 142,
+              "path": "lessons/pages/page_142.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 143,
+              "path": "lessons/pages/page_143.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 144,
+              "path": "lessons/pages/page_144.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 145,
+              "path": "lessons/pages/page_145.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 146,
+              "path": "lessons/pages/page_146.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 147,
+              "path": "lessons/pages/page_147.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 148,
+              "path": "lessons/pages/page_148.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            }
+          ]
+        },
+        {
+          "id": "2-6",
+          "title": "القطع الناقص: تطبيقات وتمارين",
+          "pages": [
+            {
+              "page": 149,
+              "path": "lessons/pages/page_149.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 150,
+              "path": "lessons/pages/page_150.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 151,
+              "path": "lessons/pages/page_151.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 152,
+              "path": "lessons/pages/page_152.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 153,
+              "path": "lessons/pages/page_153.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 154,
+              "path": "lessons/pages/page_154.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 155,
+              "path": "lessons/pages/page_155.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 156,
+              "path": "lessons/pages/page_156.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 157,
+              "path": "lessons/pages/page_157.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 158,
+              "path": "lessons/pages/page_158.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 159,
+              "path": "lessons/pages/page_159.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 160,
+              "path": "lessons/pages/page_160.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 161,
+              "path": "lessons/pages/page_161.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 162,
+              "path": "lessons/pages/page_162.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 163,
+              "path": "lessons/pages/page_163.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 164,
+              "path": "lessons/pages/page_164.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 165,
+              "path": "lessons/pages/page_165.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 166,
+              "path": "lessons/pages/page_166.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 167,
+              "path": "lessons/pages/page_167.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 168,
+              "path": "lessons/pages/page_168.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 169,
+              "path": "lessons/pages/page_169.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "2-7",
+          "title": "القطع الزائد",
+          "pages": [
+            {
+              "page": 170,
+              "path": "lessons/pages/page_170.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 171,
+              "path": "lessons/pages/page_171.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 172,
+              "path": "lessons/pages/page_172.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 173,
+              "path": "lessons/pages/page_173.json",
+              "questions": 3,
+              "interactive": 2,
+              "read_only": 1,
+              "diagrams": 0
+            },
+            {
+              "page": 174,
+              "path": "lessons/pages/page_174.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 175,
+              "path": "lessons/pages/page_175.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 176,
+              "path": "lessons/pages/page_176.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 177,
+              "path": "lessons/pages/page_177.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 178,
+              "path": "lessons/pages/page_178.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "2-8",
+          "title": "انسحاب محاور القطع الزائد",
+          "pages": [
+            {
+              "page": 180,
+              "path": "lessons/pages/page_180.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 181,
+              "path": "lessons/pages/page_181.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 182,
+              "path": "lessons/pages/page_182.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 183,
+              "path": "lessons/pages/page_183.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 184,
+              "path": "lessons/pages/page_184.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            }
+          ]
+        },
+        {
+          "id": "2-9",
+          "title": "القطع الزائد: تطبيقات وتمارين",
+          "pages": [
+            {
+              "page": 186,
+              "path": "lessons/pages/page_186.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 187,
+              "path": "lessons/pages/page_187.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 188,
+              "path": "lessons/pages/page_188.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 189,
+              "path": "lessons/pages/page_189.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 190,
+              "path": "lessons/pages/page_190.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 191,
+              "path": "lessons/pages/page_191.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 192,
+              "path": "lessons/pages/page_192.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 193,
+              "path": "lessons/pages/page_193.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 194,
+              "path": "lessons/pages/page_194.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 195,
+              "path": "lessons/pages/page_195.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 196,
+              "path": "lessons/pages/page_196.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 197,
+              "path": "lessons/pages/page_197.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 198,
+              "path": "lessons/pages/page_198.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 199,
+              "path": "lessons/pages/page_199.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 200,
+              "path": "lessons/pages/page_200.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 201,
+              "path": "lessons/pages/page_201.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 202,
+              "path": "lessons/pages/page_202.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 203,
+              "path": "lessons/pages/page_203.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 205,
+              "path": "lessons/pages/page_205.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 206,
+              "path": "lessons/pages/page_206.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 207,
+              "path": "lessons/pages/page_207.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 0
+            },
+            {
+              "page": 208,
+              "path": "lessons/pages/page_208.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 0
+            }
+          ]
+        },
+        {
+          "id": "2-10",
+          "title": "تمارين متنوعة على القطوع المخروطية",
+          "pages": [
+            {
+              "page": 209,
+              "path": "lessons/pages/page_209.json",
+              "questions": 6,
+              "interactive": 1,
+              "read_only": 5,
+              "diagrams": 0
+            },
+            {
+              "page": 210,
+              "path": "lessons/pages/page_210.json",
+              "questions": 6,
+              "interactive": 0,
+              "read_only": 6,
+              "diagrams": 0
+            },
+            {
+              "page": 211,
+              "path": "lessons/pages/page_211.json",
+              "questions": 6,
+              "interactive": 0,
+              "read_only": 6,
+              "diagrams": 0
+            },
+            {
+              "page": 212,
+              "path": "lessons/pages/page_212.json",
+              "questions": 6,
+              "interactive": 1,
+              "read_only": 5,
+              "diagrams": 0
+            },
+            {
+              "page": 213,
+              "path": "lessons/pages/page_213.json",
+              "questions": 6,
+              "interactive": 0,
+              "read_only": 6,
+              "diagrams": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "تطبيقات التفاضل",
+      "topics": []
+    },
+    {
+      "id": 4,
+      "title": "التكامل",
+      "topics": []
+    },
+    {
+      "id": 5,
+      "title": "المعادلات التفاضلية الاعتيادية",
+      "topics": []
+    },
+    {
+      "id": 6,
+      "title": "الهندسة الفضائية",
+      "topics": [
+        {
+          "id": "6-1",
+          "title": "الزاوية الزوجية والمستويات المتعامدة",
+          "pages": [
+            {
+              "page": 216,
+              "path": "lessons/pages/page_216.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 3
+            },
+            {
+              "page": 218,
+              "path": "lessons/pages/page_218.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 219,
+              "path": "lessons/pages/page_219.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 220,
+              "path": "lessons/pages/page_220.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 221,
+              "path": "lessons/pages/page_221.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 222,
+              "path": "lessons/pages/page_222.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 223,
+              "path": "lessons/pages/page_223.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 224,
+              "path": "lessons/pages/page_224.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 225,
+              "path": "lessons/pages/page_225.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 226,
+              "path": "lessons/pages/page_226.json",
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
+              "diagrams": 3
+            },
+            {
+              "page": 227,
+              "path": "lessons/pages/page_227.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 228,
+              "path": "lessons/pages/page_228.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 229,
+              "path": "lessons/pages/page_229.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 230,
+              "path": "lessons/pages/page_230.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 231,
+              "path": "lessons/pages/page_231.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 232,
+              "path": "lessons/pages/page_232.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 233,
+              "path": "lessons/pages/page_233.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            }
+          ]
+        },
+        {
+          "id": "6-2",
+          "title": "الإسقاط العمودي على مستوٍ",
+          "pages": [
+            {
+              "page": 234,
+              "path": "lessons/pages/page_234.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 235,
+              "path": "lessons/pages/page_235.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 236,
+              "path": "lessons/pages/page_236.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 237,
+              "path": "lessons/pages/page_237.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 238,
+              "path": "lessons/pages/page_238.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 239,
+              "path": "lessons/pages/page_239.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 240,
+              "path": "lessons/pages/page_240.json",
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
+              "diagrams": 2
+            },
+            {
+              "page": 241,
+              "path": "lessons/pages/page_241.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            },
+            {
+              "page": 242,
+              "path": "lessons/pages/page_242.json",
+              "questions": 1,
+              "interactive": 1,
+              "read_only": 0,
+              "diagrams": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "https://sahl.io/iq/book/404/سادس-اعدادي/الرياضيات-علمي",
+    "https://mlazemna.com/book6thmatha19/"
+  ]
+}

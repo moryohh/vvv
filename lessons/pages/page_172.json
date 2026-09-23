@@ -1,0 +1,113 @@
+{
+  "page_number": 172,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "عين البؤرتين والرأسين وطول كل من المحورين الحقيقي والمرافق للقطع الزائد الذي معادلته: x^2/64 - y^2/36 = 1 ثم ارسمه.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم بياني يوضح القطع الزائد ومحوريه والبؤرتين والرأسين مع توضيح المحاذيات",
+        "diagram_box": [
+          345,
+          300,
+          580,
+          890
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_172_q1_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بالمقارنة مع المعادلة القياسية x^2/a^2 - y^2/b^2 = 1، نجد أن a^2 = 64 و b^2 = 36. إذن a = 8 و b = 6. طول المحور الحقيقي 2a = 16، وطول المحور المرافق 2b = 12. بما أن القطع زائد c^2 = a^2 + b^2 = 64 + 36 = 100، إذن c = 10. البؤرتان (±10, 0)، الرأسان (±8, 0)، والنقطتان المساعدتان للمحور المرافق (0, ±6).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد قيم a و b من المعادلة المعطاة.",
+          "step_assistant_solution": "a=8, b=6",
+          "inputs": [
+            {
+              "input_id": "q1_step1_a",
+              "label": "قيمة a هي:",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "64",
+                "6",
+                "10"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قارن المعادلة المعطاة بالصيغة x^2/a^2 - y^2/b^2 = 1",
+            "related_topics": [
+              {
+                "topic_title": "القطع الزائد",
+                "explanation": "معادلة القطع الزائد الأفقي هي x^2/a^2 - y^2/b^2 = 1"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a=",
+                {
+                  "input_id": "q1_step1_a"
+                },
+                ", b=6"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "عين كل من البؤرتين والرأسين ثم جد طول كل من المحورين الحقيقي والمرافق والاختلاف المركزي للقطع الزائد: 9x^2 - 16y^2 = 144",
+      "diagram": null,
+      "full_model_solution": "نقسم المعادلة على 144 لتصبح x^2/16 - y^2/9 = 1. إذن a^2 = 16 (a=4) و b^2 = 9 (b=3). طول المحور الحقيقي 2a = 8، وطول المحور المرافق 2b = 6. c^2 = 16 + 9 = 25، إذن c = 5. البؤرتان (±5, 0)، الرأسان (±4, 0). الاختلاف المركزي e = c/a = 5/4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "وضع المعادلة بالصيغة القياسية بقسمة طرفي المعادلة على 144.",
+          "step_assistant_solution": "x^2/16 - y^2/9 = 1",
+          "inputs": [
+            {
+              "input_id": "q2_step1_a",
+              "label": "المعادلة القياسية هي:",
+              "correct_answer": "x^2/16 - y^2/9 = 1",
+              "options": [
+                "x^2/16 - y^2/9 = 1",
+                "x^2/9 - y^2/16 = 1",
+                "x^2/144 - y^2/144 = 1",
+                "x^2/4 - y^2/3 = 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن المعادلة القياسية يجب أن تساوي 1.",
+            "related_topics": [
+              {
+                "topic_title": "تبسيط المعادلات",
+                "explanation": "القسمة على الثابت في الطرف الأيمن تجعل المعادلة تساوي 1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_step1_a"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 172,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-7",
+  "topic_title": "القطع الزائد",
+  "interactive_status": "ready"
+}

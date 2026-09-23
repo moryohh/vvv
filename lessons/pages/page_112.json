@@ -1,0 +1,120 @@
+{
+  "page_number": 112,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "4x + √5y² = 0",
+      "diagram": null,
+      "full_model_solution": "أولاً، نقوم بعزل حد y²: √5y² = -4x. ثانياً، نقسم على √5 للحصول على الصورة القياسية للمعادلة: y² = (-4/√5)x. بمقارنة هذه المعادلة مع المعادلة القياسية y² = -4px، نجد أن -4p = -4/√5، مما يعني أن p = 1/√5. البؤرة تقع عند F(-p, 0) أي F(-1/√5, 0)، ومعادلة الدليل هي x = p أي x = 1/√5.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الهدف هو وضع المعادلة في الصورة القياسية y² = 4px أو y² = -4px لعزل المعاملات.",
+          "step_assistant_solution": "y² = (-4/√5)x",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هي المعادلة بعد عزل y²؟",
+              "correct_answer": "y² = -4/√5 x",
+              "options": [
+                "y² = -4/√5 x",
+                "y² = 4/√5 x",
+                "y² = -√5/4 x",
+                "y² = -4x"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل 4x للطرف الآخر ثم اقسم على معامل y².",
+            "related_topics": [
+              {
+                "topic_title": "العمليات الجبرية",
+                "explanation": "نقل الحدود بين طرفي المعادلة يتطلب عكس الإشارة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي المعادلة بعد عزل y²؟ = ",
+                {
+                  "input_id": "q4_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "x² + 5y = -3x² - 31y",
+      "diagram": null,
+      "full_model_solution": "تجميع الحدود المتشابهة: x² + 3x² = -31y - 5y، أي 4x² = -36y. بالقسمة على 4: x² = -9y. بالمقارنة مع x² = -4py، نجد -4p = -9، إذن p = 9/4. البؤرة تقع عند F(0, -p) أي F(0, -9/4)، ومعادلة الدليل y = p أي y = 9/4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تجميع الحدود المتشابهة في طرف واحد.",
+          "step_assistant_solution": "4x² = -36y",
+          "inputs": [
+            {
+              "input_id": "q5_step1",
+              "label": "ما ناتج جمع الحدود؟",
+              "correct_answer": "4x² = -36y",
+              "options": [
+                "4x² = -36y",
+                "4x² = 36y",
+                "-2x² = -36y",
+                "4x² = -26y"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل x² إلى اليمين و 31y إلى اليسار.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q5_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "3y² - 6x = -5y² + 138x",
+      "diagram": null,
+      "full_model_solution": "تجميع الحدود: 3y² + 5y² = 138x + 6x، أي 8y² = 144x، بالقسمة على 8: y² = 18x. بالمقارنة مع y² = 4px، نجد 4p = 18، إذن p = 4.5. البؤرة F(4.5, 0) والدليل x = -4.5.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "7",
+      "question_text": "1/4 x² + 8y = 0",
+      "diagram": null,
+      "full_model_solution": "عزل x²: 1/4 x² = -8y، بالضرب في 4: x² = -32y. بالمقارنة مع x² = -4py، نجد -4p = -32، إذن p = 8. البؤرة F(0, -8) والدليل y = 8.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "8",
+      "question_text": "3/2 y² + 8x = 0",
+      "diagram": null,
+      "full_model_solution": "عزل y²: 3/2 y² = -8x، بالضرب في 2/3: y² = -16/3 x. بالمقارنة مع y² = -4px، نجد -4p = -16/3، إذن p = 4/3. البؤرة F(-4/3, 0) والدليل x = 4/3.",
+      "interactive_steps": [],
+      "hint": null
+    }
+  ],
+  "page_id": 112,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-2",
+  "topic_title": "القطع المكافئ",
+  "interactive_status": "ready"
+}

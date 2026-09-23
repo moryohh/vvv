@@ -1,0 +1,99 @@
+{
+  "page_number": 23,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "حلل المقدار x² + 4y² الى عاملين في C",
+      "diagram": null,
+      "full_model_solution": "بما أن المجموع لا يحلل في R، نستخدم i² = -1 لتحويله الى فرق بين مربعين: x² + 4y² = x² - 4y²i² = (x - 2yi)(x + 2yi)",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول الجمع إلى طرح باستخدام i² لتسهيل التحليل كفرق بين مربعين.",
+          "step_assistant_solution": "x² - 4y²i²",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "كيف نكتب 4y² باستخدام i²؟",
+              "correct_answer": "-4y²i²",
+              "options": [
+                "-4y²i²",
+                "4y²i²",
+                "-2yi",
+                "4y²"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i² = -1، لذا فإن 4y² = -(-4y²) = -4y²(i²).",
+            "related_topics": [
+              {
+                "topic_title": "العددان المركبان",
+                "explanation": "استخدام i² لتحويل مجموع مربعين إلى فرق مربعين."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "كيف نكتب 4y² باستخدام i²؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "حلل المقدار 121 + 9y² الى عاملين في C",
+      "diagram": null,
+      "full_model_solution": "121 + 9y² = 121 - 9y²i² = (11 - 3yi)(11 + 3yi)",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "3",
+      "question_text": "حلل المقدار 9y² + 49 الى عاملين في C",
+      "diagram": null,
+      "full_model_solution": "9y² + 49 = 9y² - 49i² = (3y - 7i)(3y + 7i)",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "4",
+      "question_text": "حلل المقدار 16y² + 9 الى عاملين في C",
+      "diagram": null,
+      "full_model_solution": "16y² + 9 = 16y² - 9i² = (4y - 3i)(4y + 3i)",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "5",
+      "question_text": "حلل المقدار 2x² + 8y² الى عاملين في C",
+      "diagram": null,
+      "full_model_solution": "2(x² + 4y²) = 2(x² - 4y²i²) = 2(x - 2yi)(x + 2yi)",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "6",
+      "question_text": "جد قيمة x, y الحقيقية لكل مما يأتي: 2x - 1 + 2i = 1 + (y + 1)i",
+      "diagram": null,
+      "full_model_solution": "بمساواة الحقيقي مع الحقيقي: 2x - 1 = 1 ومنه 2x = 2 أي x = 1. وبمساواة التخيلي مع التخيلي: 2 = y + 1 ومنه y = 1.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "7",
+      "question_text": "جد قيمة x, y الحقيقية لكل مما يأتي: 3x + 4i = 2 + 8yi",
+      "diagram": null,
+      "full_model_solution": "بمساواة الحقيقي مع الحقيقي: 3x = 2 ومنه x = 2/3. وبمساواة التخيلي مع التخيلي: 4 = 8y ومنه y = 4/8 أي y = 1/2.",
+      "interactive_steps": []
+    }
+  ],
+  "page_id": 23,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,142 @@
+{
+  "page_number": 43,
+  "page_id": 43,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "9",
+      "question_text": "مثال (9): اذا كان (3 + ai) هو احد الجذرين التربيعيين للعدد المركب (b + 6i) جد قيمتي a, b ∈ R",
+      "diagram": null,
+      "full_model_solution": "بما أن (3 + ai) هو أحد الجذرين التربيعيين، فإن مربع الجذر يساوي العدد المركب: (3 + ai)^2 = b + 6i. بفك القوس: 9 + 6ai + a^2i^2 = b + 6i، أي 9 + 6ai - a^2 = b + 6i. بمساواة الحقيقي مع الحقيقي (b = 9 - a^2) والتخيلي مع التخيلي (6a = 6)، نجد من الجزء التخيلي أن a = 1. بالتعويض في معادلة الحقيقي: b = 9 - (1)^2 = 8. إذن a = 1 و b = 8.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بكتابة المعادلة الأساسية التي تربط الجذر بالعدد المركب وهي أن مربع الجذر التربيعي يساوي العدد الأصلي.",
+          "step_assistant_solution": "(3 + ai)^2 = b + 6i",
+          "inputs": [
+            {
+              "input_id": "q9_s1",
+              "label": "ما هي المعادلة الناتجة عن تربيع الجذر؟",
+              "correct_answer": "9 + 6ai - a^2 = b + 6i",
+              "options": [
+                "9 + 6ai - a^2 = b + 6i",
+                "9 + ai - a^2 = b + 6i",
+                "9 + 6ai + a^2 = b + 6i",
+                "3 + 6ai - a^2 = b + 6i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^2 = -1، لذا فإن (ai)^2 تصبح -a^2.",
+            "related_topics": [
+              {
+                "topic_title": "مربع مجموع حدين",
+                "explanation": "(x+y)^2 = x^2 + 2xy + y^2"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي المعادلة الناتجة عن تربيع الجذر؟ = ",
+                {
+                  "input_id": "q9_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "مثال (10): اذا كان (4 + ai) هو احد الجذرين التربيعيين للعدد المركب (b + 24i) جد قيمتي a, b ∈ R",
+      "diagram": null,
+      "full_model_solution": "بتربيع الجذر: (4 + ai)^2 = b + 24i، أي 16 + 8ai - a^2 = b + 24i. بمساواة الأجزاء التخيلية: 8a = 24 ومنها a = 3. بالتعويض في الجزء الحقيقي: b = 16 - a^2 = 16 - (3)^2 = 16 - 9 = 7. إذن a = 3 و b = 7.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نساوي الأجزاء التخيلية في الطرفين لاستخراج قيمة a.",
+          "step_assistant_solution": "8a = 24 => a = 3",
+          "inputs": [
+            {
+              "input_id": "q10_s1",
+              "label": "ما هي قيمة a الناتجة؟",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "4",
+                "6",
+                "8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجزء التخيلي هو المعامل الخاص بـ i.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "8a = 24 => a = ",
+                {
+                  "input_id": "q10_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "1",
+      "question_text": "حل المعادلة: Z^2 + 4 = 0",
+      "diagram": null,
+      "full_model_solution": "الطريقة الأولى: Z^2 = -4، وبأخذ الجذر التربيعي للطرفين Z = ±√(-4) = ±2i. الطريقة الثانية: Z^2 - 4i^2 = 0 (بما أن -4 = 4i^2)، نحلل الفرق بين مربعين: (Z - 2i)(Z + 2i) = 0، مما يعطي Z = 2i أو Z = -2i. مجموعة الحل S = {2i, -2i}.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقل الثابت للطرف الآخر للبدء بحل المعادلة.",
+          "step_assistant_solution": "Z^2 = -4",
+          "inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ماذا يساوي Z^2؟",
+              "correct_answer": "-4",
+              "options": [
+                "-4",
+                "4",
+                "4i",
+                "-4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد السالب تحت الجذر التربيعي يتحول إلى i خارج الجذر.",
+            "related_topics": [
+              {
+                "topic_title": "الجذور التخيلية",
+                "explanation": "جذر (-1) يساوي i."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "Z^2 = ",
+                {
+                  "input_id": "q1_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-5",
+  "topic_title": "الجذور التربيعية للعدد المركب",
+  "interactive_status": "ready"
+}

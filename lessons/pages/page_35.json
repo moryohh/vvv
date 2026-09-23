@@ -1,0 +1,101 @@
+{
+  "page_number": 35,
+  "page_id": 35,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "30",
+      "question_text": "إذا كان (2x+yi)/(1+i) و (3+i)/(2-i) مترافقان، جد قيمة x, y تنتمي إلى R.",
+      "diagram": null,
+      "full_model_solution": "بما أن العددين مترافقان، إذن C = Ȟ (مرافق C). معادلة التساوي: (2x+yi)/(1+i) = (3+i)/(2-i) بعد أخذ المرافق للطرف الثاني (3-i)/(2+i). بضرب الطرفين في الوسطين: (2x+yi)(2+i) = (3-i)(1+i)، ثم فك الأقواس والتبسيط حتى الوصول إلى x=1 و y=0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بمعادلة التساوي بين الكسر الأول ومرافق الكسر الثاني للتخلص من الرمز التخيلي في المقام.",
+          "step_assistant_solution": "(2x+yi)/(1+i) = (3-i)/(2+i)",
+          "inputs": [
+            {
+              "input_id": "q30_step1",
+              "label": "ما هي المعادلة بعد أخذ مرافق الطرف الأيمن؟",
+              "correct_answer": "(2x+yi)/(1+i) = (3-i)/(2+i)",
+              "options": [
+                "(2x+yi)/(1+i) = (3-i)/(2+i)",
+                "(2x+yi)/(1+i) = (3+i)/(2-i)",
+                "(2x+yi) = (3+i)",
+                "(1+i) = (2-i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن مرافق العدد a+bi هو a-bi.",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "المرافق هو تغيير إشارة الجزء التخيلي فقط."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q30_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "31",
+      "question_text": "إذا كان العددان (5+i)/(2-i) و (x+yi)/(3+4i) مترافقان، جد قيمة x, y تنتمي إلى R.",
+      "diagram": null,
+      "full_model_solution": "المعادلة: (x+yi)/(3+4i) = (5-i)/(2+i). بضرب الطرفين في الوسطين: (x+yi)(2+i) = (3+4i)(5-i). فك الأقواس: (x+yi)(2+i) = 15-3i+20i-4i^2 = 19+17i. ثم نقسم الطرفين على (2+i) ونضرب في المرافق للحصول على x+yi = 11+3i، إذن x=11 و y=3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نساوي العدد الأول بمرافق العدد الثاني (أو العكس) ثم نقوم بتبسيط المعادلة.",
+          "step_assistant_solution": "x+yi = [(5-i)/(2+i)] * (3+4i)",
+          "inputs": [
+            {
+              "input_id": "q31_step1",
+              "label": "ما هو ناتج ضرب (3+4i)(5-i)؟",
+              "correct_answer": "19+17i",
+              "options": [
+                "19+17i",
+                "15-4i",
+                "11+3i",
+                "15+20i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم توزيع الضرب (FOIL) وتذكر أن i^2 = -1.",
+            "related_topics": [
+              {
+                "topic_title": "ضرب الأعداد المركبة",
+                "explanation": "ضرب القوسين يتم كضرب المقادير الجبرية مع تعويض i^2 بـ -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج ضرب (3+4i)(5-i)؟ = ",
+                {
+                  "input_id": "q31_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

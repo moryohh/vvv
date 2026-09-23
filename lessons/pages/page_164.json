@@ -1,0 +1,166 @@
+{
+  "page_number": 164,
+  "page_id": 164,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "13",
+      "question_text": "جد معادلة القطع الناقص الذي مركزه نقطة الاصل واحدى بؤرتيه بؤرة القطع المكافئ x^2 = 24y والفرق بين طولي محوريه يساوي 4 وحدات طول",
+      "diagram": null,
+      "full_model_solution": "1. من معادلة القطع المكافئ x^2 = 24y، نقارنها بـ x^2 = 4py، إذن 4p = 24، p = 6. بؤرة المكافئ هي (0, 6)، وهي إحدى بؤرتي الناقص، أي c = 6 والقطع على محور الصادات (y-axis).\n2. الفرق بين طولي المحورين: 2a - 2b = 4، بالقسمة على 2 نحصل على a - b = 2 أو a = 2 + b.\n3. باستخدام علاقة c^2 = a^2 - b^2: نعوض بـ 36 = (2 + b)^2 - b^2. \n4. 36 = 4 + 4b + b^2 - b^2، إذن 32 = 4b، ومنها b = 8.\n5. بما أن a = 2 + b، إذن a = 10.\n6. المعادلة: x^2/b^2 + y^2/a^2 = 1، أي x^2/64 + y^2/100 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استخراج بؤرة القطع المكافئ لمعرفة قيمة c للقطع الناقص.",
+          "step_assistant_solution": "p = 6، البؤرة (0, 6)، إذا c = 6.",
+          "inputs": [
+            {
+              "input_id": "q13_step1",
+              "label": "ما هي قيمة c؟",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "24",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قارن المعادلة x^2 = 24y مع الصيغة القياسية x^2 = 4py.",
+            "related_topics": [
+              {
+                "topic_title": "القطع المكافئ",
+                "explanation": "الصيغة القياسية للقطع المكافئ الذي رأسه الأصل ومحوره الصادات هي x^2 = 4py."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "p = 6، البؤرة (0, 6)، إذا c = ",
+                {
+                  "input_id": "q13_step1"
+                },
+                "."
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام علاقة الفرق بين المحورين لإيجاد علاقة بين a و b.",
+          "step_assistant_solution": "a = b + 2",
+          "inputs": [
+            {
+              "input_id": "q13_step2",
+              "label": "عبر عن a بدلالة b من المعادلة 2a - 2b = 4",
+              "correct_answer": "a = b + 2",
+              "options": [
+                "a = b + 2",
+                "a = b - 2",
+                "a = 2b",
+                "b = 2a"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قسم طرفي المعادلة على 2 ثم انقل b للطرف الآخر.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q13_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "14",
+      "question_text": "جد معادلة القطع الناقص الذي احدى بؤرتيه هي بؤرة القطع المكافئ y^2 = -8x وطول محوره الكبير يساوي ثلاثة امثال طول محوره الصغير",
+      "diagram": null,
+      "full_model_solution": "1. من القطع المكافئ y^2 = -8x، 4p = 8، p = 2، البؤرة (-2, 0)، إذا c = 2.\n2. طول المحور الكبير 2a = 3(2b)، أي a = 3b.\n3. c^2 = a^2 - b^2، نعوض 4 = (3b)^2 - b^2.\n4. 4 = 9b^2 - b^2 = 8b^2، إذن b^2 = 4/8 = 1/2.\n5. a^2 = 9b^2 = 9 * (1/2) = 9/2.\n6. المعادلة: x^2/(9/2) + y^2/(1/2) = 1، أي 2x^2/9 + 2y^2 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيمة c من بؤرة المكافئ y^2 = -8x.",
+          "step_assistant_solution": "c = 2",
+          "inputs": [
+            {
+              "input_id": "q14_step1",
+              "label": "ما هي قيمة c؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "8",
+                "-2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "يتم إيجاد p من 4p = 8 في معادلة القطع المكافئ.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = ",
+                {
+                  "input_id": "q14_step1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "تطبيق شرط المحاور a = 3b مع قانون c^2 = a^2 - b^2.",
+          "step_assistant_solution": "8b^2 = 4",
+          "inputs": [
+            {
+              "input_id": "q14_step2",
+              "label": "ما هي قيمة b^2 بعد التعويض؟",
+              "correct_answer": "1/2",
+              "options": [
+                "1/2",
+                "2",
+                "4",
+                "1/4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عوض عن a^2 بـ 9b^2 في العلاقة c^2 = a^2 - b^2.",
+            "related_topics": [
+              {
+                "topic_title": "القطع الناقص",
+                "explanation": "العلاقة الأساسية هي c^2 = a^2 - b^2 حيث a هو نصف طول المحور الكبير."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة b^2 بعد التعويض؟ = ",
+                {
+                  "input_id": "q14_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-6",
+  "topic_title": "القطع الناقص: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

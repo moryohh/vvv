@@ -1,0 +1,131 @@
+{
+  "page_number": 100,
+  "page_id": 100,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "28",
+      "question_text": "جد الصيغة القطبية للعدد المركب (√3 + i)^2 ثم جد الجذور الخمسة له.",
+      "diagram": null,
+      "full_model_solution": "1. نجد الصيغة القطبية للعدد z = √3 + i: \n- r = sqrt((√3)^2 + 1^2) = 2. \n- cosθ = √3/2, sinθ = 1/2 => θ = π/6. \n- الصيغة القطبية للعدد هي: 2(cos π/6 + i sin π/6). \n2. نجد العدد مرفوعاً للقوة 2: \n- z^2 = 2^2(cos 2(π/6) + i sin 2(π/6)) = 4(cos π/3 + i sin π/3). \n3. نجد الجذور الخمسة للعدد z^2: \n- z^(2/5) = 4^(1/5) * [cos((π/3 + 2kπ)/5) + i sin((π/3 + 2kπ)/5)] حيث k = 0, 1, 2, 3, 4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل العدد المركب z = √3 + i إلى الصيغة القطبية (r, θ).",
+          "step_assistant_solution": "r = 2, θ = π/6",
+          "inputs": [
+            {
+              "input_id": "q28_step1_input1",
+              "label": "ما هي قيمة المقياس r والسعة θ للعدد z؟",
+              "correct_answer": "r=2, θ=π/6",
+              "options": [
+                "r=2, θ=π/6",
+                "r=4, θ=π/3",
+                "r=2, θ=π/3",
+                "r=√3, θ=π/6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون المقياس r = sqrt(x^2 + y^2) وقانون السعة tanθ = y/x.",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية",
+                "explanation": "تمثيل العدد المركب بدلالة المقياس r والزاوية θ."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة المقياس r والسعة θ للعدد z؟ = ",
+                {
+                  "input_id": "q28_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "رفع العدد للقوة 2 باستخدام مبرهنة ديموافر.",
+          "step_assistant_solution": "4(cos π/3 + i sin π/3)",
+          "inputs": [
+            {
+              "input_id": "q28_step2_input1",
+              "label": "ما هو ناتج (z)^2 بالصيغة القطبية؟",
+              "correct_answer": "4(cos π/3 + i sin π/3)",
+              "options": [
+                "4(cos π/3 + i sin π/3)",
+                "2(cos π/3 + i sin π/3)",
+                "4(cos π/6 + i sin π/6)",
+                "4(cos 2π/3 + i sin 2π/3)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عند رفع العدد المركب لقوة n، نرفع المقياس للقوة n ونضرب الزاوية في n.",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "تُستخدم لحساب قوى الجذور والأعداد المركبة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q28_step2_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "إيجاد الجذور الخمسة باستخدام تعميم مبرهنة ديموافر.",
+          "step_assistant_solution": "الزاوية تصبح (π/3 + 2kπ)/5 حيث k=0,1,2,3,4",
+          "inputs": [
+            {
+              "input_id": "q28_step3_input1",
+              "label": "ما هي الصيغة العامة للزاوية عند إيجاد الجذور الخمسة؟",
+              "correct_answer": "(π/3 + 2kπ)/5",
+              "options": [
+                "(π/3 + 2kπ)/5",
+                "(π/3 + kπ)/5",
+                "(π/3 + 2kπ)",
+                "π/(3*5) + 2kπ"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجذر النوني لعدد مركب هو r^(1/n) [cos((θ+2kπ)/n) + i sin((θ+2kπ)/n)].",
+            "related_topics": [
+              {
+                "topic_title": "جذور الأعداد المركبة",
+                "explanation": "طريقة استخراج الجذور النونية للعدد المركب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الزاوية تصبح ",
+                {
+                  "input_id": "q28_step3_input1"
+                },
+                " حيث k=0,1,2,3,4"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

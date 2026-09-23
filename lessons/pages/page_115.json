@@ -1,0 +1,176 @@
+{
+  "page_number": 115,
+  "page_id": 115,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "يمر بالنقطة (4- , 1-)، وبؤرته على محور الصادات ورأسه نقطة الأصل؟",
+      "diagram": null,
+      "full_model_solution": "بما أن البؤرة على محور الصادات، المعادلة هي x² = -4py. بالتعويض عن النقطة (1-, 4-): (-1)² = -4p(-4) => 1 = 16p => p = 1/16. المعادلة هي x² = -4(1/16)y => x² = -1/4 y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد الصيغة العامة للمعادلة بناءً على محور البؤرة (محور الصادات).",
+          "step_assistant_solution": "x² = -4py",
+          "inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "ما هي الصيغة العامة للقطع المكافئ الذي بؤرته على محور الصادات؟",
+              "correct_answer": "x² = -4py",
+              "options": [
+                "x² = 4py",
+                "y² = 4px",
+                "x² = -4py",
+                "y² = -4px"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن البؤرة على الصادات، التربيع يكون على x.",
+            "related_topics": [
+              {
+                "topic_title": "معادلات القطع المكافئ",
+                "explanation": "القطع الذي رأسه الأصل وبؤرته على الصادات معادلته x² = 4py."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "يمر بالنقطة (6 , 2-) ورأسه نقطة الأصل؟",
+      "diagram": null,
+      "full_model_solution": "يوجد احتمالان: 1) البؤرة على محور الصادات x² = -4py => ( -2)² = -4p(6) => 4 = -24p => p = -1/6 => x² = 2/3 y. 2) البؤرة على محور السينات y² = 4px => (6)² = 4p(-2) => 36 = -8p => p = -9/2 => y² = -18x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التحقق من احتمالية وقوع البؤرة على أحد المحورين عن طريق تعويض النقطة في المعادلتين القياسيتين.",
+          "step_assistant_solution": "يوجد احتمالان (سيني أو صادي)",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "كم احتمالاً يوجد للمعادلة؟",
+              "correct_answer": "احتمالان",
+              "options": [
+                "احتمال واحد",
+                "احتمالان",
+                "ثلاثة احتمالات",
+                "لا يوجد حل"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن اتجاه القطع غير محدد، نختبر المحورين.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "يوجد ",
+                {
+                  "input_id": "q3_step1_input1"
+                },
+                " (سيني أو صادي)"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال 6 - 1",
+      "question_text": "جد معادلة القطع المكافئ الذي يمر بالنقطتين (4 , 2) و (4 , 2-) ورأسه نقطة الأصل.",
+      "diagram": null,
+      "full_model_solution": "بما أن النقطتين متناظرتان حول محور السينات، المعادلة هي y² = 4px. نعوض النقطة (2, 4): (4)² = 4p(2) => 16 = 8p => p = 2. إذاً المعادلة هي y² = 8x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد المحور من خلال تناظر النقاط.",
+          "step_assistant_solution": "محور السينات",
+          "inputs": [
+            {
+              "input_id": "ex6_1_step1_input1",
+              "label": "ما هو المحور الذي يقع عليه القطع؟",
+              "correct_answer": "محور السينات",
+              "options": [
+                "محور السينات",
+                "محور الصادات",
+                "مستقيم مائل",
+                "لا يوجد محور"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إذا كان التغير في إحداثي y بينما x ثابت، التناظر حول محور x.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "ex6_1_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال 6 - 2",
+      "question_text": "جد معادلة القطع المكافئ الذي يمر بالنقطتين (√5 , 1) و (√5- , 1) ورأسه نقطة الأصل.",
+      "diagram": null,
+      "full_model_solution": "بما أن النقطتين متناظرتان حول محور السينات، المعادلة هي y² = 4px. نعوض النقطة (1, √5): (√5)² = 4p(1) => 5 = 4p => p = 5/4. إذاً المعادلة هي y² = 5x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استخدام المعادلة العامة للقطع المفتوح جهة اليمين (بما أن إحداثي x موجب).",
+          "step_assistant_solution": "y² = 4px",
+          "inputs": [
+            {
+              "input_id": "ex6_2_step1_input1",
+              "label": "ما قيمة p الناتجة؟",
+              "correct_answer": "1.25",
+              "options": [
+                "5",
+                "1.25",
+                "2.5",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "ربع قيمة الجذر التربيعي لـ √5 تحصل على 5.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما قيمة p الناتجة؟ = ",
+                {
+                  "input_id": "ex6_2_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-2",
+  "topic_title": "القطع المكافئ",
+  "interactive_status": "ready"
+}

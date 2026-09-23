@@ -1,0 +1,123 @@
+{
+  "page_number": 32,
+  "page_id": 32,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "24",
+      "question_text": "حل المعادلة التالية في مجموعة الأعداد المركبة: ( (1+5i)/(1+i) ) * x - ( (7-i)/(3+i) ) * y = -3/i",
+      "diagram": null,
+      "full_model_solution": "1. تبسيط المعاملات: ( (1+5i)/(1+i) ) * ((1-i)/(1-i)) = (1-i+5i+5)/2 = (6+4i)/2 = 3+2i. ( (7-i)/(3+i) ) * ((3-i)/(3-i)) = (21-7i-3i-1)/10 = (20-10i)/10 = 2-i. الطرف الأيمن: -3/i * (-i/-i) = 3i. \n2. تصبح المعادلة: (3+2i)x - (2-i)y = 3i. \n3. نفك الأقواس: 3x + 2ix - 2y + iy = 3i. \n4. نساوي الحقيقي بالحقيقي والخيالي بالخيالي: 3x - 2y = 0 (معادلة 1)، و 2x + y = 3 (معادلة 2). \n5. بحل المعادلتين آنياً: x=6/7 و y=9/7.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الكسور التي تحتوي على أعداد مركبة في المقام بضرب كل منها في مرافق المقام.",
+          "step_assistant_solution": "(3+2i)x - (2-i)y = 3i",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة معامل x بعد التبسيط؟",
+              "correct_answer": "3+2i",
+              "options": [
+                "3+2i",
+                "1+i",
+                "6+4i",
+                "3-2i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب البسط والمقام في مرافق المقام (تغيير إشارة الجزء التخيلي).",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "تتم القسمة بضرب البسط والمقام في مرافق المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(",
+                {
+                  "input_id": "step1_input1"
+                },
+                ")x - (2-i)y = 3i"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "تكوين نظام معادلات خطية من خلال فصل الأجزاء الحقيقية والتخيلية.",
+          "step_assistant_solution": "3x - 2y = 0 و 2x + y = 3",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي المعادلة الناتجة من الجزء الخيالي؟",
+              "correct_answer": "2x + y = 3",
+              "options": [
+                "2x + y = 3",
+                "3x - 2y = 0",
+                "3x + 2y = 3",
+                "2x - y = 3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجزء التخيلي هو كل حد يحتوي على i، نحذف i ونساوي المعاملات.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "3x - 2y = 0 و ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "حل نظام المعادلتين باستخدام طريقة الحذف أو التعويض.",
+          "step_assistant_solution": "x=6/7, y=9/7",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي قيمة x النهائية؟",
+              "correct_answer": "6/7",
+              "options": [
+                "6/7",
+                "7/6",
+                "3/7",
+                "9/7"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب المعادلة الثانية في 2 ثم اجمعها مع المعادلة الأولى للتخلص من y.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "x=",
+                {
+                  "input_id": "step3_input1"
+                },
+                ", y=9/7"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

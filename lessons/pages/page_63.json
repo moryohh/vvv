@@ -1,0 +1,110 @@
+{
+  "page_number": 63,
+  "page_id": 63,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "11",
+      "question_text": "كون المعادلة التربيعية التي جذراها: (4 + 5ω + 5ω²)^2 , (3 + 5ω + 4ω²)^6",
+      "diagram": null,
+      "full_model_solution": "الجذر الأول M = (4 + 5(ω + ω²))^2 = (4 - 5)^2 = 1. الجذر الثاني L = (3 + 5ω + 4ω²)^6 = (3 + 5ω + 4(-1-ω))^6 = (-1+ω)^6 = ((-1+ω)^2)^3 = (1 - 2ω + ω²)^3 = (-3ω)^3 = -27. مجموع الجذرين = 1 - 27 = -26. حاصل ضرب الجذرين = 1 * -27 = -27. المعادلة: x² - (مجموع الجذرين)x + (حاصل الضرب) = 0 أي x² + 26x - 27 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الجذر الأول M باستخدام خاصية 1 + ω + ω² = 0",
+          "step_assistant_solution": "1",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "قيمة الجذر الأول M هي:",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "-1",
+                "ω",
+                "0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم حقيقة أن ω + ω² = -1",
+            "related_topics": [
+              {
+                "topic_title": "خصائص الجذور التكعيبية للواحد الصحيح",
+                "explanation": "1 + ω + ω² = 0"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "12",
+      "question_text": "أثبت أن: ((3ω - 4ω³) / (3 - 4ω²))^3 = 1",
+      "diagram": null,
+      "full_model_solution": "L.H.S = ((3ω - 4(1)) / (3 - 4ω²))^3 = (ω(3 - 4ω²) / (3 - 4ω²))^3 = (ω)^3 = 1 = R.H.S",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط البسط باستخراج العامل المشترك ω وتوحيد المعاملات",
+          "step_assistant_solution": "ω³ = 1",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ناتج اختصار القوس هو:",
+              "correct_answer": "ω",
+              "options": [
+                "ω",
+                "ω²",
+                "1",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "لاحظ أن ω³ = 1 في البسط",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ناتج اختصار القوس هو: = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "13",
+      "question_text": "أثبت أن: ((aω - bω²) / (aw - b) - (c - dω) / (cω² - d))^4 = 9",
+      "diagram": null,
+      "full_model_solution": "بتبسيط الكسور، نجد القوس يساوي (ω² - ω)^4، وبما أن (ω² - ω)² = -3، فإن (-3)^2 = 9.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "14",
+      "question_text": "أثبت أن: (1/(1+i) - 1/(1-i))^100 = -1/8(1 - 1/ω² + 1/ω)^3",
+      "diagram": null,
+      "full_model_solution": "تبسيط الطرف الأيسر يعطي (-i)^100 = 1، وتبسيط الطرف الأيمن يعطي 1، إذن الطرفان متساويان.",
+      "interactive_steps": []
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-7",
+  "topic_title": "الجذور التكعيبية للواحد الصحيح",
+  "interactive_status": "ready"
+}

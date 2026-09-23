@@ -1,0 +1,103 @@
+{
+  "page_number": 98,
+  "page_id": 98,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "25",
+      "question_text": "باستخدام نتيجة مبرهنة ديموافر جد الجذور التكعيبية للعدد (27i).",
+      "diagram": null,
+      "full_model_solution": "العدد z = 27i يُكتب بالصيغة القطبية: z = 27(cos(π/2) + i sin(π/2)). باستخدام مبرهنة ديموافر للجذور التكعيبية (n=3): z^(1/3) = 27^(1/3) * [cos((π/2 + 2πk)/3) + i sin((π/2 + 2πk)/3)] حيث k = 0, 1, 2. عند k=0: z1 = 3(cos(π/6) + i sin(π/6)) = 3(√3/2 + i/2) = (3√3/2) + (3/2)i. عند k=1: z2 = 3(cos(5π/6) + i sin(5π/6)) = 3(-√3/2 + i/2) = (-3√3/2) + (3/2)i. عند k=2: z3 = 3(cos(9π/6) + i sin(9π/6)) = 3(cos(3π/2) + i sin(3π/2)) = 3(0 - i) = -3i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل العدد المركب 27i إلى الصيغة القطبية (r, θ).",
+          "step_assistant_solution": "r=27, θ=π/2",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة السعة θ للعدد 27i؟",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "π",
+                "0",
+                "3π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد التخيلي الصرف الموجب يقع على الجزء الموجب من محور الصادات.",
+            "related_topics": [
+              {
+                "topic_title": "العدد المركب",
+                "explanation": "كل عدد مركب zi يمثل بالنقطة (0, z) في المستوى المركب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r=27, θ=",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "26",
+      "question_text": "جد الجذور الأربعة للعدد (-16) باستخدام نتيجة مبرهنة ديموافر.",
+      "diagram": null,
+      "full_model_solution": "العدد z = -16 يكتب بالصيغة القطبية z = 16(cos(π) + i sin(π)). الجذور الأربعة تعطى بالعلاقة: z^(1/4) = 16^(1/4) * [cos((π + 2πk)/4) + i sin((π + 2πk)/4)] حيث k=0,1,2,3. الحلول هي: z1 = 2(cos(π/4) + i sin(π/4)) = √2 + √2i. z2 = 2(cos(3π/4) + i sin(3π/4)) = -√2 + √2i. z3 = 2(cos(5π/4) + i sin(5π/4)) = -√2 - √2i. z4 = 2(cos(7π/4) + i sin(7π/4)) = √2 - √2i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب الجذور باستخدام الصيغة العامة z^(1/n) = r^(1/n) * [cos((θ+2πk)/n) + i sin((θ+2πk)/n)].",
+          "step_assistant_solution": "القيم هي z = 2(cos((π+2kπ)/4) + i sin((π+2kπ)/4))",
+          "inputs": [
+            {
+              "input_id": "q26_step1_input1",
+              "label": "ما هو معامل الجذر الرابع للعدد 16؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "8",
+                "16"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجذر الرابع لـ 16 هو 2 لأن 2 أس 4 يساوي 16.",
+            "related_topics": [
+              {
+                "topic_title": "جذور الأعداد المركبة",
+                "explanation": "توزيع الزوايا يعتمد على قيمة k من 0 إلى n-1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "القيم هي z = ",
+                {
+                  "input_id": "q26_step1_input1"
+                },
+                "(cos((π+2kπ)/4) + i sin((π+2kπ)/4))"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

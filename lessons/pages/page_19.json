@@ -1,0 +1,103 @@
+{
+  "page_number": 19,
+  "page_id": 19,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "بسط المقدار التالي: ( (1 + i)^71 ) / ( (1 - i)^69 )",
+      "diagram": null,
+      "full_model_solution": "الحل: ( (1 + i)^69 * (1 + i)^2 ) / (1 - i)^69 = [ (1 + i) / (1 - i) ]^69 * (1 + i)^2. بما أن (1 + i)/(1 - i) = i، فإن المقدار يصبح i^69 * (1 + 2i + i^2). وبما أن i^69 = i^1 = i و i^2 = -1، يصبح الحل: i * (1 + 2i - 1) = i * (2i) = 2i^2 = -2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: تبسيط الأسس عن طريق تجزئة الأس الأكبر ليتناسب مع الأس الأصغر في المقام لتطبيق قانون القسمة للأعداد المركبة.",
+          "step_assistant_solution": "تجزئة الأس إلى (1+i)^69 * (1+i)^2",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "كيف نجزئ البسط (1+i)^71؟",
+              "correct_answer": "(1+i)^69 * (1+i)^2",
+              "options": [
+                "(1+i)^69 * (1+i)^2",
+                "(1+i)^70 * (1+i)",
+                "(1+i)^71 / (1+i)",
+                "(1+i)^68 * (1+i)^3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم خاصية الأسس: a^n * a^m = a^(n+m)",
+            "related_topics": [
+              {
+                "topic_title": "قوانين الأسس",
+                "explanation": "جمع وطرح الأسس للأعداد المتشابهة"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "تجزئة الأس إلى ",
+                {
+                  "input_id": "q4_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "1",
+      "question_text": "أثبت أن: 1 / (2 - i)^2 - 1 / (2 + i)^2 = 8i / 25",
+      "diagram": null,
+      "full_model_solution": "L.H.S = 1/(4 - 4i + i^2) - 1/(4 + 4i + i^2) = 1/(3 - 4i) - 1/(3 + 4i). بتوحيد المقامات: [(3 + 4i) - (3 - 4i)] / (3 - 4i)(3 + 4i) = (3 + 4i - 3 + 4i) / (9 + 16) = 8i / 25 = R.H.S",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: فك التربيع في المقام لكل من (2-i)^2 و (2+i)^2 مع مراعاة أن i^2 = -1.",
+          "step_assistant_solution": "المقامات تصبح (3 - 4i) و (3 + 4i)",
+          "inputs": [
+            {
+              "input_id": "q1_step1_input1",
+              "label": "ما هو ناتج فك المقدار (2 - i)^2؟",
+              "correct_answer": "3 - 4i",
+              "options": [
+                "3 - 4i",
+                "5 - 4i",
+                "3 + 4i",
+                "4 - 4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مربع الحدانية: (a-b)^2 = a^2 - 2ab + b^2",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية",
+                "explanation": "كيفية التعامل مع الأعداد المركبة عند تربيعها"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المقامات تصبح (",
+                {
+                  "input_id": "q1_step1_input1"
+                },
+                ") و (3 + 4i)"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-3",
+  "topic_title": "مرافق العدد المركب",
+  "interactive_status": "ready"
+}

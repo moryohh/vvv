@@ -1,0 +1,140 @@
+{
+  "page_number": 153,
+  "page_id": 153,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "المسافة بين البؤرتين (6) وحدات والعدد الثابت (10) والبؤرتان على محور السينات ومركزة نقطة الاصل. جد معادلة القطع الناقص؟",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم بياني يوضح قطع ناقص بؤرتاه F1 و F2 على محور السينات ونقطة P(x,y) تقع على محيطه",
+        "diagram_box": [
+          164,
+          483,
+          314,
+          856
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_153_q1_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "1. تحديد المعطيات: 2c = 6 إذن c = 3، والبؤرتان (3,0) و (-3,0). 2a = 10 إذن a = 5.\n2. استخدام تعريف القطع الناقص: PF1 + PF2 = 2a.\n3. التعويض: sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10.\n4. التبسيط بالتربيع المتكرر: بعد نقل أحد الجذرين للطرف الآخر والتربيع ثم التبسيط، نصل إلى المعادلة: x^2/25 + y^2/16 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ باستخراج قيمة c و a من المعطيات المباشرة للقطع الناقص.",
+          "step_assistant_solution": "c = 3, a = 5",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة a و c؟",
+              "correct_answer": "a=5, c=3",
+              "options": [
+                "a=5, c=3",
+                "a=10, c=6",
+                "a=3, c=5",
+                "a=25, c=9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المسافة بين البؤرتين هي 2c، والعدد الثابت هو 2a.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الناقص",
+                "explanation": "في القطع الناقص، 2a هو طول المحور الكبير و 2c هو المسافة بين البؤرتين."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة a و c؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "تطبيق قانون التعريف PF1 + PF2 = 2a والتعويض عن الإحداثيات.",
+          "step_assistant_solution": "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي المعادلة الناتجة من تعريف القطع الناقص؟",
+              "correct_answer": "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
+              "options": [
+                "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
+                "sqrt((x-3)^2 + y^2) - sqrt((x+3)^2 + y^2) = 10",
+                "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 6",
+                "sqrt((x^2) + y^2) = 10"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قانون المسافة بين نقطتين sqrt((x2-x1)^2 + (y2-y1)^2).",
+            "related_topics": [
+              {
+                "topic_title": "قانون المسافة",
+                "explanation": "المسافة بين نقطة (x,y) ونقطة معلومة (x1,y1) تعطى بالجذر التربيعي لفرق السينات مربعاً + فرق الصادات مربعاً."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "تبسيط المعادلة بعد التربيع للطرفين للوصول للصيغة القياسية للقطع.",
+          "step_assistant_solution": "x^2/25 + y^2/16 = 1",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي المعادلة النهائية للقطع؟",
+              "correct_answer": "x^2/25 + y^2/16 = 1",
+              "options": [
+                "x^2/25 + y^2/16 = 1",
+                "x^2/16 + y^2/25 = 1",
+                "x^2/10 + y^2/6 = 1",
+                "x^2/5 + y^2/3 = 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بعد التربيع مرتين، نحصل على 16x^2 + 25y^2 = 400، ثم نقسم على 400.",
+            "related_topics": [
+              {
+                "topic_title": "المعادلة القياسية للقطع الناقص",
+                "explanation": "الصورة x^2/a^2 + y^2/b^2 = 1 حيث a^2 > b^2 للقطع الذي بؤرتاه على محور السينات."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step3_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-6",
+  "topic_title": "القطع الناقص: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

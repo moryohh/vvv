@@ -1,0 +1,111 @@
+{
+  "page_number": 149,
+  "page_id": 149,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "ج",
+      "question_text": "إحدى بؤرتيه تبعد عن نهايتي محوره الكبير بالعددين 1, 5 على الترتيب.",
+      "diagram": {
+        "diagram_id": "q_c_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للقطع الناقص مع البؤر والرؤوس",
+        "diagram_box": [
+          170,
+          350,
+          460,
+          890
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_149_q_c_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "من تعريف القطع الناقص، مجموع المسافتين من البؤرة إلى نهايتي المحور الكبير يساوي 2a، والفرق بينهما يساوي 2c. لدينا: 2a = 1 + 5 = 6، إذاً a = 3. و 2c = 5 - 1 = 4، إذاً c = 2. ومن العلاقة c^2 = a^2 - b^2 نجد أن b^2 = 3^2 - 2^2 = 9 - 4 = 5، إذاً b = جذر 5. الحالتان هما القطع على محور السينات: x^2/9 + y^2/5 = 1 أو على محور الصادات: x^2/5 + y^2/9 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد قيم a و c باستخدام المسافات المعطاة من البؤرة إلى رأسي المحور الكبير.",
+          "step_assistant_solution": "a=3, c=2",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما قيمة a و c؟",
+              "correct_answer": "a=3, c=2",
+              "options": [
+                "a=3, c=2",
+                "a=6, c=4",
+                "a=5, c=1",
+                "a=4, c=3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مجموع البعدين يساوي طول المحور الكبير 2a والفرق بينهما يساوي البعد البؤري 2c.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الناقص",
+                "explanation": "المسافة بين البؤرة والرأسين تعتمد على العلاقة بين a و c."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "د",
+      "question_text": "الاختلاف المركزي = 1/2 وطول محوره الصغير (12) وحدة؟",
+      "diagram": null,
+      "full_model_solution": "بما أن الاختلاف المركزي e = c/a = 1/2، إذن a = 2c. طول المحور الصغير 2b = 12، إذن b = 6. من العلاقة c^2 = a^2 - b^2 نعوض القيم: c^2 = (2c)^2 - 6^2، إذن c^2 = 4c^2 - 36، مما يؤدي إلى 3c^2 = 36، أي c^2 = 12، ومنها c = 2 جذر 3. وبالتالي a^2 = 4(12) = 48.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخرج قيم b وربط c بـ a باستخدام قانون الاختلاف المركزي.",
+          "step_assistant_solution": "b=6, a=2c",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما قيمة b و العلاقة بين a و c؟",
+              "correct_answer": "b=6, a=2c",
+              "options": [
+                "b=6, a=2c",
+                "b=12, a=c",
+                "b=6, a=c/2",
+                "b=3, a=2c"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قانون الاختلاف المركزي e = c/a وطول المحور الصغير هو 2b.",
+            "related_topics": [
+              {
+                "topic_title": "الاختلاف المركزي",
+                "explanation": "هو نسبة البعد البؤري إلى طول المحور الكبير."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-6",
+  "topic_title": "القطع الناقص: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

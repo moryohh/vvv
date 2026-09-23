@@ -1,0 +1,178 @@
+{
+  "page_number": 116,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "جد معادلة القطع المكافئ الذي يمر بالنقطتين (2√2, 2) و (-2√2, -2) ورأسه نقطة الأصل.",
+      "diagram": null,
+      "full_model_solution": "بما أن النقطتين (2√2, 2) و (-2√2, -2) متناظرتان حول محور الصادات، فإن المعادلة هي x² = -4py. بالتعويض بالنقطة (-2√2, -2): (-2√2)² = -4p(-2) => 8 = 8p => p = 1. إذن المعادلة هي x² = 4y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد التناظر بين النقطتين لاختيار صيغة معادلة القطع المكافئ.",
+          "step_assistant_solution": "المعادلة من النوع x² = 4py",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input",
+              "label": "ما هي صيغة المعادلة المناسبة؟",
+              "correct_answer": "x² = 4py",
+              "options": [
+                "x² = 4py",
+                "y² = 4px",
+                "x² = -4py",
+                "y² = -4px"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن الإحداثي السيني يتغير بينما الصادي هو نفسه في التناظر، نتحقق من اتجاه القطع.",
+            "related_topics": [
+              {
+                "topic_title": "خواص التناظر",
+                "explanation": "التناظر حول محور الصادات يعني أن x² يتناسب مع y."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المعادلة من النوع ",
+                {
+                  "input_id": "q3_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7-1",
+      "question_text": "جد معادلة القطع المكافئ الذي دليله يمر بالنقطة (3, -5) ورأسه نقطة الأصل (علماً أن دليله يمر بالنقطة والمطلوب حالتان: بؤرته تنتمي لمحور السينات، وبؤرته تنتمي لمحور الصادات).",
+      "diagram": null,
+      "full_model_solution": "الحالة الأولى: بؤرته على السينات، الدليل x = 3، إذن p = 3، المعادلة y² = -4px => y² = -12x. الحالة الثانية: بؤرته على الصادات، الدليل y = -5، إذن p = 5، المعادلة x² = 4py => x² = 20y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيمة p من معادلة الدليل.",
+          "step_assistant_solution": "في الحالة الأولى p=3، وفي الحالة الثانية p=5.",
+          "inputs": [
+            {
+              "input_id": "q7_1_step1",
+              "label": "ما هي قيمة p للسينات؟",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "5",
+                "-5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الدليل x=a يعني أن البؤرة تقع على محور السينات ببعد a من الرأس.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "في الحالة الأولى p=",
+                {
+                  "input_id": "q7_1_step1"
+                },
+                "، وفي الحالة الثانية p=5."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7-2",
+      "question_text": "جد معادلة القطع المكافئ الذي دليله يمر بالنقطة (4, -1) ورأسه نقطة الأصل.",
+      "diagram": null,
+      "full_model_solution": "الحالة 1: الدليل x = 4 => p = 4، المعادلة y² = -4(4)x = -16x. الحالة 2: الدليل y = -1 => p = 1، المعادلة x² = 4(1)y = 4y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستنتج معادلة الدليل بناءً على إحداثيات النقطة المعطاة.",
+          "step_assistant_solution": "إما x=4 أو y=-1",
+          "inputs": [
+            {
+              "input_id": "q7_2_step1",
+              "label": "ما هي احتمالات الدليل؟",
+              "correct_answer": "x=4 أو y=-1",
+              "options": [
+                "x=4 فقط",
+                "y=-1 فقط",
+                "x=4 أو y=-1",
+                "x=-1 أو y=4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "النقطة (x,y) تعطي احتمالين للدليل إما مستقيم رأسي أو أفقي.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "إما ",
+                {
+                  "input_id": "q7_2_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7-3",
+      "question_text": "جد معادلة القطع المكافئ الذي دليله يمر بالنقطة (5, -4) وبؤرته تنتمي لمحور السينات ورأسه نقطة الأصل.",
+      "diagram": null,
+      "full_model_solution": "بما أن البؤرة على محور السينات، فإن الدليل يقطع محور السينات عند x = -5 (بما أن النقطة (5,-4)، الدليل هو x = -5). إذاً p = 5. المعادلة: y² = 4px => y² = 4(5)x => y² = 20x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد قيمة p من موقع الدليل.",
+          "step_assistant_solution": "p = 5",
+          "inputs": [
+            {
+              "input_id": "q7_3_step1",
+              "label": "قيمة p هي؟",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "-5",
+                "4",
+                "-4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "البؤرة على محور السينات تعني الدليل عمودي (x = constant).",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "p = ",
+                {
+                  "input_id": "q7_3_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 116,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-2",
+  "topic_title": "القطع المكافئ",
+  "interactive_status": "ready"
+}

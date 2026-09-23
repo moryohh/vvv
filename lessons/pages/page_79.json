@@ -1,0 +1,147 @@
+{
+  "page_number": 79,
+  "page_id": 79,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "5",
+      "question_text": "ضع العدد المركب z = 3 - 3√3i بالصيغة القطبية.",
+      "diagram": null,
+      "full_model_solution": "z = (3, -3√3). r = √[3² + (-3√3)²] = √[9 + 27] = √36 = 6. cosθ = 3/6 = 1/2, sinθ = -3√3/6 = -√3/2. الزاوية في الربع الرابع، إذن θ = 2π - π/3 = 5π/3. الصيغة القطبية: z = 6(cos(5π/3) + isin(5π/3)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحسب مقياس العدد المركب r باستخدام القانون r = √(x² + y²).",
+          "step_assistant_solution": "r = 6",
+          "inputs": [
+            {
+              "input_id": "q5_step1_input1",
+              "label": "قيمة المقياس r هي:",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "3",
+                "3√3",
+                "36"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "طبق نظرية فيثاغورس على الإحداثيات الحقيقية والتخيلية.",
+            "related_topics": [
+              {
+                "topic_title": "مقياس العدد المركب",
+                "explanation": "هو المسافة من نقطة الأصل في المستوى المركب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "q5_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "جد الصيغة القطبية للعدد المركب z = (1 + √3i)².",
+      "diagram": null,
+      "full_model_solution": "z = 1 + 2√3i + 3i² = 1 + 2√3i - 3 = -2 + 2√3i. r = √[(-2)² + (2√3)²] = √[4 + 12] = √16 = 4. cosθ = -2/4 = -1/2, sinθ = 2√3/4 = √3/2. الزاوية في الربع الثاني إذن θ = π - π/3 = 2π/3. الصيغة القطبية: z = 4(cos(2π/3) + isin(2π/3)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقوم بفك التربيع أولاً للوصول إلى الصيغة الجبرية x + yi.",
+          "step_assistant_solution": "z = -2 + 2√3i",
+          "inputs": [
+            {
+              "input_id": "q6_step1_input1",
+              "label": "بعد فك التربيع، العدد هو:",
+              "correct_answer": "-2 + 2√3i",
+              "options": [
+                "-2 + 2√3i",
+                "4 + 3i",
+                "1 + 3i",
+                "-2 - 2√3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون مربع حدانية: (a+b)² = a² + 2ab + b².",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية",
+                "explanation": "تذكر أن i² = -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "z = ",
+                {
+                  "input_id": "q6_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "ضع العدد z = 4 / (1 - √3i) بالصيغة القطبية.",
+      "diagram": null,
+      "full_model_solution": "نضرب البسط والمقام في مرافق المقام (1 + √3i): z = [4(1 + √3i)] / (1² + (√3)²) = [4(1 + √3i)] / 4 = 1 + √3i. المقياس r = √(1² + (√3)²) = 2. cosθ = 1/2, sinθ = √3/2. الزاوية θ = π/3. الصيغة القطبية: z = 2(cos(π/3) + isin(π/3)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول العدد من قسمة إلى صيغة جبرية بضرب البسط والمقام في مرافق المقام.",
+          "step_assistant_solution": "z = 1 + √3i",
+          "inputs": [
+            {
+              "input_id": "q7_step1_input1",
+              "label": "التبسيط للعدد المركب هو:",
+              "correct_answer": "1 + √3i",
+              "options": [
+                "1 + √3i",
+                "1 - √3i",
+                "4 + √3i",
+                "2 + √3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المرافق للعدد (a - bi) هو (a + bi).",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "يستخدم للتخلص من الجزء التخيلي في المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "z = ",
+                {
+                  "input_id": "q7_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-9",
+  "topic_title": "الصيغة القطبية للعدد المركب",
+  "interactive_status": "ready"
+}

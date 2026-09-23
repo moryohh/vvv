@@ -1,0 +1,103 @@
+{
+  "page_number": 89,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "8",
+      "question_text": "احسب باستخدام مبرهنة ديموافر: (1-i)^7",
+      "diagram": null,
+      "full_model_solution": "1. نجد المقياس r = sqrt(1^2 + (-1)^2) = sqrt(2). 2. نجد الزاوية حيث cos(θ) = 1/sqrt(2) و sin(θ) = -1/sqrt(2)، إذاً الزاوية تقع في الربع الرابع وهي 7π/4. 3. نطبق مبرهنة ديموافر: z^7 = [sqrt(2)]^7 * (cos(7 * 7π/4) + i sin(7 * 7π/4)). 4. z^7 = 8sqrt(2) * (cos(49π/4) + i sin(49π/4)). 5. بما أن 49π/4 تعادل π/4، فإن z^7 = 8sqrt(2) * (1/sqrt(2) + i/sqrt(2)) = 8 + 8i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد المقياس والسعة للعدد المركب z = 1-i.",
+          "step_assistant_solution": "r = sqrt(2), θ = 7π/4",
+          "inputs": [
+            {
+              "input_id": "q8_s1_i1",
+              "label": "ما هي قيمة المقياس r؟",
+              "correct_answer": "sqrt(2)",
+              "options": [
+                "sqrt(2)",
+                "2",
+                "1",
+                "sqrt(3)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون r = sqrt(x^2 + y^2).",
+            "related_topics": [
+              {
+                "topic_title": "المقياس والسعة",
+                "explanation": "المقياس هو طول المتجه الممثل للعدد المركب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "q8_s1_i1"
+                },
+                ", θ = 7π/4"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "9",
+      "question_text": "احسب باستخدام مبرهنة ديموافر: 1/(1-sqrt(3)i)^4",
+      "diagram": null,
+      "full_model_solution": "1. نكتب المقدار بالشكل (1-sqrt(3)i)^-4. 2. المقياس r = sqrt(1^2 + (-sqrt(3))^2) = 2. 3. السعة θ = 5π/3 (أو -π/3). 4. نطبق القانون z^n = r^n(cos nθ + i sin nθ). 5. المقدار يساوي 2^-4 * (cos(-4 * 5π/3) + i sin(-4 * 5π/3)) = 1/16 * (cos(-20π/3) + i sin(-20π/3)). 6. النتيجة النهائية -1/32 - (sqrt(3)/32)i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول الكسر إلى صيغة أسية سالبة لتسهيل التطبيق.",
+          "step_assistant_solution": "(1-sqrt(3)i)^-4",
+          "inputs": [
+            {
+              "input_id": "q9_s1_i1",
+              "label": "ما هو الأس الجديد بعد رفع المقام للبسط؟",
+              "correct_answer": "-4",
+              "options": [
+                "-4",
+                "4",
+                "1/4",
+                "-1/4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عند نقل المقدار من المقام للبسط نعكس إشارة الأس.",
+            "related_topics": [
+              {
+                "topic_title": "قوانين الأسس",
+                "explanation": "1/a^n = a^-n"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(1-sqrt(3)i)^",
+                {
+                  "input_id": "q9_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 89,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

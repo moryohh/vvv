@@ -1,0 +1,103 @@
+{
+  "page_number": 97,
+  "page_id": 97,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "24",
+      "question_text": "احسب الجذور التكعيبية للعدد المركب (-125). (2017 الدور 3)",
+      "diagram": null,
+      "full_model_solution": "لإيجاد الجذور التكعيبية لـ z = -125: نكتب العدد بالصيغة القطبية: z = 125(cos π + i sin π). باستخدام ديموافر z^(1/3) = 125^(1/3) [cos((π + 2kπ)/3) + i sin((π + 2kπ)/3)] حيث k = 0, 1, 2. عندما k=0، z1 = 5(cos(π/3) + i sin(π/3)) = 5(1/2 + i√3/2) = 5/2 + 5√3/2 i. عندما k=1، z2 = 5(cos(π) + i sin(π)) = 5(-1) = -5. عندما k=2، z3 = 5(cos(5π/3) + i sin(5π/3)) = 5(1/2 - i√3/2) = 5/2 - 5√3/2 i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل العدد الحقيقي السالب إلى صيغة قطبية باستخدام المقياس والقيمة الأساسية للسعة.",
+          "step_assistant_solution": "z = 125(cos π + i sin π)",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي القيمة الأساسية للسعة (θ) للعدد -125؟",
+              "correct_answer": "π",
+              "options": [
+                "0",
+                "π/2",
+                "π",
+                "3π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد السالب يقع على المحور الحقيقي السالب، لذا زاويته هي π.",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية",
+                "explanation": "أي عدد مركب z = a + bi يمكن كتابته على شكل r(cosθ + i sinθ)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "z = 125(cos π + i sin ",
+                {
+                  "input_id": "step1_input1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "23",
+      "question_text": "باستخدام نتيجة مبرهنة ديموافر، جد الجذور التكعيبية للعدد (64i). (2018 تمهيدي)",
+      "diagram": null,
+      "full_model_solution": "نكتب z = 64i بالصيغة القطبية: z = 64(cos(π/2) + i sin(π/2)). الجذور هي z^(1/3) = 4 [cos((π/2 + 2kπ)/3) + i sin((π/2 + 2kπ)/3)]. k=0: z1 = 4(cos(π/6) + i sin(π/6)) = 2√3 + 2i. k=1: z2 = 4(cos(5π/6) + i sin(5π/6)) = -2√3 + 2i. k=2: z3 = 4(cos(9π/6) + i sin(9π/6)) = 4(cos(3π/2) + i sin(3π/2)) = -4i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "إيجاد المقياس r وسعة العدد المركب 64i.",
+          "step_assistant_solution": "r = 64, θ = π/2",
+          "inputs": [
+            {
+              "input_id": "step1_input2",
+              "label": "ما هي سعة العدد المركب 64i؟",
+              "correct_answer": "π/2",
+              "options": [
+                "0",
+                "π/2",
+                "π",
+                "3π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد 64i يقع على الجزء الموجب من المحور التخيلي.",
+            "related_topics": [
+              {
+                "topic_title": "السعة الأساسية",
+                "explanation": "زاوية العدد المركب في المستوى الإحداثي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = 64, θ = ",
+                {
+                  "input_id": "step1_input2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

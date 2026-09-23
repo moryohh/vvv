@@ -1,0 +1,124 @@
+{
+  "page_number": 240,
+  "page_id": 240,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "برهن على أنه إذا رسم مائلان مختلفان في الطول من نقطة لا تنتمي إلى مستوى معلوم فإن أطولهما تكون زاوية ميله على المستوى أصغر من زاوية ميل الآخر عليه.",
+      "diagram": {
+        "diagram_id": "q4_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم هندسي يوضح نقطة خارج مستوى ومائلين مختلفين في الطول وزوايا ميلهما.",
+        "diagram_box": [
+          152,
+          93,
+          313,
+          891
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_240_q4_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "المعطيات: AD عمود، AB و AC مائلان بحيث AB > AC. المطلوب: إثبات أن زاوية ميل AB أصغر من زاوية ميل AC. البرهان: في المثلثات القائمة المتكونة، نستخدم علاقة التباين بين طولي المائلين ومسقطيهما. بما أن AB > AC، فإن 1/AB < 1/AC. بالضرب في طول العمود المشترك AD، نجد أن sin(1) < sin(2)، ومنه بما أن الزوايا حادة، فإن الزاوية 1 أصغر من الزاوية 2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد المثلثات القائمة التي تظهر زوايا الميل.",
+          "step_assistant_solution": "المثلثات القائمة هي المثلثات المتكونة من العمود الساقط على المستوى والمائلين.",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هي النسبة المثلثية المستخدمة لتمثيل زاوية الميل؟",
+              "correct_answer": "جيب الزاوية (sin)",
+              "options": [
+                "جيب الزاوية (sin)",
+                "جيب تمام الزاوية (cos)",
+                "ظل الزاوية (tan)",
+                "مقلوب الجيب (csc)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "زاوية الميل هي الزاوية المحصورة بين المائل ومسقطه على المستوى.",
+            "related_topics": [
+              {
+                "topic_title": "المثلث القائم الزاوية",
+                "explanation": "في المثلث القائم، جيب الزاوية يساوي المقابل على الوتر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي النسبة المثلثية المستخدمة لتمثيل زاوية الميل؟ = ",
+                {
+                  "input_id": "q4_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "برهن على أنه إذا رسم مائلان من نقطة ما إلى مستوى ما فأصغرهما ميلا هو الأطول.",
+      "diagram": {
+        "diagram_id": "q5_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي لنقطة خارج مستوى مع مائلين مختلفين.",
+        "diagram_box": [
+          870,
+          313,
+          990,
+          686
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_240_q5_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "هذا السؤال هو عكس المبرهنة السابقة. إذا كان للمائلين زوايا ميل مختلفة، فإن المائل الذي يصنع الزاوية الأصغر مع المستوى يكون مسقطه أطول وبالتالي طول المائل نفسه يكون أكبر.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "ربط طول المائل بزاوية ميله.",
+          "step_assistant_solution": "كلما قلّت زاوية الميل، ابتعدت النقطة عن مسقط العمود، مما يؤدي لزيادة طول المائل.",
+          "inputs": [
+            {
+              "input_id": "q5_step1_input1",
+              "label": "العلاقة بين زاوية الميل وطول المائل هي:",
+              "correct_answer": "علاقة عكسية",
+              "options": [
+                "علاقة عكسية",
+                "علاقة طردية",
+                "لا توجد علاقة",
+                "متساوية دائماً"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "فكر في المثلث القائم؛ عندما تثبت الارتفاع وتزيد طول الوتر، ماذا يحدث للزاوية؟",
+            "related_topics": [
+              {
+                "topic_title": "التباين في المثلث",
+                "explanation": "الزاوية الكبرى تقابل الضلع الأكبر والعكس صحيح."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "العلاقة بين زاوية الميل وطول المائل هي: = ",
+                {
+                  "input_id": "q5_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-2",
+  "topic_title": "الإسقاط العمودي على مستوٍ",
+  "interactive_status": "ready"
+}

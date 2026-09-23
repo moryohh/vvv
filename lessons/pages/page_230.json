@@ -1,0 +1,106 @@
+{
+  "page_number": 230,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "برهن أن المستوي العمودي على أحد مستويين متوازيين يكون عمودياً على الآخر أيضاً.",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "شكل توضيحي لمستويين متوازيين (X) و (Y) ومستوي ثالث (Z) يقطعهم بشكل عمودي، مع ظهور مستقيم تقاطع AB.",
+        "diagram_box": [
+          125,
+          115,
+          325,
+          535
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_230_q3_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "المعطيات: (X) // (Y) ، (Z) ⊥ (X). المطلوب: إثبات (Z) ⊥ (Y). البرهان: ليكن AB = (X) ∩ (Z). نختار نقطة C تنتمي للمستوي (Z)، ونرسم المستقيم CD بحيث يكون CD ⊥ AB. بما أن (Z) ⊥ (X) فإن CD ⊥ (X). وبما أن (X) // (Y) فإن CD ⊥ (Y). وبما أن المستقيم العمودي على أحد مستويين متوازيين يكون عمودياً على الآخر، وبما أن CD محتواة في (Z) وتعامد (Y)، نستنتج أن (Z) ⊥ (Y).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بتحديد مستقيم التقاطع بين المستويين المتعامدين (X) و (Z) لتسهيل إسقاط الأعمدة عليه.",
+          "step_assistant_solution": "ليكن مستقيم التقاطع هو AB حيث AB = X ∩ Z.",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هو مستقيم تقاطع المستويين X و Z في المعطيات؟",
+              "correct_answer": "AB",
+              "options": [
+                "AB",
+                "CD",
+                "XY",
+                "XZ"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عندما يتقاطع مستويان، يكون ناتج التقاطع دائماً مستقيماً.",
+            "related_topics": [
+              {
+                "topic_title": "مبادئ الهندسة الفراغية",
+                "explanation": "تقاطع المستويات ينتج عنه مستقيمات في الفضاء."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ليكن مستقيم التقاطع هو AB حيث ",
+                {
+                  "input_id": "q3_step1_input1"
+                },
+                " = X ∩ Z."
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم خاصية العمود المرسوم من نقطة في مستوي إلى مستقيم التقاطع.",
+          "step_assistant_solution": "رسم المستقيم CD بحيث يكون CD ⊥ AB و C تنتمي لـ Z.",
+          "inputs": [
+            {
+              "input_id": "q3_step2_input1",
+              "label": "لماذا نرسم CD ⊥ AB؟",
+              "correct_answer": "لإثبات تعامد المستويات باستخدام مبرهنة العمود",
+              "options": [
+                "لإثبات تعامد المستويات باستخدام مبرهنة العمود",
+                "لأن AB يوازي CD",
+                "لجعل الأشكال متساوية",
+                "لا يوجد سبب هندسي"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الهدف هو إيجاد مستقيم داخل (Z) يعامد (Y) مباشرةً.",
+            "related_topics": [
+              {
+                "topic_title": "تعامد مستقيم ومستوي",
+                "explanation": "المستقيم يكون عمودياً على المستوي إذا كان عمودياً على مستقيمين متقاطعين فيه."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "لماذا نرسم CD ⊥ AB؟ = ",
+                {
+                  "input_id": "q3_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 230,
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

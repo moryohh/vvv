@@ -1,0 +1,149 @@
+{
+  "page_number": 136,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "جد معادلة القطع الناقص الذي مركزه نقطة الاصل والمسافة بين البؤرتين = 8 وحدات والعدد الثابت = 12 وحدة البؤرتان على محور الصادات؟",
+      "diagram": null,
+      "full_model_solution": "المعطيات: 2c = 8 => c = 4، 2a = 12 => a = 6. من العلاقة c^2 = a^2 - b^2 نجد: 16 = 36 - b^2 => b^2 = 20. بما أن البؤرتان على محور الصادات، المعادلة هي: x^2/20 + y^2/36 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخرج قيمتي a و c من المعطيات المباشرة (المسافة بين البؤرتين والعدد الثابت).",
+          "step_assistant_solution": "c = 4, a = 6",
+          "inputs": [
+            {
+              "input_id": "q2_step1",
+              "label": "ما هي قيم a و c؟",
+              "correct_answer": "c=4, a=6",
+              "options": [
+                "c=4, a=6",
+                "c=8, a=12",
+                "c=2, a=3",
+                "c=16, a=36"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن المسافة بين البؤرتين هي 2c والعدد الثابت هو 2a.",
+            "related_topics": [
+              {
+                "topic_title": "تعريف القطع الناقص",
+                "explanation": "العدد الثابت للقطع الناقص يساوي دائماً طول محوره الكبير (2a)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيم a و c؟ = ",
+                {
+                  "input_id": "q2_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد معادلة القطع الناقص الذي مركزه نقطة الاصل وينطبق محوره على المحورين الاحداثيين ويقطع من محور السينات جزءاً طوله 8 وحدات ومن محور الصادات جزءاً طوله 12 وحدة. ثم جد المسافة بين البؤرتين ومساحته ومحيطه؟",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم بياني لقطع ناقص مركزه نقطة الأصل يقطع محور السينات عند 4 و-4 ومحور الصادات عند 6 و-6.",
+        "diagram_box": [
+          390,
+          750,
+          600,
+          950
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_136_q3_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "بما أن الجزء المقطوع من الصادات أكبر من السينات، فإن المحور الكبير على الصادات. 2a=12 => a=6, 2b=8 => b=4. المعادلة: x^2/16 + y^2/36 = 1. c^2 = 36-16=20 => c=2√5. المسافة بين البؤرتين 2c=4√5. المساحة = abπ = 24π. المحيط = 2π * sqrt((a^2+b^2)/2) = 2π√26.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد اتجاه القطع وقيم a و b.",
+          "step_assistant_solution": "a=6, b=4, المحور الكبير على الصادات.",
+          "inputs": [
+            {
+              "input_id": "q3_step1",
+              "label": "أي محور هو المحور الكبير؟",
+              "correct_answer": "محور الصادات",
+              "options": [
+                "محور الصادات",
+                "محور السينات",
+                "كلاهما",
+                "غير محدد"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجزء الأكبر يحدد موقع المحور الكبير.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "أي محور هو المحور الكبير؟ = ",
+                {
+                  "input_id": "q3_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "لتكن 36 = 4y^2 + Kx^2 معادلة قطع ناقص مركزه نقطة الاصل واحدى بؤرتيه (√3, 0)، جد قيمة K؟",
+      "diagram": null,
+      "full_model_solution": "القسمة على 36: x^2/(36/K) + y^2/9 = 1. البؤرة (√3, 0) تعني c=√3 => c^2=3. وبما أن البؤرة على السينات، إذن a^2 = 36/K و b^2 = 9. من c^2 = a^2 - b^2: 3 = 36/K - 9 => 12 = 36/K => K=3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نضع المعادلة بالصيغة القياسية لتحديد a^2 و b^2 بدلالة K.",
+          "step_assistant_solution": "x^2/(36/K) + y^2/9 = 1",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "كم تساوي قيمة b^2؟",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "4",
+                "36",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بعد القسمة على 36، المعامل يصبح مقاماً.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^2/(36/K) + y^2/",
+                {
+                  "input_id": "q4_step1"
+                },
+                " = 1"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 136,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-4",
+  "topic_title": "القطع الناقص",
+  "interactive_status": "ready"
+}

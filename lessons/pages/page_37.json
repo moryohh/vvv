@@ -1,0 +1,173 @@
+{
+  "page_number": 37,
+  "page_id": 37,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "جد الجذور التربيعية للعدد المركب: -25",
+      "diagram": null,
+      "full_model_solution": "نفرض أن الجذر التربيعي هو c، حيث c^2 = -25. إذن c = ±√(-25) = ±√(25 * -1) = ±5i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول العملية إلى معادلة تربيعية c^2 = a.",
+          "step_assistant_solution": "c^2 = -25",
+          "inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هي المعادلة؟",
+              "correct_answer": "c^2 = -25",
+              "options": [
+                "c^2 = -25",
+                "c = -25",
+                "c^2 = 25",
+                "c = 25i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم تعريف الجذر التربيعي c = √a.",
+            "related_topics": [
+              {
+                "topic_title": "الأعداد المركبة",
+                "explanation": "مربع العدد التخيلي i^2 = -1"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q1_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "جد الجذور التربيعية للعدد المركب: -16",
+      "diagram": null,
+      "full_model_solution": "نفرض c^2 = -16، إذن c = ±√(-16) = ±√(16 * -1) = ±4i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استخراج جذر العدد السالب باستخدام i.",
+          "step_assistant_solution": "±4i",
+          "inputs": [
+            {
+              "input_id": "q2_s1",
+              "label": "ناتج الجذر هو:",
+              "correct_answer": "±4i",
+              "options": [
+                "±4i",
+                "±16i",
+                "±4",
+                "±8i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "√(-a) = i√a",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد الجذور التربيعية للعدد المركب: -17",
+      "diagram": null,
+      "full_model_solution": "نفرض c^2 = -17، إذن c = ±√(-17) = ±i√17",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب الجذر التربيعي لعدد أولي سالب.",
+          "step_assistant_solution": "±i√17",
+          "inputs": [
+            {
+              "input_id": "q3_s1",
+              "label": "ناتج الجذر هو:",
+              "correct_answer": "±i√17",
+              "options": [
+                "±i√17",
+                "±√17",
+                "±17i",
+                "±i√17i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد 17 لا يخرج من تحت الجذر كعدد صحيح.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "جد الجذور التربيعية للعدد المركب: -3",
+      "diagram": null,
+      "full_model_solution": "نفرض c^2 = -3، إذن c = ±√(-3) = ±i√3",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب الجذر التربيعي لعدد سالب بسيط.",
+          "step_assistant_solution": "±i√3",
+          "inputs": [
+            {
+              "input_id": "q4_s1",
+              "label": "ناتج الجذر هو:",
+              "correct_answer": "±i√3",
+              "options": [
+                "±i√3",
+                "±3i",
+                "±√3",
+                "±i√3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن √(-1) = i",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-5",
+  "topic_title": "الجذور التربيعية للعدد المركب",
+  "interactive_status": "ready"
+}

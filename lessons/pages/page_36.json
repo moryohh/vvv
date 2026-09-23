@@ -1,0 +1,100 @@
+{
+  "page_number": 36,
+  "page_id": 36,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "32",
+      "question_text": "جد قيمة x, y الحقيقية اذا علمت ان (2+i)/(3-i) و (5)/(x+yi) مترافقان (2012 الدور الأول)",
+      "diagram": null,
+      "full_model_solution": "بما أن العددين مترافقان، فإن C = conjugate(C'). أي أن (x+yi)/(5) = conjugate((2+i)/(3-i)). بعد تبسيط الطرف الأيمن بضربه في مرافق المقام (3+i)، نحصل على: (2+i)/(3-i) * (3+i)/(3+i) = (6+2i+3i-1)/10 = (5+5i)/10 = 0.5 + 0.5i. وبمساواته بـ (x+yi)/5 نجد أن x=5 و y=5.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بإيجاد مرافق العدد المركب المعطى (2+i)/(3-i).",
+          "step_assistant_solution": "(2-i)/(3+i)",
+          "inputs": [
+            {
+              "input_id": "s32_1",
+              "label": "ما هو مرافق الكسر (2+i)/(3-i)؟",
+              "correct_answer": "(2-i)/(3+i)",
+              "options": [
+                "(2-i)/(3+i)",
+                "(2+i)/(3-i)",
+                "(2-i)/(3-i)",
+                "(2+i)/(3+i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مرافق العدد المركب a+bi هو a-bi. نغير إشارة الجزء التخيلي فقط.",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "المرافق يعني تغيير إشارة الجزء التخيلي للعدد."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "s32_1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "33",
+      "question_text": "جد قيمتي x, y الحقيقيتين اذا علمت ان (-2)/(x+yi) و (1-5i)/(3-2i) مترافقان (2020 الدور الأول)",
+      "diagram": null,
+      "full_model_solution": "بما أن العددين مترافقان، فإن (x+yi)/(-2) = conjugate((1-5i)/(3-2i)). بتبسيط الطرف الأيمن: conjugate((1-5i)/(3-2i)) = (1+5i)/(3+2i). بضرب البسط والمقام في مرافق المقام (3-2i)، نحصل على: ((1+5i)(3-2i))/((3+2i)(3-2i)) = (3-2i+15i+10)/(9+4) = (13+13i)/13 = 1+i. إذن (x+yi) = -2(1+i) = -2-2i. وبالتساوي نجد x=-2 و y=-2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد علاقة الترافق بين العددين المعطى والمجهول.",
+          "step_assistant_solution": "(x+yi)/(-2) = (1+5i)/(3+2i)",
+          "inputs": [
+            {
+              "input_id": "s33_1",
+              "label": "ما هي المعادلة الأساسية للحل؟",
+              "correct_answer": "(x+yi)/(-2) = (1+5i)/(3+2i)",
+              "options": [
+                "(x+yi)/(-2) = (1+5i)/(3+2i)",
+                "(x+yi)/(-2) = (1-5i)/(3-2i)",
+                "(x+yi)/(-2) = (3-2i)/(1-5i)",
+                "(x+yi)/(-2) = (3+2i)/(1+5i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "خاصية الترافق: إذا كان A و B مترافقين، فإن A = conjugate(B).",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "نضرب البسط والمقام في مرافق المقام للتخلص من i في المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "s33_1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

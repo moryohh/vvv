@@ -1,0 +1,102 @@
+{
+  "page_number": 34,
+  "page_id": 34,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "28",
+      "question_text": "إذا كان (3+i)/(2-i) و 6/(x+yi) مترافقان، جد قيمة x و y الحقيقية.",
+      "diagram": null,
+      "full_model_solution": "بما أن العددين مترافقان، فإن C1 = conjugate(C2). أي (3+i)/(2-i) = 6/(x-yi). بالضرب التبادلي: (x-yi)(3+i) = 6(2-i) -> (x-yi) = 12-6i / (3+i). بضرب البسط والمقام بمرافق المقام (3-i): (x-yi) = (12-6i)(3-i) / (9+1) = (36-12i-18i+6i^2)/10 = (30-30i)/10 = 3-3i. إذن x=3 و y=3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نستخدم تعريف المرافق، بما أن العددين مترافقان، نساوي العدد الأول بمرافق العدد الثاني.",
+          "step_assistant_solution": "(x-yi) = 6(2-i) / (3+i)",
+          "inputs": [
+            {
+              "input_id": "q28_s1",
+              "label": "ما هي المعادلة بعد الضرب التبادلي؟",
+              "correct_answer": "(x-yi)(3+i) = 6(2-i)",
+              "options": [
+                "(x-yi)(3+i) = 6(2-i)",
+                "(x+yi)(3+i) = 6(2-i)",
+                "(x-yi) = 6(3+i)/(2-i)",
+                "(x-yi) = 6/(3+i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "خاصية المرافقة: إذا كان Z1 مرافق Z2 فإن Z1 = Z2*",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "مرافق العدد a+bi هو a-bi"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي المعادلة بعد الضرب التبادلي؟ = ",
+                {
+                  "input_id": "q28_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "29",
+      "question_text": "إذا كان (x-11i)/(x+yi) و (7+i)/(1-i) مترافقان، جد قيمة x و y الحقيقية.",
+      "diagram": null,
+      "full_model_solution": "بما أنهما مترافقان: (x-11i)/(x+yi) = (7-i)/(1+i). بالضرب التبادلي: (x-11i)(1+i) = (x+yi)(7-i). بفك الأقواس: x+xi-11i-11i^2 = 7x-xi+7yi-yi^2. نبسط المعادلة لتصبح: (x+11) + (x-11)i = (7x+y) + (7y-x)i. مساواة الحقيقي بالحقيقي (x+11 = 7x+y) والتخيلي بالتخيلي (x-11 = 7y-x). بعد حل نظام المعادلات، نجد أن x=2 و y=-1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بمساواة الكسر الأول بمرافق الكسر الثاني للتخلص من الرموز في المقام.",
+          "step_assistant_solution": "(x-11i)/(x+yi) = (7-i)/(1+i)",
+          "inputs": [
+            {
+              "input_id": "q29_s1",
+              "label": "ما هو مرافق (7+i)/(1-i)؟",
+              "correct_answer": "(7-i)/(1+i)",
+              "options": [
+                "(7-i)/(1+i)",
+                "(7+i)/(1-i)",
+                "(7-i)/(1-i)",
+                "(7+i)/(1+i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن مرافق القسمة هو قسمة المرافقات.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "تبسيط الكسور يتطلب الضرب بمرافق المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(x-11i)/(x+yi) = ",
+                {
+                  "input_id": "q29_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

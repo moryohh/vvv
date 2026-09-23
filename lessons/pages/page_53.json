@@ -1,0 +1,138 @@
+{
+  "page_number": 53,
+  "page_id": 53,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "12",
+      "question_text": "اذا كان (1+i) هو احد جذري المعادلة التربيعية x^2 - ax + b = 0 فما قيمة a, b الحقيقيتان؟",
+      "diagram": null,
+      "full_model_solution": "بما أن المعاملات حقيقية، فإن الجذرين مترافقان. L = 1+i و M = 1-i. مجموع الجذرين M+L = (1+i) + (1-i) = 2. من المعادلة المجموع هو -(-a)/1 = a. إذن a=2. حاصل ضرب الجذرين M*L = (1+i)(1-i) = 1^2 + 1^2 = 2. من المعادلة حاصل الضرب هو b/1 = b. إذن b=2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم خاصية المرافق بما أن المعاملات حقيقية لإيجاد الجذر الثاني.",
+          "step_assistant_solution": "الجذر الثاني هو 1-i",
+          "inputs": [
+            {
+              "input_id": "q12_s1_i1",
+              "label": "ما هو الجذر الثاني؟",
+              "correct_answer": "1-i",
+              "options": [
+                "1-i",
+                "1+i",
+                "-1-i",
+                "i-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إذا كانت المعاملات حقيقية، كل جذر مركب له مرافق هو جذر أيضاً.",
+            "related_topics": [
+              {
+                "topic_title": "العددان المترافقان",
+                "explanation": "تغيير إشارة الجزء التخيلي فقط."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الجذر الثاني هو ",
+                {
+                  "input_id": "q12_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "13",
+      "question_text": "اذا كان (2-4i) هو احد جذري المعادلة التربيعية 2x^2 - x - bx + c - 6 = 0 معاملاتها حقيقية جد قيمة b, c ∈ R",
+      "diagram": null,
+      "full_model_solution": "المعادلة هي 2x^2 - (1+b)x + (c-6) = 0. الجذران هما 2-4i و 2+4i. مجموع الجذرين: (2-4i)+(2+4i) = 4. ومن القانون (1+b)/2. إذن (1+b)/2 = 4 -> 1+b=8 -> b=7. حاصل ضرب الجذرين: (2-4i)(2+4i) = 4 + 16 = 20. ومن القانون (c-6)/2. إذن (c-6)/2 = 20 -> c-6=40 -> c=46.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد قيم المعاملات من المعادلة القياسية a, b, c.",
+          "step_assistant_solution": "a=2, مجموع المعامل المضروب بـ x هو -(1+b)",
+          "inputs": [
+            {
+              "input_id": "q13_s1_i1",
+              "label": "قيمة a هي:",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "-1",
+                "0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قارن المعادلة المعطاة مع الصورة العامة ax^2+bx+c=0.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "a=",
+                {
+                  "input_id": "q13_s1_i1"
+                },
+                ", مجموع المعامل المضروب بـ x هو -(1+b)"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "14",
+      "question_text": "اذا كان احد جذري المعادلة التربيعية x^2 + x - bx + c + 8 = 0 هو (1-3i) جد قيمة b, c ∈ R",
+      "diagram": null,
+      "full_model_solution": "المعادلة هي x^2 + (1-b)x + (c+8) = 0. الجذران هما 1-3i و 1+3i. مجموع الجذرين = 2. ومن القانون -(1-b) = -1+b. إذن b-1 = 2 -> b=3. حاصل الضرب = (1-3i)(1+3i) = 1+9 = 10. ومن القانون c+8 = 10 -> c=2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نجمع الجذرين لمطابقتها مع معامل x.",
+          "step_assistant_solution": "مجموع الجذرين هو 2",
+          "inputs": [
+            {
+              "input_id": "q14_s1_i1",
+              "label": "ما ناتج جمع الجذرين؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "0",
+                "-2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم مجموع الجذرين يساوي سالب معامل x مقسوماً على معامل x^2.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "مجموع الجذرين هو ",
+                {
+                  "input_id": "q14_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

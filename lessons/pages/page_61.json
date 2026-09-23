@@ -1,0 +1,145 @@
+{
+  "page_number": 61,
+  "page_id": 61,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "أثبت أن: ω^7 + ω^5 + 1 = 0",
+      "diagram": null,
+      "full_model_solution": "بما أن ω^3 = 1، إذن ω^7 = (ω^3)^2 * ω = 1 * ω = ω، و ω^5 = (ω^3) * ω^2 = ω^2. المعادلة تصبح: ω + ω^2 + 1، وبما أن مجموع الجذور التكعيبية للواحد الصحيح يساوي صفراً، فإن ω + ω^2 + 1 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الأسس الكبيرة باستخدام الخاصية ω^3 = 1.",
+          "step_assistant_solution": "ω^7 يصبح ω و ω^5 يصبح ω^2",
+          "inputs": [],
+          "hint": {
+            "step_hint_text": "استخدم حقيقة أن ω^3 = 1 لتقليل الأسس.",
+            "related_topics": [
+              {
+                "topic_title": "قوى اوميغا",
+                "explanation": "قسمة الأس على 3 وأخذ الباقي كأس جديد لـ ω."
+              }
+            ]
+          },
+          "source_inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "ما هو ناتج ω^7 + ω^5 + 1؟",
+              "correct_answer": "ω + ω^2 + 1",
+              "options": [
+                "ω^2 + ω + 1",
+                "ω^3 + ω^2 + 1",
+                "ω^4 + ω + 1",
+                "0"
+              ]
+            }
+          ],
+          "interactive_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "أثبت أن: (5 + 3ω + 3ω^2)^2 = 4",
+      "diagram": null,
+      "full_model_solution": "الطرف الأيسر: (5 + 3(ω + ω^2))^2. بما أن 1 + ω + ω^2 = 0 فإن ω + ω^2 = -1. إذن: (5 + 3(-1))^2 = (5-3)^2 = 2^2 = 4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استخراج العامل المشترك (3) من الحدين اللذين يحتويان على ω.",
+          "step_assistant_solution": "5 + 3(ω + ω^2)",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما قيمة المقدار داخل القوس بعد استخراج العامل المشترك؟",
+              "correct_answer": "5 + 3(ω + ω^2)",
+              "options": [
+                "5 + 3ω + 3ω^2",
+                "5 + 3(ω + ω^2)",
+                "5 + (3ω + ω^2)",
+                "8(ω + ω^2)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم القاعدة ω + ω^2 = -1.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "أثبت أن: (1/(1+ω^2) - 1/(1+ω))^2 = -3",
+      "diagram": null,
+      "full_model_solution": "المقامات: 1+ω^2 = -ω و 1+ω = -ω^2. المقدار يصبح: (-1/ω - (-1/ω^2))^2 = (-1/ω + 1/ω^2)^2 = ((-ω+1)/ω^2)^2. بالتبسيط نصل إلى -3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تعويض قيم المقامات باستخدام 1+ω+ω^2=0.",
+          "step_assistant_solution": "1+ω^2 = -ω و 1+ω = -ω^2",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هي قيمة 1+ω^2؟",
+              "correct_answer": "-ω",
+              "options": [
+                "-ω",
+                "ω^2",
+                "-ω^2",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم العلاقة 1+ω+ω^2=0",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "1+ω^2 = -ω و 1+ω = ",
+                {
+                  "input_id": "q4_step1_input1"
+                },
+                "^2"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "أثبت أن: (1/(2-ω) - 1/(2-ω^2))^2 = -3/49",
+      "diagram": null,
+      "full_model_solution": "بتوحيد المقامات: ( (2-ω^2) - (2-ω) ) / ( (2-ω)(2-ω^2) ) = (ω-ω^2) / (4 - 2ω^2 - 2ω + ω^3). بما أن ω^3=1 و ω^2+ω=-1، المقام يصبح 4 - 2(-1) + 1 = 7. التربيع يعطي (ω-ω^2)^2 / 49 = (ω^2 - 2ω^3 + ω^4) / 49 = (ω^2 - 2 + ω) / 49 = (-1-2)/49 = -3/49.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "6",
+      "question_text": "أثبت أن: ω/(2+5ω+2ω^2)^2 + ω^2/(2+2ω+5ω^2)^2 = -1/9",
+      "diagram": null,
+      "full_model_solution": "استخدام القاعدة 2+2ω^2 = 2(1+ω^2) = -2ω، المقامات تصبح (5ω-2ω)^2 = (3ω)^2 = 9ω^2 و 9ω^4. بجمع الكسور (ω/9ω^2) + (ω^2/9ω^4) = 1/9ω + 1/9ω^2 = (ω^2+ω)/9ω^3 = -1/9.",
+      "interactive_steps": [],
+      "hint": null
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-7",
+  "topic_title": "الجذور التكعيبية للواحد الصحيح",
+  "interactive_status": "ready"
+}

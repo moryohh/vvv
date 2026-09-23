@@ -1,0 +1,304 @@
+{
+  "page_number": 7,
+  "page_id": 7,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "(2 + 3i) + (1 - 5i)",
+      "diagram": null,
+      "full_model_solution": "(2 + 3i) + (1 - 5i) = (2 + 1) + (3 - 5)i = 3 - 2i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بجمع الأجزاء الحقيقية معاً.",
+          "step_assistant_solution": "2 + 1 = 3",
+          "inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هو ناتج جمع الأجزاء الحقيقية؟",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "1",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجزء الحقيقي هو الجزء الذي لا يحتوي على i.",
+            "related_topics": [
+              {
+                "topic_title": "جمع الأعداد المركبة",
+                "explanation": "نجمع الحقيقي مع الحقيقي والتخيلي مع التخيلي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "2 + 1 = ",
+                {
+                  "input_id": "q1_s1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نجمع الأجزاء التخيلية (معاملات i) معاً.",
+          "step_assistant_solution": "3i - 5i = -2i",
+          "inputs": [
+            {
+              "input_id": "q1_s2",
+              "label": "ما هو ناتج جمع الأجزاء التخيلية؟",
+              "correct_answer": "-2i",
+              "options": [
+                "-2i",
+                "8i",
+                "2i",
+                "-8i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن إشارة المعامل تتبع الرقم.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "3i - 5i = ",
+                {
+                  "input_id": "q1_s2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "(3 + 4√2i) + (5 - 2√2i)",
+      "diagram": null,
+      "full_model_solution": "(3 + 5) + (4√2 - 2√2)i = 8 + 2√2i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نجمع الأجزاء الحقيقية 3 و 5.",
+          "step_assistant_solution": "8",
+          "inputs": [
+            {
+              "input_id": "q2_s1",
+              "label": "ناتج الجزء الحقيقي:",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "7",
+                "9",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "ببساطة 3 + 5 = 8.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "(-1 + √-4) + (6 - √-9)",
+      "diagram": null,
+      "full_model_solution": "(-1 + 2i) + (6 - 3i) = (-1 + 6) + (2 - 3)i = 5 - i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "أولاً نتخلص من الجذر السالب بتحويل √-a إلى √a * i.",
+          "step_assistant_solution": "√-4 = 2i و √-9 = 3i",
+          "inputs": [
+            {
+              "input_id": "q3_s1_part_1",
+              "label": "ما قيمة الجذور التخيلية؟ — الجزء 1",
+              "correct_answer": "2i",
+              "options": [
+                "2i",
+                "-2i",
+                "4i",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q3_s1_part_2",
+              "label": "ما قيمة الجذور التخيلية؟ — الجزء 2",
+              "correct_answer": "3i",
+              "options": [
+                "3i",
+                "-3i",
+                "9i",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "√-1 = i",
+            "related_topics": [
+              {
+                "topic_title": "الجذور التربيعية للأعداد السالبة",
+                "explanation": "√-a = i√a"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_s1_part_1"
+                },
+                " و ",
+                {
+                  "input_id": "q3_s1_part_2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "(8 - √-16) + (2 + √-25)",
+      "diagram": null,
+      "full_model_solution": "(8 - 4i) + (2 + 5i) = (8 + 2) + (-4 + 5)i = 10 + i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الجذور وجمع الأجزاء المتناظرة.",
+          "step_assistant_solution": "10 + i",
+          "inputs": [
+            {
+              "input_id": "q4_s1",
+              "label": "الناتج النهائي:",
+              "correct_answer": "10 + i",
+              "options": [
+                "10 + i",
+                "10 - i",
+                "6 + i",
+                "6 - i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "8+2=10 و -4+5=1",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "(-8 + √-16) + (11 - √-36)",
+      "diagram": null,
+      "full_model_solution": "(-8 + 4i) + (11 - 6i) = (-8 + 11) + (4 - 6)i = 3 - 2i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الجذور (-8 + 4i) + (11 - 6i).",
+          "step_assistant_solution": "3 - 2i",
+          "inputs": [
+            {
+              "input_id": "q5_s1",
+              "label": "الناتج:",
+              "correct_answer": "3 - 2i",
+              "options": [
+                "3 - 2i",
+                "3 + 2i",
+                "-3 - 2i",
+                "3 + 10i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "4 - 6 = -2",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q5_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "(-2 - √-49) + (-5 + √-1)",
+      "diagram": null,
+      "full_model_solution": "(-2 - 7i) + (-5 + i) = (-2 - 5) + (-7 + 1)i = -7 - 6i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "بتحويل الجذور وتجميع الحدود.",
+          "step_assistant_solution": "-7 - 6i",
+          "inputs": [
+            {
+              "input_id": "q6_s1",
+              "label": "الناتج النهائي:",
+              "correct_answer": "-7 - 6i",
+              "options": [
+                "-7 - 6i",
+                "-7 + 6i",
+                "7 - 6i",
+                "-7 - 8i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "√-49 = 7i و √-1 = i",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q6_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-2",
+  "topic_title": "العمليات على مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

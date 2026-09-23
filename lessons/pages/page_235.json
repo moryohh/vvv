@@ -1,0 +1,105 @@
+{
+  "page_number": 235,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "مثلث ABC حيث BC محتوى في المستوي X، والزاوية الزوجية بين المستوي ABC والمستوي X قياسها 60 درجة، فإذا كان AB = AC = 13cm و BC = 10cm. جد مسقط المثلث ABC على المستوي X ثم جد مساحة مسقط المثلث ABC على المستوي X.",
+      "diagram": {
+        "diagram_id": "q4_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم هندسي يوضح مثلث ABC مائل على مستوي X مع مسقطه عليه",
+        "diagram_box": [
+          270,
+          75,
+          450,
+          420
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_235_q4_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "1. حساب مساحة المثلث ABC: بما أنه مثلث متساوي الساقين (AB=AC=13)، نرسم ارتفاعاً من A على القاعدة BC في نقطة D (منتصف BC)، إذن BD=DC=5cm. من فيثاغورس، الارتفاع AD = sqrt(13^2 - 5^2) = sqrt(169 - 25) = sqrt(144) = 12cm. مساحة المثلث ABC = 1/2 * القاعدة * الارتفاع = 1/2 * 10 * 12 = 60cm^2. 2. مسقط المثلث ABC هو المثلث DBC. 3. مساحة المسقط = مساحة المثلث الأصلي * cos(ثيتا)، حيث ثيتا هي زاوية الميل (60 درجة). مساحة المسقط = 60 * cos(60) = 60 * 0.5 = 30cm^2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بحساب مساحة المثلث الأصلي ABC باستخدام القاعدة والارتفاع.",
+          "step_assistant_solution": "مساحة المثلث ABC = 60cm^2.",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي مساحة المثلث ABC؟",
+              "correct_answer": "60",
+              "options": [
+                "60",
+                "30",
+                "120",
+                "130"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون مساحة المثلث 1/2 القاعدة في الارتفاع بعد إيجاد الارتفاع باستخدام نظرية فيثاغورس.",
+            "related_topics": [
+              {
+                "topic_title": "مساحة المثلث",
+                "explanation": "المساحة تساوي نصف القاعدة في الارتفاع العمودي النازل عليها."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي مساحة المثلث ABC؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نطبق قانون مساحة المسقط: مساحة المسقط = مساحة الشكل الأصلي * cos(الزاوية بين المستويين).",
+          "step_assistant_solution": "مساحة المسقط = 60 * cos(60) = 30cm^2.",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي قيمة مساحة المسقط؟",
+              "correct_answer": "30",
+              "options": [
+                "30",
+                "60",
+                "15",
+                "45"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قيمة cos(60) تساوي 0.5.",
+            "related_topics": [
+              {
+                "topic_title": "الزاوية الزوجية ومساحة المسقط",
+                "explanation": "عند إمالة سطح بزاوية ثيتا، تصغر مساحته المسقطة بضربها في جيب تمام الزاوية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة مساحة المسقط؟ = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 235,
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-2",
+  "topic_title": "الإسقاط العمودي على مستوٍ",
+  "interactive_status": "ready"
+}

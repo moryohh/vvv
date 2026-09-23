@@ -1,0 +1,161 @@
+{
+  "page_number": 175,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "جد معادلة القطع الزائد الذي مركزه نقطة الأصل والبعد بين بؤرتيه الواقعين على محور الصادات يساوي 6 وحدات والنسبة بين بعده بين بؤرتيه إلى طول محوره الحقيقي كنسبة 3/2؟",
+      "diagram": null,
+      "full_model_solution": "1) البعد بين البؤرتين (2c) = 6، إذاً c = 3. 2) النسبة بين البعد بين البؤرتين وطول المحور الحقيقي (2c/2a) = 3/2. بالتعويض: 6/2a = 3/2، إذاً 3a = 6 ومنه a = 2. 3) العلاقة للقطع الزائد هي c² = a² + b²، إذاً 3² = 2² + b²، ومنه 9 = 4 + b²، إذاً b² = 5. 4) بما أن البؤرتان على محور الصادات، المعادلة هي (y²/a²) - (x²/b²) = 1، أي (y²/4) - (x²/5) = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخرج قيم الثوابت c و a من المعطيات المباشرة للبعد بين البؤرتين والنسبة المعطاة.",
+          "step_assistant_solution": "c = 3, a = 2",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة a للقطع؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون البعد بين البؤرتين 2c=6 وقانون النسبة 2c/2a=3/2.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الزائد",
+                "explanation": "البعد بين البؤرتين هو 2c وطول المحور الحقيقي هو 2a."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = 3, a = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم العلاقة المساعدة للقطع الزائد لإيجاد b².",
+          "step_assistant_solution": "b² = 5",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي قيمة b²؟",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "9",
+                "4",
+                "13"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العلاقة هي c² = a² + b².",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "b² = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد معادلة القطع الزائد الذي مركزه نقطة الأصل وأحد بؤرتيه بؤرة القطع المكافئ y² = -40x والذي يمس دليل القطع المكافئ y² = -16x؟",
+      "diagram": null,
+      "full_model_solution": "1) للقطع المكافئ الأول y² = -40x: نقارن بـ y² = -4px، فنجد p=10، البؤرة F(-10, 0)، إذاً c=10 للقطع الزائد. 2) للقطع المكافئ الثاني y² = -16x: نقارن بـ y² = -4px، فنجد p=4، الدليل هو x = p = 4. 3) نقطة التماس هي (4, 0) وهي تمثل الرأس a=4 للقطع الزائد. 4) من c² = a² + b² نجد 100 = 16 + b²، إذاً b² = 84. 5) المعادلة (x²/a²) - (y²/b²) = 1 تصبح (x²/16) - (y²/84) = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "إيجاد بؤرة القطع المكافئ الأول للحصول على قيمة c للقطع الزائد.",
+          "step_assistant_solution": "c = 10",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هي قيمة c للقطع الزائد؟",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "4",
+                "40",
+                "16"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قارن المعادلة y² = -4px مع y² = -40x.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = ",
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "إيجاد رأس القطع الزائد (a) من دليل القطع المكافئ الثاني.",
+          "step_assistant_solution": "a = 4",
+          "inputs": [
+            {
+              "input_id": "q3_step2_input1",
+              "label": "ما هي قيمة a؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "16",
+                "8",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "دليل القطع y² = -4px هو x=p.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "a = ",
+                {
+                  "input_id": "q3_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 175,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-7",
+  "topic_title": "القطع الزائد",
+  "interactive_status": "ready"
+}

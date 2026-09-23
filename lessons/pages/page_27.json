@@ -1,0 +1,142 @@
+{
+  "page_number": 27,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "11",
+      "question_text": "6 / (x + yi) - (3 + i) / (2 - i) = (1 - i)^3",
+      "diagram": null,
+      "full_model_solution": "x = -3, y = 3",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بتبسيط الطرف الأيمن وتفكيك القوس (1-i)^3",
+          "step_assistant_solution": "(1-i)^3 = -2i + 2",
+          "inputs": [
+            {
+              "input_id": "step1_input",
+              "label": "ما هو ناتج تبسيط (1-i)^3؟",
+              "correct_answer": "-2i + 2",
+              "options": [
+                "-2i + 2",
+                "2i - 2",
+                "1-i",
+                "2i+2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون التكعيب (a-b)^3 أو قم بضرب القوس (1-i)^2 في (1-i)",
+            "related_topics": [
+              {
+                "topic_title": "قوى العدد المركب",
+                "explanation": "فك الأقواس باستخدام المتطابقات التربيعية والعدد i^2 = -1"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(1-i)^3 = ",
+                {
+                  "input_id": "step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "12",
+      "question_text": "(2 + xi)(-x + i) = (9y^2 + 49) / (3y + 7i)",
+      "diagram": null,
+      "full_model_solution": "x = 3, y = -3 أو x = -3, y = 3",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقوم بضرب القوسين في الطرف الأيسر ومساواة الطرفين بعد التبسيط",
+          "step_assistant_solution": "-2x + 2i - x^2i - x = 3y - 7i",
+          "inputs": [
+            {
+              "input_id": "q12_step1_input",
+              "label": "بعد فك الأقواس ومساواة الجزء الحقيقي والتخيلي، ما هي المعادلة الناتجة؟",
+              "correct_answer": "x^2 = 9",
+              "options": [
+                "x^2 = 9",
+                "x^2 = 4",
+                "x = 9",
+                "x^2 = -9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^2 = -1 عند ضرب الأقواس",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "بعد فك الأقواس ومساواة الجزء الحقيقي والتخيلي، ما هي المعادلة الناتجة؟ = ",
+                {
+                  "input_id": "q12_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "13",
+      "question_text": "(1 - i) / (1 + i) + (x + yi) = (1 + 2i)^2",
+      "diagram": null,
+      "full_model_solution": "x = -3, y = 5",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بتبسيط الكسر بضربه في مرافق المقام وتبسيط القوس التربيعي",
+          "step_assistant_solution": "-i + x + yi = -3 + 4i",
+          "inputs": [
+            {
+              "input_id": "q13_step1_input",
+              "label": "ما هو ناتج تبسيط الكسر (1-i)/(1+i)؟",
+              "correct_answer": "-i",
+              "options": [
+                "-i",
+                "i",
+                "1",
+                "-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب البسط والمقام في مرافق المقام (1-i)",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "قسمة الأعداد المركبة تتم بالضرب في مرافق المقام"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q13_step1_input"
+                },
+                " + x + yi = -3 + 4i"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 27,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

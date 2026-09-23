@@ -1,0 +1,124 @@
+{
+  "page_number": 45,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "حل المعادلة التربيعية: 2z^2 - 5z + 13 = 0",
+      "diagram": null,
+      "full_model_solution": "باستخدام القانون العام: z = (-b ± √(b^2 - 4ac)) / 2a. حيث a=2, b=-5, c=13. بالتعويض: z = (5 ± √(25 - 4*2*13)) / 4 = (5 ± √-79) / 4 = (5 ± √79 i) / 4. الجذور هي (5/4 + √79/4 i) و (5/4 - √79/4 i).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيم المعاملات a, b, c من المعادلة القياسية.",
+          "step_assistant_solution": "a=2, b=-5, c=13",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة b؟",
+              "correct_answer": "-5",
+              "options": [
+                "-5",
+                "2",
+                "13",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المعادلة التربيعية تكون على الصورة az^2 + bz + c = 0.",
+            "related_topics": [
+              {
+                "topic_title": "المعادلة التربيعية",
+                "explanation": "تحديد المعاملات هو الخطوة الأولى لأي معادلة من الدرجة الثانية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a=2, b=",
+                {
+                  "input_id": "step1_input1"
+                },
+                ", c=13"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "حل المعادلة: x^2 - 6x + 13 = 0 (واجب منزلي)",
+      "diagram": null,
+      "full_model_solution": "باستخدام القانون العام، الحل سيكون x = (6 ± √(-36 - 52)) / 2 = 3 ± 2i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "4",
+      "question_text": "حل المعادلة: z^2 + 6zi + 7 = 0",
+      "diagram": null,
+      "full_model_solution": "نحول 7 إلى -7i^2 ليصبح المقدار z^2 + 6zi - 7i^2 = 0. بالتحليل بالتجربة: (z + 7i)(z - i) = 0. إذن z = -7i أو z = i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استبدال الثابت 7 بـ -7i^2 لتمكين التحليل بالتجربة.",
+          "step_assistant_solution": "z^2 + 6zi - 7i^2 = 0",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "كيف نكتب 7 بدلالة i^2؟",
+              "correct_answer": "-7i^2",
+              "options": [
+                "-7i^2",
+                "7i^2",
+                "-i^2",
+                "7"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن i^2 = -1، فإن -7 * -1 = 7.",
+            "related_topics": [
+              {
+                "topic_title": "قوى i",
+                "explanation": "استخدام i^2 لتحويل الحدود الثابتة في المعادلات المركبة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "كيف نكتب 7 بدلالة i^2؟ = ",
+                {
+                  "input_id": "q4_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "حل المعادلة: z^2 - 2zi + 3 = 0",
+      "diagram": null,
+      "full_model_solution": "نحول 3 إلى -3i^2 ليصبح z^2 - 2zi - 3i^2 = 0. بالتحليل: (z - 3i)(z + i) = 0. إذن z = 3i أو z = -i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "6",
+      "question_text": "حل المعادلة: z^2 - 3zi + 4 = 0",
+      "diagram": null,
+      "full_model_solution": "نحول 4 إلى -4i^2 ليصبح z^2 - 3zi - 4i^2 = 0. بالتحليل: (z - 4i)(z + i) = 0. إذن z = 4i أو z = -i.",
+      "interactive_steps": []
+    }
+  ],
+  "page_id": 45,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

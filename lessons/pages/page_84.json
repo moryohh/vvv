@@ -1,0 +1,136 @@
+{
+  "page_number": 84,
+  "page_id": 84,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "احسب باستخدام مبرهنة ديموافر: (cos(3π/8) + i sin(3π/8))^4",
+      "diagram": null,
+      "full_model_solution": "بتطبيق مبرهنة ديموافر: (cos θ + i sin θ)^n = cos(nθ) + i sin(nθ). هنا n=4 و θ=3π/8. إذن: cos(4 * 3π/8) + i sin(4 * 3π/8) = cos(3π/2) + i sin(3π/2). بما أن cos(3π/2) = 0 و sin(3π/2) = -1، يكون الناتج: 0 + i(-1) = -i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تطبيق قانون ديموافر بضرب الزاوية في الأس.",
+          "step_assistant_solution": "cos(12π/8) + i sin(12π/8) = cos(3π/2) + i sin(3π/2)",
+          "inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هي الزاوية الناتجة بعد ضرب 4 في 3π/8؟",
+              "correct_answer": "3π/2",
+              "options": [
+                "3π/2",
+                "3π/4",
+                "3π/8",
+                "6π/8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب الأس 4 في البسط 3π واقسم على المقام 8.",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "القاعدة الأساسية لرفع العدد المركب المكتوب بالصيغة القطبية لأس معين."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "cos(12π/8) + i sin(12π/8) = cos(3π/2) + i sin(",
+                {
+                  "input_id": "q1_s1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "احسب باستخدام مبرهنة ديموافر: (cos(5π/24) + i sin(5π/24))^4",
+      "diagram": null,
+      "full_model_solution": "تطبيق ديموافر: cos(4 * 5π/24) + i sin(4 * 5π/24) = cos(5π/6) + i sin(5π/6). قيم الدوال المثلثية: cos(5π/6) = -√3/2 و sin(5π/6) = 1/2. الناتج النهائي: -√3/2 + i(1/2).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الزاوية بعد الضرب في الأس 4.",
+          "step_assistant_solution": "5π/6",
+          "inputs": [
+            {
+              "input_id": "q2_s1",
+              "label": "ما هي الزاوية الناتجة؟",
+              "correct_answer": "5π/6",
+              "options": [
+                "5π/6",
+                "5π/12",
+                "5π/24",
+                "π/6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "4 مضروبة في 5π على 24 تعطي 20π/24، وبالاختصار على 4 تصبح 5π/6.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "احسب باستخدام مبرهنة ديموافر: (cos(π/10) + i sin(π/10))^5",
+      "diagram": null,
+      "full_model_solution": "تطبيق ديموافر: cos(5 * π/10) + i sin(5 * π/10) = cos(π/2) + i sin(π/2). بما أن cos(π/2) = 0 و sin(π/2) = 1، يكون الناتج: 0 + i(1) = i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب الزاوية النهائية بعد الضرب.",
+          "step_assistant_solution": "π/2",
+          "inputs": [
+            {
+              "input_id": "q3_s1",
+              "label": "ما قيمة الزاوية الناتجة؟",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "π/5",
+                "π/10",
+                "5π/10"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "ببساطة 5 ضرب π/10 تعطي 5π/10 والتي تساوي نصف π.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,138 @@
+{
+  "page_number": 31,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "21",
+      "question_text": "جد قيم x و y الحقيقية للمعادلة: 12 + 5i = (x + 3i)(y - 2i)",
+      "diagram": null,
+      "full_model_solution": "بفك الأقواس نحصل على: 12 + 5i = xy - 2xi + 3yi - 6i^2. بما أن i^2 = -1، تصبح: 12 + 5i = (xy + 6) + (3y - 2x)i. بالمساواة بين الأجزاء الحقيقية والتخيلية: (1) xy + 6 = 12 => xy = 6. (2) 3y - 2x = 5 => y = (5+2x)/3. بالتعويض في (1): x((5+2x)/3) = 6 => 2x^2 + 5x - 18 = 0. بالتحليل: (2x+9)(x-2)=0. إما x = 2 ومنها y = 3، أو x = -9/2 ومنها y = -4/3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: ابدأ بفك الأقواس وتجميع الأجزاء الحقيقية والتخيلية لتكوين نظام معادلات.",
+          "step_assistant_solution": "المعادلة بعد الفك: 12 + 5i = (xy + 6) + (3y - 2x)i",
+          "inputs": [
+            {
+              "input_id": "q21_step1",
+              "label": "ما هو الجزء الحقيقي في الطرف الأيمن بعد التبسيط؟",
+              "correct_answer": "xy + 6",
+              "options": [
+                "xy - 6",
+                "xy + 6",
+                "xy + 5i",
+                "12"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^2 تساوي -1، لذا فإن -6i^2 تصبح +6.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "ضرب الأعداد المركبة يتطلب توزيع الحدود والتعامل مع i^2."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المعادلة بعد الفك: 12 + 5i = (",
+                {
+                  "input_id": "q21_step1"
+                },
+                ") + (3y - 2x)i"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "22",
+      "question_text": "جد قيم x و y الحقيقية للمعادلة: y / (1 + i) = (x^2 + 9) / (x + 3i)",
+      "diagram": null,
+      "full_model_solution": "نكتب 9 كـ -(9i^2) ليصبح البسط (x^2 - 9i^2)، وهو فرق بين مربعين: (x-3i)(x+3i). بالاختصار مع المقام: y/(1+i) = x-3i. بضرب الطرفين في (1+i): y = (x-3i)(1+i) = x + xi - 3i - 3i^2 = (x+3) + (x-3)i. بالمساواة: الجزء التخيلي x-3=0 => x=3. الجزء الحقيقي y=x+3 => y=6.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: حلل البسط كفرق بين مربعين لاختصار المقام.",
+          "step_assistant_solution": "البسط بعد التحليل: (x - 3i)(x + 3i)",
+          "inputs": [
+            {
+              "input_id": "q22_step1",
+              "label": "ما هو ناتج الاختصار؟",
+              "correct_answer": "y / (1 + i) = x - 3i",
+              "options": [
+                "y / (1 + i) = x + 3i",
+                "y / (1 + i) = x - 3i",
+                "y = x - 3i",
+                "y = (1+i)(x+3i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الفرق بين مربعين a^2 - b^2 = (a-b)(a+b). هنا 9 = (3i)^2.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج الاختصار؟ = ",
+                {
+                  "input_id": "q22_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "23",
+      "question_text": "جد قيم x و y الحقيقية للمعادلة: (x^2 + 4) / (x + 2i) = y / (1 + i)",
+      "diagram": null,
+      "full_model_solution": "نحلل البسط (x^2 + 4) إلى (x^2 - 4i^2) = (x-2i)(x+2i). بالاختصار: x-2i = y/(1+i). بالضرب في (1+i): y = (x-2i)(1+i) = x + xi - 2i - 2i^2 = (x+2) + (x-2)i. بالمساواة: الجزء التخيلي x-2=0 => x=2. الجزء الحقيقي y=x+2 => y=4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: استخدم تحليل الفرق بين المربعين في الأعداد المركبة.",
+          "step_assistant_solution": "المعادلة بعد الاختصار هي: x - 2i = y / (1 + i)",
+          "inputs": [
+            {
+              "input_id": "q23_step1",
+              "label": "بعد إجراء الضرب التبادلي، ما هي قيمة y بدلالة x؟",
+              "correct_answer": "y = x + 2 + (x - 2)i",
+              "options": [
+                "y = x + 2",
+                "y = x + 2 + (x - 2)i",
+                "y = x - 2",
+                "y = x + 2i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قم بتوزيع القوسين (x-2i)(1+i) بعناية.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "بعد إجراء الضرب التبادلي، ما هي قيمة y بدلالة x؟ = ",
+                {
+                  "input_id": "q23_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 31,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,132 @@
+{
+  "page_number": 202,
+  "page_id": 202,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "23",
+      "question_text": "2018 د 2 تطبيقي داخل / قطع زائد مركزه نقطة الأصل ومعادلته hx² - 4y² = L طول محوره التخيلي يساوي 2√5 وبؤرتاه تنطبقان على بؤرتي القطع الناقص x² + 13y² = 52 ، جد قيمتي h, L الحقيقيتين.",
+      "diagram": null,
+      "full_model_solution": "1. نبدأ بالقطع الناقص: x² + 13y² = 52. بالقسمة على 52 نحصل على x²/52 + y²/4 = 1. إذن a²=52، b²=4. نستخرج c² من c² = a² - b² = 52 - 4 = 48. بؤرتا الناقص هما (±4√3, 0). 2. للقطع الزائد: c = 4√3 إذن c² = 48. طول المحور التخيلي 2b = 2√5، إذن b = √5 و b² = 5. من قانون القطع الزائد c² = a² + b²، نجد 48 = a² + 5، إذن a² = 43. 3. معادلة القطع الزائد هي x²/a² - y²/b² = 1، أي x²/43 - y²/5 = 1. 4. بمعادلة السؤال hx² - 4y² = L، بالقسمة على L نحصل على x²/(L/h) - y²/(L/4) = 1. بالمقارنة: L/4 = 5 => L=20، و L/h = 43 => 20/h = 43 => h=20/43.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "أولاً، يجب إيجاد البؤرتين للقطع الناقص المعلوم لتحديد بؤرتي القطع الزائد.",
+          "step_assistant_solution": "b² = 4, a² = 13, c² = 9 => c = 3",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "قيمة c للقطع الناقص هي:",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "9",
+                "4",
+                "13"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "حول معادلة القطع الناقص إلى الصيغة القياسية بالقسمة على 52.",
+            "related_topics": [
+              {
+                "topic_title": "القطع الناقص",
+                "explanation": "المعادلة القياسية هي x²/a² + y²/b² = 1"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "b² = 4, a² = 13, c² = 9 => c = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "بما أن البؤر تنطبق، إذن c للزائد هي نفس c للناقص (c=3). استخرج a² للقطع الزائد باستخدام b²=5 و c²=9.",
+          "step_assistant_solution": "a² = c² - b² = 9 - 5 = 4",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "قيمة a² للقطع الزائد هي:",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "14",
+                "9",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "في القطع الزائد c² = a² + b².",
+            "related_topics": [
+              {
+                "topic_title": "القطع الزائد",
+                "explanation": "العلاقة الذهبية هي c² = a² + b²"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a² = c² - b² = 9 - 5 = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "نطابق معادلة القطع الزائد القياسية (x²/a² - y²/b² = 1) مع المعادلة المعطاة (hx²/L - 4y²/L = 1) لإيجاد h و L.",
+          "step_assistant_solution": "L=20, h=5",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "قيمة L هي:",
+              "correct_answer": "20",
+              "options": [
+                "20",
+                "5",
+                "10",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قارن المقامات: L/4 = b² و L/h = a².",
+            "related_topics": [
+              {
+                "topic_title": "المقارنة الرياضية",
+                "explanation": "مساواة معاملات الحدود المتناظرة"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "L=",
+                {
+                  "input_id": "step3_input1"
+                },
+                ", h=5"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-9",
+  "topic_title": "القطع الزائد: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

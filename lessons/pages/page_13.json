@@ -1,0 +1,126 @@
+{
+  "page_number": 13,
+  "page_id": 13,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "(1+i)^3 + (1-i)^3",
+      "diagram": null,
+      "full_model_solution": "-4+0i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم قانون مربع الحدانية لفك القوى (1+i)^2 و (1-i)^2",
+          "step_assistant_solution": "(2i)(1+i) + (-2i)(1-i)",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "ما ناتج (1+i)^2؟",
+              "correct_answer": "2i",
+              "options": [
+                "2i",
+                "-2i",
+                "2",
+                "-2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^2 = -1",
+            "related_topics": [
+              {
+                "topic_title": "قوى i",
+                "explanation": "مربع الحدانية (a+b)^2 = a^2 + 2ab + b^2"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(2i)(1+i) + (-",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                ")(1-i)"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "(1+i)^5 - (1-i)^5",
+      "diagram": null,
+      "full_model_solution": "0 - 8i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقوم بتبسيط القوى الزوجية أولاً",
+          "step_assistant_solution": "(2i)^2(1+i) - (-2i)^2(1-i)",
+          "inputs": [],
+          "hint": {
+            "step_hint_text": "استخدم خاصية (a^n)(a^m) = a^(n+m)",
+            "related_topics": []
+          },
+          "interactive_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "(-1+i)^4 - (-1-i)^4",
+      "diagram": null,
+      "full_model_solution": "0",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "4",
+      "question_text": "(1-i)^8",
+      "diagram": null,
+      "full_model_solution": "16",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "5",
+      "question_text": "(1+i)^7",
+      "diagram": null,
+      "full_model_solution": "8 - 8i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "6",
+      "question_text": "(1-i)^13 / 64",
+      "diagram": null,
+      "full_model_solution": "-1+i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "7",
+      "question_text": "(1+i)^15 / 128",
+      "diagram": null,
+      "full_model_solution": "1-i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "8",
+      "question_text": "(1+i)^14 / 128",
+      "diagram": null,
+      "full_model_solution": "i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "9",
+      "question_text": "(1+i)^7 / 8",
+      "diagram": null,
+      "full_model_solution": "1-i",
+      "interactive_steps": []
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-2",
+  "topic_title": "العمليات على مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

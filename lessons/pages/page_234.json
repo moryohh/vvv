@@ -1,0 +1,124 @@
+{
+  "page_number": 234,
+  "page_id": 234,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "إذا كان AB غير عمودي على المستوي (X)، وكان AC عمودي على (X) عند النقطة C، و BD عمودي على (X) عند النقطة D، وكان AB يوازي المستوي (X) (أي AB // (X)). أثبت أن CD = AB.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "شكل هندسي يوضح مستوي X وقطعة مستقيمة AB توازيه، مع أعمدة AC و BD ساقطة على المستوي لتشكل مستطيلاً CDBA.",
+        "diagram_box": [
+          235,
+          130,
+          410,
+          430
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_234_q1_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بما أن AC عمودي على المستوي (X) و BD عمودي على المستوي (X)، فإن المستقيمين AC و BD متوازيان (كلاهما عمودي على نفس المستوي). وبما أن AB يوازي المستوي (X)، فإن النقاط A و B و D و C تقع في مستوٍ واحد. الشكل ACDB هو مستطيل لأن AC // BD و AC = BD (البعد بين مستقيم ومستوي موازٍ له ثابت). من خصائص المستطيل، كل ضلعين متقابلين متساويان، إذن CD = AB.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نحدد العلاقة بين الأعمدة المتوازية والمستقيم الموازي للمستوي.",
+          "step_assistant_solution": "الأعمدة AC و BD متوازية ومتساوية في الطول.",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما نوع الشكل الرباعي ACDB الناتج؟",
+              "correct_answer": "مستطيل",
+              "options": [
+                "مستطيل",
+                "معين",
+                "مربع",
+                "شبه منحرف"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن البعد بين مستقيم ومستوي يوازيه ثابت في جميع نقاط المستقيم.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص التوازي والتعامد في الفضاء",
+                "explanation": "المستقيمان العموديان على مستوٍ واحد هما مستقيمان متوازيان."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما نوع الشكل الرباعي ACDB الناتج؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "إذا كان طول قطعة مستقيمة مائلة AB هو 10 سم، وزاوية ميلها عن المستوي (X) هي 60 درجة، احسب طول مسقطها BC على المستوي (X).",
+      "diagram": {
+        "diagram_id": "q2_fig_01",
+        "diagram_type": "شكل توضيحي",
+        "diagram_desc": "مثلث قائم الزاوية يمثل المسقط والميل والعمود على المستوي X.",
+        "diagram_box": [
+          505,
+          330,
+          675,
+          595
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_234_q2_fig_01_shape_diagram.png"
+      },
+      "full_model_solution": "قانون طول المسقط: BC = AB * cos(θ). المعطيات: AB = 10 سم، θ = 60°. التعويض: BC = 10 * cos(60°). بما أن cos(60°) = 0.5، إذن BC = 10 * 0.5 = 5 سم.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: التعويض في قانون طول المسقط باستخدام نسبة جيب تمام الزاوية.",
+          "step_assistant_solution": "BC = 10 * 0.5 = 5",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هو طول المسقط BC؟",
+              "correct_answer": "5 سم",
+              "options": [
+                "5 سم",
+                "8.66 سم",
+                "10 سم",
+                "2 سم"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون: طول المسقط = طول القطعة المائلة × cos الزاوية.",
+            "related_topics": [
+              {
+                "topic_title": "الدوال المثلثية",
+                "explanation": "جيب تمام الزاوية (cos) للزاوية 60 يساوي 0.5."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو طول المسقط BC؟ = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-2",
+  "topic_title": "الإسقاط العمودي على مستوٍ",
+  "interactive_status": "ready"
+}

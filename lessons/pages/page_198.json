@@ -1,0 +1,176 @@
+{
+  "page_number": 198,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "16",
+      "question_text": "2020 احيائي د 2 داخل / جد معادلة القطع الزائد الذي رأساه هما بؤرتي القطع الناقص 9y^2 + 5x^2 = 45 والمسافة بين بؤرتيه تساوي ضعف طول محوره المرافق.",
+      "diagram": null,
+      "full_model_solution": "1. نجد بؤرتي القطع الناقص: 9y^2 + 5x^2 = 45 بالقسمة على 45 ينتج x^2/9 + y^2/5 = 1، إذن a^2=9, b^2=5. c^2 = a^2 - b^2 = 9 - 5 = 4، أي c = 2. بؤرتا الناقص هما (±2, 0). 2. رأسا القطع الزائد هما (±2, 0) إذن a=2. 3. المسافة بين بؤرتي الزائد (2c) تساوي ضعف طول محوره المرافق (2(2b)) أي 2c = 4b -> c = 2b. 4. من علاقة الزائد c^2 = a^2 + b^2، نعوض c=2b و a=2 ينتج 4b^2 = 4 + b^2 -> 3b^2 = 4 -> b^2 = 4/3. 5. المعادلة: x^2/4 - y^2/(4/3) = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط معادلة القطع الناقص لإيجاد البؤر (c) للقطع الناقص التي ستمثل رؤوس القطع الزائد.",
+          "step_assistant_solution": "c = 2",
+          "inputs": [
+            {
+              "input_id": "q16_step1",
+              "label": "ما هي قيمة c للقطع الناقص؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "3",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم العلاقة c^2 = a^2 - b^2 للقطع الناقص.",
+            "related_topics": [
+              {
+                "topic_title": "القطع الناقص",
+                "explanation": "معادلة القطع الناقص س^2/أ^2 + ص^2/ب^2 = 1"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = ",
+                {
+                  "input_id": "q16_step1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام العلاقة بين بؤرتي الزائد وطول محوره المرافق لإيجاد قيمة b للقطع الزائد.",
+          "step_assistant_solution": "b^2 = 4/3",
+          "inputs": [
+            {
+              "input_id": "q16_step2",
+              "label": "ما هي قيمة b^2 للقطع الزائد؟",
+              "correct_answer": "4/3",
+              "options": [
+                "4/3",
+                "4",
+                "3",
+                "2/3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن c = 2b، فإن c^2 = 4b^2. عوض في قانون c^2 = a^2 + b^2.",
+            "related_topics": [
+              {
+                "topic_title": "القطع الزائد",
+                "explanation": "العلاقة الذهبية للقطع الزائد هي c^2 = a^2 + b^2"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "b^2 = ",
+                {
+                  "input_id": "q16_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "17",
+      "question_text": "2008 تمهيدي / جد معادلة القطع الزائد الذي بؤرتاه تنطبقان على بؤرتي القطع الناقص x^2/25 + y^2/9 = 1 والنسبة بين محوره الحقيقي إلى البعد بين بؤرتيه تساوي 1/2.",
+      "diagram": null,
+      "full_model_solution": "1. نجد بؤرتي الناقص: a^2=25, b^2=9. c^2=25-9=16 => c=4. بؤرتا الناقص (±4, 0). 2. بؤرتا الزائد هما (±4, 0) إذن c=4 للزائد. 3. النسبة (2a)/(2c) = 1/2 => a/c = 1/2 => a = c/2 => a = 4/2 = 2. 4. c^2 = a^2 + b^2 => 16 = 4 + b^2 => b^2 = 12. 5. المعادلة: x^2/4 - y^2/12 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "إيجاد بؤرتي القطع الناقص لتحديد بؤرتي القطع الزائد المطلوب.",
+          "step_assistant_solution": "c = 4",
+          "inputs": [
+            {
+              "input_id": "q17_step1",
+              "label": "ما هي قيمة c للقطع الناقص؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "16",
+                "5",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "c^2 = 25 - 9",
+            "related_topics": [
+              {
+                "topic_title": "القطع الناقص",
+                "explanation": "في القطع الناقص المقام الأكبر هو a^2"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = ",
+                {
+                  "input_id": "q17_step1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام النسبة المعطاة لإيجاد قيمة a للقطع الزائد.",
+          "step_assistant_solution": "a = 2",
+          "inputs": [
+            {
+              "input_id": "q17_step2",
+              "label": "ما هي قيمة a للقطع الزائد؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "1",
+                "8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "النسبة هي a/c = 1/2 وبما أن c=4، فإن a=2.",
+            "related_topics": [
+              {
+                "topic_title": "النسبة في القطع الزائد",
+                "explanation": "النسبة بين المحور الحقيقي 2a والبعد البؤري 2c"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a = ",
+                {
+                  "input_id": "q17_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 198,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-9",
+  "topic_title": "القطع الزائد: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

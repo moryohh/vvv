@@ -1,0 +1,102 @@
+{
+  "page_number": 148,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "جد معادلة القطع الناقص الذي بؤرتاه (0, 2) و (0, -2) ويتقاطع مع محور السينات عند (4, 0) و (-4, 0).",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم بياني يوضح قطعاً ناقصاً يقطع محور الصادات في نقاط غير معلومة ويقطع محور السينات في نقاط معلومة (4,0) و (-4,0) مع توضيح البؤرتين.",
+        "diagram_box": [
+          470,
+          300,
+          770,
+          700
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_148_q1_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "1. تحديد نوع القطع: بما أن البؤرتان على محور الصادات (0, ±2)، فإن القطع الناقص رأسي ومعادلته من الشكل x^2/b^2 + y^2/a^2 = 1.\n2. إيجاد قيمة c: البؤرتان (0, 2) و (0, -2) تعني c = 2، وبالتالي c^2 = 4.\n3. إيجاد قيمة b: نقط التقاطع مع محور السينات (4, 0) و (-4, 0) تمثل القطبين للقطع الناقص، إذن b = 4، وبالتالي b^2 = 16.\n4. إيجاد قيمة a: باستخدام العلاقة c^2 = a^2 - b^2، نجد 4 = a^2 - 16، إذاً a^2 = 20.\n5. كتابة المعادلة: x^2/16 + y^2/20 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد اتجاه القطع وقيمة البؤر.",
+          "step_assistant_solution": "القطع رأسي (على محور الصادات) و c^2 = 4.",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "ما هو محور البؤرتين؟",
+              "correct_answer": "الصادات",
+              "options": [
+                "السينات",
+                "الصادات",
+                "نقطة الأصل",
+                "مائل"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إذا كانت الإحداثيات تتغير في y، فإن المحور هو الصادات.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الناقص",
+                "explanation": "المحور الأكبر يحدد اتجاه القطع."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "القطع رأسي (على محور ",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                ") و c^2 = 4."
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام العلاقة بين الثوابت a, b, c.",
+          "step_assistant_solution": "a^2 = c^2 + b^2 = 4 + 16 = 20.",
+          "inputs": [
+            {
+              "input_id": "q1_s2_i1",
+              "label": "ما قيمة a^2؟",
+              "correct_answer": "20",
+              "options": [
+                "20",
+                "4",
+                "16",
+                "24"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن a هي الأكبر في القطع الناقص.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "a^2 = c^2 + b^2 = 4 + 16 = ",
+                {
+                  "input_id": "q1_s2_i1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 148,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-5",
+  "topic_title": "انسحاب المحاور للقطع الناقص",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,146 @@
+{
+  "page_number": 78,
+  "page_id": 78,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "حول العدد المركب z = 2√3 - 2i إلى الصيغة القطبية.",
+      "diagram": null,
+      "full_model_solution": "z = 2√3 - 2i = (2√3, -2). r = √(x² + y²) = √(12 + 4) = √16 = 4. cosθ = x/r = (2√3)/4 = √3/2, sinθ = y/r = -2/4 = -1/2. تقع النقطة في الربع الرابع، زاوية الاسناد هي π/6، لذا θ = 2π - π/6 = 11π/6. الصيغة القطبية: z = 4(cos(11π/6) + i sin(11π/6)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب المقياس (r) للعدد المركب باستخدام الصيغة r = √(x² + y²).",
+          "step_assistant_solution": "r = 4",
+          "inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "ما قيمة المقياس r؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "√16",
+                "2",
+                "16"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم نظرية فيثاغورس على الإحداثيات الحقيقية والتخيلية.",
+            "related_topics": [
+              {
+                "topic_title": "مقياس العدد المركب",
+                "explanation": "r هو المسافة من نقطة الأصل (0,0) إلى النقطة (x,y) في المستوي المركب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "q2_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "حول العدد المركب z = 5 - 5i إلى الصيغة القطبية.",
+      "diagram": null,
+      "full_model_solution": "z = 5 - 5i = (5, -5). r = √(25 + 25) = √50 = 5√2. cosθ = 5/(5√2) = 1/√2, sinθ = -5/(5√2) = -1/√2. تقع النقطة في الربع الرابع، زاوية الاسناد هي π/4، لذا θ = 2π - π/4 = 7π/4. الصيغة القطبية: z = 5√2(cos(7π/4) + i sin(7π/4)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد الزاوية θ بناءً على الربع الذي تقع فيه النقطة.",
+          "step_assistant_solution": "θ = 7π/4",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هي السعة (θ) للعدد المركب؟",
+              "correct_answer": "7π/4",
+              "options": [
+                "7π/4",
+                "π/4",
+                "3π/4",
+                "5π/4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "النقطة (5, -5) تقع في الربع الرابع، والزاوية في الربع الرابع تحسب بطرح زاوية الإسناد من 2π.",
+            "related_topics": [
+              {
+                "topic_title": "الأرباع والسعة",
+                "explanation": "تحديد ربع الزاوية يعتمد على إشارة x و y."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "θ = ",
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "حول العدد المركب z = -√3 + i إلى الصيغة القطبية.",
+      "diagram": null,
+      "full_model_solution": "z = -√3 + i = (-√3, 1). r = √((-√3)² + 1²) = √(3+1) = √4 = 2. cosθ = -√3/2, sinθ = 1/2. تقع النقطة في الربع الثاني، زاوية الاسناد هي π/6، لذا θ = π - π/6 = 5π/6. الصيغة القطبية: z = 2(cos(5π/6) + i sin(5π/6)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب زاوية الإسناد المرجعية.",
+          "step_assistant_solution": "π/6",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هي زاوية الإسناد؟",
+              "correct_answer": "π/6",
+              "options": [
+                "π/6",
+                "π/3",
+                "π/4",
+                "π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "ابحث عن الزاوية التي جيب تمامها هو √3/2.",
+            "related_topics": [
+              {
+                "topic_title": "الزوايا الخاصة",
+                "explanation": "قيم الدوال المثلثية للزوايا π/6, π/4, π/3."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-9",
+  "topic_title": "الصيغة القطبية للعدد المركب",
+  "interactive_status": "ready"
+}

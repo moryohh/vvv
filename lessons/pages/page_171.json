@@ -1,0 +1,68 @@
+{
+  "page_number": 171,
+  "page_id": 171,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "أوجد معادلة القطع الزائد الذي بؤرتاه على محور الصادات ومركزه نقطة الأصل الموضح في الرسم.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم توضيحي للقطع الزائد على محور الصادات يمر برأسين (0,a) و (0,-a) وبؤرتين (0,c) و (0,-c) مع مستطيل مركزي.",
+        "diagram_box": [
+          118,
+          203,
+          350,
+          788
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_171_q1_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بما أن البؤرتين على محور الصادات، فإن المعادلة القياسية للقطع الزائد هي: y^2/a^2 - x^2/b^2 = 1. الرأسان هما (0, a) و (0, -a)، والبؤرتان هما (0, c) و (0, -c).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: تحديد موقع البؤرتين والمحور القاطع. بما أن البؤرتين على محور الصادات (y-axis)، فإن المعادلة تبدأ بـ y^2.",
+          "step_assistant_solution": "المعادلة هي y^2/a^2 - x^2/b^2 = 1",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي الصورة القياسية الصحيحة للقطع المذكور؟",
+              "correct_answer": "y^2/a^2 - x^2/b^2 = 1",
+              "options": [
+                "y^2/a^2 - x^2/b^2 = 1",
+                "x^2/a^2 - y^2/b^2 = 1",
+                "y^2/b^2 - x^2/a^2 = 1",
+                "x^2/b^2 - y^2/a^2 = 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر: في القطع الزائد، المتغير الموجب في المعادلة يمثل المحور الذي تقع عليه البؤرتان.",
+            "related_topics": [
+              {
+                "topic_title": "القطع الزائد",
+                "explanation": "هو المحل الهندسي لنقطة متحركة يكون الفرق بين بعديها عن نقطتين ثابتتين (البؤرتين) مقداراً ثابتاً."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المعادلة هي ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-7",
+  "topic_title": "القطع الزائد",
+  "interactive_status": "ready"
+}

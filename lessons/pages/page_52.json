@@ -1,0 +1,144 @@
+{
+  "page_number": 52,
+  "page_id": 52,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "9",
+      "question_text": "جد المعادلة التربيعية ذات المعاملات الحقيقية وأحد جذريها النظير الضربي للعدد المركب (1-2i)/(3+4i)",
+      "diagram": null,
+      "full_model_solution": "1. إيجاد النظير الضربي (M) للعدد (1-2i)/(3+4i) بقلبه ثم ضربه بمرافق المقام: (3+4i)/(1-2i) * (1+2i)/(1+2i) = (3+6i+4i+8i^2)/5 = (3+10i-8)/5 = -1+2i.\n2. بما أن المعاملات حقيقية، الجذر الآخر L هو مرافق M: L = -1-2i.\n3. مجموع الجذرين M+L = (-1+2i) + (-1-2i) = -2.\n4. حاصل ضرب الجذرين M.L = (-1+2i)(-1-2i) = 1+4 = 5.\n5. المعادلة التربيعية x^2 - (المجموع)x + (الضرب) = 0 => x^2 + 2x + 5 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط العدد المركب لإيجاد النظير الضربي.",
+          "step_assistant_solution": "-1+2i",
+          "inputs": [
+            {
+              "input_id": "q9_step1",
+              "label": "ما هو ناتج النظير الضربي؟",
+              "correct_answer": "-1+2i",
+              "options": [
+                "-1+2i",
+                "1-2i",
+                "-1-2i",
+                "1+2i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب البسط والمقام في مرافق المقام (1+2i).",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "تغيير إشارة الجزء التخيلي للعدد."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q9_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "كون المعادلة التربيعية ذات المعاملات الحقيقية إذا كان أحد جذريها (sqrt(3)-i)^2.",
+      "diagram": null,
+      "full_model_solution": "1. تبسيط الجذر المعطى: M = (sqrt(3)-i)^2 = 3 - 2sqrt(3)i + i^2 = 3 - 2sqrt(3)i - 1 = 2 - 2sqrt(3)i.\n2. بما أن المعاملات حقيقية، الجذر الآخر L = 2 + 2sqrt(3)i.\n3. المجموع M+L = (2 - 2sqrt(3)i) + (2 + 2sqrt(3)i) = 4.\n4. حاصل الضرب M.L = (2)^2 + (2sqrt(3))^2 = 4 + 12 = 16.\n5. المعادلة: x^2 - 4x + 16 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "فك التربيع للجذر المعطى.",
+          "step_assistant_solution": "2 - 2sqrt(3)i",
+          "inputs": [
+            {
+              "input_id": "q10_step1",
+              "label": "ما هو ناتج فك القوس؟",
+              "correct_answer": "2 - 2sqrt(3)i",
+              "options": [
+                "2 - 2sqrt(3)i",
+                "4 - 2sqrt(3)i",
+                "2 + 2sqrt(3)i",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون مربع الحدانية: (a-b)^2 = a^2 - 2ab + b^2",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية",
+                "explanation": "تطبيق القانون على الأعداد المركبة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q10_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "11",
+      "question_text": "جد المعادلة التربيعية ذات المعاملات الحقيقية وأحد جذريها النظير الضربي للعدد المركب (2-i)/(4+3i).",
+      "diagram": null,
+      "full_model_solution": "1. النظير الضربي هو قلب العدد: M = (4+3i)/(2-i).\n2. التبسيط بالضرب بالمرافق: M = (4+3i)/(2-i) * (2+i)/(2+i) = (8+4i+6i+3i^2)/5 = (8+10i-3)/5 = (5+10i)/5 = 1+2i.\n3. المعاملات حقيقية إذن L = 1-2i.\n4. المجموع M+L = 2.\n5. حاصل الضرب M.L = 1+4 = 5.\n6. المعادلة: x^2 - 2x + 5 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط العدد المركب الناتج عن النظير الضربي.",
+          "step_assistant_solution": "1+2i",
+          "inputs": [
+            {
+              "input_id": "q11_step1",
+              "label": "ما هو الناتج المبسط؟",
+              "correct_answer": "1+2i",
+              "options": [
+                "1+2i",
+                "1-2i",
+                "2+i",
+                "2-i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قلب العدد ثم ضرب البسط والمقام في مرافق المقام (2+i).",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "ضرب وقسمة البسط والمقام في مرافق المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q11_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,179 @@
+{
+  "page_number": 111,
+  "page_id": 111,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "جد البؤرة ومعادلة الدليل للقطع المكافئ: y^2 = 8x",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "جدول",
+        "diagram_desc": "جدول المعادلات القياسية للقطع المكافئ",
+        "diagram_box": [
+          140,
+          60,
+          287,
+          868
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_111_q1_fig_01_table.png"
+      },
+      "full_model_solution": "بالمقارنة مع المعادلة القياسية للقطع المكافئ المفتوح لليمين y^2 = 4px، نجد أن 4p = 8، ومنه p = 2. إذاً البؤرة F(p, 0) هي (2, 0)، ومعادلة الدليل x = -p هي x = -2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد المعادلة القياسية المناظرة للمعادلة المعطاة y^2 = 8x.",
+          "step_assistant_solution": "المعادلة القياسية هي y^2 = 4px.",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "ما هو شكل المعادلة القياسية المناسب؟",
+              "correct_answer": "y^2 = 4px",
+              "options": [
+                "y^2 = 4px",
+                "x^2 = 4py",
+                "y^2 = -4px",
+                "x^2 = -4py"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "لاحظ وجود y تربيع و x من الدرجة الأولى في السؤال.",
+            "related_topics": [
+              {
+                "topic_title": "القطع المكافئ",
+                "explanation": "المعادلات التي تحتوي على متغير واحد تربيعي ومتغير آخر خطي تمثل قطعاً مكافئاً."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المعادلة القياسية هي ",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                "."
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "حساب قيمة p من خلال مقارنة المعاملات.",
+          "step_assistant_solution": "p = 2",
+          "inputs": [
+            {
+              "input_id": "q1_s2_i1",
+              "label": "قيمة p تساوي:",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "8",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اقسم معامل x في المعادلة المعطاة على 4.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "p = ",
+                {
+                  "input_id": "q1_s2_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "جد البؤرة ومعادلة الدليل للقطع المكافئ: y^2 + 16x = 0",
+      "diagram": null,
+      "full_model_solution": "نحول المعادلة إلى الصورة القياسية: y^2 = -16x. بالمقارنة مع y^2 = -4px، نجد أن -4p = -16، ومنه p = 4. البؤرة F(-p, 0) هي (-4, 0)، والدليل x = p هو x = 4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "ترتيب المعادلة لجعل المتغير التربيعي في طرف.",
+          "step_assistant_solution": "y^2 = -16x",
+          "inputs": [
+            {
+              "input_id": "q2_s1_i1",
+              "label": "بعد ترتيب المعادلة تصبح:",
+              "correct_answer": "y^2 = -16x",
+              "options": [
+                "y^2 = 16x",
+                "y^2 = -16x",
+                "x = -16y^2",
+                "y = -16x^2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل 16x إلى الطرف الأيسر بعكس الإشارة.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد البؤرة ومعادلة الدليل للقطع المكافئ: 3x^2 - 24y = 0",
+      "diagram": null,
+      "full_model_solution": "ننقل 24y للطرف الآخر: 3x^2 = 24y. نقسم على 3: x^2 = 8y. بالمقارنة مع x^2 = 4py، نجد 4p = 8، ومنه p = 2. البؤرة F(0, p) هي (0, 2)، ومعادلة الدليل y = -p هي y = -2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تجهيز المعادلة للقياس بعد القسمة على معامل x تربيع.",
+          "step_assistant_solution": "x^2 = 8y",
+          "inputs": [
+            {
+              "input_id": "q3_s1_i1",
+              "label": "المعادلة بعد التبسيط هي:",
+              "correct_answer": "x^2 = 8y",
+              "options": [
+                "x^2 = 8y",
+                "x^2 = 24y",
+                "y^2 = 8x",
+                "x^2 = -8y"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "يجب أن يكون معامل المتغير التربيعي يساوي 1.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-2",
+  "topic_title": "القطع المكافئ",
+  "interactive_status": "ready"
+}

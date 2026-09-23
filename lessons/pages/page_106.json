@@ -1,0 +1,155 @@
+{
+  "page_number": 106,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "أحسب باستخدام مبرهنة ديموافر: (√3/2 + i/2)^9",
+      "diagram": null,
+      "full_model_solution": "نحول العدد المركب إلى الصيغة القطبية: r=1, θ=π/6. ثم نطبق مبرهنة ديموافر (cos θ + i sin θ)^n = cos(nθ) + i sin(nθ). الناتج النهائي هو -i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل العدد المركب إلى صيغة قطبية (r, θ).",
+          "step_assistant_solution": "r = 1, θ = 30° أو π/6",
+          "inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هي قيمة السعة θ؟",
+              "correct_answer": "π/6",
+              "options": [
+                "π/6",
+                "π/3",
+                "π/4",
+                "π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون تان θ = y/x",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية",
+                "explanation": "تحويل من الصيغة الديكارتية إلى القطبية"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = 1, θ = 30° أو ",
+                {
+                  "input_id": "q1_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "جد باستخدام مبرهنة ديموافر: الجذور التربيعية للعدد المركب Z = (7+√-3) / (1+√-12)",
+      "diagram": null,
+      "full_model_solution": "أولاً نبسط العدد المركب بالضرب في مرافق المقام، ثم نجد الجذر التربيعي باستخدام صيغة ديموافر للأس (1/2).",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد العدد المركب الذي سعته (3π/4) ومقياسه 12 وحدة طول؟",
+      "diagram": null,
+      "full_model_solution": "العدد المركب يُكتب بالصيغة: Z = r(cos θ + i sin θ). بالتعويض: Z = 12(cos 3π/4 + i sin 3π/4) = 12(-1/√2 + i/√2) = -6√2 + 6√2i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "4",
+      "question_text": "جد العدد المركب الذي سعته (27π/2) ومقياسه (7) وحدة طول؟",
+      "diagram": null,
+      "full_model_solution": "بما أن السعة أكبر من 2π، نقوم بتبسيطها: 27π/2 تعادل 3π/2 (بعد طرح الدورات). الزاوية 3π/2 تقابل (0, -1). إذاً Z = 7(0 - i) = -7i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "5",
+      "question_text": "اذا كان Z = cos2θ + i sin2θ اثبت ان 2/(Z-1) = -1 - icotθ",
+      "diagram": null,
+      "full_model_solution": "استخدم المتطابقات المثلثية لنصف الزاوية: cos2θ = 1-2sin²θ و sin2θ = 2sinθcosθ. بالتعويض في Z-1 ينتج 2sinθ(cosθ - i sinθ) في المقام.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "6",
+      "question_text": "برهن أن باستخدام مبرهنة ديموافر (1 - √3i)^6 = 64",
+      "diagram": null,
+      "full_model_solution": "حول (1 - √3i) إلى الصيغة القطبية: r=2, θ=5π/3. ارفعها للقوة 6 باستخدام ديموافر: 2^6 (cos 10π + i sin 10π) = 64(1 + 0) = 64.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "7",
+      "question_text": "اذا كان Z = √3/2 + i/2 جد باستخدام مبرهنة ديموافر Z^32؟",
+      "diagram": null,
+      "full_model_solution": "العدد هو (cos π/6 + i sin π/6). باستخدام ديموافر Z^32 = cos(32π/6) + i sin(32π/6) = cos(16π/3) + i sin(16π/3) = cos(4π/3) + i sin(4π/3).",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "8",
+      "question_text": "برهن أن باستخدام مبرهنة ديموافر (1 - i)^6 = 8i",
+      "diagram": null,
+      "full_model_solution": "(1 - i) بصيغته القطبية هو √2(cos 7π/4 + i sin 7π/4). عند رفعه للقوة 6، يصبح (√2)^6 * (cos 21π/2 + i sin 21π/2) = 8 * (0 + i) = 8i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "9",
+      "question_text": "أثبت أن باستخدام مبرهنة ديموافر 32- = (1 - √3i)^5 + (-1 + √3i)^5",
+      "diagram": null,
+      "full_model_solution": "حول العددين إلى صيغ قطبية، ارفع كل منهما للقوة 5، ثم اجمع النتائج وستجد أنها تساوي -32.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "10",
+      "question_text": "جد الجذور التكعيبية للعدد (-8) باستخدام مبرهنة ديموافر؟",
+      "diagram": null,
+      "full_model_solution": "العدد هو 8(cos π + i sin π). الجذور هي 2(cos(π+2kπ)/3 + i sin(π+2kπ)/3) لـ k=0, 1, 2.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "11",
+      "question_text": "اذا كان Z = cosθ + i sinθ برهن ان (Z²-1)/(Z²+1) = itanθ",
+      "diagram": null,
+      "full_model_solution": "عوض Z بقيمته، استخدم المتطابقات المثلثية لحذف الواحد والاختصار بين البسط والمقام.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "12",
+      "question_text": "جد باستخدام مبرهنة ديموافر (1 + i)^13؟",
+      "diagram": null,
+      "full_model_solution": "العدد هو √2(cos π/4 + i sin π/4). ارفع للقوة 13: (√2)^13 * (cos 13π/4 + i sin 13π/4) = 64√2 * (-1/√2 - i/√2) = -64 - 64i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "13",
+      "question_text": "حل المعادلة في C باستخدام مبرهنة ديموافر 0 = 1 + x²",
+      "diagram": null,
+      "full_model_solution": "x² = -1، إذاً x = ±√-1 = ±i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "14",
+      "question_text": "اذا كان i(b-4) + 1- = Z عدد مركب وكان arg(z) = 3π/4 جد قيمة b",
+      "diagram": null,
+      "full_model_solution": "بما أن السعة 3π/4، فإن tan(3π/4) = y/x = -1. ومنه (b-4)/-1 = -1، إذن b-4 = 1، أي b=5.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "15",
+      "question_text": "أحسب باستخدام مبرهنة ديموافر: [√2(cos 4π/3 + i sin 4π/3)]^6",
+      "diagram": null,
+      "full_model_solution": "(√2)^6 * (cos(6*4π/3) + i sin(6*4π/3)) = 8 * (cos 8π + i sin 8π) = 8 * (1 + 0) = 8.",
+      "interactive_steps": []
+    }
+  ],
+  "page_id": 106,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

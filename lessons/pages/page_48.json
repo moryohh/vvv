@@ -1,0 +1,141 @@
+{
+  "page_number": 48,
+  "page_id": 48,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "11",
+      "question_text": "حل المعادلة في C: z^4 + 13z^2 + 36 = 0",
+      "diagram": null,
+      "full_model_solution": "المعادلة من الدرجة الرابعة، نفرض z^2 = u فتصبح u^2 + 13u + 36 = 0. بالتحليل (u+9)(u+4)=0. إذن z^2 = -9 أو z^2 = -4. نكتب القيم بدلالة i: z^2 = 9i^2 أو z^2 = 4i^2. بأخذ الجذر التربيعي للطرفين نجد: z = ±3i و z = ±2i. مجموعة الحل S = {3i, -3i, 2i, -2i}.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول المعادلة إلى صيغة تربيعية بفرض u = z^2 ثم نحللها إلى عوامل.",
+          "step_assistant_solution": "(z^2 + 9)(z^2 + 4) = 0",
+          "inputs": [
+            {
+              "input_id": "q11_step1_input1",
+              "label": "ما هو تحليل المقدار (z^4 + 13z^2 + 36)؟",
+              "correct_answer": "(z^2 + 9)(z^2 + 4)",
+              "options": [
+                "(z^2 + 9)(z^2 + 4)",
+                "(z^2 - 9)(z^2 - 4)",
+                "(z^2 + 13)(z^2 + 3)",
+                "(z^2 + 12)(z^2 + 3)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم طريقة التجربة للتحليل.",
+            "related_topics": [
+              {
+                "topic_title": "التحليل بالتجربة",
+                "explanation": "طريقة البحث عن عددين حاصل ضربهما الحد الثابت ومجموعهما معامل الحد الأوسط."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q11_step1_input1"
+                },
+                " = 0"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "12",
+      "question_text": "حل المعادلة في C: x^2 + xi + 1 = (-3 + 4xi)",
+      "diagram": null,
+      "full_model_solution": "ننقل جميع الحدود لجهة واحدة: x^2 + xi + 1 + 3 - 4xi = 0 تصبح x^2 - 3xi + 4 = 0. بما أن 4 = -4i^2، تصبح x^2 - 3xi - 4i^2 = 0. بالتحليل (x - 4i)(x + i) = 0. إذن الحلول x = 4i أو x = -i. S = {4i, -i}.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقل جميع الحدود للطرف الأيسر لتصبح المعادلة صفرية.",
+          "step_assistant_solution": "x^2 - 3xi + 4 = 0",
+          "inputs": [
+            {
+              "input_id": "q12_step1_input1",
+              "label": "ما هي المعادلة بعد ترتيب الحدود؟",
+              "correct_answer": "x^2 - 3xi + 4 = 0",
+              "options": [
+                "x^2 - 3xi + 4 = 0",
+                "x^2 + 5xi - 2 = 0",
+                "x^2 - 3xi - 2 = 0",
+                "x^2 + xi + 4 = 0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل (-3 + 4xi) للطرف الأيسر بتغيير الإشارات.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "تذكر عند نقل أي حد عبر اليساوي تتغير إشارته."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q12_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "واجب 1",
+      "question_text": "حل المعادلة: iZ^2 - 4iZ - 8 + 4i = 0",
+      "diagram": null,
+      "full_model_solution": "بقسمة المعادلة على i: Z^2 - 4Z - 8/i + 4 = 0 => Z^2 - 4Z + 8i + 4 = 0. بالتعامل معها كمعادلة تربيعية، نجد الحلول S = {2i, 4-2i}.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "واجب 2",
+      "question_text": "حل المعادلة: x^2 - 3xi - i√(-16) = 0",
+      "diagram": null,
+      "full_model_solution": "بما أن √(-16) = 4i، تصبح المعادلة x^2 - 3xi - i(4i) = 0 => x^2 - 3xi + 4 = 0. الحلول S = {4i, -i}.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "واجب 3",
+      "question_text": "حل المعادلة: x^2 - 2x = -1 + 2i",
+      "diagram": null,
+      "full_model_solution": "المعادلة: x^2 - 2x + 1 - 2i = 0. باستخدام القانون العام أو الإكمال للمربع، S = {2+i, -i}.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "واجب 4",
+      "question_text": "حل المعادلة: x^4 + 10x^2 + 9 = 0",
+      "diagram": null,
+      "full_model_solution": "بالتحليل: (x^2 + 9)(x^2 + 1) = 0، لذا x^2 = -9 أو x^2 = -1. إذن S = {±3i, ±i}.",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "واجب 5",
+      "question_text": "حل المعادلة: x^4 + 25x^2 + 144 = 0",
+      "diagram": null,
+      "full_model_solution": "بالتحليل: (x^2 + 16)(x^2 + 9) = 0، لذا x^2 = -16 أو x^2 = -9. إذن S = {±4i, ±3i}.",
+      "interactive_steps": [],
+      "hint": null
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

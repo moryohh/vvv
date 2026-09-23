@@ -1,0 +1,132 @@
+{
+  "page_number": 119,
+  "page_id": 119,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "من معادلة القطع المكافئ (y + 1)^2 = 4(x - 2) عين الرأس، والبؤرة، ومعادلة المحور، ومعادلة الدليل.",
+      "diagram": {
+        "diagram_id": "q1_table_01",
+        "diagram_type": "جدول",
+        "diagram_desc": "جدول يوضح حالات انسحاب المحاور للقطع المكافئ ومعادلاتها وبؤرها وأدلتها",
+        "diagram_box": [
+          116,
+          51,
+          297,
+          887
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_119_q1_table_01_table.png"
+      },
+      "full_model_solution": "المعادلة المعطاة هي (y + 1)^2 = 4(x - 2). بالمقارنة مع الصيغة القياسية (y - k)^2 = 4p(x - h)، نجد أن الرأس V(h, k) = (2, -1). وبمساواة 4p = 4 نجد p = 1. البؤرة F(p + h, k) = (1 + 2, -1) = (3, -1). معادلة المحور y = k = -1. معادلة الدليل x = -p + h = -1 + 2 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بمطابقة المعادلة المعطاة (y + 1)^2 = 4(x - 2) مع الصيغة العامة (y - k)^2 = 4p(x - h) لاستخراج إحداثيات الرأس (h, k).",
+          "step_assistant_solution": "h = 2, k = -1، إذن الرأس V(2, -1)",
+          "inputs": [
+            {
+              "input_id": "q1_step1_input",
+              "label": "ما هي إحداثيات الرأس (h, k)؟",
+              "correct_answer": "(2, -1)",
+              "options": [
+                "(2, -1)",
+                "(-2, 1)",
+                "(1, -2)",
+                "(-1, 2)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن h ترتبط بـ x و k ترتبط بـ y داخل الأقواس بعكس الإشارة.",
+            "related_topics": [
+              {
+                "topic_title": "الصور القياسية للقطوع المكافئة",
+                "explanation": "القطع المكافئ الذي ينطبق محوره على الأفقي يكون تربيعياً في y."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي إحداثيات الرأس (h, k)؟ = ",
+                {
+                  "input_id": "q1_step1_input"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخرج قيمة p من خلال مقارنة معامل القوس (x - h) وهو 4p مع القيمة الموجودة في المعادلة المعطاة.",
+          "step_assistant_solution": "4p = 4، إذن p = 1",
+          "inputs": [
+            {
+              "input_id": "q1_step2_input",
+              "label": "ما هي قيمة p؟",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "4",
+                "2",
+                "0.25"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "4p هو المعامل المضروب في القوس غير المربع.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "4p = 4، إذن p = ",
+                {
+                  "input_id": "q1_step2_input"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "بعد معرفة الرأس (h, k) وقيمة p، نطبق قوانين البؤرة والدليل للقطع المكافئ الذي يفتح لليمين.",
+          "step_assistant_solution": "البؤرة (3, -1) والدليل x = 1",
+          "inputs": [
+            {
+              "input_id": "q1_step3_input",
+              "label": "ما هي معادلة الدليل؟",
+              "correct_answer": "x = 1",
+              "options": [
+                "x = 1",
+                "x = 3",
+                "x = -1",
+                "x = 2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "معادلة الدليل للقطع الذي يفتح لليمين هي x = -p + h.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "البؤرة (3, -1) والدليل ",
+                {
+                  "input_id": "q1_step3_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-3",
+  "topic_title": "انسحاب المحاور للقطع المكافئ",
+  "interactive_status": "ready"
+}

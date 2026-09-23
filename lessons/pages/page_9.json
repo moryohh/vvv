@@ -1,0 +1,125 @@
+{
+  "page_number": 9,
+  "page_id": 9,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "حل المعادلة: 3y + (5 - 8i) = 11 + 7i حيث y ∈ C",
+      "diagram": null,
+      "full_model_solution": "3y = (11 + 7i) - (5 - 8i) => 3y = (11 - 5) + (7i + 8i) => 3y = 6 + 15i => y = (6/3) + (15i/3) => y = 2 + 5i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقل الجزء المركب إلى الطرف الآخر مع تغيير إشارته",
+          "step_assistant_solution": "3y = 6 + 15i",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هي قيمة الطرف الأيمن بعد الطرح؟",
+              "correct_answer": "6 + 15i",
+              "options": [
+                "6 + 15i",
+                "16 - i",
+                "6 - i",
+                "16 + 15i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اطرح الحقيقي من الحقيقي والتخيلي من التخيلي مع مراعاة إشارات السالب",
+            "related_topics": [
+              {
+                "topic_title": "طرح الأعداد المركبة",
+                "explanation": "نطرح الجزء الحقيقي من الحقيقي والجزء التخيلي من التخيلي (a+bi)-(c+di) = (a-c) + (b-d)i"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "3y = ",
+                {
+                  "input_id": "q4_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "حل المعادلة: Z + (5 - 3i) = 7 + i حيث Z ∈ C",
+      "diagram": null,
+      "full_model_solution": "Z = (7 + i) - (5 - 3i) => Z = (7 - 5) + (i + 3i) => Z = 2 + 4i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "عزل Z في طرف بمفردها بطرح (5-3i) من الطرفين",
+          "step_assistant_solution": "Z = 2 + 4i",
+          "inputs": [
+            {
+              "input_id": "q5_step1",
+              "label": "ما هي قيمة Z؟",
+              "correct_answer": "2 + 4i",
+              "options": [
+                "2 + 4i",
+                "12 - 2i",
+                "2 - 2i",
+                "12 + 4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل القوس للطرف الآخر ليصبح بالسالب واجمع الحدود المتشابهة",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "Z = ",
+                {
+                  "input_id": "q5_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "1",
+      "question_text": "جد ناتج ضرب: (1) (2 - 3i)(3 - 5i)",
+      "diagram": null,
+      "full_model_solution": "6 - 10i - 9i + 15i^2 = 6 - 19i + 15(-1) = 6 - 19i - 15 = -9 - 19i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "2",
+      "question_text": "جد ناتج ضرب: (2) (1 - i)(1 + 2i)",
+      "diagram": null,
+      "full_model_solution": "1 + 2i - i - 2i^2 = 1 + i - 2(-1) = 1 + i + 2 = 3 + i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد ناتج ضرب: (3) (2 - 4i)(3 - 2i)",
+      "diagram": null,
+      "full_model_solution": "6 - 4i - 12i + 8i^2 = 6 - 16i + 8(-1) = 6 - 16i - 8 = -2 - 16i",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "4",
+      "question_text": "جد ناتج ضرب: (4) (-1 + √-25)(2 + √-4)",
+      "diagram": null,
+      "full_model_solution": "(-1 + 5i)(2 + 2i) = -2 - 2i + 10i + 10i^2 = -2 + 8i - 10 = -12 + 8i",
+      "interactive_steps": []
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-2",
+  "topic_title": "العمليات على مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

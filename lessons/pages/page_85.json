@@ -1,0 +1,121 @@
+{
+  "page_number": 85,
+  "page_id": 85,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "احسب القيمة للعدد المركب: (cos(7π/12) + i sin(7π/12))^-3",
+      "diagram": null,
+      "full_model_solution": "باستخدام تعميم مبرهنة ديموافر: [r(cosθ + i sinθ)]^n = r^n(cos(nθ) + i sin(nθ)).\nعندما r=1 و n=-3:\n(cos(7π/12) + i sin(7π/12))^-3 = cos(-3 * 7π/12) + i sin(-3 * 7π/12)\n= cos(-7π/4) + i sin(-7π/4)\nبما أن -7π/4 تكافئ π/4 في الدورة:\n= cos(π/4) + i sin(π/4) = 1/√2 + i(1/√2)",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تطبيق مبرهنة ديموافر بضرب الأس في الزاوية.",
+          "step_assistant_solution": "الزاوية تصبح -21π/12 والتي تختصر إلى -7π/4.",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هي قيمة الزاوية الجديدة بعد الضرب؟",
+              "correct_answer": "-7π/4",
+              "options": [
+                "-7π/4",
+                "7π/4",
+                "-7π/3",
+                "7π/3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن n * θ = -3 * 7π/12",
+            "related_topics": [
+              {
+                "topic_title": "تعميم مبرهنة ديموافر",
+                "explanation": "الأس السالب يغير إشارة الجزء التخيلي أو يضرب الزاوية في عدد سالب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الزاوية تصبح -21π/12 والتي تختصر إلى ",
+                {
+                  "input_id": "q4_step1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "احسب القيمة للعدد المركب: (cos(3π/14) + i sin(3π/14))^-7",
+      "diagram": null,
+      "full_model_solution": "بتطبيق تعميم مبرهنة ديموافر:\n(cos(3π/14) + i sin(3π/14))^-7 = cos(-7 * 3π/14) + i sin(-7 * 3π/14)\n= cos(-3π/2) + i sin(-3π/2)\n= cos(π/2) - i sin(π/2) [لأن الزاوية -3π/2 تقع على محور الصادات الموجب وتكافئ π/2]\n= 0 - i(1) = -i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الزاوية الناتجة بعد الضرب في الأس -7.",
+          "step_assistant_solution": "-3π/2",
+          "inputs": [
+            {
+              "input_id": "q5_step1",
+              "label": "ما هي الزاوية الناتجة؟",
+              "correct_answer": "-3π/2",
+              "options": [
+                "-3π/2",
+                "3π/2",
+                "-π/2",
+                "π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب -7 في 3π/14",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q5_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "جد ناتج: √2 [cos(5π/24) + i sin(5π/24)]^-6",
+      "diagram": null,
+      "full_model_solution": "الناتج = (√2)^-6 * [cos(-6 * 5π/24) + i sin(-6 * 5π/24)]\n= (2^1/2)^-6 * [cos(-5π/4) + i sin(-5π/4)]\n= 2^-3 * [cos(5π/4) - i sin(5π/4)]\n= 1/8 * (-1/√2 - i/√2) = -1/(8√2) - i/(8√2)",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "7",
+      "question_text": "جد ناتج: 2 [cos(5π/4) + i sin(5π/4)]^7",
+      "diagram": null,
+      "full_model_solution": "الناتج = 2^7 * [cos(7 * 5π/4) + i sin(7 * 5π/4)]\n= 128 * [cos(35π/4) + i sin(35π/4)]\nبما أن 35π/4 = 8π + 3π/4 (دورتان كاملتان):\n= 128 * [cos(3π/4) + i sin(3π/4)]\n= 128 * (-1/√2 + i/√2) = -128/√2 + i(128/√2)",
+      "interactive_steps": [],
+      "hint": null
+    },
+    {
+      "question_number": "8",
+      "question_text": "جد ناتج: √2 [cos(5π/24) + i sin(5π/24)]^-4",
+      "diagram": null,
+      "full_model_solution": "الناتج = (√2)^-4 * [cos(-4 * 5π/24) + i sin(-4 * 5π/24)]\n= (2^1/2)^-4 * [cos(-5π/6) + i sin(-5π/6)]\n= 2^-2 * [cos(5π/6) - i sin(5π/6)]\n= 1/4 * (-√3/2 - i/2) = -√3/8 - i/8",
+      "interactive_steps": [],
+      "hint": null
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

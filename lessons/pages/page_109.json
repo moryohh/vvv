@@ -1,0 +1,124 @@
+{
+  "page_number": 109,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "عرف القطع المخروطي واذكر الاختلاف المركزي (e) لأنواعه الأربعة.",
+      "diagram": {
+        "diagram_id": "q1_table_01",
+        "diagram_type": "جدول",
+        "diagram_desc": "جدول يوضح أنواع القطع المخروطي وقيم الاختلاف المركزي (e) المقابلة لها.",
+        "diagram_box": [
+          292,
+          175,
+          442,
+          825
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_109_q1_table_01_table.png"
+      },
+      "full_model_solution": "القطع المخروطي هو المحل الهندسي لمجموعة من النقاط في المستوي التي نسبة بعدها عن نقطة ثابتة (البؤرة F) إلى بعدها عن مستقيم معلوم (الدليل) تساوي عدداً ثابتاً (e). أنواع القطوع بناءً على الاختلاف المركزي: 1. الدائرة: e=0، 2. قطع ناقص: 0 < e < 1، 3. قطع مكافئ: e=1، 4. قطع زائد: e > 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: استيعاب تعريف القطع المخروطي كنسبة ثابتة.",
+          "step_assistant_solution": "الاختلاف المركزي e هو نسبة البعد عن البؤرة إلى البعد عن الدليل.",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة e للقطع المكافئ؟",
+              "correct_answer": "1",
+              "options": [
+                "0",
+                "1",
+                "0.5",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "راجع الجدول المرفق في الصورة لتحديد نوع القطع بناءً على قيمة e.",
+            "related_topics": [
+              {
+                "topic_title": "الاختلاف المركزي",
+                "explanation": "هو النسبة بين بعد النقطة عن البؤرة وبعدها عن الدليل."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة e للقطع المكافئ؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "اشرح مفهوم القطع المكافئ الموضح في الشكل، موضحاً العلاقة بين البؤرة والدليل.",
+      "diagram": {
+        "diagram_id": "q2_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ يوضح البؤرة F(p,0) والدليل ومسافة 2p بينهما.",
+        "diagram_box": [
+          680,
+          200,
+          930,
+          850
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_109_q2_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "القطع المكافئ هو مجموعة النقاط التي تبعد عن البؤرة F(p,0) مسافة تساوي بعدها عن المستقيم المعلوم (الدليل D). في حالة الرسم الموضح، البؤرة تقع على محور x والرأس عند نقطة الأصل، والاختلاف المركزي e=1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: فهم التوازن الهندسي في القطع المكافئ حيث MF = MQ.",
+          "step_assistant_solution": "المسافة بين البؤرة والدليل تساوي 2p.",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي قيمة الاختلاف المركزي للقطع المكافئ؟",
+              "correct_answer": "1",
+              "options": [
+                "0",
+                "1",
+                "0.5",
+                "أكبر من 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "في القطع المكافئ، البعد عن البؤرة يساوي دائماً البعد عن الدليل.",
+            "related_topics": [
+              {
+                "topic_title": "القطع المكافئ",
+                "explanation": "محل هندسي حيث النقطة تتحرك بحيث يبقى بعدها عن نقطة ثابتة مساوياً لبعدها عن مستقيم ثابت."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة الاختلاف المركزي للقطع المكافئ؟ = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 109,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-1",
+  "topic_title": "القطوع المخروطية وأهمية دراستها",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,111 @@
+{
+  "page_number": 87,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "اثبت ان: [ (cos 3θ + i sin 3θ)^4 / (cos 5θ + i sin 5θ)^2 ] * (cos θ - i sin θ)^2 = 1",
+      "diagram": null,
+      "full_model_solution": "باستخدام مبرهنة ديموافر والعلاقات المثلثية:\n1. نبسط البسط: (cos 3θ + i sin 3θ)^4 = (cos θ + i sin θ)^12\n2. نبسط المقام: (cos 5θ + i sin 5θ)^2 = (cos θ + i sin θ)^10\n3. نستخدم العلاقة (cos θ - i sin θ)^n = (cos θ + i sin θ)^-n\n4. إذن (cos θ - i sin θ)^2 = (cos θ + i sin θ)^-2\n5. نضرب المقادير: (cos θ + i sin θ)^12 * (cos θ + i sin θ)^-10 * (cos θ + i sin θ)^-2 = (cos θ + i sin θ)^(12-10-2) = (cos θ + i sin θ)^0 = 1",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل الصيغ القطبية باستخدام مبرهنة ديموافر لتوحيد الأساس إلى (cos θ + i sin θ).",
+          "step_assistant_solution": "(cos θ + i sin θ)^12 / (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-2",
+          "inputs": [
+            {
+              "input_id": "step1_input",
+              "label": "ما هو ناتج تبسيط (cos 3θ + i sin 3θ)^4؟",
+              "correct_answer": "(cos θ + i sin θ)^12",
+              "options": [
+                "(cos θ + i sin θ)^12",
+                "(cos θ + i sin θ)^7",
+                "(cos θ + i sin θ)^81",
+                "(cos θ + i sin θ)^64"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن (cos nθ + i sin nθ)^m = (cos θ + i sin θ)^(n*m)",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "رفع العدد المركب بالصيغة القطبية لقوة n يعني ضرب الزاوية في n."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step1_input"
+                },
+                " / (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-2"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "هل أن: [ (cos 2θ + i sin 2θ)^5 / (cos 4θ + i sin 4θ)^2 ] - (cos θ + i sin θ)^2 = 0",
+      "diagram": null,
+      "full_model_solution": "1. تبسيط الكسر: [(cos θ + i sin θ)^10 / (cos θ + i sin θ)^8] = (cos θ + i sin θ)^2\n2. نطرح المقدار: (cos θ + i sin θ)^2 - (cos θ + i sin θ)^2 = 0\n3. النتيجة صحيحة (نعم).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط البسط والمقام في الكسر الأول.",
+          "step_assistant_solution": "(cos θ + i sin θ)^10 / (cos θ + i sin θ)^8 = (cos θ + i sin θ)^2",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هو حاصل طرح الأسس في الكسر؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "0",
+                "8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عند قسمة الأساسات المتشابهة، نطرح الأسس.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "(cos θ + i sin θ)^10 / (cos θ + i sin θ)^8 = (cos θ + i sin θ)^",
+                {
+                  "input_id": "q4_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "اثبت ان: [ (cos 2θ + i sin 2θ)^3 / (cos 5θ + i sin 5θ) ] * (cos θ - i sin θ) = 1",
+      "diagram": null,
+      "full_model_solution": "1. البسط: (cos θ + i sin θ)^6\n2. المقام: (cos θ + i sin θ)^5\n3. القوس الأخير: (cos θ + i sin θ)^-1\n4. حاصل الضرب: (cos θ + i sin θ)^(6-5-1) = (cos θ + i sin θ)^0 = 1",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "6",
+      "question_text": "ضع في أبسط صورة: [ (sin 2θ - i cos 2θ)^5 * (cos θ - i sin θ)^4 ] / (sin 3θ - i cos 3θ)^2",
+      "diagram": null,
+      "full_model_solution": "تحويل الصيغ إلى (cos - i sin) واستخدام الخواص الأسية للوصول إلى النتيجة النهائية.",
+      "interactive_steps": []
+    }
+  ],
+  "page_id": 87,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

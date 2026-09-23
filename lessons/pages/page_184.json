@@ -1,0 +1,105 @@
+{
+  "page_number": 184,
+  "page_id": 184,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "قطع زائد مركزة نقطة الاصل وبؤرتاه على محور الصادات وطول محوره المرافق 2√2 وحدة واختلافه المركزي يساوي (3)؟",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم بياني لقطع زائد يمر عبر محوري الإحداثيات بؤرتاه على محور الصادات",
+        "diagram_box": [
+          595,
+          345,
+          935,
+          685
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_184_q1_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "1. بما أن طول المحور المرافق 2b = 2√2، إذاً b = √2، وبالتالي b² = 2.\n2. بما أن الاختلاف المركزي e = c/a = 3، إذاً c = 3a.\n3. نستخدم علاقة القطع الزائد c² = a² + b².\n4. نعوض (3a)² = a² + 2، مما يؤدي إلى 9a² = a² + 2، أي 8a² = 2، فنجد a² = 1/4.\n5. معادلة القطع الزائد على محور الصادات هي: y²/a² - x²/b² = 1.\n6. بالتعويض نجد المعادلة: y²/(1/4) - x²/2 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ باستخراج قيم b من طول المحور المرافق المعطى.",
+          "step_assistant_solution": "b = √2",
+          "inputs": [
+            {
+              "input_id": "q1_step1_input1",
+              "label": "قيمة b هي:",
+              "correct_answer": "√2",
+              "options": [
+                "√2",
+                "2√2",
+                "1",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قانون طول المحور المرافق هو 2b.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الزائد",
+                "explanation": "المحور المرافق في القطع الزائد يساوي 2b."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "b = ",
+                {
+                  "input_id": "q1_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم العلاقة بين الاختلاف المركزي c و a، ثم نعوض في قانون c² = a² + b².",
+          "step_assistant_solution": "a² = 1/4",
+          "inputs": [
+            {
+              "input_id": "q1_step2_input1",
+              "label": "قيمة a² هي:",
+              "correct_answer": "1/4",
+              "options": [
+                "1/4",
+                "1/2",
+                "1",
+                "9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن c = 3a، فإن c² = 9a². نعوض في المعادلة 9a² = a² + 2.",
+            "related_topics": [
+              {
+                "topic_title": "علاقة حلال مشاكل القطع الزائد",
+                "explanation": "العلاقة الأساسية هي c² = a² + b² حيث c هي المسافة للبؤرة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a² = ",
+                {
+                  "input_id": "q1_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-8",
+  "topic_title": "انسحاب محاور القطع الزائد",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,103 @@
+{
+  "page_number": 94,
+  "page_id": 94,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "18",
+      "question_text": "مثال (18): اذا كان z = cos 2x + i sin 2x فأثبت ان 2 / (1 + z) = 1 - i tan x",
+      "diagram": null,
+      "full_model_solution": "L.H.S = 2 / (1 + z) = 2 / (1 + cos 2x + i sin 2x). Using half-angle identities: 1 + cos 2x = 2 cos² x and sin 2x = 2 sin x cos x. Substituting: 2 / (2 cos² x + 2i sin x cos x) = 2 / [2 cos x (cos x + i sin x)] = 1 / [cos x (cos x + i sin x)]. Multiplying by the conjugate (cos x - i sin x) or using (cos x + i sin x)^-1 = cos x - i sin x: = (cos x - i sin x) / cos x = cos x / cos x - i (sin x / cos x) = 1 - i tan x = R.H.S",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط المقام باستخدام متطابقات ضعف الزاوية لتحويل 1 + cos 2x إلى 2 cos² x.",
+          "step_assistant_solution": "المقام يصبح 2 cos² x + 2i sin x cos x",
+          "inputs": [
+            {
+              "input_id": "q18_step1",
+              "label": "ما هو ناتج 1 + cos 2x؟",
+              "correct_answer": "2 cos² x",
+              "options": [
+                "2 cos² x",
+                "2 sin² x",
+                "cos² x",
+                "1 + sin x"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون ضعف الزاوية cos 2x = 2 cos² x - 1",
+            "related_topics": [
+              {
+                "topic_title": "قوانين ضعف الزاوية",
+                "explanation": "تستخدم لتبسيط الدوال المثلثية لزاوية 2x إلى دلالة زاوية x."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المقام يصبح ",
+                {
+                  "input_id": "q18_step1"
+                },
+                " + 2i sin x cos x"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "19",
+      "question_text": "مثال (19): 2019 الدور (2) اذا كان z = cos θ + i sin θ اثبت ان (1 + z_bar)z = 1 + z",
+      "diagram": null,
+      "full_model_solution": "L.H.S = (1 + z̄)z. Since z = cos θ + i sin θ, then z̄ = cos θ - i sin θ. (1 + cos θ - i sin θ)(cos θ + i sin θ). Grouping terms: [(1 + cos θ) - i sin θ] * (cos θ + i sin θ) = (1 + cos θ)(cos θ + i sin θ) - i sin θ(cos θ + i sin θ) = cos θ + i sin θ + cos² θ + i sin θ cos θ - i sin θ cos θ - i² sin² θ = (cos θ + i sin θ) + (cos² θ + sin² θ) = z + 1 = R.H.S",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التعويض عن مرافق العدد المركب z̄ بـ cos θ - i sin θ.",
+          "step_assistant_solution": "z̄ = cos θ - i sin θ",
+          "inputs": [
+            {
+              "input_id": "q19_step1",
+              "label": "ما قيمة z̄ إذا كانت z = cos θ + i sin θ؟",
+              "correct_answer": "cos θ - i sin θ",
+              "options": [
+                "cos θ - i sin θ",
+                "cos θ + i sin θ",
+                "-cos θ + i sin θ",
+                "sin θ + i cos θ"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المرافق يعني تغيير إشارة الجزء التخيلي فقط.",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "هو العدد الناتج عن تغيير إشارة الجزء التخيلي في العدد المركب."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "z̄ = ",
+                {
+                  "input_id": "q19_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

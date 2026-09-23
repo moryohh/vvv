@@ -1,0 +1,106 @@
+{
+  "page_number": 225,
+  "page_id": 225,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "في المثال رقم 2: ليكن ABC مثلثاً وليكن AF ⊥ (ABC)، BD ⊥ CF، BE ⊥ CA. برهن أن: BE ⊥ (CAF) و ED ⊥ CF.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل توضيحي",
+        "diagram_desc": "رسم هندسي يوضح المثلث ABC مع المستويات والتعامدات المذكورة في السؤال.",
+        "diagram_box": [
+          445,
+          110,
+          785,
+          875
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_225_q1_fig_01_shape_diagram.png"
+      },
+      "full_model_solution": "المعطيات: AF ⊥ (ABC)، BD ⊥ CF، BE ⊥ CA. البرهان لـ BE ⊥ (CAF): بما أن AF ⊥ (ABC) فإن المستوي (CAF) يتعامد مع المستوي (ABC) لأن أحدهما يحتوي على مستقيم عمودي على الآخر. وبما أن BE في المستوى (ABC) و BE ⊥ CA (معطى)، وبما أن (CAF) ∩ (ABC) = CA، فإن BE يكون عمودياً على المستوي (CAF). بالنسبة لـ ED ⊥ CF: بما أن BE ⊥ (CAF) فإن BE ⊥ CF. وبما أن BD ⊥ CF (معطى)، فإن المستقيم CF عمودي على المستقيمين المتقاطعين BE و BD، إذن CF عمودي على المستوي (BED)، وبالتالي CF ⊥ ED.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نثبت أولاً تعامد المستويات باستخدام مبرهنة تعامد مستويين.",
+          "step_assistant_solution": "المستوى (CAF) يحتوي على AF العمودي على (ABC)، إذن المستويان (CAF) و (ABC) متعامدان.",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "هل المستويان متعامدان؟",
+              "correct_answer": "نعم، لأن AF ⊥ (ABC)",
+              "options": [
+                "نعم، لأن AF ⊥ (ABC)",
+                "لا، غير متعامدين",
+                "نعم، لأن زواياهما 90",
+                "لا توجد معلومات كافية"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر مبرهنة: إذا احتوى مستوٍ على مستقيم عمودي على مستوٍ آخر، فالمستويان متعامدان.",
+            "related_topics": [
+              {
+                "topic_title": "تعامد المستويات",
+                "explanation": "يكون المستويان متعامدين إذا احتوى أحدهما على مستقيم عمودي على الآخر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "هل المستويان متعامدان؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "الخارطة الذهنية: إثبات أن BE عمودي على المستوي (CAF).",
+          "step_assistant_solution": "BE عمودي على CA (معطى) وعمودي على AF (لأن AF عمودي على (ABC))، إذن BE عمودي على المستوي (CAF).",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ماذا نستنتج من تعامد BE مع CA و AF؟",
+              "correct_answer": "BE عمودي على المستوي (CAF)",
+              "options": [
+                "BE يوازي (CAF)",
+                "BE عمودي على المستوي (CAF)",
+                "BE يقع داخل (CAF)",
+                "BE يتقاطع مع (CAF) بزاوية"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المستقيم العمودي على مستقيمين متقاطعين في مستوٍ يكون عمودياً على ذلك المستوي.",
+            "related_topics": [
+              {
+                "topic_title": "تعامد مستقيم ومستوٍ",
+                "explanation": "المستقيم العمودي على مستقيمين متقاطعين في مستوٍ يكون عمودياً على ذلك المستوي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "BE عمودي على CA (معطى) وعمودي على AF (لأن AF عمودي على (ABC))، إذن ",
+                {
+                  "input_id": "step2_input1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

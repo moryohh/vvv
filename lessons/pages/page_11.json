@@ -1,0 +1,436 @@
+{
+  "page_number": 11,
+  "page_id": 11,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "مثال (4)",
+      "question_text": "ضع بالصورة العادية للعدد المركب: (-3 + i)² + (1 + 2i)² [واجب بيتي]",
+      "diagram": null,
+      "full_model_solution": "(-3 + i)² + (1 + 2i)²\n= (9 - 6i + i²) + (1 + 4i + 4i²)\n= (9 - 6i - 1) + (1 + 4i - 4)\n= (8 - 6i) + (-3 + 4i)\n= (8 - 3) + (-6i + 4i)\n= 5 - 2i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "فك الأقواس باستخدام قانون مربع الحدانية لكل من القوسين: (a + b)² = a² + 2ab + b² وتذكر أن i² = -1.",
+          "step_assistant_solution": "(8 - 6i) + (-3 + 4i)",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هو ناتج تبسيط القوسين بعد فك مربع الحدانية وتعويض i² = -1؟",
+              "correct_answer": "(8 - 6i) + (-3 + 4i)",
+              "options": [
+                "(8 - 6i) + (-3 + 4i)",
+                "(10 - 6i) + (-3 + 4i)",
+                "(8 - 6i) + (5 + 4i)",
+                "(9 - 6i) + (1 + 4i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مربع الحدانية الأول: (-3)² + 2(-3)(i) + i² = 9 - 6i - 1 = 8 - 6i. الثاني: 1² + 2(1)(2i) + 4i² = 1 + 4i - 4 = -3 + 4i.",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية وقوى i",
+                "explanation": "عند فك القوس المربع يكون الحد الأخير دائماً b²i² = -b² لأن i² = -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "جمع الأجزاء الحقيقية معاً والأجزاء التخيلية معاً للحصول على الصيغة العادية.",
+          "step_assistant_solution": "5 - 2i",
+          "inputs": [
+            {
+              "input_id": "q4_step2_input1",
+              "label": "الناتج النهائي بالصيغة العادية هو:",
+              "correct_answer": "5 - 2i",
+              "options": [
+                "5 - 2i",
+                "5 + 2i",
+                "11 - 2i",
+                "5 - 10i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الحقيقي: 8 + (-3) = 5، والتخيلي: -6i + 4i = -2i.",
+            "related_topics": [
+              {
+                "topic_title": "جمع الأعداد المركبة",
+                "explanation": "(a + bi) + (c + di) = (a + c) + (b + d)i"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال (5) وزاري 2005 دور (2)",
+      "question_text": "إذا كانت x = -1 + 2i جد قيمة x² + 3x + 5 بالصيغة الديكارتية.",
+      "diagram": null,
+      "full_model_solution": "نعوض قيمة x في المقدار:\n(-1 + 2i)² + 3(-1 + 2i) + 5\n= (1 - 4i + 4i²) - 3 + 6i + 5\n= (1 - 4i - 4) + (2 + 6i)\n= (-3 - 4i) + (2 + 6i)\n= -1 + 2i\nالصيغة الديكارتية: (-1, 2)",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التعويض عن x بـ (-1 + 2i) وفك مربع الحدانية للحد الأول وتوزيع العدد 3 على القوس الثاني.",
+          "step_assistant_solution": "(-3 - 4i) - 3 + 6i + 5",
+          "inputs": [
+            {
+              "input_id": "q5_step1_input1",
+              "label": "ما هو ناتج فك مربع الحدانية (-1 + 2i)²؟",
+              "correct_answer": "-3 - 4i",
+              "options": [
+                "-3 - 4i",
+                "5 - 4i",
+                "-3 + 4i",
+                "1 - 4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "(-1 + 2i)² = (-1)² + 2(-1)(2i) + (2i)² = 1 - 4i - 4 = -3 - 4i.",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية",
+                "explanation": "(a + b)² = a² + 2ab + b² مع مراعاة أن (2i)² = -4."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(",
+                {
+                  "input_id": "q5_step1_input1"
+                },
+                ") - 3 + 6i + 5"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "جمع الحدود وتبسيط الناتج إلى الصيغة العادية ثم كتابته بالصيغة الديكارتية كما هو مطلوب في السؤال.",
+          "step_assistant_solution": "-1 + 2i وبالصيغة الديكارتية (-1, 2)",
+          "inputs": [
+            {
+              "input_id": "q5_step2_input1",
+              "label": "قيمة المقدار بالصيغة الديكارتية هي:",
+              "correct_answer": "(-1, 2)",
+              "options": [
+                "(-1, 2)",
+                "(-1, 2i)",
+                "(1, 2)",
+                "(-3, 6)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اجمع الأجزاء الحقيقية: -3 - 3 + 5 = -1، والأجزاء التخيلية: -4i + 6i = 2i، فالصيغة العادية -1 + 2i والصيغة الديكارتية كزوج مرتب (a, b) هي (-1, 2).",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة الديكارتية للعدد المركب",
+                "explanation": "الصيغة الديكارتية للعدد المركب a + bi تكتب على شكل زوج مرتب (a, b) بدون كتابة i."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "-1 + 2i وبالصيغة الديكارتية ",
+                {
+                  "input_id": "q5_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال (6) وزاري 2007",
+      "question_text": "إذا كانت x = 1 - 2i جد قيمة x² + 2x + 6",
+      "diagram": null,
+      "full_model_solution": "نعوض x = 1 - 2i في المقدار:\n(1 - 2i)² + 2(1 - 2i) + 6\n= (1 - 4i + 4i²) + 2 - 4i + 6\n= (1 - 4i - 4) + (8 - 4i)\n= (-3 - 4i) + (8 - 4i)\n= 5 - 8i\nملاحظة: بحسب حل الملزمة المكتوب بالطباعة، استخدم في التعويض x = -1 + 2i بالخطأ فنتج: 1 + 0i. ولكن طبقاً لمنطوق السؤال x = 1 - 2i فالناتج الدقيق هو 5 - 8i. وإذا كان التعويض x = -1 + 2i يكون الحل: (-1 + 2i)² + 2(-1 + 2i) + 6 = (-3 - 4i) + (-2 + 4i) + 6 = 1 + 0i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التعويض في المقدار وفك المربع وتوزيع الضرب.",
+          "step_assistant_solution": "التعويض بالقيمة المعطاة وتبسيط الأقواس",
+          "inputs": [
+            {
+              "input_id": "q6_step1_input1",
+              "label": "ما هو ناتج تبسيط مربع الحد الأول (-1 + 2i)² كما ورد في خطوات الملزمة؟",
+              "correct_answer": "-3 - 4i",
+              "options": [
+                "-3 - 4i",
+                "5 - 4i",
+                "3 - 4i",
+                "-3 + 4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "1 - 4i - 4 = -3 - 4i.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "توزيع الضرب والجمع وفق قواعد الجبر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج تبسيط مربع الحد الأول (-1 + 2i)² كما ورد في خطوات الملزمة؟ = ",
+                {
+                  "input_id": "q6_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "جمع الحدود الحقيقية والتخيلية للوصول للناتج النهائي كما ورد بالملزمة.",
+          "step_assistant_solution": "1 + 0i",
+          "inputs": [
+            {
+              "input_id": "q6_step2_input1",
+              "label": "ما هو الناتج النهائي المكتوب بالملزمة بالصيغة العادية؟",
+              "correct_answer": "1 + 0i",
+              "options": [
+                "1 + 0i",
+                "1 - 8i",
+                "5 - 8i",
+                "-1 + 0i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "(-3 - 4i) + (4 + 4i) = (-3 + 4) + (-4i + 4i) = 1 + 0i.",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة العادية للعدد المركب",
+                "explanation": "كتابة العدد المركب على شكل a + bi."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q6_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال (7) وزاري 2000 الدور الأول",
+      "question_text": "إذا كان x = 2 + 3i , y = 3 - i جد قيمة x² + 2y²",
+      "diagram": null,
+      "full_model_solution": "x² + 2y² = (2 + 3i)² + 2(3 - i)²\n= (4 + 12i + 9i²) + 2(9 - 6i + i²)\n= (4 + 12i - 9) + 2(9 - 6i - 1)\n= (-5 + 12i) + 2(8 - 6i)\n= (-5 + 12i) + (16 - 12i)\n= (-5 + 16) + (12i - 12i)\n= 11 + 0i",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "فك كلاً من المقدارين المربعين (2 + 3i)² و (3 - i)² مع تطبيق i² = -1.",
+          "step_assistant_solution": "(-5 + 12i) + 2(8 - 6i)",
+          "inputs": [
+            {
+              "input_id": "q7_step1_input1",
+              "label": "ما هو ناتج (2 + 3i)² بعد التبسيط؟",
+              "correct_answer": "-5 + 12i",
+              "options": [
+                "-5 + 12i",
+                "13 + 12i",
+                "-5 - 12i",
+                "4 + 12i"
+              ]
+            },
+            {
+              "input_id": "q7_step1_input2",
+              "label": "ما هو ناتج (3 - i)² بعد التبسيط؟",
+              "correct_answer": "8 - 6i",
+              "options": [
+                "8 - 6i",
+                "10 - 6i",
+                "8 + 6i",
+                "9 - 6i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "(2 + 3i)² = 4 + 12i - 9 = -5 + 12i، و (3 - i)² = 9 - 6i - 1 = 8 - 6i.",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية للأعداد المركبة",
+                "explanation": "فك المربع وتبسيط الحد المحتوي على i² إلى سالب المعامل."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(",
+                {
+                  "input_id": "q7_step1_input1"
+                },
+                ") + 2(",
+                {
+                  "input_id": "q7_step1_input2"
+                },
+                ")"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "توزيع العدد 2 على القوس الثاني ثم جمع الحدود الحقيقية معاً والتخيلية معاً.",
+          "step_assistant_solution": "11 + 0i",
+          "inputs": [
+            {
+              "input_id": "q7_step2_input1",
+              "label": "ما هو الناتج النهائي بالصيغة العادية a + bi؟",
+              "correct_answer": "11 + 0i",
+              "options": [
+                "11 + 0i",
+                "11",
+                "11 + 24i",
+                "21 + 0i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "2(8 - 6i) = 16 - 12i. نجمع: (-5 + 16) + (12i - 12i) = 11 + 0i.",
+            "related_topics": [
+              {
+                "topic_title": "جمع وطرح الأعداد المركبة",
+                "explanation": "جمع الأجزاء الحقيقية والتخيلية بشكل مستقل."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q7_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال (8) وزاري 2004 دور اول",
+      "question_text": "جد بالصيغة العادية للعدد المركب: (2 - √3 i)² - (1 - √3 i)²",
+      "diagram": null,
+      "full_model_solution": "(2 - √3 i)² - (1 - √3 i)²\n= (4 - 4√3 i + 3i²) - (1 - 2√3 i + 3i²)\n= (4 - 4√3 i - 3) - (1 - 2√3 i - 3)\n= (1 - 4√3 i) - (-2 - 2√3 i)\n= (1 - 4√3 i) + (2 + 2√3 i)\n= (1 + 2) + (-4√3 i + 2√3 i)\n= 3 - 2√3 i\n\n(ملاحظة حل الملزمة المكتوب: كتب في الملزمة بطريق الخطأ في أول سطر تبديل القوسين أو إشارة الطرح، ونتج عنده -3 + 2√3 i).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "فك مربع الحدانية لكل قوس مع مراعاة أن (√3 i)² = 3i² = -3.",
+          "step_assistant_solution": "(1 - 4√3 i) للقوس الأول، و (-2 - 2√3 i) للقوس الثاني",
+          "inputs": [
+            {
+              "input_id": "q8_step1_input1",
+              "label": "ما هو ناتج فك القوس (2 - √3 i)² بعد التعويض عن i² = -1؟",
+              "correct_answer": "1 - 4√3 i",
+              "options": [
+                "1 - 4√3 i",
+                "7 - 4√3 i",
+                "1 + 4√3 i",
+                "4 - 4√3 i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مربع 2 هو 4، ضعف الأول في الثاني هو -4√3i، ومربع الثاني هو 3i² = -3. إذن 4 - 3 - 4√3i = 1 - 4√3i.",
+            "related_topics": [
+              {
+                "topic_title": "التعامل مع الجذور وقوى i",
+                "explanation": "(√a i)² = a * i² = -a."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(",
+                {
+                  "input_id": "q8_step1_input1"
+                },
+                ") للقوس الأول، و (-2 - 2√3 i) للقوس الثاني"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "طرح ناتج القوس الثاني من القوس الأول وإيجاد الناتج النهائي بالصيغة العادية.",
+          "step_assistant_solution": "-3 + 2√3 i (وفق ناتج الملزمة) أو 3 - 2√3 i (الحساب المباشر لترتيب السؤال)",
+          "inputs": [
+            {
+              "input_id": "q8_step2_input1",
+              "label": "ما هو الناتج النهائي المعروض في الملزمة؟",
+              "correct_answer": "-3 + 2√3 i",
+              "options": [
+                "-3 + 2√3 i",
+                "3 - 2√3 i",
+                "-3 - 2√3 i",
+                "3 + 2√3 i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "لاحظ أن الملزمة عكست ترتيب القوسين في سطر الحل فكتبت (1 - 2√3i + 3i²) - (4 - 4√3i + 3i²) مما جعل الناتج -3 + 2√3i.",
+            "related_topics": [
+              {
+                "topic_title": "طرح الأعداد المركبة",
+                "explanation": "تحويل عملية الطرح إلى جمع النظير الجمعي للعدد الثاني."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q8_step2_input1"
+                },
+                " (وفق ناتج الملزمة) أو 3 - 2√3 i (الحساب المباشر لترتيب السؤال)"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-2",
+  "topic_title": "العمليات على مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

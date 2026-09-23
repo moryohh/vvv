@@ -1,0 +1,100 @@
+{
+  "page_number": 42,
+  "page_id": 42,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "7",
+      "question_text": "جد الجذور التربيعية للعدد المركب: (14+2i)/(1+i)",
+      "diagram": null,
+      "full_model_solution": "أولاً: نبسط العدد المركب بالضرب في مرافق المقام (1-i)/(1-i)، نحصل على: (14-14i+2i-2i²)/2 = (14-12i+2)/2 = 8-6i. نفرض الجذور التربيعية هي (x+yi)، بالتربيع: x²-y²+2xyi = 8-6i. نساوي الحقيقي بالحقيقي: x²-y²=8 (معادلة 1)، والتخيلي بالتخيلي: 2xy=-6 أي y=-3/x. بالتعويض في (1) نحصل على x⁴-8x²-9=0، تتحلل إلى (x²-9)(x²+1)=0. بما أن x حقيقي، نهمل x²=-1، إذاً x²=9 ومنها x=±3. عندما x=3 يكون y=-1، وعندما x=-3 يكون y=1. الجذور هي ±(3-i).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الكسر بقسمة العدد المركب (14+2i) على (1+i) باستخدام مرافق المقام.",
+          "step_assistant_solution": "8-6i",
+          "inputs": [
+            {
+              "input_id": "q7_step1_input1",
+              "label": "ما هو ناتج تبسيط الكسر؟",
+              "correct_answer": "8-6i",
+              "options": [
+                "8-6i",
+                "8+6i",
+                "6-8i",
+                "7-3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب البسط والمقام في مرافق المقام (1-i). تذكر أن i² = -1.",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "تضرب البسط والمقام في مرافق المقام للتخلص من الجزء التخيلي في المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q7_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "إذا كان a+bi = (7-4i)/(2+i)، جد قيمة جذر (2a-bi) حيث a, b ∈ R",
+      "diagram": null,
+      "full_model_solution": "أولاً: نجد a و b بقسمة (7-4i)/(2+i) بالضرب في (2-i)/(2-i)، الناتج: (14-7i-8i+4i²)/5 = (10-15i)/5 = 2-3i. إذاً a=2 و b=-3. المطلوب هو جذر (2(2) - (-3)i) = جذر (4+3i). نفرض الجذور (x+yi) ونساوي المربعات (x²-y²=4 و 2xy=3) ونحل المعادلة الناتجة x⁴-4x²-9/4=0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "أوجد قيم a و b من المعادلة المعطاة.",
+          "step_assistant_solution": "a=2, b=-3",
+          "inputs": [
+            {
+              "input_id": "q8_step1_input1",
+              "label": "ما هما قيمتا a و b؟",
+              "correct_answer": "a=2, b=-3",
+              "options": [
+                "a=2, b=-3",
+                "a=3, b=-2",
+                "a=2, b=3",
+                "a=-2, b=3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بسّط الكسر بضرب البسط والمقام في (2-i).",
+            "related_topics": [
+              {
+                "topic_title": "مساواة الأعداد المركبة",
+                "explanation": "يكون العددان المركبان متساويين إذا تساوى الجزء الحقيقي مع الحقيقي والتخيلي مع التخيلي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q8_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-5",
+  "topic_title": "الجذور التربيعية للعدد المركب",
+  "interactive_status": "ready"
+}

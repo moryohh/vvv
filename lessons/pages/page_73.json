@@ -1,0 +1,68 @@
+{
+  "page_number": 73,
+  "page_id": 73,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "اكتب العدد المرافق لكل من الاعداد الاتية ثم مثل الاعداد ومرافقاتها على شكل أرغاند.",
+      "diagram": {
+        "diagram_id": "q2_fig_01",
+        "diagram_type": "جدول",
+        "diagram_desc": "جدول يوضح الأعداد المركبة ومرافقاتها وتمثيلها على شكل أرغاند",
+        "diagram_box": [
+          150,
+          65,
+          800,
+          935
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_73_q2_fig_01_table.png"
+      },
+      "full_model_solution": "1. Z1 = 5 + 3i, المرافقة Z1̅ = 5 - 3i. 2. Z2 = -3 + 2i, المرافقة Z2̅ = -3 - 2i. 3. Z3 = 1 - i, المرافقة Z3̅ = 1 + i. 4. Z4 = -2i, المرافقة Z4̅ = 2i. التمثيل البياني يتم عن طريق رسم النقاط (x, y) في المستوى المركب.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "لإيجاد المرافق للعدد المركب Z = a + bi، نقوم بتغيير إشارة الجزء التخيلي فقط لتصبح Z̅ = a - bi.",
+          "step_assistant_solution": "تغيير إشارة معامل i",
+          "inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "ما هو مرافق العدد Z = 5 + 3i؟",
+              "correct_answer": "5 - 3i",
+              "options": [
+                "5 - 3i",
+                "-5 + 3i",
+                "5 + 3i",
+                "-5 - 3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن المرافق يعني عكس إشارة الجزء التخيلي فقط، الجزء الحقيقي يبقى كما هو.",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "العدد المرافق a+bi هو a-bi."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو مرافق العدد Z = 5 + 3i؟ = ",
+                {
+                  "input_id": "q2_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-8",
+  "topic_title": "التمثيل الهندسي للأعداد المركبة",
+  "interactive_status": "ready"
+}

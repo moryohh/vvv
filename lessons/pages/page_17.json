@@ -1,0 +1,157 @@
+{
+  "page_number": 17,
+  "page_id": 17,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "6",
+      "question_text": "بسط المقدار: (7 + √-3) / (1 + √-12)",
+      "diagram": null,
+      "full_model_solution": "بتحويل الجذور التربيعية للعدد السالب إلى الصيغة المركبة: 7 + √3 i / 1 + 2√3 i. بالضرب في مرافق المقام (1 - 2√3 i)، نحصل على: (7 + √3 i)(1 - 2√3 i) / (1^2 + (2√3)^2) = (7 - 14√3 i + √3 i - 6i^2) / (1 + 12) = (13 - 13√3 i) / 13 = 1 - √3 i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الجذور التربيعية للأعداد السالبة إلى صيغة العدد المركب (a + bi).",
+          "step_assistant_solution": "7 + √3 i / 1 + 2√3 i",
+          "inputs": [
+            {
+              "input_id": "q6_s1",
+              "label": "ما هو البسط والمقام بعد تبسيط الجذور؟",
+              "correct_answer": "(7 + √3i) / (1 + 2√3i)",
+              "options": [
+                "(7 + √3i) / (1 + 2√3i)",
+                "(7 - √3i) / (1 - 2√3i)",
+                "(7 + 3i) / (1 + 12i)",
+                "(7 + √3) / (1 + 2√3)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن √-x = i√x.",
+            "related_topics": [
+              {
+                "topic_title": "العدد المركب",
+                "explanation": "تعريف وحدة التخيل i حيث i^2 = -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو البسط والمقام بعد تبسيط الجذور؟ = ",
+                {
+                  "input_id": "q6_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال 3",
+      "question_text": "إذا كانت c1 = 3 - 2i و c2 = 1 + i، فتحقق من أن: (c1/c2)^ = c1^/c2^",
+      "diagram": null,
+      "full_model_solution": "الطرف الأيسر: c1/c2 = (3-2i)/(1+i) * (1-i)/(1-i) = (3-3i-2i+2i^2)/2 = (1-5i)/2 = 1/2 - 5/2i. مرافق الناتج هو 1/2 + 5/2i. الطرف الأيمن: c1^/c2^ = (3+2i)/(1-i) * (1+i)/(1+i) = (3+3i+2i+2i^2)/2 = (1+5i)/2 = 1/2 + 5/2i. إذن الطرفان متساويان.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب حاصل القسمة c1/c2 أولاً بضرب البسط والمقام في مرافق المقام.",
+          "step_assistant_solution": "1/2 - 5/2 i",
+          "inputs": [
+            {
+              "input_id": "ex3_s1",
+              "label": "ما هو ناتج قسمة c1 على c2؟",
+              "correct_answer": "1/2 - 5/2 i",
+              "options": [
+                "1/2 - 5/2 i",
+                "1/2 + 5/2 i",
+                "3 - 2i",
+                "1 + i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم مرافق المقام (1-i) للبسط والمقام.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "ex3_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "مثال 4",
+      "question_text": "إذا كانت c1 = 7 - 4i و c2 = 2 - 3i، فتحقق من أن: (c1/c2)^ = c1^/c2^",
+      "diagram": null,
+      "full_model_solution": "الحل يتبع نفس خطوات المثال السابق: إيجاد القسمة أولاً ثم أخذ المرافق للناتج، ومقارنته بقسمة المرافقات. الجواب النهائي: 2 - i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "مثال 5",
+      "question_text": "ضع بالصورة العادية للعدد المركب: (1 - i^34) / (1 + i^33)",
+      "diagram": null,
+      "full_model_solution": "بما أن i^34 = (i^2)^17 = (-1)^17 = -1، و i^33 = i^32 * i = 1 * i = i. يصبح المقدار: (1 - (-1)) / (1 + i) = 2 / (1 + i). بالضرب في المرافق (1 - i): (2(1-i)) / (1^2 + 1^2) = 2(1-i) / 2 = 1 - i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط قوى العدد التخيلي i.",
+          "step_assistant_solution": "i^34 = -1 و i^33 = i",
+          "inputs": [
+            {
+              "input_id": "ex5_s1_part_1",
+              "label": "ما هي قيم i^34 و i^33؟ — الجزء 1",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "i",
+                "-i"
+              ]
+            },
+            {
+              "input_id": "ex5_s1_part_2",
+              "label": "ما هي قيم i^34 و i^33؟ — الجزء 2",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "-1",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم دورية العدد i حيث i^4=1.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "ex5_s1_part_1"
+                },
+                " و ",
+                {
+                  "input_id": "ex5_s1_part_2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-3",
+  "topic_title": "مرافق العدد المركب",
+  "interactive_status": "ready"
+}

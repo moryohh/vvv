@@ -1,0 +1,125 @@
+{
+  "page_number": 151,
+  "page_id": 151,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "دراسة خصائص القطع الناقص: الحالة الأولى (البؤرتان على محور السينات)",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل توضيحي",
+        "diagram_desc": "رسم توضيحي للقطع الناقص ببؤرتين ورؤوس على محور السينات",
+        "diagram_box": [
+          50,
+          350,
+          200,
+          950
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_151_q1_fig_01_shape_diagram.png"
+      },
+      "full_model_solution": "في هذه الحالة، تكون معادلة القطع الناقص هي (x^2/a^2) + (y^2/b^2) = 1، حيث البؤرتان F1(c,0) و F2(-c,0)، والرؤوس V1(a,0) و V2(-a,0)، والقطبان M1(0,b) و M2(0,-b). من الرسم: a=5, b=3, c=4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد اتجاه القطع الناقص من خلال إحداثيات البؤرتين والرؤوس المعطاة.",
+          "step_assistant_solution": "بما أن البؤرتين والرؤوس تقع على محور السينات (إحداثي y يساوي صفراً)، فالقطع يقع على محور السينات.",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "على أي محور تقع البؤرتان في الحالة الأولى؟",
+              "correct_answer": "محور السينات",
+              "options": [
+                "محور السينات",
+                "محور الصادات",
+                "المحور المائل",
+                "غير محدد"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "لاحظ أن قيم إحداثيات x هي التي تتغير في البؤرتين F1(4,0) و F2(-4,0).",
+            "related_topics": [
+              {
+                "topic_title": "إحداثيات القطع الناقص",
+                "explanation": "إذا كان التغير في قيم x فالمحور هو السينات، وإذا كان في y فالمحور هو الصادات."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "بما أن البؤرتين والرؤوس تقع على محور السينات (إحداثي y يساوي صفراً)، فالقطع يقع على ",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "دراسة خصائص القطع الناقص: الحالة الثانية (البؤرتان على محور الصادات)",
+      "diagram": {
+        "diagram_id": "q2_fig_01",
+        "diagram_type": "شكل توضيحي",
+        "diagram_desc": "رسم توضيحي للقطع الناقص ببؤرتين ورؤوس على محور الصادات",
+        "diagram_box": [
+          300,
+          350,
+          750,
+          950
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_151_q2_fig_01_shape_diagram.png"
+      },
+      "full_model_solution": "في هذه الحالة، تكون معادلة القطع الناقص هي (x^2/b^2) + (y^2/a^2) = 1. من خلال الرسم: البؤرتان F1(0,4) و F2(0,-4)، والرؤوس V1(0,5) و V2(0,-5)، والقطبان M1(3,0) و M2(-3,0). المعادلة الناتجة هي x^2/9 + y^2/25 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استنتاج المعادلة القياسية للقطع الناقص إذا كانت البؤرتان على محور الصادات.",
+          "step_assistant_solution": "بما أن البؤرتين على الصادات، فإن العدد الأكبر (a^2) يكون تحت y^2، فتصبح المعادلة x^2/b^2 + y^2/a^2 = 1.",
+          "inputs": [
+            {
+              "input_id": "q2_s1_i1",
+              "label": "ما هي قيمة a^2 بناءً على الرسم (حيث v1=5)؟",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "9",
+                "5",
+                "16"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قيمة a هي المسافة من المركز إلى الرأس.",
+            "related_topics": [
+              {
+                "topic_title": "التربيع في معادلة القطع",
+                "explanation": "دائماً a^2 هي أكبر قيمة في مقامات المعادلة القياسية للقطع الناقص."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة a^2 بناءً على الرسم (حيث v1=5)؟ = ",
+                {
+                  "input_id": "q2_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-6",
+  "topic_title": "القطع الناقص: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,104 @@
+{
+  "page_number": 101,
+  "page_id": 101,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "29",
+      "question_text": "احسب باستخدام مبرهنة ديموافر (sqrt(3) + i)^(-3) (2017 الدور الأول)",
+      "diagram": null,
+      "full_model_solution": "1. نجد الصيغة القطبية للعدد z = sqrt(3) + i حيث r = 2 و theta = pi/6. 2. نطبق ديموافر للأس -3: z^(-3) = r^(-3) * (cos(-3*theta) + i sin(-3*theta)). 3. الناتج النهائي هو 1/8(cos(pi/2) - i sin(pi/2)) = -i/8.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول العدد المركب إلى صيغته القطبية بإيجاد المقياس r والسعة theta.",
+          "step_assistant_solution": "r = 2, theta = pi/6",
+          "inputs": [
+            {
+              "input_id": "q29_step1_input1",
+              "label": "ما هو مقياس العدد (r)؟",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "sqrt(3)",
+                "1",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم القانون r = sqrt(x^2 + y^2)",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية",
+                "explanation": "تحويل العدد من z=x+iy إلى z=r(cosθ + isinθ)"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "q29_step1_input1"
+                },
+                ", theta = pi/6"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "30",
+      "question_text": "حل المعادلة x^3 + i = 0 باستخدام نتيجة مبرهنة ديموافر (2017 الدور الثاني)",
+      "diagram": null,
+      "full_model_solution": "1. المعادلة هي x^3 = -i. 2. نكتب -i بالصيغة القطبية: cos(3pi/2) + i sin(3pi/2). 3. نطبق نتيجة ديموافر للجذور التكعيبية بإضافة 2k*pi وقسمة الزاوية على 3 حيث k = 0, 1, 2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "كتابة العدد المركب الموجود في الطرف الأيسر للمعادلة بالصيغة القطبية.",
+          "step_assistant_solution": "x^3 = cos(3pi/2) + i sin(3pi/2)",
+          "inputs": [
+            {
+              "input_id": "q30_step1_input1",
+              "label": "ما هي زاوية السعة الأساسية للعدد -i؟",
+              "correct_answer": "3pi/2",
+              "options": [
+                "3pi/2",
+                "pi/2",
+                "pi",
+                "2pi"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد -i يقع على الجزء السالب للمحور التخيلي.",
+            "related_topics": [
+              {
+                "topic_title": "الزوايا الربيعية",
+                "explanation": "الزوايا التي تقع على محاور الإحداثيات."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^3 = cos(3pi/2) + i sin(",
+                {
+                  "input_id": "q30_step1_input1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

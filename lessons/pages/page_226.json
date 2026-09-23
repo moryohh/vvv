@@ -1,0 +1,180 @@
+{
+  "page_number": 226,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "13",
+      "question_text": "برهن أن المستقيمين العموديان على مستو واحد متوازيان. المعطيات: AB عمودي على (X)، CD عمودي على (X). المطلوب برهانه: AB يوازي CD.",
+      "diagram": {
+        "diagram_id": "q13_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مستقيمان AB و CD عموديان على مستوى X",
+        "diagram_box": [
+          270,
+          70,
+          480,
+          650
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_226_q13_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بما أن AB عمودي على (X) و CD عمودي على (X)، وبما أن جميع المستقيمات العمودية على مستوى واحد تكون متوازية في الفضاء، فإن AB يوازي CD.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد علاقة التوازي بين مستقيمين عموديين على نفس المستوى.",
+          "step_assistant_solution": "المستقيمان العموديان على مستوى واحد متوازيان.",
+          "inputs": [
+            {
+              "input_id": "q13_s1_i1",
+              "label": "ما هي النتيجة المستنتجة؟",
+              "correct_answer": "المستقيمان متوازيان",
+              "options": [
+                "المستقيمان متوازيان",
+                "المستقيمان متعامدان",
+                "المستقيمان متقاطعان",
+                "المستقيمان منطبقان"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر مبرهنات التوازي والتعامد في الفضاء.",
+            "related_topics": [
+              {
+                "topic_title": "التوازي في الفضاء",
+                "explanation": "المستقيمات العمودية على مستوى واحد متوازية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي النتيجة المستنتجة؟ = ",
+                {
+                  "input_id": "q13_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "14",
+      "question_text": "برهن أن المستقيم العمودي على أحد مستقيمين متوازيين يكون عمودياً على الآخر. المعطيات: AB يوازي CD، والمستقيم MH عمودي على CD. المطلوب برهانه: MH عمودي على AB.",
+      "diagram": {
+        "diagram_id": "q14_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مستقيم MH عمودي على مستقيم CD الموازي لـ AB",
+        "diagram_box": [
+          500,
+          70,
+          700,
+          650
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_226_q14_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بما أن AB يوازي CD، وبما أن MH عمودي على CD، فمن خواص التوازي في الفضاء، فإن المستقيم القاطع للمستقيمين المتوازيين بشكل عمودي على أحدهما يكون عمودياً على الآخر.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استنتاج علاقة التعامد بناءً على التوازي.",
+          "step_assistant_solution": "المستقيم MH يكون عمودياً على AB.",
+          "inputs": [
+            {
+              "input_id": "q14_s1_i1",
+              "label": "ما هي العلاقة بين MH و AB؟",
+              "correct_answer": "متعامدان",
+              "options": [
+                "متعامدان",
+                "متوازيان",
+                "متقاطعان",
+                "لا توجد علاقة"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم خاصية تعدي التعامد عبر التوازي.",
+            "related_topics": [
+              {
+                "topic_title": "خواص التوازي والتعامد",
+                "explanation": "المستقيم العمودي على أحد مستقيمين متوازيين يعامد الآخر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي العلاقة بين MH و AB؟ = ",
+                {
+                  "input_id": "q14_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "15",
+      "question_text": "إذا وازى مستقيم مستوياً معلوماً فالمستقيم المرسوم من نقطة من نقاطه المستوي والموازي للمستقيم المعلوم يكون محتوى في المستوي. المعطيات: AB يوازي (X)، C تنتمي إلى (X)، CD يوازي AB. المطلوب برهانه: CD محتوى في (X).",
+      "diagram": {
+        "diagram_id": "q15_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مستقيم AB موازي لمستوى X، ومستقيم CD موازي لـ AB ونقطة C في المستوى",
+        "diagram_box": [
+          730,
+          70,
+          850,
+          650
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_226_q15_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بما أن C تنتمي للمستوى X، والمستقيم CD موازي لـ AB، وبما أن AB يوازي المستوى X، فإن CD يجب أن يقع بالكامل داخل المستوى X للحفاظ على شرط التوازي.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد موقع المستقيم CD بالنسبة للمستوى.",
+          "step_assistant_solution": "المستقيم CD محتوى في المستوى (X).",
+          "inputs": [
+            {
+              "input_id": "q15_s1_i1",
+              "label": "أين يقع المستقيم CD؟",
+              "correct_answer": "داخل المستوى",
+              "options": [
+                "داخل المستوى",
+                "خارج المستوى",
+                "يقطع المستوى",
+                "يوازي المستوى"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر شرط احتواء المستقيم في المستوى.",
+            "related_topics": [
+              {
+                "topic_title": "احتواء مستقيم في مستوى",
+                "explanation": "إذا وازى مستقيم في الفضاء مستقيماً في مستوى، وكان كلاهما مرتبطاً بنقطة في المستوى، فالمستقيم الثاني يقع فيه."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "أين يقع المستقيم CD؟ = ",
+                {
+                  "input_id": "q15_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 226,
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

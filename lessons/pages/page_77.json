@@ -1,0 +1,131 @@
+{
+  "page_number": 77,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "جد الصيغة القطبية للعدد المركب z = -1 - i",
+      "diagram": null,
+      "full_model_solution": "1. نضع العدد بالصورة الديكارتية z = (-1, -1).\n2. نجد المقياس r = sqrt((-1)^2 + (-1)^2) = sqrt(2).\n3. نجد cos θ = -1/sqrt(2) و sin θ = -1/sqrt(2).\n4. تقع الزاوية في الربع الثالث: θ = π + π/4 = 5π/4.\n5. الصيغة القطبية: z = sqrt(2)(cos(5π/4) + i sin(5π/4)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بتحويل العدد المركب إلى إحداثيات ديكارتية (x, y) لحساب المقياس والزاوية.",
+          "step_assistant_solution": "z = (-1, -1)",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هي قيمة x و y للعدد z = -1 - i؟",
+              "correct_answer": "(-1, -1)",
+              "options": [
+                "(-1, -1)",
+                "(1, 1)",
+                "(-1, 1)",
+                "(1, -1)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد المركب z = a + bi يقابل النقطة (a, b).",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "z = ",
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "جد الصيغة القطبية للعدد المركب z = -2√3 + 2i",
+      "diagram": null,
+      "full_model_solution": "1. الصورة الديكارتية: z = (-2√3, 2).\n2. المقياس r = sqrt((-2√3)^2 + 2^2) = sqrt(12 + 4) = 4.\n3. cos θ = -2√3 / 4 = -√3/2, sin θ = 2/4 = 1/2.\n4. الربع الثاني: θ = π - π/6 = 5π/6.\n5. الصورة القطبية: z = 4(cos(5π/6) + i sin(5π/6)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب المقياس r للعدد المركب.",
+          "step_assistant_solution": "r = 4",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هو ناتج المقياس r؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "sqrt(16)",
+                "16"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "r = sqrt(x^2 + y^2)",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "q4_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "ضع العدد المركب z = -2 + 2i بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "1. الصورة الديكارتية: (-2, 2).\n2. المقياس r = sqrt((-2)^2 + 2^2) = sqrt(8) = 2√2.\n3. cos θ = -2 / 2√2 = -1/√2, sin θ = 2 / 2√2 = 1/√2.\n4. الربع الثاني: θ = π - π/4 = 3π/4.\n5. الصيغة القطبية: z = 2√2(cos(3π/4) + i sin(3π/4)).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد موقع العدد في المستوى المركب.",
+          "step_assistant_solution": "الربع الثاني",
+          "inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "في أي ربع يقع العدد (-2, 2)؟",
+              "correct_answer": "الربع الثاني",
+              "options": [
+                "الربع الأول",
+                "الربع الثاني",
+                "الربع الثالث",
+                "الربع الرابع"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن x سالبة و y موجبة، فالنقطة في الربع الثاني.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 77,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-9",
+  "topic_title": "الصيغة القطبية للعدد المركب",
+  "interactive_status": "ready"
+}

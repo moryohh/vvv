@@ -1,0 +1,95 @@
+{
+  "page_number": 47,
+  "page_id": 47,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "حل المعادلة التربيعية z^2 - 3z + 1 + 3i = 0 (تمهيدي 2021).",
+      "diagram": null,
+      "full_model_solution": "باستخدام القانون العام للحل، حيث a=1, b=-3, c=1+3i. نجد المميز ونستخدم طريقة الجذور التربيعية للعدد المركب للوصول إلى الجذرين z1=3-i و z2=i. الحل النهائي هو S = {3-i, i}.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد المعاملات وتطبيق القانون العام للحل.",
+          "step_assistant_solution": "المعاملات هي a=1, b=-3, c=1+3i. بتطبيق القانون z = [-b ± sqrt(b^2 - 4ac)] / 2a، نحصل على z = [3 ± sqrt(5 - 12i)] / 2.",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هو ناتج المميز (b^2 - 4ac)؟",
+              "correct_answer": "5-12i",
+              "options": [
+                "5-12i",
+                "9-12i",
+                "1+12i",
+                "5+12i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن القانون العام هو z = (-b ± sqrt(Δ)) / 2a.",
+            "related_topics": [
+              {
+                "topic_title": "القانون العام للمعادلات التربيعية",
+                "explanation": "يستخدم لحل المعادلات من الدرجة الثانية ax^2+bx+c=0."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج المميز (b^2 - 4ac)؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "إيجاد الجذر التربيعي للعدد المركب (5-12i) بفرضه x+yi.",
+          "step_assistant_solution": "بحل نظام المعادلات x^2-y^2=5 و 2xy=-12، نجد أن x=3, y=-2 أو x=-3, y=2. إذن الجذر هو ±(3-2i).",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هو الجذر التربيعي لـ (5-12i)؟",
+              "correct_answer": "±(3-2i)",
+              "options": [
+                "±(3-2i)",
+                "±(3+2i)",
+                "±(2-3i)",
+                "±(2+3i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "افترض (x+yi)^2 = 5-12i وساوي الأجزاء الحقيقية والتخيلية.",
+            "related_topics": [
+              {
+                "topic_title": "جذور العدد المركب",
+                "explanation": "طريقة فرض العدد المركب x+yi لإيجاد الجذر التربيعي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "بحل نظام المعادلات x^2-y^2=5 و 2xy=-12، نجد أن x=3, y=-2 أو x=-3, y=2. إذن الجذر هو ",
+                {
+                  "input_id": "step2_input1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

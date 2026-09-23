@@ -1,0 +1,150 @@
+{
+  "page_number": 139,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "9",
+      "question_text": "جد معادلة القطع الناقص الذي مركزه نقطة الأصل وبؤرتاه تقعان على محور السينات وإحدى بؤرتيه تبعد عن الرأس بالعددين 7, 3؟",
+      "diagram": {
+        "diagram_id": "q9_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم توضيحي لقطع ناقص على المحور السيني يوضح المسافات من البؤرة إلى الرأس",
+        "diagram_box": [
+          145,
+          545,
+          275,
+          875
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_139_q9_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "بما أن البؤرة تبعد عن الرأس بمسافات 7 و 3، فإن القيمة الكلية 2a = 7 + 3 = 10، وبالتالي a = 5. المسافة بين البؤرتين 2c = 7 - 3 = 4، وبالتالي c = 2. من علاقة القطع الناقص c^2 = a^2 - b^2 نجد أن 4 = 25 - b^2، أي b^2 = 21. المعادلة هي x^2/25 + y^2/21 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحسب طول المحور الكبير 2a بجمع المسافتين المعطيتين.",
+          "step_assistant_solution": "2a = 7 + 3 = 10",
+          "inputs": [
+            {
+              "input_id": "q9_step1_input1",
+              "label": "كم تساوي قيمة a؟",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "10",
+                "3",
+                "7"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مجموع المسافتين من البؤرة إلى الرأسين يساوي طول المحور الكبير (2a).",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "كم تساوي قيمة a؟ = ",
+                {
+                  "input_id": "q9_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نحسب قيمة c بطرح المسافة الصغيرة من الكبيرة ثم القسمة على 2.",
+          "step_assistant_solution": "2c = 7 - 3 = 4, لذا c = 2",
+          "inputs": [
+            {
+              "input_id": "q9_step2_input1",
+              "label": "كم تساوي قيمة c^2؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "16",
+                "25"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المسافة بين البؤرتين تساوي الفرق بين المسافتين المعطيتين.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "2c = 7 - 3 = ",
+                {
+                  "input_id": "q9_step2_input1"
+                },
+                ", لذا c = 2"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "جد معادلة القطع الناقص الذي مركزه نقطة الأصل ويمر برؤوس المثلث a(0,4), b(-5,0), c(5,0)؟",
+      "diagram": null,
+      "full_model_solution": "من رؤوس المثلث المعطاة نجد أن الرؤوس على المحورين هي (5,0), (-5,0) و (0,4). إذن الرأس a = 5 والقطب b = 4. المعادلة على محور السينات هي x^2/a^2 + y^2/b^2 = 1، أي x^2/25 + y^2/16 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد قيم a و b من رؤوس المثلث المعطاة.",
+          "step_assistant_solution": "a = 5, b = 4",
+          "inputs": [
+            {
+              "input_id": "q10_step1_input1_part_1",
+              "label": "ما هي قيمة a^2 و b^2؟ — الجزء 1",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "5",
+                "16",
+                "10"
+              ]
+            },
+            {
+              "input_id": "q10_step1_input1_part_2",
+              "label": "ما هي قيمة a^2 و b^2؟ — الجزء 2",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "4",
+                "25",
+                "8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الرؤوس البعيدة عن المركز تمثل a والرؤوس القريبة تمثل b.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q10_step1_input1_part_1"
+                },
+                " و ",
+                {
+                  "input_id": "q10_step1_input1_part_2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 139,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-4",
+  "topic_title": "القطع الناقص",
+  "interactive_status": "ready"
+}

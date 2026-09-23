@@ -1,0 +1,107 @@
+{
+  "page_number": 227,
+  "page_id": 227,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "إذا كان (X) و (Y) مستويين متعامدين، والمستقيم AB محتوى في المستوي (X)، والمستقيمان BC و BD عموديان على المستقيم AB ويقطعان المستوي (Y) في النقطتين C و D على الترتيب. برهن أن: CD عمودي على المستوي (X).",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "مجسم",
+        "diagram_desc": "رسم هندسي يوضح مستوى X ومستوى Y متقاطعين، مع وجود مستقيم AB داخل X ومستقيمات BC و BD تصل بين X و Y.",
+        "diagram_box": [
+          270,
+          75,
+          495,
+          875
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_227_q3_fig_01_3d_model.png"
+      },
+      "full_model_solution": "المعطيات: (X) متعامد مع (Y)، المستقيم AB محتوى في (X)، المستقيمان BC و BD عموديان على AB ويقطعان (Y) في C و D. البرهان: نفرض (Z) هو المستوى المار بالمستقيمين المتقاطعين BC و BD. بما أن BC عمودي على AB و BD عمودي على AB، إذن AB عمودي على المستوى (Z). وبما أن AB محتوى في (X)، فإن (X) عمودي على (Z). وبما أن (X) عمودي على (Y) و (X) عمودي على (Z)، ينتج أن تقاطع (Y) و (Z) وهو المستقيم CD عمودي على المستوى (X).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد المستوى المار بالمستقيمات المعطاة لإثبات التعامد.",
+          "step_assistant_solution": "تكوين المستوى (Z) الذي يحتوي على المستقيمين المتقاطعين BC و BD.",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "أي مستوى يمر بالمستقيمين BC و BD؟",
+              "correct_answer": "المستوى (Z)",
+              "options": [
+                "المستوى (Z)",
+                "المستوى (X)",
+                "المستوى (Y)",
+                "مستوى غير مسمى"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر مبرهنة: لكل مستقيمين متقاطعين يوجد مستوى وحيد يحتويهما.",
+            "related_topics": [
+              {
+                "topic_title": "بديهيات الهندسة الفراغية",
+                "explanation": "تحديد المستويات من خلال المستقيمات المتقاطعة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "تكوين ",
+                {
+                  "input_id": "step1_input1"
+                },
+                " الذي يحتوي على المستقيمين المتقاطعين BC و BD."
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام مبرهنة تعامد مستقيم على مستوى.",
+          "step_assistant_solution": "بما أن AB عمودي على BC و BD، فإن AB عمودي على المستوى (Z).",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي العلاقة بين AB والمستوى (Z)؟",
+              "correct_answer": "عمودي",
+              "options": [
+                "عمودي",
+                "يوازي",
+                "محتوى فيه",
+                "لا توجد علاقة"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إذا كان المستقيم عمودياً على مستقيمين متقاطعين في مستوي، فهو عمودي على المستوي.",
+            "related_topics": [
+              {
+                "topic_title": "تعامد المستقيم والمستوى",
+                "explanation": "المستقيم العمودي على مستقيمين متقاطعين في نقطة تقاطعهما يكون عمودياً على مستويهما."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "بما أن AB عمودي على BC و BD، فإن AB ",
+                {
+                  "input_id": "step2_input1"
+                },
+                " على المستوى (Z)."
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

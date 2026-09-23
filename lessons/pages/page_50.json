@@ -1,0 +1,137 @@
+{
+  "page_number": 50,
+  "page_id": 50,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "كون المعادلة التربيعية التي جذراها m = (3-i)/(1+i) و L = (3-2i)^2",
+      "diagram": null,
+      "full_model_solution": "أولاً: تبسيط الجذر m بضربه في مرافق المقام (1-i)/(1-i) لنحصل على m = 1-2i. ثانياً: فك القوس L = (3-2i)^2 لينتج 9 - 12i - 4 = 5 - 12i. ثالثاً: حساب مجموع الجذرين M+L = (1-2i) + (5-12i) = 6-14i. رابعاً: حساب حاصل ضرب الجذرين M.L = (1-2i)(5-12i) = 5 - 12i - 10i + 24i^2 = 5 - 22i - 24 = -19 - 22i. خامساً: استخدام الصيغة x^2 - (المجموع)x + (الضرب) = 0 لتصبح المعادلة: x^2 - (6-14i)x - 19 - 22i = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط العدد المركب m عن طريق ضرب البسط والمقام في مرافق المقام (1-i).",
+          "step_assistant_solution": "m = 1 - 2i",
+          "inputs": [
+            {
+              "input_id": "q3_step1",
+              "label": "ما هي القيمة المبسطة لـ m؟",
+              "correct_answer": "1-2i",
+              "options": [
+                "1-2i",
+                "2-i",
+                "1+2i",
+                "3-i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم ضرب البسط والمقام في مرافق المقام (1-i) وتذكر أن i^2 = -1.",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "يتم التخلص من i في المقام بضرب العدد في مرافقه."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي القيمة المبسطة لـ m؟ = ",
+                {
+                  "input_id": "q3_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "كون المعادلة التربيعية التي جذراها M = (5+5i)/(1+3i) و L = (9+2i)/(4-i)",
+      "diagram": null,
+      "full_model_solution": "تبسيط M بالضرب في (1-3i)/(1-3i) يعطي M = 2-i. تبسيط L بالضرب في (4+i)/(4+i) يعطي L = 2+i. المجموع M+L = 4. حاصل الضرب M.L = (2-i)(2+i) = 4 - i^2 = 5. المعادلة: x^2 - 4x + 5 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الجذور M و L بضرب كل منهما في مرافق مقامه.",
+          "step_assistant_solution": "M = 2-i, L = 2+i",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هو ناتج تبسيط المجموع M+L؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "0",
+                "4-2i",
+                "2+i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بعد التبسيط، ستجد أن الجذرين مترافقان، مما يسهل المجموع والضرب.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج تبسيط المجموع M+L؟ = ",
+                {
+                  "input_id": "q4_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "جد المعادلة التربيعية التي جذراها 2+2i و -2-2i",
+      "diagram": null,
+      "full_model_solution": "المجموع M+L = (2+2i) + (-2-2i) = 0. حاصل الضرب M.L = (2+2i)(-2-2i) = -4 - 4i - 4i - 4i^2 = -4 - 8i + 4 = -8i. المعادلة تصبح x^2 - (0)x + (-8i) = 0 أي x^2 - 8i = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب مجموع الجذرين وحاصل ضربهما.",
+          "step_assistant_solution": "المجموع = 0، الضرب = -8i",
+          "inputs": [
+            {
+              "input_id": "q5_step1",
+              "label": "ما هي المعادلة الناتجة؟",
+              "correct_answer": "x^2 - 8i = 0",
+              "options": [
+                "x^2 - 8i = 0",
+                "x^2 + 8i = 0",
+                "x^2 - 8 = 0",
+                "x^2 + 8 = 0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر صيغة تكوين المعادلة x^2 - (المجموع)x + الضرب = 0.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي المعادلة الناتجة؟ = ",
+                {
+                  "input_id": "q5_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

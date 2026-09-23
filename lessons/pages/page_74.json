@@ -1,0 +1,124 @@
+{
+  "page_number": 74,
+  "page_id": 74,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "إذا كان Z = 4 + 2i، وضح على شكل أرجاند كلاً من: Z, Z̄, -Z",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "رسم بياني",
+        "diagram_desc": "رسم بياني يوضح تمثيل العدد المركب Z ومرافقه Z̄ ونظيره الجمعي -Z على مستوى أرجاند.",
+        "diagram_box": [
+          133,
+          532,
+          253,
+          792
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_74_q3_fig_01_graph.png"
+      },
+      "full_model_solution": "لدينا Z = 4 + 2i. إذن النقطة الممثلة له هي P(Z) = (4, 2). المرافق Z̄ = 4 - 2i، إذن P(Z̄) = (4, -2). النظير الجمعي -Z = -4 - 2i، إذن P(-Z) = (-4, -2).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حدد الإحداثيات الديكارتية (x, y) لكل من Z ومرافقه ونظيره الجمعي لتمثيلها على مستوى أرجاند.",
+          "step_assistant_solution": "Z=(4,2), Z̄=(4,-2), -Z=(-4,-2)",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هي إحداثيات النظير الجمعي -Z؟",
+              "correct_answer": "(-4, -2)",
+              "options": [
+                "(-4, -2)",
+                "(4, -2)",
+                "(-4, 2)",
+                "(4, 2)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن العدد المركب a + bi يمثل بالنقطة (a, b).",
+            "related_topics": [
+              {
+                "topic_title": "مستوى أرجاند",
+                "explanation": "هو مستوى إحداثي يمثل فيه الجزء الحقيقي على المحور السيني والجزء التخيلي على المحور الصادي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي إحداثيات النظير الجمعي -Z؟ = ",
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "إذا كان Z₁ = 4 - 2i و Z₂ = 1 + 2i، وضح على شكل أرجاند كلاً من: Z₁ + Z₂, Z₁ - Z₂, -3Z₂, 2Z₁",
+      "diagram": {
+        "diagram_id": "q4_fig_01",
+        "diagram_type": "رسم بياني",
+        "diagram_desc": "رسم بياني يوضح العمليات الحسابية على الأعداد المركبة (الجمع والطرح) على مستوى أرجاند.",
+        "diagram_box": [
+          619,
+          90,
+          835,
+          915
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_74_q4_fig_01_graph.png"
+      },
+      "full_model_solution": "Z₁ = 4 - 2i, Z₂ = 1 + 2i. 1) Z₃ = Z₁ + Z₂ = 5 + 0i -> P(5, 0). 2) Z₄ = Z₁ - Z₂ = (4-1) + (-2-2)i = 3 - 4i -> P(3, -4). 3) -3Z₂ = -3(1+2i) = -3 - 6i -> P(-3, -6). 4) 2Z₁ = 2(4-2i) = 8 - 4i -> P(8, -4).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "قم بإجراء العمليات الحسابية الأساسية (الجمع، الطرح، والضرب في ثابت) للأعداد المركبة.",
+          "step_assistant_solution": "Z₁+Z₂=5, Z₁-Z₂=3-4i, -3Z₂=-3-6i, 2Z₁=8-4i",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هو ناتج Z₁ + Z₂؟",
+              "correct_answer": "5 + 0i",
+              "options": [
+                "5 + 0i",
+                "3 - 4i",
+                "5 + 4i",
+                "4 - 2i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "في الجمع والطرح نجمع/نطرح الحقيقي مع الحقيقي والتخيلي مع التخيلي.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "جمع الأعداد المركبة: (a+bi) + (c+di) = (a+c) + (b+d)i"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج Z₁ + Z₂؟ = ",
+                {
+                  "input_id": "q4_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-8",
+  "topic_title": "التمثيل الهندسي للأعداد المركبة",
+  "interactive_status": "ready"
+}

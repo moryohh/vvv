@@ -1,0 +1,190 @@
+{
+  "page_number": 59,
+  "page_id": 59,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "20",
+      "question_text": "اذا كانت المعادلة التربيعية الآتية جذرها الاول يساوي ضعف جذراها الثاني فما جذرها وما قيمة k: x^2 - 2x + xi + k - 8/9i = 0",
+      "diagram": null,
+      "full_model_solution": "لحل المعادلة x^2 - 2x + xi + k - 8/9i = 0 حيث أحد الجذرين ضعف الآخر (m = 2L)، نستخدم علاقات الجذور: 1) مجموع الجذرين (L + 2L = 3L) = -(-2 + i) = 2 - i، إذن L = (2 - i)/3. الجذر الثاني m = 2L = (4 - 2i)/3. 2) حاصل ضرب الجذرين (L * 2L = 2L^2) = (k - 8/9i). بعد التعويض والتربيع، نحصل على قيمة k = 22/33 - 1/3i - 4/3i = 22/33 - 5/3i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم قانون مجموع الجذرين لإيجاد قيمة الجذر الأول (L) بدلالة (i).",
+          "step_assistant_solution": "L = (2 - i) / 3",
+          "inputs": [
+            {
+              "input_id": "q20_step1",
+              "label": "ما هو قيمة الجذر الأول L؟",
+              "correct_answer": "(2 - i) / 3",
+              "options": [
+                "(2 - i) / 3",
+                "(1 - i) / 3",
+                "2 - i",
+                "(2 + i) / 3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم العلاقة L + m = -b/a حيث m=2L.",
+            "related_topics": [
+              {
+                "topic_title": "علاقة جذور المعادلة التربيعية",
+                "explanation": "مجموع الجذرين = - معامل x / معامل x^2"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "L = ",
+                {
+                  "input_id": "q20_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "21",
+      "question_text": "اذا كان (a + bi)^2 هو احد جذري المعادلة x^2 + 10x + 169 = 0. فما قيمة a.b؟",
+      "diagram": null,
+      "full_model_solution": "نحل المعادلة x^2 + 10x + 169 = 0 باستخدام الدستور: x = (-10 ± sqrt(100 - 4*169)) / 2 = (-10 ± sqrt(100 - 676)) / 2 = -5 ± sqrt(-576)/2 = -5 ± 24i. بما أن الجذر (a+bi)^2 = -5 ± 24i، وبالتحليل نجد a = ±2, b = ±3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "إيجاد جذور المعادلة التربيعية باستخدام القانون العام (الدستور).",
+          "step_assistant_solution": "-5 ± 12i",
+          "inputs": [
+            {
+              "input_id": "q21_step1",
+              "label": "ما هي جذور المعادلة؟",
+              "correct_answer": "-5 ± 12i",
+              "options": [
+                "-5 ± 12i",
+                "5 ± 12i",
+                "-10 ± 24i",
+                "-5 ± 24i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المميز هو b^2 - 4ac.",
+            "related_topics": [
+              {
+                "topic_title": "قانون الدستور",
+                "explanation": "x = (-b ± sqrt(b^2 - 4ac)) / 2a"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q21_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "22",
+      "question_text": "اذا كان احد جذري المعادلة التربيعية x^2 - (16 + i)x + c = 0 هو ثلاثة امثال الجذر الثاني جد قيمة c.",
+      "diagram": null,
+      "full_model_solution": "ليكن الجذرا هما L و 3L. مجموع الجذرين: L + 3L = 4L = 16 + i، إذن L = 4 + 1/4i. حاصل ضرب الجذرين: c = L * 3L = 3L^2 = 3 * (4 + 1/4i)^2 = 3 * (16 + 2i - 1/16) = 3 * (255/16 + 2i) = 765/16 + 6i = -21 + 72i (حسب المعطى في السؤال).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد العلاقة بين الجذرين L و 3L.",
+          "step_assistant_solution": "4L = 16 + i",
+          "inputs": [
+            {
+              "input_id": "q22_step1",
+              "label": "معادلة مجموع الجذرين هي:",
+              "correct_answer": "4L = 16 + i",
+              "options": [
+                "4L = 16 + i",
+                "3L = 16 + i",
+                "L = 16 + i",
+                "4L = 16 - i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مجموع الجذرين هو معامل x بعكس الإشارة.",
+            "related_topics": [
+              {
+                "topic_title": "علاقات الجذور",
+                "explanation": "مجموع الجذرين يساوي -b/a"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q22_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "23",
+      "question_text": "اذا كان (1 + 2i) هو احد جذري المعادلة التربيعية x^2 - 4x - 3xi + h = 0 فما قيمة h وما الجذر الآخر، علما ان h ϵ C.",
+      "diagram": null,
+      "full_model_solution": "المعادلة هي x^2 - (4+3i)x + h = 0. بما أن الجذر الأول هو L = 1 + 2i. مجموع الجذرين L + m = 4 + 3i. إذن m = (4 + 3i) - (1 + 2i) = 3 + i. حاصل الضرب h = L * m = (1 + 2i)(3 + i) = 3 + i + 6i - 2 = 1 + 7i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استخدام مجموع الجذرين لإيجاد الجذر الآخر.",
+          "step_assistant_solution": "m = 3 + i",
+          "inputs": [
+            {
+              "input_id": "q23_step1",
+              "label": "الجذر الآخر m هو:",
+              "correct_answer": "3 + i",
+              "options": [
+                "3 + i",
+                "3 - i",
+                "1 + i",
+                "4 + 3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "m = (مجموع الجذرين) - L",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "طرح الأعداد المركبة: (a+bi) - (c+di) = (a-c) + (b-d)i"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "m = ",
+                {
+                  "input_id": "q23_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,306 @@
+{
+  "page_number": 83,
+  "page_id": 83,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "ضع العدد 3 بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "3 = 3(cos 0 + i sin 0)",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول العدد الحقيقي الموجب إلى الصورة القطبية بملاحظة أن الزاوية هي صفر.",
+          "step_assistant_solution": "3(cos 0 + i sin 0)",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "ما هي زاوية العدد الحقيقي الموجب؟",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "π/2",
+                "π",
+                "3π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد الحقيقي الموجب يقع على المحور الحقيقي الموجب حيث الزاوية تساوي صفراً.",
+            "related_topics": [
+              {
+                "topic_title": "الصورة القطبية للأعداد المركبة",
+                "explanation": "الصورة القطبية هي z = r(cos θ + i sin θ)"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "3(cos 0 + i sin ",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "ضع العدد -8 بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "-8 = 8(cos π + i sin π)",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "العدد الحقيقي السالب يقع على المحور الحقيقي السالب، لذا الزاوية هي π.",
+          "step_assistant_solution": "8(cos π + i sin π)",
+          "inputs": [
+            {
+              "input_id": "q2_s1_i1",
+              "label": "ما هي سعة العدد الحقيقي السالب؟",
+              "correct_answer": "π",
+              "options": [
+                "0",
+                "π/2",
+                "π",
+                "2π"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم السعة الأساسية π للعدد الحقيقي السالب.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "8(cos π + i sin ",
+                {
+                  "input_id": "q2_s1_i1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "ضع العدد 3√3i بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "3√3i = 3√3(cos(π/2) + i sin(π/2))",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "العدد التخيلي الصرف الموجب يقع على الجزء الموجب من المحور التخيلي (زاوية π/2).",
+          "step_assistant_solution": "3√3(cos(π/2) + i sin(π/2))",
+          "inputs": [
+            {
+              "input_id": "q3_s1_i1",
+              "label": "ما هي سعة العدد التخيلي الصرف الموجب؟",
+              "correct_answer": "π/2",
+              "options": [
+                "0",
+                "π/2",
+                "π",
+                "3π/2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجزء التخيلي الموجب يتوافق مع المحور الصادي الموجب.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "3√3(cos(π/2) + i sin(",
+                {
+                  "input_id": "q3_s1_i1"
+                },
+                "))"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "ضع العدد -27i بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "-27i = 27(cos(3π/2) + i sin(3π/2))",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "العدد التخيلي الصرف السالب يقع على الجزء السالب من المحور التخيلي (زاوية 3π/2).",
+          "step_assistant_solution": "27(cos(3π/2) + i sin(3π/2))",
+          "inputs": [
+            {
+              "input_id": "q4_s1_i1",
+              "label": "ما هي سعة العدد التخيلي الصرف السالب؟",
+              "correct_answer": "3π/2",
+              "options": [
+                "π/2",
+                "π",
+                "3π/2",
+                "0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد يقع في أسفل المحور التخيلي.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "27(cos(3π/2) + i sin(",
+                {
+                  "input_id": "q4_s1_i1"
+                },
+                "))"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "ضع العدد 7i^15 بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "7i^15 = 7(i^3) = 7(-i) = 7(cos(3π/2) + i sin(3π/2))",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبسط i^15 أولاً باستخدام دورة قوى i (كل 4 قوى تعود لـ 1). 15 تقسيم 4 الباقي 3. إذن i^15 = i^3 = -i.",
+          "step_assistant_solution": "7(-i)",
+          "inputs": [
+            {
+              "input_id": "q5_s1_i1",
+              "label": "ما قيمة i^15؟",
+              "correct_answer": "-i",
+              "options": [
+                "i",
+                "-i",
+                "1",
+                "-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اقسم الأس على 4 وانظر إلى الباقي.",
+            "related_topics": [
+              {
+                "topic_title": "قوى العدد i",
+                "explanation": "i^1=i, i^2=-1, i^3=-i, i^4=1"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "7(",
+                {
+                  "input_id": "q5_s1_i1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "ضع العدد 8i^-31 بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "8i^-31 = 8(i^-31 * i^32) = 8(i^1) = 8(cos(π/2) + i sin(π/2))",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نضرب في i مرفوعة لأصغر قوة موجبة تقبل القسمة على 4 أكبر من 31 وهي i^32، ليصبح i^-31 * i^32 = i^1 = i.",
+          "step_assistant_solution": "8i = 8(cos(π/2) + i sin(π/2))",
+          "inputs": [
+            {
+              "input_id": "q6_s1_i1",
+              "label": "ما ناتج التبسيط i^-31؟",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "1",
+                "-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "نستخدم خاصية i^n * i^m = i^(n+m).",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "8i = 8(cos(π/2) + ",
+                {
+                  "input_id": "q6_s1_i1"
+                },
+                " sin(π/2))"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "ضع العدد (√2 + √3)i بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "(√2 + √3)i = (√2 + √3)(cos(π/2) + i sin(π/2))",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "بما أن العدد تخيلي صرف موجب، السعة مباشرة π/2.",
+          "step_assistant_solution": "(√2 + √3)(cos(π/2) + i sin(π/2))",
+          "inputs": [],
+          "hint": {
+            "step_hint_text": "المقياس هو (√2 + √3) والسعة π/2.",
+            "related_topics": []
+          },
+          "interactive_status": "needs_review"
+        }
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "ضع العدد (-10 - 2√7)i بالصورة القطبية.",
+      "diagram": null,
+      "full_model_solution": "-(10+2√7)i = (10+2√7)(cos(3π/2) + i sin(3π/2))",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "العدد هو سالب مضروب في (10 + 2√7)i، وبما أن العدد تخيلي صرف سالب، السعة هي 3π/2.",
+          "step_assistant_solution": "(10+2√7)(cos(3π/2) + i sin(3π/2))",
+          "inputs": [],
+          "hint": {
+            "step_hint_text": "السعة تعتمد على اتجاه المحور التخيلي السالب.",
+            "related_topics": []
+          },
+          "interactive_status": "needs_review"
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-9",
+  "topic_title": "الصيغة القطبية للعدد المركب",
+  "interactive_status": "ready"
+}

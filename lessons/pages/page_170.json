@@ -1,0 +1,112 @@
+{
+  "page_number": 170,
+  "page_id": 170,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "عرف القطع الزائد (Hyperbola) بناءً على تعريف البؤرتين والمحور القاطع. كما هو موضح في الشكل الهندسي المرفق.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للقطع الزائد في المستوى الإحداثي يظهر البؤرتين F1 و F2، الرأسين V1 و V2، ومحاور القطع.",
+        "diagram_box": [
+          240,
+          240,
+          520,
+          780
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_170_q1_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "القطع الزائد هو مجموعة من النقاط في المستوى التي تكون القيمة المطلقة لفرق بعدي كل منها عن نقطتين ثابتتين (البؤرتين) يساوي عدداً ثابتاً (2a). رياضياً: |PF1 - PF2| = 2a.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: فهم التعريف الرياضي للقطع الزائد كمسافة بين نقطة متغيرة وبؤرتين.",
+          "step_assistant_solution": "|PF1 - PF2| = 2a",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هو الثابت الذي يمثل فرق البعدين عن البؤرتين في القطع الزائد؟",
+              "correct_answer": "2a",
+              "options": [
+                "2a",
+                "2b",
+                "2c",
+                "a"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن 2a يمثل طول المحور الحقيقي (القاطع).",
+            "related_topics": [
+              {
+                "topic_title": "التعريف الهندسي للقطوع المخروطية",
+                "explanation": "القطع الزائد يعتمد على فرق المسافات، بخلاف القطع الناقص الذي يعتمد على مجموع المسافات."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "|PF1 - PF2| = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "اكتب الخصائص الجبرية للقطع الزائد الذي بؤرتاه على محور السينات ومركزه نقطة الأصل (0,0) بناءً على القائمة المذكورة في الصفحة.",
+      "diagram": null,
+      "full_model_solution": "1. المعادلة: x²/a² - y²/b² = 1\n2. البؤرتان: F1(c,0), F2(-c,0)\n3. الرأسان: V1(a,0), V2(-a,0)\n4. طول المحور الحقيقي: 2a\n5. طول المحور التخيلي: 2b\n6. المسافة بين البؤرتين: 2c\n7. الاختلاف المركزي: e = c/a > 1\n8. العلاقة بين الثوابت: c² = a² + b² (حيث c > a, c > b).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: التعرف على العلاقة الأساسية بين ثوابت القطع الزائد.",
+          "step_assistant_solution": "c² = a² + b²",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي العلاقة الصحيحة للثوابت في القطع الزائد؟",
+              "correct_answer": "c² = a² + b²",
+              "options": [
+                "c² = a² + b²",
+                "a² = b² + c²",
+                "c² = a² - b²",
+                "b² = a² + c²"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "في القطع الزائد، c هي المسافة الأكبر (البؤرة)، لذا فهي حاصل جمع مربعي a و b.",
+            "related_topics": [
+              {
+                "topic_title": "ثوابت القطع الزائد",
+                "explanation": "علاقة فيثاغورس تستخدم لربط البؤرة بالرأس والمحور المرافق."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-7",
+  "topic_title": "القطع الزائد",
+  "interactive_status": "ready"
+}

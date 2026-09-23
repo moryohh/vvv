@@ -1,0 +1,105 @@
+{
+  "page_number": 135,
+  "page_id": 135,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "جد معادلة القطع الناقص الذي بؤرتاه (3, 0±) ورأساه النقطتان (5, 0±) ومركزه نقطة الأصل؟",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل توضيحي",
+        "diagram_desc": "صورة توضيحية للمثال الأول تظهر قيم a و c وعملية التعويض في معادلة القطع الناقص",
+        "diagram_box": [
+          763,
+          56,
+          955,
+          966
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_135_q1_fig_01_shape_diagram.png"
+      },
+      "full_model_solution": "بما أن البؤرتين والرأسين تقعان على محور السينات (لأن الإحداثي الصادي صفر)، فإن المعادلة من الشكل: (x²/a²) + (y²/b²) = 1. المعطيات: الرأس (a=5)، البؤرة (c=3). باستخدام العلاقة الأساسية للقطع الناقص: c² = a² - b²، نجد أن 9 = 25 - b²، ومنه b² = 16. إذن المعادلة هي: x²/25 + y²/16 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيم الثوابت a و c من المعطيات.",
+          "step_assistant_solution": "a = 5, c = 3",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما قيمة a و c؟",
+              "correct_answer": "a=5, c=3",
+              "options": [
+                "a=5, c=3",
+                "a=3, c=5",
+                "a=25, c=9",
+                "a=5, c=8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الرأس يعطي قيمة a، والبؤرة تعطي قيمة c.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الناقص",
+                "explanation": "في القطع الناقص، الرأس يقع عند (±a, 0) والبؤرة تقع عند (±c, 0)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما قيمة a و c؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام العلاقة c² = a² - b² لإيجاد قيمة b².",
+          "step_assistant_solution": "b² = 16",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما قيمة b²؟",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "34",
+                "4",
+                "9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عوض قيم a² و c² في العلاقة b² = a² - c².",
+            "related_topics": [
+              {
+                "topic_title": "العلاقة بين الثوابت",
+                "explanation": "في القطع الناقص، b² هي الفرق بين مربعي a و c."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "b² = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-4",
+  "topic_title": "القطع الناقص",
+  "interactive_status": "ready"
+}

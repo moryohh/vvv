@@ -1,0 +1,176 @@
+{
+  "page_number": 55,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "18",
+      "question_text": "إذا كان (2+i) هو أحد جذري المعادلة التربيعية x² - (5+2i)x + a = 0 فما قيمة a وما الجذر الآخر؟",
+      "diagram": null,
+      "full_model_solution": "المعادلة هي x² - (5+2i)x + a = 0، حيث المجموع (M+L) = 5+2i وحاصل الضرب (M.L) = a. بمعلومية الجذر M = 2+i، نستخدم مجموع الجذرين: (2+i) + L = 5+2i، إذن L = (5+2i) - (2+i) = 3+i. لحساب a نستخدم حاصل الضرب: a = M.L = (2+i)(3+i) = 6 + 2i + 3i + i² = 6 + 5i - 1 = 5+5i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم قانون مجموع جذري المعادلة التربيعية لإيجاد الجذر المجهول L، حيث مجموع الجذرين يساوي معامل x بعكس الإشارة.",
+          "step_assistant_solution": "L = 3+i",
+          "inputs": [
+            {
+              "input_id": "q18_step1_input1",
+              "label": "ما هو قيمة الجذر الآخر L؟",
+              "correct_answer": "3+i",
+              "options": [
+                "3+i",
+                "2+i",
+                "5+i",
+                "3-i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مجموع الجذرين M+L = -b/a = 5+2i",
+            "related_topics": [
+              {
+                "topic_title": "علاقة الجذور بمعاملات المعادلة",
+                "explanation": "في المعادلة ax² + bx + c = 0، مجموع الجذرين هو -b/a وحاصل ضربهما هو c/a."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "L = ",
+                {
+                  "input_id": "q18_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم قانون حاصل ضرب الجذرين M.L لإيجاد الثابت a.",
+          "step_assistant_solution": "a = 5+5i",
+          "inputs": [
+            {
+              "input_id": "q18_step2_input1",
+              "label": "ما هو قيمة الثابت a؟",
+              "correct_answer": "5+5i",
+              "options": [
+                "5+5i",
+                "6+5i",
+                "5-5i",
+                "1+5i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قم بضرب العددين المركبين (2+i) و (3+i) مع ملاحظة أن i² = -1.",
+            "related_topics": [
+              {
+                "topic_title": "ضرب الأعداد المركبة",
+                "explanation": "توزيع الضرب (a+bi)(c+di) = ac + adi + bci + bdi²."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a = ",
+                {
+                  "input_id": "q18_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "19",
+      "question_text": "إذا كان (3+i) هو أحد جذري المعادلة x² - ax + (5+5i) = 0 فما قيمة a وما الجذر الآخر؟",
+      "diagram": null,
+      "full_model_solution": "المعادلة هي x² - ax + (5+5i) = 0. حاصل الضرب M.L = 5+5i. بمعلومية M = 3+i، يكون L = (5+5i) / (3+i). بالضرب في المرافق: L = (5+5i)(3-i) / (3+i)(3-i) = (15-5i+15i-5i²)/10 = (20+10i)/10 = 2+i. وبما أن مجموع الجذرين M+L = a، فإن a = (3+i) + (2+i) = 5+2i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "بما أننا نعرف حاصل ضرب الجذرين، نقسم حاصل الضرب على الجذر المعلوم لإيجاد الجذر الآخر L.",
+          "step_assistant_solution": "L = 2+i",
+          "inputs": [
+            {
+              "input_id": "q19_step1_input1",
+              "label": "ما هو الجذر الآخر L؟",
+              "correct_answer": "2+i",
+              "options": [
+                "2+i",
+                "3+i",
+                "1+2i",
+                "2-i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قسمة الأعداد المركبة تتطلب الضرب في مرافق المقام (3-i).",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "نضرب البسط والمقام في مرافق المقام للتخلص من i في المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "L = ",
+                {
+                  "input_id": "q19_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نجمع الجذرين المعلومين M و L للحصول على معامل x الذي يمثل قيمة a.",
+          "step_assistant_solution": "a = 5+2i",
+          "inputs": [
+            {
+              "input_id": "q19_step2_input1",
+              "label": "ما هو قيمة الثابت a؟",
+              "correct_answer": "5+2i",
+              "options": [
+                "5+2i",
+                "5-2i",
+                "2+5i",
+                "3+2i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اجمع الجزء الحقيقي مع الحقيقي والتخيلي مع التخيلي.",
+            "related_topics": [
+              {
+                "topic_title": "جمع الأعداد المركبة",
+                "explanation": "(a+bi) + (c+di) = (a+c) + (b+d)i"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a = ",
+                {
+                  "input_id": "q19_step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 55,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,140 @@
+{
+  "page_number": 29,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "16",
+      "question_text": "(3x-i)(2y+i)+11=7i",
+      "diagram": null,
+      "full_model_solution": "1. نوزع الأقواس: 6xy + 3xi - 2yi - i^2 + 11 = 7i. 2. بما أن i^2 = -1، تصبح المعادلة: 6xy + 3xi - 2yi + 1 + 11 = 7i. 3. نجمع الأجزاء الحقيقية والتخيلية: (6xy + 12) + i(3x - 2y) = 0 + 7i. 4. مساواة الأجزاء: 6xy + 12 = 0 => xy = -2. 3x - 2y = 7 => y = (3x-7)/2. 5. بالتعويض والحل، نجد قيم x و y هي: x=4/3, y=-3/2 و x=1, y=-2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نبدأ بفك الأقواس وتجميع الحدود التي تحتوي على i والحدود الحقيقية.",
+          "step_assistant_solution": "6xy + 3xi - 2yi - i^2 + 11 = 7i",
+          "inputs": [
+            {
+              "input_id": "q16_step1_input1",
+              "label": "ما هو ناتج i^2 في المعادلة؟",
+              "correct_answer": "-1",
+              "options": [
+                "1",
+                "-1",
+                "i",
+                "-i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^2 تساوي دائماً -1.",
+            "related_topics": [
+              {
+                "topic_title": "الأعداد المركبة",
+                "explanation": "الأعداد المركبة تتكون من جزء حقيقي وجزء تخيلي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج i^2 في المعادلة؟ = ",
+                {
+                  "input_id": "q16_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "17",
+      "question_text": "x(x+i)+y(y-i)+i=13",
+      "diagram": null,
+      "full_model_solution": "1. نوزع x و y: x^2 + xi + y^2 - yi + i = 13. 2. نفصل الحقيقي عن التخيلي: (x^2 + y^2) + i(x - y + 1) = 13 + 0i. 3. نكون نظام معادلات: x^2 + y^2 = 13 و x - y + 1 = 0. 4. الحل يؤدي إلى x=2, y=3 أو x=-3, y=-2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: مساواة الجزء الحقيقي في الطرف الأيسر بالجزء الحقيقي في الطرف الأيمن (13).",
+          "step_assistant_solution": "x^2 + y^2 = 13",
+          "inputs": [
+            {
+              "input_id": "q17_step1_input1",
+              "label": "ما هي معادلة الجزء الحقيقي؟",
+              "correct_answer": "x^2 + y^2 = 13",
+              "options": [
+                "x + y = 13",
+                "x^2 + y^2 = 13",
+                "x^2 - y^2 = 13",
+                "xy = 13"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الجزء الحقيقي هو الذي لا يحتوي على i.",
+            "related_topics": [
+              {
+                "topic_title": "مساواة الأعداد المركبة",
+                "explanation": "يتساوى عددان مركبان إذا تساوى الحقيقي مع الحقيقي والتخيلي مع التخيلي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q17_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "18",
+      "question_text": "x(x+i)+y(y-i)-i^3=13",
+      "diagram": null,
+      "full_model_solution": "1. نعلم أن i^3 = -i، إذن -i^3 = i. 2. المعادلة تصبح x^2 + xi + y^2 - yi + i = 13. 3. نتبع نفس خطوات السؤال 17 للحل.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: تبسيط الحد التخيلي i^3 أولاً.",
+          "step_assistant_solution": "i",
+          "inputs": [
+            {
+              "input_id": "q18_step1_input1",
+              "label": "كم تساوي -i^3؟",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "1",
+                "-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^3 = -i، لذا فإن -(-i) = i.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q18_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 29,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

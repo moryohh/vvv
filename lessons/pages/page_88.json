@@ -1,0 +1,131 @@
+{
+  "page_number": 88,
+  "page_id": 88,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "7",
+      "question_text": "احسب باستخدام مبرهنة ديموافر (1 + i)^11",
+      "diagram": null,
+      "full_model_solution": "1. نجد الصيغة القطبية للعدد z = 1 + i. المقياس r = sqrt(1^2 + 1^2) = sqrt(2). السعة theta = pi/4. إذن z = sqrt(2)(cos(pi/4) + i sin(pi/4)).\n2. نطبق مبرهنة ديموافر: z^11 = (sqrt(2))^11 (cos(11pi/4) + i sin(11pi/4)).\n3. (sqrt(2))^11 = (2^0.5)^11 = 2^5 * sqrt(2) = 32 sqrt(2).\n4. تبسيط الزاوية: 11pi/4 = 8pi/4 + 3pi/4 = 2pi + 3pi/4. إذن الزاوية تكافئ 3pi/4.\n5. cos(3pi/4) = -1/sqrt(2) و sin(3pi/4) = 1/sqrt(2).\n6. z^11 = 32 sqrt(2) * (-1/sqrt(2) + i/sqrt(2)) = 32(-1 + i) = -32 + 32i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل العدد المركب 1+i إلى الصيغة القطبية عبر إيجاد المقياس r والسعة theta.",
+          "step_assistant_solution": "r = sqrt(2), theta = pi/4",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هو المقياس r للعدد 1+i؟",
+              "correct_answer": "sqrt(2)",
+              "options": [
+                "sqrt(2)",
+                "2",
+                "1",
+                "sqrt(3)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم القانون r = sqrt(x^2 + y^2) حيث x=1, y=1.",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية",
+                "explanation": "العدد المركب يكتب على الصورة z = r(cos theta + i sin theta)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "step1_input1"
+                },
+                ", theta = pi/4"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "رفع المقياس للقوة 11 وتوزيع الأس على الزاوية باستخدام ديموافر.",
+          "step_assistant_solution": "32 sqrt(2) (cos 11pi/4 + i sin 11pi/4)",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "كم يساوي (sqrt(2))^11؟",
+              "correct_answer": "32 sqrt(2)",
+              "options": [
+                "32 sqrt(2)",
+                "16 sqrt(2)",
+                "64 sqrt(2)",
+                "32"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قاعدة ديموافر: [r(cos theta + i sin theta)]^n = r^n (cos n*theta + i sin n*theta).",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "تستخدم لرفع الأعداد المركبة لقوى صحيحة كبيرة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step2_input1"
+                },
+                " (cos 11pi/4 + i sin 11pi/4)"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "تبسيط الزاوية الكبيرة (11pi/4) بإيجاد الزاوية المكافئة لها ضمن الدورة الواحدة.",
+          "step_assistant_solution": "3pi/4",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "الزاوية المكافئة لـ 11pi/4 هي:",
+              "correct_answer": "3pi/4",
+              "options": [
+                "3pi/4",
+                "pi/4",
+                "5pi/4",
+                "7pi/4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اطرح مضاعفات 2pi من الزاوية حتى تصل لزاوية ضمن [0, 2pi].",
+            "related_topics": [
+              {
+                "topic_title": "الزوايا المتكافئة",
+                "explanation": "الزاوية theta تكافئ theta + 2n*pi."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step3_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

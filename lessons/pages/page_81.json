@@ -1,0 +1,147 @@
+{
+  "page_number": 81,
+  "page_id": 81,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "إذا كان Z عدداً مركباً مقياسه (4) وسعته 5π/6، جد كلاً من الشكل الديكارتي والجبري له.",
+      "diagram": null,
+      "full_model_solution": "المعطيات: r = 4, θ = 5π/6. الصيغة القطبية: Z = r(cosθ + isinθ). التعويض: Z = 4(cos(5π/6) + isin(5π/6)). القيم المثلثية: cos(5π/6) = -√3/2, sin(5π/6) = 1/2. النتيجة: Z = 4(-√3/2 + i/2) = -2√3 + 2i. الشكل الديكارتي: (-2√3, 2).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نطبق قانون الصيغة القطبية للعدد المركب Z = r(cosθ + isinθ) بالتعويض عن r و θ.",
+          "step_assistant_solution": "Z = 4(cos(5π/6) + isin(5π/6))",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هو التعويض الصحيح في الصيغة القطبية؟",
+              "correct_answer": "Z = 4(cos(5π/6) + isin(5π/6))",
+              "options": [
+                "Z = 4(cos(5π/6) + isin(5π/6))",
+                "Z = 4(cos(π/6) + isin(π/6))",
+                "Z = 4(sin(5π/6) + icos(5π/6))",
+                "Z = 5π/6(cos(4) + isin(4))"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن r هو المقياس و θ هي السعة الأساسية.",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية",
+                "explanation": "الصيغة التي تعبر عن العدد المركب بدلالة مقياسه وسعته."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "2003 الدور الثاني: إذا كان z عدداً مركباً مقياسه (3) وسعته π/3، جد الشكل الديكارتي والشكل الجبري له.",
+      "diagram": null,
+      "full_model_solution": "المعطيات: r = 3, θ = π/3. الصيغة القطبية: Z = 3(cos(π/3) + isin(π/3)). القيم المثلثية: cos(π/3) = 1/2, sin(π/3) = √3/2. النتيجة: Z = 3(1/2 + i√3/2) = 3/2 + 3√3/2i. الشكل الديكارتي: (3/2, 3√3/2).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: حساب قيم دالة الجيب وجيب التمام للزاوية π/3 (60 درجة).",
+          "step_assistant_solution": "cos(π/3) = 1/2, sin(π/3) = √3/2",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هي قيمة cos(π/3)؟",
+              "correct_answer": "1/2",
+              "options": [
+                "1/2",
+                "√3/2",
+                "-1/2",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم جدول النسب المثلثية للزوايا الخاصة.",
+            "related_topics": [
+              {
+                "topic_title": "النسب المثلثية",
+                "explanation": "قيم الدوال المثلثية للزوايا الشهيرة في الربع الأول."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "cos(π/3) = ",
+                {
+                  "input_id": "q4_step1_input1"
+                },
+                ", sin(π/3) = √3/2"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "2020 احيائي: اذا كان Z = -2 + bi حيث Z عدداً مركباً القيمة الاساسية لسعته 4π/3، جد قيمة b.",
+      "diagram": null,
+      "full_model_solution": "المعطيات: x = -2, y = b, θ = 4π/3. القانون: cosθ = x/r. إذن cos(4π/3) = -2/r. بما أن cos(4π/3) = -1/2، فإن -1/2 = -2/r ومنها r = 4. نستخدم sinθ = y/r: sin(4π/3) = b/4. بما أن sin(4π/3) = -√3/2، إذن b/4 = -√3/2، وبالتالي b = -2√3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نستخدم تعريف cosθ لإيجاد المقياس r أولاً.",
+          "step_assistant_solution": "r = 4",
+          "inputs": [
+            {
+              "input_id": "q5_step1_input1",
+              "label": "ما قيمة المقياس r؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "-2",
+                "8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن cos(4π/3) يقع في الربع الثالث وقيمته تساوي -cos(π/3).",
+            "related_topics": [
+              {
+                "topic_title": "إحداثيات القطبية",
+                "explanation": "ربط الجزء الحقيقي x بالمقياس r والسعة θ."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "r = ",
+                {
+                  "input_id": "q5_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-9",
+  "topic_title": "الصيغة القطبية للعدد المركب",
+  "interactive_status": "ready"
+}

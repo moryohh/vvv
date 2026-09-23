@@ -1,0 +1,140 @@
+{
+  "page_number": 25,
+  "page_id": 25,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "6",
+      "question_text": "جد قيمتي x و y الحقيقيتين اللتين تحققان المعادلة: y + 5i = (2x + i)(x + 2i)",
+      "diagram": null,
+      "full_model_solution": "يتم فك الأقواس بضرب المقادير: y + 5i = 2x^2 + 4xi + xi + 2i^2. بما أن i^2 = -1، تصبح المعادلة: y + 5i = 2x^2 + 5xi - 2. بمساواة الأجزاء الحقيقية والتخيلية: الجزء الحقيقي y = 2x^2 - 2 (معادلة 1). الجزء التخيلي 5 = 5x ومنها x = 1. بالتعويض في (1): y = 2(1)^2 - 2 = 0. إذن x = 1 و y = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نبدأ بفك الأقواس باستخدام خاصية التوزيع (ضرب القوسين)، مع مراعاة أن i^2 = -1.",
+          "step_assistant_solution": "y + 5i = 2x^2 + 5xi - 2",
+          "inputs": [
+            {
+              "input_id": "q6_step1",
+              "label": "ما هو ناتج فك القوسين بعد تبسيط i^2؟",
+              "correct_answer": "y + 5i = 2x^2 + 5xi - 2",
+              "options": [
+                "y + 5i = 2x^2 + 5xi - 2",
+                "y + 5i = 2x^2 + 5xi + 2",
+                "y + 5i = 2x^2 + 3xi - 2",
+                "y + 5i = 2x^2 + 5xi + 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر توزيع كل حد في القوس الأول على القوس الثاني.",
+            "related_topics": [
+              {
+                "topic_title": "ضرب الأعداد المركبة",
+                "explanation": "يتم ضرب الأعداد المركبة كضرب المقادير الجبرية مع تعويض i^2 بـ -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q6_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "جد قيمتي x و y الحقيقيتين اللتين تحققان المعادلة: 8i = (x + 2i)(y + 2i) + 1",
+      "diagram": null,
+      "full_model_solution": "نفك الأقواس: 8i = xy + 2xi + 2yi + 4i^2 + 1. بما أن 4i^2 = -4، تصبح: 8i = xy + 2xi + 2yi - 3. الجزء الحقيقي: xy - 3 = 0 (معادلة 1). الجزء التخيلي: 8 = 2x + 2y أي أن x + y = 4 (معادلة 2). بالتعويض x = 4 - y في (1): (4-y)y - 3 = 0 -> -y^2 + 4y - 3 = 0. بالحل نجد x=3, y=1 أو x=1, y=3.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نفك الأقواس ونفصل الأجزاء الحقيقية والتخيلية لتكوين نظام معادلات.",
+          "step_assistant_solution": "x + y = 4 و xy = 3",
+          "inputs": [
+            {
+              "input_id": "q7_step1",
+              "label": "ما هما المعادلتان الناتجان من مساواة الجزء الحقيقي والتخيلي؟",
+              "correct_answer": "x + y = 4 و xy = 3",
+              "options": [
+                "x + y = 4 و xy = 3",
+                "x + y = 8 و xy = 4",
+                "x + y = 2 و xy = 3",
+                "x + y = 4 و xy = 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اجعل الأجزاء التي لا تحتوي على i في طرف، والأجزاء التي تحتوي على i في طرف آخر.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q7_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "(125 / (11 + 2i)) * x + (1 - i)^2 * y = 11",
+      "diagram": null,
+      "full_model_solution": "نبسط المقدار الأول بضرب البسط والمقام بمرافق المقام (11-2i)، ليصبح (125(11-2i))/(121+4) = 11-2i. ثم نفك التربيع (1-i)^2 = 1 - 2i + i^2 = -2i. المعادلة: (11-2i)x - 2iy = 11. أي: 11x - 2xi - 2yi = 11. الحقيقي: 11x = 11 => x=1. التخيلي: -2x - 2y = 0 => -2 - 2y = 0 => y=-1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط كل من الكسر ومربع القوس.",
+          "step_assistant_solution": "المقدار يتبسط إلى: (11 - 2i)x - 2iy = 11",
+          "inputs": [
+            {
+              "input_id": "q8_step1",
+              "label": "ما ناتج تبسيط المعادلة بعد توزيع x و y؟",
+              "correct_answer": "11x - 2xi - 2yi = 11",
+              "options": [
+                "11x - 2xi - 2yi = 11",
+                "11x - 2xi + 2yi = 11",
+                "11x + 2xi - 2yi = 11",
+                "11x - 2i = 11"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم مرافق المقام لتبسيط الكسر، وتذكر أن i^2 = -1.",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "قسمة عددين مركبين تتم بضرب البسط والمقام في مرافق المقام."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما ناتج تبسيط المعادلة بعد توزيع x و y؟ = ",
+                {
+                  "input_id": "q8_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

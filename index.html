@@ -11,8 +11,14 @@
 <script>
 window.addEventListener('load',()=>{
   const previousNormalize=normalize,previousCanvas=canvasHtml;
+  const catalogLink=document.createElement('a');catalogLink.href='lessons.html';catalogLink.textContent='الفصول';catalogLink.style.cssText='color:#fff;text-decoration:none;font-weight:800;padding:8px';$('#uploadTop').before(catalogLink);
+  const sourcePage=new URLSearchParams(location.search).get('page');
+  if(sourcePage&&/^\d{1,3}$/.test(sourcePage))fetch(`lessons/pages/page_${sourcePage}.json`).then(r=>{if(!r.ok)throw Error('لم يُعثر على هذه الصفحة');return r.json()}).then(data=>{
+    raw=data;problems=normalize(data);if(!problems.length)throw Error('لا توجد أسئلة في هذه الصفحة');problemIndex=0;resetProblem();$('#empty').classList.add('hidden');$('#lesson').classList.remove('hidden');render();
+  }).catch(e=>{$('#error').textContent=e.message;$('#error').classList.remove('hidden')});
   normalize=function(data){
     const questions=previousNormalize(data);
+    if(Array.isArray(data.exam_questions))questions.forEach((question,index)=>{question.modelSolution=data.exam_questions[index]?.full_model_solution||''});
     // ملفات الامتحانات القديمة قد تجمع نتيجتين داخل إجابة واحدة.
     // نفصلها فقط عندما تنقسم الخيارات الأربعة بالطريقة نفسها.
     for(const question of questions)for(const step of question.steps){
@@ -45,7 +51,7 @@ window.addEventListener('load',()=>{
       if(expanded.length!==step.inputs.length){step.inputs=expanded;step.layout={rows}}
     }
     for(const question of questions)for(const step of question.steps){
-      if(!step.inputs.length)throw Error(`الخطوة ${step.id}: لا توجد مربعات إدخال.`);
+      if(!step.inputs.length)continue;
       const ids=new Set();
       for(const input of step.inputs){
         if(ids.has(input.id))throw Error(`الخطوة ${step.id}: معرف المربع مكرر (${input.id}).`);
@@ -83,6 +89,13 @@ window.addEventListener('load',()=>{
     }).join('')}
     return`<div class="equationRows">${rows.map(row=>`<div class="equationRow">${tokens(Array.isArray(row)?row:[row])}</div>`).join('')}</div>`;
   };
+  const previousRender=render;
+  render=function(){previousRender();const problem=current();if(problem){
+    problem.steps.forEach((step,index)=>{if(!step.inputs.length){const card=$('#steps').children[index];if(card){card.querySelector('.canvas').textContent='لا تتوفر اختيارات صالحة لهذه الخطوة في المصدر.';card.querySelector('.stepFoot').textContent='خطوة تحتاج مراجعة بيانات';}}});
+    if(!problem.steps.length){
+    $('#steps').innerHTML='<article class="step" style="padding:20px;line-height:1.9"><b>هذا السؤال بلا خطوات تفاعلية أو اختيارات في الملف المرفوع.</b><p>يمكنك قراءة الحل النموذجي من المصدر، وستظهر المربعات فقط حين تتوفر بياناتها.</p><button class="primary" id="showModel">عرض الحل النموذجي</button><div id="modelText" class="hidden" style="white-space:pre-wrap;margin-top:13px"></div></article>';
+    $('#showModel').onclick=()=>{$('#modelText').textContent=problem.modelSolution||'لا يوجد حل نموذجي في الملف.';$('#modelText').classList.remove('hidden')};
+  }}};
 });
 </script>
 <script>

@@ -1,0 +1,176 @@
+{
+  "page_number": 114,
+  "page_id": 114,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4.1",
+      "question_text": "جد معادلة القطع المكافئ: معادلته دليله 2x - 6 = 0 ورأسه نقطة الاصل.",
+      "diagram": null,
+      "full_model_solution": "من المعادلة 2x - 6 = 0، نقوم بالتبسيط: 2x = 6، أي x = 3. الدليل هو x = 3 (موجب)، إذن البؤرة تقع على محور السينات السالب (-p). بما أن p = 3، فإن المعادلة هي y^2 = -4px تصبح y^2 = -4(3)x أي y^2 = -12x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بإيجاد قيمة p من معادلة الدليل.",
+          "step_assistant_solution": "x = 3",
+          "inputs": [
+            {
+              "input_id": "q4_1_step1",
+              "label": "قيمة x من معادلة الدليل 2x - 6 = 0 هي:",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "6",
+                "-6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل الثابت للطرف الآخر ثم اقسم على معامل x.",
+            "related_topics": [
+              {
+                "topic_title": "حل المعادلات الخطية",
+                "explanation": "عزل المتغير في طرف والثوابت في الطرف الآخر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x = ",
+                {
+                  "input_id": "q4_1_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4.2",
+      "question_text": "جد معادلة القطع المكافئ: معادلته دليله x + 6 = 0 ورأسه نقطة الاصل.",
+      "diagram": null,
+      "full_model_solution": "من المعادلة x + 6 = 0 نجد أن x = -6. بما أن الدليل سالب، البؤرة تقع على محور السينات الموجب. المعادلة هي y^2 = 4px حيث p = 6، فتصبح y^2 = 4(6)x أي y^2 = 24x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد اتجاه فتحة القطع بناءً على إشارة الدليل.",
+          "step_assistant_solution": "موجب (على محور السينات الموجب)",
+          "inputs": [
+            {
+              "input_id": "q4_2_step1",
+              "label": "بما أن الدليل x = -6، اتجاه فتحة القطع هو:",
+              "correct_answer": "السينات الموجب",
+              "options": [
+                "السينات الموجب",
+                "السينات السالب",
+                "الصادات الموجب",
+                "الصادات السالب"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إذا كان الدليل x = -a فإن القطع يفتح باتجاه المحور السيني الموجب.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "موجب (على محور ",
+                {
+                  "input_id": "q4_2_step1"
+                },
+                ")"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4.3",
+      "question_text": "جد معادلة القطع المكافئ: معادلته دليله 2y - 5 = 0 ورأسه نقطة الاصل.",
+      "diagram": null,
+      "full_model_solution": "من 2y - 5 = 0 نجد y = 5/2. إذن p = 5/2. البؤرة تقع على محور الصادات السالب. المعادلة x^2 = -4py تصبح x^2 = -4(5/2)y أي x^2 = -10y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخرج قيمة p من معادلة الدليل y.",
+          "step_assistant_solution": "5/2",
+          "inputs": [
+            {
+              "input_id": "q4_3_step1",
+              "label": "قيمة p هي:",
+              "correct_answer": "5/2",
+              "options": [
+                "5/2",
+                "5",
+                "2",
+                "2/5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قسم الثابت على معامل y.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_3_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5.1",
+      "question_text": "جد معادلة القطع المكافئ الذي يمر بالنقطة (2,4) وبؤرته على محور السينات ورأسه نقطة الاصل.",
+      "diagram": null,
+      "full_model_solution": "بما أن البؤرة على محور السينات، معادلة القطع هي y^2 = 4px. نعوض النقطة (2,4) في المعادلة: (4)^2 = 4p(2)، أي 16 = 8p، ومنها p = 2. المعادلة النهائية y^2 = 4(2)x أي y^2 = 8x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نعوض إحداثيات النقطة (x, y) في الصيغة العامة y^2 = 4px.",
+          "step_assistant_solution": "16 = 8p",
+          "inputs": [
+            {
+              "input_id": "q5_1_step1",
+              "label": "بعد تعويض (2,4) في y^2 = 4px نحصل على:",
+              "correct_answer": "16 = 8p",
+              "options": [
+                "16 = 8p",
+                "4 = 8p",
+                "16 = 2p",
+                "8 = 4p"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "أربع قيمة y وضرب قيمة x في 4.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q5_1_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-2",
+  "topic_title": "القطع المكافئ",
+  "interactive_status": "ready"
+}

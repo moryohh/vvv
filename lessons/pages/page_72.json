@@ -1,0 +1,68 @@
+{
+  "page_number": 72,
+  "page_id": 72,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "اكتب النظير الجمعي لكل من الاعداد الاتية ثم مثل هذه الاعداد ونظائرها الجمعية على شكل أرجاند: Z1=2+3i, Z2=-1+3i, Z3=1-i, Z4=i",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "جدول",
+        "diagram_desc": "جدول يوضح الأعداد المركبة ونظائرها الجمعية وتمثيلها البياني في مستوى أرجاند",
+        "diagram_box": [
+          190,
+          80,
+          840,
+          920
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_72_q1_fig_01_table.png"
+      },
+      "full_model_solution": "النظير الجمعي للعدد المركب Z = a + bi هو -Z = -a - bi. \n1) Z1 = 2+3i -> -Z1 = -2-3i. \n2) Z2 = -1+3i -> -Z2 = 1-3i. \n3) Z3 = 1-i -> -Z3 = -1+i. \n4) Z4 = i -> -Z4 = -i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: لإيجاد النظير الجمعي لأي عدد مركب، نقوم بضرب الجزء الحقيقي والجزء التخيلي في (-1).",
+          "step_assistant_solution": "نغير إشارات كل من الجزء الحقيقي والتخيلي للعدد.",
+          "inputs": [
+            {
+              "input_id": "q1_step1_input1",
+              "label": "ما هو النظير الجمعي للعدد Z = 2 + 3i؟",
+              "correct_answer": "-2 - 3i",
+              "options": [
+                "-2 - 3i",
+                "2 - 3i",
+                "-2 + 3i",
+                "2 + 3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن النظير الجمعي هو العدد الذي عند جمعه مع العدد الأصلي يكون الناتج صفراً.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على الأعداد المركبة",
+                "explanation": "النظير الجمعي للعدد المركب (a+bi) هو (-a-bi)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو النظير الجمعي للعدد Z = 2 + 3i؟ = ",
+                {
+                  "input_id": "q1_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-8",
+  "topic_title": "التمثيل الهندسي للأعداد المركبة",
+  "interactive_status": "ready"
+}

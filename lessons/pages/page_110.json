@@ -1,0 +1,169 @@
+{
+  "page_number": 110,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "اشتق معادلة القطع المكافئ الذي بؤرته F(-p, 0) ورأسه نقطة الأصل والفتحة نحو اليسار (المعادلة y² = -4px والدليل x = p).",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ الفتحة نحو اليسار مع البؤرة والدليل",
+        "diagram_box": [
+          50,
+          100,
+          350,
+          650
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_110_q1_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "باستخدام تعريف القطع المكافئ (المسافة من أي نقطة M(x,y) على القطع إلى البؤرة تساوي المسافة إلى الدليل): sqrt((x+p)² + (y-0)²) = |x-p|. بتربيع الطرفين: (x+p)² + y² = (x-p)²، ومنها: x² + 2px + p² + y² = x² - 2px + p²، بالتبسيط ينتج: y² = -4px.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "كتابة المسافة من النقطة إلى البؤرة F(-p, 0) وإلى المستقيم الدليل x = p.",
+          "step_assistant_solution": "sqrt((x+p)² + y²) = |x-p|",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي المعادلة الناتجة بعد التربيع؟",
+              "correct_answer": "x² + 2px + p² + y² = x² - 2px + p²",
+              "options": [
+                "x² + 2px + p² + y² = x² - 2px + p²",
+                "x² - 2px + p² + y² = x² + 2px + p²",
+                "x² + y² = 4px",
+                "x² + 2px + p² = y²"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن المسافة بين نقطتين هي جذر فرق السينات تربيع زائد فرق الصادات تربيع.",
+            "related_topics": [
+              {
+                "topic_title": "قانون المسافة",
+                "explanation": "المسافة بين نقطتين (x1, y1) و (x2, y2) هي sqrt((x2-x1)² + (y2-y1)²)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي المعادلة الناتجة بعد التربيع؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "اشتق معادلة القطع المكافئ الذي بؤرته F(0, p) ورأسه نقطة الأصل والفتحة نحو الأعلى (المعادلة x² = 4py والدليل y = -p).",
+      "diagram": {
+        "diagram_id": "q2_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ الفتحة نحو الأعلى",
+        "diagram_box": [
+          380,
+          100,
+          600,
+          650
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_110_q2_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "من تعريف القطع: sqrt((x-0)² + (y-p)²) = |y+p|. بتربيع الطرفين: x² + (y-p)² = (y+p)²، x² + y² - 2py + p² = y² + 2py + p². بالتبسيط ينتج: x² = 4py.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نطبق تعريف القطع المكافئ لمساواة المسافات.",
+          "step_assistant_solution": "x² = 4py",
+          "inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "ما هي معادلة القطع المكافئ المفتوح للأعلى؟",
+              "correct_answer": "x² = 4py",
+              "options": [
+                "x² = 4py",
+                "x² = -4py",
+                "y² = 4px",
+                "y² = -4px"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عندما تقع البؤرة على محور الصادات، المعادلة تكون بدلالة x².",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q2_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "اشتق معادلة القطع المكافئ الذي بؤرته F(0, -p) ورأسه نقطة الأصل والفتحة نحو الأسفل (المعادلة x² = -4py والدليل y = p).",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ الفتحة نحو الأسفل",
+        "diagram_box": [
+          620,
+          100,
+          900,
+          650
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_110_q3_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "من تعريف القطع: sqrt((x-0)² + (y+p)²) = |y-p|. بتربيع الطرفين: x² + (y+p)² = (y-p)²، x² + y² + 2py + p² = y² - 2py + p². بالتبسيط ينتج: x² = -4py.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التعويض في معادلة التعريف للقطع المكافئ للفتحة نحو الأسفل.",
+          "step_assistant_solution": "x² = -4py",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هو الدليل للقطع x² = -4py؟",
+              "correct_answer": "y = p",
+              "options": [
+                "y = p",
+                "y = -p",
+                "x = p",
+                "x = -p"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الدليل دائماً يعاكس البؤرة في الإشارة على نفس المحور.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو الدليل للقطع x² = -4py؟ = ",
+                {
+                  "input_id": "q3_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 110,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-2",
+  "topic_title": "القطع المكافئ",
+  "interactive_status": "ready"
+}

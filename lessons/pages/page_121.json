@@ -1,0 +1,171 @@
+{
+  "page_number": 121,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1-a",
+      "question_text": "جد معادلة القطع المكافئ الذي بؤرته (5,0) ورأسه نقطة الأصل، ثم ارسم المنحني البياني له.",
+      "diagram": {
+        "diagram_id": "q1_a_fig",
+        "diagram_type": "رسم بياني",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ الذي يفتح لليمين مع بؤرة F(5,0) ودليل x=-5.",
+        "diagram_box": [
+          170,
+          185,
+          365,
+          490
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_121_q1_a_fig_graph.png"
+      },
+      "full_model_solution": "بما أن البؤرة (5,0) تقع على محور السينات الموجب، فإن معادلة القطع هي y^2 = 4px. بما أن F(p,0) = (5,0) فإن p=5. بالتعويض: y^2 = 4(5)x، إذن المعادلة هي y^2 = 20x.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد اتجاه القطع وقيمة p من البؤرة المعطاة.",
+          "step_assistant_solution": "القطع يفتح لليمين و p=5.",
+          "inputs": [
+            {
+              "input_id": "q1a_step1",
+              "label": "ما هي قيمة p للقطع المكافئ المعطى؟",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "-5",
+                "0",
+                "20"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "البؤرة (p,0) تشير إلى أن القطع يقع على محور السينات وقيمتها هي p.",
+            "related_topics": [
+              {
+                "topic_title": "تعريف القطع المكافئ",
+                "explanation": "معادلة القطع المكافئ الذي رأسه نقطة الأصل تتبع الصيغة y^2=4px إذا كانت البؤرة على محور السينات."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "القطع يفتح لليمين و p=",
+                {
+                  "input_id": "q1a_step1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "1-b",
+      "question_text": "جد معادلة القطع المكافئ الذي بؤرته (0,-4) ورأسه نقطة الأصل، ثم ارسم المنحني البياني له.",
+      "diagram": {
+        "diagram_id": "q1_b_fig",
+        "diagram_type": "رسم بياني",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ الذي يفتح للأسفل مع بؤرة F(0,4) ودليل y=4.",
+        "diagram_box": [
+          420,
+          185,
+          550,
+          490
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_121_q1_b_fig_graph.png"
+      },
+      "full_model_solution": "بما أن البؤرة (0,-4) تقع على محور الصادات السالب، فإن المعادلة هي x^2 = -4py. لدينا p=4، بالتعويض: x^2 = -4(4)y، إذن x^2 = -16y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد الصيغة العامة للمعادلة للقطع الذي يفتح للأسفل.",
+          "step_assistant_solution": "x^2 = -4py",
+          "inputs": [
+            {
+              "input_id": "q1b_step1",
+              "label": "ما هو اتجاه القطع الذي بؤرته (0,-4)؟",
+              "correct_answer": "للأسفل",
+              "options": [
+                "للأعلى",
+                "للأسفل",
+                "لليمين",
+                "لليسار"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عندما تكون البؤرة (0,-p) فإن القطع يفتح للأسفل على محور الصادات.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو اتجاه القطع الذي بؤرته (0,-4)؟ = ",
+                {
+                  "input_id": "q1b_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "1-c",
+      "question_text": "جد معادلة القطع المكافئ الذي بؤرته (√2, 0) ورأسه نقطة الأصل، ثم ارسم المنحني البياني له.",
+      "diagram": {
+        "diagram_id": "q1_c_fig",
+        "diagram_type": "رسم بياني",
+        "diagram_desc": "رسم توضيحي للقطع المكافئ الذي يفتح للأعلى مع بؤرة F(0,√2) ودليل y=-√2.",
+        "diagram_box": [
+          565,
+          185,
+          765,
+          490
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_121_q1_c_fig_graph.png"
+      },
+      "full_model_solution": "بما أن البؤرة (0,√2) على محور الصادات الموجب، المعادلة هي x^2 = 4py. بما أن p=√2، تصبح المعادلة x^2 = 4√2y.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيمة p وكتابة المعادلة المناسبة.",
+          "step_assistant_solution": "p = √2, x^2 = 4√2y",
+          "inputs": [
+            {
+              "input_id": "q1c_step1",
+              "label": "ما هي معادلة القطع النهائية؟",
+              "correct_answer": "x^2 = 4√2y",
+              "options": [
+                "x^2 = 4√2y",
+                "y^2 = 4√2x",
+                "x^2 = √2y",
+                "x^2 = -4√2y"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم الصيغة القياسية x^2 = 4py للبؤرة التي تقع على محور الصادات.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "p = √2, ",
+                {
+                  "input_id": "q1c_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 121,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-3",
+  "topic_title": "انسحاب المحاور للقطع المكافئ",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,141 @@
+{
+  "page_number": 236,
+  "page_id": 236,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "إذا كان ABCD مسقط المثلث ABC على المستوي (X)، فإذا كان AB = AC = 13cm و BC = 10cm، وقياس الزاوية الزوجية بين المثلثين ABC و BCD هو 60 درجة. جد مساحة المثلث BCD.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "مثلثان يمثلان مسقط أحدهما على الآخر مع زاوية زوجية",
+        "diagram_box": [
+          120,
+          200,
+          520,
+          800
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_236_q1_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "1. بما أن المثلث ABC متساوي الساقين (AB=AC)، فإن العمود النازل من A على القاعدة BC ينصفها في E، أي BE = EC = 10/2 = 5cm. 2. في المثلث القائم ABE، نجد AE باستخدام فيثاغورس: AE^2 = AB^2 - BE^2 = 169 - 25 = 144، إذن AE = 12cm. 3. في المثلث القائم AED، لدينا cos(60) = ED/AE، ومنه ED = 12 * 0.5 = 6cm. 4. مساحة المثلث BCD = 1/2 * القاعدة * الارتفاع = 1/2 * BC * ED = 1/2 * 10 * 6 = 30cm^2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب طول الارتفاع AE في المثلث ABC باستخدام مبرهنة فيثاغورس.",
+          "step_assistant_solution": "AE = 12cm",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "كم يبلغ طول الارتفاع AE؟",
+              "correct_answer": "12cm",
+              "options": [
+                "12cm",
+                "10cm",
+                "13cm",
+                "5cm"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن المثلث متساوي الساقين، فالارتفاع ينصف القاعدة. استخدم فيثاغورس في المثلث الصغير الناتج.",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة فيثاغورس",
+                "explanation": "في المثلث القائم، مربع الوتر يساوي مجموع مربعي الضلعين الآخرين."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "AE = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام جيب تمام الزاوية الزوجية لإيجاد طول الارتفاع المسقط ED.",
+          "step_assistant_solution": "ED = 6cm",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "كم يبلغ طول الارتفاع ED؟",
+              "correct_answer": "6cm",
+              "options": [
+                "6cm",
+                "12cm",
+                "3cm",
+                "10cm"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "جيب تمام الزاوية الزوجية هو النسبة بين الارتفاع في المسقط والارتفاع في المثلث الأصلي.",
+            "related_topics": [
+              {
+                "topic_title": "الزاوية الزوجية",
+                "explanation": "الزاوية بين مستويين هي الزاوية العائدة التي يصنعها مستقيمان مرسومان في المستويين وعموديان على حرف التقاطع."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ED = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "حساب مساحة المثلث BCD باستخدام القاعدة والارتفاع.",
+          "step_assistant_solution": "30cm^2",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي مساحة المثلث BCD؟",
+              "correct_answer": "30cm^2",
+              "options": [
+                "30cm^2",
+                "60cm^2",
+                "15cm^2",
+                "45cm^2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مساحة أي مثلث هي نصف القاعدة مضروبة في الارتفاع المناظر لها.",
+            "related_topics": [
+              {
+                "topic_title": "مساحة المثلث",
+                "explanation": "المساحة = 1/2 × القاعدة × الارتفاع"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step3_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-2",
+  "topic_title": "الإسقاط العمودي على مستوٍ",
+  "interactive_status": "ready"
+}

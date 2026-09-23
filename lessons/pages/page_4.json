@@ -1,0 +1,147 @@
+{
+  "page_number": 4,
+  "page_id": 4,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "جد مجموعة حل المعادلة x^2 - 1 = 0 حيث x ∈ R",
+      "diagram": null,
+      "full_model_solution": "x^2 - 1 = 0، وبنقل 1 للطرف الآخر يصبح x^2 = 1. بأخذ الجذر التربيعي للطرفين، نجد أن x = ±√1، إذاً x = ±1. مجموعة الحل s = {1, -1}",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "عزل المتغير x^2 في طرف والمعلوم في الطرف الآخر.",
+          "step_assistant_solution": "x^2 = 1",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "ما هي قيمة x^2؟",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "-1",
+                "0",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "انقل الثابت -1 إلى الجهة اليمنى بعكس الإشارة.",
+            "related_topics": [
+              {
+                "topic_title": "حل المعادلات التربيعية البسيطة",
+                "explanation": "تعتمد على عزل المتغير ثم أخذ الجذر التربيعي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^2 = ",
+                {
+                  "input_id": "q1_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "جد مجموعة حل المعادلة x^2 + 1 = 0 حيث x ∈ R",
+      "diagram": null,
+      "full_model_solution": "x^2 + 1 = 0، وبنقل 1 للطرف الآخر يصبح x^2 = -1. بما أن مربع أي عدد حقيقي لا يمكن أن يكون سالباً، إذاً x^2 = -1 ∉ R، وبالتالي مجموعة الحل هي s = Ø",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحاول إيجاد قيمة x^2.",
+          "step_assistant_solution": "x^2 = -1",
+          "inputs": [
+            {
+              "input_id": "q2_s1_i1",
+              "label": "ما هي قيمة x^2؟",
+              "correct_answer": "-1",
+              "options": [
+                "1",
+                "-1",
+                "0",
+                "√-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "لا يوجد عدد حقيقي مربعه سالب.",
+            "related_topics": [
+              {
+                "topic_title": "مجموعة الأعداد الحقيقية",
+                "explanation": "مربع أي عدد حقيقي دائماً أكبر من أو يساوي الصفر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^2 = ",
+                {
+                  "input_id": "q2_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "جد مجموعة حل المعادلة x^2 + 1 = 0 حيث x ∈ C",
+      "diagram": null,
+      "full_model_solution": "x^2 + 1 = 0، إذاً x^2 = -1. بأخذ الجذر التربيعي للطرفين، x = ±√-1. بما أن √-1 = i، إذاً x = ±i. مجموعة الحل s = {i, -i}",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "استخدام تعريف العدد التخيلي i حيث i = √-1.",
+          "step_assistant_solution": "x = ±i",
+          "inputs": [
+            {
+              "input_id": "q3_s1_i1",
+              "label": "ما هي قيم x في مجموعة الأعداد المركبة C؟",
+              "correct_answer": "±i",
+              "options": [
+                "±1",
+                "±i",
+                "0",
+                "لا يوجد حل"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "جذر العدد السالب في مجموعة الأعداد المركبة يعطي i.",
+            "related_topics": [
+              {
+                "topic_title": "الأعداد المركبة",
+                "explanation": "مجموعة الأعداد المركبة توسع مجموعة الأعداد الحقيقية لتشمل حلولاً للمعادلات التي يكون فيها مربع العدد سالباً."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x = ",
+                {
+                  "input_id": "q3_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-1",
+  "topic_title": "الحاجة إلى توسيع مجموعة الأعداد الحقيقية",
+  "interactive_status": "ready"
+}

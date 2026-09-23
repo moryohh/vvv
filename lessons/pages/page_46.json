@@ -1,0 +1,146 @@
+{
+  "page_number": 46,
+  "page_id": 46,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "7",
+      "question_text": "حل المعادلة التربيعية: z^2 + 2z + i(2 - i) = 0",
+      "diagram": null,
+      "full_model_solution": "بالطريقة الأولى: (z + i)(z + 2 - i) = 0. إما z + i = 0 يؤدي إلى z = -i، أو z + 2 - i = 0 يؤدي إلى z = -2 + i. إذن مجموعة الحل S = {-i, -2 + i}.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "لحل المعادلة، نقوم بتحليل المقدار التربيعي بإيجاد عددين حاصل ضربهما الحد الثابت ومجموعهما معامل z.",
+          "step_assistant_solution": "(z + i)(z + 2 - i) = 0",
+          "inputs": [
+            {
+              "input_id": "q7_s1_i1",
+              "label": "ما هو تحليل المعادلة الصحيح؟",
+              "correct_answer": "(z + i)(z + 2 - i) = 0",
+              "options": [
+                "(z + i)(z + 2 - i) = 0",
+                "(z - i)(z + 2 + i) = 0",
+                "(z + i)(z - 2 + i) = 0",
+                "(z - i)(z + 2 - i) = 0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم خاصية الضرب الصفري لحل المعادلة بعد التحليل.",
+            "related_topics": [
+              {
+                "topic_title": "تحليل المعادلات التربيعية",
+                "explanation": "طريقة لإيجاد الجذور من خلال تحويل المعادلة إلى حاصل ضرب قوسين."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q7_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "حل المعادلة التربيعية: z^2 + 2i(3 - 2i) = 3z",
+      "diagram": null,
+      "full_model_solution": "نرتب المعادلة لتصبح: z^2 - 3z + 2i(3 - 2i) = 0. نحلل المعادلة: (z - 2i)(z - (3 - 2i)) = 0. إذن الجذور هي z = 2i و z = 3 - 2i. مجموعة الحل S = {2i, 3 - 2i}.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بنقل كل الحدود إلى طرف واحد لجعل المعادلة مساوية للصفر.",
+          "step_assistant_solution": "z^2 - 3z + 6i + 4 = 0",
+          "inputs": [
+            {
+              "input_id": "q8_s1_i1",
+              "label": "ما هو الشكل القياسي للمعادلة؟",
+              "correct_answer": "z^2 - 3z + 6i + 4 = 0",
+              "options": [
+                "z^2 - 3z + 6i + 4 = 0",
+                "z^2 + 3z + 6i - 4 = 0",
+                "z^2 - 3z - 6i + 4 = 0",
+                "z^2 + 3z + 6i + 4 = 0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن i^2 = -1، لذا فإن 2i * (-2i) = -4i^2 = 4.",
+            "related_topics": [
+              {
+                "topic_title": "الأعداد المركبة",
+                "explanation": "التعامل مع i في العمليات الحسابية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q8_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "9",
+      "question_text": "حل المعادلة التربيعية: z^2 - 3z + 3 + i = 0",
+      "diagram": null,
+      "full_model_solution": "باستخدام القانون العام: z = [3 ± sqrt(9 - 4(3 + i))] / 2. التبسيط يعطي z = [3 ± sqrt(-3 - 4i)] / 2. بعد إيجاد الجذر التربيعي لـ (-3 - 4i) كـ (1 - 2i)، نحصل على الجذور النهائية.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحدد قيم المعاملات a=1, b=-3, c=3+i ثم نطبق القانون العام.",
+          "step_assistant_solution": "z = (3 ± sqrt(-3 - 4i)) / 2",
+          "inputs": [
+            {
+              "input_id": "q9_s1_i1",
+              "label": "ما هو مميز المعادلة (Δ)؟",
+              "correct_answer": "-3 - 4i",
+              "options": [
+                "-3 - 4i",
+                "3 + 4i",
+                "-3 + 4i",
+                "9 - 4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المميز Δ = b^2 - 4ac.",
+            "related_topics": [
+              {
+                "topic_title": "القانون العام",
+                "explanation": "القانون لحل المعادلات التربيعية التي لا تتحلل بسهولة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "z = (3 ± sqrt(",
+                {
+                  "input_id": "q9_s1_i1"
+                },
+                ")) / 2"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

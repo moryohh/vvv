@@ -1,0 +1,121 @@
+{
+  "page_number": 174,
+  "page_id": 174,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "جد معادلة القطع الزائد الذي مركزه نقطة الأصل وطول محوره الحقيقي = 6 وحدات والاختلاف المركزي يساوي 2 والبؤرتان على محور السينات؟",
+      "diagram": null,
+      "full_model_solution": "1. من طول المحور الحقيقي: 2a = 6، إذن a = 3، ومنه a² = 9.\n2. من الاختلاف المركزي: e = c/a، بما أن e = 2 و a = 3، إذن c = 6، ومنه c² = 36.\n3. نستخدم علاقة القطع الزائد: c² = a² + b²، إذن 36 = 9 + b²، ومنه b² = 27.\n4. بما أن البؤرتان على محور السينات، معادلة القطع هي: (x²/a²) - (y²/b²) = 1، أي: (x²/9) - (y²/27) = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بإيجاد قيمة a من طول المحور الحقيقي المعطى.",
+          "step_assistant_solution": "2a = 6 => a = 3 => a² = 9",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة a²؟",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "3",
+                "36",
+                "27"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "طول المحور الحقيقي للقطع الزائد هو 2a.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الزائد",
+                "explanation": "المحور الحقيقي يساوي 2a، والمحور التخيلي يساوي 2b."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "2a = 6 => a = 3 => a² = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم قانون الاختلاف المركزي e = c/a لإيجاد قيمة c.",
+          "step_assistant_solution": "c = e * a = 2 * 3 = 6 => c² = 36",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي قيمة c²؟",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "6",
+                "12",
+                "18"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الاختلاف المركزي e أكبر من 1 دائماً في القطع الزائد.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = e * a = 2 * 3 = 6 => c² = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "نستخدم العلاقة c² = a² + b² لإيجاد b².",
+          "step_assistant_solution": "b² = c² - a² = 36 - 9 = 27",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي قيمة b²؟",
+              "correct_answer": "27",
+              "options": [
+                "27",
+                "45",
+                "9",
+                "36"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "في القطع الزائد، البؤرة هي الأبعد عن المركز، لذا c² هي الأكبر.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "b² = c² - a² = 36 - 9 = ",
+                {
+                  "input_id": "step3_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-7",
+  "topic_title": "القطع الزائد",
+  "interactive_status": "ready"
+}

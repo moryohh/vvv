@@ -1,0 +1,94 @@
+{
+  "page_number": 150,
+  "page_id": 150,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "المسافة بين بؤرتيه تساوي (8) وحدات ونصف محوره الصغير يساوي (3) وحدات، جد معادلة القطع الناقص.",
+      "diagram": null,
+      "full_model_solution": "بما أن المسافة بين البؤرتين 2c = 8، إذن c = 4. ونصف المحور الصغير b = 3. من علاقة القطع الناقص c^2 = a^2 - b^2، نجد 16 = a^2 - 9، إذن a^2 = 25. المعادلة هي x^2/25 + y^2/9 = 1 (بافتراض المحور الكبير على السينات).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ باستخراج قيم الثوابت c و b من المعطيات المباشرة.",
+          "step_assistant_solution": "c = 4, b = 3",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة c و b؟",
+              "correct_answer": "c=4, b=3",
+              "options": [
+                "c=4, b=3",
+                "c=8, b=3",
+                "c=4, b=6",
+                "c=2, b=3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المسافة بين البؤرتين هي 2c ونصف المحور الصغير هو b.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الناقص",
+                "explanation": "المسافة بين البؤرتين تساوي 2c، وطول المحور الصغير يساوي 2b."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة c و b؟ = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "استخدام العلاقة المساعدة للقطع الناقص لإيجاد a^2.",
+          "step_assistant_solution": "a^2 = 25",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي قيمة a^2؟",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "7",
+                "16",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم القانون: c^2 = a^2 - b^2",
+            "related_topics": [
+              {
+                "topic_title": "العلاقة المساعدة",
+                "explanation": "في القطع الناقص c^2 هي الفرق بين a^2 و b^2."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a^2 = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-6",
+  "topic_title": "القطع الناقص: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

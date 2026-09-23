@@ -1,0 +1,42 @@
+{
+  "statistics": {
+    "steps_with_layout": 562,
+    "extra_boxes": 5,
+    "pages": 225,
+    "questions": 621,
+    "interactive": 458,
+    "read_only": 163,
+    "diagrams": 84
+  },
+  "manual_review": [
+    {
+      "page": 13,
+      "question": 2,
+      "step": 1,
+      "reason": "لا توجد خيارات صالحة لهذه الخطوة"
+    },
+    {
+      "page": 61,
+      "question": 1,
+      "step": 1,
+      "reason": "لا توجد خيارات صالحة لهذه الخطوة"
+    },
+    {
+      "page": 83,
+      "question": 7,
+      "step": 1,
+      "reason": "لا توجد خيارات صالحة لهذه الخطوة"
+    },
+    {
+      "page": 83,
+      "question": 8,
+      "step": 1,
+      "reason": "لا توجد خيارات صالحة لهذه الخطوة"
+    }
+  ],
+  "missing_chapters": [
+    "تطبيقات التفاضل",
+    "التكامل",
+    "المعادلات التفاضلية الاعتيادية"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "page_number": 65,
+  "page_id": 65,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "أكتب المقادير الآتية في أبسط صورة: a) w^64, b) w^-325, c) 1 / (1+w^-32)^12, d) (1+w^2)^-4, e) w^n+5",
+      "diagram": null,
+      "full_model_solution": "a) w^64 = (w^3)^21 * w = 1^21 * w = w. b) w^-325 = w^-325 * w^327 = w^2. c) 1 / (1+w^-32)^12 = 1 / (1+w)^12 = 1 / (-w^2)^12 = 1 / w^24 = 1/1 = 1. d) (1+w^2)^-4 = (-w)^-4 = 1/(-w)^4 = 1/w^4 = 1/w = w^2. e) w^n+5 = w^n * w^5 = w^n * 1 * w^2 = w^n * w^2 = w^n+2 (Note: Standard simplification based on properties w^3=1).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تذكر أن w^3 = 1، لذا نقوم بتقسيم الأس على 3 وأخذ الباقي لتبسيط القوى.",
+          "step_assistant_solution": "بالنسبة لـ w^64، 64 تقسيم 3 يساوي 21 والباقي 1، إذاً الناتج هو w^1.",
+          "inputs": [
+            {
+              "input_id": "q1_a_step1",
+              "label": "ما هو ناتج تبسيط w^64؟",
+              "correct_answer": "w",
+              "options": [
+                "w",
+                "w^2",
+                "1",
+                "0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم خاصية أن كل ثلاث قوى متتالية للـ w تعادل 1.",
+            "related_topics": [
+              {
+                "topic_title": "قوى w",
+                "explanation": "أي قوة للـ w تُبسط بقسمة الأس على 3 وأخذ الباقي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "بالنسبة لـ w^64، 64 تقسيم 3 يساوي 21 والباقي 1، إذاً الناتج هو ",
+                {
+                  "input_id": "q1_a_step1"
+                },
+                "^1."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "كون المعادلة التربيعية التي جذراها: a) 1+w^2, 1+w; b) w/(2-w^2), w^2/(2-w); c) 3i/w^2, -3w^2/i",
+      "diagram": null,
+      "full_model_solution": "a) المجموع = 1+w^2+1+w = 2+w^2+w = 2-1 = 1. الضرب = (1+w^2)(1+w) = 1+w+w^2+w^3 = 0+1 = 1. المعادلة: x^2 - x + 1 = 0. b) المجموع = (2w-w^2+2w^2-w)/(4-2w-2w^2+w^3) = (w+w^2)/(4-2(w+w^2)+1) = -1/(4-2(-1)+1) = -1/7. الضرب = (w^3)/(4-2(w+w^2)+1) = 1/(4+2+1) = 1/7. المعادلة: x^2 + (1/7)x + (1/7) = 0. c) الجذر الأول = 3iw. الجذر الثاني = 3iw^2. المجموع = 3i(w+w^2) = -3i. الضرب = 9i^2w^3 = -9. المعادلة: x^2 + 3ix - 9 = 0.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "لتكوين المعادلة التربيعية نستخدم القانون: x^2 - (مجموع الجذرين)x + (حاصل ضرب الجذرين) = 0.",
+          "step_assistant_solution": "يجب حساب المجموع أولاً ثم الضرب لكل حالة.",
+          "inputs": [
+            {
+              "input_id": "q2_a_sum",
+              "label": "ما هو مجموع الجذرين في الفرع (a)؟",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "0",
+                "-1",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن 1 + w + w^2 = 0.",
+            "related_topics": [
+              {
+                "topic_title": "العلاقة بين جذور المعادلة",
+                "explanation": "المجموع -b/a والضرب c/a في المعادلة التربيعية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو مجموع الجذرين في الفرع (a)؟ = ",
+                {
+                  "input_id": "q2_a_sum"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-7",
+  "topic_title": "الجذور التكعيبية للواحد الصحيح",
+  "interactive_status": "ready"
+}

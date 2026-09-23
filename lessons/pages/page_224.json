@@ -1,0 +1,104 @@
+{
+  "page_number": 224,
+  "page_id": 224,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "في المثلث ABC، إذا كان AB = 10cm و BD = 5cm، وكان BD عمودياً على المستوى ABC (BD ⊥ ABC)، وقياس الزاوية A يساوي 30°. جد قياس الزاوية الزوجية بين المستويين D-AC-B.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "مثلث ABC قاعدته في مستوى، وقطعة مستقيمة BD عمودية على المستوى عند النقطة B، وتتصل D برؤوس المثلث لتشكل زاوية زوجية",
+        "diagram_box": [
+          342,
+          218,
+          563,
+          762
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_224_q1_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "1. ننشئ BE عمودياً على AC. بما أن BD عمودية على المستوى ABC، وبما أن BE في المستوى، فإن DE عمودية على AC (مبرهنة الأعمدة الثلاثة). 2. الزاوية العائدة للزاوية الزوجية هي ∠DEB. 3. في المثلث القائم ABE، نحسب BE: sin 30° = BE/AB => 1/2 = BE/10 => BE = 5cm. 4. في المثلث القائم DBE القائم في B، نحسب tan(DEB) = BD/BE = 5/5 = 1. إذاً قياس الزاوية DEB = 45°.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الهدف هو إيجاد طول القطعة BE في المثلث القائم ABE باستخدام النسبة المثلثية للزاوية A المعلومة.",
+          "step_assistant_solution": "BE = 5 cm",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "قيمة BE هي:",
+              "correct_answer": "5cm",
+              "options": [
+                "5cm",
+                "10cm",
+                "2.5cm",
+                "7.5cm"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون الجيب (sin) للزاوية 30 في المثلث القائم ABE: المقابل/الوتر.",
+            "related_topics": [
+              {
+                "topic_title": "النسب المثلثية",
+                "explanation": "في المثلث القائم، sin الزاوية = المقابل / الوتر."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "قيمة BE هي: = ",
+                {
+                  "input_id": "step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "الهدف هو إيجاد قياس الزاوية العائدة DEB باستخدام المثلث القائم DBE.",
+          "step_assistant_solution": "45°",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "قياس الزاوية العائدة DEB هو:",
+              "correct_answer": "45°",
+              "options": [
+                "45°",
+                "30°",
+                "60°",
+                "90°"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون الظل (tan) للزاوية في المثلث القائم DBE: المقابل/المجاور، حيث المقابل BD=5 والمجاور BE=5.",
+            "related_topics": [
+              {
+                "topic_title": "الزاوية الزوجية",
+                "explanation": "قياس الزاوية الزوجية يساوي قياس زاويتها العائدة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

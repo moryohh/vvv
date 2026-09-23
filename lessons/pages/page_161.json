@@ -1,0 +1,145 @@
+{
+  "page_number": 161,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "6",
+      "question_text": "2015 دور 2 / جد معادلة القطع الناقص الذي بؤرتاه تنتميان الى محور الصادات ومساحته 32π وحدة مساحة والنسبة بين طولي محوريه كنسبة 1/2",
+      "diagram": null,
+      "full_model_solution": "بما أن البؤرتين على محور الصادات، فالمعادلة هي x²/b² + y²/a² = 1. من معطى النسبة بين طولي المحورين (2b/2a = 1/2)، نجد a = 2b. من قانون المساحة (Area = πab = 32π)، نعوض a = 2b ليصبح π(2b)(b) = 32π، أي 2b² = 32، ومنه b² = 16 (b=4) و a² = 64 (a=8). المعادلة: x²/16 + y²/64 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخرج العلاقة بين a و b من النسبة المعطاة بين طولي المحورين.",
+          "step_assistant_solution": "a = 2b",
+          "inputs": [
+            {
+              "input_id": "q6_s1_i1",
+              "label": "ما هي قيمة a بدلالة b؟",
+              "correct_answer": "a = 2b",
+              "options": [
+                "a = 2b",
+                "a = b/2",
+                "a = 4b",
+                "a = b"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "النسبة بين طولي المحورين هي 2b/2a = 1/2، بتبسيط الطرفين نجد العلاقة.",
+            "related_topics": [
+              {
+                "topic_title": "القطع الناقص",
+                "explanation": "المحور الكبير هو 2a والمحور الصغير هو 2b."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q6_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "2014 تمهيدي / جسر على شكل نصف قطع ناقص، المسافة بين نهايتي قاعدته 24m وارتفاعه 9m جد ارتفاع الجسر عند النقطة التي تبعد عن بدايته 6m",
+      "diagram": {
+        "diagram_id": "q7_fig_01",
+        "diagram_type": "شكل توضيحي",
+        "diagram_desc": "رسم توضيحي لجسر على شكل نصف قطع ناقص يربط بين المحورين",
+        "diagram_box": [
+          308,
+          62,
+          595,
+          935
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_161_q7_fig_01_shape_diagram.png"
+      },
+      "full_model_solution": "نفرض مركز القطع هو نقطة الأصل. المسافة بين نهايتي القاعدة (طول المحور الكبير) = 24، إذاً a = 12. الارتفاع (نصف المحور الصغير) = 9، إذاً b = 9. معادلة القطع: x²/144 + y²/81 = 1. النقطة التي تبعد 6م عن البداية تعني إحداثيها السيني x = 12 - 6 = 6. بالتعويض: 36/144 + y²/81 = 1، أي 1/4 + y²/81 = 1، ومنه y²/81 = 3/4، y² = 243/4، y = 9√3 / 2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيم a و b من أبعاد الجسر.",
+          "step_assistant_solution": "a = 12, b = 9",
+          "inputs": [
+            {
+              "input_id": "q7_s1_i1",
+              "label": "ما هما قيمتا a و b؟",
+              "correct_answer": "a = 12, b = 9",
+              "options": [
+                "a = 12, b = 9",
+                "a = 24, b = 9",
+                "a = 12, b = 18",
+                "a = 6, b = 9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المسافة الكلية 2a = 24، والارتفاع يمثل نصف المحور الأصغر b.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q7_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "2017 الدور الثالث تطبيقي / جسر على شكل نصف قطع ناقص طول قاعدته 24m واعلى نقطة ارتفاع لها تساوي 9m جد ارتفاع العمود الموضوع على بعد 6m من بداية قاعدته.",
+      "diagram": null,
+      "full_model_solution": "هذا السؤال هو تكرار لبيانات السؤال السابع، حيث a = 12 و b = 9، والبعد المطلوب هو عند x = 6، والنتيجة y = 9√3 / 2 متر.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم نفس معادلة القطع الناقص المستخرجة في السؤال السابق.",
+          "step_assistant_solution": "x²/144 + y²/81 = 1",
+          "inputs": [
+            {
+              "input_id": "q8_s1_i1",
+              "label": "ما هي المعادلة المستخدمة؟",
+              "correct_answer": "x²/144 + y²/81 = 1",
+              "options": [
+                "x²/144 + y²/81 = 1",
+                "x²/81 + y²/144 = 1",
+                "x²/24 + y²/9 = 1",
+                "x²/12 + y²/9 = 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "التعويض المباشر في معادلة القطع الناقص القياسية.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q8_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 161,
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-6",
+  "topic_title": "القطع الناقص: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

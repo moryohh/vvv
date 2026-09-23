@@ -1,0 +1,100 @@
+{
+  "page_number": 30,
+  "page_id": 30,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "19",
+      "question_text": "y + 5i = (2x + i)(x + i) :جد قيمتي x و y الحقيقيتين",
+      "diagram": null,
+      "full_model_solution": "1. نوزع الضرب: y + 5i = 2x^2 + 2xi + xi + i^2. \n2. نبسط المعادلة: y + 5i = 2x^2 + 3xi - 1. \n3. نساوي الحقيقي بالحقيقي: y = 2x^2 - 1 (معادلة 1). \n4. نساوي التخيلي بالتخيلي: 5 = 3x ومنها x = 5/3. \n5. نعوض x في المعادلة الأولى: y = 2(25/9) - 1 = 50/9 - 9/9 = 41/9.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نقوم بفك الأقواس باستخدام خاصية التوزيع (2x*x + 2x*i + i*x + i*i). تذكر أن i^2 = -1.",
+          "step_assistant_solution": "2x^2 + 3xi - 1",
+          "inputs": [
+            {
+              "input_id": "q19_step1_input1",
+              "label": "ما هو ناتج فك القوس وتبسيط i^2؟",
+              "correct_answer": "2x^2 + 3xi - 1",
+              "options": [
+                "2x^2 + 3xi - 1",
+                "2x^2 + 3xi + 1",
+                "2x^2 + xi - 1",
+                "2x^2 + 3xi"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم خاصية التوزيع وجمع الحدود المتشابهة مع العلم أن i^2 هي -1.",
+            "related_topics": [
+              {
+                "topic_title": "ضرب الأعداد المركبة",
+                "explanation": "ضرب الأعداد المركبة يتم معاملته كضرب المقادير الجبرية مع تعويض i^2 بـ -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q19_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "20",
+      "question_text": "(3 + 2i)^2 y = (x + 3i)^2 :جد قيمتي x و y الحقيقيتين",
+      "diagram": null,
+      "full_model_solution": "1. فك التربيع: (9 + 12i - 4)y = x^2 + 6xi - 9. \n2. ترتيب المعادلة: (5 + 12i)y = x^2 + 6xi - 9. \n3. موازنة الأجزاء: 5y = x^2 - 9 (حقيقي) و 12y = 6x (تخيلي). \n4. من التخيلي: x = 2y. \n5. التعويض في الحقيقي: 5y = (2y)^2 - 9 -> 4y^2 - 5y - 9 = 0. \n6. التحليل: (4y-9)(y+1)=0. \n7. النتائج: y=9/4 (تؤدي x=9/2) أو y=-1 (تؤدي x=-2).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: نفك القوس المربع (a+bi)^2 = a^2 + 2abi - b^2 للطرفين.",
+          "step_assistant_solution": "(5 + 12i)y = x^2 + 6xi - 9",
+          "inputs": [
+            {
+              "input_id": "q20_step1_input1",
+              "label": "ما هو ناتج فك التربيع للطرفين؟",
+              "correct_answer": "(5 + 12i)y = x^2 + 6xi - 9",
+              "options": [
+                "(5 + 12i)y = x^2 + 6xi - 9",
+                "(9 + 12i)y = x^2 + 6xi + 9",
+                "(5 + 6i)y = x^2 + 12xi - 9",
+                "(5 + 12i)y = x^2 + 3xi - 9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون مربع الحدانية: (a+b)^2 = a^2 + 2ab + b^2، وتذكر أن (bi)^2 = -b^2.",
+            "related_topics": [
+              {
+                "topic_title": "مربع الحدانية",
+                "explanation": "القاعدة الأساسية لفك قوس مرفوع للتربيع في الأعداد المركبة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q20_step1_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

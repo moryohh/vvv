@@ -1,0 +1,192 @@
+{
+  "page_number": 64,
+  "page_id": 64,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "15",
+      "question_text": "2014 / الدور الثاني: أثبت أن (5ω²i - 1 / 5 + iω)^6 = -1",
+      "diagram": null,
+      "full_model_solution": "L.H.S = ((5ω²i - i²ω³)/(5 + iω))^6 = ((5ω²i + i²ω³)/(5 + iω))^6 = ((ω²i(5 + iω))/(5 + iω))^6 = (ω²i)^6 = ω^12 * i^6 = (1) * (i²)^3 = -1 = R.H.S",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط البسط باستخدام العلاقة ω³=1 و i²=-1",
+          "step_assistant_solution": "البسط يصبح ω²i(5 + iω)",
+          "inputs": [
+            {
+              "input_id": "q15_s1",
+              "label": "ما هو ناتج تحليل البسط؟",
+              "correct_answer": "ω²i(5+iω)",
+              "options": [
+                "ω²i(5+iω)",
+                "5ω²i",
+                "iω(5+iω)",
+                "ω²(5+i)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استبدل -1 بـ i²ω³ لتوحيد الحدود واستخراج العامل المشترك.",
+            "related_topics": [
+              {
+                "topic_title": "خواص أوميغا",
+                "explanation": "ω³=1 و 1+ω+ω²=0"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج تحليل البسط؟ = ",
+                {
+                  "input_id": "q15_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "16",
+      "question_text": "2016 / الدور الأول: أثبت أن (5 - 5/(ω²+1) + 3ω)^6 = 64",
+      "diagram": null,
+      "full_model_solution": "بما أن 1+ω² = -ω، إذن: (5 - 5/(-ω) + 3ω)^6 = (5 + 5/ω + 3ω)^6 = (5 + 5ω² + 3ω)^6 = (5(1+ω²) + 3ω)^6 = (5(-ω) + 3ω)^6 = (-2ω)^6 = 64ω^6 = 64(1) = 64 = R.H.S",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التعويض عن ω²+1 بـ -ω لتبسيط الكسر",
+          "step_assistant_solution": "يصبح المقدار 5 + 5ω² + 3ω",
+          "inputs": [
+            {
+              "input_id": "q16_s1",
+              "label": "ما هو ناتج تبسيط 5 - 5/(-ω)؟",
+              "correct_answer": "5+5ω²",
+              "options": [
+                "5+5ω²",
+                "5+5ω",
+                "5-5ω²",
+                "10ω²"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن 1/ω = ω².",
+            "related_topics": [
+              {
+                "topic_title": "مقلوب أوميغا",
+                "explanation": "1/ω = ω² و 1/ω² = ω"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هو ناتج تبسيط 5 - 5/(-ω)؟ = ",
+                {
+                  "input_id": "q16_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "17",
+      "question_text": "2016 / الدور الثالث: حل المعادلة التربيعية التي جذراها 1/ω و (1+3ω)/(ω²+3)",
+      "diagram": null,
+      "full_model_solution": "الجذر الأول M = 1/ω = ω². الجذر الثاني L = (1+3ω)/(ω²+3) = (ω³+3ω)/(ω²+3) = (ω(ω²+3))/(ω²+3) = ω. مجموع الجذرين M+L = ω²+ω = -1. ضرب الجذرين M*L = ω².ω = ω³ = 1. المعادلة: x² - (M+L)x + M.L = 0 => x² + x + 1 = 0",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تبسيط الجذر الثاني باستخدام ω³=1",
+          "step_assistant_solution": "الجذر الثاني يبسط إلى ω",
+          "inputs": [
+            {
+              "input_id": "q17_s1",
+              "label": "ما قيمة الجذر الثاني؟",
+              "correct_answer": "ω",
+              "options": [
+                "ω",
+                "ω²",
+                "1",
+                "3ω"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استبدل العدد 1 بـ ω³ في بسط الكسر.",
+            "related_topics": [
+              {
+                "topic_title": "تبسيط الجذور",
+                "explanation": "استخدام خصائص قوى أوميغا"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الجذر الثاني يبسط إلى ",
+                {
+                  "input_id": "q17_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "18",
+      "question_text": "2016 / الدور الثالث خارج القطر: كون المعادلة التربيعية التي جذراها ω/(1+3ω) و ω²/(1+3ω²)",
+      "diagram": null,
+      "full_model_solution": "مجموع الجذرين: (ω(1+3ω²) + ω²(1+3ω)) / ((1+3ω)(1+3ω²)) = (ω+3ω³+ω²+3ω³)/(1+3ω²+3ω+9ω³) = (ω+ω²+6)/(1+3(ω+ω²)+9) = (-1+6)/(1+3(-1)+9) = 5/7. ضرب الجذرين: (ω.ω²) / (1+3ω²+3ω+9ω³) = ω³ / (1+3(ω+ω²)+9) = 1 / (1-3+9) = 1/7. المعادلة: x² - (5/7)x + 1/7 = 0",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب ضرب الجذرين وهو أسهل للبدء به",
+          "step_assistant_solution": "الناتج هو 1/7",
+          "inputs": [
+            {
+              "input_id": "q18_s1",
+              "label": "ما قيمة ضرب الجذرين؟",
+              "correct_answer": "1/7",
+              "options": [
+                "1/7",
+                "7",
+                "5/7",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب البسطين معاً والمقامين معاً واستخدم ω³=1.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات على أوميغا",
+                "explanation": "توزيع الضرب والجمع"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الناتج هو ",
+                {
+                  "input_id": "q18_s1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-7",
+  "topic_title": "الجذور التكعيبية للواحد الصحيح",
+  "interactive_status": "ready"
+}

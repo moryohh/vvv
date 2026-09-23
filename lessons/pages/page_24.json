@@ -1,0 +1,145 @@
+{
+  "page_number": 24,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "(2y + 1) - (2x - 1)i = -8 + 3i",
+      "diagram": null,
+      "full_model_solution": "By equating real and imaginary parts: Real part: 2y + 1 = -8 => 2y = -9 => y = -9/2. Imaginary part: -(2x - 1) = 3 => -2x + 1 = 3 => -2x = 2 => x = -1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "Equate the real parts of both sides of the equation.",
+          "step_assistant_solution": "2y + 1 = -8",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input",
+              "label": "What is the real part equation?",
+              "correct_answer": "2y + 1 = -8",
+              "options": [
+                "2y + 1 = -8",
+                "2x - 1 = 3",
+                "2y + 1 = 3",
+                "2x - 1 = -8"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "Complex numbers a+bi = c+di imply a=c and b=d.",
+            "related_topics": [
+              {
+                "topic_title": "Equality of Complex Numbers",
+                "explanation": "Two complex numbers are equal if their real parts are equal and their imaginary parts are equal."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "(x - 3yi) + (2y + xi) = 6 + i",
+      "diagram": null,
+      "full_model_solution": "Separate real and imaginary: (x + 2y) + (-3y + x)i = 6 + i. So, x + 2y = 6 and x - 3y = 1. Subtracting: (x + 2y) - (x - 3y) = 6 - 1 => 5y = 5 => y = 1. Then x + 2(1) = 6 => x = 4.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "Form the system of two linear equations by grouping real and imaginary coefficients.",
+          "step_assistant_solution": "x + 2y = 6 and x - 3y = 1",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input",
+              "label": "What is the resulting system of equations?",
+              "correct_answer": "x + 2y = 6, x - 3y = 1",
+              "options": [
+                "x + 2y = 6, x - 3y = 1",
+                "x - 3y = 6, 2y + x = 1",
+                "x + 2y = 1, x - 3y = 6",
+                "x + y = 6, x - y = 1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "Group all terms without 'i' for real part, and terms with 'i' for imaginary part.",
+            "related_topics": [
+              {
+                "topic_title": "Systems of Equations",
+                "explanation": "Solving two linear equations with two variables using substitution or elimination."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "What is the resulting system of equations? = ",
+                {
+                  "input_id": "q4_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "(2x + i)(y - 2i) = -2 - 9i",
+      "diagram": null,
+      "full_model_solution": "Expand: 2xy - 4xi + yi - 2i^2 = -2 - 9i => 2xy - 4xi + yi + 2 = -2 - 9i. Real: 2xy + 2 = -2 => 2xy = -4 => xy = -2. Imaginary: -4x + y = -9 => y = 4x - 9. Substitute: x(4x - 9) = -2 => 4x^2 - 9x + 2 = 0 => (x - 2)(4x - 1) = 0. So x = 2 or x = 1/4. If x = 2, y = -1. If x = 1/4, y = -8.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "Expand the brackets using the distributive property (FOIL) and remember i^2 = -1.",
+          "step_assistant_solution": "2xy - 4xi + yi + 2",
+          "inputs": [
+            {
+              "input_id": "q5_step1_input",
+              "label": "What is the expanded form?",
+              "correct_answer": "2xy - 4xi + yi + 2",
+              "options": [
+                "2xy - 4xi + yi + 2",
+                "2xy - 4xi + yi - 2",
+                "2xy + 4xi + yi + 2",
+                "2xy - 4xi - yi - 2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "Remember that -2i^2 becomes -2(-1) = +2.",
+            "related_topics": [
+              {
+                "topic_title": "Complex Number Multiplication",
+                "explanation": "Multiply binomials and replace i^2 with -1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q5_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 24,
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-4",
+  "topic_title": "العمليات ومساواة الأعداد المركبة",
+  "interactive_status": "ready"
+}

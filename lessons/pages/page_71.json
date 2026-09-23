@@ -1,0 +1,172 @@
+{
+  "page_number": 71,
+  "page_id": 71,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "اذا كان z1 = 3 + 4i, z2 = 5 + 2i، جد z1 + z2 ثم مثل المعادلة هندسياً على شكل ارجاند.",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم ارجاند يوضح تمثيل العدد المركب z1 و z2 و حاصل جمعهما z3 في المستوى المركب.",
+        "diagram_box": [
+          130,
+          480,
+          240,
+          750
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_71_q3_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "z1 + z2 = (3 + 4i) + (5 + 2i) = (3+5) + (4+2)i = 8 + 6i. تمثيل النقاط: p(z1)=(3,4), p(z2)=(5,2), p(z3)=(8,6).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ بجمع الأجزاء الحقيقية معاً والأجزاء التخيلية معاً للأعداد المركبة.",
+          "step_assistant_solution": "8 + 6i",
+          "inputs": [
+            {
+              "input_id": "q3_step1",
+              "label": "ما هو ناتج جمع العددين؟",
+              "correct_answer": "8 + 6i",
+              "options": [
+                "8 + 6i",
+                "2 + 2i",
+                "15 + 8i",
+                "8 - 2i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اجمع الأعداد الحقيقية (3+5) ثم اجمع معاملات i (4+2).",
+            "related_topics": [
+              {
+                "topic_title": "جمع الأعداد المركبة",
+                "explanation": "يتم جمع الجزء الحقيقي مع الحقيقي والجزء التخيلي مع التخيلي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "اذا كانت z1 = 6 - 2i, z2 = 2 - 5i، جد z1 - z2 ثم مثل الحل هندسياً على شكل ارجاند.",
+      "diagram": {
+        "diagram_id": "q4_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم ارجاند يوضح عملية طرح الأعداد المركبة في المستوى.",
+        "diagram_box": [
+          390,
+          520,
+          530,
+          800
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_71_q4_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "z1 - z2 = (6 - 2i) - (2 - 5i) = (6 - 2) + (-2 + 5)i = 4 + 3i. النقاط هي: p(z1)=(6,-2), p(z2)=(-2,5), p(z3)=(4,3).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقوم بتوزيع إشارة الطرح على العدد الثاني ثم نجمع الجزء الحقيقي والحقيقي والتخيلي مع التخيلي.",
+          "step_assistant_solution": "4 + 3i",
+          "inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هو ناتج طرح z2 من z1؟",
+              "correct_answer": "4 + 3i",
+              "options": [
+                "4 + 3i",
+                "4 - 7i",
+                "8 - 7i",
+                "4 + 7i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن طرح (2 - 5i) يعني إضافة (-2 + 5i).",
+            "related_topics": [
+              {
+                "topic_title": "طرح الأعداد المركبة",
+                "explanation": "طرح عدد مركب يعني إضافة النظير الجمعي له."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q4_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "اذا كان x = 4 - 2i, y = 1 + 2i، جد (1) x + y، (2) x - y ووضح ذلك على شكل ارجاند.",
+      "diagram": {
+        "diagram_id": "q5_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم يوضح عمليتي الجمع والطرح هندسياً لـ x و y.",
+        "diagram_box": [
+          570,
+          520,
+          840,
+          800
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_71_q5_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "(1) x + y = (4+1) + (-2+2)i = 5 + 0i. (2) x - y = (4-1) + (-2-2)i = 3 - 4i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "لحساب x + y نجمع الأجزاء المتناظرة.",
+          "step_assistant_solution": "5 + 0i",
+          "inputs": [
+            {
+              "input_id": "q5_step1",
+              "label": "ناتج x + y هو:",
+              "correct_answer": "5 + 0i",
+              "options": [
+                "5 + 0i",
+                "5 - 4i",
+                "3 + 0i",
+                "5 + 4i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "4+1=5 و -2i+2i=0.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q5_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-8",
+  "topic_title": "التمثيل الهندسي للأعداد المركبة",
+  "interactive_status": "ready"
+}

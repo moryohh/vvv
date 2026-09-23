@@ -1,0 +1,132 @@
+{
+  "page_number": 104,
+  "page_id": 104,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "33",
+      "question_text": "جد حل المعادلة باستخدام نتيجة ديموافر x^(2/3) + 2i = 0",
+      "diagram": null,
+      "full_model_solution": "المعادلة: x^(2/3) + 2i = 0، أي أن x^(2/3) = -2i. لتحويل -2i إلى الصيغة القطبية: r = 2، الزاوية θ = 3π/2. نرفع الطرفين للقوة 3: (x^(2/3))^3 = (-2i)^3 تصبح x^2 = 8(cos(9π/2) + i sin(9π/2))، والتي تبسط إلى x^2 = 8(cos(π/2) + i sin(π/2)). بأخذ الجذر التربيعي: x = 8^(1/2) * (cos((π/2 + 2kπ)/2) + i sin((π/2 + 2kπ)/2)) لـ k=0, 1. الحلول هي x1 = 2+2i و x2 = -2-2i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحويل المعادلة إلى الصيغة x^(2/3) = -2i وتحديد الصيغة القطبية للعدد المركب -2i.",
+          "step_assistant_solution": "x^(2/3) = 2(cos(3π/2) + i sin(3π/2))",
+          "inputs": [
+            {
+              "input_id": "q33_step1_input1",
+              "label": "ما هي الصيغة القطبية للعدد -2i؟",
+              "correct_answer": "2(cos(3π/2) + i sin(3π/2))",
+              "options": [
+                "2(cos(3π/2) + i sin(3π/2))",
+                "2(cos(π/2) + i sin(π/2))",
+                "2(cos(π) + i sin(π))",
+                "2(cos(0) + i sin(0))"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "العدد -2i يقع على الجزء السالب من المحور التخيلي، لذا زاويته هي 270 درجة أو 3π/2.",
+            "related_topics": [
+              {
+                "topic_title": "الصيغة القطبية للأعداد المركبة",
+                "explanation": "تمثيل العدد المركب بالشكل z = r(cosθ + i sinθ)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^(2/3) = ",
+                {
+                  "input_id": "q33_step1_input1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "التخلص من الأس 2/3 برفع الطرفين للقوة 3 للحصول على x^2.",
+          "step_assistant_solution": "x^2 = 8(cos(9π/2) + i sin(9π/2)) = 8(cos(π/2) + i sin(π/2))",
+          "inputs": [
+            {
+              "input_id": "q33_step2_input1",
+              "label": "بعد رفع الطرفين للقوة 3، ما هي الزاوية الجديدة؟",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "3π/2",
+                "π",
+                "2π"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم مبرهنة ديموافر: (cosθ + i sinθ)^n = cos(nθ) + i sin(nθ).",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "قانون رفع العدد المركب لقوة صحيحة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^2 = 8(cos(9π/2) + i sin(9π/2)) = 8(cos(π/2) + i sin(",
+                {
+                  "input_id": "q33_step2_input1"
+                },
+                "))"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "حساب الجذور التربيعية للعدد المركب الناتج باستخدام قانون ديموافر للجذور.",
+          "step_assistant_solution": "x = ±(2+2i)",
+          "inputs": [
+            {
+              "input_id": "q33_step3_input1",
+              "label": "ما هي قيمة الجذور الناتجة؟",
+              "correct_answer": "{2+2i, -2-2i}",
+              "options": [
+                "{2+2i, -2-2i}",
+                "{1+i, -1-i}",
+                "{2-2i, -2+2i}",
+                "{4+4i, -4-4i}"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "طبق الصيغة x = r^(1/n)(cos((θ+2kπ)/n) + i sin((θ+2kπ)/n)) حيث n=2.",
+            "related_topics": [
+              {
+                "topic_title": "جذور الأعداد المركبة",
+                "explanation": "إيجاد الجذور النونية للعدد المركب باستخدام الصيغة العامة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة الجذور الناتجة؟ = ",
+                {
+                  "input_id": "q33_step3_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

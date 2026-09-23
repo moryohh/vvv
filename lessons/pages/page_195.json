@@ -1,0 +1,161 @@
+{
+  "page_number": 195,
+  "page_id": 195,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "9",
+      "question_text": "جد معادلة القطع الزائد الذي بؤرتاه هما بؤرتي القطعين المكافئين y^2 = 20x و y^2 = -20x وطول محوره المرافق 8 وحدات.",
+      "diagram": null,
+      "full_model_solution": "1. نجد بؤرتي القطعين المكافئين: من y^2 = 20x، نجد 4p=20 أي p=5، البؤرة (5,0). ومن y^2 = -20x، نجد 4p=20 أي p=5، البؤرة (-5,0). إذاً بؤرتا القطع الزائد هما (±5,0) وعليه c=5 و c^2=25.\n2. من طول المحور المرافق: 2b=8 إذاً b=4 و b^2=16.\n3. نستخدم علاقة القطع الزائد c^2 = a^2 + b^2 فتصبح 25 = a^2 + 16، إذاً a^2 = 9.\n4. معادلة القطع الزائد على محور السينات: (x^2/9) - (y^2/16) = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخرج قيمة c للقطع الزائد من خلال إيجاد بؤرة القطع المكافئ المعطى.",
+          "step_assistant_solution": "c = 5",
+          "inputs": [
+            {
+              "input_id": "q9_step1",
+              "label": "ما هي قيمة c؟",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "10",
+                "20",
+                "25"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "معادلة القطع المكافئ y^2 = 4px، قارنها بالمعادلة المعطاة.",
+            "related_topics": [
+              {
+                "topic_title": "القطع المكافئ",
+                "explanation": "إيجاد بؤرة القطع المكافئ بالمقارنة مع الصيغة القياسية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "c = ",
+                {
+                  "input_id": "q9_step1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم طول المحور المرافق (2b) لإيجاد b ثم b^2.",
+          "step_assistant_solution": "b^2 = 16",
+          "inputs": [
+            {
+              "input_id": "q9_step2",
+              "label": "ما هي قيمة b^2؟",
+              "correct_answer": "16",
+              "options": [
+                "8",
+                "16",
+                "4",
+                "64"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "طول المحور المرافق هو 2b، اقسم على 2 ثم ربع الناتج.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "b^2 = ",
+                {
+                  "input_id": "q9_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "جد معادلة القطع الزائد الذي بؤرتاه هما رأسا القطع الناقص x^2 + 9y^2 = 36 والنسبة بين طولي محوريه الحقيقي والبعد بين بؤرتيه تساوي 1/2 وينطبق محوره على المحورين الإحداثيين.",
+      "diagram": null,
+      "full_model_solution": "1. نضع معادلة القطع الناقص بالصيغة القياسية: x^2/36 + y^2/4 = 1. الرأسان هما (±6,0) وهما بؤرتا القطع الزائد، إذاً c=6 و c^2=36.\n2. النسبة 2a/2c = 1/2، بما أن c=6، فإن 2a/12 = 1/2، إذاً 2a=6 أي a=3 و a^2=9.\n3. نستخدم علاقة القطع الزائد c^2 = a^2 + b^2، فنجد 36 = 9 + b^2، إذاً b^2=27.\n4. المعادلة: (x^2/9) - (y^2/27) = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول معادلة القطع الناقص للصيغة القياسية لإيجاد الرأسين.",
+          "step_assistant_solution": "a^2 = 36",
+          "inputs": [
+            {
+              "input_id": "q10_step1",
+              "label": "ما هو قيمة a^2 للقطع الناقص؟",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "4",
+                "6",
+                "9"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اقسم طرفي المعادلة على 36.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "a^2 = ",
+                {
+                  "input_id": "q10_step1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نطبق نسبة النصف لإيجاد قيمة a للقطع الزائد.",
+          "step_assistant_solution": "a = 3",
+          "inputs": [
+            {
+              "input_id": "q10_step2",
+              "label": "ما هي قيمة a للقطع الزائد؟",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "6",
+                "9",
+                "12"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "النسبة بين المحور الحقيقي 2a والبعد البؤري 2c هي a/c.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "a = ",
+                {
+                  "input_id": "q10_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-9",
+  "topic_title": "القطع الزائد: تطبيقات وتمارين",
+  "interactive_status": "ready"
+}

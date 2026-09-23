@@ -1,0 +1,102 @@
+{
+  "page_number": 143,
+  "page_id": 143,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "أوجد خصائص القطع الناقص الذي معادلته: (x-2)^2 / 25 + (y+3)^2 / 16 = 1",
+      "diagram": null,
+      "full_model_solution": "من المعادلة القياسية للقطع الناقص (x-h)^2/a^2 + (y-k)^2/b^2 = 1، نجد المركز (h, k) = (2, -3)، a^2 = 25 أي a=5، b^2 = 16 أي b=4. نحسب c^2 = a^2 - b^2 = 25 - 16 = 9 لذا c=3. البؤرتان: (5, -3) و (-1, -3)، الرأسان: (7, -3) و (-3, -3)، القطبان: (2, 1) و (2, -7)، طول المحور الكبير 2a=10، طول المحور الصغير 2b=8، الاختلاف المركزي e=c/a=3/5.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد المركز (h, k) من المعادلة المعطاة.",
+          "step_assistant_solution": "المركز هو (2, -3)",
+          "inputs": [
+            {
+              "input_id": "q2_step1",
+              "label": "ما هو مركز القطع الناقص؟",
+              "correct_answer": "(2, -3)",
+              "options": [
+                "(2, -3)",
+                "(-2, 3)",
+                "(3, -2)",
+                "(-3, 2)"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "قارن المعادلة المعطاة بالصيغة القياسية (x-h)^2/a^2 + (y-k)^2/b^2 = 1",
+            "related_topics": [
+              {
+                "topic_title": "القطع الناقص",
+                "explanation": "إزاحة المركز تتحدد بقيم h و k في الأقواس."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "المركز هو ",
+                {
+                  "input_id": "q2_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "حول معادلة القطع x^2 + 4y^2 + 4x - 8y + 4 = 0 إلى الصيغة القياسية.",
+      "diagram": null,
+      "full_model_solution": "ترتيب الحدود: (x^2 + 4x) + (4y^2 - 8y) = -4. إكمال المربع: (x^2 + 4x + 4) + 4(y^2 - 2y + 1) = -4 + 4 + 4. النتيجة: (x+2)^2 + 4(y-1)^2 = 4. بالقسمة على 4: (x+2)^2 / 4 + (y-1)^2 / 1 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تجميع الحدود المتشابهة وإكمال المربع لكل متغير.",
+          "step_assistant_solution": "المعادلة الناتجة هي (x+2)^2 / 4 + (y-1)^2 / 1 = 1",
+          "inputs": [
+            {
+              "input_id": "q3_step1",
+              "label": "ما هي قيمة a^2 و b^2 بعد إكمال المربع؟",
+              "correct_answer": "4 و 1",
+              "options": [
+                "4 و 1",
+                "2 و 1",
+                "1 و 4",
+                "16 و 4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "أضف مربع نصف معامل المتغير للطرفين لكل قوس.",
+            "related_topics": [
+              {
+                "topic_title": "إكمال المربع",
+                "explanation": "طريقة لتحويل الصيغة العامة إلى صيغة قياسية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة a^2 و b^2 بعد إكمال المربع؟ = ",
+                {
+                  "input_id": "q3_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-5",
+  "topic_title": "انسحاب المحاور للقطع الناقص",
+  "interactive_status": "ready"
+}

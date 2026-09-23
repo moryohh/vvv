@@ -1,0 +1,148 @@
+{
+  "page_number": 56,
+  "page_id": 56,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "20",
+      "question_text": "اذا كان (3 - 4i) هو احد جذري المعادلة x^2 - nx + 10 - 5i = 0، فما قيمة الجذر الثاني وما قيمة n؟",
+      "diagram": null,
+      "full_model_solution": "بما أن معامل x^2 هو 1 (a=1)، ومعامل x هو -n (b=-n)، والحد المطلق هو 10-5i (c=10-5i). نفرض الجذر الآخر L. من حاصل ضرب الجذرين: M.L = c/a => (3-4i)L = 10-5i. بالقسمة: L = (10-5i)/(3-4i). نضرب في المرافق: L = (10-5i)(3+4i)/(3-4i)(3+4i) = (30+40i-15i+20)/25 = (50+25i)/25 = 2+i. من مجموع الجذرين: M+L = -b/a => (3-4i)+(2+i) = n => n = 5-3i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم قانون حاصل ضرب الجذرين (M.L = c/a) لإيجاد قيمة الجذر المجهول L.",
+          "step_assistant_solution": "L = 2+i",
+          "inputs": [
+            {
+              "input_id": "q20_step1",
+              "label": "قيمة الجذر الثاني L تساوي:",
+              "correct_answer": "2+i",
+              "options": [
+                "2+i",
+                "2-i",
+                "3+i",
+                "5-3i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن ناتج قسمة عدد مركب على آخر يتم بضرب البسط والمقام في مرافق المقام.",
+            "related_topics": [
+              {
+                "topic_title": "قسمة الأعداد المركبة",
+                "explanation": "يتم ضرب الكسر في مرافق المقام (تغيير إشارة الجزء التخيلي فقط)."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "L = ",
+                {
+                  "input_id": "q20_step1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "نستخدم قانون مجموع الجذرين (M+L = -b/a) لإيجاد قيمة المعامل n.",
+          "step_assistant_solution": "n = 5-3i",
+          "inputs": [
+            {
+              "input_id": "q20_step2",
+              "label": "قيمة n تساوي:",
+              "correct_answer": "5-3i",
+              "options": [
+                "5-3i",
+                "5+3i",
+                "1+5i",
+                "2+i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "مجموع الجذرين يساوي معامل x بعكس الإشارة عندما يكون معامل x^2 يساوي 1.",
+            "related_topics": [
+              {
+                "topic_title": "مجموع جذور المعادلة التربيعية",
+                "explanation": "مجموع الجذرين يساوي -b/a."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "n = ",
+                {
+                  "input_id": "q20_step2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "21",
+      "question_text": "اذا كان (1+2i) هو احد جذري المعادلة x^2 - (3-i)x + a = 0، فما جذرها الثاني وما قيمة a؟",
+      "diagram": null,
+      "full_model_solution": "المعطيات: M = 1+2i، مجموع الجذرين = 3-i (لأن -b/a = -(-(3-i))/1 = 3-i). الجذر الثاني L: (1+2i) + L = 3-i => L = 3-i - (1+2i) = 2-3i. حاصل الضرب a = M.L = (1+2i)(2-3i) = 2 - 3i + 4i - 6i^2 = 2 + i + 6 = 8+i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم مجموع الجذرين المعطى في المعادلة لإيجاد الجذر المجهول L.",
+          "step_assistant_solution": "L = 2-3i",
+          "inputs": [
+            {
+              "input_id": "q21_step1",
+              "label": "قيمة الجذر الثاني L:",
+              "correct_answer": "2-3i",
+              "options": [
+                "2-3i",
+                "2+3i",
+                "1-2i",
+                "3+i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المجموع M+L يساوي قيمة المعامل الموجود مع x بعكس إشارته.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "L = ",
+                {
+                  "input_id": "q21_step1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "22",
+      "question_text": "اذا علمت أن (2+i) هو احد جذري المعادلة x^2 - hx + 5 - 5i = 0، جد قيمة h وما هو الجذر الآخر.",
+      "diagram": null,
+      "full_model_solution": "حاصل الضرب M.L = 5-5i. الجذر الثاني L = (5-5i)/(2+i) = (5-5i)(2-i)/5 = (10-5i-10i-5)/5 = (5-15i)/5 = 1-3i. المجموع h = M+L = (2+i) + (1-3i) = 3-2i.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "23",
+      "question_text": "اذا كان (1+i) احد جذري المعادلة x^2 - x - bxi + 3i - 3 = 0، جد قيمة b و الجذر الآخر.",
+      "diagram": null,
+      "full_model_solution": "المعادلة هي x^2 - (1+bi)x + (3i-3) = 0. مجموع الجذرين 1+bi، وحاصل ضربهما 3i-3. إذا كان الجذر الأول 1+i، نفرض الثاني L. (1+i)L = 3i-3 => L = (3i-3)/(1+i) = 3(i-1)/(1+i) = 3(i-1)(1-i)/(1^2+1^2) = 3(i - i^2 - 1 + i)/2 = 3(2i)/2 = 3i. المجموع 1+bi = 1+i+3i = 1+4i => b=4.",
+      "interactive_steps": []
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

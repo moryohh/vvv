@@ -1,0 +1,194 @@
+{
+  "page_number": 86,
+  "page_id": 86,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "باستخدام مبرهنة ديموافر جد بأبسط صورة: (cos 2θ + i sin 2θ)^5 / (cos 5θ + i sin 5θ)^2",
+      "diagram": null,
+      "full_model_solution": "باستخدام قانون ديموافر (cos θ + i sin θ)^n = cos(nθ) + i sin(nθ)، يمكن كتابة البسط كـ (cos θ + i sin θ)^10 والمقام كـ (cos θ + i sin θ)^10. بقسمتهما نجد أن الناتج هو (cos θ + i sin θ)^0 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نستخدم مبرهنة ديموافر لرفع القوى لكل من البسط والمقام بضرب الزاوية في الأس.",
+          "step_assistant_solution": "البسط يصبح (cos θ + i sin θ)^10 والمقام يصبح (cos θ + i sin θ)^10.",
+          "inputs": [
+            {
+              "input_id": "q1_step1_in",
+              "label": "ما هي القوة الناتجة للبسط بعد تطبيق المبرهنة؟",
+              "correct_answer": "10",
+              "options": [
+                "5",
+                "10",
+                "2",
+                "20"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن (cos nθ + i sin nθ)^m = (cos θ + i sin θ)^(n*m)",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "تستخدم لتبسيط القوى المرفوعة للأعداد المركبة على الصورة القطبية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "البسط يصبح (cos θ + i sin θ)^10 والمقام يصبح (cos θ + i sin θ)^",
+                {
+                  "input_id": "q1_step1_in"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "باستخدام مبرهنة ديموافر جد بأبسط صورة: (cos 2θ - i sin 2θ)^-5 / (cos 5θ + i sin 5θ)^2 + 1",
+      "diagram": null,
+      "full_model_solution": "بتحويل البسط إلى (cos θ + i sin θ)^10 والمقام إلى (cos θ + i sin θ)^10، نحصل على 1 + 1 = 2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول الصيغة (cos 2θ - i sin 2θ)^-5 إلى (cos θ + i sin θ)^10 باستخدام خاصية مرافق العدد المركب.",
+          "step_assistant_solution": "الناتج هو 1 + 1 = 2.",
+          "inputs": [
+            {
+              "input_id": "q2_step1_in",
+              "label": "ما هو الناتج النهائي للعملية؟",
+              "correct_answer": "2",
+              "options": [
+                "0",
+                "1",
+                "2",
+                "-1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إشارة السالب داخل الساين تغير إشارة الجزء التخيلي فقط.",
+            "related_topics": [
+              {
+                "topic_title": "خواص الأعداد المركبة",
+                "explanation": "مرافق العدد المركب يؤثر على إشارة القسم التخيلي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الناتج هو 1 + 1 = ",
+                {
+                  "input_id": "q2_step1_in"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "باستخدام مبرهنة ديموافر جد بأبسط صورة: (cos θ - i sin θ)^4 * (cos 5θ + i sin 5θ)^2 / (cos 3θ + i sin 3θ)^2",
+      "diagram": null,
+      "full_model_solution": "بتحويل الحدود إلى أسس للأساس (cos θ + i sin θ)، نحصل على (cos θ + i sin θ)^-4 * (cos θ + i sin θ)^10 / (cos θ + i sin θ)^6 = (cos θ + i sin θ)^0 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نوحد جميع الحدود لتكون مرفوعة للأساس (cos θ + i sin θ).",
+          "step_assistant_solution": "(cos θ + i sin θ)^-4 * (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-6 = (cos θ + i sin θ)^0",
+          "inputs": [
+            {
+              "input_id": "q3_step1_in",
+              "label": "ما هو مجموع الأسس النهائي؟",
+              "correct_answer": "0",
+              "options": [
+                "1",
+                "0",
+                "4",
+                "6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "عند ضرب الأساسات المتشابهة نجمع الأسس.",
+            "related_topics": [
+              {
+                "topic_title": "قوانين الأسس",
+                "explanation": "x^a * x^b = x^(a+b)"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "(cos θ + i sin θ)^-4 * (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-6 = (cos θ + i sin θ)^",
+                {
+                  "input_id": "q3_step1_in"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "باستخدام مبرهنة ديموافر جد بأبسط صورة: (cos θ + i sin θ)^8 * (cos θ - i sin θ)^4",
+      "diagram": null,
+      "full_model_solution": "(cos θ + i sin θ)^8 * (cos θ + i sin θ)^-4 = (cos θ + i sin θ)^4 = cos 4θ + i sin 4θ.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحول (cos θ - i sin θ)^4 إلى (cos θ + i sin θ)^-4 ثم نجمع الأسس.",
+          "step_assistant_solution": "(cos θ + i sin θ)^4",
+          "inputs": [
+            {
+              "input_id": "q4_step1_in",
+              "label": "ما هي القيمة النهائية؟",
+              "correct_answer": "cos 4θ + i sin 4θ",
+              "options": [
+                "cos 4θ - i sin 4θ",
+                "cos 4θ + i sin 4θ",
+                "cos 8θ",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم قانون ديموافر العكسي في الخطوة الأخيرة.",
+            "related_topics": [
+              {
+                "topic_title": "مبرهنة ديموافر",
+                "explanation": "توزيع الأس على الزاوية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي القيمة النهائية؟ = ",
+                {
+                  "input_id": "q4_step1_in"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-10",
+  "topic_title": "مبرهنة ديموافر",
+  "interactive_status": "ready"
+}

@@ -1,0 +1,181 @@
+{
+  "page_number": 216,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "5",
+      "question_text": "في المستوي الواحد يمكن رسم مستقيم وحيد عمودي على مستقيم معلوم من نقطة معلومة تنتمي إليه أو لا تنتمي إليه.",
+      "diagram": {
+        "diagram_id": "q5_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "شكلان هندسيان يوضحان رسم مستقيم عمودي على مستقيم معلوم في مستوٍ.",
+        "diagram_box": [
+          108,
+          92,
+          260,
+          856
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_216_q5_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "تعتمد هذه الخاصية الهندسية في المستوي الواحد على بديهيات التوازي والتعامد، حيث أنه لأي مستقيم ونقطة معلومة، يوجد مستقيم وحيد يمر بتلك النقطة ويكون عمودياً على المستقيم المعطى.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الهدف هنا هو تحديد ما إذا كان بالإمكان رسم أكثر من مستقيم عمودي. في المستوي، التعامد هو علاقة فريدة.",
+          "step_assistant_solution": "لا، لا يمكن رسم إلا مستقيم وحيد.",
+          "inputs": [
+            {
+              "input_id": "q5_s1_i1",
+              "label": "كم عدد المستقيمات العمودية التي يمكن رسمها؟",
+              "correct_answer": "مستقيم وحيد",
+              "options": [
+                "مستقيم وحيد",
+                "مستقيمان",
+                "عدد لا نهائي",
+                "لا يمكن رسم أي مستقيم"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر تعريف المستقيم العمودي في الهندسة المستوية.",
+            "related_topics": [
+              {
+                "topic_title": "الهندسة الإقليدية",
+                "explanation": "في الهندسة المستوية، العلاقة بين النقطة والمستقيم من حيث التعامد هي علاقة فريدة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "لا، لا يمكن رسم إلا ",
+                {
+                  "input_id": "q5_s1_i1"
+                },
+                "."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "يمكن رسم مستقيم وحيد عمودي على مستو معلوم من نقطة معلومة تنتمي إليه أو لا تنتمي إليه.",
+      "diagram": {
+        "diagram_id": "q6_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "شكلان يوضحان تعامد مستقيم على مستوٍ.",
+        "diagram_box": [
+          288,
+          102,
+          456,
+          857
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_216_q6_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "هذه مبرهنة أساسية في الهندسة الفراغية تنص على وحدانية العمود النازل من نقطة (سواء كانت في المستوي أو خارجه) إلى المستوي المعطى.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "التحقق من فهم وحدانية العمود النازل على المستوي.",
+          "step_assistant_solution": "مستقيم وحيد.",
+          "inputs": [
+            {
+              "input_id": "q6_s1_i1",
+              "label": "هل العمود النازل من نقطة على مستوٍ يكون وحيداً؟",
+              "correct_answer": "نعم، وحيد",
+              "options": [
+                "نعم، وحيد",
+                "لا، يمكن رسم مستقيمين",
+                "يعتمد على موقع النقطة",
+                "لا توجد قاعدة"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "فكر في المسافة العمودية بين نقطة ومستوٍ.",
+            "related_topics": [
+              {
+                "topic_title": "الهندسة الفراغية",
+                "explanation": "تعامد المستقيم والمستوي هو أساس للقياسات الفراغية."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "هل العمود النازل من نقطة على مستوٍ يكون وحيداً؟ = ",
+                {
+                  "input_id": "q6_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "المستقيم العمودي على مستقيمين متقاطعين من نقطة تقاطعهما يكون عمودياً على مستويهما.",
+      "diagram": {
+        "diagram_id": "q7_fig_01",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "رسم توضيحي للمبرهنة، مستقيم عمودي على مستقيمين متقاطعين داخل مستوٍ.",
+        "diagram_box": [
+          515,
+          237,
+          725,
+          680
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_216_q7_fig_01_diagram_geometric.png"
+      },
+      "full_model_solution": "إذا كان المستقيم CD عمودياً على المستقيمين AC و BC المتقاطعين في C، فإن CD يكون عمودياً على المستوي الذي يضم هذين المستقيمين.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تطبيق شروط التعامد على مستوٍ.",
+          "step_assistant_solution": "المستقيم يجب أن يكون عمودياً على مستقيمين متقاطعين في المستوي.",
+          "inputs": [
+            {
+              "input_id": "q7_s1_i1",
+              "label": "ما الشرط لكي يكون المستقيم عمودياً على المستوي؟",
+              "correct_answer": "عمودي على مستقيمين متقاطعين في المستوي",
+              "options": [
+                "عمودي على مستقيم واحد فقط",
+                "عمودي على مستقيمين متقاطعين في المستوي",
+                "يوازي جميع المستقيمات",
+                "لا شرط محدد"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "هذه هي شروط تعامد مستقيم مع مستوٍ.",
+            "related_topics": [
+              {
+                "topic_title": "تعامد المستقيم والمستوي",
+                "explanation": "المستقيم العمودي على مستقيمين متقاطعين في مستوٍ يكون عمودياً على ذلك المستوي."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما الشرط لكي يكون المستقيم عمودياً على المستوي؟ = ",
+                {
+                  "input_id": "q7_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "page_id": 216,
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

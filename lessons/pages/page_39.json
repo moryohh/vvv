@@ -1,0 +1,108 @@
+{
+  "page_number": 39,
+  "page_id": 39,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "3",
+      "question_text": "جد الجذور التربيعية للعدد المركب 7 + 24i",
+      "diagram": {
+        "diagram_id": "q3_fig_01",
+        "diagram_type": "جدول",
+        "diagram_desc": "جدول تحليل العدد 144 إلى عوامله الأولية",
+        "diagram_box": [
+          239,
+          448,
+          396,
+          592
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_39_q3_fig_01_table.png"
+      },
+      "full_model_solution": "بفرض أن الجذر هو x + yi، فإن (x+yi)^2 = 7+24i. بفك التربيع نحصل على x^2 - y^2 + 2xyi = 7+24i. المعادلة الأولى: x^2 - y^2 = 7، والمعادلة الثانية: 2xy = 24 أي y = 12/x. بالتعويض في الأولى نحصل على x^4 - 7x^2 - 144 = 0. نحلل لتصبح (x^2 - 16)(x^2 + 9) = 0. بما أن x ينتمي لـ R فإن x^2 + 9 تهمل. إذاً x^2 = 16 ومنه x تساوي موجب أو سالب 4. عندما x = 4 فإن y = 3، وعند x = -4 فإن y = -3. الجذور هما 4 + 3i و -4 - 3i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نفرض أن الجذر التربيعي للعدد هو (x + yi) ونساوي مربعه بالعدد المركب المعطى لتكوين معادلتين.",
+          "step_assistant_solution": "x^2 - y^2 = 7 و 2xy = 24",
+          "inputs": [
+            {
+              "input_id": "q3_s1_i1",
+              "label": "ما هي المعادلة الناتجة عن مساواة الجزء الحقيقي؟",
+              "correct_answer": "x^2 - y^2 = 7",
+              "options": [
+                "x^2 - y^2 = 7",
+                "x^2 + y^2 = 7",
+                "2xy = 7",
+                "x - y = 7"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن الجزء الحقيقي من مربع العدد المركب (x+yi)^2 هو x^2 - y^2.",
+            "related_topics": [
+              {
+                "topic_title": "مربع مجموع حدين",
+                "explanation": "(a+b)^2 = a^2 + 2ab + b^2"
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q3_s1_i1"
+                },
+                " و 2xy = 24"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "جد الجذور التربيعية للعدد المركب -6i",
+      "diagram": null,
+      "full_model_solution": "بفرض الجذر x + yi، فإن (x+yi)^2 = -6i. نحصل على معادلتين: x^2 - y^2 = 0 و 2xy = -6. أي y = -3/x. بالتعويض: x^2 - 9/x^2 = 0 أي x^4 - 9 = 0. بالتحليل: (x^2 - 3)(x^2 + 3) = 0. تهمل x^2 = -3، إذاً x^2 = 3 مما يعطي x = ±√3. عندما x = √3، y = -√3. عندما x = -√3، y = √3. الجذور هما √3 - √3i و -√3 + √3i.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نساوي الجزء التخيلي من مربع العدد المركب بقيمة -6 لتحديد علاقة بين x و y.",
+          "step_assistant_solution": "2xy = -6",
+          "inputs": [
+            {
+              "input_id": "q4_s1_i1",
+              "label": "ما هي قيمة y بدلالة x؟",
+              "correct_answer": "y = -3/x",
+              "options": [
+                "y = -3/x",
+                "y = 3/x",
+                "y = -6/x",
+                "y = 6/x"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن الجزء التخيلي 2xy يساوي -6، نقسم الطرفين على 2x.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي قيمة y بدلالة x؟ = ",
+                {
+                  "input_id": "q4_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-5",
+  "topic_title": "الجذور التربيعية للعدد المركب",
+  "interactive_status": "ready"
+}

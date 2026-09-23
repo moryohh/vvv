@@ -1,0 +1,101 @@
+{
+  "page_number": 222,
+  "page_id": 222,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "1",
+      "question_text": "مبرهنة (9): من مستقيم غير عمودي على مستوٍ معلوم يوجد مستوٍ وحيد وعمودي على المستو المعلوم.",
+      "diagram": {
+        "diagram_id": "q1_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "رسم توضيحي للمستقيم AB غير العمودي على المستوي X والمستوي Z الذي يحتويه والعمودي على X",
+        "diagram_box": [
+          345,
+          172,
+          608,
+          452
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_222_q1_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "المعطيات: AB مستقيم غير عمودي على المستو (x). المطلوب: إثبات وجود مستو وحيد (z) يحوي AB وعمودي على (x). البرهان: 1. نرسم AC عمودي على (x) من النقطة A (يمكن رسم مستقيم وحيد عمودي على مستو من نقطة لا تنتمي إليه). 2. المستقيمان AB و AC متقاطعان في A، فيحددان مستو وحيداً (z). 3. بما أن AC عمودي على (x) و AC محتوى في (z)، فإن (z) عمودي على (x) حسب نتيجة مبرهنة (7). وبذلك يوجد مستو (z) يحوي AB وعمودي على (x).",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخارطة الذهنية: الخطوة الأولى في الإثبات هي تحديد مستقيم إضافي عمودي على المستوي لإنشاء المستوي المطلوب.",
+          "step_assistant_solution": "نرسم المستقيم AC بحيث يكون عمودياً على المستوي (x).",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هو المستقيم الذي نرسمه من النقطة A ليكون عمودياً على المستوي (x)؟",
+              "correct_answer": "AC",
+              "options": [
+                "AC",
+                "AB",
+                "BC",
+                "مستقيم موازي"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "نحتاج لتحديد مستوي، والمستوي يتحدد بمستقيمين متقاطعين.",
+            "related_topics": [
+              {
+                "topic_title": "تحدد المستوي",
+                "explanation": "أي مستقيمين متقاطعين يعينان مستوياً وحيداً."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "نرسم المستقيم ",
+                {
+                  "input_id": "step1_input1"
+                },
+                " بحيث يكون عمودياً على المستوي (x)."
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "الخارطة الذهنية: بما أن لدينا الآن مستقيمين AB و AC متقاطعين، فإنهما يحددان مستوياً واحداً وهو المستوى Z.",
+          "step_assistant_solution": "المستقيمان AB و AC المتقاطعان يحددان المستوي (z).",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ماذا يحدد المستقيمان المتقاطعان AB و AC؟",
+              "correct_answer": "مستوى وحيد z",
+              "options": [
+                "مستوى وحيد z",
+                "خطاً مستقيماً",
+                "نقطة تقاطع",
+                "زاوية قائمة"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم مسلمات الهندسة الفراغية.",
+            "related_topics": []
+          },
+          "layout": {
+            "rows": [
+              [
+                "ماذا يحدد المستقيمان المتقاطعان AB و AC؟ = ",
+                {
+                  "input_id": "step2_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

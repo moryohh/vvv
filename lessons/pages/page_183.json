@@ -1,0 +1,124 @@
+{
+  "page_number": 183,
+  "page_id": 183,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2_a",
+      "question_text": "البؤرتان هما النقطتان (5,0±) ويتقاطع مع محور السينات عند (3,0±) ومركزه نقطة الاصل. أكتب معادلة القطع الزائد ثم أرسم القطع.",
+      "diagram": {
+        "diagram_id": "q2a_fig_01",
+        "diagram_type": "مخطط بياني",
+        "diagram_desc": "رسم بياني يوضح قطع زائد مركزه نقطة الأصل وبؤرتيه على محور السينات",
+        "diagram_box": [
+          300,
+          440,
+          480,
+          780
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_183_q2a_fig_01_chart_graph.png"
+      },
+      "full_model_solution": "1. بما أن البؤرتان على محور السينات، فالمعادلة من الشكل x²/a² - y²/b² = 1. \n2. من نقاط التقاطع مع محور السينات نجد a=3، إذن a²=9. \n3. من البؤرتين نجد c=5، إذن c²=25. \n4. نستخدم العلاقة c² = a² + b²، أي 25 = 9 + b²، ومنه b² = 16. \n5. المعادلة: x²/9 - y²/16 = 1.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيمة a من خلال نقاط التقاطع مع محور السينات.",
+          "step_assistant_solution": "a=3, a²=9",
+          "inputs": [
+            {
+              "input_id": "q2a_s1_i1",
+              "label": "كم تساوي قيمة a²؟",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "نقطة التقاطع مع المحور تعطينا الرأس (±a, 0).",
+            "related_topics": [
+              {
+                "topic_title": "خصائص القطع الزائد",
+                "explanation": "القطع الزائد الذي يقطع محور السينات عند (a,0) تكون معادلته القياسية هي x²/a² - y²/b² = 1."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a=3, a²=",
+                {
+                  "input_id": "q2a_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "2_b",
+      "question_text": "طول محوره الحقيقي (12) وحدة وطول محوره المرافق (10) وحدات وينطبق محوره على المحورين الاحداثيين ومركزه نقطة الاصل؟",
+      "diagram": {
+        "diagram_id": "q2b_fig_01",
+        "diagram_type": "مخطط بياني",
+        "diagram_desc": "رسم بياني يوضح قطع زائد على محور السينات مع تحديد الرؤوس والبؤر",
+        "diagram_box": [
+          730,
+          440,
+          910,
+          780
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_183_q2b_fig_01_chart_graph.png"
+      },
+      "full_model_solution": "1. طول المحور الحقيقي 2a = 12، إذن a = 6، وa² = 36. \n2. طول المحور المرافق 2b = 10، إذن b = 5، وb² = 25. \n3. بما أن البؤرتين على محور السينات: x²/36 - y²/25 = 1. \n4. c² = a² + b² = 36 + 25 = 61، إذن c = √61.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "حساب قيم a و b من طولي المحورين.",
+          "step_assistant_solution": "a=6, b=5",
+          "inputs": [
+            {
+              "input_id": "q2b_s1_i1",
+              "label": "أوجد قيمتي a² و b²:",
+              "correct_answer": "a²=36, b²=25",
+              "options": [
+                "a²=36, b²=25",
+                "a²=12, b²=10",
+                "a²=6, b²=5",
+                "a²=144, b²=100"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "طول المحور الحقيقي هو 2a والمحور المرافق هو 2b.",
+            "related_topics": [
+              {
+                "topic_title": "المحاور في القطع الزائد",
+                "explanation": "المحور الحقيقي هو القطعة الواصلة بين الرأسين، والمحور المرافق هو القطعة العمودية عليه."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "أوجد قيمتي a² و b²: = ",
+                {
+                  "input_id": "q2b_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 2,
+  "chapter_title": "القطوع المخروطية",
+  "topic_id": "2-8",
+  "topic_title": "انسحاب محاور القطع الزائد",
+  "interactive_status": "ready"
+}

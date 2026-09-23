@@ -1,0 +1,142 @@
+{
+  "page_number": 68,
+  "page_id": 68,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "5",
+      "question_text": "إذا كان (aw + bw^2) هو أحد جذري المعادلة التربيعية x^2 + 4x + 7 = 0 جد قيمة كل من a, b ∈ R",
+      "diagram": null,
+      "full_model_solution": "بما أن المعاملات حقيقية، فالجذران مترافقان. نستخدم مجموع الجذرين وسحلهما للمعادلة x^2 + 4x + 7 = 0. مجموع الجذرين = -4، حاصل ضربهما = 7. نحل المعادلات الناتجة للوصول إلى a=2, b=2.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نبدأ باستخدام حقيقة أن الجذور مترافقة لأن المعاملات حقيقية.",
+          "step_assistant_solution": "الجذر الأول (aw + bw^2) ومرافقه (aw^2 + bw).",
+          "inputs": [
+            {
+              "input_id": "q5_s1",
+              "label": "ما هو مرافق aw + bw^2؟",
+              "correct_answer": "aw^2 + bw",
+              "options": [
+                "aw^2 + bw",
+                "aw + bw",
+                "aw^2 + bw^2",
+                "a/w + b/w^2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر أن مرافق w هو w^2 ومرافق w^2 هو w.",
+            "related_topics": [
+              {
+                "topic_title": "خواص الأعداد المركبة",
+                "explanation": "في المعادلات ذات المعاملات الحقيقية، إذا كان z جذراً فإن z* (المرافق) هو جذر أيضاً."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "الجذر الأول (aw + bw^2) ومرافقه (",
+                {
+                  "input_id": "q5_s1"
+                },
+                ")."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "كون المعادلة التربيعية التي جذراها: 2ωi - ω^2 , 2ω^2i - ω",
+      "diagram": null,
+      "full_model_solution": "نحسب مجموع الجذرين (L+M) وحاصل ضربهما (L*M) ثم نطبق القانون: x^2 - (المجموع)x + (الضرب) = 0.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "7",
+      "question_text": "إذا كان Z = -3 - √7i وكان (kw + mw^2) هو أحد جذري المعادلة x^2 + ||Z||x + 7 = 0 جد قيمة k, m ∈ R",
+      "diagram": null,
+      "full_model_solution": "أولاً نحسب مقياس Z: ||Z|| = sqrt((-3)^2 + (-√7)^2) = sqrt(9+7) = sqrt(16) = 4. المعادلة تصبح x^2 + 4x + 7 = 0. بما أن الجذور مترافقة، نتبع نفس خطوات السؤال 5.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "8",
+      "question_text": "جد المعادلة التربيعية التي جذراها M = (8ω^2 + 18i)/(4i - 9ω) , L = (4ω + 6i)/(2i - 3ω^2)",
+      "diagram": null,
+      "full_model_solution": "نقوم بتبسيط المقادير L و M باستخدام خواص ω وضرب البسط والمقام في مرافق المقام أو استخدام i^2 = -1.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "9",
+      "question_text": "أثبت أن (1) هو أحد جذري المعادلة (Z^3 - 2Z^2 + 1 = 0) ثم جد الجذران الآخران",
+      "diagram": null,
+      "full_model_solution": "نعوض Z=1 في المعادلة: 1^3 - 2(1)^2 + 1 = 1 - 2 + 1 = 0. إذن 1 جذر. نقسم المعادلة على (Z-1) للحصول على المعادلة التربيعية الناتجة Z^2 - Z - 1 = 0، ثم نستخدم القانون العام.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "10",
+      "question_text": "حل المعادلة Z^2 - 2sinZ = 1 + 0 في C",
+      "diagram": null,
+      "full_model_solution": "بإعادة ترتيب المعادلة: Z^2 - 2sin(Z) - 1 = 0، تحل باستخدام خواص الدوال المثلثية في الأعداد المركبة.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "11",
+      "question_text": "جد قيمة x, y التي تحقق: x + yωi = (125-i) / (26-5ωi+ω)",
+      "diagram": null,
+      "full_model_solution": "نضرب البسط والمقام في مرافق المقام بعد تبسيط المقام باستخدام علاقات ω. النتيجة النهائية x=5, y=1/2.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "12",
+      "question_text": "إذا كان (x+yi)/(3-i) , (7-iω-iω^2)/(3+iω+iω^2) مترافقان جد قيمة x, y ∈ R",
+      "diagram": null,
+      "full_model_solution": "نساوي المقدار الأول بمرافق المقدار الثاني، ونبسط للوصول إلى قيم x, y.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "13",
+      "question_text": "إذا كان (iω^2+3 / i+3ω)^2 هو أحد جذري المعادلة ax^2 + 2x + b = 0 جد قيمة a, b ∈ R",
+      "diagram": null,
+      "full_model_solution": "نبسط الجذر المعطى أولاً ثم نستخدم خصائص الجذور للمعادلة التربيعية.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "14",
+      "question_text": "إذا كان (1-i)/7i , (x^3+8iy^3)/(x^2+2xiy-4y^2) أحدهما النظير الضربي للآخر جد قيمة x, y",
+      "diagram": null,
+      "full_model_solution": "نساوي ضربهما بالواحد أو نساوي أحدهما بمقلوب الآخر.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "15",
+      "question_text": "إذا كان c2 = 10/(i-3) , c1 = (x^2-2xyi+3y^2)/(2x-6yi) حيث c1 هو النظير الجمعي لـ c2 جد قيمة x, y الحقيقية",
+      "diagram": null,
+      "full_model_solution": "c1 = -c2. نساوي القيم ونحل المعادلات الحقيقية والتخيلية.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "16",
+      "question_text": "جد الجذران التربيعيان للعدد المركب: (7+ωi+ω^2i) / (1-ω-ω^2i)",
+      "diagram": null,
+      "full_model_solution": "نبسط الكسر أولاً ثم نستخدم قانون الجذور التربيعية للعدد المركب.",
+      "interactive_steps": []
+    },
+    {
+      "question_number": "17",
+      "question_text": "أكتب المعادلة التربيعية ذات المعاملات الحقيقية وأحد جذريها (2ω+i / ω^2i+2)^6",
+      "diagram": null,
+      "full_model_solution": "نبسط المقدار داخل القوس، نرفعه للقوة 6، ثم نستخدم كونه أحد الجذور لإيجاد المرافق وتكوين المعادلة.",
+      "interactive_steps": []
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-7",
+  "topic_title": "الجذور التكعيبية للواحد الصحيح",
+  "interactive_status": "ready"
+}

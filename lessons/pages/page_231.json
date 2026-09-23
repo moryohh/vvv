@@ -1,0 +1,143 @@
+{
+  "page_number": 231,
+  "page_id": 231,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "4",
+      "question_text": "A, B, C, D أربع نقاط ليست في مستو واحد بحيث AB = AC، E منتصف BC، و الزوجية A-BC-D قائمة. برهن أن CD = BD.",
+      "diagram": {
+        "diagram_id": "q4_fig_01",
+        "diagram_type": "شكل هندسي",
+        "diagram_desc": "شكل يوضح النقاط A, B, C, D في الفضاء، حيث المثلث ABC متساوي الساقين، وE نقطة على القاعدة BC، وDE عمودي على المستوي.",
+        "diagram_box": [
+          110,
+          85,
+          345,
+          360
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_231_q4_fig_01_geometric_shape.png"
+      },
+      "full_model_solution": "1. بما أن المثلث ABC فيه AB = AC، إذن المثلث متساوي الساقين.\n2. بما أن E منتصف BC، فإن AE عمودي على BC (العمود النازل من رأس المثلث المتساوي الساقين على قاعدته ينصفها).\n3. بما أن الزاوية الزوجية A-BC-D قائمة، والمستوي ABC يقطع المستوي DBC في المستقيم BC، فإن AE عمودي على المستقيم BC وDE عمودي على المستقيم BC.\n4. من تعامد المستقيمين AE و DE على BC، ينتج أن BC عمودي على المستوي AED.\n5. بما أن BC عمودي على المستوي AED، فإن BC عمودي على كل مستقيم في المستوي، ومنه BC عمودي على DE.\n6. في المثلثين CED و BED: لدينا DE مشترك، CE = BE (معطى)، والزاوية CED = الزاوية BED = 90 درجة.\n7. إذن المثلثان متطابقان بضلعين وزاوية محصورة، وينتج أن CD = BD.",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "الخطوة الأولى هي إثبات أن المثلث ABC متساوي الساقين، بما أن AB=AC، إذن القطعة المستقيمة الواصلة من الرأس إلى منتصف القاعدة هي عمودية عليها. حدد ما هو المستقيم العمودي على BC؟",
+          "step_assistant_solution": "AE عمودي على BC",
+          "inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "أي مستقيم عمودي على BC في المثلث ABC؟",
+              "correct_answer": "AE",
+              "options": [
+                "AE",
+                "AB",
+                "AC",
+                "AD"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر خاصية المثلث المتساوي الساقين: العمود النازل من الرأس إلى منتصف القاعدة يكون عمودياً عليها.",
+            "related_topics": [
+              {
+                "topic_title": "خصائص المثلث المتساوي الساقين",
+                "explanation": "في المثلث المتساوي الساقين، المتوسط النازل من الرأس هو نفسه الارتفاع."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "step1_input1"
+                },
+                " عمودي على BC"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 2,
+          "step_explanation": "بما أن الزاوية الزوجية قائمة، والمستقيم BC هو تقاطع المستويين، فإن المستقيم DE (الموجود في المستوي الآخر) يجب أن يكون عمودياً على BC أيضاً.",
+          "step_assistant_solution": "DE عمودي على BC",
+          "inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "بما أن الزاوية الزوجية قائمة، ما هي علاقة DE بالمستقيم BC؟",
+              "correct_answer": "عمودي",
+              "options": [
+                "عمودي",
+                "موازي",
+                "يقطعها بزاوية 45",
+                "منطبق"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تعريف الزاوية الزوجية هو الزاوية العائدة لها والمكونة من مستقيمين عموديين على حرف الزاوية في المستويين.",
+            "related_topics": [
+              {
+                "topic_title": "تعريف الزاوية الزوجية",
+                "explanation": "هي الزاوية الناتجة عن تقاطع مستويين، وتكون قائمة إذا كان المستويان متعامدين."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "DE ",
+                {
+                  "input_id": "step2_input1"
+                },
+                " على BC"
+              ]
+            ]
+          }
+        },
+        {
+          "step_number": 3,
+          "step_explanation": "بعد إثبات أن AE و DE عموديان على BC، نستخدم تطابق المثلثين CED و BED لإثبات المطلوب.",
+          "step_assistant_solution": "المثلثان متطابقان بحالة ضلعين وزاوية محصورة (SAS)",
+          "inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي النتيجة النهائية لتطابق المثلثين؟",
+              "correct_answer": "CD = BD",
+              "options": [
+                "CD = BD",
+                "AC = AB",
+                "AE = DE",
+                "BC = DE"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تطابق المثلثات يعني أن الأضلاع المناظرة متساوية في الطول.",
+            "related_topics": [
+              {
+                "topic_title": "حالات تطابق المثلثات",
+                "explanation": "يتطابق المثلثان إذا تساوى ضلعان وزاوية محصورة بينهما."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "ما هي النتيجة النهائية لتطابق المثلثين؟ = ",
+                {
+                  "input_id": "step3_input1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 6,
+  "chapter_title": "الهندسة الفضائية",
+  "topic_id": "6-1",
+  "topic_title": "الزاوية الزوجية والمستويات المتعامدة",
+  "interactive_status": "ready"
+}

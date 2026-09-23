@@ -1,0 +1,193 @@
+{
+  "page_number": 44,
+  "page_id": 44,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "2",
+      "question_text": "x^2 + 36 = 0",
+      "diagram": null,
+      "full_model_solution": "x^2 = -36, x = ±6i, S = {6i, -6i}",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نقل الثابت للطرف الآخر لجعل المعادلة بدلالة x^2",
+          "step_assistant_solution": "x^2 = -36",
+          "inputs": [
+            {
+              "input_id": "q2_step1_input",
+              "label": "ما هي قيمة x^2؟",
+              "correct_answer": "-36",
+              "options": [
+                "36",
+                "-36",
+                "6",
+                "-6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "نقل العدد الموجب إلى الطرف الآخر يغير إشارته.",
+            "related_topics": [
+              {
+                "topic_title": "المعادلات الخطية",
+                "explanation": "تغيير الإشارة عند النقل عبر المساواة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "x^2 = ",
+                {
+                  "input_id": "q2_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "Z^2 = -12",
+      "diagram": null,
+      "full_model_solution": "Z^2 = -12, Z = ±√(-12), Z = ±√(12)i, Z = ±2√3i, S = {2√3i, -2√3i}",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "أخذ الجذر التربيعي للطرفين مع تحويل السالب تحت الجذر إلى i",
+          "step_assistant_solution": "Z = ±2√3i",
+          "inputs": [
+            {
+              "input_id": "q3_step1_input",
+              "label": "ما هو ناتج الجذر؟",
+              "correct_answer": "±2√3i",
+              "options": [
+                "±2√3i",
+                "±12i",
+                "±√12",
+                "±6i"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "جذر الـ 12 هو 2 جذر 3، ولا تنسَ وحدة i.",
+            "related_topics": [
+              {
+                "topic_title": "الجذور التربيعية",
+                "explanation": "تبسيط الجذور التربيعية للأعداد السالبة."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "Z = ",
+                {
+                  "input_id": "q3_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "4Z^2 + 25 = 0",
+      "diagram": null,
+      "full_model_solution": "4Z^2 = -25, Z^2 = -25/4, Z = ±(5/2)i, S = {5/2i, -5/2i}",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "عزل Z^2 بقسمة الطرفين على معامل Z^2",
+          "step_assistant_solution": "Z^2 = -25/4",
+          "inputs": [
+            {
+              "input_id": "q4_step1_input",
+              "label": "ما هي قيمة Z^2؟",
+              "correct_answer": "-25/4",
+              "options": [
+                "-25/4",
+                "25/4",
+                "-25",
+                "4/25"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اقسم الثابت على معامل المجهول بعد نقله للطرف الآخر.",
+            "related_topics": [
+              {
+                "topic_title": "العمليات الحسابية",
+                "explanation": "القسمة على معامل المجهول."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "Z^2 = ",
+                {
+                  "input_id": "q4_step1_input"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_number": "1",
+      "question_text": "حل المعادلة x^2 + 4x + 5 = 0 باستخدام القانون العام.",
+      "diagram": null,
+      "full_model_solution": "a=1, b=4, c=5. x = (-4 ± √(16 - 20)) / 2 = (-4 ± √(-4)) / 2 = (-4 ± 2i) / 2 = -2 ± i. S = {-2+i, -2-i}",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "تحديد قيم المعاملات a و b و c",
+          "step_assistant_solution": "a=1, b=4, c=5",
+          "inputs": [
+            {
+              "input_id": "q1_step1_input",
+              "label": "ما هي قيمة b؟",
+              "correct_answer": "4",
+              "options": [
+                "1",
+                "4",
+                "5",
+                "0"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المعامل b هو العدد المضروب في x.",
+            "related_topics": [
+              {
+                "topic_title": "المعادلة التربيعية",
+                "explanation": "الصورة العامة ax^2 + bx + c = 0."
+              }
+            ]
+          },
+          "layout": {
+            "rows": [
+              [
+                "a=1, b=",
+                {
+                  "input_id": "q1_step1_input"
+                },
+                ", c=5"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "chapter_id": 1,
+  "chapter_title": "الأعداد المركبة",
+  "topic_id": "1-6",
+  "topic_title": "حل المعادلة التربيعية في مجموعة الأعداد المركبة",
+  "interactive_status": "ready"
+}

@@ -14,14 +14,14 @@
           "step_assistant_solution": "a = 2b",
           "inputs": [
             {
-              "input_id": "q6_s1_i1",
-              "label": "ما هي قيمة a بدلالة b؟",
-              "correct_answer": "a = 2b",
+              "input_id": "q6_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "a = 2b",
-                "a = b/2",
-                "a = 4b",
-                "a = b"
+                "2",
+                "4",
+                "1",
+                "3"
               ]
             }
           ],
@@ -34,15 +34,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q6_s1_i1",
+              "label": "ما هي قيمة a بدلالة b؟",
+              "correct_answer": "a = 2b",
+              "options": [
+                "a = 2b",
+                "a = b/2",
+                "a = 4b",
+                "a = b"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "a = ",
                 {
-                  "input_id": "q6_s1_i1"
-                }
+                  "input_id": "q6_s1_i1_atom_1"
+                },
+                "b"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -69,6 +85,34 @@
           "step_assistant_solution": "a = 12, b = 9",
           "inputs": [
             {
+              "input_id": "q7_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "12",
+              "options": [
+                "12",
+                "24",
+                "6",
+                "11"
+              ]
+            },
+            {
+              "input_id": "q7_s1_i1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "18",
+                "8",
+                "10"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "المسافة الكلية 2a = 24، والارتفاع يمثل نصف المحور الأصغر b.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q7_s1_i1",
               "label": "ما هما قيمتا a و b؟",
               "correct_answer": "a = 12, b = 9",
@@ -80,19 +124,21 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "المسافة الكلية 2a = 24، والارتفاع يمثل نصف المحور الأصغر b.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "a = ",
                 {
-                  "input_id": "q7_s1_i1"
+                  "input_id": "q7_s1_i1_atom_1"
+                },
+                ", b = ",
+                {
+                  "input_id": "q7_s1_i1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -108,6 +154,34 @@
           "step_assistant_solution": "x²/144 + y²/81 = 1",
           "inputs": [
             {
+              "input_id": "q8_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "144",
+              "options": [
+                "144",
+                "81",
+                "24",
+                "12"
+              ]
+            },
+            {
+              "input_id": "q8_s1_i1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "81",
+              "options": [
+                "81",
+                "144",
+                "9",
+                "80"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "التعويض المباشر في معادلة القطع الناقص القياسية.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q8_s1_i1",
               "label": "ما هي المعادلة المستخدمة؟",
               "correct_answer": "x²/144 + y²/81 = 1",
@@ -119,19 +193,22 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "التعويض المباشر في معادلة القطع الناقص القياسية.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "x²/",
                 {
-                  "input_id": "q8_s1_i1"
-                }
+                  "input_id": "q8_s1_i1_atom_1"
+                },
+                " + y²/",
+                {
+                  "input_id": "q8_s1_i1_atom_2"
+                },
+                " = 1"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

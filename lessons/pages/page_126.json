@@ -26,14 +26,25 @@
           "step_assistant_solution": "البؤرة F(0, -√3)",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي إحداثيات البؤرة F إذا كان الدليل y = √3 والرأس (0,0)؟",
-              "correct_answer": "(0, -√3)",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "0",
               "options": [
-                "(0, -√3)",
-                "(0, √3)",
-                "(-√3, 0)",
-                "(√3, 0)"
+                "0",
+                "3",
+                "-1",
+                "1"
+              ]
+            },
+            {
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "0",
+                "2",
+                "4"
               ]
             }
           ],
@@ -46,16 +57,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي إحداثيات البؤرة F إذا كان الدليل y = √3 والرأس (0,0)؟",
+              "correct_answer": "(0, -√3)",
+              "options": [
+                "(0, -√3)",
+                "(0, √3)",
+                "(-√3, 0)",
+                "(√3, 0)"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي إحداثيات البؤرة F إذا كان الدليل y = √3 والرأس (0,0)؟ = ",
+                "(",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "step1_input1_atom_1"
+                },
+                ", -√",
+                {
+                  "input_id": "step1_input1_atom_2"
+                },
+                ")"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -63,14 +93,14 @@
           "step_assistant_solution": "x² + (y + √3)² = (y - √3)²",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي المعادلة بعد تطبيق قانون MF=MQ والتربيع؟",
-              "correct_answer": "x² + (y + √3)² = (y - √3)²",
+              "input_id": "step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
               "options": [
-                "x² + (y + √3)² = (y - √3)²",
-                "x² + (y - √3)² = (y + √3)²",
-                "x² - (y + √3)² = (y - √3)²",
-                "x² + y² = 4√3"
+                "3",
+                "4",
+                "2",
+                "5"
               ]
             }
           ],
@@ -83,15 +113,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي المعادلة بعد تطبيق قانون MF=MQ والتربيع؟",
+              "correct_answer": "x² + (y + √3)² = (y - √3)²",
+              "options": [
+                "x² + (y + √3)² = (y - √3)²",
+                "x² + (y - √3)² = (y + √3)²",
+                "x² - (y + √3)² = (y - √3)²",
+                "x² + y² = 4√3"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "x² + (y + √",
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "step2_input1_atom_1"
+                },
+                ")² = (y - √3)²"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

@@ -15,14 +15,25 @@
           "step_assistant_solution": "cos(12π/8) + i sin(12π/8) = cos(3π/2) + i sin(3π/2)",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "ما هي الزاوية الناتجة بعد ضرب 4 في 3π/8؟",
-              "correct_answer": "3π/2",
+              "input_id": "q1_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
               "options": [
-                "3π/2",
-                "3π/4",
-                "3π/8",
-                "6π/8"
+                "3",
+                "6",
+                "2",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "8",
+                "1"
               ]
             }
           ],
@@ -35,17 +46,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هي الزاوية الناتجة بعد ضرب 4 في 3π/8؟",
+              "correct_answer": "3π/2",
+              "options": [
+                "3π/2",
+                "3π/4",
+                "3π/8",
+                "6π/8"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "cos(12π/8) + i sin(12π/8) = cos(3π/2) + i sin(",
                 {
-                  "input_id": "q1_s1"
+                  "input_id": "q1_s1_atom_1"
                 },
-                ")"
+                "π/",
+                {
+                  "input_id": "q1_s1_atom_2"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -61,6 +88,34 @@
           "step_assistant_solution": "5π/6",
           "inputs": [
             {
+              "input_id": "q2_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "6",
+                "4",
+                "7"
+              ]
+            },
+            {
+              "input_id": "q2_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "24",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "4 مضروبة في 5π على 24 تعطي 20π/24، وبالاختصار على 4 تصبح 5π/6.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q2_s1",
               "label": "ما هي الزاوية الناتجة؟",
               "correct_answer": "5π/6",
@@ -72,19 +127,20 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "4 مضروبة في 5π على 24 تعطي 20π/24، وبالاختصار على 4 تصبح 5π/6.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q2_s1"
+                  "input_id": "q2_s1_atom_1"
+                },
+                "π/",
+                {
+                  "input_id": "q2_s1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -100,6 +156,23 @@
           "step_assistant_solution": "π/2",
           "inputs": [
             {
+              "input_id": "q3_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "5",
+                "10",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "ببساطة 5 ضرب π/10 تعطي 5π/10 والتي تساوي نصف π.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q3_s1",
               "label": "ما قيمة الزاوية الناتجة؟",
               "correct_answer": "π/2",
@@ -111,19 +184,17 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "ببساطة 5 ضرب π/10 تعطي 5π/10 والتي تساوي نصف π.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "π/",
                 {
-                  "input_id": "q3_s1"
+                  "input_id": "q3_s1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

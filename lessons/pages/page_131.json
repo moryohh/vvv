@@ -15,6 +15,23 @@
           "step_assistant_solution": "x^2 = 4ay",
           "inputs": [
             {
+              "input_id": "q11_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "-4",
+                "3",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "البؤرة تقع على محور الصادات، لذا يكون المتغير x هو المربع.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q11_s1_i1",
               "label": "ما هي الصيغة القياسية للقطع؟",
               "correct_answer": "x^2 = 4ay",
@@ -26,19 +43,18 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "البؤرة تقع على محور الصادات، لذا يكون المتغير x هو المربع.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "x^2 = ",
                 {
-                  "input_id": "q11_s1_i1"
-                }
+                  "input_id": "q11_s1_i1_atom_1"
+                },
+                "ay"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

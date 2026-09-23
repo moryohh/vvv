@@ -100,6 +100,23 @@
           "step_assistant_solution": "المجموع = 0، الضرب = -8i",
           "inputs": [
             {
+              "input_id": "q5_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "7",
+                "9",
+                "10"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "تذكر صيغة تكوين المعادلة x^2 - (المجموع)x + الضرب = 0.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q5_step1",
               "label": "ما هي المعادلة الناتجة؟",
               "correct_answer": "x^2 - 8i = 0",
@@ -111,20 +128,19 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "تذكر صيغة تكوين المعادلة x^2 - (المجموع)x + الضرب = 0.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
-                "ما هي المعادلة الناتجة؟ = ",
+                "x^2 ",
+                "-",
                 {
-                  "input_id": "q5_step1"
-                }
+                  "input_id": "q5_step1_atom_1"
+                },
+                "i = 0"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

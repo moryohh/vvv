@@ -51,14 +51,25 @@
           "step_assistant_solution": "b^2 = 4/3",
           "inputs": [
             {
-              "input_id": "q16_step2",
-              "label": "ما هي قيمة b^2 للقطع الزائد؟",
-              "correct_answer": "4/3",
+              "input_id": "q16_step2_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "4/3",
                 "4",
                 "3",
-                "2/3"
+                "2",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q16_step2_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -71,16 +82,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q16_step2",
+              "label": "ما هي قيمة b^2 للقطع الزائد؟",
+              "correct_answer": "4/3",
+              "options": [
+                "4/3",
+                "4",
+                "3",
+                "2/3"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "b^2 = ",
                 {
-                  "input_id": "q16_step2"
+                  "input_id": "q16_step2_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "q16_step2_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

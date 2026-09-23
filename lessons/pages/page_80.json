@@ -14,14 +14,25 @@
           "step_assistant_solution": "الناتج هو 1 - √3i",
           "inputs": [
             {
-              "input_id": "q8_step1",
-              "label": "ما هو ناتج قسمة العددين المركبين؟",
-              "correct_answer": "1 - √3i",
+              "input_id": "q8_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1 - √3i",
-                "1 + √3i",
-                "-1 - √3i",
-                "7 - 2√3i"
+                "1",
+                "-1",
+                "7",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q8_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "- 2",
+                "2",
+                "4"
               ]
             }
           ],
@@ -34,16 +45,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q8_step1",
+              "label": "ما هو ناتج قسمة العددين المركبين؟",
+              "correct_answer": "1 - √3i",
+              "options": [
+                "1 - √3i",
+                "1 + √3i",
+                "-1 - √3i",
+                "7 - 2√3i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "الناتج هو ",
                 {
-                  "input_id": "q8_step1"
-                }
+                  "input_id": "q8_step1_atom_1"
+                },
+                " - √",
+                {
+                  "input_id": "q8_step1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -59,14 +88,47 @@
           "step_assistant_solution": "-15/2 - (5√3/2)i",
           "inputs": [
             {
-              "input_id": "q9_step1",
-              "label": "ما هو الجزء الحقيقي والتخيلي للعدد؟",
-              "correct_answer": "-15/2 - (5√3/2)i",
+              "input_id": "q9_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-15",
               "options": [
-                "-15/2 - (5√3/2)i",
-                "-15/2 + (5√3/2)i",
-                "-5√3/2 - 15/2i",
-                "5√3/2 + 15/2i"
+                "-15",
+                "-5",
+                "5",
+                "-16"
+              ]
+            },
+            {
+              "input_id": "q9_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "3",
+                "1",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q9_step1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "2",
+                "4",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q9_step1_atom_4",
+              "label": "قيمة الجزء 4 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "- 15",
+                "+ 15",
+                "2"
               ]
             }
           ],
@@ -79,15 +141,42 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q9_step1",
+              "label": "ما هو الجزء الحقيقي والتخيلي للعدد؟",
+              "correct_answer": "-15/2 - (5√3/2)i",
+              "options": [
+                "-15/2 - (5√3/2)i",
+                "-15/2 + (5√3/2)i",
+                "-5√3/2 - 15/2i",
+                "5√3/2 + 15/2i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q9_step1"
-                }
+                  "input_id": "q9_step1_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "q9_step1_atom_2"
+                },
+                " - (",
+                {
+                  "input_id": "q9_step1_atom_3"
+                },
+                "√",
+                {
+                  "input_id": "q9_step1_atom_4"
+                },
+                "/2)i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

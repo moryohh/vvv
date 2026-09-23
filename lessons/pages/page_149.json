@@ -26,8 +26,8 @@
           "step_assistant_solution": "a=3, c=2",
           "inputs": [
             {
-              "input_id": "step1_input1_value_1",
-              "label": "ما قيمة a و c؟ — القيمة 1",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
               "correct_answer": "3",
               "options": [
                 "3",
@@ -37,8 +37,8 @@
               ]
             },
             {
-              "input_id": "step1_input1_value_2",
-              "label": "ما قيمة a و c؟ — القيمة 2",
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
               "correct_answer": "2",
               "options": [
                 "2",
@@ -57,20 +57,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما قيمة a و c؟",
+              "correct_answer": "a=3, c=2",
+              "options": [
+                "a=3, c=2",
+                "a=6, c=4",
+                "a=5, c=1",
+                "a=4, c=3"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 "a=",
                 {
-                  "input_id": "step1_input1_value_1"
+                  "input_id": "step1_input1_atom_1"
                 },
                 ", c=",
                 {
-                  "input_id": "step1_input1_value_2"
+                  "input_id": "step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -86,14 +100,25 @@
           "step_assistant_solution": "b=6, a=2c",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما قيمة b و العلاقة بين a و c؟",
-              "correct_answer": "b=6, a=2c",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "b=6, a=2c",
-                "b=12, a=c",
-                "b=6, a=c/2",
-                "b=3, a=2c"
+                "6",
+                "12",
+                "3",
+                "5"
+              ]
+            },
+            {
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "3",
+                "4"
               ]
             }
           ],
@@ -106,15 +131,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما قيمة b و العلاقة بين a و c؟",
+              "correct_answer": "b=6, a=2c",
+              "options": [
+                "b=6, a=2c",
+                "b=12, a=c",
+                "b=6, a=c/2",
+                "b=3, a=2c"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "b=",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "step1_input1_atom_1"
+                },
+                ", a=",
+                {
+                  "input_id": "step1_input1_atom_2"
+                },
+                "c"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

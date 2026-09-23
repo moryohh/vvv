@@ -15,14 +15,25 @@
           "step_assistant_solution": "(z^2 + 9)(z^2 + 4) = 0",
           "inputs": [
             {
-              "input_id": "q11_step1_input1",
-              "label": "ما هو تحليل المقدار (z^4 + 13z^2 + 36)؟",
-              "correct_answer": "(z^2 + 9)(z^2 + 4)",
+              "input_id": "q11_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "9",
               "options": [
-                "(z^2 + 9)(z^2 + 4)",
-                "(z^2 - 9)(z^2 - 4)",
-                "(z^2 + 13)(z^2 + 3)",
-                "(z^2 + 12)(z^2 + 3)"
+                "9",
+                "13",
+                "12",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q11_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "5",
+                "6"
               ]
             }
           ],
@@ -35,16 +46,37 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q11_step1_input1",
+              "label": "ما هو تحليل المقدار (z^4 + 13z^2 + 36)؟",
+              "correct_answer": "(z^2 + 9)(z^2 + 4)",
+              "options": [
+                "(z^2 + 9)(z^2 + 4)",
+                "(z^2 - 9)(z^2 - 4)",
+                "(z^2 + 13)(z^2 + 3)",
+                "(z^2 + 12)(z^2 + 3)"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "(z^2 ",
+                "+",
                 {
-                  "input_id": "q11_step1_input1"
+                  "input_id": "q11_step1_input1_atom_1"
                 },
-                " = 0"
+                ")(z^2 ",
+                "+",
+                {
+                  "input_id": "q11_step1_input1_atom_2"
+                },
+                ")"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -60,14 +92,36 @@
           "step_assistant_solution": "x^2 - 3xi + 4 = 0",
           "inputs": [
             {
-              "input_id": "q12_step1_input1",
-              "label": "ما هي المعادلة بعد ترتيب الحدود؟",
-              "correct_answer": "x^2 - 3xi + 4 = 0",
+              "input_id": "q12_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
               "options": [
-                "x^2 - 3xi + 4 = 0",
-                "x^2 + 5xi - 2 = 0",
-                "x^2 - 3xi - 2 = 0",
-                "x^2 + xi + 4 = 0"
+                "3",
+                "5",
+                "4",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q12_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "0",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q12_step1_input1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "-1",
+                "1",
+                "2"
               ]
             }
           ],
@@ -80,15 +134,40 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q12_step1_input1",
+              "label": "ما هي المعادلة بعد ترتيب الحدود؟",
+              "correct_answer": "x^2 - 3xi + 4 = 0",
+              "options": [
+                "x^2 - 3xi + 4 = 0",
+                "x^2 + 5xi - 2 = 0",
+                "x^2 - 3xi - 2 = 0",
+                "x^2 + xi + 4 = 0"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "x^2 ",
+                "-",
                 {
-                  "input_id": "q12_step1_input1"
+                  "input_id": "q12_step1_input1_atom_1"
+                },
+                "xi ",
+                "+",
+                {
+                  "input_id": "q12_step1_input1_atom_2"
+                },
+                " = ",
+                {
+                  "input_id": "q12_step1_input1_atom_3"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

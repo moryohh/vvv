@@ -25,14 +25,14 @@
           "step_assistant_solution": "بما أن البؤرة (p,0) هي (7,0) إذن p=7، والدليل x = -p أي x = -7.",
           "inputs": [
             {
-              "input_id": "q6_step1_input1",
-              "label": "ما هي معادلة الدليل للقطع المكافئ إذا كانت البؤرة (7,0)؟",
-              "correct_answer": "x = -7",
+              "input_id": "q6_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "7",
               "options": [
-                "x = -7",
-                "x = 7",
-                "y = -7",
-                "y = 7"
+                "7",
+                "6",
+                "8",
+                "9"
               ]
             }
           ],
@@ -45,17 +45,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q6_step1_input1",
+              "label": "ما هي معادلة الدليل للقطع المكافئ إذا كانت البؤرة (7,0)؟",
+              "correct_answer": "x = -7",
+              "options": [
+                "x = -7",
+                "x = 7",
+                "y = -7",
+                "y = 7"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "بما أن البؤرة (p,0) هي (7,0) إذن p=7، والدليل x = -p أي ",
+                "x = ",
+                "-",
                 {
-                  "input_id": "q6_step1_input1"
-                },
-                "."
+                  "input_id": "q6_step1_input1_atom_1"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -63,14 +77,25 @@
           "step_assistant_solution": "المسافة من النقطة M(x,y) إلى البؤرة F(7,0) تساوي المسافة إلى النقطة Q(-7,y) على الدليل.",
           "inputs": [
             {
-              "input_id": "q6_step2_input1",
-              "label": "كيف نكتب مسافة النقطة عن البؤرة؟",
-              "correct_answer": "sqrt((x-7)^2 + (y-0)^2)",
+              "input_id": "q6_step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "7",
               "options": [
-                "sqrt((x-7)^2 + (y-0)^2)",
-                "sqrt((x+7)^2 + (y-0)^2)",
-                "sqrt((x-7)^2 + (y+7)^2)",
-                "sqrt((x+7)^2 + (y+y)^2)"
+                "7",
+                "6",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "input_id": "q6_step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "7",
+                "-1",
+                "1"
               ]
             }
           ],
@@ -83,16 +108,37 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q6_step2_input1",
+              "label": "كيف نكتب مسافة النقطة عن البؤرة؟",
+              "correct_answer": "sqrt((x-7)^2 + (y-0)^2)",
+              "options": [
+                "sqrt((x-7)^2 + (y-0)^2)",
+                "sqrt((x+7)^2 + (y-0)^2)",
+                "sqrt((x-7)^2 + (y+7)^2)",
+                "sqrt((x+7)^2 + (y+y)^2)"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "كيف نكتب مسافة النقطة عن البؤرة؟ = ",
+                "sqrt((x",
+                "-",
                 {
-                  "input_id": "q6_step2_input1"
-                }
+                  "input_id": "q6_step2_input1_atom_1"
+                },
+                ")^2 + (y",
+                "-",
+                {
+                  "input_id": "q6_step2_input1_atom_2"
+                },
+                ")^2)"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 3,
@@ -100,14 +146,14 @@
           "step_assistant_solution": "بعد تربيع الطرفين والاختصار نجد: y^2 = 28x.",
           "inputs": [
             {
-              "input_id": "q6_step3_input1",
-              "label": "ما هي المعادلة النهائية للقطع المكافئ؟",
-              "correct_answer": "y^2 = 28x",
+              "input_id": "q6_step3_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "28",
               "options": [
-                "y^2 = 28x",
-                "y^2 = 14x",
-                "x^2 = 28y",
-                "y^2 = 7x"
+                "28",
+                "14",
+                "7",
+                "27"
               ]
             }
           ],
@@ -120,17 +166,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q6_step3_input1",
+              "label": "ما هي المعادلة النهائية للقطع المكافئ؟",
+              "correct_answer": "y^2 = 28x",
+              "options": [
+                "y^2 = 28x",
+                "y^2 = 14x",
+                "x^2 = 28y",
+                "y^2 = 7x"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "بعد تربيع الطرفين والاختصار نجد: ",
+                "y^2 = ",
                 {
-                  "input_id": "q6_step3_input1"
+                  "input_id": "q6_step3_input1_atom_1"
                 },
-                "."
+                "x"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

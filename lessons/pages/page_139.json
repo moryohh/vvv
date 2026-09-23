@@ -98,8 +98,8 @@
           "step_assistant_solution": "a = 5, b = 4",
           "inputs": [
             {
-              "input_id": "q10_step1_input1_part_1",
-              "label": "ما هي قيمة a^2 و b^2؟ — الجزء 1",
+              "input_id": "q10_step1_input1_value_1",
+              "label": "ما هي قيمة a^2 و b^2؟ — القيمة 1",
               "correct_answer": "25",
               "options": [
                 "25",
@@ -109,8 +109,8 @@
               ]
             },
             {
-              "input_id": "q10_step1_input1_part_2",
-              "label": "ما هي قيمة a^2 و b^2؟ — الجزء 2",
+              "input_id": "q10_step1_input1_value_2",
+              "label": "ما هي قيمة a^2 و b^2؟ — القيمة 2",
               "correct_answer": "16",
               "options": [
                 "16",
@@ -128,11 +128,11 @@
             "rows": [
               [
                 {
-                  "input_id": "q10_step1_input1_part_1"
+                  "input_id": "q10_step1_input1_value_1"
                 },
                 " و ",
                 {
-                  "input_id": "q10_step1_input1_part_2"
+                  "input_id": "q10_step1_input1_value_2"
                 }
               ]
             ]

@@ -68,14 +68,14 @@
           "step_assistant_solution": "a = b",
           "inputs": [
             {
-              "input_id": "q3_s1_i1",
-              "label": "إذا كان a=b، فماذا تصبح قيمة c^2 بدلالة a؟",
-              "correct_answer": "2a^2",
+              "input_id": "q3_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "a^2",
-                "2a^2",
-                "4a^2",
-                "0"
+                "2",
+                "4",
+                "0",
+                "1"
               ]
             }
           ],
@@ -88,16 +88,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_s1_i1",
+              "label": "إذا كان a=b، فماذا تصبح قيمة c^2 بدلالة a؟",
+              "correct_answer": "2a^2",
+              "options": [
+                "a^2",
+                "2a^2",
+                "4a^2",
+                "0"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "إذا كان a=b، فماذا تصبح قيمة c^2 بدلالة a؟ = ",
                 {
-                  "input_id": "q3_s1_i1"
-                }
+                  "input_id": "q3_s1_i1_atom_1"
+                },
+                "a^2"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

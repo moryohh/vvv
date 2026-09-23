@@ -14,14 +14,14 @@
           "step_assistant_solution": "بما أن البؤرة على محور السينات، المعادلة y^2 = 4px.",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "ما هي الصورة العامة للمعادلة؟",
-              "correct_answer": "y^2 = 4px",
+              "input_id": "q1_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "y^2 = 4px",
-                "x^2 = 4py",
-                "y^2 = -4px",
-                "x^2 = -4py"
+                "4",
+                "-4",
+                "3",
+                "5"
               ]
             }
           ],
@@ -34,17 +34,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هي الصورة العامة للمعادلة؟",
+              "correct_answer": "y^2 = 4px",
+              "options": [
+                "y^2 = 4px",
+                "x^2 = 4py",
+                "y^2 = -4px",
+                "x^2 = -4py"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "بما أن البؤرة على محور السينات، المعادلة ",
+                "y^2 = ",
                 {
-                  "input_id": "q1_s1"
+                  "input_id": "q1_s1_atom_1"
                 },
-                "."
+                "px"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

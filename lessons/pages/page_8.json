@@ -14,14 +14,25 @@
           "step_assistant_solution": "(-1 - 3i) + (-6 + 5i)",
           "inputs": [
             {
-              "input_id": "q1_s1_i1",
-              "label": "ما هو العدد الثاني بعد تغيير إشارته؟",
-              "correct_answer": "-6 + 5i",
+              "input_id": "q1_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-6",
               "options": [
-                "-6 + 5i",
-                "6 - 5i",
-                "6 + 5i",
-                "-6 - 5i"
+                "-6",
+                "6",
+                "-7",
+                "-5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "4",
+                "6",
+                "7"
               ]
             }
           ],
@@ -34,17 +45,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "ما هو العدد الثاني بعد تغيير إشارته؟",
+              "correct_answer": "-6 + 5i",
+              "options": [
+                "-6 + 5i",
+                "6 - 5i",
+                "6 + 5i",
+                "-6 - 5i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "(-1 - 3i) + (",
                 {
-                  "input_id": "q1_s1_i1"
+                  "input_id": "q1_s1_i1_atom_1"
                 },
-                ")"
+                " ",
+                "+",
+                {
+                  "input_id": "q1_s1_i1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

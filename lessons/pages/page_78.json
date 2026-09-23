@@ -60,14 +60,25 @@
           "step_assistant_solution": "θ = 7π/4",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
-              "label": "ما هي السعة (θ) للعدد المركب؟",
-              "correct_answer": "7π/4",
+              "input_id": "q3_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "7",
               "options": [
-                "7π/4",
-                "π/4",
-                "3π/4",
-                "5π/4"
+                "7",
+                "4",
+                "3",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q3_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "5",
+                "6"
               ]
             }
           ],
@@ -80,16 +91,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هي السعة (θ) للعدد المركب؟",
+              "correct_answer": "7π/4",
+              "options": [
+                "7π/4",
+                "π/4",
+                "3π/4",
+                "5π/4"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "θ = ",
                 {
-                  "input_id": "q3_step1_input1"
+                  "input_id": "q3_step1_input1_atom_1"
+                },
+                "π/",
+                {
+                  "input_id": "q3_step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -105,14 +133,14 @@
           "step_assistant_solution": "π/6",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
-              "label": "ما هي زاوية الإسناد؟",
-              "correct_answer": "π/6",
+              "input_id": "q4_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "π/6",
-                "π/3",
-                "π/4",
-                "π/2"
+                "6",
+                "3",
+                "4",
+                "2"
               ]
             }
           ],
@@ -125,15 +153,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هي زاوية الإسناد؟",
+              "correct_answer": "π/6",
+              "options": [
+                "π/6",
+                "π/3",
+                "π/4",
+                "π/2"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "π/",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q4_step1_input1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

@@ -1,7 +1,8 @@
 """Convert the supplied Iraqi sixth-scientific mathematics archive to site lessons.
 
 Usage: python3 build_math_lessons.py INPUT.zip
-No new answers or distractors are invented. The original question data is retained.
+Correct values and worked solutions always come from the supplied JSON.
+Short incorrect numerical choices may be derived for individual boxes.
 """
 import json
 import re
@@ -20,6 +21,8 @@ CHAPTERS = [
     ("المعادلات التفاضلية الاعتيادية", []),
     ("الهندسة الفضائية", [("الزاوية الزوجية والمستويات المتعامدة",216,233),("الإسقاط العمودي على مستوٍ",234,242)]),
 ]
+NUMBER = re.compile(r'(?<![\w])\d+(?:[,.]\d+)?(?![\w])')
+SIGNED_NUMBER = re.compile(r'(?<!\d)(?:[+-]\s*)?\d+(?:[,.]\d+)?')
 
 def position(page):
     for ci,(chapter,topics) in enumerate(CHAPTERS,1):
@@ -48,10 +51,12 @@ def split_compound(input_data):
                 return new,sep
     return [input_data],None
 
-NUMBER = re.compile(r'(?<![\w])\d+(?:[,.]\d+)?(?![\w])')
-
 def split_numeric_slots(cell):
-    """Use only four original choices with matching numerical structure."""
+    """Split numerical positions only when ALL original choices align positionally.
+
+    Every changing position must itself have four distinct supplied alternatives;
+    no new distractors are generated. Fixed exponents and given numbers stay text.
+    """
     correct=str(cell.get('correct_answer',''))
     options=list(map(str,cell.get('options',[])))
     if len(options)!=4 or correct not in options:return None
@@ -60,7 +65,8 @@ def split_numeric_slots(cell):
     numbers=[NUMBER.findall(value) for value in values]
     varying=[i for i in range(len(numbers[0])) if len({row[i] for row in numbers})>1]
     if len(varying)<2 or any(len({row[i] for row in numbers[1:]})!=4 for i in varying):return None
-    segments=NUMBER.split(correct);boxes=[];row=[]
+    segments=NUMBER.split(correct)
+    boxes=[];row=[]
     for index,digits in enumerate(numbers[0]):
         if segments[index]:row.append(segments[index])
         if index in varying:
@@ -69,15 +75,111 @@ def split_numeric_slots(cell):
             part['label']=f"{cell.get('label','القيمة')} — القيمة {len(boxes)+1}"
             part['correct_answer']=digits
             part['options']=[choice[index] for choice in numbers[1:]]
-            boxes.append(part);row.append({'input_id':part['input_id']})
+            boxes.append(part)
+            row.append({'input_id':part['input_id']})
         else:row.append(digits)
     if segments[-1]:row.append(segments[-1])
     return boxes,row
+
+def four_number_choices(correct, alternatives):
+    """Create four distinct short numeric choices for a computed value."""
+    def value(text):
+        try:return float(re.sub(r'\s+', '',text).replace(',','.'))
+        except ValueError:return None
+    chosen=[correct];seen={value(correct)}
+    for candidate in alternatives:
+        candidate=str(candidate).strip();n=value(candidate)
+        if n is not None and n not in seen:
+            chosen.append(candidate);seen.add(n)
+        if len(chosen)==4:return chosen
+    number=value(correct)
+    if number is None:return None
+    decimals=len(correct.split('.')[-1]) if '.' in correct else len(correct.split(',')[-1]) if ',' in correct else 0
+    quantum=10**(-decimals) if decimals else 1
+    for factor in (-1,1,2,-2,3,-3,4):
+        proposed=number+factor*quantum
+        if proposed in seen:continue
+        candidate=(f'{proposed:.{decimals}f}' if decimals else str(int(proposed)))
+        if ',' in correct:candidate=candidate.replace('.',',')
+        chosen.append(candidate);seen.add(proposed)
+        if len(chosen)==4:return chosen
+    return None
+
+def atomic_formula_layout(step,cell):
+    """Replace answer expressions with small unknown values inside the equation."""
+    correct=str(cell.get('correct_answer','')).strip()
+    options=list(map(str,cell.get('options',[])))
+    if len(options)!=4 or correct not in options:return None
+
+    # The conjugate-of-a-fraction exercise has two logical unknowns: its
+    # numerator and denominator. Four compact alternatives are obtained by
+    # combining the two source terms with their conjugates.
+    fraction=re.fullmatch(r'(.*?=\s*)\(([^()]+)\)\s*/\s*\(([^()]+)\)',correct)
+    if fraction and 'i' in fraction.group(2)+fraction.group(3):
+        prefix,numerator,denominator=fraction.groups()
+        def conjugate(term):
+            return re.sub(r'([+-])\s*(\d*)i',lambda m:('+' if m[1]=='-' else '-')+m[2]+'i',term)
+        pool=list(dict.fromkeys([numerator,denominator,conjugate(numerator),conjugate(denominator)]))
+        if len(pool)==4:
+            new=[]
+            for index,answer in enumerate((numerator,denominator),1):
+                part=dict(cell);part['input_id']=f"{cell['input_id']}_term_{index}"
+                part['label']='بسط الكسر بعد المرافق' if index==1 else 'مقام الكسر بعد المرافق'
+                part['correct_answer']=answer;part['options']=pool[:]
+                new.append(part)
+            return new,[[prefix+'(',{'input_id':new[0]['input_id']},') / (',{'input_id':new[1]['input_id']},')']]
+
+    if not re.search(r'[=+*/×÷^²√]|\bi\b',correct):return None
+    matches=[m for m in SIGNED_NUMBER.finditer(correct) if m.start()==0 or correct[m.start()-1]!='^']
+    # Do not turn a whole proof or an arbitrarily long formula into guesses.
+    if not matches or len(matches)>6:return None
+    option_tokens=[[m.group().strip() for m in SIGNED_NUMBER.finditer(option)
+                    if m.start()==0 or option[m.start()-1]!='^'] for option in options]
+    aligned=all(len(tokens)==len(matches) for tokens in option_tokens)
+    selected=[]
+    for index,match in enumerate(matches):
+        token=match.group().strip()
+        if aligned:
+            values=[tokens[index] for tokens in option_tokens]
+            if len({re.sub(r'\s+','',x) for x in values})<=1:continue
+        selected.append((index,match,token))
+    if not selected:
+        # Options that differ only by signs or by variable placement need a
+        # separately authored layout; copying the full equation is misleading.
+        return None
+    if len(selected)>5:return None
+    cells=[];row=[];cursor=0
+    for index,match,token in selected:
+        if match.start()>cursor:row.append(correct[cursor:match.start()])
+        alternatives=[tokens[index] for tokens in option_tokens if len(tokens)>index]
+        # Keep the operation sign visible in the equation; the square holds
+        # only its numerical value, as on a handwritten worksheet.
+        sign=re.match(r'^([+-])\s*(\d)',token)
+        if sign and match.start()>0:
+            row.append(sign.group(1))
+            token=token[sign.start(2):]
+            alternatives=[re.sub(r'^[+-]\s*','',candidate) for candidate in alternatives]
+        choices=four_number_choices(token,alternatives)
+        if not choices:return None
+        part=dict(cell);part['input_id']=f"{cell['input_id']}_atom_{index+1}"
+        part['label']=f'قيمة الجزء {len(cells)+1} في المعادلة'
+        part['correct_answer']=token;part['options']=choices
+        cells.append(part);row.append({'input_id':part['input_id']});cursor=match.end()
+    if cursor<len(correct):row.append(correct[cursor:])
+    return cells,[row]
 
 def layout_for(step):
     original=step.get('inputs') or []
     if not original:return None,0
     if len(original)==1:
+        atomic=atomic_formula_layout(step,original[0])
+        if atomic:
+            cells,rows=atomic
+            step['source_inputs']=original
+            step['inputs']=cells
+            step['layout']={'rows':rows}
+            step['choice_origin']='derived_from_source_options'
+            return rows,len(cells)-len(original)
         numeric=split_numeric_slots(original[0])
         if numeric:
             cells,row=numeric

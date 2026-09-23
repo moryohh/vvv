@@ -15,14 +15,14 @@
           "step_assistant_solution": "c^2 = -25",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "ما هي المعادلة؟",
-              "correct_answer": "c^2 = -25",
+              "input_id": "q1_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "25",
               "options": [
-                "c^2 = -25",
-                "c = -25",
-                "c^2 = 25",
-                "c = 25i"
+                "25",
+                "24",
+                "26",
+                "27"
               ]
             }
           ],
@@ -35,15 +35,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q1_s1",
+              "label": "ما هي المعادلة؟",
+              "correct_answer": "c^2 = -25",
+              "options": [
+                "c^2 = -25",
+                "c = -25",
+                "c^2 = 25",
+                "c = 25i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "c^2 = ",
+                "-",
                 {
-                  "input_id": "q1_s1"
+                  "input_id": "q1_s1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

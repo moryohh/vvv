@@ -14,14 +14,47 @@
           "step_assistant_solution": "(x² + 4x) + 25(y² - 6y) = -204",
           "inputs": [
             {
-              "input_id": "qf_step1_input1",
-              "label": "ما هو ناتج تجميع الحدود الصحيح قبل إكمال المربع؟",
-              "correct_answer": "(x² + 4x) + 25(y² - 6y) = -204",
+              "input_id": "qf_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "(x² + 4x) + 25(y² - 6y) = -204",
-                "(x² + 4x) + (y² - 150y) = -204",
-                "x² + 4x + 25y² - 150y = 204",
-                "(x+2)² + (y-3)² = 25"
+                "4",
+                "2",
+                "3",
+                "5"
+              ]
+            },
+            {
+              "input_id": "qf_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "150",
+                "3",
+                "24"
+              ]
+            },
+            {
+              "input_id": "qf_step1_input1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "204",
+                "150",
+                "25"
+              ]
+            },
+            {
+              "input_id": "qf_step1_input1_atom_4",
+              "label": "قيمة الجزء 4 في المعادلة",
+              "correct_answer": "204",
+              "options": [
+                "204",
+                "203",
+                "205",
+                "206"
               ]
             }
           ],
@@ -34,15 +67,46 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "qf_step1_input1",
+              "label": "ما هو ناتج تجميع الحدود الصحيح قبل إكمال المربع؟",
+              "correct_answer": "(x² + 4x) + 25(y² - 6y) = -204",
+              "options": [
+                "(x² + 4x) + 25(y² - 6y) = -204",
+                "(x² + 4x) + (y² - 150y) = -204",
+                "x² + 4x + 25y² - 150y = 204",
+                "(x+2)² + (y-3)² = 25"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "(x² ",
+                "+",
                 {
-                  "input_id": "qf_step1_input1"
+                  "input_id": "qf_step1_input1_atom_1"
+                },
+                "x) ",
+                "+",
+                {
+                  "input_id": "qf_step1_input1_atom_2"
+                },
+                "(y² ",
+                "-",
+                {
+                  "input_id": "qf_step1_input1_atom_3"
+                },
+                "y) = ",
+                "-",
+                {
+                  "input_id": "qf_step1_input1_atom_4"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -58,14 +122,25 @@
           "step_assistant_solution": "a=6, c=5",
           "inputs": [
             {
-              "input_id": "q2_step1_input1",
-              "label": "ما هي قيم a و c المستخرجة؟",
-              "correct_answer": "a=6, c=5",
+              "input_id": "q2_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "a=6, c=5",
-                "a=12, c=5",
-                "a=5, c=6",
-                "a=10, c=5"
+                "6",
+                "12",
+                "5",
+                "10"
+              ]
+            },
+            {
+              "input_id": "q2_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "6",
+                "4",
+                "7"
               ]
             }
           ],
@@ -78,15 +153,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q2_step1_input1",
+              "label": "ما هي قيم a و c المستخرجة؟",
+              "correct_answer": "a=6, c=5",
+              "options": [
+                "a=6, c=5",
+                "a=12, c=5",
+                "a=5, c=6",
+                "a=10, c=5"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "a=",
                 {
-                  "input_id": "q2_step1_input1"
+                  "input_id": "q2_step1_input1_atom_1"
+                },
+                ", c=",
+                {
+                  "input_id": "q2_step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

@@ -59,14 +59,25 @@
           "step_assistant_solution": "(x+yi)/(-2) = (1+5i)/(3+2i)",
           "inputs": [
             {
-              "input_id": "s33_1",
-              "label": "ما هي المعادلة الأساسية للحل؟",
-              "correct_answer": "(x+yi)/(-2) = (1+5i)/(3+2i)",
+              "input_id": "s33_1_term_1",
+              "label": "بسط الكسر بعد المرافق",
+              "correct_answer": "1+5i",
               "options": [
-                "(x+yi)/(-2) = (1+5i)/(3+2i)",
-                "(x+yi)/(-2) = (1-5i)/(3-2i)",
-                "(x+yi)/(-2) = (3-2i)/(1-5i)",
-                "(x+yi)/(-2) = (3+2i)/(1+5i)"
+                "1+5i",
+                "3+2i",
+                "1-5i",
+                "3-2i"
+              ]
+            },
+            {
+              "input_id": "s33_1_term_2",
+              "label": "مقام الكسر بعد المرافق",
+              "correct_answer": "3+2i",
+              "options": [
+                "1+5i",
+                "3+2i",
+                "1-5i",
+                "3-2i"
               ]
             }
           ],
@@ -79,15 +90,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "s33_1",
+              "label": "ما هي المعادلة الأساسية للحل؟",
+              "correct_answer": "(x+yi)/(-2) = (1+5i)/(3+2i)",
+              "options": [
+                "(x+yi)/(-2) = (1+5i)/(3+2i)",
+                "(x+yi)/(-2) = (1-5i)/(3-2i)",
+                "(x+yi)/(-2) = (3-2i)/(1-5i)",
+                "(x+yi)/(-2) = (3+2i)/(1+5i)"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "(x+yi)/(-2) = (",
                 {
-                  "input_id": "s33_1"
-                }
+                  "input_id": "s33_1_term_1"
+                },
+                ") / (",
+                {
+                  "input_id": "s33_1_term_2"
+                },
+                ")"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

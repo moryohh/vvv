@@ -60,14 +60,25 @@
           "step_assistant_solution": "يصبح المقدار 5 + 5ω² + 3ω",
           "inputs": [
             {
-              "input_id": "q16_s1",
-              "label": "ما هو ناتج تبسيط 5 - 5/(-ω)؟",
-              "correct_answer": "5+5ω²",
+              "input_id": "q16_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
               "options": [
-                "5+5ω²",
-                "5+5ω",
-                "5-5ω²",
-                "10ω²"
+                "5",
+                "10",
+                "4",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q16_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "4",
+                "6",
+                "7"
               ]
             }
           ],
@@ -80,16 +91,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q16_s1",
+              "label": "ما هو ناتج تبسيط 5 - 5/(-ω)؟",
+              "correct_answer": "5+5ω²",
+              "options": [
+                "5+5ω²",
+                "5+5ω",
+                "5-5ω²",
+                "10ω²"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هو ناتج تبسيط 5 - 5/(-ω)؟ = ",
                 {
-                  "input_id": "q16_s1"
-                }
+                  "input_id": "q16_s1_atom_1"
+                },
+                "+",
+                {
+                  "input_id": "q16_s1_atom_2"
+                },
+                "ω²"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -150,14 +179,25 @@
           "step_assistant_solution": "الناتج هو 1/7",
           "inputs": [
             {
-              "input_id": "q18_s1",
-              "label": "ما قيمة ضرب الجذرين؟",
-              "correct_answer": "1/7",
+              "input_id": "q18_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1/7",
+                "1",
                 "7",
-                "5/7",
-                "1"
+                "5",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q18_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "7",
+              "options": [
+                "7",
+                "6",
+                "8",
+                "9"
               ]
             }
           ],
@@ -170,16 +210,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q18_s1",
+              "label": "ما قيمة ضرب الجذرين؟",
+              "correct_answer": "1/7",
+              "options": [
+                "1/7",
+                "7",
+                "5/7",
+                "1"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "الناتج هو ",
                 {
-                  "input_id": "q18_s1"
+                  "input_id": "q18_s1_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "q18_s1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

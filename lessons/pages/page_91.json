@@ -53,14 +53,25 @@
           "step_assistant_solution": "z^(-2) = (1/16) * (cos(11π/3 * -1) + i sin(11π/3 * -1))",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هو معامل المقياس الجديد بعد رفع r=4 للأس (-2)؟",
-              "correct_answer": "1/16",
+              "input_id": "step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1/16",
+                "1",
                 "-8",
-                "1/8",
-                "16"
+                "16",
+                "0"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "8",
+                "15",
+                "17"
               ]
             }
           ],
@@ -73,17 +84,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هو معامل المقياس الجديد بعد رفع r=4 للأس (-2)؟",
+              "correct_answer": "1/16",
+              "options": [
+                "1/16",
+                "-8",
+                "1/8",
+                "16"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "z^(-2) = (",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "step2_input1_atom_1"
                 },
-                ") * (cos(11π/3 * -1) + i sin(11π/3 * -1))"
+                "/",
+                {
+                  "input_id": "step2_input1_atom_2"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

@@ -15,14 +15,25 @@
           "step_assistant_solution": "(9 + 24i - 16) = -7 + 24i",
           "inputs": [
             {
-              "input_id": "q9_step1_input1",
-              "label": "ما هو ناتج فك القوس التربيعي (3+4i)^2؟",
-              "correct_answer": "-7 + 24i",
+              "input_id": "q9_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-7",
               "options": [
-                "-7 + 24i",
-                "7 + 24i",
-                "-7 - 24i",
-                "25 + 24i"
+                "-7",
+                "7",
+                "25",
+                "-8"
+              ]
+            },
+            {
+              "input_id": "q9_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "24",
+              "options": [
+                "24",
+                "23",
+                "25",
+                "26"
               ]
             }
           ],
@@ -35,16 +46,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q9_step1_input1",
+              "label": "ما هو ناتج فك القوس التربيعي (3+4i)^2؟",
+              "correct_answer": "-7 + 24i",
+              "options": [
+                "-7 + 24i",
+                "7 + 24i",
+                "-7 - 24i",
+                "25 + 24i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "(9 + 24i - 16) = ",
                 {
-                  "input_id": "q9_step1_input1"
-                }
+                  "input_id": "q9_step1_input1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q9_step1_input1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

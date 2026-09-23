@@ -100,14 +100,14 @@
           "step_assistant_solution": "30cm^2",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "ما هي مساحة المثلث BCD؟",
-              "correct_answer": "30cm^2",
+              "input_id": "step3_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "30",
               "options": [
-                "30cm^2",
-                "60cm^2",
-                "15cm^2",
-                "45cm^2"
+                "30",
+                "60",
+                "15",
+                "45"
               ]
             }
           ],
@@ -120,15 +120,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي مساحة المثلث BCD؟",
+              "correct_answer": "30cm^2",
+              "options": [
+                "30cm^2",
+                "60cm^2",
+                "15cm^2",
+                "45cm^2"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "step3_input1"
-                }
+                  "input_id": "step3_input1_atom_1"
+                },
+                "cm^2"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

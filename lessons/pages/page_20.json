@@ -15,14 +15,14 @@
           "step_assistant_solution": "(1+2i)^2 = -3+4i و (1-2i)^2 = -3-4i",
           "inputs": [
             {
-              "input_id": "q2_step1",
-              "label": "ما هو ناتج فك القوس (1+2i)^2؟",
-              "correct_answer": "-3+4i",
+              "input_id": "q2_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-3",
               "options": [
-                "-3+4i",
-                "5+4i",
-                "-3-4i",
-                "1+4i"
+                "-3",
+                "5",
+                "1",
+                "-4"
               ]
             }
           ],
@@ -35,17 +35,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q2_step1",
+              "label": "ما هو ناتج فك القوس (1+2i)^2؟",
+              "correct_answer": "-3+4i",
+              "options": [
+                "-3+4i",
+                "5+4i",
+                "-3-4i",
+                "1+4i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "(1+2i)^2 = ",
                 {
-                  "input_id": "q2_step1"
+                  "input_id": "q2_step1_atom_1"
                 },
-                " و (1-2i)^2 = -3-4i"
+                "+4i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

@@ -26,14 +26,25 @@
           "step_assistant_solution": "8 + 6i",
           "inputs": [
             {
-              "input_id": "q3_step1",
-              "label": "ما هو ناتج جمع العددين؟",
-              "correct_answer": "8 + 6i",
+              "input_id": "q3_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "8",
               "options": [
-                "8 + 6i",
-                "2 + 2i",
-                "15 + 8i",
-                "8 - 2i"
+                "8",
+                "2",
+                "15",
+                "7"
+              ]
+            },
+            {
+              "input_id": "q3_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "2",
+                "8",
+                "5"
               ]
             }
           ],
@@ -46,15 +57,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_step1",
+              "label": "ما هو ناتج جمع العددين؟",
+              "correct_answer": "8 + 6i",
+              "options": [
+                "8 + 6i",
+                "2 + 2i",
+                "15 + 8i",
+                "8 - 2i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q3_step1"
-                }
+                  "input_id": "q3_step1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q3_step1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -81,14 +112,25 @@
           "step_assistant_solution": "4 + 3i",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "ما هو ناتج طرح z2 من z1؟",
-              "correct_answer": "4 + 3i",
+              "input_id": "q4_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "4 + 3i",
-                "4 - 7i",
-                "8 - 7i",
-                "4 + 7i"
+                "4",
+                "8",
+                "3",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q4_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "7",
+                "2",
+                "4"
               ]
             }
           ],
@@ -101,15 +143,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "ما هو ناتج طرح z2 من z1؟",
+              "correct_answer": "4 + 3i",
+              "options": [
+                "4 + 3i",
+                "4 - 7i",
+                "8 - 7i",
+                "4 + 7i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q4_step1"
-                }
+                  "input_id": "q4_step1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q4_step1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -136,6 +198,34 @@
           "step_assistant_solution": "5 + 0i",
           "inputs": [
             {
+              "input_id": "q5_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "3",
+                "4",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q5_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "4",
+                "-1",
+                "1"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "4+1=5 و -2i+2i=0.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q5_step1",
               "label": "ناتج x + y هو:",
               "correct_answer": "5 + 0i",
@@ -147,19 +237,22 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "4+1=5 و -2i+2i=0.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q5_step1"
-                }
+                  "input_id": "q5_step1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q5_step1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

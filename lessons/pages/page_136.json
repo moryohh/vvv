@@ -14,8 +14,8 @@
           "step_assistant_solution": "c = 4, a = 6",
           "inputs": [
             {
-              "input_id": "q2_step1_value_1",
-              "label": "ما هي قيم a و c؟ — القيمة 1",
+              "input_id": "q2_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -25,8 +25,8 @@
               ]
             },
             {
-              "input_id": "q2_step1_value_2",
-              "label": "ما هي قيم a و c؟ — القيمة 2",
+              "input_id": "q2_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
               "correct_answer": "6",
               "options": [
                 "6",
@@ -45,20 +45,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q2_step1",
+              "label": "ما هي قيم a و c؟",
+              "correct_answer": "c=4, a=6",
+              "options": [
+                "c=4, a=6",
+                "c=8, a=12",
+                "c=2, a=3",
+                "c=16, a=36"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 "c=",
                 {
-                  "input_id": "q2_step1_value_1"
+                  "input_id": "q2_step1_atom_1"
                 },
                 ", a=",
                 {
-                  "input_id": "q2_step1_value_2"
+                  "input_id": "q2_step1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

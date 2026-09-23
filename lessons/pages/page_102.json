@@ -15,14 +15,14 @@
           "step_assistant_solution": "r = 16, θ = π",
           "inputs": [
             {
-              "input_id": "q31_step1_input1",
-              "label": "المقياس r والسعة θ للعدد -16 هما:",
-              "correct_answer": "r=16, θ=π",
+              "input_id": "q31_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "16",
               "options": [
-                "r=16, θ=π",
-                "r=16, θ=0",
-                "r=4, θ=π",
-                "r=16, θ=2π"
+                "16",
+                "4",
+                "15",
+                "17"
               ]
             }
           ],
@@ -35,16 +35,31 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q31_step1_input1",
+              "label": "المقياس r والسعة θ للعدد -16 هما:",
+              "correct_answer": "r=16, θ=π",
+              "options": [
+                "r=16, θ=π",
+                "r=16, θ=0",
+                "r=4, θ=π",
+                "r=16, θ=2π"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "المقياس r والسعة θ للعدد -16 هما: = ",
+                "r=",
                 {
-                  "input_id": "q31_step1_input1"
-                }
+                  "input_id": "q31_step1_input1_atom_1"
+                },
+                ", θ=π"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -52,14 +67,25 @@
           "step_assistant_solution": "3π/4",
           "inputs": [
             {
-              "input_id": "q31_step2_input1",
-              "label": "قيمة الزاوية للحل الثاني (k=1) هي:",
-              "correct_answer": "3π/4",
+              "input_id": "q31_step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
               "options": [
-                "π/4",
-                "3π/4",
-                "5π/4",
-                "7π/4"
+                "3",
+                "4",
+                "5",
+                "7"
+              ]
+            },
+            {
+              "input_id": "q31_step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "5",
+                "6"
               ]
             }
           ],
@@ -72,15 +98,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q31_step2_input1",
+              "label": "قيمة الزاوية للحل الثاني (k=1) هي:",
+              "correct_answer": "3π/4",
+              "options": [
+                "π/4",
+                "3π/4",
+                "5π/4",
+                "7π/4"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q31_step2_input1"
+                  "input_id": "q31_step2_input1_atom_1"
+                },
+                "π/",
+                {
+                  "input_id": "q31_step2_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

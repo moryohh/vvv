@@ -52,6 +52,34 @@
           "step_assistant_solution": "5 + 3(ω + ω^2)",
           "inputs": [
             {
+              "input_id": "q3_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "8",
+                "4",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q3_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم القاعدة ω + ω^2 = -1.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q3_step1_input1",
               "label": "ما قيمة المقدار داخل القوس بعد استخراج العامل المشترك؟",
               "correct_answer": "5 + 3(ω + ω^2)",
@@ -63,19 +91,22 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "استخدم القاعدة ω + ω^2 = -1.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q3_step1_input1"
-                }
+                  "input_id": "q3_step1_input1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q3_step1_input1_atom_2"
+                },
+                "(ω + ω^2)"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

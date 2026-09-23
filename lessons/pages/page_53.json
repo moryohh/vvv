@@ -15,14 +15,14 @@
           "step_assistant_solution": "الجذر الثاني هو 1-i",
           "inputs": [
             {
-              "input_id": "q12_s1_i1",
-              "label": "ما هو الجذر الثاني؟",
-              "correct_answer": "1-i",
+              "input_id": "q12_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1-i",
-                "1+i",
-                "-1-i",
-                "i-1"
+                "1",
+                "-1",
+                "0",
+                "2"
               ]
             }
           ],
@@ -35,16 +35,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q12_s1_i1",
+              "label": "ما هو الجذر الثاني؟",
+              "correct_answer": "1-i",
+              "options": [
+                "1-i",
+                "1+i",
+                "-1-i",
+                "i-1"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "الجذر الثاني هو ",
                 {
-                  "input_id": "q12_s1_i1"
-                }
+                  "input_id": "q12_s1_i1_atom_1"
+                },
+                "-i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

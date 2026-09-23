@@ -26,8 +26,8 @@
           "step_assistant_solution": "c = 3, a = 5",
           "inputs": [
             {
-              "input_id": "step1_input1_value_1",
-              "label": "ما هي قيمة a و c؟ — القيمة 1",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
               "correct_answer": "5",
               "options": [
                 "5",
@@ -37,8 +37,8 @@
               ]
             },
             {
-              "input_id": "step1_input1_value_2",
-              "label": "ما هي قيمة a و c؟ — القيمة 2",
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
               "correct_answer": "3",
               "options": [
                 "3",
@@ -57,20 +57,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة a و c؟",
+              "correct_answer": "a=5, c=3",
+              "options": [
+                "a=5, c=3",
+                "a=10, c=6",
+                "a=3, c=5",
+                "a=25, c=9"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 "a=",
                 {
-                  "input_id": "step1_input1_value_1"
+                  "input_id": "step1_input1_atom_1"
                 },
                 ", c=",
                 {
-                  "input_id": "step1_input1_value_2"
+                  "input_id": "step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -78,14 +92,36 @@
           "step_assistant_solution": "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي المعادلة الناتجة من تعريف القطع الناقص؟",
-              "correct_answer": "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
+              "input_id": "step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
               "options": [
-                "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
-                "sqrt((x-3)^2 + y^2) - sqrt((x+3)^2 + y^2) = 10",
-                "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 6",
-                "sqrt((x^2) + y^2) = 10"
+                "3",
+                "10",
+                "2",
+                "4"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "6",
+                "9",
+                "11"
               ]
             }
           ],
@@ -98,15 +134,40 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي المعادلة الناتجة من تعريف القطع الناقص؟",
+              "correct_answer": "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
+              "options": [
+                "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 10",
+                "sqrt((x-3)^2 + y^2) - sqrt((x+3)^2 + y^2) = 10",
+                "sqrt((x-3)^2 + y^2) + sqrt((x+3)^2 + y^2) = 6",
+                "sqrt((x^2) + y^2) = 10"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "sqrt((x",
+                "-",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "step2_input1_atom_1"
+                },
+                ")^2 + y^2) + sqrt((x",
+                "+",
+                {
+                  "input_id": "step2_input1_atom_2"
+                },
+                ")^2 + y^2) = ",
+                {
+                  "input_id": "step2_input1_atom_3"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 3,
@@ -114,8 +175,8 @@
           "step_assistant_solution": "x^2/25 + y^2/16 = 1",
           "inputs": [
             {
-              "input_id": "step3_input1_value_2",
-              "label": "ما هي المعادلة النهائية للقطع؟ — القيمة 1",
+              "input_id": "step3_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
               "correct_answer": "25",
               "options": [
                 "25",
@@ -125,8 +186,8 @@
               ]
             },
             {
-              "input_id": "step3_input1_value_4",
-              "label": "ما هي المعادلة النهائية للقطع؟ — القيمة 2",
+              "input_id": "step3_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
               "correct_answer": "16",
               "options": [
                 "16",
@@ -145,26 +206,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "ما هي المعادلة النهائية للقطع؟",
+              "correct_answer": "x^2/25 + y^2/16 = 1",
+              "options": [
+                "x^2/25 + y^2/16 = 1",
+                "x^2/16 + y^2/25 = 1",
+                "x^2/10 + y^2/6 = 1",
+                "x^2/5 + y^2/3 = 1"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "x^",
-                "2",
-                "/",
+                "x^2/",
                 {
-                  "input_id": "step3_input1_value_2"
+                  "input_id": "step3_input1_atom_1"
                 },
-                " + y^",
-                "2",
-                "/",
+                " + y^2/",
                 {
-                  "input_id": "step3_input1_value_4"
+                  "input_id": "step3_input1_atom_2"
                 },
-                " = ",
-                "1"
+                " = 1"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

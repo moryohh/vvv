@@ -15,14 +15,36 @@
           "step_assistant_solution": "(3 + ai)^2 = b + 6i",
           "inputs": [
             {
-              "input_id": "q9_s1",
-              "label": "ما هي المعادلة الناتجة عن تربيع الجذر؟",
-              "correct_answer": "9 + 6ai - a^2 = b + 6i",
+              "input_id": "q9_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "9",
               "options": [
-                "9 + 6ai - a^2 = b + 6i",
-                "9 + ai - a^2 = b + 6i",
-                "9 + 6ai + a^2 = b + 6i",
-                "3 + 6ai - a^2 = b + 6i"
+                "9",
+                "3",
+                "8",
+                "10"
+              ]
+            },
+            {
+              "input_id": "q9_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "5",
+                "7",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q9_s1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "5",
+                "7",
+                "8"
               ]
             }
           ],
@@ -35,16 +57,40 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q9_s1",
+              "label": "ما هي المعادلة الناتجة عن تربيع الجذر؟",
+              "correct_answer": "9 + 6ai - a^2 = b + 6i",
+              "options": [
+                "9 + 6ai - a^2 = b + 6i",
+                "9 + ai - a^2 = b + 6i",
+                "9 + 6ai + a^2 = b + 6i",
+                "3 + 6ai - a^2 = b + 6i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي المعادلة الناتجة عن تربيع الجذر؟ = ",
                 {
-                  "input_id": "q9_s1"
-                }
+                  "input_id": "q9_s1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q9_s1_atom_2"
+                },
+                "ai - a^2 = b ",
+                "+",
+                {
+                  "input_id": "q9_s1_atom_3"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

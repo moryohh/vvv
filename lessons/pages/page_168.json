@@ -15,14 +15,14 @@
           "step_assistant_solution": "p = √6، والمسافة بين البؤرة والدليل هي 2p = 2√6.",
           "inputs": [
             {
-              "input_id": "q21_s1",
-              "label": "ما هي قيمة p للقطع المكافئ؟",
-              "correct_answer": "√6",
+              "input_id": "q21_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "√6",
-                "2√6",
-                "4√6",
-                "√2"
+                "6",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -35,17 +35,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q21_s1",
+              "label": "ما هي قيمة p للقطع المكافئ؟",
+              "correct_answer": "√6",
+              "options": [
+                "√6",
+                "2√6",
+                "4√6",
+                "√2"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "p = ",
+                "√",
                 {
-                  "input_id": "q21_s1"
-                },
-                "، والمسافة بين البؤرة والدليل هي 2p = 2√6."
+                  "input_id": "q21_s1_atom_1"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -113,14 +126,36 @@
           "step_assistant_solution": "16/a^2 + 9/b^2 = 1",
           "inputs": [
             {
-              "input_id": "q23_s1",
-              "label": "كيف نعوض النقطة (4,3) في المعادلة القياسية؟",
-              "correct_answer": "4^2/a^2 + 3^2/b^2 = 1",
+              "input_id": "q23_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "4^2/a^2 + 3^2/b^2 = 1",
-                "4^2/b^2 + 3^2/a^2 = 1",
-                "3^2/a^2 + 4^2/b^2 = 1",
-                "غير ذلك"
+                "4",
+                "3",
+                "5",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q23_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "4",
+                "2",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q23_s1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "0",
+                "2",
+                "3"
               ]
             }
           ],
@@ -133,16 +168,38 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q23_s1",
+              "label": "كيف نعوض النقطة (4,3) في المعادلة القياسية؟",
+              "correct_answer": "4^2/a^2 + 3^2/b^2 = 1",
+              "options": [
+                "4^2/a^2 + 3^2/b^2 = 1",
+                "4^2/b^2 + 3^2/a^2 = 1",
+                "3^2/a^2 + 4^2/b^2 = 1",
+                "غير ذلك"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "كيف نعوض النقطة (4,3) في المعادلة القياسية؟ = ",
                 {
-                  "input_id": "q23_s1"
+                  "input_id": "q23_s1_atom_1"
+                },
+                "^2/a^2 ",
+                "+",
+                {
+                  "input_id": "q23_s1_atom_2"
+                },
+                "^2/b^2 = ",
+                {
+                  "input_id": "q23_s1_atom_3"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

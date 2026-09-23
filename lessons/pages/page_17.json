@@ -15,14 +15,58 @@
           "step_assistant_solution": "7 + √3 i / 1 + 2√3 i",
           "inputs": [
             {
-              "input_id": "q6_s1",
-              "label": "ما هو البسط والمقام بعد تبسيط الجذور؟",
-              "correct_answer": "(7 + √3i) / (1 + 2√3i)",
+              "input_id": "q6_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "7",
               "options": [
-                "(7 + √3i) / (1 + 2√3i)",
-                "(7 - √3i) / (1 - 2√3i)",
-                "(7 + 3i) / (1 + 12i)",
-                "(7 + √3) / (1 + 2√3)"
+                "7",
+                "6",
+                "8",
+                "9"
+              ]
+            },
+            {
+              "input_id": "q6_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q6_s1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "0",
+                "2",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q6_s1_atom_4",
+              "label": "قيمة الجزء 4 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "12",
+                "1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q6_s1_atom_5",
+              "label": "قيمة الجزء 5 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -35,16 +79,48 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q6_s1",
+              "label": "ما هو البسط والمقام بعد تبسيط الجذور؟",
+              "correct_answer": "(7 + √3i) / (1 + 2√3i)",
+              "options": [
+                "(7 + √3i) / (1 + 2√3i)",
+                "(7 - √3i) / (1 - 2√3i)",
+                "(7 + 3i) / (1 + 12i)",
+                "(7 + √3) / (1 + 2√3)"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هو البسط والمقام بعد تبسيط الجذور؟ = ",
+                "(",
                 {
-                  "input_id": "q6_s1"
-                }
+                  "input_id": "q6_s1_atom_1"
+                },
+                " + √",
+                {
+                  "input_id": "q6_s1_atom_2"
+                },
+                "i) / (",
+                {
+                  "input_id": "q6_s1_atom_3"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q6_s1_atom_4"
+                },
+                "√",
+                {
+                  "input_id": "q6_s1_atom_5"
+                },
+                "i)"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -60,6 +136,56 @@
           "step_assistant_solution": "1/2 - 5/2 i",
           "inputs": [
             {
+              "input_id": "ex3_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "3",
+                "0",
+                "2"
+              ]
+            },
+            {
+              "input_id": "ex3_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "- 2",
+                "1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "ex3_s1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "4",
+                "6",
+                "7"
+              ]
+            },
+            {
+              "input_id": "ex3_s1_atom_4",
+              "label": "قيمة الجزء 4 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "3",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "استخدم مرافق المقام (1-i) للبسط والمقام.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "ex3_s1",
               "label": "ما هو ناتج قسمة c1 على c2؟",
               "correct_answer": "1/2 - 5/2 i",
@@ -71,19 +197,30 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "استخدم مرافق المقام (1-i) للبسط والمقام.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "ex3_s1"
-                }
+                  "input_id": "ex3_s1_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "ex3_s1_atom_2"
+                },
+                " ",
+                "-",
+                {
+                  "input_id": "ex3_s1_atom_3"
+                },
+                "/",
+                {
+                  "input_id": "ex3_s1_atom_4"
+                },
+                " i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -106,25 +243,14 @@
           "step_assistant_solution": "i^34 = -1 و i^33 = i",
           "inputs": [
             {
-              "input_id": "ex5_s1_part_1",
-              "label": "ما هي قيم i^34 و i^33؟ — الجزء 1",
+              "input_id": "ex5_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
               "correct_answer": "-1",
               "options": [
                 "-1",
                 "1",
-                "i",
-                "-i"
-              ]
-            },
-            {
-              "input_id": "ex5_s1_part_2",
-              "label": "ما هي قيم i^34 و i^33؟ — الجزء 2",
-              "correct_answer": "i",
-              "options": [
-                "i",
-                "-i",
-                "-1",
-                "1"
+                "-2",
+                "0"
               ]
             }
           ],
@@ -132,19 +258,30 @@
             "step_hint_text": "استخدم دورية العدد i حيث i^4=1.",
             "related_topics": []
           },
+          "source_inputs": [
+            {
+              "input_id": "ex5_s1",
+              "label": "ما هي قيم i^34 و i^33؟",
+              "correct_answer": "-1 و i",
+              "options": [
+                "-1 و i",
+                "1 و -i",
+                "i و -1",
+                "-i و 1"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "ex5_s1_part_1"
+                  "input_id": "ex5_s1_atom_1"
                 },
-                " و ",
-                {
-                  "input_id": "ex5_s1_part_2"
-                }
+                " و i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

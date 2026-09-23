@@ -14,14 +14,14 @@
           "step_assistant_solution": "PF1 + PF2 = 6",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي الصيغة الرياضية الصحيحة للتعريف؟",
-              "correct_answer": "PF1 + PF2 = 6",
+              "input_id": "step1_input1_atom_3",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "PF1 + PF2 = 6",
-                "PF1 - PF2 = 6",
-                "PF1 + PF2 = 3",
-                "PF1 * PF2 = 6"
+                "6",
+                "3",
+                "5",
+                "7"
               ]
             }
           ],
@@ -34,15 +34,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي الصيغة الرياضية الصحيحة للتعريف؟",
+              "correct_answer": "PF1 + PF2 = 6",
+              "options": [
+                "PF1 + PF2 = 6",
+                "PF1 - PF2 = 6",
+                "PF1 + PF2 = 3",
+                "PF1 * PF2 = 6"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "PF1 + PF2 = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "step1_input1_atom_3"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -50,14 +65,36 @@
           "step_assistant_solution": "9x^2 + 9y^2 - 4x^2 = 45",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "بعد التربيع والتبسيط، ما هي المعادلة الناتجة قبل القسمة النهائية؟",
-              "correct_answer": "5x^2 + 9y^2 = 45",
+              "input_id": "step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
               "options": [
-                "5x^2 + 9y^2 = 45",
-                "9x^2 + 5y^2 = 45",
-                "x^2 + y^2 = 45",
-                "5x^2 + 9y^2 = 9"
+                "5",
+                "9",
+                "45",
+                "4"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "5",
+                "8",
+                "10"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "45",
+              "options": [
+                "45",
+                "9",
+                "44",
+                "46"
               ]
             }
           ],
@@ -70,16 +107,38 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "بعد التربيع والتبسيط، ما هي المعادلة الناتجة قبل القسمة النهائية؟",
+              "correct_answer": "5x^2 + 9y^2 = 45",
+              "options": [
+                "5x^2 + 9y^2 = 45",
+                "9x^2 + 5y^2 = 45",
+                "x^2 + y^2 = 45",
+                "5x^2 + 9y^2 = 9"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "بعد التربيع والتبسيط، ما هي المعادلة الناتجة قبل القسمة النهائية؟ = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "step2_input1_atom_1"
+                },
+                "x^2 ",
+                "+",
+                {
+                  "input_id": "step2_input1_atom_2"
+                },
+                "y^2 = ",
+                {
+                  "input_id": "step2_input1_atom_3"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

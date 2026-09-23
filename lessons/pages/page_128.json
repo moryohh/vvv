@@ -71,6 +71,23 @@
           "step_assistant_solution": "معادلة الدليل x=1 والبؤرة (-1, 0).",
           "inputs": [
             {
+              "input_id": "q5_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "-2",
+                "0",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "إذا كان الدليل يوازي محور الصادات فهو من الشكل x=k.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q5_s1_i1",
               "label": "ما هي معادلة الدليل؟",
               "correct_answer": "x=1",
@@ -82,21 +99,17 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "إذا كان الدليل يوازي محور الصادات فهو من الشكل x=k.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
-                "معادلة الدليل ",
+                "x=",
                 {
-                  "input_id": "q5_s1_i1"
-                },
-                " والبؤرة (-1, 0)."
+                  "input_id": "q5_s1_i1_atom_1"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

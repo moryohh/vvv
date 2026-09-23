@@ -15,14 +15,14 @@
           "step_assistant_solution": "المعادلة العامة هي x² = -4py",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
-              "label": "ما هي صيغة معادلة القطع الموازي لمحور الصادات؟",
-              "correct_answer": "x² = -4py",
+              "input_id": "q3_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "x² = -4py",
-                "y² = -4px",
-                "x² = 4py",
-                "y² = 4px"
+                "4",
+                "3",
+                "5",
+                "6"
               ]
             }
           ],
@@ -35,16 +35,32 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_step1_input1",
+              "label": "ما هي صيغة معادلة القطع الموازي لمحور الصادات؟",
+              "correct_answer": "x² = -4py",
+              "options": [
+                "x² = -4py",
+                "y² = -4px",
+                "x² = 4py",
+                "y² = 4px"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "المعادلة العامة هي ",
+                "x² = ",
+                "-",
                 {
-                  "input_id": "q3_step1_input1"
-                }
+                  "input_id": "q3_step1_input1_atom_1"
+                },
+                "py"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

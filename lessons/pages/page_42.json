@@ -59,14 +59,25 @@
           "step_assistant_solution": "a=2, b=-3",
           "inputs": [
             {
-              "input_id": "q8_step1_input1",
-              "label": "ما هما قيمتا a و b؟",
-              "correct_answer": "a=2, b=-3",
+              "input_id": "q8_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "a=2, b=-3",
-                "a=3, b=-2",
-                "a=2, b=3",
-                "a=-2, b=3"
+                "2",
+                "3",
+                "-2",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q8_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -79,15 +90,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q8_step1_input1",
+              "label": "ما هما قيمتا a و b؟",
+              "correct_answer": "a=2, b=-3",
+              "options": [
+                "a=2, b=-3",
+                "a=3, b=-2",
+                "a=2, b=3",
+                "a=-2, b=3"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "a=",
                 {
-                  "input_id": "q8_step1_input1"
+                  "input_id": "q8_step1_input1_atom_1"
+                },
+                ", b=",
+                "-",
+                {
+                  "input_id": "q8_step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

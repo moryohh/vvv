@@ -71,6 +71,23 @@
           "step_assistant_solution": "x^2 = 4py",
           "inputs": [
             {
+              "input_id": "q2b_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "-4",
+                "3",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن المتغير المربع هو x، فإن القطع يتناظر حول محور الصادات (y).",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q2b_step1_input1",
               "label": "أي صيغة نستخدم؟",
               "correct_answer": "x^2 = 4py",
@@ -82,19 +99,18 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "بما أن المتغير المربع هو x، فإن القطع يتناظر حول محور الصادات (y).",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "x^2 = ",
                 {
-                  "input_id": "q2b_step1_input1"
-                }
+                  "input_id": "q2b_step1_input1_atom_1"
+                },
+                "py"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

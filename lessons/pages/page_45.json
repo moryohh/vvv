@@ -67,14 +67,14 @@
           "step_assistant_solution": "z^2 + 6zi - 7i^2 = 0",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "كيف نكتب 7 بدلالة i^2؟",
-              "correct_answer": "-7i^2",
+              "input_id": "q4_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-7",
               "options": [
-                "-7i^2",
-                "7i^2",
-                "-i^2",
-                "7"
+                "-7",
+                "7",
+                "-8",
+                "-6"
               ]
             }
           ],
@@ -87,16 +87,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q4_step1",
+              "label": "كيف نكتب 7 بدلالة i^2؟",
+              "correct_answer": "-7i^2",
+              "options": [
+                "-7i^2",
+                "7i^2",
+                "-i^2",
+                "7"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "كيف نكتب 7 بدلالة i^2؟ = ",
                 {
-                  "input_id": "q4_step1"
-                }
+                  "input_id": "q4_step1_atom_1"
+                },
+                "i^2"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

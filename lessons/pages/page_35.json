@@ -15,14 +15,25 @@
           "step_assistant_solution": "(2x+yi)/(1+i) = (3-i)/(2+i)",
           "inputs": [
             {
-              "input_id": "q30_step1",
-              "label": "ما هي المعادلة بعد أخذ مرافق الطرف الأيمن؟",
-              "correct_answer": "(2x+yi)/(1+i) = (3-i)/(2+i)",
+              "input_id": "q30_step1_term_1",
+              "label": "بسط الكسر بعد المرافق",
+              "correct_answer": "3-i",
               "options": [
-                "(2x+yi)/(1+i) = (3-i)/(2+i)",
-                "(2x+yi)/(1+i) = (3+i)/(2-i)",
-                "(2x+yi) = (3+i)",
-                "(1+i) = (2-i)"
+                "3-i",
+                "2+i",
+                "3+i",
+                "2-i"
+              ]
+            },
+            {
+              "input_id": "q30_step1_term_2",
+              "label": "مقام الكسر بعد المرافق",
+              "correct_answer": "2+i",
+              "options": [
+                "3-i",
+                "2+i",
+                "3+i",
+                "2-i"
               ]
             }
           ],
@@ -35,15 +46,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q30_step1",
+              "label": "ما هي المعادلة بعد أخذ مرافق الطرف الأيمن؟",
+              "correct_answer": "(2x+yi)/(1+i) = (3-i)/(2+i)",
+              "options": [
+                "(2x+yi)/(1+i) = (3-i)/(2+i)",
+                "(2x+yi)/(1+i) = (3+i)/(2-i)",
+                "(2x+yi) = (3+i)",
+                "(1+i) = (2-i)"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "(2x+yi)/(1+i) = (",
                 {
-                  "input_id": "q30_step1"
-                }
+                  "input_id": "q30_step1_term_1"
+                },
+                ") / (",
+                {
+                  "input_id": "q30_step1_term_2"
+                },
+                ")"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -59,14 +90,25 @@
           "step_assistant_solution": "x+yi = [(5-i)/(2+i)] * (3+4i)",
           "inputs": [
             {
-              "input_id": "q31_step1",
-              "label": "ما هو ناتج ضرب (3+4i)(5-i)؟",
-              "correct_answer": "19+17i",
+              "input_id": "q31_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "19",
               "options": [
-                "19+17i",
-                "15-4i",
-                "11+3i",
-                "15+20i"
+                "19",
+                "15",
+                "11",
+                "18"
+              ]
+            },
+            {
+              "input_id": "q31_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "17",
+              "options": [
+                "17",
+                "4",
+                "3",
+                "20"
               ]
             }
           ],
@@ -79,16 +121,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q31_step1",
+              "label": "ما هو ناتج ضرب (3+4i)(5-i)؟",
+              "correct_answer": "19+17i",
+              "options": [
+                "19+17i",
+                "15-4i",
+                "11+3i",
+                "15+20i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هو ناتج ضرب (3+4i)(5-i)؟ = ",
                 {
-                  "input_id": "q31_step1"
-                }
+                  "input_id": "q31_step1_atom_1"
+                },
+                "+",
+                {
+                  "input_id": "q31_step1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

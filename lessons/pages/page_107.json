@@ -14,14 +14,14 @@
           "step_assistant_solution": "cos(π/6) + i sin(π/6)",
           "inputs": [
             {
-              "input_id": "q16_s1",
-              "label": "ما هي الزاوية الأساسية للعدد؟",
-              "correct_answer": "π/6",
+              "input_id": "q16_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "π/6",
-                "π/3",
-                "π/2",
-                "π/4"
+                "6",
+                "3",
+                "2",
+                "4"
               ]
             }
           ],
@@ -34,17 +34,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q16_s1",
+              "label": "ما هي الزاوية الأساسية للعدد؟",
+              "correct_answer": "π/6",
+              "options": [
+                "π/6",
+                "π/3",
+                "π/2",
+                "π/4"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "cos(π/6) + i sin(",
+                "π/",
                 {
-                  "input_id": "q16_s1"
-                },
-                ")"
+                  "input_id": "q16_s1_atom_1"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -60,14 +73,25 @@
           "step_assistant_solution": "ضرب الزوايا في القوى (8, 7, 3)",
           "inputs": [
             {
-              "input_id": "q17_s1",
-              "label": "ما هي قيمة زاوية البسط الكلية بعد التبسيط؟",
-              "correct_answer": "11π/6",
+              "input_id": "q17_s1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "11",
               "options": [
-                "11π/6",
-                "π/2",
-                "π/3",
-                "2π"
+                "11",
+                "2",
+                "3",
+                "10"
+              ]
+            },
+            {
+              "input_id": "q17_s1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "5",
+                "7",
+                "8"
               ]
             }
           ],
@@ -80,16 +104,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q17_s1",
+              "label": "ما هي قيمة زاوية البسط الكلية بعد التبسيط؟",
+              "correct_answer": "11π/6",
+              "options": [
+                "11π/6",
+                "π/2",
+                "π/3",
+                "2π"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي قيمة زاوية البسط الكلية بعد التبسيط؟ = ",
                 {
-                  "input_id": "q17_s1"
+                  "input_id": "q17_s1_atom_1"
+                },
+                "π/",
+                {
+                  "input_id": "q17_s1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

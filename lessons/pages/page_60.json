@@ -371,6 +371,23 @@
           "step_assistant_solution": "-5ω^2",
           "inputs": [
             {
+              "input_id": "q10_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-5",
+              "options": [
+                "-5",
+                "5",
+                "-6",
+                "-4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "1 / ω = ω^2",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q10_step1_input1",
               "label": "الناتج هو:",
               "correct_answer": "-5ω^2",
@@ -382,19 +399,17 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "1 / ω = ω^2",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q10_step1_input1"
-                }
+                  "input_id": "q10_step1_input1_atom_1"
+                },
+                "ω^2"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

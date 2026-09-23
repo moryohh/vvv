@@ -15,14 +15,25 @@
           "step_assistant_solution": "z = 1 - √3i",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هو ناتج تحويل z = 2(cos(5π/3) + i sin(5π/3))؟",
-              "correct_answer": "1 - √3i",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1 - √3i",
-                "1 + √3i",
-                "-1 - √3i",
-                "√3 - i"
+                "1",
+                "-1",
+                "3",
+                "0"
+              ]
+            },
+            {
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -35,16 +46,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هو ناتج تحويل z = 2(cos(5π/3) + i sin(5π/3))؟",
+              "correct_answer": "1 - √3i",
+              "options": [
+                "1 - √3i",
+                "1 + √3i",
+                "-1 - √3i",
+                "√3 - i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "z = ",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "step1_input1_atom_1"
+                },
+                " - √",
+                {
+                  "input_id": "step1_input1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -52,14 +81,14 @@
           "step_assistant_solution": "L = 1 + √3i",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "إذا كان الجذر الأول 1 - √3i، فما هو الجذر الثاني؟",
-              "correct_answer": "1 + √3i",
+              "input_id": "step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1 + √3i",
-                "1 - √3i",
-                "-1 + √3i",
-                "-1 - √3i"
+                "1",
+                "-1",
+                "0",
+                "2"
               ]
             }
           ],
@@ -72,16 +101,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "إذا كان الجذر الأول 1 - √3i، فما هو الجذر الثاني؟",
+              "correct_answer": "1 + √3i",
+              "options": [
+                "1 + √3i",
+                "1 - √3i",
+                "-1 + √3i",
+                "-1 - √3i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "L = ",
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "step2_input1_atom_1"
+                },
+                " + √3i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -97,6 +140,23 @@
           "step_assistant_solution": "√6 / x = -√3",
           "inputs": [
             {
+              "input_id": "q7_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-1",
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "الزاوية 2π/3 تقع في الربع الثاني حيث يكون الظل سالباً.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q7_step1_input1",
               "label": "ما هي قيمة tan(2π/3)؟",
               "correct_answer": "-√3",
@@ -108,20 +168,17 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "الزاوية 2π/3 تقع في الربع الثاني حيث يكون الظل سالباً.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
-                "√6 / x = ",
+                "-√",
                 {
-                  "input_id": "q7_step1_input1"
+                  "input_id": "q7_step1_input1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

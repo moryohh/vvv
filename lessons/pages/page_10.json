@@ -15,14 +15,25 @@
           "step_assistant_solution": "4 - 16i + 16i²",
           "inputs": [
             {
-              "input_id": "q5_s1_i1",
-              "label": "ما هو ناتج فك القوس حسب القانون؟",
-              "correct_answer": "4 - 16i + 16i²",
+              "input_id": "q5_s1_i1_atom_2",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "16",
               "options": [
-                "4 - 16i + 16i²",
-                "4 - 16i + 16",
-                "4 - 8i + 16i²",
-                "4 - 16i - 16i²"
+                "16",
+                "8",
+                "15",
+                "17"
+              ]
+            },
+            {
+              "input_id": "q5_s1_i1_atom_3",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "15",
+                "17",
+                "18"
               ]
             }
           ],
@@ -35,15 +46,37 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q5_s1_i1",
+              "label": "ما هو ناتج فك القوس حسب القانون؟",
+              "correct_answer": "4 - 16i + 16i²",
+              "options": [
+                "4 - 16i + 16i²",
+                "4 - 16i + 16",
+                "4 - 8i + 16i²",
+                "4 - 16i - 16i²"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "4 ",
+                "-",
                 {
-                  "input_id": "q5_s1_i1"
-                }
+                  "input_id": "q5_s1_i1_atom_2"
+                },
+                "i ",
+                "+",
+                {
+                  "input_id": "q5_s1_i1_atom_3"
+                },
+                "i²"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -59,6 +92,34 @@
           "step_assistant_solution": "9 + 24i - 16",
           "inputs": [
             {
+              "input_id": "q6_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-7",
+              "options": [
+                "-7",
+                "25",
+                "7",
+                "-8"
+              ]
+            },
+            {
+              "input_id": "q6_s1_i1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "24",
+              "options": [
+                "24",
+                "23",
+                "25",
+                "26"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "احذر من إشارات الضرب: سالب في سالب يساوي موجب.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q6_s1_i1",
               "label": "ما هو الناتج بعد التعويض عن i² بـ -1؟",
               "correct_answer": "-7 + 24i",
@@ -70,20 +131,22 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "احذر من إشارات الضرب: سالب في سالب يساوي موجب.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
-                "ما هو الناتج بعد التعويض عن i² بـ -1؟ = ",
                 {
-                  "input_id": "q6_s1_i1"
-                }
+                  "input_id": "q6_s1_i1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q6_s1_i1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

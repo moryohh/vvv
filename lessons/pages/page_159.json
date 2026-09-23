@@ -15,14 +15,14 @@
           "step_assistant_solution": "المعادلة تصبح x^2/(k/4) + y^2/(k/2) = 1",
           "inputs": [
             {
-              "input_id": "q2_step1",
-              "label": "ما هي قيمة a^2 بدلالة k؟",
-              "correct_answer": "k/2",
+              "input_id": "q2_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "k/4",
-                "k/2",
-                "k",
-                "2k"
+                "2",
+                "4",
+                "1",
+                "3"
               ]
             }
           ],
@@ -35,17 +35,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q2_step1",
+              "label": "ما هي قيمة a^2 بدلالة k؟",
+              "correct_answer": "k/2",
+              "options": [
+                "k/4",
+                "k/2",
+                "k",
+                "2k"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "المعادلة تصبح x^2/(k/4) + y^2/(",
+                "k/",
                 {
-                  "input_id": "q2_step1"
-                },
-                ") = 1"
+                  "input_id": "q2_step1_atom_1"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -61,14 +74,25 @@
           "step_assistant_solution": "الجزء المقطوع 2b=8 يعني b=4، ومن مساحة 24π نجد a=6.",
           "inputs": [
             {
-              "input_id": "q3_step1",
-              "label": "ما هي المعادلة الصحيحة للقطع؟",
-              "correct_answer": "x^2/16 + y^2/36 = 1",
+              "input_id": "q3_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "16",
               "options": [
-                "x^2/16 + y^2/36 = 1",
-                "x^2/36 + y^2/16 = 1",
-                "x^2/64 + y^2/16 = 1",
-                "x^2/16 + y^2/64 = 1"
+                "16",
+                "36",
+                "64",
+                "15"
+              ]
+            },
+            {
+              "input_id": "q3_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "16",
+                "64",
+                "35"
               ]
             }
           ],
@@ -81,16 +105,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_step1",
+              "label": "ما هي المعادلة الصحيحة للقطع؟",
+              "correct_answer": "x^2/16 + y^2/36 = 1",
+              "options": [
+                "x^2/16 + y^2/36 = 1",
+                "x^2/36 + y^2/16 = 1",
+                "x^2/64 + y^2/16 = 1",
+                "x^2/16 + y^2/64 = 1"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي المعادلة الصحيحة للقطع؟ = ",
+                "x^2/",
                 {
-                  "input_id": "q3_step1"
-                }
+                  "input_id": "q3_step1_atom_1"
+                },
+                " + y^2/",
+                {
+                  "input_id": "q3_step1_atom_2"
+                },
+                " = 1"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

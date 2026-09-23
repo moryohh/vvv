@@ -61,14 +61,14 @@
           "step_assistant_solution": "r=2, θ=π/6",
           "inputs": [
             {
-              "input_id": "q14_step1_input1",
-              "label": "ما هي السعة الأساسية θ؟",
-              "correct_answer": "π/6",
+              "input_id": "q14_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "π/6",
-                "π/3",
-                "π/2",
-                "π/4"
+                "6",
+                "3",
+                "2",
+                "4"
               ]
             }
           ],
@@ -81,16 +81,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q14_step1_input1",
+              "label": "ما هي السعة الأساسية θ؟",
+              "correct_answer": "π/6",
+              "options": [
+                "π/6",
+                "π/3",
+                "π/2",
+                "π/4"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "r=2, θ=",
+                "π/",
                 {
-                  "input_id": "q14_step1_input1"
+                  "input_id": "q14_step1_input1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

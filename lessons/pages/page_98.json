@@ -15,14 +15,14 @@
           "step_assistant_solution": "r=27, θ=π/2",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة السعة θ للعدد 27i؟",
-              "correct_answer": "π/2",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "π/2",
-                "π",
+                "2",
                 "0",
-                "3π/2"
+                "3",
+                "1"
               ]
             }
           ],
@@ -35,16 +35,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة السعة θ للعدد 27i؟",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "π",
+                "0",
+                "3π/2"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "r=27, θ=",
+                "π/",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "step1_input1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

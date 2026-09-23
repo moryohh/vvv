@@ -89,14 +89,25 @@
           "step_assistant_solution": "h = 25/16 و m = 25/9.",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "قيمة h هي:",
-              "correct_answer": "25/16",
+              "input_id": "step3_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "25",
               "options": [
-                "25/16",
-                "16/25",
-                "25/9",
-                "9/25"
+                "25",
+                "16",
+                "9",
+                "24"
+              ]
+            },
+            {
+              "input_id": "step3_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "25",
+                "9",
+                "15"
               ]
             }
           ],
@@ -109,17 +120,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step3_input1",
+              "label": "قيمة h هي:",
+              "correct_answer": "25/16",
+              "options": [
+                "25/16",
+                "16/25",
+                "25/9",
+                "9/25"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "h = ",
                 {
-                  "input_id": "step3_input1"
+                  "input_id": "step3_input1_atom_1"
                 },
-                " و m = 25/9."
+                "/",
+                {
+                  "input_id": "step3_input1_atom_2"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

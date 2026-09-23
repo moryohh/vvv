@@ -26,14 +26,14 @@
           "step_assistant_solution": "x^2 - y^2 = 7 و 2xy = 24",
           "inputs": [
             {
-              "input_id": "q3_s1_i1",
-              "label": "ما هي المعادلة الناتجة عن مساواة الجزء الحقيقي؟",
-              "correct_answer": "x^2 - y^2 = 7",
+              "input_id": "q3_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "7",
               "options": [
-                "x^2 - y^2 = 7",
-                "x^2 + y^2 = 7",
-                "2xy = 7",
-                "x - y = 7"
+                "7",
+                "2",
+                "6",
+                "8"
               ]
             }
           ],
@@ -46,16 +46,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_s1_i1",
+              "label": "ما هي المعادلة الناتجة عن مساواة الجزء الحقيقي؟",
+              "correct_answer": "x^2 - y^2 = 7",
+              "options": [
+                "x^2 - y^2 = 7",
+                "x^2 + y^2 = 7",
+                "2xy = 7",
+                "x - y = 7"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
+                "x^2 - y^2 = ",
                 {
-                  "input_id": "q3_s1_i1"
-                },
-                " و 2xy = 24"
+                  "input_id": "q3_s1_i1_atom_1"
+                }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -71,6 +85,23 @@
           "step_assistant_solution": "2xy = -6",
           "inputs": [
             {
+              "input_id": "q4_s1_i1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "6",
+                "2",
+                "4"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بما أن الجزء التخيلي 2xy يساوي -6، نقسم الطرفين على 2x.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q4_s1_i1",
               "label": "ما هي قيمة y بدلالة x؟",
               "correct_answer": "y = -3/x",
@@ -82,20 +113,19 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "بما أن الجزء التخيلي 2xy يساوي -6، نقسم الطرفين على 2x.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
-                "ما هي قيمة y بدلالة x؟ = ",
+                "y = ",
+                "-",
                 {
-                  "input_id": "q4_s1_i1"
-                }
+                  "input_id": "q4_s1_i1_atom_1"
+                },
+                "/x"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

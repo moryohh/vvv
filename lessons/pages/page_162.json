@@ -15,14 +15,25 @@
           "step_assistant_solution": "c = 5, a = 6, القطع على محور السينات.",
           "inputs": [
             {
-              "input_id": "q9_step1",
-              "label": "ما هي قيم a و c ومحور القطع؟",
-              "correct_answer": "a=6, c=5, محور السينات",
+              "input_id": "q9_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "6",
               "options": [
-                "a=6, c=5, محور السينات",
-                "a=12, c=5, محور الصادات",
-                "a=6, c=25, محور السينات",
-                "a=5, c=6, محور الصادات"
+                "6",
+                "12",
+                "5",
+                "7"
+              ]
+            },
+            {
+              "input_id": "q9_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "25",
+                "6",
+                "4"
               ]
             }
           ],
@@ -35,16 +46,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q9_step1",
+              "label": "ما هي قيم a و c ومحور القطع؟",
+              "correct_answer": "a=6, c=5, محور السينات",
+              "options": [
+                "a=6, c=5, محور السينات",
+                "a=12, c=5, محور الصادات",
+                "a=6, c=25, محور السينات",
+                "a=5, c=6, محور الصادات"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي قيم a و c ومحور القطع؟ = ",
+                "a=",
                 {
-                  "input_id": "q9_step1"
-                }
+                  "input_id": "q9_step1_atom_1"
+                },
+                ", c=",
+                {
+                  "input_id": "q9_step1_atom_2"
+                },
+                ", محور السينات"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

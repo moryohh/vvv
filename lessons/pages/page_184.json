@@ -26,14 +26,14 @@
           "step_assistant_solution": "b = √2",
           "inputs": [
             {
-              "input_id": "q1_step1_input1",
-              "label": "قيمة b هي:",
-              "correct_answer": "√2",
+              "input_id": "q1_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "√2",
-                "2√2",
+                "2",
                 "1",
-                "4"
+                "4",
+                "3"
               ]
             }
           ],
@@ -46,16 +46,30 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q1_step1_input1",
+              "label": "قيمة b هي:",
+              "correct_answer": "√2",
+              "options": [
+                "√2",
+                "2√2",
+                "1",
+                "4"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "b = ",
+                "√",
                 {
-                  "input_id": "q1_step1_input1"
+                  "input_id": "q1_step1_input1_atom_1"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,
@@ -63,14 +77,25 @@
           "step_assistant_solution": "a² = 1/4",
           "inputs": [
             {
-              "input_id": "q1_step2_input1",
-              "label": "قيمة a² هي:",
-              "correct_answer": "1/4",
+              "input_id": "q1_step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
               "options": [
-                "1/4",
-                "1/2",
                 "1",
-                "9"
+                "9",
+                "0",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "3",
+                "5"
               ]
             }
           ],
@@ -83,16 +108,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q1_step2_input1",
+              "label": "قيمة a² هي:",
+              "correct_answer": "1/4",
+              "options": [
+                "1/4",
+                "1/2",
+                "1",
+                "9"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "a² = ",
                 {
-                  "input_id": "q1_step2_input1"
+                  "input_id": "q1_step2_input1_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "q1_step2_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

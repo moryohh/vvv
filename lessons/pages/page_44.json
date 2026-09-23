@@ -60,14 +60,25 @@
           "step_assistant_solution": "Z = ±2√3i",
           "inputs": [
             {
-              "input_id": "q3_step1_input",
-              "label": "ما هو ناتج الجذر؟",
-              "correct_answer": "±2√3i",
+              "input_id": "q3_step1_input_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
               "options": [
-                "±2√3i",
-                "±12i",
-                "±√12",
-                "±6i"
+                "2",
+                "12",
+                "6",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q3_step1_input_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -80,16 +91,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q3_step1_input",
+              "label": "ما هو ناتج الجذر؟",
+              "correct_answer": "±2√3i",
+              "options": [
+                "±2√3i",
+                "±12i",
+                "±√12",
+                "±6i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "Z = ",
+                "±",
                 {
-                  "input_id": "q3_step1_input"
-                }
+                  "input_id": "q3_step1_input_atom_1"
+                },
+                "√",
+                {
+                  "input_id": "q3_step1_input_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -105,14 +135,25 @@
           "step_assistant_solution": "Z^2 = -25/4",
           "inputs": [
             {
-              "input_id": "q4_step1_input",
-              "label": "ما هي قيمة Z^2؟",
-              "correct_answer": "-25/4",
+              "input_id": "q4_step1_input_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-25",
               "options": [
-                "-25/4",
-                "25/4",
                 "-25",
-                "4/25"
+                "25",
+                "4",
+                "-26"
+              ]
+            },
+            {
+              "input_id": "q4_step1_input_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "25",
+                "3",
+                "5"
               ]
             }
           ],
@@ -125,16 +166,33 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q4_step1_input",
+              "label": "ما هي قيمة Z^2؟",
+              "correct_answer": "-25/4",
+              "options": [
+                "-25/4",
+                "25/4",
+                "-25",
+                "4/25"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "Z^2 = ",
                 {
-                  "input_id": "q4_step1_input"
+                  "input_id": "q4_step1_input_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "q4_step1_input_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },

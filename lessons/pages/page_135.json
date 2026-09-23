@@ -26,14 +26,25 @@
           "step_assistant_solution": "a = 5, c = 3",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما قيمة a و c؟",
-              "correct_answer": "a=5, c=3",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
               "options": [
-                "a=5, c=3",
-                "a=3, c=5",
-                "a=25, c=9",
-                "a=5, c=8"
+                "5",
+                "3",
+                "25",
+                "4"
+              ]
+            },
+            {
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "5",
+                "9",
+                "8"
               ]
             }
           ],
@@ -46,16 +57,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما قيمة a و c؟",
+              "correct_answer": "a=5, c=3",
+              "options": [
+                "a=5, c=3",
+                "a=3, c=5",
+                "a=25, c=9",
+                "a=5, c=8"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما قيمة a و c؟ = ",
+                "a=",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "step1_input1_atom_1"
+                },
+                ", c=",
+                {
+                  "input_id": "step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,

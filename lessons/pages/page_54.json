@@ -100,6 +100,34 @@
           "step_assistant_solution": "-1 + 3i",
           "inputs": [
             {
+              "input_id": "q17_step1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "2",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q17_step1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "اضرب البسط والمقام في مرافق المقام (1+i).",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "q17_step1",
               "label": "ناتج قسمة العدد المركب؟",
               "correct_answer": "-1 + 3i",
@@ -111,19 +139,22 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "اضرب البسط والمقام في مرافق المقام (1+i).",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q17_step1"
-                }
+                  "input_id": "q17_step1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q17_step1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

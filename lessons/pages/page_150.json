@@ -15,14 +15,25 @@
           "step_assistant_solution": "c = 4, b = 3",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة c و b؟",
-              "correct_answer": "c=4, b=3",
+              "input_id": "step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "4",
               "options": [
-                "c=4, b=3",
-                "c=8, b=3",
-                "c=4, b=6",
-                "c=2, b=3"
+                "4",
+                "8",
+                "2",
+                "3"
+              ]
+            },
+            {
+              "input_id": "step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "6",
+                "2",
+                "4"
               ]
             }
           ],
@@ -35,16 +46,34 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step1_input1",
+              "label": "ما هي قيمة c و b؟",
+              "correct_answer": "c=4, b=3",
+              "options": [
+                "c=4, b=3",
+                "c=8, b=3",
+                "c=4, b=6",
+                "c=2, b=3"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي قيمة c و b؟ = ",
+                "c=",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "step1_input1_atom_1"
+                },
+                ", b=",
+                {
+                  "input_id": "step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         },
         {
           "step_number": 2,

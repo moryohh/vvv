@@ -52,14 +52,36 @@
           "step_assistant_solution": "الجذر العام هو cos((π + 2kπ)/3) + i sin((π + 2kπ)/3)",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيم الزوايا الناتجة لـ k=0, 1, 2؟",
-              "correct_answer": "π/3, π, 5π/3",
+              "input_id": "step2_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "3",
               "options": [
-                "π/3, π, 5π/3",
-                "0, π, 2π",
-                "π/6, π/3, π/2",
-                "π/2, π, 3π/2"
+                "3",
+                "0",
+                "6",
+                "2"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            {
+              "input_id": "step2_input1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
               ]
             }
           ],
@@ -72,16 +94,38 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "step2_input1",
+              "label": "ما هي قيم الزوايا الناتجة لـ k=0, 1, 2؟",
+              "correct_answer": "π/3, π, 5π/3",
+              "options": [
+                "π/3, π, 5π/3",
+                "0, π, 2π",
+                "π/6, π/3, π/2",
+                "π/2, π, 3π/2"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هي قيم الزوايا الناتجة لـ k=0, 1, 2؟ = ",
+                "π/",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "step2_input1_atom_1"
+                },
+                ", π, ",
+                {
+                  "input_id": "step2_input1_atom_2"
+                },
+                "π/",
+                {
+                  "input_id": "step2_input1_atom_3"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

@@ -82,14 +82,25 @@
           "step_assistant_solution": "Z₁+Z₂=5, Z₁-Z₂=3-4i, -3Z₂=-3-6i, 2Z₁=8-4i",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
-              "label": "ما هو ناتج Z₁ + Z₂؟",
-              "correct_answer": "5 + 0i",
+              "input_id": "q4_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "5",
               "options": [
-                "5 + 0i",
-                "3 - 4i",
-                "5 + 4i",
-                "4 - 2i"
+                "5",
+                "3",
+                "4",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q4_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "4",
+                "2",
+                "-1"
               ]
             }
           ],
@@ -102,16 +113,35 @@
               }
             ]
           },
+          "source_inputs": [
+            {
+              "input_id": "q4_step1_input1",
+              "label": "ما هو ناتج Z₁ + Z₂؟",
+              "correct_answer": "5 + 0i",
+              "options": [
+                "5 + 0i",
+                "3 - 4i",
+                "5 + 4i",
+                "4 - 2i"
+              ]
+            }
+          ],
           "layout": {
             "rows": [
               [
-                "ما هو ناتج Z₁ + Z₂؟ = ",
                 {
-                  "input_id": "q4_step1_input1"
-                }
+                  "input_id": "q4_step1_input1_atom_1"
+                },
+                " ",
+                "+",
+                {
+                  "input_id": "q4_step1_input1_atom_2"
+                },
+                "i"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

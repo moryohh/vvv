@@ -65,6 +65,45 @@
           "step_assistant_solution": "(y + 2)^2 = -2(x + 1)",
           "inputs": [
             {
+              "input_id": "e_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "3",
+                "4"
+              ]
+            },
+            {
+              "input_id": "e_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "e_step1_input1_atom_3",
+              "label": "قيمة الجزء 3 في المعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "0",
+                "2",
+                "3"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "نقل الحدود التي تحتوي على y إلى جهة، والثوابت والـ x إلى الجهة الأخرى ثم إضافة مربع نصف معامل y.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "e_step1_input1",
               "label": "ما هي المعادلة بعد إكمال المربع؟",
               "correct_answer": "(y + 2)^2 = -2(x + 1)",
@@ -76,19 +115,29 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "نقل الحدود التي تحتوي على y إلى جهة، والثوابت والـ x إلى الجهة الأخرى ثم إضافة مربع نصف معامل y.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
+                "(y ",
+                "+",
                 {
-                  "input_id": "e_step1_input1"
-                }
+                  "input_id": "e_step1_input1_atom_1"
+                },
+                ")^2 = ",
+                "-",
+                {
+                  "input_id": "e_step1_input1_atom_2"
+                },
+                "(x ",
+                "+",
+                {
+                  "input_id": "e_step1_input1_atom_3"
+                },
+                ")"
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     },
@@ -115,6 +164,34 @@
           "step_assistant_solution": "p = 1/4",
           "inputs": [
             {
+              "input_id": "f_step1_input1_atom_1",
+              "label": "قيمة الجزء 1 في المعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "4",
+                "9",
+                "0"
+              ]
+            },
+            {
+              "input_id": "f_step1_input1_atom_2",
+              "label": "قيمة الجزء 2 في المعادلة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "5",
+                "6"
+              ]
+            }
+          ],
+          "hint": {
+            "step_hint_text": "بمقارنة المعادلة بـ (x-h)^2 = 4p(y-k)، نجد أن 4p تساوي معامل القوس الخطي.",
+            "related_topics": []
+          },
+          "source_inputs": [
+            {
               "input_id": "f_step1_input1",
               "label": "ما قيمة p في هذه المعادلة؟",
               "correct_answer": "1/4",
@@ -126,20 +203,20 @@
               ]
             }
           ],
-          "hint": {
-            "step_hint_text": "بمقارنة المعادلة بـ (x-h)^2 = 4p(y-k)، نجد أن 4p تساوي معامل القوس الخطي.",
-            "related_topics": []
-          },
           "layout": {
             "rows": [
               [
-                "p = ",
                 {
-                  "input_id": "f_step1_input1"
+                  "input_id": "f_step1_input1_atom_1"
+                },
+                "/",
+                {
+                  "input_id": "f_step1_input1_atom_2"
                 }
               ]
             ]
-          }
+          },
+          "choice_origin": "derived_from_source_options"
         }
       ]
     }

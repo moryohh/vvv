@@ -1,0 +1,49 @@
+{
+  "problem_id": "CHEM_PERCENTAGE_CARBON",
+  "category": "الكيمياء - النسبة المئوية للعناصر",
+  "title": "س/ احسب النسبة المئوية للكربون (C) في حامض الخليك CH₃COOH",
+  "atomic_weights": "C=12, H=1, O=16",
+  "steps": [
+    {
+      "step_id": 1,
+      "title": "الخطوة الأولى: الصيغة الجزيئية وحساب الكتلة المولية M",
+      "explanation": "نضرب عدد ذرات كل عنصر في كتلته الذرية، ثم نجمع الكتل الجزئية.",
+      "think": "الصيغة CH₃COOH تساوي C₂H₄O₂، لذلك نحدد عدد الذرات والكتلة الذرية لكل عنصر.",
+      "template_type": "molar_mass_breakdown",
+      "inputs": [
+        {"id":"inp_1","correct_value":"2","label":"عدد ذرات الكربون","allowed_keys":["1","2","3","4"],"specific_hint":"اقرأ الرقم الصغير بجانب C في C₂H₄O₂.","related_topics":["قراءة الصيغة الكيميائية"]},
+        {"id":"inp_2","correct_value":"12","label":"الكتلة الذرية للكربون","allowed_keys":["1","2","12","16"],"specific_hint":"الكتلة الذرية C=12 موجودة في المعطيات.","related_topics":["الكتلة الذرية"]},
+        {"id":"inp_3","correct_value":"4","label":"عدد ذرات الهيدروجين","allowed_keys":["1","2","4","12"],"specific_hint":"اجمع H₃ مع H الأخيرة.","related_topics":[]},
+        {"id":"inp_4","correct_value":"1","label":"الكتلة الذرية للهيدروجين","allowed_keys":["1","2","12","16"],"specific_hint":"الكتلة الذرية H=1.","related_topics":[]},
+        {"id":"inp_5","correct_value":"2","label":"عدد ذرات الأكسجين","allowed_keys":["1","2","4","16"],"specific_hint":"عدّ حرف O في CH₃COOH.","related_topics":[]}
+      ]
+    },
+    {
+      "step_id": 2,
+      "title": "الخطوة الثانية: نواتج الضرب الجزئية والكتلة المولية الكلية M",
+      "explanation": "نحسب كتلة كل عنصر على حدة، ثم نجمع النتائج للحصول على M.",
+      "think": "نحسب 2×12 و4×1 و2×16، ثم نجمع النواتج.",
+      "template_type": "molar_mass_sum",
+      "inputs": [
+        {"id":"inp_6","correct_value":"24","label":"كتلة الكربون","allowed_keys":["24","14","32","60"],"specific_hint":"2 × 12 = ؟","related_topics":["جدول الضرب"]},
+        {"id":"inp_7","correct_value":"4","label":"كتلة الهيدروجين","allowed_keys":["24","4","5","8"],"specific_hint":"4 × 1 = ؟","related_topics":[]},
+        {"id":"inp_8","correct_value":"32","label":"كتلة الأكسجين","allowed_keys":["24","18","32","64"],"specific_hint":"2 × 16 = ؟","related_topics":[]},
+        {"id":"inp_9","correct_value":"60","label":"الكتلة المولية M","allowed_keys":["24","60","100","70"],"specific_hint":"اجمع 24 + 4 + 32.","related_topics":["جمع الأعداد"]}
+      ]
+    },
+    {
+      "step_id": 3,
+      "title": "الخطوة الثالثة: تطبيق قانون النسبة المئوية للكربون C",
+      "explanation": "نضع كتلة الكربون في البسط وكتلة المركب الكلية في المقام، ثم نضرب في 100%.",
+      "think": "%C = (كتلة الكربون في المركب ÷ الكتلة المولية للمركب) × 100",
+      "template_type": "percentage_formula",
+      "inputs": [
+        {"id":"inp_10","correct_value":"12","label":"الكتلة الذرية للكربون في البسط","allowed_keys":["12","2","24","60"],"specific_hint":"استخدم الكتلة الذرية للكربون.","related_topics":["قانون النسبة المئوية"]},
+        {"id":"inp_11","correct_value":"2","label":"عدد ذرات الكربون في البسط","allowed_keys":["2","4","12","60"],"specific_hint":"عدد C في C₂H₄O₂ هو 2.","related_topics":[]},
+        {"id":"inp_12","correct_value":"60","label":"الكتلة المولية في المقام","allowed_keys":["60","24","100","32"],"specific_hint":"استخدم M التي حسبتها في الخطوة الثانية.","related_topics":[]},
+        {"id":"inp_13","correct_value":"0.4","label":"ناتج القسمة","allowed_keys":["0.4","4","2.5","0.2"],"specific_hint":"24 ÷ 60 = ؟","related_topics":["الكسور العشرية"]},
+        {"id":"inp_14","correct_value":"40","label":"النسبة المئوية النهائية","allowed_keys":["40","4","100","0.4"],"specific_hint":"0.4 × 100 = ؟","related_topics":["الضرب في 100"]}
+      ]
+    }
+  ]
+}

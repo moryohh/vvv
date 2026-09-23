@@ -1,0 +1,30 @@
+# تخطيط المربعات في ملفات JSON
+
+داخل كل `interactive_steps` أضف `layout.rows`: كل صف مصفوفة من نصوص ثابتة ومراجع إلى المربعات. النص الثابت يظهر كما هو؛ العنصر `{ "input_id": "..." }` يصبح مربعًا عند الضغط عليه تظهر خياراته الأربعة من `inputs`.
+
+مثال جاهز: [math-layout-example.json](math-layout-example.json). ارفعه من زر «إضافة JSON» داخل الموقع. لكل مربع `input_id` فريد و`correct_answer` وأربعة `options` مختلفة، ويجب وضع كل `input_id` مرة واحدة في التخطيط. يمكن توزيع القيم على عدة صفوف.
+
+للكسور استخدم عنصرًا مثل:
+
+```json
+{
+  "fraction": {
+    "numerator": [{"input_id": "numerator"}, " × 2"],
+    "denominator": ["60"]
+  }
+}
+```
+
+أضف تعريف `numerator` في `inputs` مع خياراته. النص `60` ثابت ولا يصبح مربعًا. مثال الخطوة المكتمل:
+
+```json
+{
+  "step_number": 1,
+  "step_explanation": "نضرب البسط ثم نقسم على المقام.",
+  "layout": {"rows": [["الناتج = ", {"fraction": {"numerator": [{"input_id": "numerator"}, " × 2"], "denominator": ["60"]}}]]},
+  "inputs": [{"input_id": "numerator", "label": "قيمة البسط", "correct_answer": "12", "options": ["12", "10", "8", "14"]}],
+  "hint": {"step_hint_text": "احسب قيمة البسط أولًا.", "related_topics": []}
+}
+```
+
+الملفات القديمة بلا `layout` لا يمكن استنتاج مواضع الثوابت والمربعات منها تلقائيًا؛ سيعرض الموقع مربعًا لكل عنصر في `inputs`. إذا وضعت جوابين في `correct_answer` واحد، سيظل مربعًا واحدًا؛ قسّمه إلى عنصرين في `inputs` وأشر إليهما في `layout`.

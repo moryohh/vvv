@@ -22,28 +22,29 @@
         {
           "step_number": 1,
           "step_explanation": "كتابة المسافة من النقطة إلى البؤرة F(-p, 0) وإلى المستقيم الدليل x = p.",
+          "equation_template": "x² + {input_1}px + p² + y² = x² {input_2} px + p²",
           "step_assistant_solution": "sqrt((x+p)² + y²) = |x-p|",
           "inputs": [
             {
-              "input_id": "step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "معامل الحد الأول في التفكيك",
               "correct_answer": "2",
               "options": [
                 "2",
+                "-2",
                 "4",
-                "1",
-                "3"
+                "-4"
               ]
             },
             {
-              "input_id": "step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q1_s1_i2",
+              "label": "الإشارة بعد التفكيك",
+              "correct_answer": "-",
               "options": [
-                "2",
-                "1",
-                "3",
-                "4"
+                "-",
+                "+",
+                "=",
+                "×"
               ]
             }
           ],
@@ -56,37 +57,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step1_input1",
-              "label": "ما هي المعادلة الناتجة بعد التربيع؟",
-              "correct_answer": "x² + 2px + p² + y² = x² - 2px + p²",
-              "options": [
-                "x² + 2px + p² + y² = x² - 2px + p²",
-                "x² - 2px + p² + y² = x² + 2px + p²",
-                "x² + y² = 4px",
-                "x² + 2px + p² = y²"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "x² ",
-                "+",
+                "x² + ",
                 {
-                  "input_id": "step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
                 "px + p² + y² = x² ",
-                "-",
                 {
-                  "input_id": "step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                "px + p²"
+                " px + p²"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -110,17 +95,18 @@
         {
           "step_number": 1,
           "step_explanation": "نطبق تعريف القطع المكافئ لمساواة المسافات.",
+          "equation_template": "x² = {input_1}py",
           "step_assistant_solution": "x² = 4py",
           "inputs": [
             {
-              "input_id": "q2_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "المعامل العددي في معادلة القطع",
               "correct_answer": "4",
               "options": [
                 "4",
                 "-4",
-                "3",
-                "5"
+                "2",
+                "-2"
               ]
             }
           ],
@@ -128,31 +114,17 @@
             "step_hint_text": "عندما تقع البؤرة على محور الصادات، المعادلة تكون بدلالة x².",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q2_step1_input1",
-              "label": "ما هي معادلة القطع المكافئ المفتوح للأعلى؟",
-              "correct_answer": "x² = 4py",
-              "options": [
-                "x² = 4py",
-                "x² = -4py",
-                "y² = 4px",
-                "y² = -4px"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x² = ",
                 {
-                  "input_id": "q2_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
                 "py"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -176,17 +148,18 @@
         {
           "step_number": 1,
           "step_explanation": "التعويض في معادلة التعريف للقطع المكافئ للفتحة نحو الأسفل.",
+          "equation_template": "y = {input_1}",
           "step_assistant_solution": "x² = -4py",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
-              "label": "ما هو الدليل للقطع x² = -4py؟",
-              "correct_answer": "y = p",
+              "input_id": "q3_s1_i1",
+              "label": "معادلة الدليل",
+              "correct_answer": "p",
               "options": [
-                "y = p",
-                "y = -p",
-                "x = p",
-                "x = -p"
+                "p",
+                "-p",
+                "2p",
+                "-2p"
               ]
             }
           ],
@@ -197,9 +170,9 @@
           "layout": {
             "rows": [
               [
-                "ما هو الدليل للقطع x² = -4py؟ = ",
+                "y = ",
                 {
-                  "input_id": "q3_step1_input1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]

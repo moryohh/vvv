@@ -12,9 +12,21 @@
           "step_number": 1,
           "step_explanation": "نستخرج قيم الثوابت c و a من المعطيات المباشرة للبعد بين البؤرتين والنسبة المعطاة.",
           "step_assistant_solution": "c = 3, a = 2",
+          "equation_template": "c = {input_1}, a = {input_2}",
           "inputs": [
             {
-              "input_id": "step1_input1",
+              "input_id": "q1_s1_i1",
+              "label": "ما هي قيمة c للقطع؟",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
               "label": "ما هي قيمة a للقطع؟",
               "correct_answer": "2",
               "options": [
@@ -37,9 +49,13 @@
           "layout": {
             "rows": [
               [
-                "c = 3, a = ",
+                "c = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                ", a = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -49,9 +65,10 @@
           "step_number": 2,
           "step_explanation": "نستخدم العلاقة المساعدة للقطع الزائد لإيجاد b².",
           "step_assistant_solution": "b² = 5",
+          "equation_template": "b² = {input_1}",
           "inputs": [
             {
-              "input_id": "step2_input1",
+              "input_id": "q1_s2_i1",
               "label": "ما هي قيمة b²؟",
               "correct_answer": "5",
               "options": [
@@ -71,7 +88,7 @@
               [
                 "b² = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
                 }
               ]
             ]
@@ -89,9 +106,10 @@
           "step_number": 1,
           "step_explanation": "إيجاد بؤرة القطع المكافئ الأول للحصول على قيمة c للقطع الزائد.",
           "step_assistant_solution": "c = 10",
+          "equation_template": "c = {input_1}",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
+              "input_id": "q2_s1_i1",
               "label": "ما هي قيمة c للقطع الزائد؟",
               "correct_answer": "10",
               "options": [
@@ -111,7 +129,7 @@
               [
                 "c = ",
                 {
-                  "input_id": "q3_step1_input1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -121,9 +139,10 @@
           "step_number": 2,
           "step_explanation": "إيجاد رأس القطع الزائد (a) من دليل القطع المكافئ الثاني.",
           "step_assistant_solution": "a = 4",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q3_step2_input1",
+              "input_id": "q2_s2_i1",
               "label": "ما هي قيمة a؟",
               "correct_answer": "4",
               "options": [
@@ -143,7 +162,7 @@
               [
                 "a = ",
                 {
-                  "input_id": "q3_step2_input1"
+                  "input_id": "q2_s2_i1"
                 }
               ]
             ]

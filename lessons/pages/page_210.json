@@ -8,47 +8,572 @@
       "question_text": "جد معادلة القطع الناقص الذي بؤرتاه هما بؤرتي القطع الزائد x^2 - 3y^2 = 12 والنسبة بين طولي محوريه = 3/5 ؟",
       "diagram": null,
       "full_model_solution": "1. إيجاد بؤرتي القطع الزائد: x^2/12 - y^2/4 = 1. بما أن a^2=12, b^2=4، إذن c^2 = a^2 + b^2 = 16، فالبؤرتان (±4, 0). 2. للقطع الناقص c=4, c^2=16. 3. النسبة بين المحورين 2b/2a = 3/5 أي b/a = 3/5 مما يعني b=3k, a=5k. 4. c^2 = a^2 - b^2 => 16 = 25k^2 - 9k^2 = 16k^2 => k=1. إذن a^2=25, b^2=9. المعادلة: x^2/25 + y^2/9 = 1.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "أولاً، نجد قيمة c^2 للقطع الزائد لتحديد البؤرتين.",
+          "equation_template": "c^2 = {input_1} + {input_2} = {input_3}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "12",
+              "options": [
+                "12",
+                "4",
+                "16",
+                "9"
+              ],
+              "input_id": "q1_s1_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "12",
+                "16",
+                "3"
+              ],
+              "input_id": "q1_s1_i2"
+            },
+            {
+              "id": "input_3",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "8",
+                "20",
+                "12"
+              ],
+              "input_id": "q1_s1_i3"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "c^2 = ",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                " + ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_explanation": "ثانياً، نستخدم النسبة بين المحورين لإيجاد قيمتي a^2 و b^2 للقطع الناقص.",
+          "equation_template": "a^2 = {input_1} , b^2 = {input_2}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "9",
+                "16",
+                "36"
+              ],
+              "input_id": "q1_s2_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "4"
+              ],
+              "input_id": "q1_s2_i2"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "a^2 = ",
+                {
+                  "input_id": "q1_s2_i1"
+                },
+                " , b^2 = ",
+                {
+                  "input_id": "q1_s2_i2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "question_number": "10",
       "question_text": "ليكن L = 4x^2 - 5y^2 قطع زائد احدى بؤرتيه هي بؤرة القطع المكافئ الذي معادلته 0 = 4y - √5x^2 جد قيمة L ؟",
       "diagram": null,
-      "full_model_solution": "1. القطع المكافئ: x^2 = (4/√5)y. بالمقارنة مع x^2 = 4py نجد 4p = 4/√5، أي p = 1/√5. بؤرة المكافئ (0, 1/√5). 2. للقطع الزائد (0, ±c) إذن c=1/√5. 3. المعادلة 4x^2 - 5y^2 = L تصبح x^2/(L/4) - y^2/(L/5) = L. c^2 = a^2 + b^2 => 1/5 = L/4 + L/5 = 9L/20 => L = 4/9.",
-      "interactive_steps": []
+      "full_model_solution": "1. القطع المكافئ: x^2 = (4/√5)y. بالمقارنة مع x^2 = 4py نجد 4p = 4/√5، أي p = 1/v5. بؤرة المكافئ (0, 1/√5). 2. للقطع الزائد (0, ±c) إذن c=1/√5. 3. المعادلة 4x^2 - 5y^2 = L تصبح x^2/(L/4) - y^2/(L/5) = L. c^2 = a^2 + b^2 => 1/5 = L/4 + L/5 = 9L/20 => L = 4/9.",
+      "interactive_steps": [
+        {
+          "step_explanation": "نجد بؤرة القطع المكافئ والتي تمثل بؤرة القطع الزائد، ثم نحسب c^2 للقطع الزائد.",
+          "equation_template": "c^2 = 1 / {input_1}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "4",
+                "9",
+                "25"
+              ],
+              "input_id": "q2_s1_i1"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "c^2 = 1 / ",
+                {
+                  "input_id": "q2_s1_i1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_explanation": "نعوض في قانون العلاقة الأساسية للقطع الزائد لإيجاد قيمة L.",
+          "equation_template": "L = {input_1} / {input_2}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "9",
+                "5",
+                "20"
+              ],
+              "input_id": "q2_s2_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "4",
+                "20",
+                "5"
+              ],
+              "input_id": "q2_s2_i2"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "L = ",
+                {
+                  "input_id": "q2_s2_i1"
+                },
+                " / ",
+                {
+                  "input_id": "q2_s2_i2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "question_number": "11",
       "question_text": "قطع زائد وناقص أحدهما يمر ببؤرتي الآخر جد معادلة القطع الزائد اذا علمت ان معادلة القطع الناقص هي : 225 = 9x^2 + 25y^2 ؟",
       "diagram": null,
       "full_model_solution": "1. الناقص: x^2/25 + y^2/9 = 1. بؤرتا الناقص c^2 = 25-9=16 => c=±4. 2. الزائد يمر ببؤرتي الناقص (±4, 0) إذن a=4, a^2=16. 3. الناقص يمر ببؤرتي الزائد (0, ±c) إذن b=3 (رأس الناقص)، c=3 للزائد. 4. للزائد c^2=a^2+b^2 => 9=16+b^2 => b^2=-7 (مستحيل). *ملاحظة: بالمعادلة المعطاة يتبادلون الأدوار، المعادلة الصحيحة للزائد هي x^2/16 - y^2/9 = 1.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "أولاً، نجد بؤرتي القطع الناقص من معادلته المعطاة.",
+          "equation_template": "c^2 = {input_1} - {input_2} = {input_3}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "9",
+                "16",
+                "34"
+              ],
+              "input_id": "q3_s1_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "5"
+              ],
+              "input_id": "q3_s1_i2"
+            },
+            {
+              "id": "input_3",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "34",
+                "9",
+                "25"
+              ],
+              "input_id": "q3_s1_i3"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "c^2 = ",
+                {
+                  "input_id": "q3_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q3_s1_i3"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_explanation": "ثانياً، بما أن كل منهما يمر ببؤرة الآخر، نجد قيمة b^2 للقطع الزائد.",
+          "equation_template": "b^2 = {input_1} - {input_2} = {input_3}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "16",
+                "9",
+                "34"
+              ],
+              "input_id": "q3_s2_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "25",
+                "9",
+                "4"
+              ],
+              "input_id": "q3_s2_i2"
+            },
+            {
+              "id": "input_3",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "16",
+                "25",
+                "7"
+              ],
+              "input_id": "q3_s2_i3"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "b^2 = ",
+                {
+                  "input_id": "q3_s2_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q3_s2_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q3_s2_i3"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "question_number": "12",
       "question_text": "جد معادلة القطع الناقص الذي مركزه نقطة الاصل واحدى بؤرتيه هي بؤرة القطع المكافئ 24y = x^2 والفرق بين طولي محوريه = 4 وحدات ؟",
       "diagram": null,
       "full_model_solution": "1. المكافئ: x^2=24y => 4p=24, p=6. البؤرة (0, 6). 2. الناقص c=6. 3. الفرق بين المحورين 2a-2b=4 => a-b=2 => a=b+2. 4. c^2=a^2-b^2 => 36=(b+2)^2 - b^2 => 36 = 4b+4 => 4b=32 => b=8. إذن a=10. المعادلة x^2/64 + y^2/100 = 1.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "نجد بؤرة القطع المكافئ لتحديد قيمة c للقطع الناقص.",
+          "equation_template": "p = {input_1}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "24",
+                "4",
+                "12"
+              ],
+              "input_id": "q4_s1_i1"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "p = ",
+                {
+                  "input_id": "q4_s1_i1"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_explanation": "باستخدام العلاقة بين المحورين وقيمة c، نجد قيمتي a و b للقطع الناقص.",
+          "equation_template": "a = {input_1} , b = {input_2}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "8",
+                "6",
+                "12"
+              ],
+              "input_id": "q4_s2_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "10",
+                "6",
+                "4"
+              ],
+              "input_id": "q4_s2_i2"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "a = ",
+                {
+                  "input_id": "q4_s2_i1"
+                },
+                " , b = ",
+                {
+                  "input_id": "q4_s2_i2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "question_number": "13",
       "question_text": "جد معادلة القطع الناقص الذي بؤرتاه هما بؤرتي القطع الزائد 32 = x^2 - 8y^2 ويمس دليل القطع المكافئ الذي معادلته 0 = 16x + y^2 ؟",
       "diagram": null,
       "full_model_solution": "1. الزائد: x^2/32 - y^2/4 = 1. c^2 = 32+4=36, c=6. بؤرتا الناقص (±6, 0). 2. المكافئ: y^2 = -16x => 4p=16, p=4. الدليل x=4. 3. الناقص يمس الدليل عند الرأس (a=4). 4. c^2=a^2-b^2 => 36=16-b^2 غير منطقي، الخطأ في نص السؤال أو القيمة، الحل المعتمد للناتج المذكور هو x^2/16 + y^2/52 = 1.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "أولاً، نجد قيمة c^2 للقطع الزائد لتحديد بؤرتي القطع الناقص.",
+          "equation_template": "c^2 = {input_1} + {input_2} = {input_3}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "32",
+              "options": [
+                "32",
+                "4",
+                "36",
+                "8"
+              ],
+              "input_id": "q5_s1_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "32",
+                "8",
+                "16"
+              ],
+              "input_id": "q5_s1_i2"
+            },
+            {
+              "id": "input_3",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "28",
+                "40",
+                "32"
+              ],
+              "input_id": "q5_s1_i3"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "c^2 = ",
+                {
+                  "input_id": "q5_s1_i1"
+                },
+                " + ",
+                {
+                  "input_id": "q5_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q5_s1_i3"
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "step_explanation": "ثانياً، نجد قيمتي a^2 و b^2 للقطع الناقص بناءً على نقطة التماس مع دليل القطع المكافئ.",
+          "equation_template": "a^2 = {input_1} , b^2 = {input_2}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "52",
+              "options": [
+                "52",
+                "16",
+                "36",
+                "20"
+              ],
+              "input_id": "q5_s2_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "52",
+                "36",
+                "4"
+              ],
+              "input_id": "q5_s2_i2"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "a^2 = ",
+                {
+                  "input_id": "q5_s2_i1"
+                },
+                " , b^2 = ",
+                {
+                  "input_id": "q5_s2_i2"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "question_number": "14",
       "question_text": "جد معادلة القطع الزائد القائم الذي مركزه نقطة الاصل وبؤرتاه على محور الصادات ويمر بالنقطة (2, 2√2) ؟",
       "diagram": null,
       "full_model_solution": "1. القطع الزائد القائم يعني a=b، معادلته y^2/a^2 - x^2/a^2 = 1. 2. نعوض النقطة (2, 2√2): (2√2)^2/a^2 - (2)^2/a^2 = 1 => 8/a^2 - 4/a^2 = 1 => 4/a^2 = 1 => a^2=4. 3. المعادلة y^2/4 - x^2/4 = 1.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "نعوض إحداثيات النقطة الممر بها في معادلة القطع الزائد القائم.",
+          "equation_template": "{input_1} / a^2 - {input_2} / a^2 = 1",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "4",
+                "2",
+                "16"
+              ],
+              "input_id": "q6_s1_i1"
+            },
+            {
+              "id": "input_2",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "8",
+                "2",
+                "1"
+              ],
+              "input_id": "q6_s1_i2"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                {
+                  "input_id": "q6_s1_i1"
+                },
+                " / a^2 - ",
+                {
+                  "input_id": "q6_s1_i2"
+                },
+                " / a^2 = 1"
+              ]
+            ]
+          }
+        },
+        {
+          "step_explanation": "نحل المعادلة الناتجة لإيجاد قيمة a^2.",
+          "equation_template": "a^2 = {input_1}",
+          "inputs": [
+            {
+              "id": "input_1",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "8",
+                "2",
+                "16"
+              ],
+              "input_id": "q6_s2_i1"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "a^2 = ",
+                {
+                  "input_id": "q6_s2_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "chapter_id": 2,
   "chapter_title": "القطوع المخروطية",
   "topic_id": "2-10",
   "topic_title": "تمارين متنوعة على القطوع المخروطية",
-  "interactive_status": "read_only"
+  "interactive_status": "ready"
 }

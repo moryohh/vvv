@@ -13,27 +13,39 @@
           "step_number": 1,
           "step_explanation": "نحدد قيمة c من البؤرتين ونوع المحور، وقيمة a من طول المحور الكبير.",
           "step_assistant_solution": "c = 5, a = 6, القطع على محور السينات.",
+          "equation_template": "a = {input_1} , c = {input_2} , القطع على محور {input_3}",
           "inputs": [
             {
-              "input_id": "q9_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "6",
               "options": [
                 "6",
                 "12",
                 "5",
-                "7"
+                "36"
               ]
             },
             {
-              "input_id": "q9_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "قيمة c",
               "correct_answer": "5",
               "options": [
                 "5",
                 "25",
                 "6",
-                "4"
+                "10"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "محور القطع",
+              "correct_answer": "السينات",
+              "options": [
+                "السينات",
+                "الصادات",
+                "الأصل",
+                "المستقيم"
               ]
             }
           ],
@@ -46,35 +58,24 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q9_step1",
-              "label": "ما هي قيم a و c ومحور القطع؟",
-              "correct_answer": "a=6, c=5, محور السينات",
-              "options": [
-                "a=6, c=5, محور السينات",
-                "a=12, c=5, محور الصادات",
-                "a=6, c=25, محور السينات",
-                "a=5, c=6, محور الصادات"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a=",
+                "a = ",
                 {
-                  "input_id": "q9_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", c=",
+                " , c = ",
                 {
-                  "input_id": "q9_step1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                ", محور السينات"
+                " , القطع على محور ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -88,16 +89,39 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد نقطة الانقلاب للدالة عبر المشتقة الثانية.",
           "step_assistant_solution": "المشتقة الثانية هي 6x، نقطة الانقلاب عند x=0 وقيمتها y=2.",
+          "equation_template": "f''(x) = {input_1}x , نقطة الانقلاب = ({input_2}, {input_3})",
           "inputs": [
             {
-              "input_id": "q10_step1",
-              "label": "ما هي نقطة الانقلاب؟",
-              "correct_answer": "(0, 2)",
+              "input_id": "q2_s1_i1",
+              "label": "معامل المشتقة الثانية",
+              "correct_answer": "6",
               "options": [
-                "(0, 2)",
-                "(2, 0)",
-                "(1, 0)",
-                "(0, 0)"
+                "6",
+                "3",
+                "2",
+                "12"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الإحداثي x لنقطة الانقلاب",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "2",
+                "1",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "الإحداثي y لنقطة الانقلاب",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "0",
+                "-1",
+                "6"
               ]
             }
           ],
@@ -113,10 +137,19 @@
           "layout": {
             "rows": [
               [
-                "ما هي نقطة الانقلاب؟ = ",
+                "f''(x) = ",
                 {
-                  "input_id": "q10_step1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                "x , نقطة الانقلاب = (",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ", ",
+                {
+                  "input_id": "q2_s1_i3"
+                },
+                ")"
               ]
             ]
           }

@@ -24,10 +24,11 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبدأ بكتابة تعريف القطع الناقص الذي ينص على أن مجموع بعدي أي نقطة على القطع عن البؤرتين يساوي مقداراً ثابتاً 2a.",
           "step_assistant_solution": "المعادلة هي PF1 + PF2 = 2a",
+          "equation_template": "PF1 + PF2 = {input_1}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هو المقدار الثابت 2a في هذه المسألة؟",
+              "input_id": "q1_s1_i1",
+              "label": "ما هو المقدار الثابت 2a؟",
               "correct_answer": "6",
               "options": [
                 "6",
@@ -49,9 +50,9 @@
           "layout": {
             "rows": [
               [
-                "ما هو المقدار الثابت 2a في هذه المسألة؟ = ",
+                "PF1 + PF2 = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -61,26 +62,49 @@
           "step_number": 2,
           "step_explanation": "الخارطة الذهنية: نطبق قانون المسافة بين نقطتين (x,y) والبؤرتين (0,2) و (0,-2).",
           "step_assistant_solution": "√(x-0)² + (y-2)² + √(x-0)² + (y+2)² = 6",
+          "equation_template": "√(x-{input_1})² + (y-{input_2})² + √(x-{input_3})² + (y+{input_4})² = 6",
           "inputs": [
             {
-              "input_id": "step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة الإحداثي سيني للبؤرة الأولى",
               "correct_answer": "0",
               "options": [
                 "0",
+                "1",
                 "2",
-                "-1",
-                "1"
+                "-2"
               ]
             },
             {
-              "input_id": "step2_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s2_i2",
+              "label": "قيمة الإحداثي صادي للبؤرة الأولى",
               "correct_answer": "2",
               "options": [
                 "2",
+                "-2",
+                "0",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "قيمة الإحداثي سيني للبؤرة الثانية",
+              "correct_answer": "0",
+              "options": [
                 "0",
                 "1",
+                "2",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i4",
+              "label": "قيمة الإحداثي صادي للبؤرة الثانية",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "-2",
+                "0",
                 "3"
               ]
             }
@@ -94,63 +118,56 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step2_input1",
-              "label": "كيف نكتب المسافة بين النقطة (x,y) والنقطة (0,2)؟",
-              "correct_answer": "√(x-0)² + (y-2)²",
-              "options": [
-                "√(x-0)² + (y-2)²",
-                "√(x-2)² + (y-0)²",
-                "√(x+0)² + (y-2)²",
-                "√(x-0)² + (y+2)²"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "√(x",
-                "-",
+                "√(x-",
                 {
-                  "input_id": "step2_input1_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                ")² + (y",
-                "-",
+                ")² + (y-",
                 {
-                  "input_id": "step2_input1_atom_2"
+                  "input_id": "q1_s2_i2"
                 },
-                ")²"
+                ")² + √(x-",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                ")² + (y+",
+                {
+                  "input_id": "q1_s2_i4"
+                },
+                ")² = 6"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 3,
           "step_explanation": "الخارطة الذهنية: التخلص من الجذور عبر النقل والتربيع المتكرر وصولاً للمعادلة القياسية.",
           "step_assistant_solution": "بعد التربيع والتبسيط نصل إلى 9x² + 5y² = 45، وبالقسمة على 45 نحصل على x²/5 + y²/9 = 1",
+          "equation_template": "x²/{input_1} + y²/{input_2} = 1",
           "inputs": [
             {
-              "input_id": "step3_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s3_i1",
+              "label": "مقام x²",
               "correct_answer": "5",
               "options": [
                 "5",
                 "9",
-                "25",
-                "3"
+                "45",
+                "25"
               ]
             },
             {
-              "input_id": "step3_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s3_i2",
+              "label": "مقام y²",
               "correct_answer": "9",
               "options": [
                 "9",
                 "5",
-                "81",
-                "2"
+                "45",
+                "81"
               ]
             }
           ],
@@ -163,35 +180,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step3_input1",
-              "label": "ما هي المعادلة النهائية بعد التبسيط؟",
-              "correct_answer": "x²/5 + y²/9 = 1",
-              "options": [
-                "x²/5 + y²/9 = 1",
-                "x²/9 + y²/5 = 1",
-                "x²/25 + y²/81 = 1",
-                "x²/3 + y²/2 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x²/",
                 {
-                  "input_id": "step3_input1_atom_1"
+                  "input_id": "q1_s3_i1"
                 },
                 " + y²/",
                 {
-                  "input_id": "step3_input1_atom_2"
+                  "input_id": "q1_s3_i2"
                 },
                 " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

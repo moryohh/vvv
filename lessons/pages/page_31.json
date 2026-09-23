@@ -12,16 +12,50 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: ابدأ بفك الأقواس وتجميع الأجزاء الحقيقية والتخيلية لتكوين نظام معادلات.",
           "step_assistant_solution": "المعادلة بعد الفك: 12 + 5i = (xy + 6) + (3y - 2x)i",
+          "equation_template": "12 + 5i = ({input_1} + {input_2}) + ({input_3} - {input_4})i",
           "inputs": [
             {
-              "input_id": "q21_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الأول من الجزء الحقيقي",
+              "correct_answer": "xy",
+              "options": [
+                "xy",
+                "x",
+                "y",
+                "3xy"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الجزء الثاني من الجزء الحقيقي",
               "correct_answer": "6",
               "options": [
                 "6",
-                "5",
-                "12",
-                "7"
+                "-6",
+                "3",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "معامل y في الجزء التخيلي",
+              "correct_answer": "3y",
+              "options": [
+                "3y",
+                "2y",
+                "y",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "معامل x في الجزء التخيلي",
+              "correct_answer": "2x",
+              "options": [
+                "2x",
+                "3x",
+                "x",
+                "2"
               ]
             }
           ],
@@ -34,31 +68,29 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q21_step1",
-              "label": "ما هو الجزء الحقيقي في الطرف الأيمن بعد التبسيط؟",
-              "correct_answer": "xy + 6",
-              "options": [
-                "xy - 6",
-                "xy + 6",
-                "xy + 5i",
-                "12"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "xy ",
-                "+",
+                "12 + 5i = (",
                 {
-                  "input_id": "q21_step1_atom_1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " + ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ") + (",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                ")i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -72,27 +104,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: حلل البسط كفرق بين مربعين لاختصار المقام.",
           "step_assistant_solution": "البسط بعد التحليل: (x - 3i)(x + 3i)",
+          "equation_template": "y / (1 + i) = {input_1} - {input_2}i",
           "inputs": [
             {
-              "input_id": "q22_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "1",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي في الطرف الأيمن",
+              "correct_answer": "x",
               "options": [
-                "1",
-                "- 3",
-                "0",
-                "2"
+                "x",
+                "y",
+                "3",
+                "x^2"
               ]
             },
             {
-              "input_id": "q22_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "معامل i في الطرف الأيمن",
               "correct_answer": "3",
               "options": [
                 "3",
-                "2",
-                "4",
-                "5"
+                "9",
+                "1",
+                "2"
               ]
             }
           ],
@@ -100,36 +133,21 @@
             "step_hint_text": "الفرق بين مربعين a^2 - b^2 = (a-b)(a+b). هنا 9 = (3i)^2.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q22_step1",
-              "label": "ما هو ناتج الاختصار؟",
-              "correct_answer": "y / (1 + i) = x - 3i",
-              "options": [
-                "y / (1 + i) = x + 3i",
-                "y / (1 + i) = x - 3i",
-                "y = x - 3i",
-                "y = (1+i)(x+3i)"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "y / (",
+                "y / (1 + i) = ",
                 {
-                  "input_id": "q22_step1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                " + i) = x ",
-                "-",
+                " - ",
                 {
-                  "input_id": "q22_step1_atom_2"
+                  "input_id": "q2_s1_i2"
                 },
                 "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -143,27 +161,50 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: استخدم تحليل الفرق بين المربعين في الأعداد المركبة.",
           "step_assistant_solution": "المعادلة بعد الاختصار هي: x - 2i = y / (1 + i)",
+          "equation_template": "y = {input_1} + {input_2} + ({input_3} - {input_4})i",
           "inputs": [
             {
-              "input_id": "q23_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q3_s1_i1",
+              "label": "المتغير الأول في الجزء الحقيقي",
+              "correct_answer": "x",
               "options": [
+                "x",
+                "y",
                 "2",
-                "1",
-                "3",
-                "4"
+                "1"
               ]
             },
             {
-              "input_id": "q23_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q3_s1_i2",
+              "label": "الثابت في الجزء الحقيقي",
               "correct_answer": "2",
               "options": [
                 "2",
+                "4",
                 "1",
-                "3",
-                "4"
+                "3"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i3",
+              "label": "المتغير في الجزء التخيلي",
+              "correct_answer": "x",
+              "options": [
+                "x",
+                "y",
+                "2",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i4",
+              "label": "الثابت في الجزء التخيلي",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "4",
+                "1",
+                "3"
               ]
             }
           ],
@@ -171,37 +212,29 @@
             "step_hint_text": "قم بتوزيع القوسين (x-2i)(1+i) بعناية.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q23_step1",
-              "label": "بعد إجراء الضرب التبادلي، ما هي قيمة y بدلالة x؟",
-              "correct_answer": "y = x + 2 + (x - 2)i",
-              "options": [
-                "y = x + 2",
-                "y = x + 2 + (x - 2)i",
-                "y = x - 2",
-                "y = x + 2i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "y = x ",
-                "+",
+                "y = ",
                 {
-                  "input_id": "q23_step1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                " + (x ",
-                "-",
+                " + ",
                 {
-                  "input_id": "q23_step1_atom_2"
+                  "input_id": "q3_s1_i2"
+                },
+                " + (",
+                {
+                  "input_id": "q3_s1_i3"
+                },
+                " - ",
+                {
+                  "input_id": "q3_s1_i4"
                 },
                 ")i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

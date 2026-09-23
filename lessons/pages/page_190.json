@@ -13,10 +13,33 @@
           "step_number": 1,
           "step_explanation": "نستخدم قانون مساحة القطع الناقص لاستخراج علاقة بين a و b.",
           "step_assistant_solution": "a * b = 7",
+          "equation_template": "{input_1} * {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q5_step1_input1",
-              "label": "بناءً على قانون المساحة A = abπ، ما هي قيمة a * b؟",
+              "input_id": "q1_s1_i1",
+              "label": "المتغير الأول في العلاقة",
+              "correct_answer": "a",
+              "options": [
+                "a",
+                "b",
+                "x",
+                "y"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "المتغير الثاني في العلاقة",
+              "correct_answer": "b",
+              "options": [
+                "b",
+                "a",
+                "c",
+                "y"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة حاصل الضرب",
               "correct_answer": "7",
               "options": [
                 "7",
@@ -38,9 +61,16 @@
           "layout": {
             "rows": [
               [
-                "a * b = ",
                 {
-                  "input_id": "q5_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " * ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -50,14 +80,37 @@
           "step_number": 2,
           "step_explanation": "نستخدم قانون محيط القطع الناقص لنجد قيمة a^2 + b^2.",
           "step_assistant_solution": "a^2 + b^2 = 50",
+          "equation_template": "{input_1}^2 + {input_2}^2 = {input_3}",
           "inputs": [
             {
-              "input_id": "q5_step2_input1",
-              "label": "بتربيع طرفي معادلة المحيط بعد التبسيط، ما قيمة a^2 + b^2؟",
+              "input_id": "q1_s2_i1",
+              "label": "المتغير الأول",
+              "correct_answer": "a",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "x"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "المتغير الثاني",
+              "correct_answer": "b",
+              "options": [
+                "b",
+                "a",
+                "y",
+                "z"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "مجموع مربعي المتغيرين",
               "correct_answer": "50",
               "options": [
-                "25",
                 "50",
+                "25",
                 "10",
                 "100"
               ]
@@ -75,9 +128,16 @@
           "layout": {
             "rows": [
               [
-                "a^2 + b^2 = ",
                 {
-                  "input_id": "q5_step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                "^2 + ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                "^2 = ",
+                {
+                  "input_id": "q1_s2_i3"
                 }
               ]
             ]

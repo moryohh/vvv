@@ -13,10 +13,11 @@
           "step_number": 1,
           "step_explanation": "نستخرج قيمة p من معادلة القطع المكافئ لنعرف إحداثيات الرأس للقطع الناقص.",
           "step_assistant_solution": "p = 5",
+          "equation_template": "p = {input_1}",
           "inputs": [
             {
-              "input_id": "q5_s1_i1",
-              "label": "ما هي قيمة p للقطع المكافئ؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة p",
               "correct_answer": "5",
               "options": [
                 "4",
@@ -40,7 +41,7 @@
               [
                 "p = ",
                 {
-                  "input_id": "q5_s1_i1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -58,16 +59,28 @@
           "step_number": 1,
           "step_explanation": "استخدام المعطيات لاستخراج قيم الثوابت a, b, c.",
           "step_assistant_solution": "c = 3, a = b + 1",
+          "equation_template": "c = {input_1} , a = b + {input_2}",
           "inputs": [
             {
-              "input_id": "q6_s1_i1",
-              "label": "بناءً على المعطيات، كم قيمة c؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة c",
               "correct_answer": "3",
               "options": [
                 "6",
                 "3",
                 "2",
                 "1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة الثابت في a",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "0"
               ]
             }
           ],
@@ -85,9 +98,12 @@
               [
                 "c = ",
                 {
-                  "input_id": "q6_s1_i1"
+                  "input_id": "q2_s1_i1"
                 },
-                ", a = b + 1"
+                " , a = b + ",
+                {
+                  "input_id": "q2_s1_i2"
+                }
               ]
             ]
           }

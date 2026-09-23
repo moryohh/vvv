@@ -12,10 +12,11 @@
           "step_number": 1,
           "step_explanation": "نستخرج قيمتي a و c من المعطيات المباشرة (المسافة بين البؤرتين والعدد الثابت).",
           "step_assistant_solution": "c = 4, a = 6",
+          "equation_template": "c = {input_1}, a = {input_2}",
           "inputs": [
             {
-              "input_id": "q2_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة c",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -25,8 +26,8 @@
               ]
             },
             {
-              "input_id": "q2_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "قيمة a",
               "correct_answer": "6",
               "options": [
                 "6",
@@ -45,34 +46,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q2_step1",
-              "label": "ما هي قيم a و c؟",
-              "correct_answer": "c=4, a=6",
-              "options": [
-                "c=4, a=6",
-                "c=8, a=12",
-                "c=2, a=3",
-                "c=16, a=36"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "c=",
+                "c = ",
                 {
-                  "input_id": "q2_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", a=",
+                ", a = ",
                 {
-                  "input_id": "q2_step1_atom_2"
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -97,10 +84,33 @@
           "step_number": 1,
           "step_explanation": "تحديد اتجاه القطع وقيم a و b.",
           "step_assistant_solution": "a=6, b=4, المحور الكبير على الصادات.",
+          "equation_template": "a = {input_1}, b = {input_2}, المحور الكبير على {input_3}",
           "inputs": [
             {
-              "input_id": "q3_step1",
-              "label": "أي محور هو المحور الكبير؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "4",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "8",
+                "6",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "المحور الكبير",
               "correct_answer": "محور الصادات",
               "options": [
                 "محور الصادات",
@@ -117,9 +127,17 @@
           "layout": {
             "rows": [
               [
-                "أي محور هو المحور الكبير؟ = ",
+                "a = ",
                 {
-                  "input_id": "q3_step1"
+                  "input_id": "q2_s1_i1"
+                },
+                ", b = ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ", المحور الكبير على ",
+                {
+                  "input_id": "q2_s1_i3"
                 }
               ]
             ]
@@ -137,10 +155,11 @@
           "step_number": 1,
           "step_explanation": "نضع المعادلة بالصيغة القياسية لتحديد a^2 و b^2 بدلالة K.",
           "step_assistant_solution": "x^2/(36/K) + y^2/9 = 1",
+          "equation_template": "b^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "كم تساوي قيمة b^2؟",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة b^2",
               "correct_answer": "9",
               "options": [
                 "9",
@@ -157,11 +176,10 @@
           "layout": {
             "rows": [
               [
-                "x^2/(36/K) + y^2/",
+                "b^2 = ",
                 {
-                  "input_id": "q4_step1"
-                },
-                " = 1"
+                  "input_id": "q3_s1_i1"
+                }
               ]
             ]
           }

@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "تحديد المركز (h, k) من المعادلة المعطاة.",
           "step_assistant_solution": "المركز هو (2, -3)",
+          "equation_template": "المركز هو ({input_q2_step1_h}, {input_q2_step1_k})",
           "inputs": [
             {
-              "input_id": "q2_step1",
-              "label": "ما هو مركز القطع الناقص؟",
-              "correct_answer": "(2, -3)",
+              "input_id": "q1_s1_i1",
+              "label": "الإحداثي h للمركز",
+              "correct_answer": "2",
               "options": [
-                "(2, -3)",
-                "(-2, 3)",
-                "(3, -2)",
-                "(-3, 2)"
+                "2",
+                "-2",
+                "3",
+                "-3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الإحداثي k للمركز",
+              "correct_answer": "-3",
+              "options": [
+                "-3",
+                "3",
+                "-2",
+                "2"
               ]
             }
           ],
@@ -38,9 +50,22 @@
           "layout": {
             "rows": [
               [
-                "المركز هو ",
+                "المركز هو (",
+                "{input_q2_step1_h}",
+                ", ",
+                "{input_q2_step1_k}",
+                ")"
+              ],
+              [
+                "الإحداثي h للمركز = ",
                 {
-                  "input_id": "q2_step1"
+                  "input_id": "q1_s1_i1"
+                }
+              ],
+              [
+                "الإحداثي k للمركز = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -58,16 +83,50 @@
           "step_number": 1,
           "step_explanation": "تجميع الحدود المتشابهة وإكمال المربع لكل متغير.",
           "step_assistant_solution": "المعادلة الناتجة هي (x+2)^2 / 4 + (y-1)^2 / 1 = 1",
+          "equation_template": "(x + {input_q3_step1_h})^2 / {input_q3_step1_a2} + (y - {input_q3_step1_k})^2 / {input_q3_step1_b2} = 1",
           "inputs": [
             {
-              "input_id": "q3_step1",
-              "label": "ما هي قيمة a^2 و b^2 بعد إكمال المربع؟",
-              "correct_answer": "4 و 1",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة الإزاحة h",
+              "correct_answer": "2",
               "options": [
-                "4 و 1",
-                "2 و 1",
-                "1 و 4",
-                "16 و 4"
+                "2",
+                "-2",
+                "4",
+                "-4"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة المقام الأول a^2",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "1",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "قيمة الإزاحة k",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "-1",
+                "2",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i4",
+              "label": "قيمة المقام الثاني b^2",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "4",
+                "2",
+                "9"
               ]
             }
           ],
@@ -83,9 +142,38 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة a^2 و b^2 بعد إكمال المربع؟ = ",
+                "(x + ",
+                "{input_q3_step1_h}",
+                ")^2 / ",
+                "{input_q3_step1_a2}",
+                " + (y - ",
+                "{input_q3_step1_k}",
+                ")^2 / ",
+                "{input_q3_step1_b2}",
+                " = 1"
+              ],
+              [
+                "قيمة الإزاحة h = ",
                 {
-                  "input_id": "q3_step1"
+                  "input_id": "q2_s1_i1"
+                }
+              ],
+              [
+                "قيمة المقام الأول a^2 = ",
+                {
+                  "input_id": "q2_s1_i2"
+                }
+              ],
+              [
+                "قيمة الإزاحة k = ",
+                {
+                  "input_id": "q2_s1_i3"
+                }
+              ],
+              [
+                "قيمة المقام الثاني b^2 = ",
+                {
+                  "input_id": "q2_s1_i4"
                 }
               ]
             ]

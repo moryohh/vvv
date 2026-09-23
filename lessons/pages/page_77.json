@@ -12,16 +12,28 @@
           "step_number": 1,
           "step_explanation": "نبدأ بتحويل العدد المركب إلى إحداثيات ديكارتية (x, y) لحساب المقياس والزاوية.",
           "step_assistant_solution": "z = (-1, -1)",
+          "equation_template": "z = ({input_1}, {input_2})",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
-              "label": "ما هي قيمة x و y للعدد z = -1 - i؟",
-              "correct_answer": "(-1, -1)",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الإحداثي x",
+              "correct_answer": "-1",
               "options": [
-                "(-1, -1)",
-                "(1, 1)",
-                "(-1, 1)",
-                "(1, -1)"
+                "-1",
+                "1",
+                "-2",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الإحداثي y",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "-2",
+                "0"
               ]
             }
           ],
@@ -32,10 +44,15 @@
           "layout": {
             "rows": [
               [
-                "z = ",
+                "z = (",
                 {
-                  "input_id": "q3_step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                ", ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ")"
               ]
             ]
           }
@@ -52,9 +69,10 @@
           "step_number": 1,
           "step_explanation": "حساب المقياس r للعدد المركب.",
           "step_assistant_solution": "r = 4",
+          "equation_template": "r = {input_1}",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
+              "input_id": "q2_s1_i1",
               "label": "ما هو ناتج المقياس r؟",
               "correct_answer": "4",
               "options": [
@@ -74,7 +92,7 @@
               [
                 "r = ",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -92,9 +110,10 @@
           "step_number": 1,
           "step_explanation": "نحدد موقع العدد في المستوى المركب.",
           "step_assistant_solution": "الربع الثاني",
+          "equation_template": "{input_1}",
           "inputs": [
             {
-              "input_id": "q2_step1_input1",
+              "input_id": "q3_s1_i1",
               "label": "في أي ربع يقع العدد (-2, 2)؟",
               "correct_answer": "الربع الثاني",
               "options": [
@@ -113,7 +132,7 @@
             "rows": [
               [
                 {
-                  "input_id": "q2_step1_input1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]

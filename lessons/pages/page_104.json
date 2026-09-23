@@ -13,60 +13,39 @@
           "step_number": 1,
           "step_explanation": "تحويل المعادلة إلى الصيغة x^(2/3) = -2i وتحديد الصيغة القطبية للعدد المركب -2i.",
           "step_assistant_solution": "x^(2/3) = 2(cos(3π/2) + i sin(3π/2))",
+          "equation_template": "x^(2/3) = {input_1}(cos({input_2}) + i sin({input_3}))",
           "inputs": [
             {
-              "input_id": "q33_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المقياس r",
               "correct_answer": "2",
               "options": [
-                "2",
                 "1",
+                "2",
                 "3",
                 "4"
               ]
             },
             {
-              "input_id": "q33_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s1_i2",
+              "label": "الزاوية θ",
+              "correct_answer": "3π/2",
               "options": [
-                "3",
-                "2",
-                "0",
-                "4"
+                "π/2",
+                "π",
+                "3π/2",
+                "2π"
               ]
             },
             {
-              "input_id": "q33_step1_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q1_s1_i3",
+              "label": "الزاوية θ في الساين",
+              "correct_answer": "3π/2",
               "options": [
-                "2",
-                "0",
-                "1",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q33_step1_input1_atom_4",
-              "label": "قيمة الجزء 4 في المعادلة",
-              "correct_answer": "3",
-              "options": [
-                "3",
-                "2",
-                "4",
-                "5"
-              ]
-            },
-            {
-              "input_id": "q33_step1_input1_atom_5",
-              "label": "قيمة الجزء 5 في المعادلة",
-              "correct_answer": "2",
-              "options": [
-                "2",
-                "1",
-                "3",
-                "4"
+                "π/2",
+                "π",
+                "3π/2",
+                "2π"
               ]
             }
           ],
@@ -79,61 +58,63 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q33_step1_input1",
-              "label": "ما هي الصيغة القطبية للعدد -2i؟",
-              "correct_answer": "2(cos(3π/2) + i sin(3π/2))",
-              "options": [
-                "2(cos(3π/2) + i sin(3π/2))",
-                "2(cos(π/2) + i sin(π/2))",
-                "2(cos(π) + i sin(π))",
-                "2(cos(0) + i sin(0))"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "x^(2/3) = ",
                 {
-                  "input_id": "q33_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
                 "(cos(",
                 {
-                  "input_id": "q33_step1_input1_atom_2"
-                },
-                "π/",
-                {
-                  "input_id": "q33_step1_input1_atom_3"
+                  "input_id": "q1_s1_i2"
                 },
                 ") + i sin(",
                 {
-                  "input_id": "q33_step1_input1_atom_4"
-                },
-                "π/",
-                {
-                  "input_id": "q33_step1_input1_atom_5"
+                  "input_id": "q1_s1_i3"
                 },
                 "))"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "التخلص من الأس 2/3 برفع الطرفين للقوة 3 للحصول على x^2.",
           "step_assistant_solution": "x^2 = 8(cos(9π/2) + i sin(9π/2)) = 8(cos(π/2) + i sin(π/2))",
+          "equation_template": "x^2 = {input_1}(cos({input_2}) + i sin({input_3}))",
           "inputs": [
             {
-              "input_id": "q33_step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q1_s2_i1",
+              "label": "القيمة الناتجة للأس 3",
+              "correct_answer": "8",
               "options": [
                 "2",
-                "3",
-                "1",
-                "4"
+                "4",
+                "8",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "الزاوية المبسطة للكوساين",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "3π/2",
+                "π",
+                "2π"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "الزاوية المبسطة للساين",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "3π/2",
+                "π",
+                "2π"
               ]
             }
           ],
@@ -146,78 +127,41 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q33_step2_input1",
-              "label": "بعد رفع الطرفين للقوة 3، ما هي الزاوية الجديدة؟",
-              "correct_answer": "π/2",
-              "options": [
-                "π/2",
-                "3π/2",
-                "π",
-                "2π"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "π/",
+                "x^2 = ",
                 {
-                  "input_id": "q33_step2_input1_atom_1"
-                }
+                  "input_id": "q1_s2_i1"
+                },
+                "(cos(",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                ") + i sin(",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                "))"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 3,
           "step_explanation": "حساب الجذور التربيعية للعدد المركب الناتج باستخدام قانون ديموافر للجذور.",
           "step_assistant_solution": "x = ±(2+2i)",
+          "equation_template": "x = {input_1}",
           "inputs": [
             {
-              "input_id": "q33_step3_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q1_s3_i1",
+              "label": "قيم الجذور",
+              "correct_answer": "±(2+2i)",
               "options": [
-                "2",
-                "1",
-                "4",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q33_step3_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "2",
-              "options": [
-                "2",
-                "-1",
-                "4",
-                "1"
-              ]
-            },
-            {
-              "input_id": "q33_step3_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "2",
-              "options": [
-                "2",
-                "4",
-                "1",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q33_step3_input1_atom_4",
-              "label": "قيمة الجزء 4 في المعادلة",
-              "correct_answer": "2",
-              "options": [
-                "2",
-                "4",
-                "1",
-                "3"
+                "±(2+2i)",
+                "±(1+i)",
+                "±(2-2i)",
+                "±(4+4i)"
               ]
             }
           ],
@@ -230,44 +174,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q33_step3_input1",
-              "label": "ما هي قيمة الجذور الناتجة؟",
-              "correct_answer": "{2+2i, -2-2i}",
-              "options": [
-                "{2+2i, -2-2i}",
-                "{1+i, -1-i}",
-                "{2-2i, -2+2i}",
-                "{4+4i, -4-4i}"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "{",
+                "x = ",
                 {
-                  "input_id": "q33_step3_input1_atom_1"
-                },
-                "+",
-                {
-                  "input_id": "q33_step3_input1_atom_2"
-                },
-                "i, ",
-                "-",
-                {
-                  "input_id": "q33_step3_input1_atom_3"
-                },
-                "-",
-                {
-                  "input_id": "q33_step3_input1_atom_4"
-                },
-                "i}"
+                  "input_id": "q1_s3_i1"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

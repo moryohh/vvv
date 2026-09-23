@@ -12,10 +12,11 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد المسافة بين بؤرة القطع المكافئ ودليله لتحديد طول المحور الحقيقي للقطع الزائد.",
           "step_assistant_solution": "طول المحور الحقيقي 2a = 12، إذن a = 6.",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q11_s1",
-              "label": "كم تبلغ قيمة a للقطع الزائد؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "6",
               "options": [
                 "6",
@@ -37,11 +38,10 @@
           "layout": {
             "rows": [
               [
-                "طول المحور الحقيقي 2a = 12، إذن a = ",
+                "a = ",
                 {
-                  "input_id": "q11_s1"
-                },
-                "."
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -58,10 +58,11 @@
           "step_number": 1,
           "step_explanation": "نطابق معادلة القطع المكافئ مع الصورة القياسية لإيجاد قيمة الثابت k.",
           "step_assistant_solution": "k = -2",
+          "equation_template": "k = {input_1}",
           "inputs": [
             {
-              "input_id": "q12_s1",
-              "label": "ما هي قيمة k؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة k",
               "correct_answer": "-2",
               "options": [
                 "-2",
@@ -85,7 +86,7 @@
               [
                 "k = ",
                 {
-                  "input_id": "q12_s1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]

@@ -12,49 +12,50 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبدأ بترتيب الحدود وجمع المتغيرات المتشابهة لتجهيزها لعملية إكمال المربع.",
           "step_assistant_solution": "(x² + 4x) + 25(y² - 6y) = -204",
+          "equation_template": "(x² + {input_1}x) + {input_2}(y² - {input_3}y) = -{input_4}",
           "inputs": [
             {
-              "input_id": "qf_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "معامل x",
               "correct_answer": "4",
               "options": [
                 "4",
                 "2",
-                "3",
-                "5"
+                "8",
+                "16"
               ]
             },
             {
-              "input_id": "qf_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "العامل المشترك لـ y",
               "correct_answer": "25",
               "options": [
                 "25",
+                "5",
                 "150",
-                "3",
-                "24"
+                "1"
               ]
             },
             {
-              "input_id": "qf_step1_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q1_s1_i3",
+              "label": "معامل y بعد سحب العامل المشترك",
               "correct_answer": "6",
               "options": [
                 "6",
-                "204",
                 "150",
-                "25"
+                "3",
+                "12"
               ]
             },
             {
-              "input_id": "qf_step1_input1_atom_4",
-              "label": "قيمة الجزء 4 في المعادلة",
+              "input_id": "q1_s1_i4",
+              "label": "الحد المطلق المنقول للطرف الآخر",
               "correct_answer": "204",
               "options": [
                 "204",
-                "203",
-                "205",
-                "206"
+                "150",
+                "225",
+                "200"
               ]
             }
           ],
@@ -67,46 +68,28 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "qf_step1_input1",
-              "label": "ما هو ناتج تجميع الحدود الصحيح قبل إكمال المربع؟",
-              "correct_answer": "(x² + 4x) + 25(y² - 6y) = -204",
-              "options": [
-                "(x² + 4x) + 25(y² - 6y) = -204",
-                "(x² + 4x) + (y² - 150y) = -204",
-                "x² + 4x + 25y² - 150y = 204",
-                "(x+2)² + (y-3)² = 25"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(x² ",
-                "+",
+                "(x² + ",
                 {
-                  "input_id": "qf_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "x) ",
-                "+",
+                "x) + ",
                 {
-                  "input_id": "qf_step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                "(y² ",
-                "-",
+                "(y² - ",
                 {
-                  "input_id": "qf_step1_input1_atom_3"
+                  "input_id": "q1_s1_i3"
                 },
-                "y) = ",
-                "-",
+                "y) = -",
                 {
-                  "input_id": "qf_step1_input1_atom_4"
+                  "input_id": "q1_s1_i4"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -120,27 +103,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: استخراج قيم الثوابت a و c من معطيات السؤال.",
           "step_assistant_solution": "a=6, c=5",
+          "equation_template": "a = {input_1}, c = {input_2}",
           "inputs": [
             {
-              "input_id": "q2_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة الثابت a",
               "correct_answer": "6",
               "options": [
                 "6",
                 "12",
-                "5",
-                "10"
+                "36",
+                "5"
               ]
             },
             {
-              "input_id": "q2_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة الثابت c",
               "correct_answer": "5",
               "options": [
                 "5",
+                "25",
                 "6",
-                "4",
-                "7"
+                "10"
               ]
             }
           ],
@@ -153,34 +137,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q2_step1_input1",
-              "label": "ما هي قيم a و c المستخرجة؟",
-              "correct_answer": "a=6, c=5",
-              "options": [
-                "a=6, c=5",
-                "a=12, c=5",
-                "a=5, c=6",
-                "a=10, c=5"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a=",
+                "a = ",
                 {
-                  "input_id": "q2_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                ", c=",
+                ", c = ",
                 {
-                  "input_id": "q2_step1_input1_atom_2"
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

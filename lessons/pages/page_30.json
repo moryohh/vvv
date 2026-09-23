@@ -12,39 +12,40 @@
         {
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نقوم بفك الأقواس باستخدام خاصية التوزيع (2x*x + 2x*i + i*x + i*i). تذكر أن i^2 = -1.",
+          "equation_template": "y + 5i = {input_1}x^2 + {input_2}xi {input_3} 1",
           "step_assistant_solution": "2x^2 + 3xi - 1",
           "inputs": [
             {
-              "input_id": "q19_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "معامل x^2",
               "correct_answer": "2",
               "options": [
-                "2",
                 "1",
+                "2",
                 "3",
                 "4"
               ]
             },
             {
-              "input_id": "q19_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "معامل xi",
               "correct_answer": "3",
               "options": [
-                "3",
                 "1",
                 "2",
-                "4"
+                "3",
+                "5"
               ]
             },
             {
-              "input_id": "q19_step1_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "1",
+              "input_id": "q1_s1_i3",
+              "label": "الإشارة",
+              "correct_answer": "-",
               "options": [
-                "1",
-                "0",
-                "2",
-                "3"
+                "+",
+                "-",
+                "*",
+                "/"
               ]
             }
           ],
@@ -57,39 +58,25 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q19_step1_input1",
-              "label": "ما هو ناتج فك القوس وتبسيط i^2؟",
-              "correct_answer": "2x^2 + 3xi - 1",
-              "options": [
-                "2x^2 + 3xi - 1",
-                "2x^2 + 3xi + 1",
-                "2x^2 + xi - 1",
-                "2x^2 + 3xi"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "y + 5i = ",
                 {
-                  "input_id": "q19_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "x^2 ",
-                "+",
+                "x^2 + ",
                 {
-                  "input_id": "q19_step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
                 "xi ",
-                "-",
                 {
-                  "input_id": "q19_step1_input1_atom_3"
-                }
+                  "input_id": "q1_s1_i3"
+                },
+                " 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -102,50 +89,51 @@
         {
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نفك القوس المربع (a+bi)^2 = a^2 + 2abi - b^2 للطرفين.",
+          "equation_template": "({input_1} + {input_2}i)y = x^2 + 6xi {input_3} {input_4}",
           "step_assistant_solution": "(5 + 12i)y = x^2 + 6xi - 9",
           "inputs": [
             {
-              "input_id": "q20_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "5",
               "options": [
+                "3",
                 "5",
                 "9",
-                "4",
-                "6"
+                "12"
               ]
             },
             {
-              "input_id": "q20_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "معامل i",
               "correct_answer": "12",
               "options": [
-                "12",
                 "6",
-                "11",
-                "13"
+                "9",
+                "12",
+                "15"
               ]
             },
             {
-              "input_id": "q20_step1_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "6",
+              "input_id": "q2_s1_i3",
+              "label": "الإشارة",
+              "correct_answer": "-",
               "options": [
-                "6",
-                "12",
-                "3",
-                "5"
+                "+",
+                "-",
+                "*",
+                "/"
               ]
             },
             {
-              "input_id": "q20_step1_input1_atom_4",
-              "label": "قيمة الجزء 4 في المعادلة",
+              "input_id": "q2_s1_i4",
+              "label": "الرقم الثابت",
               "correct_answer": "9",
               "options": [
+                "3",
+                "6",
                 "9",
-                "8",
-                "10",
-                "11"
+                "12"
               ]
             }
           ],
@@ -158,45 +146,28 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q20_step1_input1",
-              "label": "ما هو ناتج فك التربيع للطرفين؟",
-              "correct_answer": "(5 + 12i)y = x^2 + 6xi - 9",
-              "options": [
-                "(5 + 12i)y = x^2 + 6xi - 9",
-                "(9 + 12i)y = x^2 + 6xi + 9",
-                "(5 + 6i)y = x^2 + 12xi - 9",
-                "(5 + 12i)y = x^2 + 3xi - 9"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "(",
                 {
-                  "input_id": "q20_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
+                },
+                " + ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "i)y = x^2 + 6xi ",
+                {
+                  "input_id": "q2_s1_i3"
                 },
                 " ",
-                "+",
                 {
-                  "input_id": "q20_step1_input1_atom_2"
-                },
-                "i)y = x^2 ",
-                "+",
-                {
-                  "input_id": "q20_step1_input1_atom_3"
-                },
-                "xi ",
-                "-",
-                {
-                  "input_id": "q20_step1_input1_atom_4"
+                  "input_id": "q2_s1_i4"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

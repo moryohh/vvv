@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: الهدف هو تحويل المعادلة x^3 = -1 إلى الصيغة القطبية لاستخدام مبرهنة ديموافر.",
           "step_assistant_solution": "الصيغة القطبية للعدد -1 هي cos(π) + i sin(π)",
+          "equation_template": "cos({step1_input1}) + i sin({step1_input2})",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي الصيغة القطبية للعدد -1؟",
-              "correct_answer": "cos(π) + i sin(π)",
+              "input_id": "q1_s1_i1",
+              "label": "الزاوية للجزء الحقيقي",
+              "correct_answer": "π",
               "options": [
-                "cos(π) + i sin(π)",
-                "cos(0) + i sin(0)",
-                "cos(π/2) + i sin(π/2)",
-                "cos(2π) + i sin(2π)"
+                "π",
+                "0",
+                "π/2",
+                "2π"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الزاوية للجزء التخيلي",
+              "correct_answer": "π",
+              "options": [
+                "π",
+                "0",
+                "π/2",
+                "2π"
               ]
             }
           ],
@@ -38,9 +50,22 @@
           "layout": {
             "rows": [
               [
-                "الصيغة القطبية للعدد -1 هي ",
+                "cos(",
+                "{step1_input1}",
+                ") + i sin(",
+                "{step1_input2}",
+                ")"
+              ],
+              [
+                "الزاوية للجزء الحقيقي = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                }
+              ],
+              [
+                "الزاوية للجزء التخيلي = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -50,38 +75,39 @@
           "step_number": 2,
           "step_explanation": "تطبيق مبرهنة ديموافر لإيجاد الجذور التكعيبية عبر إضافة 2kπ للزاوية والقسمة على 3.",
           "step_assistant_solution": "الجذر العام هو cos((π + 2kπ)/3) + i sin((π + 2kπ)/3)",
+          "equation_template": "{step2_input1}, {step2_input2}, {step2_input3}",
           "inputs": [
             {
-              "input_id": "step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s2_i1",
+              "label": "الزاوية الأولى عند k=0",
+              "correct_answer": "π/3",
               "options": [
-                "3",
-                "0",
-                "6",
-                "2"
+                "π/3",
+                "π/6",
+                "π/4",
+                "π/2"
               ]
             },
             {
-              "input_id": "step2_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "5",
+              "input_id": "q1_s2_i2",
+              "label": "الزاوية الثانية عند k=1",
+              "correct_answer": "π",
               "options": [
-                "5",
-                "2",
-                "3",
-                "4"
+                "π",
+                "2π",
+                "π/2",
+                "3π/2"
               ]
             },
             {
-              "input_id": "step2_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s2_i3",
+              "label": "الزاوية الثالثة عند k=2",
+              "correct_answer": "5π/3",
               "options": [
-                "3",
-                "2",
-                "4",
-                "5"
+                "5π/3",
+                "4π/3",
+                "7π/3",
+                "2π/3"
               ]
             }
           ],
@@ -94,38 +120,35 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step2_input1",
-              "label": "ما هي قيم الزوايا الناتجة لـ k=0, 1, 2؟",
-              "correct_answer": "π/3, π, 5π/3",
-              "options": [
-                "π/3, π, 5π/3",
-                "0, π, 2π",
-                "π/6, π/3, π/2",
-                "π/2, π, 3π/2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "π/",
+                "{step2_input1}",
+                ", ",
+                "{step2_input2}",
+                ", ",
+                "{step2_input3}"
+              ],
+              [
+                "الزاوية الأولى عند k=0 = ",
                 {
-                  "input_id": "step2_input1_atom_1"
-                },
-                ", π, ",
+                  "input_id": "q1_s2_i1"
+                }
+              ],
+              [
+                "الزاوية الثانية عند k=1 = ",
                 {
-                  "input_id": "step2_input1_atom_2"
-                },
-                "π/",
+                  "input_id": "q1_s2_i2"
+                }
+              ],
+              [
+                "الزاوية الثالثة عند k=2 = ",
                 {
-                  "input_id": "step2_input1_atom_3"
+                  "input_id": "q1_s2_i3"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

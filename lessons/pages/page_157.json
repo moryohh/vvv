@@ -13,10 +13,11 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبدأ بإيجاد بؤرة القطع المكافئ لاستخراج قيمة c للقطع الناقص.",
           "step_assistant_solution": "قيمة c^2 هي 3.",
+          "equation_template": "c^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "q8_step1",
-              "label": "ما هي قيمة c^2 للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة c^2",
               "correct_answer": "3",
               "options": [
                 "3",
@@ -38,11 +39,10 @@
           "layout": {
             "rows": [
               [
-                "قيمة c^2 هي ",
+                "c^2 = ",
                 {
-                  "input_id": "q8_step1"
-                },
-                "."
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -59,10 +59,11 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: إيجاد قيمة c من القطع المكافئ.",
           "step_assistant_solution": "قيمة c = 6.",
+          "equation_template": "c = {input_1}",
           "inputs": [
             {
-              "input_id": "q9_step1",
-              "label": "ما هي قيمة c للقطع الناقص؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة c",
               "correct_answer": "6",
               "options": [
                 "6",
@@ -84,11 +85,10 @@
           "layout": {
             "rows": [
               [
-                "قيمة c = ",
+                "c = ",
                 {
-                  "input_id": "q9_step1"
-                },
-                "."
+                  "input_id": "q2_s1_i1"
+                }
               ]
             ]
           }

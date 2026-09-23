@@ -13,10 +13,33 @@
           "step_number": 1,
           "step_explanation": "تحديد بؤرتي القطع الناقص التي هي نفسها بؤرتا القطع الزائد.",
           "step_assistant_solution": "البؤرتان هما (0, 4) و (0, -4)",
+          "equation_template": "c^2 = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة c^2 للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a^2 للقطع الناقص",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "9",
+                "16",
+                "34"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b^2 للقطع الناقص",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة c^2 للقطع الناقص",
               "correct_answer": "16",
               "options": [
                 "16",
@@ -38,9 +61,17 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة c^2 للقطع الناقص؟ = ",
+                "c^2 = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -50,16 +81,39 @@
           "step_number": 2,
           "step_explanation": "إيجاد معادلة الدليل للقطع المكافئ لمعرفة نقطة تقاطع القطع الزائد.",
           "step_assistant_solution": "معادلة الدليل هي y = 3",
+          "equation_template": "4p = {input_1} , p = {input_2} , y = {input_3}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيمة p في القطع المكافئ؟",
+              "input_id": "q1_s2_i1",
+              "label": "معامل y في المعادلة القياسية (4p)",
+              "correct_answer": "12",
+              "options": [
+                "12",
+                "4",
+                "3",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة p للقطع المكافئ",
               "correct_answer": "3",
               "options": [
                 "3",
                 "6",
                 "12",
                 "4"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "معادلة الدليل y",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "6",
+                "12"
               ]
             }
           ],
@@ -75,9 +129,17 @@
           "layout": {
             "rows": [
               [
-                "معادلة الدليل هي y = ",
+                "4p = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " , p = ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " , y = ",
+                {
+                  "input_id": "q1_s2_i3"
                 }
               ]
             ]
@@ -87,16 +149,28 @@
           "step_number": 3,
           "step_explanation": "استخراج قيم الثوابت h و k بالمقارنة.",
           "step_assistant_solution": "k = 7, h = 9",
+          "equation_template": "k = {input_1} , h = {input_2}",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "ما هي قيمة k؟",
+              "input_id": "q1_s3_i1",
+              "label": "قيمة الثابت k",
               "correct_answer": "7",
               "options": [
                 "7",
                 "9",
                 "63",
                 "3"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "label": "قيمة الثابت h",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "7",
+                "63",
+                "16"
               ]
             }
           ],
@@ -114,9 +188,12 @@
               [
                 "k = ",
                 {
-                  "input_id": "step3_input1"
+                  "input_id": "q1_s3_i1"
                 },
-                ", h = 9"
+                " , h = ",
+                {
+                  "input_id": "q1_s3_i2"
+                }
               ]
             ]
           }

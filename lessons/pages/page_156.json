@@ -12,16 +12,17 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد البؤرتين عن طريق تقاطع المنحني مع محور الصادات بجعل إحداثي x يساوي صفراً.",
           "step_assistant_solution": "بالتعويض x=0 في المعادلة نجد y^2=16 مما يعني أن البؤرتين هما (0, 4) و (0, -4).",
+          "equation_template": "c = {input_1}",
           "inputs": [
             {
-              "input_id": "q6_s1",
-              "label": "ما قيمة c للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة البعد البؤري c",
               "correct_answer": "4",
               "options": [
                 "4",
                 "16",
                 "3",
-                "25"
+                "2"
               ]
             }
           ],
@@ -37,11 +38,10 @@
           "layout": {
             "rows": [
               [
-                "بالتعويض x=0 في المعادلة نجد y^2=16 مما يعني أن البؤرتين هما (0, 4) و (0, -",
+                "c = ",
                 {
-                  "input_id": "q6_s1"
-                },
-                ")."
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -58,16 +58,17 @@
           "step_number": 1,
           "step_explanation": "نستخرج العلاقة بين المحاور الكبيرة والصغيرة أولاً.",
           "step_assistant_solution": "طول المحور الكبير 2a يساوي ضعف طول المحور الصغير 2b، أي 2a = 4b ومنه a = 2b.",
+          "equation_template": "a = {input_1} b",
           "inputs": [
             {
-              "input_id": "q7_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "معامل b",
               "correct_answer": "2",
               "options": [
                 "2",
                 "4",
                 "1",
-                "3"
+                "0.5"
               ]
             }
           ],
@@ -75,31 +76,17 @@
             "step_hint_text": "المحور الكبير هو 2a والمحور الصغير هو 2b.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q7_s1",
-              "label": "ما هي العلاقة بين a و b؟",
-              "correct_answer": "a = 2b",
-              "options": [
-                "a = 2b",
-                "b = 2a",
-                "a = b",
-                "a = 4b"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "a = ",
                 {
-                  "input_id": "q7_s1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                "b"
+                " b"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

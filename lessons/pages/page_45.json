@@ -12,16 +12,39 @@
           "step_number": 1,
           "step_explanation": "تحديد قيم المعاملات a, b, c من المعادلة القياسية.",
           "step_assistant_solution": "a=2, b=-5, c=13",
+          "equation_template": "a = {input_1}, b = {input_2}, c = {input_3}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة b؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المعامل a",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "-2",
+                "5",
+                "13"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة المعامل b",
               "correct_answer": "-5",
               "options": [
                 "-5",
                 "2",
                 "13",
                 "5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة المعامل c",
+              "correct_answer": "13",
+              "options": [
+                "13",
+                "-13",
+                "5",
+                "2"
               ]
             }
           ],
@@ -37,11 +60,18 @@
           "layout": {
             "rows": [
               [
-                "a=2, b=",
+                "a = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", c=13"
+                ", b = ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ", c = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
           }
@@ -65,16 +95,28 @@
           "step_number": 1,
           "step_explanation": "استبدال الثابت 7 بـ -7i^2 لتمكين التحليل بالتجربة.",
           "step_assistant_solution": "z^2 + 6zi - 7i^2 = 0",
+          "equation_template": "z^2 + {input_1}zi + {input_2} = 0",
           "inputs": [
             {
-              "input_id": "q4_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "-7",
+              "input_id": "q3_s1_i1",
+              "label": "معامل الحد الأوسط",
+              "correct_answer": "6",
               "options": [
-                "-7",
+                "6",
+                "-6",
                 "7",
-                "-8",
-                "-6"
+                "3"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "الحد الثابت بدلالة i^2",
+              "correct_answer": "-7i^2",
+              "options": [
+                "-7i^2",
+                "7i^2",
+                "-i^2",
+                "7"
               ]
             }
           ],
@@ -87,30 +129,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q4_step1",
-              "label": "كيف نكتب 7 بدلالة i^2؟",
-              "correct_answer": "-7i^2",
-              "options": [
-                "-7i^2",
-                "7i^2",
-                "-i^2",
-                "7"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "z^2 + ",
                 {
-                  "input_id": "q4_step1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                "i^2"
+                "zi + ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " = 0"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },

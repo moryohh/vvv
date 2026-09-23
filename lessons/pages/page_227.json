@@ -24,16 +24,39 @@
           "step_number": 1,
           "step_explanation": "تحديد المستوى المار بالمستقيمات المعطاة لإثبات التعامد.",
           "step_assistant_solution": "تكوين المستوى (Z) الذي يحتوي على المستقيمين المتقاطعين BC و BD.",
+          "equation_template": "تكوين المستوى {input_1} الذي يحتوي على المستقيمين المتقاطعين {input_2} و {input_3}.",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "أي مستوى يمر بالمستقيمين BC و BD؟",
-              "correct_answer": "المستوى (Z)",
+              "input_id": "q1_s1_i1",
+              "label": "المستوى المحتوي على المستقيمين",
+              "correct_answer": "(Z)",
               "options": [
-                "المستوى (Z)",
-                "المستوى (X)",
-                "المستوى (Y)",
-                "مستوى غير مسمى"
+                "(Z)",
+                "(X)",
+                "(Y)",
+                "(W)"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "المستقيم الأول",
+              "correct_answer": "BC",
+              "options": [
+                "BC",
+                "AB",
+                "CD",
+                "BD"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "المستقيم الثاني",
+              "correct_answer": "BD",
+              "options": [
+                "BD",
+                "BC",
+                "AB",
+                "CD"
               ]
             }
           ],
@@ -49,11 +72,19 @@
           "layout": {
             "rows": [
               [
-                "تكوين ",
+                "تكوين المستوى ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                " الذي يحتوي على المستقيمين المتقاطعين BC و BD."
+                " الذي يحتوي على المستقيمين المتقاطعين ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " و ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                "."
               ]
             ]
           }
@@ -62,16 +93,61 @@
           "step_number": 2,
           "step_explanation": "استخدام مبرهنة تعامد مستقيم على مستوى.",
           "step_assistant_solution": "بما أن AB عمودي على BC و BD، فإن AB عمودي على المستوى (Z).",
+          "equation_template": "بما أن {input_1} عمودي على {input_2} و {input_3}، فإن {input_1} {input_4} على المستوى {input_5}.",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي العلاقة بين AB والمستوى (Z)؟",
+              "input_id": "q1_s2_i1",
+              "label": "المستقيم العمودي",
+              "correct_answer": "AB",
+              "options": [
+                "AB",
+                "BC",
+                "CD",
+                "BD"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "المستقيم الأول",
+              "correct_answer": "BC",
+              "options": [
+                "BC",
+                "AB",
+                "CD",
+                "BD"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "المستقيم الثاني",
+              "correct_answer": "BD",
+              "options": [
+                "BD",
+                "BC",
+                "AB",
+                "CD"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i4",
+              "label": "العلاقة الهندسية",
               "correct_answer": "عمودي",
               "options": [
                 "عمودي",
                 "يوازي",
-                "محتوى فيه",
-                "لا توجد علاقة"
+                "محتوى في",
+                "يقطع"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i5",
+              "label": "المستوى المستهدف",
+              "correct_answer": "(Z)",
+              "options": [
+                "(Z)",
+                "(X)",
+                "(Y)",
+                "(W)"
               ]
             }
           ],
@@ -87,11 +163,29 @@
           "layout": {
             "rows": [
               [
-                "بما أن AB عمودي على BC و BD، فإن AB ",
+                "بما أن ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
                 },
-                " على المستوى (Z)."
+                " عمودي على ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " و ",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                "، فإن ",
+                "AB",
+                " ",
+                {
+                  "input_id": "q1_s2_i4"
+                },
+                " على المستوى ",
+                {
+                  "input_id": "q1_s2_i5"
+                },
+                "."
               ]
             ]
           }

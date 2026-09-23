@@ -31,7 +31,7 @@
               "questions": 4,
               "interactive": 2,
               "read_only": 2,
-              "diagrams": 1
+              "diagrams": 0
             }
           ]
         },
@@ -42,17 +42,17 @@
             {
               "page": 7,
               "path": "lessons/pages/page_7.json",
-              "questions": 6,
-              "interactive": 6,
+              "questions": 2,
+              "interactive": 2,
               "read_only": 0,
               "diagrams": 0
             },
             {
               "page": 8,
               "path": "lessons/pages/page_8.json",
-              "questions": 7,
+              "questions": 1,
               "interactive": 1,
-              "read_only": 6,
+              "read_only": 0,
               "diagrams": 0
             },
             {
@@ -66,16 +66,16 @@
             {
               "page": 10,
               "path": "lessons/pages/page_10.json",
-              "questions": 6,
+              "questions": 4,
               "interactive": 3,
-              "read_only": 3,
+              "read_only": 1,
               "diagrams": 0
             },
             {
               "page": 11,
               "path": "lessons/pages/page_11.json",
-              "questions": 5,
-              "interactive": 5,
+              "questions": 1,
+              "interactive": 1,
               "read_only": 0,
               "diagrams": 0
             },
@@ -90,9 +90,9 @@
             {
               "page": 13,
               "path": "lessons/pages/page_13.json",
-              "questions": 9,
-              "interactive": 1,
-              "read_only": 8,
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
               "diagrams": 0
             }
           ]
@@ -174,9 +174,9 @@
             {
               "page": 23,
               "path": "lessons/pages/page_23.json",
-              "questions": 7,
+              "questions": 4,
               "interactive": 1,
-              "read_only": 6,
+              "read_only": 3,
               "diagrams": 0
             },
             {
@@ -386,9 +386,9 @@
             {
               "page": 48,
               "path": "lessons/pages/page_48.json",
-              "questions": 7,
+              "questions": 2,
               "interactive": 2,
-              "read_only": 5,
+              "read_only": 0,
               "diagrams": 0
             },
             {
@@ -458,9 +458,9 @@
             {
               "page": 57,
               "path": "lessons/pages/page_57.json",
-              "questions": 14,
+              "questions": 2,
               "interactive": 2,
-              "read_only": 12,
+              "read_only": 0,
               "diagrams": 0
             },
             {
@@ -496,9 +496,9 @@
             {
               "page": 61,
               "path": "lessons/pages/page_61.json",
-              "questions": 5,
-              "interactive": 2,
-              "read_only": 3,
+              "questions": 3,
+              "interactive": 3,
+              "read_only": 0,
               "diagrams": 0
             },
             {
@@ -544,17 +544,17 @@
             {
               "page": 68,
               "path": "lessons/pages/page_68.json",
-              "questions": 13,
+              "questions": 1,
               "interactive": 1,
-              "read_only": 12,
+              "read_only": 0,
               "diagrams": 0
             },
             {
               "page": 69,
               "path": "lessons/pages/page_69.json",
-              "questions": 13,
-              "interactive": 0,
-              "read_only": 13,
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
               "diagrams": 0
             }
           ]
@@ -668,9 +668,9 @@
             {
               "page": 83,
               "path": "lessons/pages/page_83.json",
-              "questions": 8,
-              "interactive": 6,
-              "read_only": 2,
+              "questions": 4,
+              "interactive": 4,
+              "read_only": 0,
               "diagrams": 0
             }
           ]
@@ -1359,7 +1359,7 @@
               "questions": 3,
               "interactive": 3,
               "read_only": 0,
-              "diagrams": 1
+              "diagrams": 0
             },
             {
               "page": 169,
@@ -1684,17 +1684,17 @@
             {
               "page": 209,
               "path": "lessons/pages/page_209.json",
-              "questions": 6,
+              "questions": 1,
               "interactive": 1,
-              "read_only": 5,
+              "read_only": 0,
               "diagrams": 0
             },
             {
               "page": 210,
               "path": "lessons/pages/page_210.json",
               "questions": 6,
-              "interactive": 0,
-              "read_only": 6,
+              "interactive": 6,
+              "read_only": 0,
               "diagrams": 0
             },
             {
@@ -1716,9 +1716,9 @@
             {
               "page": 213,
               "path": "lessons/pages/page_213.json",
-              "questions": 6,
-              "interactive": 0,
-              "read_only": 6,
+              "questions": 2,
+              "interactive": 2,
+              "read_only": 0,
               "diagrams": 0
             }
           ]

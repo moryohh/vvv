@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "تحويل العدد المركب 27i إلى الصيغة القطبية (r, θ).",
           "step_assistant_solution": "r=27, θ=π/2",
+          "equation_template": "z = {input_1}(cos({input_2}) + i sin({input_2}))",
           "inputs": [
             {
-              "input_id": "step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة r:",
+              "correct_answer": "27",
               "options": [
-                "2",
-                "0",
+                "27",
+                "9",
                 "3",
                 "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الزاوية θ:",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "π",
+                "0",
+                "3π/2"
               ]
             }
           ],
@@ -35,30 +47,23 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة السعة θ للعدد 27i؟",
-              "correct_answer": "π/2",
-              "options": [
-                "π/2",
-                "π",
-                "0",
-                "3π/2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "π/",
+                "z = ",
                 {
-                  "input_id": "step1_input1_atom_1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                "(cos(",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ") + i sin(",
+                "π/2",
+                "))"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -72,16 +77,28 @@
           "step_number": 1,
           "step_explanation": "حساب الجذور باستخدام الصيغة العامة z^(1/n) = r^(1/n) * [cos((θ+2πk)/n) + i sin((θ+2πk)/n)].",
           "step_assistant_solution": "القيم هي z = 2(cos((π+2kπ)/4) + i sin((π+2kπ)/4))",
+          "equation_template": "z^(1/4) = {input_1} * [cos((π + 2πk)/{input_2}) + i sin((π + 2πk)/{input_2})]",
           "inputs": [
             {
-              "input_id": "q26_step1_input1",
-              "label": "ما هو معامل الجذر الرابع للعدد 16؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة r^(1/4):",
               "correct_answer": "2",
               "options": [
                 "2",
                 "4",
                 "8",
                 "16"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة المقام n:",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "1",
+                "8"
               ]
             }
           ],
@@ -97,11 +114,17 @@
           "layout": {
             "rows": [
               [
-                "القيم هي z = ",
+                "z^(1/4) = ",
                 {
-                  "input_id": "q26_step1_input1"
+                  "input_id": "q2_s1_i1"
                 },
-                "(cos((π+2kπ)/4) + i sin((π+2kπ)/4))"
+                " * [cos((π + 2πk)/",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ") + i sin((π + 2πk)/",
+                "4",
+                ")]"
               ]
             ]
           }

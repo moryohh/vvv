@@ -13,29 +13,8 @@
           "step_number": 1,
           "step_explanation": "نضرب البسط والمقام في مرافق المقام 1+i للتخلص من الجزء التخيلي في المقام.",
           "step_assistant_solution": "(1+i)(1+i) / (1-i)(1+i)",
+          "equation_template": "(1+i) / (1-i) * ({input_1} / {input_1})",
           "inputs": [
-            {
-              "input_id": "q1_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "1",
-              "options": [
-                "1",
-                "-1",
-                "0",
-                "2"
-              ]
-            }
-          ],
-          "hint": {
-            "step_hint_text": "مرافق العدد المركب a+bi هو a-bi.",
-            "related_topics": [
-              {
-                "topic_title": "مرافق العدد المركب",
-                "explanation": "تغيير إشارة الجزء التخيلي فقط."
-              }
-            ]
-          },
-          "source_inputs": [
             {
               "input_id": "q1_s1_i1",
               "label": "ما هو مرافق المقام 1-i ؟",
@@ -48,17 +27,28 @@
               ]
             }
           ],
+          "hint": {
+            "step_hint_text": "مرافق العدد المركب a+bi هو a-bi.",
+            "related_topics": [
+              {
+                "topic_title": "مرافق العدد المركب",
+                "explanation": "تغيير إشارة الجزء التخيلي فقط."
+              }
+            ]
+          },
           "layout": {
             "rows": [
               [
+                "(1+i) / (1-i) * (",
                 {
-                  "input_id": "q1_s1_i1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "+i"
+                " / ",
+                "1+i",
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -72,6 +62,7 @@
           "step_number": 1,
           "step_explanation": "نضرب البسط والمقام في مرافق المقام 3-4i.",
           "step_assistant_solution": "((2-i)(3-4i))/((3+4i)(3-4i))",
+          "equation_template": " المقام بعد الضرب هو {input_1}",
           "inputs": [
             {
               "input_id": "q2_s1_i1",
@@ -97,7 +88,7 @@
           "layout": {
             "rows": [
               [
-                "ما قيمة المقام بعد الضرب في المرافق؟ = ",
+                " المقام بعد الضرب هو ",
                 {
                   "input_id": "q2_s1_i1"
                 }
@@ -117,6 +108,7 @@
           "step_number": 1,
           "step_explanation": "نضرب في مرافق المقام وهو -2-i.",
           "step_assistant_solution": "(-2-i-4i-2i^2)/5",
+          "equation_template": "2i^2 = 2 * ({input_1})",
           "inputs": [
             {
               "input_id": "q3_s1_i1",
@@ -137,10 +129,11 @@
           "layout": {
             "rows": [
               [
-                "ما قيمة i^2؟ = ",
+                "2i^2 = 2 * (",
                 {
                   "input_id": "q3_s1_i1"
-                }
+                },
+                ")"
               ]
             ]
           }
@@ -159,7 +152,7 @@
       "question_number": "5",
       "question_text": "ضع المقدار ((2+3i)/(1-i)) * ((1+4i)/(4+i)) بالصورة العادية.",
       "diagram": null,
-      "full_model_solution": "((2+3i)(1+i))/((1-i)(1+i)) * ((1+4i)(4-i))/((4+i)(4-i)) = (-1+5i)/2 * (8+5i)/17 = (-8-5i+40i+25i^2)/34 = (-33+35i)/34 = -33/34 + 35/34i (ملاحظة: الحل في الصورة يحوي تفصيلاً مختلفاً يصل لنفس النتيجة).",
+      "full_model_solution": "((2+3i)(1+i))/((1-i)(1+i)) * ((1+4i)(4-i))/((4+i)(4-i)) = (-1+5i)/2 * (8+5i)/17 = (-8-5i+40i+25i^2)/34 = (-33+35i)/34 = -33/34 + 35/34i",
       "interactive_steps": [],
       "hint": null
     }

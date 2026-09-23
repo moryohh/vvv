@@ -13,16 +13,39 @@
           "step_number": 1,
           "step_explanation": "نبدأ باستخراج بؤرتي القطع الناقص من معادلته المعطاة لكي نستخدمها للقطع الزائد.",
           "step_assistant_solution": "بؤرتا القطع الناقص هما (±√28, 0).",
+          "equation_template": "a^2 = {input_1} , b^2 = {input_2} , c^2 = {input_3}",
           "inputs": [
             {
-              "input_id": "q5_step1_input1",
-              "label": "ما هي قيمة c^2 للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a^2 للقطع الناقص",
+              "correct_answer": "64",
+              "options": [
+                "64",
+                "36",
+                "28",
+                "100"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b^2 للقطع الناقص",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "64",
+                "28",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة c^2 للقطع الناقص",
               "correct_answer": "28",
               "options": [
                 "28",
                 "64",
                 "36",
-                "100"
+                "10"
               ]
             }
           ],
@@ -38,11 +61,18 @@
           "layout": {
             "rows": [
               [
-                "بؤرتا القطع الناقص هما (±√",
+                "a^2 = ",
                 {
-                  "input_id": "q5_step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", 0)."
+                " , b^2 = ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " , c^2 = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
           }
@@ -51,10 +81,22 @@
           "step_number": 2,
           "step_explanation": "نستخدم خصائص القطع الزائد لإيجاد قيمتي a^2 و b^2.",
           "step_assistant_solution": "a^2 = 18 و b^2 = 10.",
+          "equation_template": "a^2 = {input_1} , b^2 = {input_2}",
           "inputs": [
             {
-              "input_id": "q5_step2_input1",
-              "label": "ما هي قيمة b^2 للقطع الزائد؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة a^2 للقطع الزائد",
+              "correct_answer": "18",
+              "options": [
+                "18",
+                "9",
+                "36",
+                "28"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة b^2 للقطع الزائد",
               "correct_answer": "10",
               "options": [
                 "10",
@@ -71,11 +113,14 @@
           "layout": {
             "rows": [
               [
-                "a^2 = 18 و b^2 = ",
+                "a^2 = ",
                 {
-                  "input_id": "q5_step2_input1"
+                  "input_id": "q1_s2_i1"
                 },
-                "."
+                " , b^2 = ",
+                {
+                  "input_id": "q1_s2_i2"
+                }
               ]
             ]
           }
@@ -92,16 +137,50 @@
           "step_number": 1,
           "step_explanation": "نحسب البعد البؤري 2c والبعد بين الرأسين 2a من خلال المسافات المعطاة.",
           "step_assistant_solution": "2c = 10 و 2a = 8.",
+          "equation_template": "2c = {input_1} , 2a = {input_2} , c = {input_3} , a = {input_4}",
           "inputs": [
             {
-              "input_id": "q6_step1_input1",
-              "label": "ما هي قيمة c للقطع الزائد؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة 2c",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "8",
+                "9",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة 2a",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "10",
+                "6",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "قيمة c",
               "correct_answer": "5",
               "options": [
                 "5",
                 "10",
                 "4",
                 "9"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i4",
+              "label": "قيمة a",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "5",
+                "8",
+                "3"
               ]
             }
           ],
@@ -112,9 +191,21 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة c للقطع الزائد؟ = ",
+                "2c = ",
                 {
-                  "input_id": "q6_step1_input1"
+                  "input_id": "q2_s1_i1"
+                },
+                " , 2a = ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " , c = ",
+                {
+                  "input_id": "q2_s1_i3"
+                },
+                " , a = ",
+                {
+                  "input_id": "q2_s1_i4"
                 }
               ]
             ]

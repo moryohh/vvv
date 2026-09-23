@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "تحديد صيغة معادلة القطع المكافئ بناءً على موقع البؤرة.",
           "step_assistant_solution": "x^2 = 4ay",
+          "equation_template": "x^2 = {input_1}a{input_2}",
           "inputs": [
             {
-              "input_id": "q11_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "المعامل العددي في القانون القياسي",
               "correct_answer": "4",
               "options": [
                 "4",
                 "-4",
-                "3",
-                "5"
+                "2",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "المتغير التابع في الطرف الأيمن",
+              "correct_answer": "y",
+              "options": [
+                "y",
+                "x",
+                "y^2",
+                "x^2"
               ]
             }
           ],
@@ -30,31 +42,20 @@
             "step_hint_text": "البؤرة تقع على محور الصادات، لذا يكون المتغير x هو المربع.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q11_s1_i1",
-              "label": "ما هي الصيغة القياسية للقطع؟",
-              "correct_answer": "x^2 = 4ay",
-              "options": [
-                "x^2 = 4ay",
-                "y^2 = 4ax",
-                "x^2 = -4ay",
-                "y^2 = -4ax"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x^2 = ",
                 {
-                  "input_id": "q11_s1_i1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "ay"
+                "a",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },

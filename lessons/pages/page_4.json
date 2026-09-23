@@ -13,10 +13,11 @@
           "step_number": 1,
           "step_explanation": "عزل المتغير x^2 في طرف والمعلوم في الطرف الآخر.",
           "step_assistant_solution": "x^2 = 1",
+          "equation_template": "x^2 = {input_1}",
           "inputs": [
             {
               "input_id": "q1_s1_i1",
-              "label": "ما هي قيمة x^2؟",
+              "label": "ما هي قيمة الطرف الأيمن؟",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -58,6 +59,7 @@
           "step_number": 1,
           "step_explanation": "نحاول إيجاد قيمة x^2.",
           "step_assistant_solution": "x^2 = -1",
+          "equation_template": "x^2 = {input_1}",
           "inputs": [
             {
               "input_id": "q2_s1_i1",
@@ -67,7 +69,7 @@
                 "1",
                 "-1",
                 "0",
-                "√-1"
+                "-1/2"
               ]
             }
           ],
@@ -103,6 +105,7 @@
           "step_number": 1,
           "step_explanation": "استخدام تعريف العدد التخيلي i حيث i = √-1.",
           "step_assistant_solution": "x = ±i",
+          "equation_template": "x = {input_1}",
           "inputs": [
             {
               "input_id": "q3_s1_i1",
@@ -112,7 +115,7 @@
                 "±1",
                 "±i",
                 "0",
-                "لا يوجد حل"
+                "±2i"
               ]
             }
           ],

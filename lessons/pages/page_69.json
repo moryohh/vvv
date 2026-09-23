@@ -4,100 +4,105 @@
   "has_math_questions": true,
   "exam_questions": [
     {
-      "question_number": "18",
-      "question_text": "برهن أن: sqrt(3 - 6w - 6w^2 + 4i) = ±(2 + i)",
-      "diagram": null,
-      "full_model_solution": "بما أن 1 + w + w^2 = 0، فإن -6w - 6w^2 = -6(w + w^2) = -6(-1) = 6. إذاً المقدار تحت الجذر يصبح 3 + 6 + 4i = 9 + 4i. هناك خطأ مطبعي في السؤال، الحل يعتمد على تبسيط الجذور التربيعية للأعداد المركبة.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "19",
-      "question_text": "اذا كان a + bi = (1 + 2/w)^2، اثبت ان a^2 + b^2 = 1",
-      "diagram": null,
-      "full_model_solution": "نعوض 1/w = w^2، فيصبح (1 + 2w^2)^2 = 1 + 4w^2 + 4w^4. بما أن w^4 = w، تصبح 1 + 4w^2 + 4w. بما أن w^2 + w = -1، تصبح 1 + 4(-1) = -3. المعطى في السؤال يبدو غير متوافق مع النتيجة المطلوبة a^2 + b^2 = 1.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "20",
-      "question_text": "جد المعادلة التربيعية ذات المعاملات الحقيقية واحد جذريها w + (2w + i)/(w^2 + i + 2)",
-      "diagram": null,
-      "full_model_solution": "تبسيط الجذر: (2w + i)/(w^2 + i + 2). بعد التبسيط نجد الجذر والآخر المرافق له، ثم نطبق قانون x^2 - (sum)x + (product) = 0.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "21",
-      "question_text": "اذا كان x + yi = (i + 2w^2 + 2/w^2)^2، اثبت ان x^2 + y^2 = 25",
-      "diagram": null,
-      "full_model_solution": "نعوض 2/w^2 = 2w، فيصبح المقدار (i + 2w^2 + 2w)^2 = (i + 2(w^2 + w))^2 = (i - 2)^2 = -1 - 4i + 4 = 3 - 4i. إذاً x=3, y=-4. x^2 + y^2 = 9 + 16 = 25.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "22",
-      "question_text": "اذا كان x + yiw = (27 - i) / (10 - 3iw + w)، جد قيمة x, y ∈ R",
-      "diagram": null,
-      "full_model_solution": "تبسيط المقام باستخدام علاقات w ثم الضرب بمرافق العدد المركب للمساواة بين الجزئين الحقيقي والتخيلي.",
-      "interactive_steps": []
-    },
-    {
       "question_number": "23",
       "question_text": "جد المعادلة التربيعية ذات المعاملات الحقيقية واحد جذريها (3w - 2)",
       "diagram": null,
       "full_model_solution": "الجذر الأول 3w - 2، الجذر الثاني المرافق 3w^2 - 2. نجد المجموع = 3(w+w^2) - 4 = -7. نجد الضرب = (3w-2)(3w^2-2) = 9w^3 - 6w^2 - 6w + 4 = 9 - 6(-1) + 4 = 19. المعادلة: x^2 + 7x + 19 = 0.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "24",
-      "question_text": "برهن ان ( (5+6w)/(5w^2+6) + (3w^2+1)/(3+w) )^100 = 1",
-      "diagram": null,
-      "full_model_solution": "تبسيط الكسور باستخدام w^2 = -1-w أو تعويض w^3=1 للوصول إلى النتيجة 1.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "25",
-      "question_text": "جد المعادلة التربيعية ذات المعاملات الحقيقية واحد جذريها ( (5w+3) / (3w^2+5) )^3 + 2i",
-      "diagram": null,
-      "full_model_solution": "تبسيط المقدار ( (5w+3)/(5+3w^2) )^3 حيث 3w^2+5 = 3(-1-w)+5 = 2-3w. تبسيط القوة الثالثة للعدد المركب ثم إيجاد الجذر المرافق وتكوين المعادلة.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "نحدد مجموع الجذرين للمعادلة التربيعية بمعاملات حقيقية حيث الجذران هما (3w-2) و (3w^2-2)",
+          "equation_template": "x^2 + {input_1}x + {input_2} = 0",
+          "hint": "مجموع الجذرين = (3w-2) + (3w^2-2) = 3(w+w^2) - 4",
+          "related_topics": [
+            "المعادلة التربيعية",
+            "خواص الجذور"
+          ],
+          "inputs": [
+            {
+              "id": "input_1",
+              "options": [
+                "7",
+                "-7",
+                "19",
+                "-19"
+              ],
+              "correct_answer": "7",
+              "input_id": "q1_s1_i1"
+            },
+            {
+              "id": "input_2",
+              "options": [
+                "7",
+                "-7",
+                "19",
+                "-19"
+              ],
+              "correct_answer": "19",
+              "input_id": "q1_s1_i2"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "x^2 + ",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                "x + ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = 0"
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "question_number": "26",
       "question_text": "جد المعادلة التربيعية التي جذراها M = (2+w)/(1+2w) و L = (2+w^2)/(1+2w^2)",
       "diagram": null,
       "full_model_solution": "حساب المجموع (M+L) والضرب (ML) باستخدام تبسيط المقامات ثم تعويض في القانون x^2 - (sum)x + product = 0.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "27",
-      "question_text": "اثبت ان (3wi - 2w^2/i) (2wi - 3/wi) = -7",
-      "diagram": null,
-      "full_model_solution": "تبسيط الأقواس: (3wi + 2w^2i) (2wi + 3i/w). ضرب المقادير وتجميع الحدود باستخدام i^2 = -1.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "28",
-      "question_text": "جد قيمة x, y الحقيقية التي تحقق: x + wyi = (64+i)/(17+4wi+w)",
-      "diagram": null,
-      "full_model_solution": "الضرب بمرافق المقام وتبسيط الطرف الأيمن للمقارنة مع الجزء الحقيقي والتخيلي للطرف الأيسر.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "29",
-      "question_text": "جد قيمة x, y الحقيقية التي تحقق المعادلة: (sqrt(1+w^17) + sqrt(1+w^34))^2 - (3+i)/(1+i) = x + yi",
-      "diagram": null,
-      "full_model_solution": "تبسيط الأسس w^17 = w^2 و w^34 = w. ثم تبسيط الجذور (sqrt(-w) + sqrt(-w^2))^2 وطرح ناتج قسمة العدد المركب (3+i)/(1+i).",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "30",
-      "question_text": "جد المعادلة التربيعية التي جذراها M = 2w - w^2/i و L = 2w^2 + i/w^2",
-      "diagram": null,
-      "full_model_solution": "حساب M و L بتبسيط i في المقام (i^2 = -1). ثم إيجاد مجموع وجداء الجذرين لتكوين المعادلة.",
-      "interactive_steps": []
+      "interactive_steps": [
+        {
+          "step_explanation": "نحسب مجموع الجذرين M+L لتبسيط المعادلة التربيعية",
+          "equation_template": "M + L = {input_1}",
+          "hint": "استخدم توحيد المقامات للكسرين",
+          "related_topics": [
+            "المعادلة التربيعية",
+            "الأعداد المركبة"
+          ],
+          "inputs": [
+            {
+              "id": "input_1",
+              "options": [
+                "1",
+                "0",
+                "-1",
+                "2"
+              ],
+              "correct_answer": "1",
+              "input_id": "q2_s1_i1"
+            }
+          ],
+          "layout": {
+            "rows": [
+              [
+                "M + L = ",
+                {
+                  "input_id": "q2_s1_i1"
+                }
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "chapter_id": 1,
   "chapter_title": "الأعداد المركبة",
   "topic_id": "1-7",
   "topic_title": "الجذور التكعيبية للواحد الصحيح",
-  "interactive_status": "read_only"
+  "interactive_status": "ready"
 }

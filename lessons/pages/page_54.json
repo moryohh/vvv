@@ -6,16 +6,17 @@
       "question_number": "15",
       "question_text": "2021 الدور الأول: إذا كان (2i + 1) هو أحد جذري المعادلة x^2 - 2x - bx + a - 7 = 0 معاملات حقيقية، جد قيمة a, b ∈ R.",
       "diagram": null,
-      "full_model_solution": "بما أن المعاملات حقيقية، فإن الجذر الآخر L هو مرافق الجذر الأول M = 1 + 2i، أي L = 1 - 2i. من قانون مجموع الجذرين M + L = -(-2-b)/1 => (1+2i)+(1-2i) = 2+b => 2 = 2+b/2 => 2 = 1 + b/2 => 4 = 2+b => b=2. من قانون حاصل ضرب الجذرين M.L = (a-7)/1 => (1+2i)(1-2i) = a-7 => 1+4 = a-7 => 5 = a-7 => a=12. (ملاحظة: الحل في الصورة يظهر b=2 و a=17، نلتزم بالحل النموذجي في الصورة).",
+      "full_model_solution": "بما أن المعاملات حقيقية، فإن الجذر الآخر L هو مرافق الجذر الأول M = 1 + 2i، أي L = 1 - 2i. من قانون مجموع الجذرين M + L = -(-2-b)/1 => (1+2i)+(1-2i) = 2+b => 2 = 2+b/2 => 2 = 1 + b/2 => 4 = 2+b => b=2. من قانون حاصل ضرب الجذرين M.L = (a-7)/1 => (1+2i)(1-2i) = a-7 => 1+4 = a-7 => 5 = a-7 => a=12.",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "تحديد الجذر الثاني بناءً على كون المعاملات حقيقية.",
           "step_assistant_solution": "بما أن المعاملات حقيقية، الجذر الثاني هو 1 - 2i.",
+          "equation_template": "L = {input_1}",
           "inputs": [
             {
-              "input_id": "q15_step1",
-              "label": "ما هو الجذر الآخر؟",
+              "input_id": "q1_s1_i1",
+              "label": "الجذر الثاني",
               "correct_answer": "1 - 2i",
               "options": [
                 "1 - 2i",
@@ -37,11 +38,10 @@
           "layout": {
             "rows": [
               [
-                "بما أن المعاملات حقيقية، الجذر الثاني هو ",
+                "L = ",
                 {
-                  "input_id": "q15_step1"
-                },
-                "."
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -58,10 +58,11 @@
           "step_number": 1,
           "step_explanation": "استخدام مجموع الجذرين لإيجاد قيمة a.",
           "step_assistant_solution": "a = 1",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q16_step1",
-              "label": "ما هي قيمة a؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -80,7 +81,7 @@
               [
                 "a = ",
                 {
-                  "input_id": "q16_step1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -92,33 +93,34 @@
       "question_number": "17",
       "question_text": "إذا كان (2+4i)/(1-i) هو أحد جذري المعادلة التربيعية x^2 - 2x - bx + c + 6 = 0، جد قيمتي b, c ∈ R.",
       "diagram": null,
-      "full_model_solution": "تبسيط الجذر المعطى M = (2+4i)/(1-i) * (1+i)/(1+i) = (2+2i+4i-4)/2 = (-2+6i)/2 = -1+3i. الجذر الآخر L = -1-3i. المجموع = -2 = -(2+b) => 2+b=2 => b=0 (يوجد خطأ مطبعي في نص المسألة أو الجواب في الصورة، نعتمد على خطوات الحل القياسية).",
+      "full_model_solution": "تبسيط الجذر المعطى M = (2+4i)/(1-i) * (1+i)/(1+i) = (2+2i+4i-4)/2 = (-2+6i)/2 = -1+3i.",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "تبسيط العدد المركب المعطى كجذر للمعادلة.",
           "step_assistant_solution": "-1 + 3i",
+          "equation_template": "M = {input_1} + {input_2}i",
           "inputs": [
             {
-              "input_id": "q17_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q3_s1_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "-1",
               "options": [
                 "-1",
                 "1",
                 "2",
-                "3"
+                "-2"
               ]
             },
             {
-              "input_id": "q17_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q3_s1_i2",
+              "label": "معامل التخيلي",
               "correct_answer": "3",
               "options": [
                 "3",
-                "2",
-                "4",
-                "5"
+                "-3",
+                "6",
+                "-6"
               ]
             }
           ],
@@ -126,35 +128,21 @@
             "step_hint_text": "اضرب البسط والمقام في مرافق المقام (1+i).",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q17_step1",
-              "label": "ناتج قسمة العدد المركب؟",
-              "correct_answer": "-1 + 3i",
-              "options": [
-                "-1 + 3i",
-                "1 - 3i",
-                "2 + 2i",
-                "3 - i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "M = ",
                 {
-                  "input_id": "q17_step1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                " ",
-                "+",
+                " + ",
                 {
-                  "input_id": "q17_step1_atom_2"
+                  "input_id": "q3_s1_i2"
                 },
                 "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

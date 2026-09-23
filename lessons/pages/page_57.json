@@ -13,16 +13,17 @@
           "step_number": 1,
           "step_explanation": "تبسيط الجذور التخيلية في المسألة.",
           "step_assistant_solution": "sqrt(-25) = 5i، إذاً المقدار يصبح (sqrt(12+5i) - sqrt(12-5i))^2",
+          "equation_template": "sqrt(-25) = {input_1}i",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "كم تساوي قيمة sqrt(-25)؟",
-              "correct_answer": "5i",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة معامل i",
+              "correct_answer": "5",
               "options": [
-                "5i",
-                "-5i",
-                "25i",
-                "i"
+                "5",
+                "-5",
+                "25",
+                "1"
               ]
             }
           ],
@@ -38,11 +39,11 @@
           "layout": {
             "rows": [
               [
-                "sqrt(-25) = 5i، إذاً المقدار يصبح (sqrt(12+5i) - sqrt(12-",
+                "sqrt(-25) = ",
                 {
-                  "input_id": "q1_s1"
+                  "input_id": "q1_s1_i1"
                 },
-                "))^2"
+                "i"
               ]
             ]
           }
@@ -59,16 +60,28 @@
           "step_number": 1,
           "step_explanation": "تعويض قيمة x في المعادلة.",
           "step_assistant_solution": "(3 + 2i)^2 - (4 - 2i)(3 + 2i) + a = 0",
+          "equation_template": "({input_1} + {input_2}i)^2 - (4 - 2i)(3 + 2i) + a = 0",
           "inputs": [
             {
-              "input_id": "q2_s1",
-              "label": "ماذا ينتج عن تعويض الجذر؟",
-              "correct_answer": "(3 + 2i)^2 - (4 - 2i)(3 + 2i) + a = 0",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي من الجذر",
+              "correct_answer": "3",
               "options": [
-                "(3 + 2i)^2 - (4 - 2i)(3 + 2i) + a = 0",
-                "2(3+2i) + a = 0",
-                "3+2i = a",
-                "x^2 = a"
+                "3",
+                "2",
+                "4",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "معامل i",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "3",
+                "-2",
+                "1"
               ]
             }
           ],
@@ -79,98 +92,20 @@
           "layout": {
             "rows": [
               [
+                "(",
                 {
-                  "input_id": "q2_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " + ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "i)^2 - (4 - 2i)(3 + 2i) + a = 0"
               ]
             ]
           }
         }
       ]
-    },
-    {
-      "question_number": "3",
-      "question_text": "برهن أن (3 + i) هو أحد جذري المعادلة x^2 - (4 - 2i)x - (5 - i) = 0؟ ثم جد الجذر الآخر.",
-      "diagram": null,
-      "full_model_solution": "البرهان: نعوض (3+i) في المعادلة لنتأكد أنها تساوي صفراً. الجذر الآخر: نستخدم مجموع الجذرين (4-2i) وطرح (3+i) منه.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "4",
-      "question_text": "جد ناتج 1 / (1+i) وبدون الضرب بالمرافق؟",
-      "diagram": null,
-      "full_model_solution": "نستخدم خواص الأعداد المركبة والضرب في المعكوس الجمعي أو الطريقة الجبرية لتبسيط الكسر. الناتج: 1/2 - 1/2 i.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "5",
-      "question_text": "ضع بالصورة الجبرية للعدد المركب بدون استخدام المرافق: 1) (1+i)/(1-i) 2) 25i/(2i-4) 3) (3-i)/(2+i) 4) 5i/(3+i) 5) -4i/(4+3i)",
-      "diagram": null,
-      "full_model_solution": "يتم التبسيط عن طريق التعويض بالقيم المباشرة أو قسمة الأجزاء الحقيقية والتخيلية.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "6",
-      "question_text": "برهن أن (1+i)^103 / (1-i)^101 = -2",
-      "diagram": null,
-      "full_model_solution": "نبسط (1+i)^2 = 2i و (1-i)^2 = -2i، ثم نرفع للقوى المطلوبة ونختصر.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "7",
-      "question_text": "جد قيمة x, y الحقيقية: (x - yi)^2 = 8 + 6i",
-      "diagram": null,
-      "full_model_solution": "نفك المربع (x^2 - y^2) - 2xyi = 8 + 6i. نساوي الحقيقي بالحقيقي والتخيلي بالتخيلي ونحل نظام المعادلات. النتيجة: x = ±3, y = ±1.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "8",
-      "question_text": "اذا كان العدد المركب (2 - i) هو أحد جذري المعادلة 2x^2 - 2x - bx + a - 7 = 0 فجد قيمة a, b الحقيقية؟",
-      "diagram": null,
-      "full_model_solution": "بما أن المعاملات حقيقية، فالجذر الآخر هو مرافق الجذر الأول (2 + i). نستخدم مجموع وحاصل ضرب الجذرين لإيجاد a و b.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "9",
-      "question_text": "اكتب بالصيغة العادية بدون الضرب بالمرافق: (5-5i)/(2-i)",
-      "diagram": null,
-      "full_model_solution": "الناتج هو 3 - i",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "10",
-      "question_text": "اثبت ان: sqrt((3 + i^10)(2 + i^8)(4 - 2i^2)) = 6",
-      "diagram": null,
-      "full_model_solution": "نبسط قوى i: i^10 = -1, i^8 = 1, i^2 = -1. المقدار يصبح sqrt((3-1)(2+1)(4+2)) = sqrt(2 * 3 * 6) = sqrt(36) = 6.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "11",
-      "question_text": "حل المعادلة التربيعية z^2 - 2cosθ z + 1 = 0 حيث z ∈ C",
-      "diagram": null,
-      "full_model_solution": "نستخدم القانون العام للمعادلة التربيعية حيث a=1, b=-2cosθ, c=1. نجد الحل z = cosθ ± i sinθ.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "12",
-      "question_text": "اذا كان 20/(a+bi) هو جذرا المعادلة z^2 + 8 = 6i جد قيمة a, b الحقيقية؟",
-      "diagram": null,
-      "full_model_solution": "نعوض الجذر في المعادلة، نجد a = ±2, b = ±6.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "13",
-      "question_text": "اذا كان احد جذري المعادلة x^2 - 3xi - 6x + c = 0 هو ضعف الآخر جد قيمة C؟",
-      "diagram": null,
-      "full_model_solution": "نفرض الجذرين L و 2L. نستخدم مجموع الجذرين 3L = 3i + 6، ومنها L = i + 2. نجد c من حاصل الضرب.",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "14",
-      "question_text": "كون المعادلة التربيعية ذات المعاملات الحقيقية وأحد جذريها (i + 1)؟",
-      "diagram": null,
-      "full_model_solution": "بما أن المعاملات حقيقية، الجذر الآخر هو مرافق (1+i) أي (1-i). المجموع = 2، الحاصل = 2. المعادلة: x^2 - 2x + 2 = 0.",
-      "interactive_steps": []
     }
   ],
   "chapter_id": 1,

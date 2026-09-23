@@ -12,16 +12,28 @@
           "step_number": 1,
           "step_explanation": "نحدد المقياس والسعة للعدد المركب z = 1-i.",
           "step_assistant_solution": "r = sqrt(2), θ = 7π/4",
+          "equation_template": "r = sqrt({input_1}^2 + {input_2}^2)",
           "inputs": [
             {
-              "input_id": "q8_s1_i1",
-              "label": "ما هي قيمة المقياس r؟",
-              "correct_answer": "sqrt(2)",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الجزء الحقيقي x",
+              "correct_answer": "1",
               "options": [
-                "sqrt(2)",
-                "2",
                 "1",
-                "sqrt(3)"
+                "-1",
+                "0",
+                "sqrt(2)"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الجزء التخيلي y",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "0",
+                "i"
               ]
             }
           ],
@@ -37,11 +49,15 @@
           "layout": {
             "rows": [
               [
-                "r = ",
+                "r = sqrt(",
                 {
-                  "input_id": "q8_s1_i1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", θ = 7π/4"
+                "^2 + ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                "^2)"
               ]
             ]
           }
@@ -58,9 +74,10 @@
           "step_number": 1,
           "step_explanation": "نحول الكسر إلى صيغة أسية سالبة لتسهيل التطبيق.",
           "step_assistant_solution": "(1-sqrt(3)i)^-4",
+          "equation_template": "(1-sqrt(3)i)^{input_1}",
           "inputs": [
             {
-              "input_id": "q9_s1_i1",
+              "input_id": "q2_s1_i1",
               "label": "ما هو الأس الجديد بعد رفع المقام للبسط؟",
               "correct_answer": "-4",
               "options": [
@@ -85,7 +102,7 @@
               [
                 "(1-sqrt(3)i)^",
                 {
-                  "input_id": "q9_s1_i1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]

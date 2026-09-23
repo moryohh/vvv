@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "نستخدم قانون حاصل ضرب الجذرين (M.L = c/a) لإيجاد قيمة الجذر المجهول L.",
           "step_assistant_solution": "L = 2+i",
+          "equation_template": "L = {input_1} + {input_2}",
           "inputs": [
             {
-              "input_id": "q20_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الحقيقي للجذر الثاني L",
               "correct_answer": "2",
               "options": [
                 "2",
+                "-2",
                 "3",
-                "5",
-                "1"
+                "5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الجزء التخيلي للجذر الثاني L",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "3i",
+                "2i"
               ]
             }
           ],
@@ -35,45 +47,47 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q20_step1",
-              "label": "قيمة الجذر الثاني L تساوي:",
-              "correct_answer": "2+i",
-              "options": [
-                "2+i",
-                "2-i",
-                "3+i",
-                "5-3i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "L = ",
                 {
-                  "input_id": "q20_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "+i"
+                " + ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "نستخدم قانون مجموع الجذرين (M+L = -b/a) لإيجاد قيمة المعامل n.",
           "step_assistant_solution": "n = 5-3i",
+          "equation_template": "n = {input_1} - {input_2}",
           "inputs": [
             {
-              "input_id": "q20_step2",
-              "label": "قيمة n تساوي:",
-              "correct_answer": "5-3i",
+              "input_id": "q1_s2_i1",
+              "label": "الجزء الحقيقي لقيمة n",
+              "correct_answer": "5",
               "options": [
-                "5-3i",
-                "5+3i",
-                "1+5i",
-                "2+i"
+                "5",
+                "-5",
+                "3",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "الجزء التخيلي لقيمة n",
+              "correct_answer": "3i",
+              "options": [
+                "3i",
+                "-3i",
+                "5i",
+                "i"
               ]
             }
           ],
@@ -91,7 +105,11 @@
               [
                 "n = ",
                 {
-                  "input_id": "q20_step2"
+                  "input_id": "q1_s2_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s2_i2"
                 }
               ]
             ]
@@ -109,16 +127,28 @@
           "step_number": 1,
           "step_explanation": "نستخدم مجموع الجذرين المعطى في المعادلة لإيجاد الجذر المجهول L.",
           "step_assistant_solution": "L = 2-3i",
+          "equation_template": "L = {input_1} - {input_2}",
           "inputs": [
             {
-              "input_id": "q21_step1",
-              "label": "قيمة الجذر الثاني L:",
-              "correct_answer": "2-3i",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي للجذر الثاني L",
+              "correct_answer": "2",
               "options": [
-                "2-3i",
-                "2+3i",
-                "1-2i",
-                "3+i"
+                "2",
+                "-2",
+                "3",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الجزء التخيلي للجذر الثاني L",
+              "correct_answer": "3i",
+              "options": [
+                "3i",
+                "-3i",
+                "2i",
+                "i"
               ]
             }
           ],
@@ -131,7 +161,11 @@
               [
                 "L = ",
                 {
-                  "input_id": "q21_step1"
+                  "input_id": "q2_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]

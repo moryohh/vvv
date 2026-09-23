@@ -24,16 +24,39 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نحدد العلاقة بين الأعمدة المتوازية والمستقيم الموازي للمستوي.",
           "step_assistant_solution": "الأعمدة AC و BD متوازية ومتساوية في الطول.",
+          "equation_template": "الشكل ACDB هو {input_1} لأن AC {input_2} BD و AC {input_3} BD",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما نوع الشكل الرباعي ACDB الناتج؟",
+              "input_id": "q1_s1_i1",
+              "label": "نوع الشكل الرباعي",
               "correct_answer": "مستطيل",
               "options": [
                 "مستطيل",
                 "معين",
                 "مربع",
                 "شبه منحرف"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "العلاقة بين المستقيمين AC و BD",
+              "correct_answer": "يوازي",
+              "options": [
+                "يوازي",
+                "يعامد",
+                "يساوي",
+                "يخالف"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "العلاقة بين طولي AC و BD",
+              "correct_answer": "=",
+              "options": [
+                "=",
+                "≠",
+                "<",
+                ">"
               ]
             }
           ],
@@ -49,10 +72,19 @@
           "layout": {
             "rows": [
               [
-                "ما نوع الشكل الرباعي ACDB الناتج؟ = ",
+                "الشكل ACDB هو ",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " لأن AC ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " BD و AC ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " BD"
               ]
             ]
           }
@@ -80,16 +112,39 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: التعويض في قانون طول المسقط باستخدام نسبة جيب تمام الزاوية.",
           "step_assistant_solution": "BC = 10 * 0.5 = 5",
+          "equation_template": "BC = {input_1} * cos({input_2}) = {input_3}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هو طول المسقط BC؟",
-              "correct_answer": "5 سم",
+              "input_id": "q2_s1_i1",
+              "label": "طول القطعة المائلة AB",
+              "correct_answer": "10",
               "options": [
-                "5 سم",
-                "8.66 سم",
-                "10 سم",
-                "2 سم"
+                "10",
+                "5",
+                "20",
+                "15"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "زاوية الميل θ",
+              "correct_answer": "60",
+              "options": [
+                "60",
+                "30",
+                "45",
+                "90"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "طول المسقط BC النهائي",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "10",
+                "8.66",
+                "2.5"
               ]
             }
           ],
@@ -105,9 +160,17 @@
           "layout": {
             "rows": [
               [
-                "ما هو طول المسقط BC؟ = ",
+                "BC = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q2_s1_i1"
+                },
+                " * cos(",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ") = ",
+                {
+                  "input_id": "q2_s1_i3"
                 }
               ]
             ]

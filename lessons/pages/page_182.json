@@ -13,27 +13,50 @@
           "step_number": 1,
           "step_explanation": "الهدف هو وضع المعادلة بالصيغة القياسية للقطع الزائد (y-k)²/a² - (x-h)²/b² = 1.",
           "step_assistant_solution": "(y + 1)²/4 - (x - 1)²/2 = 1",
+          "equation_template": "(y + {input_1})²/{input_2} - (x - {input_3})²/{input_4} = 1",
           "inputs": [
             {
-              "input_id": "c_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "العدد المضاف إلى y داخل القوس",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "4",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة a² (مقام الحد الأول)",
               "correct_answer": "4",
               "options": [
                 "4",
                 "2",
                 "8",
-                "1"
+                "16"
               ]
             },
             {
-              "input_id": "c_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i3",
+              "label": "العدد المطروح من x داخل القوس",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "قيمة b² (مقام الحد الثاني)",
               "correct_answer": "2",
               "options": [
                 "2",
                 "4",
-                "1",
-                "3"
+                "8",
+                "6"
               ]
             }
           ],
@@ -46,34 +69,29 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "c_step1",
-              "label": "ما هي قيمة a² و b² بعد تبسيط المعادلة؟",
-              "correct_answer": "a²=4, b²=2",
-              "options": [
-                "a²=4, b²=2",
-                "a²=2, b²=4",
-                "a²=8, b²=4",
-                "a²=1, b²=2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a²=",
+                "(y + ",
                 {
-                  "input_id": "c_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", b²=",
+                ")²/",
                 {
-                  "input_id": "c_step1_atom_2"
-                }
+                  "input_id": "q1_s1_i2"
+                },
+                " - (x - ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                ")²/",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -87,49 +105,50 @@
           "step_number": 1,
           "step_explanation": "نبدأ بتجميع الحدود المتشابهة وإكمال المربع لكل من x و y.",
           "step_assistant_solution": "16(x+5)² - 9(y-1)² = 576",
+          "equation_template": "(x + {input_1})²/{input_2} - (y - {input_3})²/{input_4} = 1",
           "inputs": [
             {
-              "input_id": "d_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "العدد المضاف إلى x داخل القوس",
               "correct_answer": "5",
               "options": [
                 "5",
-                "4",
-                "6",
-                "7"
+                "10",
+                "25",
+                "1"
               ]
             },
             {
-              "input_id": "d_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة a² (مقام الحد الأول)",
               "correct_answer": "36",
               "options": [
                 "36",
                 "64",
                 "16",
-                "35"
+                "9"
               ]
             },
             {
-              "input_id": "d_step1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q2_s1_i3",
+              "label": "العدد المطروح من y داخل القوس",
               "correct_answer": "1",
               "options": [
                 "1",
-                "0",
                 "2",
-                "3"
+                "9",
+                "5"
               ]
             },
             {
-              "input_id": "d_step1_atom_4",
-              "label": "قيمة الجزء 4 في المعادلة",
+              "input_id": "q2_s1_i4",
+              "label": "قيمة b² (مقام الحد الثاني)",
               "correct_answer": "64",
               "options": [
                 "64",
                 "36",
                 "9",
-                "63"
+                "18"
               ]
             }
           ],
@@ -142,45 +161,29 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "d_step1",
-              "label": "ما هي المعادلة بعد إكمال المربع والقسمة على 576؟",
-              "correct_answer": "(x+5)²/36 - (y-1)²/64 = 1",
-              "options": [
-                "(x+5)²/36 - (y-1)²/64 = 1",
-                "(x-5)²/36 - (y+1)²/64 = 1",
-                "(x+5)²/64 - (y-1)²/36 = 1",
-                "(x+5)²/16 - (y-1)²/9 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(x",
-                "+",
+                "(x + ",
                 {
-                  "input_id": "d_step1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
                 ")²/",
                 {
-                  "input_id": "d_step1_atom_2"
+                  "input_id": "q2_s1_i2"
                 },
-                " - (y",
-                "-",
+                " - (y - ",
                 {
-                  "input_id": "d_step1_atom_3"
+                  "input_id": "q2_s1_i3"
                 },
                 ")²/",
                 {
-                  "input_id": "d_step1_atom_4"
+                  "input_id": "q2_s1_i4"
                 },
                 " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

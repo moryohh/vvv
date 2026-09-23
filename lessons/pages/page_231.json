@@ -24,9 +24,10 @@
           "step_number": 1,
           "step_explanation": "الخطوة الأولى هي إثبات أن المثلث ABC متساوي الساقين، بما أن AB=AC، إذن القطعة المستقيمة الواصلة من الرأس إلى منتصف القاعدة هي عمودية عليها. حدد ما هو المستقيم العمودي على BC؟",
           "step_assistant_solution": "AE عمودي على BC",
+          "equation_template": "{input_1} ⊥ BC",
           "inputs": [
             {
-              "input_id": "step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "أي مستقيم عمودي على BC في المثلث ABC؟",
               "correct_answer": "AE",
               "options": [
@@ -50,9 +51,9 @@
             "rows": [
               [
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                " عمودي على BC"
+                " ⊥ BC"
               ]
             ]
           }
@@ -61,16 +62,17 @@
           "step_number": 2,
           "step_explanation": "بما أن الزاوية الزوجية قائمة، والمستقيم BC هو تقاطع المستويين، فإن المستقيم DE (الموجود في المستوي الآخر) يجب أن يكون عمودياً على BC أيضاً.",
           "step_assistant_solution": "DE عمودي على BC",
+          "equation_template": "DE {input_1} BC",
           "inputs": [
             {
-              "input_id": "step2_input1",
+              "input_id": "q1_s2_i1",
               "label": "بما أن الزاوية الزوجية قائمة، ما هي علاقة DE بالمستقيم BC؟",
-              "correct_answer": "عمودي",
+              "correct_answer": "⊥",
               "options": [
-                "عمودي",
-                "موازي",
-                "يقطعها بزاوية 45",
-                "منطبق"
+                "⊥",
+                "∥",
+                "=",
+                "≠"
               ]
             }
           ],
@@ -88,9 +90,9 @@
               [
                 "DE ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
                 },
-                " على BC"
+                " BC"
               ]
             ]
           }
@@ -99,16 +101,28 @@
           "step_number": 3,
           "step_explanation": "بعد إثبات أن AE و DE عموديان على BC، نستخدم تطابق المثلثين CED و BED لإثبات المطلوب.",
           "step_assistant_solution": "المثلثان متطابقان بحالة ضلعين وزاوية محصورة (SAS)",
+          "equation_template": "{input_1} = {input_2}",
           "inputs": [
             {
-              "input_id": "step3_input1",
+              "input_id": "q1_s3_i1",
               "label": "ما هي النتيجة النهائية لتطابق المثلثين؟",
-              "correct_answer": "CD = BD",
+              "correct_answer": "CD",
               "options": [
-                "CD = BD",
-                "AC = AB",
-                "AE = DE",
-                "BC = DE"
+                "CD",
+                "AC",
+                "AE",
+                "BC"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "label": "ما هو الضلع المقابل لـ CD؟",
+              "correct_answer": "BD",
+              "options": [
+                "BD",
+                "AB",
+                "DE",
+                "CE"
               ]
             }
           ],
@@ -124,9 +138,12 @@
           "layout": {
             "rows": [
               [
-                "ما هي النتيجة النهائية لتطابق المثلثين؟ = ",
                 {
-                  "input_id": "step3_input1"
+                  "input_id": "q1_s3_i1"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s3_i2"
                 }
               ]
             ]

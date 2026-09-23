@@ -23,16 +23,28 @@
           "step_number": 1,
           "step_explanation": "نحدد علاقة التوازي بين مستقيمين عموديين على نفس المستوى.",
           "step_assistant_solution": "المستقيمان العموديان على مستوى واحد متوازيان.",
+          "equation_template": "{input_1} // {input_2}",
           "inputs": [
             {
-              "input_id": "q13_s1_i1",
-              "label": "ما هي النتيجة المستنتجة؟",
-              "correct_answer": "المستقيمان متوازيان",
+              "input_id": "q1_s1_i1",
+              "label": "المستقيم الأول",
+              "correct_answer": "AB",
               "options": [
-                "المستقيمان متوازيان",
-                "المستقيمان متعامدان",
-                "المستقيمان متقاطعان",
-                "المستقيمان منطبقان"
+                "AB",
+                "CD",
+                "X",
+                "Y"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "المستقيم الثاني",
+              "correct_answer": "CD",
+              "options": [
+                "AB",
+                "CD",
+                "X",
+                "Y"
               ]
             }
           ],
@@ -48,9 +60,12 @@
           "layout": {
             "rows": [
               [
-                "ما هي النتيجة المستنتجة؟ = ",
                 {
-                  "input_id": "q13_s1_i1"
+                  "input_id": "q1_s1_i1"
+                },
+                " // ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -79,16 +94,17 @@
           "step_number": 1,
           "step_explanation": "استنتاج علاقة التعامد بناءً على التوازي.",
           "step_assistant_solution": "المستقيم MH يكون عمودياً على AB.",
+          "equation_template": "MH ⊥ {input_1}",
           "inputs": [
             {
-              "input_id": "q14_s1_i1",
-              "label": "ما هي العلاقة بين MH و AB؟",
-              "correct_answer": "متعامدان",
+              "input_id": "q2_s1_i1",
+              "label": "المستقيم العمودي عليه",
+              "correct_answer": "AB",
               "options": [
-                "متعامدان",
-                "متوازيان",
-                "متقاطعان",
-                "لا توجد علاقة"
+                "AB",
+                "CD",
+                "MH",
+                "X"
               ]
             }
           ],
@@ -104,9 +120,9 @@
           "layout": {
             "rows": [
               [
-                "ما هي العلاقة بين MH و AB؟ = ",
+                "MH ⊥ ",
                 {
-                  "input_id": "q14_s1_i1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -135,16 +151,28 @@
           "step_number": 1,
           "step_explanation": "تحديد موقع المستقيم CD بالنسبة للمستوى.",
           "step_assistant_solution": "المستقيم CD محتوى في المستوى (X).",
+          "equation_template": "{input_1} ⊂ ({input_2})",
           "inputs": [
             {
-              "input_id": "q15_s1_i1",
-              "label": "أين يقع المستقيم CD؟",
-              "correct_answer": "داخل المستوى",
+              "input_id": "q3_s1_i1",
+              "label": "المستقيم",
+              "correct_answer": "CD",
               "options": [
-                "داخل المستوى",
-                "خارج المستوى",
-                "يقطع المستوى",
-                "يوازي المستوى"
+                "AB",
+                "CD",
+                "MH",
+                "XY"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "المستوى",
+              "correct_answer": "X",
+              "options": [
+                "X",
+                "Y",
+                "Z",
+                "A"
               ]
             }
           ],
@@ -160,10 +188,14 @@
           "layout": {
             "rows": [
               [
-                "أين يقع المستقيم CD؟ = ",
                 {
-                  "input_id": "q15_s1_i1"
-                }
+                  "input_id": "q3_s1_i1"
+                },
+                " ⊂ (",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                ")"
               ]
             ]
           }

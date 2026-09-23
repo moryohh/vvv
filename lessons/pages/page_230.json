@@ -23,16 +23,26 @@
           "step_number": 1,
           "step_explanation": "نبدأ بتحديد مستقيم التقاطع بين المستويين المتعامدين (X) و (Z) لتسهيل إسقاط الأعمدة عليه.",
           "step_assistant_solution": "ليكن مستقيم التقاطع هو AB حيث AB = X ∩ Z.",
+          "equation_template": "AB = {input_1} ∩ {input_2}",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
-              "label": "ما هو مستقيم تقاطع المستويين X و Z في المعطيات؟",
-              "correct_answer": "AB",
+              "input_id": "q1_s1_i1",
+              "correct_answer": "X",
               "options": [
-                "AB",
-                "CD",
-                "XY",
-                "XZ"
+                "X",
+                "Y",
+                "Z",
+                "AB"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "correct_answer": "Z",
+              "options": [
+                "Z",
+                "Y",
+                "X",
+                "AB"
               ]
             }
           ],
@@ -48,11 +58,14 @@
           "layout": {
             "rows": [
               [
-                "ليكن مستقيم التقاطع هو AB حيث ",
+                "AB = ",
                 {
-                  "input_id": "q3_step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                " = X ∩ Z."
+                " ∩ ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
           }
@@ -61,16 +74,26 @@
           "step_number": 2,
           "step_explanation": "نستخدم خاصية العمود المرسوم من نقطة في مستوي إلى مستقيم التقاطع.",
           "step_assistant_solution": "رسم المستقيم CD بحيث يكون CD ⊥ AB و C تنتمي لـ Z.",
+          "equation_template": "{input_1} ⊥ {input_2}",
           "inputs": [
             {
-              "input_id": "q3_step2_input1",
-              "label": "لماذا نرسم CD ⊥ AB؟",
-              "correct_answer": "لإثبات تعامد المستويات باستخدام مبرهنة العمود",
+              "input_id": "q1_s2_i1",
+              "correct_answer": "CD",
               "options": [
-                "لإثبات تعامد المستويات باستخدام مبرهنة العمود",
-                "لأن AB يوازي CD",
-                "لجعل الأشكال متساوية",
-                "لا يوجد سبب هندسي"
+                "CD",
+                "AB",
+                "XY",
+                "XZ"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "correct_answer": "AB",
+              "options": [
+                "AB",
+                "CD",
+                "XY",
+                "XZ"
               ]
             }
           ],
@@ -86,9 +109,12 @@
           "layout": {
             "rows": [
               [
-                "لماذا نرسم CD ⊥ AB؟ = ",
                 {
-                  "input_id": "q3_step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " ⊥ ",
+                {
+                  "input_id": "q1_s2_i2"
                 }
               ]
             ]

@@ -24,16 +24,28 @@
           "step_number": 1,
           "step_explanation": "نبدأ بمطابقة المعادلة المعطاة (y + 1)^2 = 4(x - 2) مع الصيغة العامة (y - k)^2 = 4p(x - h) لاستخراج إحداثيات الرأس (h, k).",
           "step_assistant_solution": "h = 2, k = -1، إذن الرأس V(2, -1)",
+          "equation_template": "V({input_1}, {input_2})",
           "inputs": [
             {
-              "input_id": "q1_step1_input",
-              "label": "ما هي إحداثيات الرأس (h, k)؟",
-              "correct_answer": "(2, -1)",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة h",
+              "correct_answer": "2",
               "options": [
-                "(2, -1)",
-                "(-2, 1)",
-                "(1, -2)",
-                "(-1, 2)"
+                "2",
+                "-2",
+                "1",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة k",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "2",
+                "-2"
               ]
             }
           ],
@@ -49,10 +61,15 @@
           "layout": {
             "rows": [
               [
-                "ما هي إحداثيات الرأس (h, k)؟ = ",
+                "V(",
                 {
-                  "input_id": "q1_step1_input"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                ", ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ")"
               ]
             ]
           }
@@ -61,10 +78,22 @@
           "step_number": 2,
           "step_explanation": "نستخرج قيمة p من خلال مقارنة معامل القوس (x - h) وهو 4p مع القيمة الموجودة في المعادلة المعطاة.",
           "step_assistant_solution": "4p = 4، إذن p = 1",
+          "equation_template": "4p = {input_1} => p = {input_2}",
           "inputs": [
             {
-              "input_id": "q1_step2_input",
-              "label": "ما هي قيمة p؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة المعامل",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "1",
+                "2",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة p",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -81,9 +110,13 @@
           "layout": {
             "rows": [
               [
-                "4p = 4، إذن p = ",
+                "4p = ",
                 {
-                  "input_id": "q1_step2_input"
+                  "input_id": "q1_s2_i1"
+                },
+                " => p = ",
+                {
+                  "input_id": "q1_s2_i2"
                 }
               ]
             ]
@@ -93,16 +126,39 @@
           "step_number": 3,
           "step_explanation": "بعد معرفة الرأس (h, k) وقيمة p، نطبق قوانين البؤرة والدليل للقطع المكافئ الذي يفتح لليمين.",
           "step_assistant_solution": "البؤرة (3, -1) والدليل x = 1",
+          "equation_template": "x = -{input_1} + {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q1_step3_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s3_i1",
+              "label": "قيمة p",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "-1",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "label": "قيمة h",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "-1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i3",
+              "label": "ناتج معادلة الدليل",
               "correct_answer": "1",
               "options": [
                 "1",
                 "3",
-                "-1",
-                "2"
+                "2",
+                "-1"
               ]
             }
           ],
@@ -110,30 +166,24 @@
             "step_hint_text": "معادلة الدليل للقطع الذي يفتح لليمين هي x = -p + h.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_step3_input",
-              "label": "ما هي معادلة الدليل؟",
-              "correct_answer": "x = 1",
-              "options": [
-                "x = 1",
-                "x = 3",
-                "x = -1",
-                "x = 2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "x = ",
+                "x = -",
                 {
-                  "input_id": "q1_step3_input_atom_1"
+                  "input_id": "q1_s3_i1"
+                },
+                " + ",
+                {
+                  "input_id": "q1_s3_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s3_i3"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

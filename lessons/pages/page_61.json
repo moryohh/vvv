@@ -13,7 +13,31 @@
           "step_number": 1,
           "step_explanation": "تبسيط الأسس الكبيرة باستخدام الخاصية ω^3 = 1.",
           "step_assistant_solution": "ω^7 يصبح ω و ω^5 يصبح ω^2",
-          "inputs": [],
+          "equation_template": "ω^{input_1} + ω^{input_2} + 1",
+          "inputs": [
+            {
+              "input_id": "q1_s1_i1",
+              "label": "تبسيط ω^7",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "0",
+                "ω"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "تبسيط ω^5",
+              "correct_answer": "2",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            }
+          ],
           "hint": {
             "step_hint_text": "استخدم حقيقة أن ω^3 = 1 لتقليل الأسس.",
             "related_topics": [
@@ -23,20 +47,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q2_step1_input1",
-              "label": "ما هو ناتج ω^7 + ω^5 + 1؟",
-              "correct_answer": "ω + ω^2 + 1",
-              "options": [
-                "ω^2 + ω + 1",
-                "ω^3 + ω^2 + 1",
-                "ω^4 + ω + 1",
-                "0"
+          "layout": {
+            "rows": [
+              [
+                "ω^",
+                {
+                  "input_id": "q1_s1_i1"
+                },
+                " + ω^",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " + 1"
               ]
-            }
-          ],
-          "interactive_status": "needs_review"
+            ]
+          }
         }
       ]
     },
@@ -50,27 +75,17 @@
           "step_number": 1,
           "step_explanation": "استخراج العامل المشترك (3) من الحدين اللذين يحتويان على ω.",
           "step_assistant_solution": "5 + 3(ω + ω^2)",
+          "equation_template": "(5 + {input_1}(ω + ω^2))^2",
           "inputs": [
             {
-              "input_id": "q3_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "5",
-              "options": [
-                "5",
-                "8",
-                "4",
-                "6"
-              ]
-            },
-            {
-              "input_id": "q3_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "العامل المشترك",
               "correct_answer": "3",
               "options": [
-                "3",
                 "2",
-                "4",
-                "5"
+                "3",
+                "5",
+                "1"
               ]
             }
           ],
@@ -78,35 +93,17 @@
             "step_hint_text": "استخدم القاعدة ω + ω^2 = -1.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_step1_input1",
-              "label": "ما قيمة المقدار داخل القوس بعد استخراج العامل المشترك؟",
-              "correct_answer": "5 + 3(ω + ω^2)",
-              "options": [
-                "5 + 3ω + 3ω^2",
-                "5 + 3(ω + ω^2)",
-                "5 + (3ω + ω^2)",
-                "8(ω + ω^2)"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(5 + ",
                 {
-                  "input_id": "q3_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                " ",
-                "+",
-                {
-                  "input_id": "q3_step1_input1_atom_2"
-                },
-                "(ω + ω^2)"
+                "(ω + ω^2))^2"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -120,11 +117,23 @@
           "step_number": 1,
           "step_explanation": "تعويض قيم المقامات باستخدام 1+ω+ω^2=0.",
           "step_assistant_solution": "1+ω^2 = -ω و 1+ω = -ω^2",
+          "equation_template": "1 + ω^2 = {input_1} و 1 + ω = {input_2}",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
-              "label": "ما هي قيمة 1+ω^2؟",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة 1+ω^2",
               "correct_answer": "-ω",
+              "options": [
+                "-ω",
+                "ω",
+                "ω^2",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "قيمة 1+ω",
+              "correct_answer": "-ω^2",
               "options": [
                 "-ω",
                 "ω^2",
@@ -140,32 +149,19 @@
           "layout": {
             "rows": [
               [
-                "1+ω^2 = -ω و 1+ω = ",
+                "1 + ω^2 = ",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q3_s1_i1"
                 },
-                "^2"
+                " و 1 + ω = ",
+                {
+                  "input_id": "q3_s1_i2"
+                }
               ]
             ]
           }
         }
       ]
-    },
-    {
-      "question_number": "5",
-      "question_text": "أثبت أن: (1/(2-ω) - 1/(2-ω^2))^2 = -3/49",
-      "diagram": null,
-      "full_model_solution": "بتوحيد المقامات: ( (2-ω^2) - (2-ω) ) / ( (2-ω)(2-ω^2) ) = (ω-ω^2) / (4 - 2ω^2 - 2ω + ω^3). بما أن ω^3=1 و ω^2+ω=-1، المقام يصبح 4 - 2(-1) + 1 = 7. التربيع يعطي (ω-ω^2)^2 / 49 = (ω^2 - 2ω^3 + ω^4) / 49 = (ω^2 - 2 + ω) / 49 = (-1-2)/49 = -3/49.",
-      "interactive_steps": [],
-      "hint": null
-    },
-    {
-      "question_number": "6",
-      "question_text": "أثبت أن: ω/(2+5ω+2ω^2)^2 + ω^2/(2+2ω+5ω^2)^2 = -1/9",
-      "diagram": null,
-      "full_model_solution": "استخدام القاعدة 2+2ω^2 = 2(1+ω^2) = -2ω، المقامات تصبح (5ω-2ω)^2 = (3ω)^2 = 9ω^2 و 9ω^4. بجمع الكسور (ω/9ω^2) + (ω^2/9ω^4) = 1/9ω + 1/9ω^2 = (ω^2+ω)/9ω^3 = -1/9.",
-      "interactive_steps": [],
-      "hint": null
     }
   ],
   "chapter_id": 1,

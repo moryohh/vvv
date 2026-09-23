@@ -12,9 +12,10 @@
           "step_number": 1,
           "step_explanation": "تحديد نوع القطع المخروطي وقيمة الرأس a من خلال المعطيات (الاختلاف المركزي والنقطة المارة).",
           "step_assistant_solution": "نوع القطع زائد، و a = 2.",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "ما هي قيمة a؟",
               "correct_answer": "2",
               "options": [
@@ -37,11 +38,10 @@
           "layout": {
             "rows": [
               [
-                "نوع القطع زائد، و a = ",
+                "a = ",
                 {
-                  "input_id": "q3_step1_input1"
-                },
-                "."
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -58,9 +58,10 @@
           "step_number": 1,
           "step_explanation": "إيجاد البؤرة وتكوين معادلة المسافة بين النقطة P والبؤرة.",
           "step_assistant_solution": "البؤرة هي (2,0)، ومعادلة المسافة هي (x-2)^2 + y^2 = 1/3.",
+          "equation_template": "c = {input_1}",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
+              "input_id": "q2_s1_i1",
               "label": "ما هي قيمة البؤرة c؟",
               "correct_answer": "2",
               "options": [
@@ -83,11 +84,10 @@
           "layout": {
             "rows": [
               [
-                "البؤرة هي (2,0)، ومعادلة المسافة هي (x-2)^2 + y^",
+                "c = ",
                 {
-                  "input_id": "q4_step1_input1"
-                },
-                " = 1/3."
+                  "input_id": "q2_s1_i1"
+                }
               ]
             ]
           }

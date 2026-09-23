@@ -12,17 +12,17 @@
           "step_number": 1,
           "step_explanation": "نحدد بؤرة القطع المكافئ باستخدام حقيقة مروره بالنقطتين (1,4) و (1,-4) وتناظره حول محور السينات y² = 4Px.",
           "step_assistant_solution": "P = 4 والبؤرة (4,0)",
+          "equation_template": "P = {input_1}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة P للقطع المكافئ؟",
-              "correct_answer": "4",
+              "input_id": "q1_s1_i1",
               "options": [
                 "4",
                 "2",
                 "8",
                 "1"
-              ]
+              ],
+              "correct_answer": "4"
             }
           ],
           "hint": {
@@ -37,11 +37,10 @@
           "layout": {
             "rows": [
               [
-                "P = 4 والبؤرة (",
+                "P = ",
                 {
-                  "input_id": "step1_input1"
-                },
-                ",0)"
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
           }
@@ -50,17 +49,17 @@
           "step_number": 2,
           "step_explanation": "استخدام قيم c و a للقطع الزائد لإيجاد b² عن طريق العلاقة الأساسية c² = a² + b².",
           "step_assistant_solution": "b² = 7",
+          "equation_template": "b² = {input_1}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيمة b²؟",
-              "correct_answer": "7",
+              "input_id": "q1_s2_i1",
               "options": [
                 "7",
                 "9",
                 "16",
                 "25"
-              ]
+              ],
+              "correct_answer": "7"
             }
           ],
           "hint": {
@@ -77,7 +76,7 @@
               [
                 "b² = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
                 }
               ]
             ]
@@ -87,17 +86,27 @@
           "step_number": 3,
           "step_explanation": "مقارنة المعادلة المعطاة بعد القسمة على h مع الصورة القياسية x²/a² - y²/b² = 1 لاستخراج قيم k و h.",
           "step_assistant_solution": "h = 63, k = 7",
+          "equation_template": "h = {input_1}, k = {input_2}",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "ما هي قيمة h؟",
-              "correct_answer": "63",
+              "input_id": "q1_s3_i1",
               "options": [
                 "63",
                 "7",
                 "9",
                 "56"
-              ]
+              ],
+              "correct_answer": "63"
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "options": [
+                "7",
+                "9",
+                "63",
+                "1"
+              ],
+              "correct_answer": "7"
             }
           ],
           "hint": {
@@ -114,9 +123,12 @@
               [
                 "h = ",
                 {
-                  "input_id": "step3_input1"
+                  "input_id": "q1_s3_i1"
                 },
-                ", k = 7"
+                ", k = ",
+                {
+                  "input_id": "q1_s3_i2"
+                }
               ]
             ]
           }
@@ -124,7 +136,6 @@
       ]
     }
   ],
-  "page_id": 206,
   "chapter_id": 2,
   "chapter_title": "القطوع المخروطية",
   "topic_id": "2-9",

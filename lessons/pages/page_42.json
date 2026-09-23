@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "تبسيط الكسر بقسمة العدد المركب (14+2i) على (1+i) باستخدام مرافق المقام.",
           "step_assistant_solution": "8-6i",
+          "equation_template": "{input_1} - {input_2}i",
           "inputs": [
             {
-              "input_id": "q7_step1_input1",
-              "label": "ما هو ناتج تبسيط الكسر؟",
-              "correct_answer": "8-6i",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الحقيقي",
+              "correct_answer": "8",
               "options": [
-                "8-6i",
-                "8+6i",
-                "6-8i",
-                "7-3i"
+                "8",
+                "14",
+                "7",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "معامل الجزء التخيلي",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "2",
+                "3"
               ]
             }
           ],
@@ -39,8 +51,13 @@
             "rows": [
               [
                 {
-                  "input_id": "q7_step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                "i"
               ]
             ]
           }
@@ -57,27 +74,28 @@
           "step_number": 1,
           "step_explanation": "أوجد قيم a و b من المعادلة المعطاة.",
           "step_assistant_solution": "a=2, b=-3",
+          "equation_template": "a = {input_1} , b = {input_2}",
           "inputs": [
             {
-              "input_id": "q8_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "2",
               "options": [
                 "2",
                 "3",
                 "-2",
-                "1"
+                "5"
               ]
             },
             {
-              "input_id": "q8_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b",
+              "correct_answer": "-3",
               "options": [
+                "-3",
                 "3",
-                "2",
-                "4",
-                "5"
+                "-2",
+                "2"
               ]
             }
           ],
@@ -90,35 +108,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q8_step1_input1",
-              "label": "ما هما قيمتا a و b؟",
-              "correct_answer": "a=2, b=-3",
-              "options": [
-                "a=2, b=-3",
-                "a=3, b=-2",
-                "a=2, b=3",
-                "a=-2, b=3"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a=",
+                "a = ",
                 {
-                  "input_id": "q8_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                ", b=",
-                "-",
+                " , b = ",
                 {
-                  "input_id": "q8_step1_input1_atom_2"
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

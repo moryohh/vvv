@@ -24,16 +24,39 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: تحديد موقع البؤرتين والمحور القاطع. بما أن البؤرتين على محور الصادات (y-axis)، فإن المعادلة تبدأ بـ y^2.",
           "step_assistant_solution": "المعادلة هي y^2/a^2 - x^2/b^2 = 1",
+          "equation_template": "Equation = y^2/{input_1} - x^2/{input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي الصورة القياسية الصحيحة للقطع المذكور؟",
-              "correct_answer": "y^2/a^2 - x^2/b^2 = 1",
+              "input_id": "q1_s1_i1",
+              "label": "مقام الحد الأول",
+              "correct_answer": "a^2",
               "options": [
-                "y^2/a^2 - x^2/b^2 = 1",
-                "x^2/a^2 - y^2/b^2 = 1",
-                "y^2/b^2 - x^2/a^2 = 1",
-                "x^2/b^2 - y^2/a^2 = 1"
+                "a^2",
+                "b^2",
+                "c^2",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "مقام الحد الثاني",
+              "correct_answer": "b^2",
+              "options": [
+                "a^2",
+                "b^2",
+                "c^2",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "القيمة الثابتة للطرف الأيمن",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "0",
+                "a^2",
+                "b^2"
               ]
             }
           ],
@@ -49,9 +72,17 @@
           "layout": {
             "rows": [
               [
-                "المعادلة هي ",
+                "Equation = y^2/",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " - x^2/",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]

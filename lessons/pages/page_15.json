@@ -13,27 +13,28 @@
           "step_number": 1,
           "step_explanation": "نبدأ بحساب حاصل الضرب xy قبل أخذ المرافق.",
           "step_assistant_solution": "17 + 6i",
+          "equation_template": "(8 - i)(2 + i) = {input_1} + {input_2}i",
           "inputs": [
             {
-              "input_id": "q3_step1_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "17",
               "options": [
                 "17",
-                "15",
                 "16",
+                "15",
                 "18"
               ]
             },
             {
-              "input_id": "q3_step1_input_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "معامل i",
               "correct_answer": "6",
               "options": [
                 "6",
                 "5",
                 "7",
-                "8"
+                "4"
               ]
             }
           ],
@@ -46,35 +47,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_step1_input",
-              "label": "ما هو ناتج (8 - i)(2 + i)؟",
-              "correct_answer": "17 + 6i",
-              "options": [
-                "17 + 6i",
-                "15 + 6i",
-                "17 - 6i",
-                "16 + 6i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(8 - i)(2 + i) = ",
                 {
-                  "input_id": "q3_step1_input_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " ",
-                "+",
+                " + ",
                 {
-                  "input_id": "q3_step1_input_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
                 "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -88,16 +75,28 @@
           "step_number": 1,
           "step_explanation": "نحسب ناتج الطرح x - y ثم نأخذ المرافق.",
           "step_assistant_solution": "-4 - i",
+          "equation_template": "x - y = {input_1} {input_2}i",
           "inputs": [
             {
-              "input_id": "q4_step1_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "-4",
               "options": [
                 "-4",
+                "-2",
                 "4",
-                "-5",
-                "-3"
+                "2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "معامل i (مع الإشارة)",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "+1",
+                "-i",
+                "+i"
               ]
             }
           ],
@@ -110,30 +109,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q4_step1_input",
-              "label": "ما هو مرافق ناتج (-1 + 2i) - (3 + i)؟",
-              "correct_answer": "-4 - i",
-              "options": [
-                "-4 - i",
-                "-4 + i",
-                "4 - i",
-                "4 + i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "x - y = ",
                 {
-                  "input_id": "q4_step1_input_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                " - i"
+                " ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -147,26 +137,27 @@
           "step_number": 1,
           "step_explanation": "نحدد مرافق المقام لتبسيط العملية.",
           "step_assistant_solution": "2 + 2i",
+          "equation_template": "المرافق = {input_1} + {input_2}i",
           "inputs": [
             {
-              "input_id": "q1_step1_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q3_s1_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "2",
               "options": [
                 "2",
                 "-2",
                 "1",
-                "3"
+                "4"
               ]
             },
             {
-              "input_id": "q1_step1_input_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q3_s1_i2",
+              "label": "معامل i",
               "correct_answer": "2",
               "options": [
                 "2",
+                "-2",
                 "1",
-                "3",
                 "4"
               ]
             }
@@ -180,35 +171,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_step1_input",
-              "label": "ما هو مرافق المقام 2 - 2i؟",
-              "correct_answer": "2 + 2i",
-              "options": [
-                "2 + 2i",
-                "2 - 2i",
-                "-2 + 2i",
-                "-2 - 2i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "المرافق = ",
                 {
-                  "input_id": "q1_step1_input_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                " ",
-                "+",
+                " + ",
                 {
-                  "input_id": "q1_step1_input_atom_2"
+                  "input_id": "q3_s1_i2"
                 },
                 "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

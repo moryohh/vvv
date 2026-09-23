@@ -13,10 +13,11 @@
           "step_number": 1,
           "step_explanation": "نستخدم قانون مجموع الجذرين لإيجاد قيمة الجذر الأول (L) بدلالة (i).",
           "step_assistant_solution": "L = (2 - i) / 3",
+          "equation_template": "L = ({input_1} - {input_2}) / {input_3}",
           "inputs": [
             {
-              "input_id": "q20_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الحقيقي في البسط",
               "correct_answer": "2",
               "options": [
                 "2",
@@ -26,14 +27,25 @@
               ]
             },
             {
-              "input_id": "q20_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "الجزء التخيلي في البسط",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "2i",
+                "-i",
+                "3i"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "المقام",
               "correct_answer": "3",
               "options": [
                 "3",
                 "2",
                 "4",
-                "5"
+                "6"
               ]
             }
           ],
@@ -46,34 +58,24 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q20_step1",
-              "label": "ما هو قيمة الجذر الأول L؟",
-              "correct_answer": "(2 - i) / 3",
-              "options": [
-                "(2 - i) / 3",
-                "(1 - i) / 3",
-                "2 - i",
-                "(2 + i) / 3"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(",
+                "L = (",
                 {
-                  "input_id": "q20_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " - i) / ",
+                " - ",
                 {
-                  "input_id": "q20_step1_atom_2"
+                  "input_id": "q1_s1_i2"
+                },
+                ") / ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -87,16 +89,28 @@
           "step_number": 1,
           "step_explanation": "إيجاد جذور المعادلة التربيعية باستخدام القانون العام (الدستور).",
           "step_assistant_solution": "-5 ± 12i",
+          "equation_template": "{input_1} ± {input_2}",
           "inputs": [
             {
-              "input_id": "q21_step1",
-              "label": "ما هي جذور المعادلة؟",
-              "correct_answer": "-5 ± 12i",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي للجذور",
+              "correct_answer": "-5",
               "options": [
-                "-5 ± 12i",
-                "5 ± 12i",
-                "-10 ± 24i",
-                "-5 ± 24i"
+                "-5",
+                "5",
+                "-10",
+                "10"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الجزء التخيلي للجذور",
+              "correct_answer": "12i",
+              "options": [
+                "12i",
+                "24i",
+                "6i",
+                "12"
               ]
             }
           ],
@@ -113,7 +127,11 @@
             "rows": [
               [
                 {
-                  "input_id": "q21_step1"
+                  "input_id": "q2_s1_i1"
+                },
+                " ± ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
@@ -131,27 +149,28 @@
           "step_number": 1,
           "step_explanation": "تحديد العلاقة بين الجذرين L و 3L.",
           "step_assistant_solution": "4L = 16 + i",
+          "equation_template": "4L = {input_1} + {input_2}",
           "inputs": [
             {
-              "input_id": "q22_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "4",
-              "options": [
-                "4",
-                "3",
-                "16",
-                "5"
-              ]
-            },
-            {
-              "input_id": "q22_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q3_s1_i1",
+              "label": "الجزء الحقيقي لمجموع الجذرين",
               "correct_answer": "16",
               "options": [
                 "16",
-                "15",
-                "17",
-                "18"
+                "12",
+                "8",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "الجزء التخيلي لمجموع الجذرين",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "2i",
+                "-i",
+                "3i"
               ]
             }
           ],
@@ -164,34 +183,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q22_step1",
-              "label": "معادلة مجموع الجذرين هي:",
-              "correct_answer": "4L = 16 + i",
-              "options": [
-                "4L = 16 + i",
-                "3L = 16 + i",
-                "L = 16 + i",
-                "4L = 16 - i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "4L = ",
                 {
-                  "input_id": "q22_step1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                "L = ",
+                " + ",
                 {
-                  "input_id": "q22_step1_atom_2"
-                },
-                " + i"
+                  "input_id": "q3_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -205,16 +210,28 @@
           "step_number": 1,
           "step_explanation": "استخدام مجموع الجذرين لإيجاد الجذر الآخر.",
           "step_assistant_solution": "m = 3 + i",
+          "equation_template": "m = {input_1} + {input_2}",
           "inputs": [
             {
-              "input_id": "q23_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q4_s1_i1",
+              "label": "الجزء الحقيقي للجذر الآخر",
               "correct_answer": "3",
               "options": [
                 "3",
-                "1",
+                "2",
                 "4",
-                "2"
+                "1"
+              ]
+            },
+            {
+              "input_id": "q4_s1_i2",
+              "label": "الجزء التخيلي للجذر الآخر",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "2i",
+                "3i",
+                "-i"
               ]
             }
           ],
@@ -227,30 +244,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q23_step1",
-              "label": "الجذر الآخر m هو:",
-              "correct_answer": "3 + i",
-              "options": [
-                "3 + i",
-                "3 - i",
-                "1 + i",
-                "4 + 3i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "m = ",
                 {
-                  "input_id": "q23_step1_atom_1"
+                  "input_id": "q4_s1_i1"
                 },
-                " + i"
+                " + ",
+                {
+                  "input_id": "q4_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

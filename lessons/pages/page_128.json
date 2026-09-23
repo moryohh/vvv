@@ -23,16 +23,28 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد قيمة p ومعادلة الدليل من المعادلة المعطاة 2y-4=0.",
           "step_assistant_solution": "y=2، البؤرة هي (0, -2).",
+          "equation_template": "y = {input_1} , F(0, {input_2})",
           "inputs": [
             {
-              "input_id": "q4_s1_i1",
-              "label": "ما هي قيمة y للدليل؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة y للدليل",
               "correct_answer": "2",
               "options": [
                 "2",
                 "-2",
                 "4",
                 "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الإحداثي الصادي للبؤرة",
+              "correct_answer": "-2",
+              "options": [
+                "-2",
+                "2",
+                "-4",
+                "4"
               ]
             }
           ],
@@ -48,11 +60,15 @@
           "layout": {
             "rows": [
               [
-                "y=2، البؤرة هي (0, -",
+                "y = ",
                 {
-                  "input_id": "q4_s1_i1"
+                  "input_id": "q1_s1_i1"
                 },
-                ")."
+                " , F(0, ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ")"
               ]
             ]
           }
@@ -69,15 +85,27 @@
           "step_number": 1,
           "step_explanation": "نحدد اتجاه القطع بناءً على الدليل الموازي لمحور الصادات.",
           "step_assistant_solution": "معادلة الدليل x=1 والبؤرة (-1, 0).",
+          "equation_template": "x = {input_1} , F({input_2}, 0)",
           "inputs": [
             {
-              "input_id": "q5_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة x للدليل",
               "correct_answer": "1",
               "options": [
                 "1",
+                "-1",
+                "2",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الإحداثي السيني للبؤرة",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
                 "-2",
-                "0",
                 "2"
               ]
             }
@@ -86,30 +114,21 @@
             "step_hint_text": "إذا كان الدليل يوازي محور الصادات فهو من الشكل x=k.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q5_s1_i1",
-              "label": "ما هي معادلة الدليل؟",
-              "correct_answer": "x=1",
-              "options": [
-                "x=1",
-                "y=1",
-                "x=-2",
-                "y=-2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "x=",
+                "x = ",
                 {
-                  "input_id": "q5_s1_i1_atom_1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " , F(",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ", 0)"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -123,10 +142,11 @@
           "step_number": 1,
           "step_explanation": "نستخدم المشتقة الثانية لإيجاد نقطة الانقلاب.",
           "step_assistant_solution": "x = -2",
+          "equation_template": "x = {input_1}",
           "inputs": [
             {
-              "input_id": "q6_s1_i1",
-              "label": "ما هي قيمة x لنقطة الانقلاب؟",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة x لنقطة الانقلاب",
               "correct_answer": "-2",
               "options": [
                 "-2",
@@ -150,7 +170,7 @@
               [
                 "x = ",
                 {
-                  "input_id": "q6_s1_i1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]

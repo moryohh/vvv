@@ -13,26 +13,49 @@
           "step_number": 1,
           "step_explanation": "تحديد قيم a و b والمركز من خلال مقارنة المعادلة بالصيغة القياسية للقطع الناقص الرأسي.",
           "step_assistant_solution": "المركز (-3, -2)، a=5، b=3",
+          "equation_template": "المركز ({input_1}, {input_2})، a={input_3}، b={input_4}",
           "inputs": [
             {
-              "input_id": "d_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "الإحداثي h للمركز",
+              "correct_answer": "-3",
+              "options": [
+                "-3",
+                "3",
+                "-2",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الإحداثي k للمركز",
+              "correct_answer": "-2",
+              "options": [
+                "-2",
+                "2",
+                "-3",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة a",
               "correct_answer": "5",
               "options": [
                 "5",
-                "3",
                 "25",
+                "3",
                 "9"
               ]
             },
             {
-              "input_id": "d_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i4",
+              "label": "قيمة b",
               "correct_answer": "3",
               "options": [
                 "3",
-                "5",
                 "9",
+                "5",
                 "25"
               ]
             }
@@ -46,34 +69,28 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "d_step1_input1",
-              "label": "ما هي قيمة a و b؟",
-              "correct_answer": "a=5, b=3",
-              "options": [
-                "a=5, b=3",
-                "a=3, b=5",
-                "a=25, b=9",
-                "a=9, b=25"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a=",
+                "المركز (",
                 {
-                  "input_id": "d_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", b=",
+                ", ",
                 {
-                  "input_id": "d_step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
+                },
+                ")، a=",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                "، b=",
+                {
+                  "input_id": "q1_s1_i4"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -87,49 +104,50 @@
           "step_number": 1,
           "step_explanation": "تحويل المعادلة العامة إلى المعادلة القياسية بإكمال المربع.",
           "step_assistant_solution": "(x-4)^2 / 16 + (y-3)^2 / 9 = 1",
+          "equation_template": "(x - {input_1})^2 / {input_2} + (y - {input_3})^2 / {input_4} = 1",
           "inputs": [
             {
-              "input_id": "e_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "القيمة المطروحة من x",
               "correct_answer": "4",
               "options": [
                 "4",
+                "-4",
                 "3",
-                "5",
-                "6"
+                "-3"
               ]
             },
             {
-              "input_id": "e_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "مقام حد x (قيمة a^2)",
               "correct_answer": "16",
               "options": [
                 "16",
                 "9",
                 "25",
-                "15"
+                "4"
               ]
             },
             {
-              "input_id": "e_step1_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q2_s1_i3",
+              "label": "القيمة المطروحة من y",
               "correct_answer": "3",
               "options": [
                 "3",
-                "2",
+                "-3",
                 "4",
-                "5"
+                "-4"
               ]
             },
             {
-              "input_id": "e_step1_input1_atom_4",
-              "label": "قيمة الجزء 4 في المعادلة",
+              "input_id": "q2_s1_i4",
+              "label": "مقام حد y (قيمة b^2)",
               "correct_answer": "9",
               "options": [
                 "9",
                 "16",
-                "8",
-                "10"
+                "25",
+                "3"
               ]
             }
           ],
@@ -142,45 +160,29 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "e_step1_input1",
-              "label": "ما هو شكل المعادلة القياسية الصحيح؟",
-              "correct_answer": "(x-4)^2 / 16 + (y-3)^2 / 9 = 1",
-              "options": [
-                "(x-4)^2 / 16 + (y-3)^2 / 9 = 1",
-                "(x-4)^2 / 9 + (y-3)^2 / 16 = 1",
-                "(x+4)^2 / 16 + (y+3)^2 / 9 = 1",
-                "(x-4)^2 / 25 + (y-3)^2 / 16 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(x",
-                "-",
+                "(x - ",
                 {
-                  "input_id": "e_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
                 ")^2 / ",
                 {
-                  "input_id": "e_step1_input1_atom_2"
+                  "input_id": "q2_s1_i2"
                 },
-                " + (y",
-                "-",
+                " + (y - ",
                 {
-                  "input_id": "e_step1_input1_atom_3"
+                  "input_id": "q2_s1_i3"
                 },
                 ")^2 / ",
                 {
-                  "input_id": "e_step1_input1_atom_4"
+                  "input_id": "q2_s1_i4"
                 },
                 " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

@@ -11,17 +11,17 @@
         {
           "step_number": 1,
           "step_explanation": "نبدأ بكتابة تعريف القطع الناقص كـ مجموع بعدي النقطة P عن البؤرتين يساوي العدد الثابت 2a.",
-          "step_assistant_solution": "PF1 + PF2 = 6",
+          "equation_template": "PF1 + PF2 = {input_1}",
           "inputs": [
             {
-              "input_id": "step1_input1_atom_3",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة العدد الثابت 2a",
               "correct_answer": "6",
               "options": [
                 "6",
-                "3",
-                "5",
-                "7"
+                "4",
+                "2",
+                "3"
               ]
             }
           ],
@@ -34,67 +34,53 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step1_input1",
-              "label": "ما هي الصيغة الرياضية الصحيحة للتعريف؟",
-              "correct_answer": "PF1 + PF2 = 6",
-              "options": [
-                "PF1 + PF2 = 6",
-                "PF1 - PF2 = 6",
-                "PF1 + PF2 = 3",
-                "PF1 * PF2 = 6"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "PF1 + PF2 = ",
                 {
-                  "input_id": "step1_input1_atom_3"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "نقوم بعزل أحد الجذور في طرف والتربيع للتخلص من الجذور التربيعية للوصول إلى معادلة بدون جذر.",
-          "step_assistant_solution": "9x^2 + 9y^2 - 4x^2 = 45",
+          "equation_template": "{input_1}x^2 + {input_2}y^2 = {input_3}",
           "inputs": [
             {
-              "input_id": "step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "label": "معامل x^2",
               "correct_answer": "5",
               "options": [
                 "5",
                 "9",
-                "45",
-                "4"
+                "4",
+                "3"
               ]
             },
             {
-              "input_id": "step2_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s2_i2",
+              "label": "معامل y^2",
               "correct_answer": "9",
               "options": [
                 "9",
                 "5",
-                "8",
-                "10"
+                "4",
+                "6"
               ]
             },
             {
-              "input_id": "step2_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q1_s2_i3",
+              "label": "الطرف الأيمن للمعادلة",
               "correct_answer": "45",
               "options": [
                 "45",
                 "9",
-                "44",
-                "46"
+                "5",
+                "1"
               ]
             }
           ],
@@ -107,38 +93,23 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step2_input1",
-              "label": "بعد التربيع والتبسيط، ما هي المعادلة الناتجة قبل القسمة النهائية؟",
-              "correct_answer": "5x^2 + 9y^2 = 45",
-              "options": [
-                "5x^2 + 9y^2 = 45",
-                "9x^2 + 5y^2 = 45",
-                "x^2 + y^2 = 45",
-                "5x^2 + 9y^2 = 9"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "step2_input1_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                "x^2 ",
-                "+",
+                "x^2 + ",
                 {
-                  "input_id": "step2_input1_atom_2"
+                  "input_id": "q1_s2_i2"
                 },
                 "y^2 = ",
                 {
-                  "input_id": "step2_input1_atom_3"
+                  "input_id": "q1_s2_i3"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

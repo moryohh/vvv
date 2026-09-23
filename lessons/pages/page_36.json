@@ -13,10 +13,10 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد مرافق العدد المركب المعطى (2+i)/(3-i).",
           "step_assistant_solution": "(2-i)/(3+i)",
+          "equation_template": "conjugate = {input_1}",
           "inputs": [
             {
-              "input_id": "s32_1",
-              "label": "ما هو مرافق الكسر (2+i)/(3-i)؟",
+              "input_id": "q1_s1_i1",
               "correct_answer": "(2-i)/(3+i)",
               "options": [
                 "(2-i)/(3+i)",
@@ -38,8 +38,9 @@
           "layout": {
             "rows": [
               [
+                "conjugate = ",
                 {
-                  "input_id": "s32_1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -57,27 +58,36 @@
           "step_number": 1,
           "step_explanation": "نحدد علاقة الترافق بين العددين المعطى والمجهول.",
           "step_assistant_solution": "(x+yi)/(-2) = (1+5i)/(3+2i)",
+          "equation_template": "(x+yi)/{input_1} = {input_2}/{input_3}",
           "inputs": [
             {
-              "input_id": "s33_1_term_1",
-              "label": "بسط الكسر بعد المرافق",
-              "correct_answer": "1+5i",
+              "input_id": "q2_s1_i1",
+              "correct_answer": "-2",
               "options": [
-                "1+5i",
-                "3+2i",
-                "1-5i",
-                "3-2i"
+                "-2",
+                "2",
+                "i",
+                "-i"
               ]
             },
             {
-              "input_id": "s33_1_term_2",
-              "label": "مقام الكسر بعد المرافق",
-              "correct_answer": "3+2i",
+              "input_id": "q2_s1_i2",
+              "correct_answer": "1+5i",
               "options": [
                 "1+5i",
-                "3+2i",
                 "1-5i",
-                "3-2i"
+                "-1+5i",
+                "-1-5i"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "correct_answer": "3+2i",
+              "options": [
+                "3+2i",
+                "3-2i",
+                "-3+2i",
+                "-3-2i"
               ]
             }
           ],
@@ -90,35 +100,24 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "s33_1",
-              "label": "ما هي المعادلة الأساسية للحل؟",
-              "correct_answer": "(x+yi)/(-2) = (1+5i)/(3+2i)",
-              "options": [
-                "(x+yi)/(-2) = (1+5i)/(3+2i)",
-                "(x+yi)/(-2) = (1-5i)/(3-2i)",
-                "(x+yi)/(-2) = (3-2i)/(1-5i)",
-                "(x+yi)/(-2) = (3+2i)/(1+5i)"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(x+yi)/(-2) = (",
+                "(x+yi)/",
                 {
-                  "input_id": "s33_1_term_1"
+                  "input_id": "q2_s1_i1"
                 },
-                ") / (",
+                " = ",
                 {
-                  "input_id": "s33_1_term_2"
+                  "input_id": "q2_s1_i2"
                 },
-                ")"
+                "/",
+                {
+                  "input_id": "q2_s1_i3"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

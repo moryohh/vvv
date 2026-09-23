@@ -23,16 +23,39 @@
           "step_number": 1,
           "step_explanation": "نستخدم تعريف محيط المثلث ومفهوم القطع الناقص لإيجاد قيمة a و c.",
           "step_assistant_solution": "2c = 8, 2a + 8 = 24 => a = 8",
+          "equation_template": "2c = {input_1}, 2a + {input_2} = 24 => a = {input_3}",
           "inputs": [
             {
-              "input_id": "q10_s1",
-              "label": "ما هي قيمة a؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة 2c",
               "correct_answer": "8",
               "options": [
                 "4",
                 "8",
                 "12",
                 "16"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة المسافة بين البؤرتين",
+              "correct_answer": "8",
+              "options": [
+                "4",
+                "8",
+                "10",
+                "12"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة a الأخيرة",
+              "correct_answer": "8",
+              "options": [
+                "4",
+                "6",
+                "8",
+                "12"
               ]
             }
           ],
@@ -48,9 +71,17 @@
           "layout": {
             "rows": [
               [
-                "2c = 8, 2a + 8 = 24 => a = ",
+                "2c = ",
                 {
-                  "input_id": "q10_s1"
+                  "input_id": "q1_s1_i1"
+                },
+                ", 2a + ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = 24 => a = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -68,16 +99,28 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد النقطة التي يمر بها القطع من تقاطع المستقيم مع المحور الصادي.",
           "step_assistant_solution": "(0, sqrt(3))",
+          "equation_template": "({input_1}, {input_2})",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "ما هي النقطة الناتجة عن التقاطع مع الصادات؟",
-              "correct_answer": "(0, sqrt(3))",
+              "input_id": "q2_s1_i1",
+              "label": "الإحداثي السيني للنقطة",
+              "correct_answer": "0",
               "options": [
-                "(sqrt(3), 0)",
-                "(0, sqrt(3))",
-                "(2, 0)",
-                "(0, 2)"
+                "0",
+                "1",
+                "2",
+                "sqrt(3)"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الإحداثي الصادي للنقطة",
+              "correct_answer": "sqrt(3)",
+              "options": [
+                "sqrt(3)",
+                "2",
+                "0",
+                "sqrt(2)"
               ]
             }
           ],
@@ -88,9 +131,15 @@
           "layout": {
             "rows": [
               [
+                "(",
                 {
-                  "input_id": "q1_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                ", ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ")"
               ]
             ]
           }

@@ -23,10 +23,11 @@
           "step_number": 1,
           "step_explanation": "نحسب طول المحور الكبير 2a بجمع المسافتين المعطيتين.",
           "step_assistant_solution": "2a = 7 + 3 = 10",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q9_step1_input1",
-              "label": "كم تساوي قيمة a؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a هي:",
               "correct_answer": "5",
               "options": [
                 "5",
@@ -43,9 +44,9 @@
           "layout": {
             "rows": [
               [
-                "كم تساوي قيمة a؟ = ",
+                "a = ",
                 {
-                  "input_id": "q9_step1_input1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -55,10 +56,11 @@
           "step_number": 2,
           "step_explanation": "نحسب قيمة c بطرح المسافة الصغيرة من الكبيرة ثم القسمة على 2.",
           "step_assistant_solution": "2c = 7 - 3 = 4, لذا c = 2",
+          "equation_template": "c^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "q9_step2_input1",
-              "label": "كم تساوي قيمة c^2؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة c^2 هي:",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -75,11 +77,10 @@
           "layout": {
             "rows": [
               [
-                "2c = 7 - 3 = ",
+                "c^2 = ",
                 {
-                  "input_id": "q9_step2_input1"
-                },
-                ", لذا c = 2"
+                  "input_id": "q1_s2_i1"
+                }
               ]
             ]
           }
@@ -96,27 +97,28 @@
           "step_number": 1,
           "step_explanation": "نحدد قيم a و b من رؤوس المثلث المعطاة.",
           "step_assistant_solution": "a = 5, b = 4",
+          "equation_template": "x^2 / {input_1} + y^2 / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q10_step1_input1_value_1",
-              "label": "ما هي قيمة a^2 و b^2؟ — القيمة 1",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a^2 هي:",
               "correct_answer": "25",
               "options": [
                 "25",
                 "5",
                 "16",
-                "10"
+                "4"
               ]
             },
             {
-              "input_id": "q10_step1_input1_value_2",
-              "label": "ما هي قيمة a^2 و b^2؟ — القيمة 2",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b^2 هي:",
               "correct_answer": "16",
               "options": [
                 "16",
                 "4",
                 "25",
-                "8"
+                "5"
               ]
             }
           ],
@@ -127,13 +129,15 @@
           "layout": {
             "rows": [
               [
+                "x^2 / ",
                 {
-                  "input_id": "q10_step1_input1_value_1"
+                  "input_id": "q2_s1_i1"
                 },
-                " و ",
+                " + y^2 / ",
                 {
-                  "input_id": "q10_step1_input1_value_2"
-                }
+                  "input_id": "q2_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }

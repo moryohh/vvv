@@ -24,27 +24,28 @@
           "step_number": 1,
           "step_explanation": "تحديد قيم الثوابت a و c من المعطيات.",
           "step_assistant_solution": "a = 5, c = 3",
+          "equation_template": "a = {input_1}, c = {input_2}",
           "inputs": [
             {
-              "input_id": "step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "5",
               "options": [
                 "5",
                 "3",
                 "25",
-                "4"
+                "9"
               ]
             },
             {
-              "input_id": "step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "قيمة c",
               "correct_answer": "3",
               "options": [
                 "3",
                 "5",
                 "9",
-                "8"
+                "16"
               ]
             }
           ],
@@ -57,49 +58,47 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step1_input1",
-              "label": "ما قيمة a و c؟",
-              "correct_answer": "a=5, c=3",
-              "options": [
-                "a=5, c=3",
-                "a=3, c=5",
-                "a=25, c=9",
-                "a=5, c=8"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a=",
+                "a = ",
                 {
-                  "input_id": "step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", c=",
+                ", c = ",
                 {
-                  "input_id": "step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "استخدام العلاقة c² = a² - b² لإيجاد قيمة b².",
           "step_assistant_solution": "b² = 16",
+          "equation_template": "x² / {input_1} + y² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما قيمة b²؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة a²",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "5",
+                "16",
+                "9"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة b²",
               "correct_answer": "16",
               "options": [
                 "16",
-                "34",
-                "4",
-                "9"
+                "9",
+                "25",
+                "4"
               ]
             }
           ],
@@ -115,10 +114,15 @@
           "layout": {
             "rows": [
               [
-                "b² = ",
+                "x² / ",
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "q1_s2_i1"
+                },
+                " + y² / ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " = 1"
               ]
             ]
           }

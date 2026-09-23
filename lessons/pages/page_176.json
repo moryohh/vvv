@@ -13,9 +13,10 @@
           "step_number": 1,
           "step_explanation": "نستخرج قيم القطع الناقص (a) لنحدد بؤرتي القطع الزائد المطلوبة.",
           "step_assistant_solution": "a = 10",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "قيمة a للقطع الناقص هي:",
               "correct_answer": "10",
               "options": [
@@ -40,7 +41,7 @@
               [
                 "a = ",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -58,27 +59,28 @@
           "step_number": 1,
           "step_explanation": "نحول معادلة القطع الزائد إلى الصيغة القياسية بقسمة الطرفين على 144.",
           "step_assistant_solution": "y^2/16 - x^2/9 = 1",
+          "equation_template": "y^2/{input_1} - x^2/{input_2} = 1",
           "inputs": [
             {
-              "input_id": "q5_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "المقام الأول:",
               "correct_answer": "16",
               "options": [
                 "16",
                 "9",
-                "15",
-                "17"
+                "144",
+                "4"
               ]
             },
             {
-              "input_id": "q5_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "المقام الثاني:",
               "correct_answer": "9",
               "options": [
                 "9",
                 "16",
-                "8",
-                "10"
+                "144",
+                "3"
               ]
             }
           ],
@@ -91,35 +93,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q5_step1_input1",
-              "label": "ما هي المعادلة القياسية للقطع الزائد؟",
-              "correct_answer": "y^2/16 - x^2/9 = 1",
-              "options": [
-                "y^2/16 - x^2/9 = 1",
-                "y^2/9 - x^2/16 = 1",
-                "x^2/16 - y^2/9 = 1",
-                "x^2/9 - y^2/16 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "y^2/",
                 {
-                  "input_id": "q5_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
                 " - x^2/",
                 {
-                  "input_id": "q5_step1_input1_atom_2"
+                  "input_id": "q2_s1_i2"
                 },
                 " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

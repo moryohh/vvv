@@ -13,16 +13,72 @@
           "step_number": 1,
           "step_explanation": "نبدأ بحساب مجموع الجذرين (M+L) عن طريق جمع الأجزاء الحقيقية معاً والأجزاء التخيلية معاً.",
           "step_assistant_solution": "M + L = (1+1) + (-2i + i) = 2 - i",
+          "equation_template": "M + L = ({input_1} + {input_2}) + ({input_3} + {input_4}) = {input_5} - {input_6}",
           "inputs": [
             {
-              "input_id": "q1_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "العنصر الأول في الجزء الحقيقي",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "0",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "العنصر الثاني في الجزء الحقيقي",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "-1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "العنصر الأول في الجزء التخيلي",
+              "correct_answer": "-2i",
+              "options": [
+                "-2i",
+                "2i",
+                "-i",
+                "i"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "العنصر الثاني في الجزء التخيلي",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "2i",
+                "-2i"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i5",
+              "label": "الجزء الحقيقي للناتج النهائي",
               "correct_answer": "2",
               "options": [
                 "2",
-                "0",
                 "1",
-                "3"
+                "3",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i6",
+              "label": "الجزء التخيلي للناتج النهائي",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "2i",
+                "-i",
+                "3i"
               ]
             }
           ],
@@ -35,45 +91,63 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_step1_input1",
-              "label": "ما هو ناتج مجموع الجذرين؟",
-              "correct_answer": "2 - i",
-              "options": [
-                "2 - i",
-                "2 + i",
-                "0 - i",
-                "1 - 2i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "M + L = (",
                 {
-                  "input_id": "q1_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " - i"
+                " + ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ") + (",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " + ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                ") = ",
+                {
+                  "input_id": "q1_s1_i5"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i6"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "نحسب حاصل ضرب الجذرين M.L باستخدام خاصية التوزيع (ضرب القوسين)، مع تذكر أن i^2 = -1.",
           "step_assistant_solution": "M.L = 3 - i",
+          "equation_template": "M.L = {input_1} - {input_2}",
           "inputs": [
             {
-              "input_id": "q1_step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "label": "الجزء الحقيقي من حاصل الضرب",
               "correct_answer": "3",
               "options": [
                 "3",
                 "1",
                 "2",
                 "4"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "الجزء التخيلي من حاصل الضرب",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "2i",
+                "3i"
               ]
             }
           ],
@@ -86,30 +160,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_step2_input1",
-              "label": "ما هو ناتج ضرب الجذرين؟",
-              "correct_answer": "3 - i",
-              "options": [
-                "3 - i",
-                "3 + i",
-                "1 - 3i",
-                "3 + 3i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "M.L = ",
                 {
-                  "input_id": "q1_step2_input1_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                " - i"
+                " - ",
+                {
+                  "input_id": "q1_s2_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -123,16 +187,28 @@
           "step_number": 1,
           "step_explanation": "تبسيط الجذر الأول بضرب البسط والمقام في مرافق المقام (i-).",
           "step_assistant_solution": "3 - 2i",
+          "equation_template": "M = {input_1} - {input_2}",
           "inputs": [
             {
-              "input_id": "q2_step1_input1",
-              "label": "ما هو الجذر الأول بعد التبسيط؟",
-              "correct_answer": "3 - 2i",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي للجذر الأول",
+              "correct_answer": "3",
               "options": [
-                "3 - 2i",
-                "2 - 3i",
-                "3 + 2i",
-                "-3 - 2i"
+                "3",
+                "2",
+                "-3",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الجزء التخيلي للجذر الأول",
+              "correct_answer": "2i",
+              "options": [
+                "2i",
+                "3i",
+                "-2i",
+                "i"
               ]
             }
           ],
@@ -148,8 +224,13 @@
           "layout": {
             "rows": [
               [
+                "M = ",
                 {
-                  "input_id": "q2_step1_input1"
+                  "input_id": "q2_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]

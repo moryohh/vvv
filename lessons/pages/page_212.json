@@ -11,10 +11,11 @@
         {
           "step_number": 1,
           "step_explanation": "استخراج بؤرة القطع المكافئ وتحديد قيمة c للقطع الزائد.",
+          "equation_template": "c^2 = {input_1}",
           "step_assistant_solution": "c^2 = 64",
           "inputs": [
             {
-              "input_id": "q21_s1",
+              "input_id": "q1_s1_i1",
               "label": "ما قيمة c^2 للقطع الزائد؟",
               "correct_answer": "64",
               "options": [
@@ -39,7 +40,7 @@
               [
                 "c^2 = ",
                 {
-                  "input_id": "q21_s1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]

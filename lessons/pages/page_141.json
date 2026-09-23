@@ -12,27 +12,46 @@
           "step_number": 1,
           "step_explanation": "استخراج بؤرة القطع المكافئ من المعادلة المعطاة.",
           "step_assistant_solution": "(3, 0) و (-3, 0)",
+          "equation_template": "البؤرتان هما ({input_1}, {input_2}) و ({input_3}, {input_4})",
           "inputs": [
             {
-              "input_id": "q1_step1_part_1",
-              "label": "ما هي إحداثيات بؤرة القطع الناقص المستنتجة؟ — الجزء 1",
-              "correct_answer": "(3, 0)",
+              "input_id": "q1_s1_i1",
+              "correct_answer": "3",
               "options": [
-                "(3, 0)",
-                "(0, 3)",
-                "(12, 0)",
-                "(6, 0)"
+                "3",
+                "-3",
+                "6",
+                "0"
               ]
             },
             {
-              "input_id": "q1_step1_part_2",
-              "label": "ما هي إحداثيات بؤرة القطع الناقص المستنتجة؟ — الجزء 2",
-              "correct_answer": "(-3, 0)",
+              "input_id": "q1_s1_i2",
+              "correct_answer": "0",
               "options": [
-                "(-3, 0)",
-                "(0, -3)",
-                "(-12, 0)",
-                "(-6, 0)"
+                "0",
+                "3",
+                "-3",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "correct_answer": "-3",
+              "options": [
+                "-3",
+                "3",
+                "6",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "3",
+                "-3",
+                "1"
               ]
             }
           ],
@@ -48,13 +67,23 @@
           "layout": {
             "rows": [
               [
+                "البؤرتان هما (",
                 {
-                  "input_id": "q1_step1_part_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " و ",
+                ", ",
                 {
-                  "input_id": "q1_step1_part_2"
-                }
+                  "input_id": "q1_s1_i2"
+                },
+                ") و (",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                ", ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                ")"
               ]
             ]
           }
@@ -63,38 +92,56 @@
           "step_number": 2,
           "step_explanation": "تطبيق تعريف القطع الناقص باستخدام المسافة بين النقطة والبؤرتين.",
           "step_assistant_solution": "sqrt(x^2 + (y-3)^2) + sqrt(x^2 + (y+3)^2) = 12",
+          "equation_template": "sqrt(x^2 + (y{input_1}{input_2})^2) + sqrt(x^2 + (y{input_3}{input_4})^2) = {input_5}",
           "inputs": [
             {
-              "input_id": "q1_step2_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "correct_answer": "-",
+              "options": [
+                "-",
+                "+",
+                "×",
+                "/"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
               "correct_answer": "3",
               "options": [
                 "3",
-                "12",
                 "6",
-                "1"
+                "12",
+                "0"
               ]
             },
             {
-              "input_id": "q1_step2_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s2_i3",
+              "correct_answer": "+",
+              "options": [
+                "+",
+                "-",
+                "×",
+                "/"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i4",
               "correct_answer": "3",
               "options": [
                 "3",
-                "2",
-                "4",
-                "5"
+                "6",
+                "12",
+                "0"
               ]
             },
             {
-              "input_id": "q1_step2_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q1_s2_i5",
               "correct_answer": "12",
               "options": [
                 "12",
-                "11",
-                "13",
-                "14"
+                "6",
+                "36",
+                "27"
               ]
             }
           ],
@@ -107,40 +154,30 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_step2",
-              "label": "ما هي الصيغة الصحيحة للتعريف؟",
-              "correct_answer": "sqrt(x^2 + (y-3)^2) + sqrt(x^2 + (y+3)^2) = 12",
-              "options": [
-                "sqrt(x^2 + (y-3)^2) + sqrt(x^2 + (y+3)^2) = 12",
-                "sqrt(x^2 + y^2) = 12",
-                "sqrt(x^2 + y^2) = 6",
-                "x^2/a^2 + y^2/b^2 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "sqrt(x^2 + (y",
-                "-",
                 {
-                  "input_id": "q1_step2_atom_1"
+                  "input_id": "q1_s2_i1"
+                },
+                {
+                  "input_id": "q1_s2_i2"
                 },
                 ")^2) + sqrt(x^2 + (y",
-                "+",
                 {
-                  "input_id": "q1_step2_atom_2"
+                  "input_id": "q1_s2_i3"
+                },
+                {
+                  "input_id": "q1_s2_i4"
                 },
                 ")^2) = ",
                 {
-                  "input_id": "q1_step2_atom_3"
+                  "input_id": "q1_s2_i5"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

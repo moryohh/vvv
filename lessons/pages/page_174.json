@@ -13,10 +13,11 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد قيمة a من طول المحور الحقيقي المعطى.",
           "step_assistant_solution": "2a = 6 => a = 3 => a² = 9",
+          "equation_template": "a² = {input_1}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة a²؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a²",
               "correct_answer": "9",
               "options": [
                 "9",
@@ -38,9 +39,9 @@
           "layout": {
             "rows": [
               [
-                "2a = 6 => a = 3 => a² = ",
+                "a² = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -50,10 +51,11 @@
           "step_number": 2,
           "step_explanation": "نستخدم قانون الاختلاف المركزي e = c/a لإيجاد قيمة c.",
           "step_assistant_solution": "c = e * a = 2 * 3 = 6 => c² = 36",
+          "equation_template": "c² = {input_1}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيمة c²؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة c²",
               "correct_answer": "36",
               "options": [
                 "36",
@@ -70,9 +72,9 @@
           "layout": {
             "rows": [
               [
-                "c = e * a = 2 * 3 = 6 => c² = ",
+                "c² = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
                 }
               ]
             ]
@@ -82,10 +84,33 @@
           "step_number": 3,
           "step_explanation": "نستخدم العلاقة c² = a² + b² لإيجاد b².",
           "step_assistant_solution": "b² = c² - a² = 36 - 9 = 27",
+          "equation_template": "b² = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "ما هي قيمة b²؟",
+              "input_id": "q1_s3_i1",
+              "label": "قيمة c²",
+              "correct_answer": "36",
+              "options": [
+                "36",
+                "27",
+                "9",
+                "45"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "label": "قيمة a²",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "36",
+                "27",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i3",
+              "label": "قيمة b²",
               "correct_answer": "27",
               "options": [
                 "27",
@@ -102,9 +127,17 @@
           "layout": {
             "rows": [
               [
-                "b² = c² - a² = 36 - 9 = ",
+                "b² = ",
                 {
-                  "input_id": "step3_input1"
+                  "input_id": "q1_s3_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s3_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s3_i3"
                 }
               ]
             ]

@@ -12,38 +12,39 @@
           "step_number": 1,
           "step_explanation": "تبسيط القوى وتوحيد المقامات باستخدام خصائص الأوميغا (ω³=1).",
           "step_assistant_solution": "الناتج هو [3 + 5ω + 4ω²]⁶",
+          "equation_template": "[{input_1} + {input_2}ω + {input_3}ω²]⁶",
           "inputs": [
             {
-              "input_id": "q4_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الثابت الأول",
               "correct_answer": "3",
               "options": [
                 "3",
-                "1",
                 "2",
-                "4"
+                "4",
+                "5"
               ]
             },
             {
-              "input_id": "q4_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "معامل ω",
               "correct_answer": "5",
               "options": [
                 "5",
+                "3",
                 "4",
-                "6",
-                "7"
+                "6"
               ]
             },
             {
-              "input_id": "q4_step1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q1_s1_i3",
+              "label": "معامل ω²",
               "correct_answer": "4",
               "options": [
                 "4",
-                "3",
                 "5",
-                "6"
+                "3",
+                "2"
               ]
             }
           ],
@@ -56,40 +57,25 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q4_step1",
-              "label": "ما قيمة القوس بعد التبسيط؟",
-              "correct_answer": "3 + 5ω + 4ω²",
-              "options": [
-                "3 + 5ω + 4ω²",
-                "3 + 5ω + 4ω",
-                "3 - 5ω - 4ω²",
-                "1 + ω + ω²"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "[",
                 {
-                  "input_id": "q4_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " ",
-                "+",
+                " + ",
                 {
-                  "input_id": "q4_step1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                "ω ",
-                "+",
+                "ω + ",
                 {
-                  "input_id": "q4_step1_atom_3"
+                  "input_id": "q1_s1_i3"
                 },
-                "ω²"
+                "ω²]⁶"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },

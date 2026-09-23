@@ -24,16 +24,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: إثبات توازي خطي الإسقاط AA' و BB' بالاعتماد على تعريف مسقط قطعة مستقيم على مستوٍ وخاصية الأعمدة على نفس المستوي.",
           "step_assistant_solution": "AA' // BB' لأن المستقيمين العموديين على مستوٍ واحد متوازيان",
+          "equation_template": "{input_1} // {input_2}",
           "inputs": [
             {
-              "input_id": "q1_step1_input1",
-              "label": "ما هي العلاقة بين المستقيمين AA' و BB' العموديين على المستوي (X)؟",
-              "correct_answer": "AA' // BB'",
+              "input_id": "q1_s1_i1",
+              "label": "المستقيم الأول للإسقاط",
+              "correct_answer": "AA'",
               "options": [
-                "AA' // BB'",
-                "AA' ⊥ BB'",
-                "AA' = BB'",
-                "AA' يتقاطع مع BB'"
+                "AA'",
+                "AB",
+                "A'B'",
+                "X"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "المستقيم الثاني للإسقاط",
+              "correct_answer": "BB'",
+              "options": [
+                "BB'",
+                "AB",
+                "A'B'",
+                "Y"
               ]
             }
           ],
@@ -50,9 +62,12 @@
             "rows": [
               [
                 {
-                  "input_id": "q1_step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                " لأن المستقيمين العموديين على مستوٍ واحد متوازيان"
+                " // ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
           }
@@ -61,16 +76,28 @@
           "step_number": 2,
           "step_explanation": "الخارطة الذهنية: إثبات توازي المستقيم AB ومسقطه A'B' باستخدام مبرهنة توازي مستقيم مع مستوٍ ومستقيمات التقاطع.",
           "step_assistant_solution": "AB // A'B'",
+          "equation_template": "{input_1} // {input_2}",
           "inputs": [
             {
-              "input_id": "q1_step2_input1",
-              "label": "إذا وازى مستقيم مستوياً، فما علاقته بمستقيم تقاطع المستوي المحيط به مع ذلك المستوي؟",
-              "correct_answer": "AB // A'B'",
+              "input_id": "q1_s2_i1",
+              "label": "القطعة المستقيمة الأصلية",
+              "correct_answer": "AB",
               "options": [
-                "AB // A'B'",
-                "AB ⊥ A'B'",
-                "AB يخالف A'B'",
-                "AB يتقاطع مع A'B'"
+                "AB",
+                "AA'",
+                "BB'",
+                "A'B'"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "مسقط القطعة المستقيمة",
+              "correct_answer": "A'B'",
+              "options": [
+                "A'B'",
+                "AA'",
+                "BB'",
+                "AB"
               ]
             }
           ],
@@ -87,7 +114,11 @@
             "rows": [
               [
                 {
-                  "input_id": "q1_step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " // ",
+                {
+                  "input_id": "q1_s2_i2"
                 }
               ]
             ]
@@ -97,27 +128,28 @@
           "step_number": 3,
           "step_explanation": "الخارطة الذهنية: استنتاج نوع الشكل ABB'A' وإثبات تساوي طولي القطعتين AB و A'B'.",
           "step_assistant_solution": "الشكل ABB'A' متوازي أضلاع وبالتالي AB = A'B'",
+          "equation_template": "{input_1} = {input_2}",
           "inputs": [
             {
-              "input_id": "q1_step3_input1_part_1",
-              "label": "بما أن كل ضلعين متقابلين متوازيان، فما هو الشكل الناتج وما العلاقة بين طولي AB و A'B'؟ — الجزء 1",
-              "correct_answer": "الشكل متوازي أضلاع",
+              "input_id": "q1_s3_i1",
+              "label": "الضلع الأول",
+              "correct_answer": "AB",
               "options": [
-                "الشكل متوازي أضلاع",
-                "الشكل شبه منحرف",
-                "الشكل مربع",
-                "الشكل مستطيل دائماً"
+                "AB",
+                "AA'",
+                "BB'",
+                "X"
               ]
             },
             {
-              "input_id": "q1_step3_input1_part_2",
-              "label": "بما أن كل ضلعين متقابلين متوازيان، فما هو الشكل الناتج وما العلاقة بين طولي AB و A'B'؟ — الجزء 2",
-              "correct_answer": "AB = A'B'",
+              "input_id": "q1_s3_i2",
+              "label": "الضلع المقابل له",
+              "correct_answer": "A'B'",
               "options": [
-                "AB = A'B'",
-                "AB > A'B'",
-                "AB = 2 A'B'",
-                "AB < A'B'"
+                "A'B'",
+                "AA'",
+                "BB'",
+                "Y"
               ]
             }
           ],
@@ -134,11 +166,11 @@
             "rows": [
               [
                 {
-                  "input_id": "q1_step3_input1_part_1"
+                  "input_id": "q1_s3_i1"
                 },
-                " و ",
+                " = ",
                 {
-                  "input_id": "q1_step3_input1_part_2"
+                  "input_id": "q1_s3_i2"
                 }
               ]
             ]

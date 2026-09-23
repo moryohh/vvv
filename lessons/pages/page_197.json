@@ -13,15 +13,27 @@
           "step_number": 1,
           "step_explanation": "استخراج بؤرتي القطع الزائد لتكون رؤوساً للقطع الناقص.",
           "step_assistant_solution": "a^2 = 25, b^2 = 9, c^2 = 34, الرؤوس (±sqrt(34), 0)",
+          "equation_template": "x^2 / {input_1} + y^2 / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q13_s1",
-              "label": "ما هي قيمة a^2 للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة مقام x^2",
               "correct_answer": "34",
               "options": [
                 "34",
                 "25",
+                "18",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة مقام y^2",
+              "correct_answer": "18",
+              "options": [
+                "18",
                 "9",
+                "34",
                 "16"
               ]
             }
@@ -38,11 +50,15 @@
           "layout": {
             "rows": [
               [
-                "a^2 = 25, b^2 = 9, c^2 = 34, الرؤوس (±sqrt(",
+                "x^2 / ",
                 {
-                  "input_id": "q13_s1"
+                  "input_id": "q1_s1_i1"
                 },
-                "), 0)"
+                " + y^2 / ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }
@@ -59,16 +75,28 @@
           "step_number": 1,
           "step_explanation": "إيجاد بؤرتي القطع الناقص.",
           "step_assistant_solution": "c = 4",
+          "equation_template": "x^2 / {input_1} - y^2 / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q14_s1",
-              "label": "قيمة c للقطع الناقص هي:",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة مقام x^2 للقطع الزائد",
               "correct_answer": "4",
               "options": [
                 "4",
                 "16",
                 "2",
-                "8"
+                "12"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة مقام y^2 للقطع الزائد",
+              "correct_answer": "12",
+              "options": [
+                "12",
+                "4",
+                "16",
+                "2"
               ]
             }
           ],
@@ -84,10 +112,15 @@
           "layout": {
             "rows": [
               [
-                "c = ",
+                "x^2 / ",
                 {
-                  "input_id": "q14_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " - y^2 / ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }
@@ -104,16 +137,28 @@
           "step_number": 1,
           "step_explanation": "تحديد قيمة الرأس a للقطع الزائد من خلال بؤرتي القطع الناقص.",
           "step_assistant_solution": "a = 5",
+          "equation_template": "x^2 / {input_1} - 9y^2 / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q15_s1",
-              "label": "قيمة a للقطع الزائد هي:",
-              "correct_answer": "5",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة a^2",
+              "correct_answer": "25",
               "options": [
-                "5",
-                "7",
                 "25",
-                "49"
+                "5",
+                "49",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "قيمة مقام y^2",
+              "correct_answer": "400",
+              "options": [
+                "400",
+                "24",
+                "49",
+                "100"
               ]
             }
           ],
@@ -129,10 +174,15 @@
           "layout": {
             "rows": [
               [
-                "a = ",
+                "x^2 / ",
                 {
-                  "input_id": "q15_s1"
-                }
+                  "input_id": "q3_s1_i1"
+                },
+                " - 9y^2 / ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }

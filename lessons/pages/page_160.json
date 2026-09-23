@@ -13,14 +13,26 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبدأ بتبسيط الطرف الأيمن للمعادلة المعطاة باستخدام مرافق المقام للحصول على قيم e و d.",
           "step_assistant_solution": "e = 1, d = 3",
+          "equation_template": "e = {input_1}, d = {input_2}",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "ما هي قيمة d بعد التبسيط؟",
-              "correct_answer": "3",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة e",
+              "correct_answer": "1",
               "options": [
                 "1",
+                "2",
+                "-1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة d",
+              "correct_answer": "3",
+              "options": [
                 "3",
+                "1",
                 "2",
                 "6"
               ]
@@ -38,9 +50,13 @@
           "layout": {
             "rows": [
               [
-                "e = 1, d = ",
+                "e = ",
                 {
-                  "input_id": "q4_step1"
+                  "input_id": "q1_s1_i1"
+                },
+                ", d = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -58,16 +74,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبسط الكسر المركب المعطى لنستخرج قيم الثوابت d و e.",
           "step_assistant_solution": "d = 3, e = -4",
+          "equation_template": "d = {input_1}, e = {input_2}",
           "inputs": [
             {
-              "input_id": "q5_step1",
-              "label": "ما هي قيمة e الناتجة؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة d",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "4",
+                "-4"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة e",
               "correct_answer": "-4",
               "options": [
-                "4",
                 "-4",
-                "3",
-                "-3"
+                "4",
+                "-3",
+                "3"
               ]
             }
           ],
@@ -83,9 +111,13 @@
           "layout": {
             "rows": [
               [
-                "d = 3, e = ",
+                "d = ",
                 {
-                  "input_id": "q5_step1"
+                  "input_id": "q2_s1_i1"
+                },
+                ", e = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]

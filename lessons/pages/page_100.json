@@ -13,27 +13,28 @@
           "step_number": 1,
           "step_explanation": "تحويل العدد المركب z = √3 + i إلى الصيغة القطبية (r, θ).",
           "step_assistant_solution": "r = 2, θ = π/6",
+          "equation_template": "r = {input_1}, θ = {input_2}",
           "inputs": [
             {
-              "input_id": "q28_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المقياس r",
               "correct_answer": "2",
               "options": [
+                "1",
                 "2",
-                "4",
                 "3",
-                "1"
+                "4"
               ]
             },
             {
-              "input_id": "q28_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "6",
+              "input_id": "q1_s1_i2",
+              "label": "قيمة السعة θ",
+              "correct_answer": "π/6",
               "options": [
-                "6",
-                "3",
-                "5",
-                "7"
+                "π/6",
+                "π/3",
+                "π/4",
+                "π/2"
               ]
             }
           ],
@@ -46,71 +47,47 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q28_step1_input1",
-              "label": "ما هي قيمة المقياس r والسعة θ للعدد z؟",
-              "correct_answer": "r=2, θ=π/6",
-              "options": [
-                "r=2, θ=π/6",
-                "r=4, θ=π/3",
-                "r=2, θ=π/3",
-                "r=√3, θ=π/6"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "r=",
+                "r = ",
                 {
-                  "input_id": "q28_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", θ=π/",
+                ", θ = ",
                 {
-                  "input_id": "q28_step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "رفع العدد للقوة 2 باستخدام مبرهنة ديموافر.",
           "step_assistant_solution": "4(cos π/3 + i sin π/3)",
+          "equation_template": "{input_1}(cos {input_2} + i sin {input_2})",
           "inputs": [
             {
-              "input_id": "q28_step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة المقياس الجديد",
               "correct_answer": "4",
               "options": [
+                "2",
                 "4",
-                "2",
-                "3",
-                "5"
+                "8",
+                "16"
               ]
             },
             {
-              "input_id": "q28_step2_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s2_i2",
+              "label": "قيمة الزاوية الجديدة",
+              "correct_answer": "π/3",
               "options": [
-                "3",
-                "6",
-                "2",
-                "4"
-              ]
-            },
-            {
-              "input_id": "q28_step2_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "3",
-              "options": [
-                "3",
-                "6",
-                "2",
-                "4"
+                "π/6",
+                "π/3",
+                "2π/3",
+                "π/2"
               ]
             }
           ],
@@ -123,75 +100,49 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q28_step2_input1",
-              "label": "ما هو ناتج (z)^2 بالصيغة القطبية؟",
-              "correct_answer": "4(cos π/3 + i sin π/3)",
-              "options": [
-                "4(cos π/3 + i sin π/3)",
-                "2(cos π/3 + i sin π/3)",
-                "4(cos π/6 + i sin π/6)",
-                "4(cos 2π/3 + i sin 2π/3)"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q28_step2_input1_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                "(cos π/",
+                "(cos ",
                 {
-                  "input_id": "q28_step2_input1_atom_2"
+                  "input_id": "q1_s2_i2"
                 },
-                " + i sin π/",
-                {
-                  "input_id": "q28_step2_input1_atom_3"
-                },
+                " + i sin ",
+                "π/3",
                 ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 3,
           "step_explanation": "إيجاد الجذور الخمسة باستخدام تعميم مبرهنة ديموافر.",
           "step_assistant_solution": "الزاوية تصبح (π/3 + 2kπ)/5 حيث k=0,1,2,3,4",
+          "equation_template": "θ_new = ( {input_1} + 2kπ ) / {input_2}",
           "inputs": [
             {
-              "input_id": "q28_step3_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s3_i1",
+              "label": "الزاوية الأصلية في البسط",
+              "correct_answer": "π/3",
               "options": [
-                "3",
-                "2",
-                "4",
-                "5"
+                "π/6",
+                "π/3",
+                "π/2",
+                "π/4"
               ]
             },
             {
-              "input_id": "q28_step3_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "2",
-              "options": [
-                "2",
-                "5",
-                "1",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q28_step3_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q1_s3_i2",
+              "label": "عدد الجذور",
               "correct_answer": "5",
               "options": [
-                "5",
-                "+ 2",
+                "2",
+                "3",
                 "4",
-                "6"
+                "5"
               ]
             }
           ],
@@ -204,39 +155,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q28_step3_input1",
-              "label": "ما هي الصيغة العامة للزاوية عند إيجاد الجذور الخمسة؟",
-              "correct_answer": "(π/3 + 2kπ)/5",
-              "options": [
-                "(π/3 + 2kπ)/5",
-                "(π/3 + kπ)/5",
-                "(π/3 + 2kπ)",
-                "π/(3*5) + 2kπ"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(π/",
+                "θ_new = ( ",
                 {
-                  "input_id": "q28_step3_input1_atom_1"
+                  "input_id": "q1_s3_i1"
                 },
-                " ",
-                "+",
+                " + 2kπ ) / ",
                 {
-                  "input_id": "q28_step3_input1_atom_2"
-                },
-                "kπ)/",
-                {
-                  "input_id": "q28_step3_input1_atom_3"
+                  "input_id": "q1_s3_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

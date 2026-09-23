@@ -13,10 +13,33 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد بؤرة القطع المكافئ لأنها تمثل بؤرة القطع الناقص (c).",
           "step_assistant_solution": "بؤرة المكافئ (4,0) لذا c=4",
+          "equation_template": "البؤرة هي ({input_1}, {input_2}) لذا c = {input_3}",
           "inputs": [
             {
-              "input_id": "q19_step1",
-              "label": "قيمة c للقطع الناقص هي:",
+              "input_id": "q1_s1_i1",
+              "label": "الإحداثي السيني للبؤرة",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "16",
+                "8",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الإحداثي الصادي للبؤرة",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "4",
+                "8",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة c للقطع الناقص",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -38,9 +61,17 @@
           "layout": {
             "rows": [
               [
-                "بؤرة المكافئ (4,0) لذا c=",
+                "البؤرة هي (",
                 {
-                  "input_id": "q19_step1"
+                  "input_id": "q1_s1_i1"
+                },
+                ", ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                ") لذا c = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -58,16 +89,28 @@
           "step_number": 1,
           "step_explanation": "نوجد نقطة التقاطع مع محور السينات بوضع y=0 في معادلة المستقيم.",
           "step_assistant_solution": "النقطة هي (6,0)",
+          "equation_template": "النقطة هي ({input_1}, {input_2})",
           "inputs": [
             {
-              "input_id": "q20_step1",
-              "label": "قيمة x عند تقاطع المستقيم مع محور السينات هي:",
+              "input_id": "q2_s1_i1",
+              "label": "الإحداثي السيني لنقطة التقاطع",
               "correct_answer": "6",
               "options": [
                 "6",
                 "12",
                 "4",
                 "2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "الإحداثي الصادي لنقطة التقاطع",
+              "correct_answer": "0",
+              "options": [
+                "0",
+                "6",
+                "12",
+                "4"
               ]
             }
           ],
@@ -85,9 +128,13 @@
               [
                 "النقطة هي (",
                 {
-                  "input_id": "q20_step1"
+                  "input_id": "q2_s1_i1"
                 },
-                ",0)"
+                ", ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ")"
               ]
             ]
           }

@@ -12,16 +12,28 @@
           "step_number": 1,
           "step_explanation": "نستخرج العلاقة بين a و b من النسبة المعطاة بين طولي المحورين.",
           "step_assistant_solution": "a = 2b",
+          "equation_template": "a = {input_1}{input_2}",
           "inputs": [
             {
-              "input_id": "q6_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "المعامل العددي",
               "correct_answer": "2",
               "options": [
                 "2",
                 "4",
                 "1",
                 "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "المتغير بدلالة b",
+              "correct_answer": "b",
+              "options": [
+                "b",
+                "b²",
+                "c",
+                "a"
               ]
             }
           ],
@@ -34,31 +46,19 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q6_s1_i1",
-              "label": "ما هي قيمة a بدلالة b؟",
-              "correct_answer": "a = 2b",
-              "options": [
-                "a = 2b",
-                "a = b/2",
-                "a = 4b",
-                "a = b"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "a = ",
                 {
-                  "input_id": "q6_s1_i1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "b"
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -83,27 +83,28 @@
           "step_number": 1,
           "step_explanation": "تحديد قيم a و b من أبعاد الجسر.",
           "step_assistant_solution": "a = 12, b = 9",
+          "equation_template": "a = {input_1}, b = {input_2}",
           "inputs": [
             {
-              "input_id": "q7_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "12",
               "options": [
                 "12",
                 "24",
                 "6",
-                "11"
+                "18"
               ]
             },
             {
-              "input_id": "q7_s1_i1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b",
               "correct_answer": "9",
               "options": [
                 "9",
                 "18",
-                "8",
-                "10"
+                "4.5",
+                "12"
               ]
             }
           ],
@@ -111,34 +112,20 @@
             "step_hint_text": "المسافة الكلية 2a = 24، والارتفاع يمثل نصف المحور الأصغر b.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q7_s1_i1",
-              "label": "ما هما قيمتا a و b؟",
-              "correct_answer": "a = 12, b = 9",
-              "options": [
-                "a = 12, b = 9",
-                "a = 24, b = 9",
-                "a = 12, b = 18",
-                "a = 6, b = 9"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "a = ",
                 {
-                  "input_id": "q7_s1_i1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
                 ", b = ",
                 {
-                  "input_id": "q7_s1_i1_atom_2"
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -152,27 +139,28 @@
           "step_number": 1,
           "step_explanation": "نستخدم نفس معادلة القطع الناقص المستخرجة في السؤال السابق.",
           "step_assistant_solution": "x²/144 + y²/81 = 1",
+          "equation_template": "x² / {input_1} + y² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q8_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q3_s1_i1",
+              "label": "مقام الحد الأول (a²)",
               "correct_answer": "144",
               "options": [
                 "144",
-                "81",
+                "12",
                 "24",
-                "12"
+                "72"
               ]
             },
             {
-              "input_id": "q8_s1_i1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q3_s1_i2",
+              "label": "مقام الحد الثاني (b²)",
               "correct_answer": "81",
               "options": [
                 "81",
-                "144",
                 "9",
-                "80"
+                "18",
+                "36"
               ]
             }
           ],
@@ -180,35 +168,21 @@
             "step_hint_text": "التعويض المباشر في معادلة القطع الناقص القياسية.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q8_s1_i1",
-              "label": "ما هي المعادلة المستخدمة؟",
-              "correct_answer": "x²/144 + y²/81 = 1",
-              "options": [
-                "x²/144 + y²/81 = 1",
-                "x²/81 + y²/144 = 1",
-                "x²/24 + y²/9 = 1",
-                "x²/12 + y²/9 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "x²/",
+                "x² / ",
                 {
-                  "input_id": "q8_s1_i1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                " + y²/",
+                " + y² / ",
                 {
-                  "input_id": "q8_s1_i1_atom_2"
+                  "input_id": "q3_s1_i2"
                 },
                 " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

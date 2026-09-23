@@ -13,16 +13,17 @@
           "step_number": 1,
           "step_explanation": "نبدأ بتحليل المقام (x^2+y^2) إلى (x-yi)(x+yi) لاختصار البسط.",
           "step_assistant_solution": "1/(x+yi) = 1/((1+xi)(3+i))",
+          "equation_template": "1/(x+yi) = 1/({input_1})",
           "inputs": [
             {
-              "input_id": "step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "1",
+              "input_id": "q1_s1_i1",
+              "label": "ما هو ناتج الطرف الآخر بعد الاختصار؟",
+              "correct_answer": "(1+xi)(3+i)",
               "options": [
-                "1",
-                "0",
-                "2",
-                "3"
+                "(1+xi)(3+i)",
+                "(1-xi)(3+i)",
+                "(1+xi)(3-i)",
+                "1+3xi"
               ]
             }
           ],
@@ -35,30 +36,17 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step1_input1",
-              "label": "ما هو ناتج الاختصار بعد تحليل المقام؟",
-              "correct_answer": "1/(x+yi)",
-              "options": [
-                "1/(x+yi)",
-                "x+yi",
-                "1/(x-yi)",
-                "x-yi"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "1/(x+yi) = 1/(",
                 {
-                  "input_id": "step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "/(x+yi)"
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -72,10 +60,11 @@
           "step_number": 1,
           "step_explanation": "نقوم بفك القوس المربع (2-i)^2 أولاً.",
           "step_assistant_solution": "3-4i",
+          "equation_template": "(2-i)^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "q26_step1",
-              "label": "ما هو ناتج (2-i)^2؟",
+              "input_id": "q2_s1_i1",
+              "label": "ما هو ناتج فك القوس؟",
               "correct_answer": "3-4i",
               "options": [
                 "3-4i",
@@ -97,8 +86,9 @@
           "layout": {
             "rows": [
               [
+                "(2-i)^2 = ",
                 {
-                  "input_id": "q26_step1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -116,27 +106,17 @@
           "step_number": 1,
           "step_explanation": "نحول الطرف الثاني من (3-2i)/i إلى صيغته العادية.",
           "step_assistant_solution": "-2+3i",
+          "equation_template": "(3-2i)/i = {input_1}",
           "inputs": [
             {
-              "input_id": "q27_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "-2",
+              "input_id": "q3_s1_i1",
+              "label": "ما هي الصيغة العادية للعدد؟",
+              "correct_answer": "-2+3i",
               "options": [
-                "-2",
-                "2",
-                "-3",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q27_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "3",
-              "options": [
-                "3",
-                "2",
-                "4",
-                "5"
+                "-2+3i",
+                "2-3i",
+                "-3+2i",
+                "3+2i"
               ]
             }
           ],
@@ -149,34 +129,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q27_step1",
-              "label": "ما هي الصيغة العادية للعدد (3-2i)/i؟",
-              "correct_answer": "-2+3i",
-              "options": [
-                "-2+3i",
-                "2-3i",
-                "-3+2i",
-                "3+2i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(3-2i)/i = ",
                 {
-                  "input_id": "q27_step1_atom_1"
-                },
-                "+",
-                {
-                  "input_id": "q27_step1_atom_2"
-                },
-                "i"
+                  "input_id": "q3_s1_i1"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

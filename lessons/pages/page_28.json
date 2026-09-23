@@ -13,38 +13,72 @@
           "step_number": 1,
           "step_explanation": "تبسيط الكسور المركبة بضرب كل كسر بمرافق مقامه.",
           "step_assistant_solution": "النتيجة هي: ((1-3i)/2)x + ((5-5i)/5)y = -i",
+          "equation_template": "({input_1}i/{input_2})x + ({input_3}{input_4}i/{input_5})y = {input_6}i",
           "inputs": [
             {
-              "input_id": "q14_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "1",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الجزء الحقيقي في بسط الكسر الأول",
+              "correct_answer": "1-3",
               "options": [
-                "1",
-                "3",
-                "2",
-                "0"
+                "1-3",
+                "1+3",
+                "2-1",
+                "3+1"
               ]
             },
             {
-              "input_id": "q14_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "3",
-              "options": [
-                "3",
-                "2",
-                "4",
-                "5"
-              ]
-            },
-            {
-              "input_id": "q14_s1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "مقام الكسر الأول",
               "correct_answer": "2",
               "options": [
                 "2",
                 "1",
+                "4",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الجزء الحقيقي لبسط الكسر الثاني",
+              "correct_answer": "5",
+              "options": [
+                "5",
                 "3",
-                "4"
+                "2",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "إشارة الجزء التخيلي",
+              "correct_answer": "-",
+              "options": [
+                "-",
+                "+",
+                "*",
+                "/"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i5",
+              "label": "مقام الكسر الثاني",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "2",
+                "3",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i6",
+              "label": "ناتج الطرف الأيمن",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "0",
+                "i"
               ]
             }
           ],
@@ -57,38 +91,36 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q14_s1",
-              "label": "ما هو ناتج تبسيط الكسر الأول (2-i)/(1+i)؟",
-              "correct_answer": "(1-3i)/2",
-              "options": [
-                "(1-3i)/2",
-                "(3-i)/2",
-                "(1+3i)/2",
-                "(2-i)/2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "(",
                 {
-                  "input_id": "q14_s1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "-",
+                "i/",
                 {
-                  "input_id": "q14_s1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                "i)/",
+                ")x + (",
                 {
-                  "input_id": "q14_s1_atom_3"
-                }
+                  "input_id": "q1_s1_i3"
+                },
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                "i/",
+                {
+                  "input_id": "q1_s1_i5"
+                },
+                ")y = ",
+                {
+                  "input_id": "q1_s1_i6"
+                },
+                "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -102,16 +134,61 @@
           "step_number": 1,
           "step_explanation": "فك الأقواس في الطرف الأيسر وتجميع الأجزاء الحقيقية والتخيلية.",
           "step_assistant_solution": "المعادلة الناتجة: (xy+3) + (y-3x)i = -1-13i",
+          "equation_template": "(xy {input_1} {input_2}) + (y {input_3} {input_4}x)i = -1 {input_5} 13i",
           "inputs": [
             {
-              "input_id": "q15_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "إشارة الجزء الحقيقي",
+              "correct_answer": "+",
+              "options": [
+                "+",
+                "-",
+                "*",
+                "/"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة الجزء الحقيقي الثابت",
               "correct_answer": "3",
               "options": [
                 "3",
-                "2",
-                "4",
-                "5"
+                "-3",
+                "1",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "إشارة الجزء التخيلي",
+              "correct_answer": "-",
+              "options": [
+                "-",
+                "+",
+                "*",
+                "/"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i4",
+              "label": "معامل x",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "1",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i5",
+              "label": "إشارة الجزء التخيلي للطرف الأيمن",
+              "correct_answer": "-",
+              "options": [
+                "-",
+                "+",
+                "*",
+                "/"
               ]
             }
           ],
@@ -124,31 +201,33 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q15_s1",
-              "label": "ما هو الجزء الحقيقي بعد فك الأقواس؟",
-              "correct_answer": "xy+3",
-              "options": [
-                "xy+3",
-                "xy-3",
-                "xy-3i",
-                "xy+3i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "xy",
-                "+",
+                "(xy ",
                 {
-                  "input_id": "q15_s1_atom_1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ") + (y ",
+                {
+                  "input_id": "q2_s1_i3"
+                },
+                " ",
+                {
+                  "input_id": "q2_s1_i4"
+                },
+                "x)i = -1 ",
+                {
+                  "input_id": "q2_s1_i5"
+                },
+                " 13i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

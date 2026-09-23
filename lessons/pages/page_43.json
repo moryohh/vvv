@@ -7,44 +7,23 @@
       "question_number": "9",
       "question_text": "مثال (9): اذا كان (3 + ai) هو احد الجذرين التربيعيين للعدد المركب (b + 6i) جد قيمتي a, b ∈ R",
       "diagram": null,
-      "full_model_solution": "بما أن (3 + ai) هو أحد الجذرين التربيعيين، فإن مربع الجذر يساوي العدد المركب: (3 + ai)^2 = b + 6i. بفك القوس: 9 + 6ai + a^2i^2 = b + 6i، أي 9 + 6ai - a^2 = b + 6i. بمساواة الحقيقي مع الحقيقي (b = 9 - a^2) والتخيلي مع التخيلي (6a = 6)، نجد من الجزء التخيلي أن a = 1. بالتعويض في معادلة الحقيقي: b = 9 - (1)^2 = 8. إذن a = 1 و b = 8.",
+      "full_model_solution": "بما أن (3 + ai) هو أحد الجذرين التربيعيين، فإن مربع الجذر يساوي العدد المركب: (3 + ai)^2 = b + 6i. بفك القوس: 9 + 6ai - a^2 = b + 6i، أي 9 + 6ai - a^2 = b + 6i. بمساواة الحقيقي مع الحقيقي (b = 9 - a^2) والتخيلي مع التخيلي (6a = 6)، نجد من الجزء التخيلي أن a = 1. بالتعويض في معادلة الحقيقي: b = 9 - (1)^2 = 8. إذن a = 1 و b = 8.",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "نبدأ بكتابة المعادلة الأساسية التي تربط الجذر بالعدد المركب وهي أن مربع الجذر التربيعي يساوي العدد الأصلي.",
           "step_assistant_solution": "(3 + ai)^2 = b + 6i",
+          "equation_template": "9 + {input_1}ai - a^2 = b + 6i",
           "inputs": [
             {
-              "input_id": "q9_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "9",
+              "input_id": "q1_s1_i1",
+              "label": "معامل الجزء التخيلي",
+              "correct_answer": "6",
               "options": [
-                "9",
+                "6",
                 "3",
-                "8",
-                "10"
-              ]
-            },
-            {
-              "input_id": "q9_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "6",
-              "options": [
-                "6",
-                "5",
-                "7",
-                "8"
-              ]
-            },
-            {
-              "input_id": "q9_s1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "6",
-              "options": [
-                "6",
-                "5",
-                "7",
-                "8"
+                "9",
+                "2"
               ]
             }
           ],
@@ -57,40 +36,17 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q9_s1",
-              "label": "ما هي المعادلة الناتجة عن تربيع الجذر؟",
-              "correct_answer": "9 + 6ai - a^2 = b + 6i",
-              "options": [
-                "9 + 6ai - a^2 = b + 6i",
-                "9 + ai - a^2 = b + 6i",
-                "9 + 6ai + a^2 = b + 6i",
-                "3 + 6ai - a^2 = b + 6i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "9 + ",
                 {
-                  "input_id": "q9_s1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " ",
-                "+",
-                {
-                  "input_id": "q9_s1_atom_2"
-                },
-                "ai - a^2 = b ",
-                "+",
-                {
-                  "input_id": "q9_s1_atom_3"
-                },
-                "i"
+                "ai - a^2 = b + 6i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -104,16 +60,28 @@
           "step_number": 1,
           "step_explanation": "نساوي الأجزاء التخيلية في الطرفين لاستخراج قيمة a.",
           "step_assistant_solution": "8a = 24 => a = 3",
+          "equation_template": "{input_1}a = 24 => a = {input_2}",
           "inputs": [
             {
-              "input_id": "q10_s1",
-              "label": "ما هي قيمة a الناتجة؟",
+              "input_id": "q2_s1_i1",
+              "label": "معامل a",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "4",
+                "12",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة a",
               "correct_answer": "3",
               "options": [
                 "3",
                 "4",
-                "6",
-                "8"
+                "2",
+                "6"
               ]
             }
           ],
@@ -124,9 +92,12 @@
           "layout": {
             "rows": [
               [
-                "8a = 24 => a = ",
                 {
-                  "input_id": "q10_s1"
+                  "input_id": "q2_s1_i1"
+                },
+                "a = 24 => a = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
@@ -144,10 +115,11 @@
           "step_number": 1,
           "step_explanation": "نقل الثابت للطرف الآخر للبدء بحل المعادلة.",
           "step_assistant_solution": "Z^2 = -4",
+          "equation_template": "Z^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "ماذا يساوي Z^2؟",
+              "input_id": "q3_s1_i1",
+              "label": "القيمة الناتجة",
               "correct_answer": "-4",
               "options": [
                 "-4",
@@ -158,7 +130,7 @@
             }
           ],
           "hint": {
-            "step_hint_text": "العدد السالب تحت الجذر التربيعي يتحول إلى i خارج الجذر.",
+            "step_hint_text": "العدد الموجب عند نقله لطرف الآخر يصبح سالباً.",
             "related_topics": [
               {
                 "topic_title": "الجذور التخيلية",
@@ -171,7 +143,7 @@
               [
                 "Z^2 = ",
                 {
-                  "input_id": "q1_s1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]

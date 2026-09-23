@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "تحديد نوع القطع المخروطي من قيم a و c.",
           "step_assistant_solution": "بما أن c=5 و a=3، أي c > a، فالقطع هو قطع زائد.",
+          "equation_template": "x² / {input_1} - y² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q5_step1",
-              "label": "ما هو نوع القطع؟",
-              "correct_answer": "قطع زائد",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a²",
+              "correct_answer": "9",
               "options": [
-                "قطع ناقص",
-                "قطع زائد",
-                "قطع مكافئ",
-                "دائرة"
+                "9",
+                "3",
+                "25",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b²",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "4",
+                "25",
+                "9"
               ]
             }
           ],
@@ -38,11 +50,15 @@
           "layout": {
             "rows": [
               [
-                "بما أن c=5 و a=3، أي c > a، فالقطع هو ",
+                "x² / ",
                 {
-                  "input_id": "q5_step1"
+                  "input_id": "q1_s1_i1"
                 },
-                "."
+                " - y² / ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }
@@ -59,16 +75,28 @@
           "step_number": 1,
           "step_explanation": "استخراج قيمة b من طول المحور المرافق.",
           "step_assistant_solution": "b = √2",
+          "equation_template": "y² / {input_1} - x² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q6_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a²",
+              "correct_answer": "1/4",
+              "options": [
+                "1/4",
+                "1/2",
+                "4",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b²",
               "correct_answer": "2",
               "options": [
                 "2",
-                "1",
-                "3",
-                "4"
+                "√2",
+                "4",
+                "1"
               ]
             }
           ],
@@ -76,30 +104,21 @@
             "step_hint_text": "طول المحور المرافق هو 2b.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q6_step1",
-              "label": "قيمة b تساوي:",
-              "correct_answer": "√2",
-              "options": [
-                "√2",
-                "2√2",
-                "2",
-                "1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "√",
+                "y² / ",
                 {
-                  "input_id": "q6_step1_atom_1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " - x² / ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -113,16 +132,28 @@
           "step_number": 1,
           "step_explanation": "استخدام العلاقة بين البعد البؤري والمحور الحقيقي.",
           "step_assistant_solution": "2c = 3(2a) => c = 3a",
+          "equation_template": "x² / {input_1} - y² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q7_step1",
-              "label": "العلاقة الصحيحة هي:",
-              "correct_answer": "c = 3a",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة a²",
+              "correct_answer": "1",
               "options": [
-                "c = 3a",
-                "c = a/3",
-                "a = 3c",
-                "c² = 3a"
+                "1",
+                "3",
+                "9",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "قيمة b²",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "1",
+                "64",
+                "16"
               ]
             }
           ],
@@ -133,10 +164,15 @@
           "layout": {
             "rows": [
               [
-                "2c = 3(2a) => ",
+                "x² / ",
                 {
-                  "input_id": "q7_step1"
-                }
+                  "input_id": "q3_s1_i1"
+                },
+                " - y² / ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }

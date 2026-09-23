@@ -12,16 +12,39 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد بؤرتي القطع الناقص المعطى، والتي ستكون هي نفس بؤرتي القطع الزائد.",
           "step_assistant_solution": "c^2 = 25 - 9 = 16، إذاً c = 4، البؤرتان (0, 4) و (0, -4).",
+          "equation_template": "c^2 = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q9_step1_input1",
-              "label": "ما هي قيمة c للقطع الزائد؟",
-              "correct_answer": "4",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a^2",
+              "correct_answer": "25",
               "options": [
-                "4",
-                "3",
-                "5",
-                "16"
+                "25",
+                "9",
+                "16",
+                "36"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b^2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "ناتج c^2",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "34",
+                "10",
+                "4"
               ]
             }
           ],
@@ -37,11 +60,18 @@
           "layout": {
             "rows": [
               [
-                "c^2 = 25 - 9 = 16، إذاً c = 4، البؤرتان (0, 4) و (0, -",
+                "c^2 = ",
                 {
-                  "input_id": "q9_step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                ")."
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
           }
@@ -58,15 +88,27 @@
           "step_number": 1,
           "step_explanation": "نبدأ بوضع معادلة القطع الناقص في صورتها القياسية لمعرفة قيم a و b.",
           "step_assistant_solution": "x^2/25 + y^2/9 = 1",
+          "equation_template": "x^2/{input_1} + y^2/{input_2} = 1",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
-              "label": "ما هي قيمة المقام تحت x^2؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة المقام تحت x^2",
               "correct_answer": "25",
               "options": [
                 "25",
                 "9",
-                "225",
+                "5",
+                "15"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة المقام تحت y^2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "3",
                 "5"
               ]
             }
@@ -85,9 +127,13 @@
               [
                 "x^2/",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q2_s1_i1"
                 },
-                " + y^2/9 = 1"
+                " + y^2/",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }
@@ -95,7 +141,6 @@
       ]
     }
   ],
-  "page_id": 189,
   "chapter_id": 2,
   "chapter_title": "القطوع المخروطية",
   "topic_id": "2-9",

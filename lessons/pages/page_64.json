@@ -12,17 +12,17 @@
         {
           "step_number": 1,
           "step_explanation": "تبسيط البسط باستخدام العلاقة ω³=1 و i²=-1",
-          "step_assistant_solution": "البسط يصبح ω²i(5 + iω)",
+          "equation_template": "البسط = {input_1}(5+iω)",
           "inputs": [
             {
-              "input_id": "q15_s1",
-              "label": "ما هو ناتج تحليل البسط؟",
-              "correct_answer": "ω²i(5+iω)",
+              "input_id": "q1_s1_i1",
+              "label": "العامل المشترك",
+              "correct_answer": "ω²i",
               "options": [
-                "ω²i(5+iω)",
-                "5ω²i",
-                "iω(5+iω)",
-                "ω²(5+i)"
+                "ω²i",
+                "5ω²",
+                "iω",
+                "ω²"
               ]
             }
           ],
@@ -38,10 +38,11 @@
           "layout": {
             "rows": [
               [
-                "ما هو ناتج تحليل البسط؟ = ",
+                "البسط = ",
                 {
-                  "input_id": "q15_s1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                "(5+iω)"
               ]
             ]
           }
@@ -57,28 +58,28 @@
         {
           "step_number": 1,
           "step_explanation": "التعويض عن ω²+1 بـ -ω لتبسيط الكسر",
-          "step_assistant_solution": "يصبح المقدار 5 + 5ω² + 3ω",
+          "equation_template": "المقدار = 5 + {input_1} + {input_2}",
           "inputs": [
             {
-              "input_id": "q16_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "5",
+              "input_id": "q2_s1_i1",
+              "label": "الحد الثاني بعد التبسيط",
+              "correct_answer": "5ω²",
               "options": [
-                "5",
-                "10",
-                "4",
-                "6"
+                "5ω²",
+                "5ω",
+                "-5ω²",
+                "5"
               ]
             },
             {
-              "input_id": "q16_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "5",
+              "input_id": "q2_s1_i2",
+              "label": "الحد الثالث",
+              "correct_answer": "3ω",
               "options": [
-                "5",
-                "4",
-                "6",
-                "7"
+                "3ω",
+                "3ω²",
+                "ω",
+                "3"
               ]
             }
           ],
@@ -91,34 +92,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q16_s1",
-              "label": "ما هو ناتج تبسيط 5 - 5/(-ω)؟",
-              "correct_answer": "5+5ω²",
-              "options": [
-                "5+5ω²",
-                "5+5ω",
-                "5-5ω²",
-                "10ω²"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "المقدار = 5 + ",
                 {
-                  "input_id": "q16_s1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                "+",
+                " + ",
                 {
-                  "input_id": "q16_s1_atom_2"
-                },
-                "ω²"
+                  "input_id": "q2_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -131,11 +118,11 @@
         {
           "step_number": 1,
           "step_explanation": "تبسيط الجذر الثاني باستخدام ω³=1",
-          "step_assistant_solution": "الجذر الثاني يبسط إلى ω",
+          "equation_template": "الجذر الثاني = {input_1}",
           "inputs": [
             {
-              "input_id": "q17_s1",
-              "label": "ما قيمة الجذر الثاني؟",
+              "input_id": "q3_s1_i1",
+              "label": "ناتج التبسيط",
               "correct_answer": "ω",
               "options": [
                 "ω",
@@ -157,9 +144,9 @@
           "layout": {
             "rows": [
               [
-                "الجذر الثاني يبسط إلى ",
+                "الجذر الثاني = ",
                 {
-                  "input_id": "q17_s1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]
@@ -176,28 +163,17 @@
         {
           "step_number": 1,
           "step_explanation": "حساب ضرب الجذرين وهو أسهل للبدء به",
-          "step_assistant_solution": "الناتج هو 1/7",
+          "equation_template": "ضرب الجذرين = 1 / {input_1}",
           "inputs": [
             {
-              "input_id": "q18_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "1",
-              "options": [
-                "1",
-                "7",
-                "5",
-                "0"
-              ]
-            },
-            {
-              "input_id": "q18_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q4_s1_i1",
+              "label": "المقام",
               "correct_answer": "7",
               "options": [
                 "7",
-                "6",
-                "8",
-                "9"
+                "1",
+                "9",
+                "3"
               ]
             }
           ],
@@ -210,33 +186,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q18_s1",
-              "label": "ما قيمة ضرب الجذرين؟",
-              "correct_answer": "1/7",
-              "options": [
-                "1/7",
-                "7",
-                "5/7",
-                "1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "ضرب الجذرين = 1 / ",
                 {
-                  "input_id": "q18_s1_atom_1"
-                },
-                "/",
-                {
-                  "input_id": "q18_s1_atom_2"
+                  "input_id": "q4_s1_i1"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

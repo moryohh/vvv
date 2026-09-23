@@ -24,16 +24,28 @@
           "step_number": 1,
           "step_explanation": "لإيجاد المرافق للعدد المركب Z = a + bi، نقوم بتغيير إشارة الجزء التخيلي فقط لتصبح Z̅ = a - bi.",
           "step_assistant_solution": "تغيير إشارة معامل i",
+          "equation_template": "Z1̅ = {input_1} - {input_2}",
           "inputs": [
             {
-              "input_id": "q2_step1_input1",
-              "label": "ما هو مرافق العدد Z = 5 + 3i؟",
-              "correct_answer": "5 - 3i",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الحقيقي",
+              "correct_answer": "5",
               "options": [
-                "5 - 3i",
-                "-5 + 3i",
-                "5 + 3i",
-                "-5 - 3i"
+                "5",
+                "-5",
+                "3",
+                "-3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الجزء التخيلي",
+              "correct_answer": "3i",
+              "options": [
+                "3i",
+                "-3i",
+                "5i",
+                "-5i"
               ]
             }
           ],
@@ -49,9 +61,13 @@
           "layout": {
             "rows": [
               [
-                "ما هو مرافق العدد Z = 5 + 3i؟ = ",
+                "Z1̅ = ",
                 {
-                  "input_id": "q2_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]

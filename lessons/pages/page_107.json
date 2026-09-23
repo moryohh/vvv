@@ -12,16 +12,17 @@
           "step_number": 1,
           "step_explanation": "تحويل الصيغة المعطاة إلى الصيغة القطبية القياسية (cos + i sin).",
           "step_assistant_solution": "cos(π/6) + i sin(π/6)",
+          "equation_template": "cos({input_1}) + i sin({input_1})",
           "inputs": [
             {
-              "input_id": "q16_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "6",
+              "input_id": "q1_s1_i1",
+              "label": "الزاوية الأساسية",
+              "correct_answer": "π/6",
               "options": [
-                "6",
-                "3",
-                "2",
-                "4"
+                "π/6",
+                "π/3",
+                "π/2",
+                "π/4"
               ]
             }
           ],
@@ -34,30 +35,19 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q16_s1",
-              "label": "ما هي الزاوية الأساسية للعدد؟",
-              "correct_answer": "π/6",
-              "options": [
-                "π/6",
-                "π/3",
-                "π/2",
-                "π/4"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "π/",
+                "cos(",
                 {
-                  "input_id": "q16_s1_atom_1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                ") + i sin(",
+                "π/6",
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -71,27 +61,17 @@
           "step_number": 1,
           "step_explanation": "تطبيق مبرهنة ديموافر على كل جزء في البسط والمقام.",
           "step_assistant_solution": "ضرب الزوايا في القوى (8, 7, 3)",
+          "equation_template": "cos({input_1}) + i sin({input_1})",
           "inputs": [
             {
-              "input_id": "q17_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "11",
+              "input_id": "q2_s1_i1",
+              "label": "زاوية البسط النهائية",
+              "correct_answer": "11π/6",
               "options": [
-                "11",
-                "2",
-                "3",
-                "10"
-              ]
-            },
-            {
-              "input_id": "q17_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "6",
-              "options": [
-                "6",
-                "5",
-                "7",
-                "8"
+                "11π/6",
+                "π/2",
+                "π/3",
+                "2π"
               ]
             }
           ],
@@ -104,33 +84,19 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q17_s1",
-              "label": "ما هي قيمة زاوية البسط الكلية بعد التبسيط؟",
-              "correct_answer": "11π/6",
-              "options": [
-                "11π/6",
-                "π/2",
-                "π/3",
-                "2π"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "cos(",
                 {
-                  "input_id": "q17_s1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                "π/",
-                {
-                  "input_id": "q17_s1_atom_2"
-                }
+                ") + i sin(",
+                "11π/6",
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -144,10 +110,11 @@
           "step_number": 1,
           "step_explanation": "تبسيط قيمة Z باستخدام خواص الجذور التكعيبية للواحد الصحيح (ω).",
           "step_assistant_solution": "Z = -i",
+          "equation_template": "Z = {input_1}",
           "inputs": [
             {
-              "input_id": "q18_s1",
-              "label": "ما هي قيمة Z المبسطة؟",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة Z",
               "correct_answer": "-i",
               "options": [
                 "-i",
@@ -171,7 +138,7 @@
               [
                 "Z = ",
                 {
-                  "input_id": "q18_s1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]
@@ -189,10 +156,11 @@
           "step_number": 1,
           "step_explanation": "استخدام صيغة ديموافر للأس السالب.",
           "step_assistant_solution": "Z⁻ⁿ = cos(nθ) - i sin(nθ)",
+          "equation_template": "1/Zⁿ = {input_1}",
           "inputs": [
             {
-              "input_id": "q19_s1",
-              "label": "ما هو ناتج 1/Zⁿ؟",
+              "input_id": "q4_s1_i1",
+              "label": "قيمة النظير الضربي",
               "correct_answer": "cos(nθ) - i sin(nθ)",
               "options": [
                 "cos(nθ) - i sin(nθ)",
@@ -214,9 +182,9 @@
           "layout": {
             "rows": [
               [
-                "Z⁻ⁿ = ",
+                "1/Zⁿ = ",
                 {
-                  "input_id": "q19_s1"
+                  "input_id": "q4_s1_i1"
                 }
               ]
             ]

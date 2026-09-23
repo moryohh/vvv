@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "لإيجاد قيمة L، نقوم بتعويض إحداثيات النقطة (6, L) في معادلة القطع الزائد المعطاة.",
           "step_assistant_solution": "L = ±√8",
+          "equation_template": "6L^{input_1} = {input_2}",
           "inputs": [
             {
-              "input_id": "q1_s1",
-              "label": "ما قيمة L^2 بعد التعويض؟",
-              "correct_answer": "8",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة أس L",
+              "correct_answer": "2",
               "options": [
-                "8",
-                "4",
-                "12",
-                "24"
+                "1",
+                "2",
+                "3",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الطرف الأيمن بعد طرح 72",
+              "correct_answer": "48",
+              "options": [
+                "48",
+                "24",
+                "-48",
+                "72"
               ]
             }
           ],
@@ -38,9 +50,13 @@
           "layout": {
             "rows": [
               [
-                "L = ±√",
+                "6L^",
                 {
-                  "input_id": "q1_s1"
+                  "input_id": "q1_s1_i1"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -50,16 +66,28 @@
           "step_number": 2,
           "step_explanation": "نضع المعادلة 2x^2 - 6y^2 = 24 بالصيغة القياسية للقطع الزائد (x^2/a^2) - (y^2/b^2) = 1.",
           "step_assistant_solution": "x^2/12 - y^2/4 = 1",
+          "equation_template": "x^2/{input_1} - y^2/{input_2} = 1",
           "inputs": [
             {
-              "input_id": "q1_s2",
-              "label": "ما قيمة a^2 في هذه المعادلة؟",
+              "input_id": "q1_s2_i1",
+              "label": "ما قيمة a^2؟",
               "correct_answer": "12",
               "options": [
                 "12",
-                "4",
+                "6",
                 "24",
-                "6"
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "ما قيمة b^2؟",
+              "correct_answer": "4",
+              "options": [
+                "12",
+                "6",
+                "4",
+                "8"
               ]
             }
           ],
@@ -77,9 +105,13 @@
               [
                 "x^2/",
                 {
-                  "input_id": "q1_s2"
+                  "input_id": "q1_s2_i1"
                 },
-                " - y^2/4 = 1"
+                " - y^2/",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " = 1"
               ]
             ]
           }
@@ -96,15 +128,27 @@
           "step_number": 1,
           "step_explanation": "نحدد موقع البؤرة من خلال إيجاد نقطة تقاطع المستقيم مع محور السينات (وضع y=0).",
           "step_assistant_solution": "(-4, 0) وقيمة c=4",
+          "equation_template": "x = {input_1}, c = {input_2}",
           "inputs": [
             {
-              "input_id": "q2_s1",
-              "label": "ما هي قيمة c؟",
-              "correct_answer": "4",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة x عند التقاطع",
+              "correct_answer": "-4",
               "options": [
                 "4",
+                "-4",
                 "8",
+                "-8"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة c",
+              "correct_answer": "4",
+              "options": [
                 "2",
+                "4",
+                "8",
                 "16"
               ]
             }
@@ -121,9 +165,13 @@
           "layout": {
             "rows": [
               [
-                "(-4, 0) وقيمة c=",
+                "x = ",
                 {
-                  "input_id": "q2_s1"
+                  "input_id": "q2_s1_i1"
+                },
+                ", c = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]

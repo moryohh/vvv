@@ -13,16 +13,39 @@
           "step_number": 1,
           "step_explanation": "تبسيط الأس الكبير عن طريق قسمته على 4 أو تحويله إلى قوى i^2.",
           "step_assistant_solution": "i^5 = i^4 * i = 1 * i = i",
+          "equation_template": "i^5 = i^{input_1} * i = {input_2} * i = {input_3}",
           "inputs": [
             {
-              "input_id": "m1_s1",
-              "label": "ما ناتج i^5؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة الأس المقرب للعدد 4",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "5",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "ناتج i^4",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "-1",
+                "i",
+                "-i"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الناتج النهائي",
               "correct_answer": "i",
               "options": [
                 "i",
-                "-1",
                 "-i",
-                "1"
+                "1",
+                "-1"
               ]
             }
           ],
@@ -38,9 +61,17 @@
           "layout": {
             "rows": [
               [
-                "i^5 = i^4 * i = 1 * i = ",
+                "i^5 = i^",
                 {
-                  "input_id": "m1_s1"
+                  "input_id": "q1_s1_i1"
+                },
+                " * i = ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " * i = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -58,16 +89,17 @@
           "step_number": 1,
           "step_explanation": "القاعدة تنص على أن i مرفوعة لأي مضاعف للعدد 4 تعطي 1.",
           "step_assistant_solution": "1",
+          "equation_template": "i^{input_1} = 1",
           "inputs": [
             {
-              "input_id": "m2_s1",
-              "label": "ما ناتج i^32؟",
-              "correct_answer": "1",
+              "input_id": "q2_s1_i1",
+              "label": "ما قيمة الأس؟",
+              "correct_answer": "32",
               "options": [
-                "1",
-                "-1",
-                "i",
-                "-i"
+                "32",
+                "30",
+                "34",
+                "33"
               ]
             }
           ],
@@ -78,9 +110,11 @@
           "layout": {
             "rows": [
               [
+                "i^",
                 {
-                  "input_id": "m2_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " = 1"
               ]
             ]
           }
@@ -97,16 +131,39 @@
           "step_number": 1,
           "step_explanation": "لحل i^-5، نضرب في i^8 (أصغر مضاعف لـ 4 أكبر من 5).",
           "step_assistant_solution": "i^-5 * i^8 = i^3 = -i",
+          "equation_template": "i^-5 * i^{input_1} = i^{input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "m3_s1",
-              "label": "ما هو ناتج i^-5؟",
+              "input_id": "q3_s1_i1",
+              "label": "المضاعف المستخدم",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "4",
+                "12",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "الأس الناتج",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "1",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i3",
+              "label": "النتيجة النهائية",
               "correct_answer": "-i",
               "options": [
                 "-i",
                 "i",
-                "1",
-                "-1"
+                "-1",
+                "1"
               ]
             }
           ],
@@ -122,9 +179,17 @@
           "layout": {
             "rows": [
               [
-                "i^-5 * i^8 = i^3 = ",
+                "i^-5 * i^",
                 {
-                  "input_id": "m3_s1"
+                  "input_id": "q3_s1_i1"
+                },
+                " = i^",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q3_s1_i3"
                 }
               ]
             ]
@@ -142,10 +207,22 @@
           "step_number": 1,
           "step_explanation": "بسط كل حد على حدة باستخدام مضاعفات 4.",
           "step_assistant_solution": "يتحول المقدار إلى i + 1 - i - 1 = 0",
+          "equation_template": "{input_1} + 1 - {input_2} - 1 = 0",
           "inputs": [
             {
-              "input_id": "m4_s1",
-              "label": "ما قيمة i^-11 بعد الضرب في i^12؟",
+              "input_id": "q4_s1_i1",
+              "label": "تبسيط الحد الأول",
+              "correct_answer": "i",
+              "options": [
+                "i",
+                "-i",
+                "1",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q4_s1_i2",
+              "label": "تبسيط الحد الثالث",
               "correct_answer": "i",
               "options": [
                 "i",
@@ -162,9 +239,12 @@
           "layout": {
             "rows": [
               [
-                "يتحول المقدار إلى i + 1 - ",
                 {
-                  "input_id": "m4_s1"
+                  "input_id": "q4_s1_i1"
+                },
+                " + 1 - ",
+                {
+                  "input_id": "q4_s1_i2"
                 },
                 " - 1 = 0"
               ]

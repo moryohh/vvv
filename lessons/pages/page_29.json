@@ -12,9 +12,10 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبدأ بفك الأقواس وتجميع الحدود التي تحتوي على i والحدود الحقيقية.",
           "step_assistant_solution": "6xy + 3xi - 2yi - i^2 + 11 = 7i",
+          "equation_template": "6xy + 3xi - 2yi - ({input_1}) + 11 = 7i",
           "inputs": [
             {
-              "input_id": "q16_step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "ما هو ناتج i^2 في المعادلة؟",
               "correct_answer": "-1",
               "options": [
@@ -37,10 +38,11 @@
           "layout": {
             "rows": [
               [
-                "ما هو ناتج i^2 في المعادلة؟ = ",
+                "6xy + 3xi - 2yi - (",
                 {
-                  "input_id": "q16_step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                ") + 11 = 7i"
               ]
             ]
           }
@@ -57,16 +59,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: مساواة الجزء الحقيقي في الطرف الأيسر بالجزء الحقيقي في الطرف الأيمن (13).",
           "step_assistant_solution": "x^2 + y^2 = 13",
+          "equation_template": "{input_1}^2 + {input_2}^2 = 13",
           "inputs": [
             {
-              "input_id": "q17_step1_input1",
-              "label": "ما هي معادلة الجزء الحقيقي؟",
-              "correct_answer": "x^2 + y^2 = 13",
+              "input_id": "q2_s1_i1",
+              "label": "المتغير الأول",
+              "correct_answer": "x",
               "options": [
-                "x + y = 13",
-                "x^2 + y^2 = 13",
-                "x^2 - y^2 = 13",
-                "xy = 13"
+                "x",
+                "y",
+                "i",
+                "13"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "المتغير الثاني",
+              "correct_answer": "y",
+              "options": [
+                "x",
+                "y",
+                "i",
+                "13"
               ]
             }
           ],
@@ -83,8 +97,13 @@
             "rows": [
               [
                 {
-                  "input_id": "q17_step1_input1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                "^2 + ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "^2 = 13"
               ]
             ]
           }
@@ -101,9 +120,10 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: تبسيط الحد التخيلي i^3 أولاً.",
           "step_assistant_solution": "i",
+          "equation_template": "x(x+i)+y(y-i) + {input_1} = 13",
           "inputs": [
             {
-              "input_id": "q18_step1_input1",
+              "input_id": "q3_s1_i1",
               "label": "كم تساوي -i^3؟",
               "correct_answer": "i",
               "options": [
@@ -121,9 +141,11 @@
           "layout": {
             "rows": [
               [
+                "x(x+i)+y(y-i) + ",
                 {
-                  "input_id": "q18_step1_input1"
-                }
+                  "input_id": "q3_s1_i1"
+                },
+                " = 13"
               ]
             ]
           }

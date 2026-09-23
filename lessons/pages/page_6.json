@@ -13,16 +13,50 @@
           "step_number": 1,
           "step_explanation": "لتبسيط القوى السالبة للعدد التخيلي i، نضرب كل حد في أكبر قوة للعدد i بحيث يصبح الناتج موجباً، مثلاً i^32.",
           "step_assistant_solution": "استخدام العلاقة i^-n * i^m حيث m > n.",
+          "equation_template": "i^-31 * {input_1} + i^-32 * {input_2} + i^-33 * {input_3} + i^-34 * {input_4} = 0",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي الخطوة الأولى لتبسيط i^-31؟",
-              "correct_answer": "نضربه في i^32",
+              "input_id": "q1_s1_i1",
+              "label": "معامل التبسيط للحد الأول",
+              "correct_answer": "i^32",
               "options": [
-                "نضربه في i^32",
-                "نضربه في i^31",
-                "نضربه في i^4",
-                "نضربه في i^-1"
+                "i^32",
+                "i^31",
+                "i^33",
+                "i^4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "معامل التبسيط للحد الثاني",
+              "correct_answer": "i^32",
+              "options": [
+                "i^32",
+                "i^34",
+                "i^36",
+                "i^33"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "معامل التبسيط للحد الثالث",
+              "correct_answer": "i^36",
+              "options": [
+                "i^36",
+                "i^35",
+                "i^34",
+                "i^33"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "معامل التبسيط للحد الرابع",
+              "correct_answer": "i^36",
+              "options": [
+                "i^36",
+                "i^37",
+                "i^38",
+                "i^40"
               ]
             }
           ],
@@ -38,10 +72,23 @@
           "layout": {
             "rows": [
               [
-                "ما هي الخطوة الأولى لتبسيط i^-31؟ = ",
+                "i^-31 * ",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " + i^-32 * ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " + i^-33 * ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " + i^-34 * ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                " = 0"
               ]
             ]
           }
@@ -58,16 +105,39 @@
           "step_number": 1,
           "step_explanation": "نستخدم خاصية i^(an+b) = i^b حيث a مضاعف للعدد 4.",
           "step_assistant_solution": "تجاهل الأجزاء التي تحتوي على مضاعفات 4 في الأس.",
+          "equation_template": "i^4n+3 = {input_1}, i^12n-5 = {input_2}, i^36n-20 = {input_3}",
           "inputs": [
             {
-              "input_id": "q6_step1_input1",
-              "label": "قيمة i^4n+3 تساوي:",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة i^4n+3",
               "correct_answer": "-i",
               "options": [
                 "-i",
-                "1",
                 "i",
+                "1",
                 "-1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة i^12n-5",
+              "correct_answer": "-i",
+              "options": [
+                "-i",
+                "i",
+                "1",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "قيمة i^36n-20",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "-1",
+                "i",
+                "-i"
               ]
             }
           ],
@@ -78,9 +148,17 @@
           "layout": {
             "rows": [
               [
-                "قيمة i^4n+3 تساوي: = ",
+                "i^4n+3 = ",
                 {
-                  "input_id": "q6_step1_input1"
+                  "input_id": "q2_s1_i1"
+                },
+                ", i^12n-5 = ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ", i^36n-20 = ",
+                {
+                  "input_id": "q2_s1_i3"
                 }
               ]
             ]
@@ -91,18 +169,7 @@
     {
       "question_number": "جد الجزء الحقيقي والجزء التخيلي",
       "question_text": "جد الجزء الحقيقي والجزء التخيلي للأعداد: (1)-1-i, (2)3-2i, (3)2+5i, (4)8i, (5)16",
-      "diagram": {
-        "diagram_id": "q_table_01",
-        "diagram_type": "جدول",
-        "diagram_desc": "جدول يوضح أجزاء الأعداد المركبة",
-        "diagram_box": [
-          565,
-          185,
-          715,
-          785
-        ],
-        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_6_q_table_01_table.png"
-      },
+      "diagram": null,
       "full_model_solution": "(1) Real: -1, Imag: -1; (2) Real: 3, Imag: -2; (3) Real: 2, Imag: 5; (4) Real: 0, Imag: 8; (5) Real: 16, Imag: 0",
       "interactive_steps": []
     },

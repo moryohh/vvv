@@ -12,10 +12,33 @@
           "step_number": 1,
           "step_explanation": "نبدأ بتحليل معادلة القطع الناقص المعطاة لاستخراج قيم a و b ومن ثم إيجاد البؤرتين (c).",
           "step_assistant_solution": "بقسمة المعادلة على 225 نحصل على x^2/25 + y^2/9 = 1، وقيمة c=4، والبؤرتان هما (±4, 0).",
+          "equation_template": "x^2/{input_1} + y^2/{input_2} = 1, c = {input_3}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة c للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "a^2 للقطع الناقص",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "9",
+                "16",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "b^2 للقطع الناقص",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة c",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -37,11 +60,18 @@
           "layout": {
             "rows": [
               [
-                "بقسمة المعادلة على 225 نحصل على x^2/25 + y^2/9 = 1، وقيمة c=4، والبؤرتان هما (±",
+                "x^2/",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", 0)."
+                " + y^2/",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = 1, c = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
           }
@@ -50,10 +80,11 @@
           "step_number": 2,
           "step_explanation": "استخدام خصائص القطع الزائد: بما أن القطع يمر ببؤرة الناقص، فإن رؤوس الزائد وبؤره تتبادل الأدوار مع الناقص.",
           "step_assistant_solution": "رأس القطع الزائد a=4 وبؤرته c=5.",
+          "equation_template": "c^2 = a^2 + {input_1} => 25 = 16 + {input_1} => {input_1} = 9",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيمة b^2 للقطع الزائد؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة b^2",
               "correct_answer": "9",
               "options": [
                 "9",
@@ -75,10 +106,15 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة b^2 للقطع الزائد؟ = ",
+                "c^2 = a^2 + ",
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "q1_s2_i1"
+                },
+                " => 25 = 16 + ",
+                "9",
+                " => ",
+                "9",
+                " = 9"
               ]
             ]
           }
@@ -87,27 +123,28 @@
           "step_number": 3,
           "step_explanation": "المطابقة بين المعادلة القياسية للقطع الزائد والمعادلة المعطاة لاستخراج قيم الثوابت h و m.",
           "step_assistant_solution": "h = 25/16 و m = 25/9.",
+          "equation_template": "h = {input_1}, m = {input_2}",
           "inputs": [
             {
-              "input_id": "step3_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "25",
+              "input_id": "q1_s3_i1",
+              "label": "قيمة h",
+              "correct_answer": "25/16",
               "options": [
-                "25",
-                "16",
-                "9",
-                "24"
+                "25/16",
+                "16/25",
+                "25/9",
+                "9/25"
               ]
             },
             {
-              "input_id": "step3_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "16",
+              "input_id": "q1_s3_i2",
+              "label": "قيمة m",
+              "correct_answer": "25/9",
               "options": [
-                "16",
-                "25",
-                "9",
-                "15"
+                "25/9",
+                "9/25",
+                "25/16",
+                "16/25"
               ]
             }
           ],
@@ -120,33 +157,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step3_input1",
-              "label": "قيمة h هي:",
-              "correct_answer": "25/16",
-              "options": [
-                "25/16",
-                "16/25",
-                "25/9",
-                "9/25"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "h = ",
                 {
-                  "input_id": "step3_input1_atom_1"
+                  "input_id": "q1_s3_i1"
                 },
-                "/",
+                ", m = ",
                 {
-                  "input_id": "step3_input1_atom_2"
+                  "input_id": "q1_s3_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

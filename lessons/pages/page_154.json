@@ -13,10 +13,11 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نبدأ بإيجاد قيمة c من القطع المكافئ المعطى.",
           "step_assistant_solution": "c^2 = 4",
+          "equation_template": "c^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "step1_c_val",
-              "label": "ما هي قيمة c^2 للقطع الناقص؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة c^2",
               "correct_answer": "4",
               "options": [
                 "2",
@@ -40,7 +41,7 @@
               [
                 "c^2 = ",
                 {
-                  "input_id": "step1_c_val"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -50,10 +51,11 @@
           "step_number": 2,
           "step_explanation": "الخارطة الذهنية: نستخدم علاقة a^2 = c^2 + b^2 مع تعويض النقطة المعطاة في معادلة القطع الناقص لإيجاد b^2.",
           "step_assistant_solution": "b^2 = 12",
+          "equation_template": "b^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "step2_b_val",
-              "label": "ما هي قيمة b^2 بعد الحل؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة b^2",
               "correct_answer": "12",
               "options": [
                 "1",
@@ -77,7 +79,7 @@
               [
                 "b^2 = ",
                 {
-                  "input_id": "step2_b_val"
+                  "input_id": "q1_s2_i1"
                 }
               ]
             ]

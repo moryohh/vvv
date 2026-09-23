@@ -12,28 +12,28 @@
         {
           "step_number": 1,
           "step_explanation": "نحول المعادلة إلى صيغة تربيعية بفرض u = z^2 ثم نحللها إلى عوامل.",
-          "step_assistant_solution": "(z^2 + 9)(z^2 + 4) = 0",
+          "equation_template": "(z^2 + {input_1})(z^2 + {input_2}) = 0",
           "inputs": [
             {
-              "input_id": "q11_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "القيمة الأولى في القوس",
               "correct_answer": "9",
               "options": [
                 "9",
+                "4",
                 "13",
-                "12",
-                "8"
+                "36"
               ]
             },
             {
-              "input_id": "q11_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "القيمة الثانية في القوس",
               "correct_answer": "4",
               "options": [
                 "4",
-                "3",
-                "5",
-                "6"
+                "9",
+                "6",
+                "12"
               ]
             }
           ],
@@ -46,37 +46,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q11_step1_input1",
-              "label": "ما هو تحليل المقدار (z^4 + 13z^2 + 36)؟",
-              "correct_answer": "(z^2 + 9)(z^2 + 4)",
-              "options": [
-                "(z^2 + 9)(z^2 + 4)",
-                "(z^2 - 9)(z^2 - 4)",
-                "(z^2 + 13)(z^2 + 3)",
-                "(z^2 + 12)(z^2 + 3)"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(z^2 ",
-                "+",
+                "(z^2 + ",
                 {
-                  "input_id": "q11_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ")(z^2 ",
-                "+",
+                ")(z^2 + ",
                 {
-                  "input_id": "q11_step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                ")"
+                ") = 0"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -89,39 +73,28 @@
         {
           "step_number": 1,
           "step_explanation": "نقل جميع الحدود للطرف الأيسر لتصبح المعادلة صفرية.",
-          "step_assistant_solution": "x^2 - 3xi + 4 = 0",
+          "equation_template": "x^2 {input_1} 3xi {input_2} 4 = 0",
           "inputs": [
             {
-              "input_id": "q12_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q2_s1_i1",
+              "label": "الإشارة الأولى",
+              "correct_answer": "-",
               "options": [
-                "3",
-                "5",
-                "4",
-                "2"
+                "-",
+                "+",
+                "×",
+                "÷"
               ]
             },
             {
-              "input_id": "q12_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "4",
+              "input_id": "q2_s1_i2",
+              "label": "الإشارة الثانية",
+              "correct_answer": "+",
               "options": [
-                "4",
-                "2",
-                "0",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q12_step1_input1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "0",
-              "options": [
-                "0",
-                "-1",
-                "1",
-                "2"
+                "+",
+                "-",
+                "×",
+                "÷"
               ]
             }
           ],
@@ -134,82 +107,23 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q12_step1_input1",
-              "label": "ما هي المعادلة بعد ترتيب الحدود؟",
-              "correct_answer": "x^2 - 3xi + 4 = 0",
-              "options": [
-                "x^2 - 3xi + 4 = 0",
-                "x^2 + 5xi - 2 = 0",
-                "x^2 - 3xi - 2 = 0",
-                "x^2 + xi + 4 = 0"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x^2 ",
-                "-",
                 {
-                  "input_id": "q12_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                "xi ",
-                "+",
+                " 3xi ",
                 {
-                  "input_id": "q12_step1_input1_atom_2"
+                  "input_id": "q2_s1_i2"
                 },
-                " = ",
-                {
-                  "input_id": "q12_step1_input1_atom_3"
-                }
+                " 4 = 0"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
-    },
-    {
-      "question_number": "واجب 1",
-      "question_text": "حل المعادلة: iZ^2 - 4iZ - 8 + 4i = 0",
-      "diagram": null,
-      "full_model_solution": "بقسمة المعادلة على i: Z^2 - 4Z - 8/i + 4 = 0 => Z^2 - 4Z + 8i + 4 = 0. بالتعامل معها كمعادلة تربيعية، نجد الحلول S = {2i, 4-2i}.",
-      "interactive_steps": [],
-      "hint": null
-    },
-    {
-      "question_number": "واجب 2",
-      "question_text": "حل المعادلة: x^2 - 3xi - i√(-16) = 0",
-      "diagram": null,
-      "full_model_solution": "بما أن √(-16) = 4i، تصبح المعادلة x^2 - 3xi - i(4i) = 0 => x^2 - 3xi + 4 = 0. الحلول S = {4i, -i}.",
-      "interactive_steps": [],
-      "hint": null
-    },
-    {
-      "question_number": "واجب 3",
-      "question_text": "حل المعادلة: x^2 - 2x = -1 + 2i",
-      "diagram": null,
-      "full_model_solution": "المعادلة: x^2 - 2x + 1 - 2i = 0. باستخدام القانون العام أو الإكمال للمربع، S = {2+i, -i}.",
-      "interactive_steps": [],
-      "hint": null
-    },
-    {
-      "question_number": "واجب 4",
-      "question_text": "حل المعادلة: x^4 + 10x^2 + 9 = 0",
-      "diagram": null,
-      "full_model_solution": "بالتحليل: (x^2 + 9)(x^2 + 1) = 0، لذا x^2 = -9 أو x^2 = -1. إذن S = {±3i, ±i}.",
-      "interactive_steps": [],
-      "hint": null
-    },
-    {
-      "question_number": "واجب 5",
-      "question_text": "حل المعادلة: x^4 + 25x^2 + 144 = 0",
-      "diagram": null,
-      "full_model_solution": "بالتحليل: (x^2 + 16)(x^2 + 9) = 0، لذا x^2 = -16 أو x^2 = -9. إذن S = {±4i, ±3i}.",
-      "interactive_steps": [],
-      "hint": null
     }
   ],
   "chapter_id": 1,

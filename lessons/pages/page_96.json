@@ -13,9 +13,10 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد المقياس r والزاوية θ للعدد المركب المعطى لتسهيل التحويل إلى الصيغة القطبية.",
           "step_assistant_solution": "r = 6, θ = 11π/6",
+          "equation_template": "r = {input_1}, θ = {input_2}",
           "inputs": [
             {
-              "input_id": "q21_step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "ما هي قيمة المقياس r؟",
               "correct_answer": "6",
               "options": [
@@ -23,6 +24,17 @@
                 "√36",
                 "√27",
                 "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "ما هي قيمة السعة θ؟",
+              "correct_answer": "11π/6",
+              "options": [
+                "11π/6",
+                "5π/6",
+                "7π/6",
+                "π/6"
               ]
             }
           ],
@@ -38,9 +50,13 @@
           "layout": {
             "rows": [
               [
-                "r = 6, θ = 11π/",
+                "r = ",
                 {
-                  "input_id": "q21_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                ", θ = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -58,16 +74,28 @@
           "step_number": 1,
           "step_explanation": "نحدد المقياس والسعة الأساسية للعدد 125i. المقياس هو 125 والزاوية هي π/2 لأن العدد يقع على المحور التخيلي الموجب.",
           "step_assistant_solution": "r = 125, θ = π/2",
+          "equation_template": "r = {input_1}, θ = {input_2}",
           "inputs": [
             {
-              "input_id": "q22_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q2_s1_i1",
+              "label": "ما هو مقياس العدد r؟",
+              "correct_answer": "125",
               "options": [
-                "2",
-                "0",
-                "3",
+                "125",
+                "25",
+                "5",
                 "1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "ما هي السعة θ للعدد 125i؟",
+              "correct_answer": "π/2",
+              "options": [
+                "π/2",
+                "0",
+                "π",
+                "3π/2"
               ]
             }
           ],
@@ -80,30 +108,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q22_step1_input1",
-              "label": "ما هي السعة θ للعدد 125i؟",
-              "correct_answer": "π/2",
-              "options": [
-                "π/2",
-                "0",
-                "π",
-                "3π/2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "π/",
+                "r = ",
                 {
-                  "input_id": "q22_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
+                },
+                ", θ = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "نستخدم مبرهنة ديموافر لرفع القوى لكل من البسط والمقام بضرب الزاوية في الأس.",
           "step_assistant_solution": "البسط يصبح (cos θ + i sin θ)^10 والمقام يصبح (cos θ + i sin θ)^10.",
+          "equation_template": "البسط يصبح (cos θ + i sin θ)^{input_1} والمقام يصبح (cos θ + i sin θ)^{input_2}",
           "inputs": [
             {
-              "input_id": "q1_step1_in",
-              "label": "ما هي القوة الناتجة للبسط بعد تطبيق المبرهنة؟",
+              "input_id": "q1_s1_i1",
+              "label": "قوة البسط",
               "correct_answer": "10",
               "options": [
-                "5",
                 "10",
+                "5",
                 "2",
                 "20"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قوة المقام",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "5",
+                "2",
+                "25"
               ]
             }
           ],
@@ -38,11 +50,14 @@
           "layout": {
             "rows": [
               [
-                "البسط يصبح (cos θ + i sin θ)^10 والمقام يصبح (cos θ + i sin θ)^",
+                "البسط يصبح (cos θ + i sin θ)^",
                 {
-                  "input_id": "q1_step1_in"
+                  "input_id": "q1_s1_i1"
                 },
-                "."
+                " والمقام يصبح (cos θ + i sin θ)^",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
           }
@@ -59,16 +74,39 @@
           "step_number": 1,
           "step_explanation": "نحول الصيغة (cos 2θ - i sin 2θ)^-5 إلى (cos θ + i sin θ)^10 باستخدام خاصية مرافق العدد المركب.",
           "step_assistant_solution": "الناتج هو 1 + 1 = 2.",
+          "equation_template": "الناتج هو {input_1} + {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q2_step1_in",
-              "label": "ما هو الناتج النهائي للعملية؟",
-              "correct_answer": "2",
+              "input_id": "q2_s1_i1",
+              "label": "القيمة الأولى",
+              "correct_answer": "1",
               "options": [
-                "0",
                 "1",
+                "0",
                 "2",
                 "-1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "القيمة الثانية",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "0",
+                "2",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "الناتج النهائي",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "0",
+                "-2"
               ]
             }
           ],
@@ -84,11 +122,18 @@
           "layout": {
             "rows": [
               [
-                "الناتج هو 1 + 1 = ",
+                "الناتج هو ",
                 {
-                  "input_id": "q2_step1_in"
+                  "input_id": "q2_s1_i1"
                 },
-                "."
+                " + ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q2_s1_i3"
+                }
               ]
             ]
           }
@@ -105,16 +150,50 @@
           "step_number": 1,
           "step_explanation": "نوحد جميع الحدود لتكون مرفوعة للأساس (cos θ + i sin θ).",
           "step_assistant_solution": "(cos θ + i sin θ)^-4 * (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-6 = (cos θ + i sin θ)^0",
+          "equation_template": "(cos θ + i sin θ)^{input_1} * (cos θ + i sin θ)^{input_2} * (cos θ + i sin θ)^{input_3} = (cos θ + i sin θ)^{input_4}",
           "inputs": [
             {
-              "input_id": "q3_step1_in",
-              "label": "ما هو مجموع الأسس النهائي؟",
+              "input_id": "q3_s1_i1",
+              "label": "الأس الأول",
+              "correct_answer": "-4",
+              "options": [
+                "-4",
+                "4",
+                "-2",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "الأس الثاني",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "5",
+                "8",
+                "12"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i3",
+              "label": "الأس الثالث",
+              "correct_answer": "-6",
+              "options": [
+                "-6",
+                "6",
+                "-3",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i4",
+              "label": "مجموع الأسس",
               "correct_answer": "0",
               "options": [
-                "1",
                 "0",
-                "4",
-                "6"
+                "1",
+                "2",
+                "-1"
               ]
             }
           ],
@@ -130,9 +209,21 @@
           "layout": {
             "rows": [
               [
-                "(cos θ + i sin θ)^-4 * (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-6 = (cos θ + i sin θ)^",
+                "(cos θ + i sin θ)^",
                 {
-                  "input_id": "q3_step1_in"
+                  "input_id": "q3_s1_i1"
+                },
+                " * (cos θ + i sin θ)^",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " * (cos θ + i sin θ)^",
+                {
+                  "input_id": "q3_s1_i3"
+                },
+                " = (cos θ + i sin θ)^",
+                {
+                  "input_id": "q3_s1_i4"
                 }
               ]
             ]
@@ -150,27 +241,17 @@
           "step_number": 1,
           "step_explanation": "نحول (cos θ - i sin θ)^4 إلى (cos θ + i sin θ)^-4 ثم نجمع الأسس.",
           "step_assistant_solution": "(cos θ + i sin θ)^4",
+          "equation_template": "(cos θ + i sin θ)^{input_1}",
           "inputs": [
             {
-              "input_id": "q4_step1_in_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q4_s1_i1",
+              "label": "الأس النهائي",
               "correct_answer": "4",
               "options": [
                 "4",
+                "-4",
                 "8",
-                "1",
-                "3"
-              ]
-            },
-            {
-              "input_id": "q4_step1_in_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "4",
-              "options": [
-                "4",
-                "3",
-                "5",
-                "6"
+                "12"
               ]
             }
           ],
@@ -183,35 +264,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q4_step1_in",
-              "label": "ما هي القيمة النهائية؟",
-              "correct_answer": "cos 4θ + i sin 4θ",
-              "options": [
-                "cos 4θ - i sin 4θ",
-                "cos 4θ + i sin 4θ",
-                "cos 8θ",
-                "1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "cos ",
+                "(cos θ + i sin θ)^",
                 {
-                  "input_id": "q4_step1_in_atom_1"
-                },
-                "θ + i sin ",
-                {
-                  "input_id": "q4_step1_in_atom_2"
-                },
-                "θ"
+                  "input_id": "q4_s1_i1"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

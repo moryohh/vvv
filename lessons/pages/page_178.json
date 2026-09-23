@@ -13,9 +13,21 @@
           "step_number": 1,
           "step_explanation": "نبدأ بتحويل أطوال المحاور المعطاة إلى قيم a للقطعين.",
           "step_assistant_solution": "بالنسبة للناقص: a = 3√2، وللزائد: a = 3.",
+          "equation_template": "بالنسبة للناقص: a = {input_1}، وللزائد: a = {input_2}",
           "inputs": [
             {
-              "input_id": "step1_input1",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a للقطع الناقص هي:",
+              "correct_answer": "3√2",
+              "options": [
+                "3√2",
+                "6√2",
+                "3",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
               "label": "قيمة a للقطع الزائد هي:",
               "correct_answer": "3",
               "options": [
@@ -38,11 +50,14 @@
           "layout": {
             "rows": [
               [
-                "بالنسبة للناقص: a = 3√2، وللزائد: a = ",
+                "بالنسبة للناقص: a = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                "."
+                "، وللزائد: a = ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
           }
@@ -59,16 +74,17 @@
           "step_number": 1,
           "step_explanation": "بما أن القطع قائم، ما هي العلاقة بين a و b؟",
           "step_assistant_solution": "a = b",
+          "equation_template": "a = {input_1}",
           "inputs": [
             {
-              "input_id": "q9_step1",
+              "input_id": "q2_s1_i1",
               "label": "العلاقة في القطع الزائد القائم هي:",
-              "correct_answer": "a = b",
+              "correct_answer": "b",
               "options": [
-                "a = b",
-                "a = 2b",
-                "a^2 = b^2 + c^2",
-                "a = c"
+                "b",
+                "2b",
+                "c",
+                "2a"
               ]
             }
           ],
@@ -79,8 +95,9 @@
           "layout": {
             "rows": [
               [
+                "a = ",
                 {
-                  "input_id": "q9_step1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]

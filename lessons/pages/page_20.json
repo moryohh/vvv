@@ -12,17 +12,28 @@
         {
           "step_number": 1,
           "step_explanation": "تبسيط مربعات الأعداد المركبة في المقام.",
-          "step_assistant_solution": "(1+2i)^2 = -3+4i و (1-2i)^2 = -3-4i",
+          "equation_template": "(1+2i)^2 = {input_1} , (1-2i)^2 = {input_2}",
           "inputs": [
             {
-              "input_id": "q2_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "-3",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة (1+2i)^2",
+              "correct_answer": "-3+4i",
               "options": [
-                "-3",
-                "5",
-                "1",
-                "-4"
+                "-3+4i",
+                "5+4i",
+                "-3-4i",
+                "1+4i"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة (1-2i)^2",
+              "correct_answer": "-3-4i",
+              "options": [
+                "-3-4i",
+                "-3+4i",
+                "5-4i",
+                "1-4i"
               ]
             }
           ],
@@ -35,30 +46,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q2_step1",
-              "label": "ما هو ناتج فك القوس (1+2i)^2؟",
-              "correct_answer": "-3+4i",
-              "options": [
-                "-3+4i",
-                "5+4i",
-                "-3-4i",
-                "1+4i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(1+2i)^2 = ",
                 {
-                  "input_id": "q2_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "+4i"
+                " , (1-2i)^2 = ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -71,17 +72,28 @@
         {
           "step_number": 1,
           "step_explanation": "تبسيط البسط (1-i)^2 و (1+i)^2.",
-          "step_assistant_solution": "-2i و 2i",
+          "equation_template": "(1-i)^2 = {input_1} , (1+i)^2 = {input_2}",
           "inputs": [
             {
-              "input_id": "q3_step1",
-              "label": "ما ناتج (1-i)^2؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة (1-i)^2",
               "correct_answer": "-2i",
               "options": [
                 "-2i",
                 "2i",
                 "0",
                 "1-i"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة (1+i)^2",
+              "correct_answer": "2i",
+              "options": [
+                "2i",
+                "-2i",
+                "0",
+                "1+i"
               ]
             }
           ],
@@ -97,10 +109,14 @@
           "layout": {
             "rows": [
               [
+                "(1-i)^2 = ",
                 {
-                  "input_id": "q3_step1"
+                  "input_id": "q2_s1_i1"
                 },
-                " و 2i"
+                " , (1+i)^2 = ",
+                {
+                  "input_id": "q2_s1_i2"
+                }
               ]
             ]
           }
@@ -115,18 +131,29 @@
       "interactive_steps": [
         {
           "step_number": 1,
-          "step_explanation": "تبسيط قوى i.",
-          "step_assistant_solution": "1-i^2 = 2 و 1-i^3 = 1+i",
+          "step_explanation": "تبسيط أقواس قوى i.",
+          "equation_template": "(1-i^2) = {input_1} , (1-i^3) = {input_2}",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "كم تساوي قيمة (1-i^2)؟",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة (1-i^2)",
               "correct_answer": "2",
               "options": [
                 "2",
                 "0",
                 "1",
                 "1+i"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "قيمة (1-i^3)",
+              "correct_answer": "1+i",
+              "options": [
+                "1+i",
+                "1-i",
+                "2",
+                "0"
               ]
             }
           ],
@@ -142,11 +169,14 @@
           "layout": {
             "rows": [
               [
-                "1-i^2 = ",
+                "(1-i^2) = ",
                 {
-                  "input_id": "q4_step1"
+                  "input_id": "q3_s1_i1"
                 },
-                " و 1-i^3 = 1+i"
+                " , (1-i^3) = ",
+                {
+                  "input_id": "q3_s1_i2"
+                }
               ]
             ]
           }

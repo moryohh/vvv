@@ -12,16 +12,17 @@
           "step_number": 1,
           "step_explanation": "نحدد التناظر بين النقطتين لاختيار صيغة معادلة القطع المكافئ.",
           "step_assistant_solution": "المعادلة من النوع x² = 4py",
+          "equation_template": "x² = {input_1}py",
           "inputs": [
             {
-              "input_id": "q3_step1_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "ما هو معامل الصادات؟",
               "correct_answer": "4",
               "options": [
                 "4",
                 "-4",
-                "3",
-                "5"
+                "2",
+                "-2"
               ]
             }
           ],
@@ -34,31 +35,17 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_step1_input",
-              "label": "ما هي صيغة المعادلة المناسبة؟",
-              "correct_answer": "x² = 4py",
-              "options": [
-                "x² = 4py",
-                "y² = 4px",
-                "x² = -4py",
-                "y² = -4px"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x² = ",
                 {
-                  "input_id": "q3_step1_input_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
                 "py"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -72,14 +59,26 @@
           "step_number": 1,
           "step_explanation": "تحديد قيمة p من معادلة الدليل.",
           "step_assistant_solution": "في الحالة الأولى p=3، وفي الحالة الثانية p=5.",
+          "equation_template": "y² = {input_1}px, x² = {input_2}py",
           "inputs": [
             {
-              "input_id": "q7_1_step1",
-              "label": "ما هي قيمة p للسينات؟",
-              "correct_answer": "3",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة معامل الحالة الأولى؟",
+              "correct_answer": "-12",
               "options": [
+                "-12",
+                "12",
                 "3",
-                "-3",
+                "-3"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة معامل الحالة الثانية؟",
+              "correct_answer": "20",
+              "options": [
+                "20",
+                "-20",
                 "5",
                 "-5"
               ]
@@ -92,11 +91,15 @@
           "layout": {
             "rows": [
               [
-                "في الحالة الأولى p=",
+                "y² = ",
                 {
-                  "input_id": "q7_1_step1"
+                  "input_id": "q2_s1_i1"
                 },
-                "، وفي الحالة الثانية p=5."
+                "px, x² = ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "py"
               ]
             ]
           }
@@ -113,27 +116,28 @@
           "step_number": 1,
           "step_explanation": "نستنتج معادلة الدليل بناءً على إحداثيات النقطة المعطاة.",
           "step_assistant_solution": "إما x=4 أو y=-1",
+          "equation_template": "y² = {input_1}x, x² = {input_2}y",
           "inputs": [
             {
-              "input_id": "q7_2_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "4",
+              "input_id": "q3_s1_i1",
+              "label": "معامل الحالة الأولى (x=4)؟",
+              "correct_answer": "-16",
               "options": [
+                "-16",
+                "16",
                 "4",
-                "-1",
-                "3",
-                "5"
+                "-4"
               ]
             },
             {
-              "input_id": "q7_2_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "1",
+              "input_id": "q3_s1_i2",
+              "label": "معامل الحالة الثانية (y=-1)؟",
+              "correct_answer": "4",
               "options": [
-                "1",
                 "4",
-                "0",
-                "2"
+                "-4",
+                "1",
+                "-1"
               ]
             }
           ],
@@ -141,35 +145,21 @@
             "step_hint_text": "النقطة (x,y) تعطي احتمالين للدليل إما مستقيم رأسي أو أفقي.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q7_2_step1",
-              "label": "ما هي احتمالات الدليل؟",
-              "correct_answer": "x=4 أو y=-1",
-              "options": [
-                "x=4 فقط",
-                "y=-1 فقط",
-                "x=4 أو y=-1",
-                "x=-1 أو y=4"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "x=",
+                "y² = ",
                 {
-                  "input_id": "q7_2_step1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                " أو y=",
-                "-",
+                "x, x² = ",
                 {
-                  "input_id": "q7_2_step1_atom_2"
-                }
+                  "input_id": "q3_s1_i2"
+                },
+                "y"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -183,16 +173,17 @@
           "step_number": 1,
           "step_explanation": "نحدد قيمة p من موقع الدليل.",
           "step_assistant_solution": "p = 5",
+          "equation_template": "y² = {input_1}x",
           "inputs": [
             {
-              "input_id": "q7_3_step1",
-              "label": "قيمة p هي؟",
-              "correct_answer": "5",
+              "input_id": "q4_s1_i1",
+              "label": "المعادلة النهائية هي؟",
+              "correct_answer": "20",
               "options": [
+                "20",
                 "5",
-                "-5",
-                "4",
-                "-4"
+                "10",
+                "4"
               ]
             }
           ],
@@ -203,10 +194,11 @@
           "layout": {
             "rows": [
               [
-                "p = ",
+                "y² = ",
                 {
-                  "input_id": "q7_3_step1"
-                }
+                  "input_id": "q4_s1_i1"
+                },
+                "x"
               ]
             ]
           }
@@ -214,7 +206,6 @@
       ]
     }
   ],
-  "page_id": 116,
   "chapter_id": 2,
   "chapter_title": "القطوع المخروطية",
   "topic_id": "2-2",

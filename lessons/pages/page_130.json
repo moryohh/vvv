@@ -12,16 +12,39 @@
           "step_number": 1,
           "step_explanation": "تحديد اتجاه القطع ومعادلته القياسية.",
           "step_assistant_solution": "بما أن البؤرة على محور السينات، المعادلة y^2 = 4px.",
+          "equation_template": "y^2 = {input_1}{input_2}{input_3}",
           "inputs": [
             {
-              "input_id": "q1_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "المعامل العددي",
               "correct_answer": "4",
               "options": [
                 "4",
+                "2",
                 "-4",
-                "3",
-                "5"
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "ثابت البؤرة",
+              "correct_answer": "p",
+              "options": [
+                "p",
+                "a",
+                "h",
+                "k"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "المتغير المحوري",
+              "correct_answer": "x",
+              "options": [
+                "x",
+                "y",
+                "z",
+                "d"
               ]
             }
           ],
@@ -34,31 +57,22 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_s1",
-              "label": "ما هي الصورة العامة للمعادلة؟",
-              "correct_answer": "y^2 = 4px",
-              "options": [
-                "y^2 = 4px",
-                "x^2 = 4py",
-                "y^2 = -4px",
-                "x^2 = -4py"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "y^2 = ",
                 {
-                  "input_id": "q1_s1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "px"
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },

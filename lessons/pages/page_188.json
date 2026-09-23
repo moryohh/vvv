@@ -12,16 +12,28 @@
           "step_number": 1,
           "step_explanation": "نبدأ باستخراج بؤرتي القطع الزائد من معادلته المعطاة.",
           "step_assistant_solution": "c^2 = 16، c = 4",
+          "equation_template": "c^2 = {input_1} , c = {input_2}",
           "inputs": [
             {
-              "input_id": "q7_s1",
+              "input_id": "q1_s1_i1",
+              "label": "ما هي قيمة c^2 للقطع الزائد؟",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "8",
+                "4",
+                "12"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
               "label": "ما هي قيمة c للقطع الزائد؟",
               "correct_answer": "4",
               "options": [
                 "4",
-                "16",
                 "2",
-                "8"
+                "8",
+                "16"
               ]
             }
           ],
@@ -37,9 +49,13 @@
           "layout": {
             "rows": [
               [
-                "c^2 = 16، c = ",
+                "c^2 = ",
                 {
-                  "input_id": "q7_s1"
+                  "input_id": "q1_s1_i1"
+                },
+                " , c = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -57,9 +73,10 @@
           "step_number": 1,
           "step_explanation": "نعوض إحداثيات النقطة في معادلة القطع الزائد لإيجاد L.",
           "step_assistant_solution": "L = ±√8",
+          "equation_template": "L^2 = {input_1} \\Rightarrow L = \\pm\\sqrt{{input_2}}",
           "inputs": [
             {
-              "input_id": "q8_s1",
+              "input_id": "q2_s1_i1",
               "label": "ما هي قيمة L^2؟",
               "correct_answer": "8",
               "options": [
@@ -67,6 +84,17 @@
                 "6",
                 "12",
                 "4"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "ما هي القيمة تحت الجذر لـ L؟",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "4",
+                "16",
+                "2"
               ]
             }
           ],
@@ -77,10 +105,15 @@
           "layout": {
             "rows": [
               [
-                "L = ±√",
+                "L^2 = ",
                 {
-                  "input_id": "q8_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " \\Rightarrow L = \\pm\\sqrt{",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "}"
               ]
             ]
           }

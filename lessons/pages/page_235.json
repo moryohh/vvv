@@ -23,14 +23,37 @@
           "step_number": 1,
           "step_explanation": "نبدأ بحساب مساحة المثلث الأصلي ABC باستخدام القاعدة والارتفاع.",
           "step_assistant_solution": "مساحة المثلث ABC = 60cm^2.",
+          "equation_template": "Area = 1/2 × {input_1} × {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي مساحة المثلث ABC؟",
+              "input_id": "q1_s1_i1",
+              "label": "قاعدة المثلث",
+              "correct_answer": "10",
+              "options": [
+                "5",
+                "10",
+                "13",
+                "12"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "ارتفاع المثلث",
+              "correct_answer": "12",
+              "options": [
+                "10",
+                "12",
+                "13",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "المساحة النهائية",
               "correct_answer": "60",
               "options": [
-                "60",
                 "30",
+                "60",
                 "120",
                 "130"
               ]
@@ -48,9 +71,17 @@
           "layout": {
             "rows": [
               [
-                "ما هي مساحة المثلث ABC؟ = ",
+                "Area = 1/2 × ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " × ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -60,10 +91,33 @@
           "step_number": 2,
           "step_explanation": "نطبق قانون مساحة المسقط: مساحة المسقط = مساحة الشكل الأصلي * cos(الزاوية بين المستويين).",
           "step_assistant_solution": "مساحة المسقط = 60 * cos(60) = 30cm^2.",
+          "equation_template": "Area_projected = {input_1} × cos({input_2}) = {input_3}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيمة مساحة المسقط؟",
+              "input_id": "q1_s2_i1",
+              "label": "مساحة الأصل",
+              "correct_answer": "60",
+              "options": [
+                "30",
+                "60",
+                "120",
+                "45"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "الزاوية",
+              "correct_answer": "60",
+              "options": [
+                "30",
+                "45",
+                "60",
+                "90"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "مساحة المسقط",
               "correct_answer": "30",
               "options": [
                 "30",
@@ -85,9 +139,17 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة مساحة المسقط؟ = ",
+                "Area_projected = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " × cos(",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                ") = ",
+                {
+                  "input_id": "q1_s2_i3"
                 }
               ]
             ]

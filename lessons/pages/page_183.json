@@ -24,16 +24,28 @@
           "step_number": 1,
           "step_explanation": "تحديد قيمة a من خلال نقاط التقاطع مع محور السينات.",
           "step_assistant_solution": "a=3, a²=9",
+          "equation_template": "x² / {input_1} - y² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q2a_s1_i1",
-              "label": "كم تساوي قيمة a²؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a²",
               "correct_answer": "9",
               "options": [
                 "9",
+                "3",
                 "25",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b²",
+              "correct_answer": "16",
+              "options": [
                 "16",
-                "3"
+                "9",
+                "25",
+                "5"
               ]
             }
           ],
@@ -49,10 +61,15 @@
           "layout": {
             "rows": [
               [
-                "a=3, a²=",
+                "x² / ",
                 {
-                  "input_id": "q2a_s1_i1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " - y² / ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = 1"
               ]
             ]
           }
@@ -80,27 +97,28 @@
           "step_number": 1,
           "step_explanation": "حساب قيم a و b من طولي المحورين.",
           "step_assistant_solution": "a=6, b=5",
+          "equation_template": "x² / {input_1} - y² / {input_2} = 1",
           "inputs": [
             {
-              "input_id": "q2b_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a²",
               "correct_answer": "36",
               "options": [
                 "36",
-                "12",
                 "6",
-                "144"
+                "12",
+                "72"
               ]
             },
             {
-              "input_id": "q2b_s1_i1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b²",
               "correct_answer": "25",
               "options": [
                 "25",
-                "10",
                 "5",
-                "100"
+                "10",
+                "50"
               ]
             }
           ],
@@ -113,34 +131,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q2b_s1_i1",
-              "label": "أوجد قيمتي a² و b²:",
-              "correct_answer": "a²=36, b²=25",
-              "options": [
-                "a²=36, b²=25",
-                "a²=12, b²=10",
-                "a²=6, b²=5",
-                "a²=144, b²=100"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a²=",
+                "x² / ",
                 {
-                  "input_id": "q2b_s1_i1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                ", b²=",
+                " - y² / ",
                 {
-                  "input_id": "q2b_s1_i1_atom_2"
-                }
+                  "input_id": "q2_s1_i2"
+                },
+                " = 1"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

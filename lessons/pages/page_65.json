@@ -13,10 +13,33 @@
           "step_number": 1,
           "step_explanation": "تذكر أن w^3 = 1، لذا نقوم بتقسيم الأس على 3 وأخذ الباقي لتبسيط القوى.",
           "step_assistant_solution": "بالنسبة لـ w^64، 64 تقسيم 3 يساوي 21 والباقي 1، إذاً الناتج هو w^1.",
+          "equation_template": "w^64 = (w^3)^{input_1} * w^{input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q1_a_step1",
-              "label": "ما هو ناتج تبسيط w^64؟",
+              "input_id": "q1_s1_i1",
+              "label": "ناتج قسمة الأس على 3",
+              "correct_answer": "21",
+              "options": [
+                "21",
+                "20",
+                "22",
+                "18"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "باقي قسمة الأس على 3",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "0",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الناتج النهائي المبسط",
               "correct_answer": "w",
               "options": [
                 "w",
@@ -38,11 +61,18 @@
           "layout": {
             "rows": [
               [
-                "بالنسبة لـ w^64، 64 تقسيم 3 يساوي 21 والباقي 1، إذاً الناتج هو ",
+                "w^64 = (w^3)^",
                 {
-                  "input_id": "q1_a_step1"
+                  "input_id": "q1_s1_i1"
                 },
-                "^1."
+                " * w^",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
           }
@@ -59,10 +89,22 @@
           "step_number": 1,
           "step_explanation": "لتكوين المعادلة التربيعية نستخدم القانون: x^2 - (مجموع الجذرين)x + (حاصل ضرب الجذرين) = 0.",
           "step_assistant_solution": "يجب حساب المجموع أولاً ثم الضرب لكل حالة.",
+          "equation_template": "Sum = 2 + (w^2 + w) = 2 + ({input_1}) = {input_2}",
           "inputs": [
             {
-              "input_id": "q2_a_sum",
-              "label": "ما هو مجموع الجذرين في الفرع (a)؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة w^2 + w",
+              "correct_answer": "-1",
+              "options": [
+                "-1",
+                "1",
+                "0",
+                "-w"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "مجموع الجذرين النهائي",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -84,9 +126,13 @@
           "layout": {
             "rows": [
               [
-                "ما هو مجموع الجذرين في الفرع (a)؟ = ",
+                "Sum = 2 + (w^2 + w) = 2 + (",
                 {
-                  "input_id": "q2_a_sum"
+                  "input_id": "q2_s1_i1"
+                },
+                ") = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]

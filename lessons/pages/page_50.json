@@ -7,16 +7,17 @@
       "question_number": "3",
       "question_text": "كون المعادلة التربيعية التي جذراها m = (3-i)/(1+i) و L = (3-2i)^2",
       "diagram": null,
-      "full_model_solution": "أولاً: تبسيط الجذر m بضربه في مرافق المقام (1-i)/(1-i) لنحصل على m = 1-2i. ثانياً: فك القوس L = (3-2i)^2 لينتج 9 - 12i - 4 = 5 - 12i. ثالثاً: حساب مجموع الجذرين M+L = (1-2i) + (5-12i) = 6-14i. رابعاً: حساب حاصل ضرب الجذرين M.L = (1-2i)(5-12i) = 5 - 12i - 10i + 24i^2 = 5 - 22i - 24 = -19 - 22i. خامساً: استخدام الصيغة x^2 - (المجموع)x + (الضرب) = 0 لتصبح المعادلة: x^2 - (6-14i)x - 19 - 22i = 0.",
+      "full_model_solution": "أولاً: تبسيط الجذر m بضربه في مرافق المقام (1-i)/(1-i) لنحصل على m = 1-2i. ثانياً: فك القوس L = (3-2i)^2 لينتج 9 - 12i - 4 = 5 - 12i. ثالثاً: حساب مجموع الجذرين M+L = (1-2i) + (5-12i) = 6-14i. رابعاً: حاصل ضرب الجذرين M.L = (1-2i)(5-12i) = 5 - 12i - 10i + 24i^2 = 5 - 22i - 24 = -19 - 22i. خامساً: استخدام الصيغة x^2 - (المجموع)x + (الضرب) = 0 لتصبح المعادلة: x^2 - (6-14i)x - 19 - 22i = 0.",
       "interactive_steps": [
         {
           "step_number": 1,
           "step_explanation": "تبسيط العدد المركب m عن طريق ضرب البسط والمقام في مرافق المقام (1-i).",
           "step_assistant_solution": "m = 1 - 2i",
+          "equation_template": "m = {input_1}",
           "inputs": [
             {
-              "input_id": "q3_step1",
-              "label": "ما هي القيمة المبسطة لـ m؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة m",
               "correct_answer": "1-2i",
               "options": [
                 "1-2i",
@@ -38,9 +39,9 @@
           "layout": {
             "rows": [
               [
-                "ما هي القيمة المبسطة لـ m؟ = ",
+                "m = ",
                 {
-                  "input_id": "q3_step1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -58,10 +59,11 @@
           "step_number": 1,
           "step_explanation": "تبسيط الجذور M و L بضرب كل منهما في مرافق مقامه.",
           "step_assistant_solution": "M = 2-i, L = 2+i",
+          "equation_template": "M + L = {input_1}",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "ما هو ناتج تبسيط المجموع M+L؟",
+              "input_id": "q2_s1_i1",
+              "label": "ناتج المجموع",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -78,9 +80,9 @@
           "layout": {
             "rows": [
               [
-                "ما هو ناتج تبسيط المجموع M+L؟ = ",
+                "M + L = ",
                 {
-                  "input_id": "q4_step1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]
@@ -98,16 +100,28 @@
           "step_number": 1,
           "step_explanation": "حساب مجموع الجذرين وحاصل ضربهما.",
           "step_assistant_solution": "المجموع = 0، الضرب = -8i",
+          "equation_template": "x^2 + {input_1}x + {input_2} = 0",
           "inputs": [
             {
-              "input_id": "q5_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "8",
+              "input_id": "q3_s1_i1",
+              "label": "معامل x",
+              "correct_answer": "0",
               "options": [
-                "8",
-                "7",
-                "9",
-                "10"
+                "0",
+                "1",
+                "-1",
+                "i"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "الحد المطلق",
+              "correct_answer": "-8i",
+              "options": [
+                "-8i",
+                "8i",
+                "-8",
+                "8"
               ]
             }
           ],
@@ -115,32 +129,21 @@
             "step_hint_text": "تذكر صيغة تكوين المعادلة x^2 - (المجموع)x + الضرب = 0.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q5_step1",
-              "label": "ما هي المعادلة الناتجة؟",
-              "correct_answer": "x^2 - 8i = 0",
-              "options": [
-                "x^2 - 8i = 0",
-                "x^2 + 8i = 0",
-                "x^2 - 8 = 0",
-                "x^2 + 8 = 0"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "x^2 ",
-                "-",
+                "x^2 + ",
                 {
-                  "input_id": "q5_step1_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                "i = 0"
+                "x + ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                " = 0"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

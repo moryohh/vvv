@@ -13,16 +13,39 @@
           "step_number": 1,
           "step_explanation": "أولاً، يجب إيجاد البؤرتين للقطع الناقص المعلوم لتحديد بؤرتي القطع الزائد.",
           "step_assistant_solution": "b² = 4, a² = 13, c² = 9 => c = 3",
+          "equation_template": "c² = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "قيمة c للقطع الناقص هي:",
-              "correct_answer": "3",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a² للقطع الناقص:",
+              "correct_answer": "52",
               "options": [
-                "3",
-                "9",
+                "52",
+                "13",
                 "4",
-                "13"
+                "48"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b² للقطع الناقص:",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "52",
+                "13",
+                "48"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة c² للقطع الناقص:",
+              "correct_answer": "48",
+              "options": [
+                "48",
+                "52",
+                "4",
+                "56"
               ]
             }
           ],
@@ -38,9 +61,17 @@
           "layout": {
             "rows": [
               [
-                "b² = 4, a² = 13, c² = 9 => c = ",
+                "c² = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -48,18 +79,41 @@
         },
         {
           "step_number": 2,
-          "step_explanation": "بما أن البؤر تنطبق، إذن c للزائد هي نفس c للناقص (c=3). استخرج a² للقطع الزائد باستخدام b²=5 و c²=9.",
-          "step_assistant_solution": "a² = c² - b² = 9 - 5 = 4",
+          "step_explanation": "بما أن البؤر تنطبقان، إذن c للزائد هي نفس c للناقص (c²=48). استخرج a² للقطع الزائد باستخدام b²=5 و c²=48.",
+          "step_assistant_solution": "a² = c² - b² = 48 - 5 = 43",
+          "equation_template": "a² = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "قيمة a² للقطع الزائد هي:",
-              "correct_answer": "4",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة c²:",
+              "correct_answer": "48",
               "options": [
-                "4",
-                "14",
-                "9",
-                "5"
+                "48",
+                "43",
+                "5",
+                "53"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة b²:",
+              "correct_answer": "5",
+              "options": [
+                "5",
+                "48",
+                "43",
+                "10"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "قيمة a²:",
+              "correct_answer": "43",
+              "options": [
+                "43",
+                "48",
+                "5",
+                "38"
               ]
             }
           ],
@@ -75,9 +129,17 @@
           "layout": {
             "rows": [
               [
-                "a² = c² - b² = 9 - 5 = ",
+                "a² = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s2_i3"
                 }
               ]
             ]
@@ -85,23 +147,35 @@
         },
         {
           "step_number": 3,
-          "step_explanation": "نطابق معادلة القطع الزائد القياسية (x²/a² - y²/b² = 1) مع المعادلة المعطاة (hx²/L - 4y²/L = 1) لإيجاد h و L.",
-          "step_assistant_solution": "L=20, h=5",
+          "step_explanation": "نطابق معادلة القطع الزائد القياسية (x²/43 - y²/5 = 1) مع المعادلة المعطاة (hx²/L - 4y²/L = 1) لإيجاد h و L.",
+          "step_assistant_solution": "L=20, h=20/43",
+          "equation_template": "L = {input_1}, h = {input_2}",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "قيمة L هي:",
+              "input_id": "q1_s3_i1",
+              "label": "قيمة L:",
               "correct_answer": "20",
               "options": [
                 "20",
+                "43",
                 "5",
-                "10",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "label": "قيمة h:",
+              "correct_answer": "20/43",
+              "options": [
+                "20/43",
+                "43/20",
+                "5",
                 "4"
               ]
             }
           ],
           "hint": {
-            "step_hint_text": "قارن المقامات: L/4 = b² و L/h = a².",
+            "step_hint_text": "قارن المقامات: L/4 = 5 و L/h = 43.",
             "related_topics": [
               {
                 "topic_title": "المقارنة الرياضية",
@@ -112,11 +186,14 @@
           "layout": {
             "rows": [
               [
-                "L=",
+                "L = ",
                 {
-                  "input_id": "step3_input1"
+                  "input_id": "q1_s3_i1"
                 },
-                ", h=5"
+                ", h = ",
+                {
+                  "input_id": "q1_s3_i2"
+                }
               ]
             ]
           }

@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "تحديد قيمة c من بؤر القطوع المكافئة المعطاة في السؤال.",
           "step_assistant_solution": "c = 5",
+          "equation_template": "c = {input_1} , c^2 = {input_2}",
           "inputs": [
             {
-              "input_id": "q8_step1_input1",
-              "label": "ما هي قيمة c للقطع الزائد؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة c للقطع الزائد",
               "correct_answer": "5",
               "options": [
                 "5",
                 "20",
                 "10",
                 "25"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة c² للقطع الزائد",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "5",
+                "16",
+                "9"
               ]
             }
           ],
@@ -40,7 +52,11 @@
               [
                 "c = ",
                 {
-                  "input_id": "q8_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " , c^2 = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -50,10 +66,44 @@
           "step_number": 2,
           "step_explanation": "تطبيق علاقة الفرق بين طولي المحورين (2a - 2b = 2) مع علاقة القطع الزائد (c² = a² + b²).",
           "step_assistant_solution": "حل النظام ينتج قيم a و b.",
+          "equation_template": "a = {input_1} , b = {input_2} , a = {input_3} , b = {input_4}",
           "inputs": [
             {
-              "input_id": "q8_step2_input1",
-              "label": "إذا كان a - b = 1 و c² = 25، ما قيمة a؟",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة a في الحالة الأولى",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "5",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة b في الحالة الأولى",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "4",
+                "5",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "قيمة a في الحالة الثانية",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "4",
+                "5",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i4",
+              "label": "قيمة b في الحالة الثانية",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -75,9 +125,21 @@
           "layout": {
             "rows": [
               [
-                "إذا كان a - b = 1 و c² = 25، ما قيمة a؟ = ",
+                "a = ",
                 {
-                  "input_id": "q8_step2_input1"
+                  "input_id": "q1_s2_i1"
+                },
+                " , b = ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " , a = ",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                " , b = ",
+                {
+                  "input_id": "q1_s2_i4"
                 }
               ]
             ]

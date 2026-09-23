@@ -23,16 +23,50 @@
           "step_number": 1,
           "step_explanation": "الخطوة الأولى: تحديد العلاقة بين القطر AB والنقطة D على الدائرة.",
           "step_assistant_solution": "بما أن AB قطر في الدائرة، فإن الزاوية ADB هي زاوية محيطية مرسومة في نصف دائرة، إذن قياسها 90 درجة (أي أن AD عمودي على DB).",
+          "equation_template": "m(∠{input_1}) = {input_2} ⇒ {input_3} ⊥ {input_4}",
           "inputs": [
             {
-              "input_id": "q6_step1_input1",
-              "label": "ما هي قياس الزاوية ADB؟",
-              "correct_answer": "90 درجة",
+              "input_id": "q1_s1_i1",
+              "label": "اسم الزاوية المحيطية",
+              "correct_answer": "ADB",
               "options": [
-                "90 درجة",
-                "45 درجة",
-                "180 درجة",
-                "60 درجة"
+                "ADB",
+                "ABC",
+                "ACD",
+                "DCB"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قياس الزاوية",
+              "correct_answer": "90°",
+              "options": [
+                "90°",
+                "45°",
+                "180°",
+                "60°"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "المستقيم الأول المتعامد",
+              "correct_answer": "AD",
+              "options": [
+                "AD",
+                "AC",
+                "CD",
+                "AB"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "المستقيم الثاني المتعامد",
+              "correct_answer": "DB",
+              "options": [
+                "DB",
+                "AC",
+                "CD",
+                "AB"
               ]
             }
           ],
@@ -48,11 +82,22 @@
           "layout": {
             "rows": [
               [
-                "بما أن AB قطر في الدائرة، فإن الزاوية ADB هي زاوية محيطية مرسومة في نصف دائرة، إذن قياسها ",
+                "m(∠",
                 {
-                  "input_id": "q6_step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
-                " (أي أن AD عمودي على DB)."
+                ") = ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " ⇒ ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " ⊥ ",
+                {
+                  "input_id": "q1_s1_i4"
+                }
               ]
             ]
           }
@@ -61,13 +106,47 @@
           "step_number": 2,
           "step_explanation": "الخطوة الثانية: استخدام مبرهنة الأعمدة الثلاثة لإثبات التعامد.",
           "step_assistant_solution": "لدينا AC عمودي على المستوي، و AD هو مسقط CD على المستوي، وبما أن DB عمودي على AD، فإن DB عمودي على CD.",
+          "equation_template": "{input_1} ⊥ {input_2} ⇒ {input_3} ⊥ {input_4}",
           "inputs": [
             {
-              "input_id": "q6_step2_input1",
-              "label": "ما هو المستقيم الذي يعتبر عمودياً على المستوي (ACD)؟",
+              "input_id": "q1_s2_i1",
+              "label": "المستقيم العمودي الأول",
               "correct_answer": "DB",
               "options": [
                 "DB",
+                "AC",
+                "AD",
+                "AB"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "مسقط المستقيم المائل",
+              "correct_answer": "AD",
+              "options": [
+                "AD",
+                "AC",
+                "CD",
+                "AB"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "المستقيم العمودي المستنتج",
+              "correct_answer": "DB",
+              "options": [
+                "DB",
+                "AC",
+                "AD",
+                "AB"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i4",
+              "label": "المستقيم المائل العمودي عليه",
+              "correct_answer": "CD",
+              "options": [
+                "CD",
                 "AC",
                 "AD",
                 "AB"
@@ -86,11 +165,21 @@
           "layout": {
             "rows": [
               [
-                "لدينا AC عمودي على المستوي، و AD هو مسقط CD على المستوي، وبما أن DB عمودي على AD، فإن ",
                 {
-                  "input_id": "q6_step2_input1"
+                  "input_id": "q1_s2_i1"
                 },
-                " عمودي على CD."
+                " ⊥ ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " ⇒ ",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                " ⊥ ",
+                {
+                  "input_id": "q1_s2_i4"
+                }
               ]
             ]
           }

@@ -13,10 +13,55 @@
           "step_number": 1,
           "step_explanation": "تحديد المعاملات وتطبيق القانون العام للحل.",
           "step_assistant_solution": "المعاملات هي a=1, b=-3, c=1+3i. بتطبيق القانون z = [-b ± sqrt(b^2 - 4ac)] / 2a، نحصل على z = [3 ± sqrt(5 - 12i)] / 2.",
+          "equation_template": "a = {input_1} , b = {input_2} , c = {input_3} + {input_4}i , b^2 - 4ac = {input_5}",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هو ناتج المميز (b^2 - 4ac)؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المعامل a",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "-1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة المعامل b",
+              "correct_answer": "-3",
+              "options": [
+                "-3",
+                "3",
+                "-1",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الجزء الحقيقي من c",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "2",
+                "-1",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "معامل الجزء التخيلي من c",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "1",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i5",
+              "label": "ناتج المميز (b^2 - 4ac)",
               "correct_answer": "5-12i",
               "options": [
                 "5-12i",
@@ -38,9 +83,25 @@
           "layout": {
             "rows": [
               [
-                "ما هو ناتج المميز (b^2 - 4ac)؟ = ",
+                "a = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " , b = ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " , c = ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " + ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                "i , b^2 - 4ac = ",
+                {
+                  "input_id": "q1_s1_i5"
                 }
               ]
             ]
@@ -50,16 +111,61 @@
           "step_number": 2,
           "step_explanation": "إيجاد الجذر التربيعي للعدد المركب (5-12i) بفرضه x+yi.",
           "step_assistant_solution": "بحل نظام المعادلات x^2-y^2=5 و 2xy=-12، نجد أن x=3, y=-2 أو x=-3, y=2. إذن الجذر هو ±(3-2i).",
+          "equation_template": "x^2 - y^2 = {input_1} , 2xy = {input_2} ⇒ x = {input_3} , y = {input_4} ⇒ Root = ±({input_5})",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هو الجذر التربيعي لـ (5-12i)؟",
-              "correct_answer": "±(3-2i)",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة x^2 - y^2",
+              "correct_answer": "5",
               "options": [
-                "±(3-2i)",
-                "±(3+2i)",
-                "±(2-3i)",
-                "±(2+3i)"
+                "5",
+                "-5",
+                "12",
+                "-12"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "قيمة 2xy",
+              "correct_answer": "-12",
+              "options": [
+                "-12",
+                "12",
+                "-5",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "قيمة x الموجبة",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "2",
+                "4",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i4",
+              "label": "قيمة y المقابلة",
+              "correct_answer": "-2",
+              "options": [
+                "-2",
+                "2",
+                "-3",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i5",
+              "label": "الجذر التربيعي للعدد المركب",
+              "correct_answer": "3-2i",
+              "options": [
+                "3-2i",
+                "3+2i",
+                "2-3i",
+                "2+3i"
               ]
             }
           ],
@@ -75,11 +181,27 @@
           "layout": {
             "rows": [
               [
-                "بحل نظام المعادلات x^2-y^2=5 و 2xy=-12، نجد أن x=3, y=-2 أو x=-3, y=2. إذن الجذر هو ",
+                "x^2 - y^2 = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "q1_s2_i1"
                 },
-                "."
+                " , 2xy = ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " ⇒ x = ",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                " , y = ",
+                {
+                  "input_id": "q1_s2_i4"
+                },
+                " ⇒ Root = ±(",
+                {
+                  "input_id": "q1_s2_i5"
+                },
+                ")"
               ]
             ]
           }

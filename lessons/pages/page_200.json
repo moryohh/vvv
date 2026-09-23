@@ -12,16 +12,39 @@
           "step_number": 1,
           "step_explanation": "نبدأ باستخراج قيمة c للقطع الناقص لمعرفة بؤرتي القطع الزائد.",
           "step_assistant_solution": "c^2 = 36 - 20 = 16، إذن c = 4",
+          "equation_template": "c^2 = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q19_step1",
-              "label": "ما هي قيمة c للقطع الناقص؟",
-              "correct_answer": "4",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة a^2 للناقص",
+              "correct_answer": "36",
               "options": [
-                "4",
+                "36",
+                "20",
                 "16",
-                "6",
-                "2"
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة b^2 للناقص",
+              "correct_answer": "20",
+              "options": [
+                "20",
+                "36",
+                "16",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "قيمة c^2 للناقص",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "4",
+                "20",
+                "36"
               ]
             }
           ],
@@ -37,9 +60,17 @@
           "layout": {
             "rows": [
               [
-                "c^2 = 36 - 20 = 16، إذن c = ",
+                "c^2 = ",
                 {
-                  "input_id": "q19_step1"
+                  "input_id": "q1_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
                 }
               ]
             ]
@@ -57,16 +88,39 @@
           "step_number": 1,
           "step_explanation": "نستخرج بؤرتي القطع الناقص لتحديد قيمة a للقطع الزائد.",
           "step_assistant_solution": "c = 5",
+          "equation_template": "c^2 = {input_1} - {input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q20_step1",
-              "label": "ما هي قيمة c للقطع الناقص؟",
-              "correct_answer": "5",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a^2 للناقص",
+              "correct_answer": "35",
               "options": [
-                "5",
+                "35",
+                "10",
                 "25",
-                "6",
-                "10"
+                "5"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b^2 للناقص",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "35",
+                "25",
+                "5"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "قيمة c^2 للناقص",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "5",
+                "10",
+                "35"
               ]
             }
           ],
@@ -77,9 +131,17 @@
           "layout": {
             "rows": [
               [
-                "c = ",
+                "c^2 = ",
                 {
-                  "input_id": "q20_step1"
+                  "input_id": "q2_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q2_s1_i3"
                 }
               ]
             ]

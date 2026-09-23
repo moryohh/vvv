@@ -11,17 +11,29 @@
         {
           "step_number": 1,
           "step_explanation": "تبسيط معادلة القطع الناقص لإيجاد البؤر (c) للقطع الناقص التي ستمثل رؤوس القطع الزائد.",
+          "equation_template": "c^2 = 9 - {input_1} = {input_2}",
           "step_assistant_solution": "c = 2",
           "inputs": [
             {
-              "input_id": "q16_step1",
-              "label": "ما هي قيمة c للقطع الناقص؟",
-              "correct_answer": "2",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة b^2",
+              "correct_answer": "5",
               "options": [
-                "2",
+                "5",
+                "9",
                 "4",
-                "3",
-                "5"
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة c^2",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "6",
+                "1"
               ]
             }
           ],
@@ -37,9 +49,13 @@
           "layout": {
             "rows": [
               [
-                "c = ",
+                "c^2 = 9 - ",
                 {
-                  "input_id": "q16_step1"
+                  "input_id": "q1_s1_i1"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -48,27 +64,28 @@
         {
           "step_number": 2,
           "step_explanation": "استخدام العلاقة بين بؤرتي الزائد وطول محوره المرافق لإيجاد قيمة b للقطع الزائد.",
+          "equation_template": "b^2 = {input_1} / {input_2}",
           "step_assistant_solution": "b^2 = 4/3",
           "inputs": [
             {
-              "input_id": "q16_step2_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "label": "البسط",
               "correct_answer": "4",
               "options": [
                 "4",
                 "3",
                 "2",
-                "5"
+                "1"
               ]
             },
             {
-              "input_id": "q16_step2_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s2_i2",
+              "label": "المقام",
               "correct_answer": "3",
               "options": [
                 "3",
-                "2",
                 "4",
+                "2",
                 "5"
               ]
             }
@@ -82,33 +99,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q16_step2",
-              "label": "ما هي قيمة b^2 للقطع الزائد؟",
-              "correct_answer": "4/3",
-              "options": [
-                "4/3",
-                "4",
-                "3",
-                "2/3"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "b^2 = ",
                 {
-                  "input_id": "q16_step2_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                "/",
+                " / ",
                 {
-                  "input_id": "q16_step2_atom_2"
+                  "input_id": "q1_s2_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -121,17 +125,29 @@
         {
           "step_number": 1,
           "step_explanation": "إيجاد بؤرتي القطع الناقص لتحديد بؤرتي القطع الزائد المطلوب.",
+          "equation_template": "c^2 = {input_1} - {input_2} = 16",
           "step_assistant_solution": "c = 4",
           "inputs": [
             {
-              "input_id": "q17_step1",
-              "label": "ما هي قيمة c للقطع الناقص؟",
-              "correct_answer": "4",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a^2",
+              "correct_answer": "25",
               "options": [
-                "4",
+                "25",
+                "9",
                 "16",
-                "5",
-                "3"
+                "5"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b^2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "25",
+                "16",
+                "4"
               ]
             }
           ],
@@ -147,10 +163,15 @@
           "layout": {
             "rows": [
               [
-                "c = ",
+                "c^2 = ",
                 {
-                  "input_id": "q17_step1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = 16"
               ]
             ]
           }
@@ -158,17 +179,29 @@
         {
           "step_number": 2,
           "step_explanation": "استخدام النسبة المعطاة لإيجاد قيمة a للقطع الزائد.",
+          "equation_template": "a = {input_1} / {input_2}",
           "step_assistant_solution": "a = 2",
           "inputs": [
             {
-              "input_id": "q17_step2",
-              "label": "ما هي قيمة a للقطع الزائد؟",
+              "input_id": "q2_s2_i1",
+              "label": "قيمة c",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "8",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q2_s2_i2",
+              "label": "المقام",
               "correct_answer": "2",
               "options": [
                 "2",
                 "4",
                 "1",
-                "8"
+                "3"
               ]
             }
           ],
@@ -186,7 +219,11 @@
               [
                 "a = ",
                 {
-                  "input_id": "q17_step2"
+                  "input_id": "q2_s2_i1"
+                },
+                " / ",
+                {
+                  "input_id": "q2_s2_i2"
                 }
               ]
             ]

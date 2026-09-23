@@ -12,17 +12,29 @@
         {
           "step_number": 1,
           "step_explanation": "لحل المعادلة x^4 = -16، يجب أولاً تحويل الطرف الأيمن (-16) إلى الصيغة القطبية (القطبية المعيارية). ما هو المقياس (r) والسعة (θ) للعدد المركب -16؟",
+          "equation_template": "-16 = {input_1}(cos {input_2} + i sin {input_2})",
           "step_assistant_solution": "r = 16, θ = π",
           "inputs": [
             {
-              "input_id": "q31_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "المقياس r",
               "correct_answer": "16",
               "options": [
                 "16",
+                "8",
                 "4",
-                "15",
-                "17"
+                "-16"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "السعة θ",
+              "correct_answer": "π",
+              "options": [
+                "π",
+                "0",
+                "π/2",
+                "2π"
               ]
             }
           ],
@@ -35,57 +47,50 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q31_step1_input1",
-              "label": "المقياس r والسعة θ للعدد -16 هما:",
-              "correct_answer": "r=16, θ=π",
-              "options": [
-                "r=16, θ=π",
-                "r=16, θ=0",
-                "r=4, θ=π",
-                "r=16, θ=2π"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "r=",
+                "-16 = ",
                 {
-                  "input_id": "q31_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", θ=π"
+                "(cos ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " + i sin ",
+                "π",
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         },
         {
           "step_number": 2,
           "step_explanation": "بتطبيق صيغة ديموافر للجذور، نرفع الطرفين للقوة 1/4. الصيغة العامة هي x = r^(1/n) [cos((θ + 2kπ)/n) + i sin((θ + 2kπ)/n)]. ما هي قيمة الزاوية عندما k=1؟",
+          "equation_template": "θ_k = ({input_1}π + 2({input_2})π) / 4",
           "step_assistant_solution": "3π/4",
           "inputs": [
             {
-              "input_id": "q31_step2_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s2_i1",
+              "label": "قيمة θ الأساسية",
+              "correct_answer": "1",
               "options": [
-                "3",
-                "4",
-                "5",
-                "7"
+                "1",
+                "0",
+                "π",
+                "4"
               ]
             },
             {
-              "input_id": "q31_step2_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "4",
+              "input_id": "q1_s2_i2",
+              "label": "قيمة k",
+              "correct_answer": "1",
               "options": [
-                "4",
-                "3",
-                "5",
-                "6"
+                "1",
+                "0",
+                "2",
+                "3"
               ]
             }
           ],
@@ -98,33 +103,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q31_step2_input1",
-              "label": "قيمة الزاوية للحل الثاني (k=1) هي:",
-              "correct_answer": "3π/4",
-              "options": [
-                "π/4",
-                "3π/4",
-                "5π/4",
-                "7π/4"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "θ_k = (",
                 {
-                  "input_id": "q31_step2_input1_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                "π/",
+                "π + 2(",
                 {
-                  "input_id": "q31_step2_input1_atom_2"
-                }
+                  "input_id": "q1_s2_i2"
+                },
+                ")π) / 4"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

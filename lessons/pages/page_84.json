@@ -13,27 +13,28 @@
           "step_number": 1,
           "step_explanation": "تطبيق قانون ديموافر بضرب الزاوية في الأس.",
           "step_assistant_solution": "cos(12π/8) + i sin(12π/8) = cos(3π/2) + i sin(3π/2)",
+          "equation_template": "cos({input_1}π/8) + i sin({input_1}π/8) = cos({input_2}π/2) + i sin({input_2}π/2)",
           "inputs": [
             {
-              "input_id": "q1_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة البسط بعد الضرب",
+              "correct_answer": "12",
               "options": [
+                "12",
+                "4",
                 "3",
-                "6",
-                "2",
-                "4"
+                "8"
               ]
             },
             {
-              "input_id": "q1_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الزاوية المختصرة",
+              "correct_answer": "3",
               "options": [
+                "3",
+                "1",
                 "2",
-                "4",
-                "8",
-                "1"
+                "4"
               ]
             }
           ],
@@ -46,33 +47,25 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_s1",
-              "label": "ما هي الزاوية الناتجة بعد ضرب 4 في 3π/8؟",
-              "correct_answer": "3π/2",
-              "options": [
-                "3π/2",
-                "3π/4",
-                "3π/8",
-                "6π/8"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "cos(",
                 {
-                  "input_id": "q1_s1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                "π/",
+                "π/8) + i sin(",
+                "12",
+                "π/8) = cos(",
                 {
-                  "input_id": "q1_s1_atom_2"
-                }
+                  "input_id": "q1_s1_i2"
+                },
+                "π/2) + i sin(",
+                "3",
+                "π/2)"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -86,27 +79,28 @@
           "step_number": 1,
           "step_explanation": "تبسيط الزاوية بعد الضرب في الأس 4.",
           "step_assistant_solution": "5π/6",
+          "equation_template": "cos({input_1}π/{input_2}) + i sin({input_1}π/{input_2})",
           "inputs": [
             {
-              "input_id": "q2_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "بسط الزاوية",
               "correct_answer": "5",
               "options": [
                 "5",
-                "6",
                 "4",
-                "7"
+                "20",
+                "6"
               ]
             },
             {
-              "input_id": "q2_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "مقام الزاوية",
               "correct_answer": "6",
               "options": [
                 "6",
-                "12",
                 "24",
-                "5"
+                "4",
+                "12"
               ]
             }
           ],
@@ -114,33 +108,25 @@
             "step_hint_text": "4 مضروبة في 5π على 24 تعطي 20π/24، وبالاختصار على 4 تصبح 5π/6.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q2_s1",
-              "label": "ما هي الزاوية الناتجة؟",
-              "correct_answer": "5π/6",
-              "options": [
-                "5π/6",
-                "5π/12",
-                "5π/24",
-                "π/6"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "cos(",
                 {
-                  "input_id": "q2_s1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
                 "π/",
                 {
-                  "input_id": "q2_s1_atom_2"
-                }
+                  "input_id": "q2_s1_i2"
+                },
+                ") + i sin(",
+                "5",
+                "π/",
+                "6",
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -154,10 +140,22 @@
           "step_number": 1,
           "step_explanation": "حساب الزاوية النهائية بعد الضرب.",
           "step_assistant_solution": "π/2",
+          "equation_template": "cos({input_1}π/{input_2}) + i sin({input_1}π/{input_2})",
           "inputs": [
             {
-              "input_id": "q3_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q3_s1_i1",
+              "label": "بسط الزاوية بعد الاختصار",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "5",
+                "10",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "مقام الزاوية بعد الاختصار",
               "correct_answer": "2",
               "options": [
                 "2",
@@ -171,30 +169,25 @@
             "step_hint_text": "ببساطة 5 ضرب π/10 تعطي 5π/10 والتي تساوي نصف π.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_s1",
-              "label": "ما قيمة الزاوية الناتجة؟",
-              "correct_answer": "π/2",
-              "options": [
-                "π/2",
-                "π/5",
-                "π/10",
-                "5π/10"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "cos(",
+                {
+                  "input_id": "q3_s1_i1"
+                },
                 "π/",
                 {
-                  "input_id": "q3_s1_atom_1"
-                }
+                  "input_id": "q3_s1_i2"
+                },
+                ") + i sin(",
+                "1",
+                "π/",
+                "2",
+                ")"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

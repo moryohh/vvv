@@ -12,10 +12,11 @@
           "step_number": 1,
           "step_explanation": "تبسيط الكسر داخل القوس بضربه في مرافق المقام (1-i).",
           "step_assistant_solution": "( (3-i)(1-i) ) / ( (1+i)(1-i) ) = (3-3i-i+i^2)/2 = (2-4i)/2 = 1-2i",
+          "equation_template": "(3-i)/(1+i) = {input_1}",
           "inputs": [
             {
-              "input_id": "q1_step1_input",
-              "label": "ما هو ناتج تبسيط الكسر (3-i)/(1+i)؟",
+              "input_id": "q1_s1_i1",
+              "label": "ناتج تبسيط الكسر",
               "correct_answer": "1-2i",
               "options": [
                 "1-2i",
@@ -37,9 +38,9 @@
           "layout": {
             "rows": [
               [
-                "( (3-i)(1-i) ) / ( (1+i)(1-i) ) = (3-3i-i+i^2)/2 = (2-4i)/2 = ",
+                "(3-i)/(1+i) = ",
                 {
-                  "input_id": "q1_step1_input"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -49,16 +50,28 @@
           "step_number": 2,
           "step_explanation": "رفع الناتج (1-2i) للقوة 3.",
           "step_assistant_solution": "(1-2i)^2 * (1-2i) = (1-4i-4)(1-2i) = (-3-4i)(1-2i) = -3+6i-4i+8i^2 = -3+2i-8 = -11+2i",
+          "equation_template": "(1-2i)^3 = {input_1} + {input_2}i",
           "inputs": [
             {
-              "input_id": "q1_step2_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s2_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "-11",
               "options": [
                 "-11",
                 "11",
                 "-3",
-                "-12"
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "معامل الجزء التخيلي",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "-2",
+                "4",
+                "-4"
               ]
             }
           ],
@@ -71,30 +84,21 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_step2_input",
-              "label": "ما هو الناتج النهائي بعد التكعيب؟",
-              "correct_answer": "-11+2i",
-              "options": [
-                "-11+2i",
-                "-11-2i",
-                "11+2i",
-                "-3+2i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(1-2i)^3 = ",
                 {
-                  "input_id": "q1_step2_input_atom_1"
+                  "input_id": "q1_s2_i1"
                 },
-                "+2i"
+                " + ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -108,16 +112,17 @@
           "step_number": 1,
           "step_explanation": "تبسيط ما داخل القوس ( (1+i)/(1-i) ).",
           "step_assistant_solution": "( (1+i)^2 ) / ( 1^2 + 1^2 ) = (1+2i-1)/2 = 2i/2 = i",
+          "equation_template": "(1+i)/(1-i) = {input_1}i",
           "inputs": [
             {
-              "input_id": "q2_step1_input",
-              "label": "ما هو ناتج تبسيط ما داخل القوس؟",
-              "correct_answer": "i",
+              "input_id": "q2_s1_i1",
+              "label": "معامل i",
+              "correct_answer": "1",
               "options": [
-                "i",
-                "-i",
                 "1",
-                "-1"
+                "-1",
+                "2",
+                "-2"
               ]
             }
           ],
@@ -128,10 +133,11 @@
           "layout": {
             "rows": [
               [
-                "( (1+i)^2 ) / ( 1^2 + 1^2 ) = (1+2i-1)/2 = 2i/2 = ",
+                "(1+i)/(1-i) = ",
                 {
-                  "input_id": "q2_step1_input"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                "i"
               ]
             ]
           }
@@ -140,10 +146,11 @@
           "step_number": 2,
           "step_explanation": "حساب i^100.",
           "step_assistant_solution": "بما أن 100 تقبل القسمة على 4، فإن i^100 = 1.",
+          "equation_template": "i^100 = {input_1}",
           "inputs": [
             {
-              "input_id": "q2_step2_input",
-              "label": "ما هي قيمة i^100؟",
+              "input_id": "q2_s2_i1",
+              "label": "قيمة المقدار",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -160,11 +167,10 @@
           "layout": {
             "rows": [
               [
-                "بما أن 100 تقبل القسمة على 4، فإن i^100 = ",
+                "i^100 = ",
                 {
-                  "input_id": "q2_step2_input"
-                },
-                "."
+                  "input_id": "q2_s2_i1"
+                }
               ]
             ]
           }
@@ -180,11 +186,12 @@
         {
           "step_number": 1,
           "step_explanation": "تبسيط المقدار الرياضي.",
-          "step_assistant_solution": "المقدار يساوي (1+i)^16 * (1+i) / (1+i)^16 = 1+i... لحظة: السؤال يظهر في الصورة أنه (1-i)^16 / (1+i)^16 * (1-i). الناتج هو 1-i.",
+          "step_assistant_solution": "المقدار هو (1-i) بعد الاختصار الناتج هو 1-i.",
+          "equation_template": "(1+i)^17 / (1+i)^16 = {input_1} + {input_2}i",
           "inputs": [
             {
-              "input_id": "q3_step1_input_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q3_s1_i1",
+              "label": "الجزء الحقيقي",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -192,36 +199,38 @@
                 "0",
                 "2"
               ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "معامل i",
+              "correct_answer": "-1",
+              "options": [
+                "1",
+                "-1",
+                "0",
+                "i"
+              ]
             }
           ],
           "hint": {
             "step_hint_text": "استخدم قوانين الأسس.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q3_step1_input",
-              "label": "ما هو الناتج النهائي؟",
-              "correct_answer": "1-i",
-              "options": [
-                "1-i",
-                "1+i",
-                "-1+i",
-                "-1-i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(1+i)^17 / (1+i)^16 = ",
                 {
-                  "input_id": "q3_step1_input_atom_1"
+                  "input_id": "q3_s1_i1"
                 },
-                "-i"
+                " + ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

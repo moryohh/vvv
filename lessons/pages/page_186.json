@@ -12,9 +12,10 @@
           "step_number": 1,
           "step_explanation": "نبدأ بكتابة معادلة التعريف بناءً على المسافة بين النقطة P(x, y) والبؤرتين.",
           "step_assistant_solution": "√((x-2√2)² + y²) - √((x+2√2)² + y²) = ±4",
+          "equation_template": "2a = {q3_step1_input1} => √((x-2√2)² + y²) - √((x+2√2)² + y²) = ±{q3_step1_input2}",
           "inputs": [
             {
-              "input_id": "q3_step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "ما هي قيمة 2a من المعطيات؟",
               "correct_answer": "4",
               "options": [
@@ -22,6 +23,17 @@
                 "2",
                 "8",
                 "1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "ما هو الثابت في الطرف الأيمن لمعادلة التعريف؟",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "8",
+                "16"
               ]
             }
           ],
@@ -37,9 +49,21 @@
           "layout": {
             "rows": [
               [
-                "√((x-2√2)² + y²) - √((x+2√2)² + y²) = ±",
+                "2a = ",
+                "{q3_step1_input1}",
+                " => √((x-2√2)² + y²) - √((x+2√2)² + y²) = ±",
+                "{q3_step1_input2}"
+              ],
+              [
+                "ما هي قيمة 2a من المعطيات؟ = ",
                 {
-                  "input_id": "q3_step1_input1"
+                  "input_id": "q1_s1_i1"
+                }
+              ],
+              [
+                "ما هو الثابت في الطرف الأيمن لمعادلة التعريف؟ = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -57,9 +81,10 @@
           "step_number": 1,
           "step_explanation": "إيجاد معادلة القطع المكافئ باستخدام النقطة المعطاة.",
           "step_assistant_solution": "y² = 20x",
+          "equation_template": "p = {q4_step1_input1} => y² = {q4_step1_input2}x",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
+              "input_id": "q2_s1_i1",
               "label": "بما أن القطع يمر بالنقطة (1, 2√5) ومعادلته y²=4px، ما قيمة p؟",
               "correct_answer": "5",
               "options": [
@@ -67,6 +92,17 @@
                 "10",
                 "20",
                 "2.5"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "ما هو المعامل العددي لـ x في معادلة القطع المكافئ؟",
+              "correct_answer": "20",
+              "options": [
+                "20",
+                "10",
+                "5",
+                "40"
               ]
             }
           ],
@@ -82,9 +118,22 @@
           "layout": {
             "rows": [
               [
+                "p = ",
+                "{q4_step1_input1}",
+                " => y² = ",
+                "{q4_step1_input2}",
+                "x"
+              ],
+              [
                 "بما أن القطع يمر بالنقطة (1, 2√5) ومعادلته y²=4px، ما قيمة p؟ = ",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q2_s1_i1"
+                }
+              ],
+              [
+                "ما هو المعامل العددي لـ x في معادلة القطع المكافئ؟ = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]

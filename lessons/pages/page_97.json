@@ -13,10 +13,22 @@
           "step_number": 1,
           "step_explanation": "تحويل العدد الحقيقي السالب إلى صيغة قطبية باستخدام المقياس والقيمة الأساسية للسعة.",
           "step_assistant_solution": "z = 125(cos π + i sin π)",
+          "equation_template": "z = {input_1}(cos {input_2} + i sin {input_2})",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي القيمة الأساسية للسعة (θ) للعدد -125؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المقياس r:",
+              "correct_answer": "125",
+              "options": [
+                "125",
+                "25",
+                "5",
+                "625"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة السعة الأساسية θ:",
               "correct_answer": "π",
               "options": [
                 "0",
@@ -38,10 +50,16 @@
           "layout": {
             "rows": [
               [
-                "z = 125(cos π + i sin ",
+                "z = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 },
+                "(cos ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " + i sin ",
+                "π",
                 ")"
               ]
             ]
@@ -59,16 +77,28 @@
           "step_number": 1,
           "step_explanation": "إيجاد المقياس r وسعة العدد المركب 64i.",
           "step_assistant_solution": "r = 64, θ = π/2",
+          "equation_template": "r = {input_1}, θ = {input_2}",
           "inputs": [
             {
-              "input_id": "step1_input2_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "2",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة المقياس r:",
+              "correct_answer": "64",
               "options": [
-                "2",
+                "64",
+                "32",
+                "8",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "قيمة السعة θ:",
+              "correct_answer": "π/2",
+              "options": [
                 "0",
-                "3",
-                "1"
+                "π/2",
+                "π",
+                "3π/2"
               ]
             }
           ],
@@ -81,30 +111,20 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step1_input2",
-              "label": "ما هي سعة العدد المركب 64i؟",
-              "correct_answer": "π/2",
-              "options": [
-                "0",
-                "π/2",
-                "π",
-                "3π/2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "π/",
+                "r = ",
                 {
-                  "input_id": "step1_input2_atom_1"
+                  "input_id": "q2_s1_i1"
+                },
+                ", θ = ",
+                {
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

@@ -24,16 +24,39 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: لإيجاد النظير الجمعي لأي عدد مركب، نقوم بضرب الجزء الحقيقي والجزء التخيلي في (-1).",
           "step_assistant_solution": "نغير إشارات كل من الجزء الحقيقي والتخيلي للعدد.",
+          "equation_template": "-Z1 = {input_1} {input_2} {input_3}i",
           "inputs": [
             {
-              "input_id": "q1_step1_input1",
-              "label": "ما هو النظير الجمعي للعدد Z = 2 + 3i؟",
-              "correct_answer": "-2 - 3i",
+              "input_id": "q1_s1_i1",
+              "label": "الجزء الحقيقي",
+              "correct_answer": "-2",
               "options": [
-                "-2 - 3i",
-                "2 - 3i",
-                "-2 + 3i",
-                "2 + 3i"
+                "-2",
+                "2",
+                "1",
+                "-1"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الإشارة",
+              "correct_answer": "-",
+              "options": [
+                "-",
+                "+",
+                "=",
+                "i"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الجزء التخيلي",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "-3",
+                "2",
+                "-2"
               ]
             }
           ],
@@ -49,10 +72,19 @@
           "layout": {
             "rows": [
               [
-                "ما هو النظير الجمعي للعدد Z = 2 + 3i؟ = ",
+                "-Z1 = ",
                 {
-                  "input_id": "q1_step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                "i"
               ]
             ]
           }

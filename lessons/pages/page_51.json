@@ -13,27 +13,17 @@
           "step_number": 1,
           "step_explanation": "تبسيط الجذور أولاً للوصول إلى الصيغة العادية للعدد المركب a + bi.",
           "step_assistant_solution": "M = -8 - 6i, L = -1 + 3i",
+          "equation_template": "L = {input_1}",
           "inputs": [
             {
-              "input_id": "q6_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "-1",
+              "input_id": "q1_s1_i1",
+              "label": "ناتج تبسيط الجذر L",
+              "correct_answer": "-1 + 3i",
               "options": [
-                "-1",
-                "1",
-                "2",
-                "-2"
-              ]
-            },
-            {
-              "input_id": "q6_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "3",
-              "options": [
-                "3",
-                "4",
-                "2",
-                "5"
+                "-1 + 3i",
+                "1 + 3i",
+                "-1 - 3i",
+                "2 + 4i"
               ]
             }
           ],
@@ -46,35 +36,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q6_s1",
-              "label": "ما هو ناتج تبسيط الجذر L؟",
-              "correct_answer": "-1 + 3i",
-              "options": [
-                "-1 + 3i",
-                "1 + 3i",
-                "-1 - 3i",
-                "2 + 4i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "L = ",
                 {
-                  "input_id": "q6_s1_atom_1"
-                },
-                " ",
-                "+",
-                {
-                  "input_id": "q6_s1_atom_2"
-                },
-                "i"
+                  "input_id": "q1_s1_i1"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -88,27 +59,17 @@
           "step_number": 1,
           "step_explanation": "تحديد الجذر الثاني بناءً على خاصية المعاملات الحقيقية.",
           "step_assistant_solution": "الجذر الثاني هو 3 + 4i",
+          "equation_template": "L = {input_1}",
           "inputs": [
             {
-              "input_id": "q7_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة الجذر الثاني L",
+              "correct_answer": "3 + 4i",
               "options": [
-                "3",
-                "-3",
-                "2",
-                "4"
-              ]
-            },
-            {
-              "input_id": "q7_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "4",
-              "options": [
-                "4",
-                "3",
-                "5",
-                "6"
+                "3 + 4i",
+                "3 - 4i",
+                "-3 - 4i",
+                "-3 + 4i"
               ]
             }
           ],
@@ -121,35 +82,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q7_s1",
-              "label": "ما هو الجذر الثاني؟",
-              "correct_answer": "3 + 4i",
-              "options": [
-                "3 + 4i",
-                "3 - 4i",
-                "-3 - 4i",
-                "-3 + 4i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "L = ",
                 {
-                  "input_id": "q7_s1_atom_1"
-                },
-                " ",
-                "+",
-                {
-                  "input_id": "q7_s1_atom_2"
-                },
-                "i"
+                  "input_id": "q2_s1_i1"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -163,16 +105,17 @@
           "step_number": 1,
           "step_explanation": "تبسيط الجذر المعطى بضرب البسط والمقام بمرافق المقام.",
           "step_assistant_solution": "1 - i",
+          "equation_template": "M = {input_1}",
           "inputs": [
             {
-              "input_id": "q8_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "1",
+              "input_id": "q3_s1_i1",
+              "label": "تبسيط الجذر المعطى M",
+              "correct_answer": "1 - i",
               "options": [
-                "1",
-                "2",
-                "3",
-                "0"
+                "1 - i",
+                "1 + i",
+                "2 - i",
+                "3 + i"
               ]
             }
           ],
@@ -185,30 +128,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q8_s1",
-              "label": "ما هو ناتج تبسيط الجذر المعطى؟",
-              "correct_answer": "1 - i",
-              "options": [
-                "1 - i",
-                "1 + i",
-                "2 - i",
-                "3 + i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "M = ",
                 {
-                  "input_id": "q8_s1_atom_1"
-                },
-                " - i"
+                  "input_id": "q3_s1_i1"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

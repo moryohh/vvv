@@ -12,40 +12,52 @@
         {
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: نستخدم تعريف المرافق، بما أن العددين مترافقان، نساوي العدد الأول بمرافق العدد الثاني.",
-          "step_assistant_solution": "(x-yi) = 6(2-i) / (3+i)",
+          "step_assistant_solution": "(x-yi)(3+i) = 6(2-i)",
+          "equation_template": "(x-{input_1}i)({input_2}+i) = {input_3}({input_4}-i)",
           "inputs": [
             {
-              "input_id": "q28_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "3",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة المعامل التخيلي في القوس الأول",
               "options": [
-                "3",
-                "6",
-                "2",
-                "4"
-              ]
-            },
-            {
-              "input_id": "q28_s1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
-              "correct_answer": "6",
-              "options": [
-                "6",
-                "3",
-                "5",
-                "7"
-              ]
-            },
-            {
-              "input_id": "q28_s1_atom_3",
-              "label": "قيمة الجزء 3 في المعادلة",
-              "correct_answer": "2",
-              "options": [
-                "2",
+                "y",
+                "x",
                 "1",
+                "-y"
+              ],
+              "correct_answer": "y"
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة الجزء الحقيقي في القوس الثاني",
+              "options": [
                 "3",
-                "4"
-              ]
+                "2",
+                "6",
+                "1"
+              ],
+              "correct_answer": "3"
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الثابت خارج القوس",
+              "options": [
+                "6",
+                "3",
+                "2",
+                "12"
+              ],
+              "correct_answer": "6"
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "الجزء الحقيقي في القوس الأيمن",
+              "options": [
+                "2",
+                "3",
+                "6",
+                "1"
+              ],
+              "correct_answer": "2"
             }
           ],
           "hint": {
@@ -57,39 +69,29 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q28_s1",
-              "label": "ما هي المعادلة بعد الضرب التبادلي؟",
-              "correct_answer": "(x-yi)(3+i) = 6(2-i)",
-              "options": [
-                "(x-yi)(3+i) = 6(2-i)",
-                "(x+yi)(3+i) = 6(2-i)",
-                "(x-yi) = 6(3+i)/(2-i)",
-                "(x-yi) = 6/(3+i)"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "(x-yi)(",
+                "(x-",
                 {
-                  "input_id": "q28_s1_atom_1"
+                  "input_id": "q1_s1_i1"
+                },
+                "i)(",
+                {
+                  "input_id": "q1_s1_i2"
                 },
                 "+i) = ",
                 {
-                  "input_id": "q28_s1_atom_2"
+                  "input_id": "q1_s1_i3"
                 },
                 "(",
                 {
-                  "input_id": "q28_s1_atom_3"
+                  "input_id": "q1_s1_i4"
                 },
                 "-i)"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -103,17 +105,51 @@
           "step_number": 1,
           "step_explanation": "نبدأ بمساواة الكسر الأول بمرافق الكسر الثاني للتخلص من الرموز في المقام.",
           "step_assistant_solution": "(x-11i)/(x+yi) = (7-i)/(1+i)",
+          "equation_template": "(x-{input_1}i)/(x+{input_2}i) = (7-{input_3}i)/(1+{input_4}i)",
           "inputs": [
             {
-              "input_id": "q29_s1",
-              "label": "ما هو مرافق (7+i)/(1-i)؟",
-              "correct_answer": "(7-i)/(1+i)",
+              "input_id": "q2_s1_i1",
+              "label": "معامل i في البسط",
               "options": [
-                "(7-i)/(1+i)",
-                "(7+i)/(1-i)",
-                "(7-i)/(1-i)",
-                "(7+i)/(1+i)"
-              ]
+                "11",
+                "1",
+                "7",
+                "x"
+              ],
+              "correct_answer": "11"
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "المتغير التخيلي في المقام",
+              "options": [
+                "y",
+                "x",
+                "1",
+                "11"
+              ],
+              "correct_answer": "y"
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "الجزء التخيلي في مرافق الكسر",
+              "options": [
+                "1",
+                "i",
+                "7",
+                "0"
+              ],
+              "correct_answer": "1"
+            },
+            {
+              "input_id": "q2_s1_i4",
+              "label": "الجزء التخيلي في مقام مرافق الكسر",
+              "options": [
+                "1",
+                "i",
+                "7",
+                "0"
+              ],
+              "correct_answer": "1"
             }
           ],
           "hint": {
@@ -128,10 +164,23 @@
           "layout": {
             "rows": [
               [
-                "(x-11i)/(x+yi) = ",
+                "(x-",
                 {
-                  "input_id": "q29_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                "i)/(x+",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "i) = (7-",
+                {
+                  "input_id": "q2_s1_i3"
+                },
+                "i)/(1+",
+                {
+                  "input_id": "q2_s1_i4"
+                },
+                "i)"
               ]
             ]
           }

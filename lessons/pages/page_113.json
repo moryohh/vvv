@@ -24,10 +24,22 @@
           "step_number": 1,
           "step_explanation": "نحدد قيمة p من خلال مقارنة المعادلة المعطاة بالصيغة القياسية للقطع المكافئ.",
           "step_assistant_solution": "4p = 4, p = 1",
+          "equation_template": "4p = {input_1}, p = {input_2}",
           "inputs": [
             {
-              "input_id": "q2_step1_input1",
-              "label": "ما هي قيمة p؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة 4p من المعادلة:",
+              "correct_answer": "4",
+              "options": [
+                "1",
+                "4",
+                "2",
+                "0"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة p:",
               "correct_answer": "1",
               "options": [
                 "1",
@@ -49,9 +61,13 @@
           "layout": {
             "rows": [
               [
-                "4p = 4, p = ",
+                "4p = ",
                 {
-                  "input_id": "q2_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                ", p = ",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -69,16 +85,17 @@
           "step_number": 1,
           "step_explanation": "حدد الصيغة المناسبة للقطع المكافئ حيث x^2 تعني أن البؤرة تقع على محور الصادات.",
           "step_assistant_solution": "x^2 = 4py",
+          "equation_template": "x^2 = {input_1}y",
           "inputs": [
             {
-              "input_id": "q2b_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "4",
+              "input_id": "q2_s1_i1",
+              "label": "معامل y في الصيغة القياسية:",
+              "correct_answer": "4p",
               "options": [
+                "4p",
+                "p",
                 "4",
-                "-4",
-                "3",
-                "5"
+                "-4p"
               ]
             }
           ],
@@ -86,31 +103,17 @@
             "step_hint_text": "بما أن المتغير المربع هو x، فإن القطع يتناظر حول محور الصادات (y).",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q2b_step1_input1",
-              "label": "أي صيغة نستخدم؟",
-              "correct_answer": "x^2 = 4py",
-              "options": [
-                "y^2 = 4px",
-                "x^2 = 4py",
-                "x^2 = -4py",
-                "y^2 = -4px"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x^2 = ",
                 {
-                  "input_id": "q2b_step1_input1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                "py"
+                "y"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -124,16 +127,28 @@
           "step_number": 1,
           "step_explanation": "نستنتج موقع البؤرة وقيمة p من الإحداثيات المعطاة (3,0).",
           "step_assistant_solution": "p = 3",
+          "equation_template": "y^2 = 4({input_1})x = {input_2}x",
           "inputs": [
             {
-              "input_id": "q3_1_step1",
-              "label": "قيمة p هي:",
+              "input_id": "q3_s1_i1",
+              "label": "قيمة p:",
               "correct_answer": "3",
               "options": [
                 "3",
                 "0",
-                "-3",
-                "12"
+                "1",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "حاصل ضرب 4 في p:",
+              "correct_answer": "12",
+              "options": [
+                "12",
+                "3",
+                "7",
+                "4"
               ]
             }
           ],
@@ -144,10 +159,15 @@
           "layout": {
             "rows": [
               [
-                "p = ",
+                "y^2 = 4(",
                 {
-                  "input_id": "q3_1_step1"
-                }
+                  "input_id": "q3_s1_i1"
+                },
+                ")x = ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                "x"
               ]
             ]
           }
@@ -163,17 +183,29 @@
         {
           "step_number": 1,
           "step_explanation": "تحديد اتجاه القطع من إحداثيات البؤرة (0, -4).",
-          "step_assistant_solution": "القطع يفتح للأسفل (سالب)",
+          "step_assistant_solution": "x^2 = -16y",
+          "equation_template": "x^2 = -4({input_1})y = {input_2}y",
           "inputs": [
             {
-              "input_id": "q3_2_step1",
-              "label": "بما أن البؤرة على محور الصادات السالب، المعادلة تحتوي على:",
-              "correct_answer": "-4py",
+              "input_id": "q4_s1_i1",
+              "label": "قيمة p:",
+              "correct_answer": "4",
               "options": [
-                "4px",
-                "-4px",
-                "4py",
-                "-4py"
+                "4",
+                "-4",
+                "0",
+                "1"
+              ]
+            },
+            {
+              "input_id": "q4_s1_i2",
+              "label": "المعامل النهائي لـ y:",
+              "correct_answer": "-16",
+              "options": [
+                "-16",
+                "16",
+                "-4",
+                "4"
               ]
             }
           ],
@@ -184,10 +216,15 @@
           "layout": {
             "rows": [
               [
-                "بما أن البؤرة على محور الصادات السالب، المعادلة تحتوي على: = ",
+                "x^2 = -4(",
                 {
-                  "input_id": "q3_2_step1"
-                }
+                  "input_id": "q4_s1_i1"
+                },
+                ")y = ",
+                {
+                  "input_id": "q4_s1_i2"
+                },
+                "y"
               ]
             ]
           }
@@ -204,16 +241,17 @@
           "step_number": 1,
           "step_explanation": "حساب قيمة 4p عند التعويض في المعادلة.",
           "step_assistant_solution": "4 * (3/2) = 6",
+          "equation_template": "x^2 = -({input_1})y",
           "inputs": [
             {
-              "input_id": "q3_3_step1",
-              "label": "قيمة 4p هي:",
+              "input_id": "q5_s1_i1",
+              "label": "ناتج حساب 4p:",
               "correct_answer": "6",
               "options": [
-                "3/2",
                 "6",
+                "3",
                 "12",
-                "3"
+                "4"
               ]
             }
           ],
@@ -229,10 +267,11 @@
           "layout": {
             "rows": [
               [
-                "4 * (3/2) = ",
+                "x^2 = -(",
                 {
-                  "input_id": "q3_3_step1"
-                }
+                  "input_id": "q5_s1_i1"
+                },
+                ")y"
               ]
             ]
           }

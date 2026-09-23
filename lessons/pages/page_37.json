@@ -13,16 +13,17 @@
           "step_number": 1,
           "step_explanation": "نحول العملية إلى معادلة تربيعية c^2 = a.",
           "step_assistant_solution": "c^2 = -25",
+          "equation_template": "c^2 = {input_1}",
           "inputs": [
             {
-              "input_id": "q1_s1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "25",
+              "input_id": "q1_s1_i1",
+              "label": "القيمة في الطرف الأيمن للمعادلة",
+              "correct_answer": "-25",
               "options": [
+                "-25",
                 "25",
-                "24",
-                "26",
-                "27"
+                "-25i",
+                "25i"
               ]
             }
           ],
@@ -35,31 +36,16 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1_s1",
-              "label": "ما هي المعادلة؟",
-              "correct_answer": "c^2 = -25",
-              "options": [
-                "c^2 = -25",
-                "c = -25",
-                "c^2 = 25",
-                "c = 25i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "c^2 = ",
-                "-",
                 {
-                  "input_id": "q1_s1_atom_1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -73,16 +59,17 @@
           "step_number": 1,
           "step_explanation": "استخراج جذر العدد السالب باستخدام i.",
           "step_assistant_solution": "±4i",
+          "equation_template": "±{input_1}i",
           "inputs": [
             {
-              "input_id": "q2_s1",
-              "label": "ناتج الجذر هو:",
-              "correct_answer": "±4i",
+              "input_id": "q2_s1_i1",
+              "label": "معامل الجزء التخيلي",
+              "correct_answer": "4",
               "options": [
-                "±4i",
-                "±16i",
-                "±4",
-                "±8i"
+                "4",
+                "16",
+                "2",
+                "8"
               ]
             }
           ],
@@ -93,9 +80,11 @@
           "layout": {
             "rows": [
               [
+                "±",
                 {
-                  "input_id": "q2_s1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                "i"
               ]
             ]
           }
@@ -112,16 +101,17 @@
           "step_number": 1,
           "step_explanation": "حساب الجذر التربيعي لعدد أولي سالب.",
           "step_assistant_solution": "±i√17",
+          "equation_template": "±i√{input_1}",
           "inputs": [
             {
-              "input_id": "q3_s1",
-              "label": "ناتج الجذر هو:",
-              "correct_answer": "±i√17",
+              "input_id": "q3_s1_i1",
+              "label": "العدد تحت الجذر",
+              "correct_answer": "17",
               "options": [
-                "±i√17",
-                "±√17",
-                "±17i",
-                "±i√17i"
+                "17",
+                "7.1",
+                "34",
+                "17i"
               ]
             }
           ],
@@ -132,8 +122,9 @@
           "layout": {
             "rows": [
               [
+                "±i√",
                 {
-                  "input_id": "q3_s1"
+                  "input_id": "q3_s1_i1"
                 }
               ]
             ]
@@ -151,16 +142,17 @@
           "step_number": 1,
           "step_explanation": "حساب الجذر التربيعي لعدد سالب بسيط.",
           "step_assistant_solution": "±i√3",
+          "equation_template": "±i√{input_1}",
           "inputs": [
             {
-              "input_id": "q4_s1",
-              "label": "ناتج الجذر هو:",
-              "correct_answer": "±i√3",
+              "input_id": "q4_s1_i1",
+              "label": "العدد تحت الجذر",
+              "correct_answer": "3",
               "options": [
-                "±i√3",
-                "±3i",
-                "±√3",
-                "±i√3i"
+                "3",
+                "9",
+                "1.5",
+                "3i"
               ]
             }
           ],
@@ -171,8 +163,9 @@
           "layout": {
             "rows": [
               [
+                "±i√",
                 {
-                  "input_id": "q4_s1"
+                  "input_id": "q4_s1_i1"
                 }
               ]
             ]

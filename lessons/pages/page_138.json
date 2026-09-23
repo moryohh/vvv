@@ -12,11 +12,11 @@
         {
           "step_number": 1,
           "step_explanation": "نبدأ بتحويل معادلة القطع المكافئ للصيغة القياسية لاستخراج قيمة البؤرة.",
-          "step_assistant_solution": "p = 3",
+          "equation_template": "p = {input_1}",
           "inputs": [
             {
-              "input_id": "q7_step1",
-              "label": "ما هي قيمة p للقطع المكافئ؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة p",
               "correct_answer": "3",
               "options": [
                 "3",
@@ -40,7 +40,7 @@
               [
                 "p = ",
                 {
-                  "input_id": "q7_step1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -57,11 +57,11 @@
         {
           "step_number": 1,
           "step_explanation": "نحسب البعد بين بؤرة القطع المكافئ ودليله لتحديد قيمة 2c للقطع الناقص.",
-          "step_assistant_solution": "2c = 12",
+          "equation_template": "2c = {input_1}",
           "inputs": [
             {
-              "input_id": "q8_step1",
-              "label": "ما هو البعد البؤري 2c للقطع الناقص؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة البعد البؤري 2c",
               "correct_answer": "12",
               "options": [
                 "12",
@@ -85,7 +85,7 @@
               [
                 "2c = ",
                 {
-                  "input_id": "q8_step1"
+                  "input_id": "q2_s1_i1"
                 }
               ]
             ]

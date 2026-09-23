@@ -13,10 +13,22 @@
           "step_number": 1,
           "step_explanation": "نبدأ بإيجاد بؤرة القطع المكافئ من معادلته المعطاة.",
           "step_assistant_solution": "p = 4، البؤرة هي (4, 0)",
+          "equation_template": "4p = {input_1} , p = {input_2}",
           "inputs": [
             {
-              "input_id": "q15_step1",
-              "label": "ما هي قيمة p للقطع المكافئ؟",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة معامل p في معادلة المكافئ",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "4",
+                "8",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة p",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -38,11 +50,14 @@
           "layout": {
             "rows": [
               [
-                "p = 4، البؤرة هي (",
+                "4p = ",
                 {
-                  "input_id": "q15_step1"
+                  "input_id": "q1_s1_i1"
                 },
-                ", 0)"
+                " , p = ",
+                {
+                  "input_id": "q1_s1_i2"
+                }
               ]
             ]
           }
@@ -59,10 +74,22 @@
           "step_number": 1,
           "step_explanation": "تحديد محور القطع الناقص من إحداثيات الرؤوس المعطاة.",
           "step_assistant_solution": "الرؤوس تقع على محور السينات (±5, 0)",
+          "equation_template": "الرؤوس ({input_1}, 0) تقع على {input_2}",
           "inputs": [
             {
-              "input_id": "q16_step1",
-              "label": "على أي محور تقع بؤرتا القطع الناقص؟",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة الرأس",
+              "correct_answer": "±5",
+              "options": [
+                "±5",
+                "±4",
+                "±3",
+                "±1"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "المحور",
               "correct_answer": "محور السينات",
               "options": [
                 "محور السينات",
@@ -84,11 +111,14 @@
           "layout": {
             "rows": [
               [
-                "الرؤوس تقع على ",
+                "الرؤوس (",
                 {
-                  "input_id": "q16_step1"
+                  "input_id": "q2_s1_i1"
                 },
-                " (±5, 0)"
+                ", 0) تقع على ",
+                {
+                  "input_id": "q2_s1_i2"
+                }
               ]
             ]
           }

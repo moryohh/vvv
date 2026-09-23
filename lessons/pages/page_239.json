@@ -23,16 +23,39 @@
           "step_number": 1,
           "step_explanation": "تحديد مساقط المستقيمات المائلة على المستوي والمستقيمات العمودية الناتجة.",
           "step_assistant_solution": "الاستنتاج أن AC و DF عموديان على المستوي X.",
+          "equation_template": "AC {input_1} X , DF {input_2} X ⇒ AC {input_3} DF",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي العلاقة بين AC و DF؟",
-              "correct_answer": "متوازيان",
+              "input_id": "q1_s1_i1",
+              "label": "العلاقة بين AC والمستوي X",
+              "correct_answer": "⊥",
               "options": [
-                "متوازيان",
-                "متعامدان",
-                "متقاطعان",
-                "متطابقان"
+                "⊥",
+                "//",
+                "=",
+                "⊂"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "العلاقة بين DF والمستوي X",
+              "correct_answer": "⊥",
+              "options": [
+                "⊥",
+                "//",
+                "=",
+                "⊂"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "العلاقة بين المستقيمين العموديين AC و DF",
+              "correct_answer": "//",
+              "options": [
+                "//",
+                "⊥",
+                "=",
+                "≠"
               ]
             }
           ],
@@ -48,10 +71,19 @@
           "layout": {
             "rows": [
               [
-                "ما هي العلاقة بين AC و DF؟ = ",
+                "AC ",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " X , DF ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " X ⇒ AC ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " DF"
               ]
             ]
           }
@@ -60,16 +92,28 @@
           "step_number": 2,
           "step_explanation": "استخدام توازي المستقيمات لإثبات تطابق الزوايا الناتجة.",
           "step_assistant_solution": "بما أن AC // DF و AB // DE، فإن الزوايا المحصورة م3 و م4 متساوية.",
+          "equation_template": "m3 {input_1} m4 ⇒ m1 {input_2} m2",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "لماذا م1 = م2؟",
-              "correct_answer": "لأن متممات الزوايا المتساوية متساوية",
+              "input_id": "q1_s2_i1",
+              "label": "العلاقة بين قياس الزاوية 3 والزاوية 4",
+              "correct_answer": "=",
               "options": [
-                "لأن متممات الزوايا المتساوية متساوية",
-                "بالتناظر المباشر",
-                "بالتبادل",
-                "لأنها زوايا داخلية"
+                "=",
+                "≠",
+                ">",
+                "<"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "العلاقة بين قياس الزاوية 1 والزاوية 2",
+              "correct_answer": "=",
+              "options": [
+                "=",
+                "≠",
+                ">",
+                "<"
               ]
             }
           ],
@@ -85,10 +129,15 @@
           "layout": {
             "rows": [
               [
-                "لماذا م1 = م2؟ = ",
+                "m3 ",
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "q1_s2_i1"
+                },
+                " m4 ⇒ m1 ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " m2"
               ]
             ]
           }

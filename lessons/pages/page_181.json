@@ -13,27 +13,39 @@
           "step_number": 1,
           "step_explanation": "لإيجاد عناصر القطع، يجب تحويل المعادلة إلى الصيغة القياسية بقسمة الطرفين على العدد الموجود بعد اليساوي.",
           "step_assistant_solution": "x^2/4 - y^2/12 = 1",
+          "equation_template": "x^2/{input_1} - y^2/{input_2} = {input_3}",
           "inputs": [
             {
-              "input_id": "q1a_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "مقام الحد الأول",
               "correct_answer": "4",
               "options": [
                 "4",
                 "12",
                 "48",
-                "3"
+                "2"
               ]
             },
             {
-              "input_id": "q1a_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i2",
+              "label": "مقام الحد الثاني",
               "correct_answer": "12",
               "options": [
                 "12",
                 "4",
                 "48",
-                "11"
+                "6"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "الطرف الأيمن للمعادلة",
+              "correct_answer": "1",
+              "options": [
+                "1",
+                "48",
+                "0",
+                "2"
               ]
             }
           ],
@@ -46,35 +58,24 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q1a_step1",
-              "label": "ما هي الصيغة القياسية للمعادلة؟",
-              "correct_answer": "x^2/4 - y^2/12 = 1",
-              "options": [
-                "x^2/4 - y^2/12 = 1",
-                "x^2/12 - y^2/4 = 1",
-                "x^2/48 - y^2/48 = 1",
-                "y^2/12 - x^2/4 = 1"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 "x^2/",
                 {
-                  "input_id": "q1a_step1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
                 " - y^2/",
                 {
-                  "input_id": "q1a_step1_atom_2"
+                  "input_id": "q1_s1_i2"
                 },
-                " = 1"
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -88,21 +89,22 @@
           "step_number": 1,
           "step_explanation": "نستخرج قيم a و b من المعادلة القياسية x^2/9 - y^2/16 = 1.",
           "step_assistant_solution": "a=3, b=4",
+          "equation_template": "a = {input_1}, b = {input_2}",
           "inputs": [
             {
-              "input_id": "q1b_step1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q2_s1_i1",
+              "label": "قيمة a",
               "correct_answer": "3",
               "options": [
                 "3",
                 "9",
                 "4",
-                "2"
+                "5"
               ]
             },
             {
-              "input_id": "q1b_step1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "قيمة b",
               "correct_answer": "4",
               "options": [
                 "4",
@@ -116,34 +118,20 @@
             "step_hint_text": "في القطع الزائد، المقام الأول هو a^2 دائماً.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q1b_step1",
-              "label": "ما هي قيم a و b؟",
-              "correct_answer": "a=3, b=4",
-              "options": [
-                "a=3, b=4",
-                "a=9, b=16",
-                "a=4, b=3",
-                "a=√3, b=√4"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "a=",
+                "a = ",
                 {
-                  "input_id": "q1b_step1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                ", b=",
+                ", b = ",
                 {
-                  "input_id": "q1b_step1_atom_2"
+                  "input_id": "q2_s1_i2"
                 }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

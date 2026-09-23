@@ -12,16 +12,39 @@
           "step_number": 1,
           "step_explanation": "تحويل الصيغ القطبية باستخدام مبرهنة ديموافر لتوحيد الأساس إلى (cos θ + i sin θ).",
           "step_assistant_solution": "(cos θ + i sin θ)^12 / (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-2",
+          "equation_template": "(cos θ + i sin θ)^{input_1} / (cos θ + i sin θ)^{input_2} * (cos θ + i sin θ)^{input_3}",
           "inputs": [
             {
-              "input_id": "step1_input",
-              "label": "ما هو ناتج تبسيط (cos 3θ + i sin 3θ)^4؟",
-              "correct_answer": "(cos θ + i sin θ)^12",
+              "input_id": "q1_s1_i1",
+              "label": "أس البسط الأول",
+              "correct_answer": "12",
               "options": [
-                "(cos θ + i sin θ)^12",
-                "(cos θ + i sin θ)^7",
-                "(cos θ + i sin θ)^81",
-                "(cos θ + i sin θ)^64"
+                "12",
+                "7",
+                "3",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "أس المقام",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "5",
+                "2",
+                "7"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "أس المقدار الأخير",
+              "correct_answer": "-2",
+              "options": [
+                "-2",
+                "2",
+                "0",
+                "-1"
               ]
             }
           ],
@@ -37,10 +60,18 @@
           "layout": {
             "rows": [
               [
+                "(cos θ + i sin θ)^",
                 {
-                  "input_id": "step1_input"
+                  "input_id": "q1_s1_i1"
                 },
-                " / (cos θ + i sin θ)^10 * (cos θ + i sin θ)^-2"
+                " / (cos θ + i sin θ)^",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " * (cos θ + i sin θ)^",
+                {
+                  "input_id": "q1_s1_i3"
+                }
               ]
             ]
           }
@@ -57,10 +88,33 @@
           "step_number": 1,
           "step_explanation": "تبسيط البسط والمقام في الكسر الأول.",
           "step_assistant_solution": "(cos θ + i sin θ)^10 / (cos θ + i sin θ)^8 = (cos θ + i sin θ)^2",
+          "equation_template": "(cos θ + i sin θ)^{input_1} / (cos θ + i sin θ)^{input_2} = (cos θ + i sin θ)^{input_3}",
           "inputs": [
             {
-              "input_id": "q4_step1",
-              "label": "ما هو حاصل طرح الأسس في الكسر؟",
+              "input_id": "q2_s1_i1",
+              "label": "أس البسط بعد التبسيط",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "5",
+                "2",
+                "7"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "أس المقام بعد التبسيط",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "4",
+                "2",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "الناتج النهائي لأس الكسر",
               "correct_answer": "2",
               "options": [
                 "2",
@@ -77,9 +131,17 @@
           "layout": {
             "rows": [
               [
-                "(cos θ + i sin θ)^10 / (cos θ + i sin θ)^8 = (cos θ + i sin θ)^",
+                "(cos θ + i sin θ)^",
                 {
-                  "input_id": "q4_step1"
+                  "input_id": "q2_s1_i1"
+                },
+                " / (cos θ + i sin θ)^",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                " = (cos θ + i sin θ)^",
+                {
+                  "input_id": "q2_s1_i3"
                 }
               ]
             ]

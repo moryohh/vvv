@@ -23,10 +23,11 @@
         {
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: فهم التعريف الرياضي للقطع الزائد كمسافة بين نقطة متغيرة وبؤرتين.",
+          "equation_template": "|PF1 - PF2| = {input_1}",
           "step_assistant_solution": "|PF1 - PF2| = 2a",
           "inputs": [
             {
-              "input_id": "step1_input1",
+              "input_id": "q1_s1_i1",
               "label": "ما هو الثابت الذي يمثل فرق البعدين عن البؤرتين في القطع الزائد؟",
               "correct_answer": "2a",
               "options": [
@@ -51,7 +52,7 @@
               [
                 "|PF1 - PF2| = ",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "q1_s1_i1"
                 }
               ]
             ]
@@ -68,17 +69,40 @@
         {
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: التعرف على العلاقة الأساسية بين ثوابت القطع الزائد.",
+          "equation_template": "{input_1}² = {input_2}² + {input_3}²",
           "step_assistant_solution": "c² = a² + b²",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي العلاقة الصحيحة للثوابت في القطع الزائد؟",
-              "correct_answer": "c² = a² + b²",
+              "input_id": "q2_s1_i1",
+              "label": "المتغير الذي يمثل البؤرة",
+              "correct_answer": "c",
               "options": [
-                "c² = a² + b²",
-                "a² = b² + c²",
-                "c² = a² - b²",
-                "b² = a² + c²"
+                "c",
+                "a",
+                "b",
+                "e"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "المتغير الأول للرأس",
+              "correct_answer": "a",
+              "options": [
+                "a",
+                "c",
+                "b",
+                "d"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "المتغير المرافق",
+              "correct_answer": "b",
+              "options": [
+                "b",
+                "a",
+                "c",
+                "x"
               ]
             }
           ],
@@ -95,8 +119,17 @@
             "rows": [
               [
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                "² = ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "² + ",
+                {
+                  "input_id": "q2_s1_i3"
+                },
+                "²"
               ]
             ]
           }

@@ -12,28 +12,39 @@
         {
           "step_number": 1,
           "step_explanation": "نستخدم قانون مربع الحدانية (a - b)² = a² - 2ab + b² لفك القوس.",
-          "step_assistant_solution": "4 - 16i + 16i²",
+          "equation_template": "{input_1} - {input_2}i + {input_3}i²",
           "inputs": [
             {
-              "input_id": "q5_s1_i1_atom_2",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "label": "قيمة مربع الحد الأول",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "8",
+                "-4"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "قيمة معامل الحد الأوسط",
               "correct_answer": "16",
               "options": [
                 "16",
                 "8",
-                "15",
-                "17"
+                "4",
+                "32"
               ]
             },
             {
-              "input_id": "q5_s1_i1_atom_3",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i3",
+              "label": "قيمة مربع الحد الثاني",
               "correct_answer": "16",
               "options": [
                 "16",
-                "15",
-                "17",
-                "18"
+                "8",
+                "4",
+                "-16"
               ]
             }
           ],
@@ -46,37 +57,24 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q5_s1_i1",
-              "label": "ما هو ناتج فك القوس حسب القانون؟",
-              "correct_answer": "4 - 16i + 16i²",
-              "options": [
-                "4 - 16i + 16i²",
-                "4 - 16i + 16",
-                "4 - 8i + 16i²",
-                "4 - 16i - 16i²"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
-                "4 ",
-                "-",
                 {
-                  "input_id": "q5_s1_i1_atom_2"
+                  "input_id": "q1_s1_i1"
                 },
-                "i ",
-                "+",
+                " - ",
                 {
-                  "input_id": "q5_s1_i1_atom_3"
+                  "input_id": "q1_s1_i2"
+                },
+                "i + ",
+                {
+                  "input_id": "q1_s1_i3"
                 },
                 "i²"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -89,28 +87,39 @@
         {
           "step_number": 1,
           "step_explanation": "نطبق قاعدة فك المربع: مربع الأول + 2 في الأول في الثاني + مربع الثاني.",
-          "step_assistant_solution": "9 + 24i - 16",
+          "equation_template": "{input_1} + {input_2}i - {input_3}",
           "inputs": [
             {
-              "input_id": "q6_s1_i1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
-              "correct_answer": "-7",
+              "input_id": "q2_s1_i1",
+              "label": "ناتج مربع الحد الأول",
+              "correct_answer": "9",
               "options": [
-                "-7",
-                "25",
-                "7",
-                "-8"
+                "9",
+                "-9",
+                "6",
+                "-6"
               ]
             },
             {
-              "input_id": "q6_s1_i1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q2_s1_i2",
+              "label": "معامل i",
               "correct_answer": "24",
               "options": [
                 "24",
-                "23",
-                "25",
-                "26"
+                "-24",
+                "12",
+                "-12"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "قيمة مربع الحد الثاني بعد التعويض عن i²",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "-16",
+                "8",
+                "-8"
               ]
             }
           ],
@@ -118,35 +127,23 @@
             "step_hint_text": "احذر من إشارات الضرب: سالب في سالب يساوي موجب.",
             "related_topics": []
           },
-          "source_inputs": [
-            {
-              "input_id": "q6_s1_i1",
-              "label": "ما هو الناتج بعد التعويض عن i² بـ -1؟",
-              "correct_answer": "-7 + 24i",
-              "options": [
-                "-7 + 24i",
-                "25 + 24i",
-                "-7 - 24i",
-                "7 + 24i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
                 {
-                  "input_id": "q6_s1_i1_atom_1"
+                  "input_id": "q2_s1_i1"
                 },
-                " ",
-                "+",
+                " + ",
                 {
-                  "input_id": "q6_s1_i1_atom_2"
+                  "input_id": "q2_s1_i2"
                 },
-                "i"
+                "i - ",
+                {
+                  "input_id": "q2_s1_i3"
+                }
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -159,17 +156,39 @@
         {
           "step_number": 1,
           "step_explanation": "نربع الحد الأول، ثم نضرب ضعفي الأول في الثاني، ثم نربع الحد الثاني.",
-          "step_assistant_solution": "-3 - 4i",
+          "equation_template": "{input_1} - {input_2}i - {input_3}",
           "inputs": [
             {
-              "input_id": "q7_s1_i1",
-              "label": "ما هو الناتج النهائي بالصيغة العادية؟",
-              "correct_answer": "-3 - 4i",
+              "input_id": "q3_s1_i1",
+              "label": "مربع -1",
+              "correct_answer": "1",
               "options": [
-                "-3 - 4i",
-                "5 - 4i",
-                "-3 + 4i",
-                "1 - 4i"
+                "1",
+                "-1",
+                "2",
+                "-2"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i2",
+              "label": "الحد الأوسط",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "2",
+                "1",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q3_s1_i3",
+              "label": "ناتج مربع 2i",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "-4",
+                "2",
+                "-2"
               ]
             }
           ],
@@ -181,7 +200,15 @@
             "rows": [
               [
                 {
-                  "input_id": "q7_s1_i1"
+                  "input_id": "q3_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q3_s1_i2"
+                },
+                "i - ",
+                {
+                  "input_id": "q3_s1_i3"
                 }
               ]
             ]
@@ -194,20 +221,6 @@
       "question_text": "جد ناتج (3 + 4i)²",
       "diagram": null,
       "full_model_solution": "(3 + 4i)² = 3² + 2(3)(4i) + (4i)² = 9 + 24i + 16i² = 9 + 24i - 16 = -7 + 24i",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "مثال 2",
-      "question_text": "جد ناتج (1 + i)² + (1 - i)²",
-      "diagram": null,
-      "full_model_solution": "(1 + 2i + i²) + (1 - 2i + i²) = (1 + 2i - 1) + (1 - 2i - 1) = 2i - 2i = 0",
-      "interactive_steps": []
-    },
-    {
-      "question_number": "مثال 3",
-      "question_text": "ضع بالصيغة العادية للعدد المركب: (2 + 3i)² + (12 + 2i)",
-      "diagram": null,
-      "full_model_solution": "(4 + 12i + 9i²) + (12 + 2i) = (4 + 12i - 9) + (12 + 2i) = (-5 + 12i) + (12 + 2i) = 7 + 14i",
       "interactive_steps": []
     }
   ],

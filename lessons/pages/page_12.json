@@ -13,27 +13,56 @@
           "step_number": 1,
           "step_explanation": "فك القوس التربيعي (3+4i)^2 باستخدام قانون مربع الحدانية (a+b)^2 = a^2 + 2ab + b^2 مع مراعاة أن i^2 = -1.",
           "step_assistant_solution": "(9 + 24i - 16) = -7 + 24i",
+          "equation_template": "({input_1} + {input_2}i - {input_3}) = {input_4} + {input_5}i",
           "inputs": [
             {
-              "input_id": "q9_step1_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s1_i1",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "6",
+                "12",
+                "3"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "correct_answer": "24",
+              "options": [
+                "24",
+                "12",
+                "18",
+                "28"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "8",
+                "12",
+                "20"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
               "correct_answer": "-7",
               "options": [
                 "-7",
                 "7",
-                "25",
-                "-8"
+                "-25",
+                "25"
               ]
             },
             {
-              "input_id": "q9_step1_input1_atom_2",
-              "label": "قيمة الجزء 2 في المعادلة",
+              "input_id": "q1_s1_i5",
               "correct_answer": "24",
               "options": [
                 "24",
-                "23",
-                "25",
-                "26"
+                "12",
+                "-24",
+                "20"
               ]
             }
           ],
@@ -46,35 +75,33 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "q9_step1_input1",
-              "label": "ما هو ناتج فك القوس التربيعي (3+4i)^2؟",
-              "correct_answer": "-7 + 24i",
-              "options": [
-                "-7 + 24i",
-                "7 + 24i",
-                "-7 - 24i",
-                "25 + 24i"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "(",
                 {
-                  "input_id": "q9_step1_input1_atom_1"
+                  "input_id": "q1_s1_i1"
                 },
-                " ",
-                "+",
+                " + ",
                 {
-                  "input_id": "q9_step1_input1_atom_2"
+                  "input_id": "q1_s1_i2"
+                },
+                "i - ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                ") = ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                " + ",
+                {
+                  "input_id": "q1_s1_i5"
                 },
                 "i"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     },
@@ -88,16 +115,26 @@
           "step_number": 1,
           "step_explanation": "قم بتعويض قيمة x المعطاة في المقدار الجبري وتبسيط الحدود.",
           "step_assistant_solution": "4 - 3i",
+          "equation_template": "({input_1}, {input_2})",
           "inputs": [
             {
-              "input_id": "q10_step1_input1",
-              "label": "ما هي القيمة النهائية للمقدار بالصيغة الديكارتية؟",
-              "correct_answer": "(4, -3)",
+              "input_id": "q2_s1_i1",
+              "correct_answer": "4",
               "options": [
-                "(4, -3)",
-                "(3, -4)",
-                "(4, 3)",
-                "(-4, 3)"
+                "4",
+                "-4",
+                "3",
+                "-3"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "correct_answer": "-3",
+              "options": [
+                "-3",
+                "3",
+                "-4",
+                "4"
               ]
             }
           ],
@@ -108,10 +145,15 @@
           "layout": {
             "rows": [
               [
-                "ما هي القيمة النهائية للمقدار بالصيغة الديكارتية؟ = ",
+                "(",
                 {
-                  "input_id": "q10_step1_input1"
-                }
+                  "input_id": "q2_s1_i1"
+                },
+                ", ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                ")"
               ]
             ]
           }

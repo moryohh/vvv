@@ -24,16 +24,50 @@
           "step_number": 1,
           "step_explanation": "حساب طول الارتفاع AE في المثلث ABC باستخدام مبرهنة فيثاغورس.",
           "step_assistant_solution": "AE = 12cm",
+          "equation_template": "AE^2 = {input_1} - {input_2} = {input_3} ⇒ AE = {input_4} cm",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "كم يبلغ طول الارتفاع AE؟",
-              "correct_answer": "12cm",
+              "input_id": "q1_s1_i1",
+              "label": "مربع الضلع AB",
+              "correct_answer": "169",
               "options": [
-                "12cm",
-                "10cm",
-                "13cm",
-                "5cm"
+                "169",
+                "144",
+                "160",
+                "130"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "مربع الضلع BE",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "20",
+                "10",
+                "36"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i3",
+              "label": "حاصل الطرح AE^2",
+              "correct_answer": "144",
+              "options": [
+                "144",
+                "169",
+                "120",
+                "119"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i4",
+              "label": "طول الارتفاع AE",
+              "correct_answer": "12",
+              "options": [
+                "12",
+                "10",
+                "13",
+                "5"
               ]
             }
           ],
@@ -49,10 +83,23 @@
           "layout": {
             "rows": [
               [
-                "AE = ",
+                "AE^2 = ",
                 {
-                  "input_id": "step1_input1"
-                }
+                  "input_id": "q1_s1_i1"
+                },
+                " - ",
+                {
+                  "input_id": "q1_s1_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s1_i3"
+                },
+                " ⇒ AE = ",
+                {
+                  "input_id": "q1_s1_i4"
+                },
+                " cm"
               ]
             ]
           }
@@ -61,16 +108,39 @@
           "step_number": 2,
           "step_explanation": "استخدام جيب تمام الزاوية الزوجية لإيجاد طول الارتفاع المسقط ED.",
           "step_assistant_solution": "ED = 6cm",
+          "equation_template": "ED = {input_1} × {input_2} = {input_3} cm",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "كم يبلغ طول الارتفاع ED؟",
-              "correct_answer": "6cm",
+              "input_id": "q1_s2_i1",
+              "label": "طول الارتفاع AE",
+              "correct_answer": "12",
               "options": [
-                "6cm",
-                "12cm",
-                "3cm",
-                "10cm"
+                "12",
+                "10",
+                "13",
+                "6"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "جيب تمام الزاوية cos(60)",
+              "correct_answer": "0.5",
+              "options": [
+                "0.5",
+                "0.866",
+                "1",
+                "0.25"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i3",
+              "label": "طول الارتفاع ED",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "3",
+                "10"
               ]
             }
           ],
@@ -88,8 +158,17 @@
               [
                 "ED = ",
                 {
-                  "input_id": "step2_input1"
-                }
+                  "input_id": "q1_s2_i1"
+                },
+                " × ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s2_i3"
+                },
+                " cm"
               ]
             ]
           }
@@ -98,10 +177,33 @@
           "step_number": 3,
           "step_explanation": "حساب مساحة المثلث BCD باستخدام القاعدة والارتفاع.",
           "step_assistant_solution": "30cm^2",
+          "equation_template": "Area = 1/2 × {input_1} × {input_2} = {input_3} cm^2",
           "inputs": [
             {
-              "input_id": "step3_input1_atom_1",
-              "label": "قيمة الجزء 1 في المعادلة",
+              "input_id": "q1_s3_i1",
+              "label": "طول القاعدة BC",
+              "correct_answer": "10",
+              "options": [
+                "10",
+                "12",
+                "5",
+                "13"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i2",
+              "label": "طول الارتفاع ED",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "5",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q1_s3_i3",
+              "label": "مساحة المثلث BCD",
               "correct_answer": "30",
               "options": [
                 "30",
@@ -120,30 +222,25 @@
               }
             ]
           },
-          "source_inputs": [
-            {
-              "input_id": "step3_input1",
-              "label": "ما هي مساحة المثلث BCD؟",
-              "correct_answer": "30cm^2",
-              "options": [
-                "30cm^2",
-                "60cm^2",
-                "15cm^2",
-                "45cm^2"
-              ]
-            }
-          ],
           "layout": {
             "rows": [
               [
+                "Area = 1/2 × ",
                 {
-                  "input_id": "step3_input1_atom_1"
+                  "input_id": "q1_s3_i1"
                 },
-                "cm^2"
+                " × ",
+                {
+                  "input_id": "q1_s3_i2"
+                },
+                " = ",
+                {
+                  "input_id": "q1_s3_i3"
+                },
+                " cm^2"
               ]
             ]
-          },
-          "choice_origin": "derived_from_source_options"
+          }
         }
       ]
     }

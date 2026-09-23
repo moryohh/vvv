@@ -23,16 +23,17 @@
           "step_number": 1,
           "step_explanation": "تحديد اتجاه القطع وقيمة البؤر.",
           "step_assistant_solution": "القطع رأسي (على محور الصادات) و c^2 = 4.",
+          "equation_template": "c^2 = {input_1}",
           "inputs": [
             {
               "input_id": "q1_s1_i1",
-              "label": "ما هو محور البؤرتين؟",
-              "correct_answer": "الصادات",
+              "label": "قيمة مربع البؤرة c^2",
+              "correct_answer": "4",
               "options": [
-                "السينات",
-                "الصادات",
-                "نقطة الأصل",
-                "مائل"
+                "2",
+                "4",
+                "8",
+                "16"
               ]
             }
           ],
@@ -48,11 +49,10 @@
           "layout": {
             "rows": [
               [
-                "القطع رأسي (على محور ",
+                "c^2 = ",
                 {
                   "input_id": "q1_s1_i1"
-                },
-                ") و c^2 = 4."
+                }
               ]
             ]
           }
@@ -61,31 +61,47 @@
           "step_number": 2,
           "step_explanation": "استخدام العلاقة بين الثوابت a, b, c.",
           "step_assistant_solution": "a^2 = c^2 + b^2 = 4 + 16 = 20.",
+          "equation_template": "x^2 / {input_1} + y^2 / {input_2} = 1",
           "inputs": [
             {
               "input_id": "q1_s2_i1",
-              "label": "ما قيمة a^2؟",
-              "correct_answer": "20",
+              "label": "مقام x",
+              "correct_answer": "16",
               "options": [
-                "20",
                 "4",
                 "16",
-                "24"
+                "20",
+                "25"
+              ]
+            },
+            {
+              "input_id": "q1_s2_i2",
+              "label": "مقام y",
+              "correct_answer": "20",
+              "options": [
+                "16",
+                "20",
+                "4",
+                "36"
               ]
             }
           ],
           "hint": {
-            "step_hint_text": "تذكر أن a هي الأكبر في القطع الناقص.",
+            "step_hint_text": "تذكر أن a^2 = c^2 + b^2 في القطع الناقص.",
             "related_topics": []
           },
           "layout": {
             "rows": [
               [
-                "a^2 = c^2 + b^2 = 4 + 16 = ",
+                "x^2 / ",
                 {
                   "input_id": "q1_s2_i1"
                 },
-                "."
+                " + y^2 / ",
+                {
+                  "input_id": "q1_s2_i2"
+                },
+                " = 1"
               ]
             ]
           }

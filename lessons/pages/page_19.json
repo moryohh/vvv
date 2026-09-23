@@ -13,16 +13,28 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: تبسيط الأسس عن طريق تجزئة الأس الأكبر ليتناسب مع الأس الأصغر في المقام لتطبيق قانون القسمة للأعداد المركبة.",
           "step_assistant_solution": "تجزئة الأس إلى (1+i)^69 * (1+i)^2",
+          "equation_template": "(1 + i)^{input_1} * (1 + i)^{input_2}",
           "inputs": [
             {
-              "input_id": "q4_step1_input1",
-              "label": "كيف نجزئ البسط (1+i)^71؟",
-              "correct_answer": "(1+i)^69 * (1+i)^2",
+              "input_id": "q1_s1_i1",
+              "label": "الأس الأول للمقدار (1+i)",
+              "correct_answer": "69",
               "options": [
-                "(1+i)^69 * (1+i)^2",
-                "(1+i)^70 * (1+i)",
-                "(1+i)^71 / (1+i)",
-                "(1+i)^68 * (1+i)^3"
+                "69",
+                "70",
+                "71",
+                "68"
+              ]
+            },
+            {
+              "input_id": "q1_s1_i2",
+              "label": "الأس الثاني للمقدار (1+i)",
+              "correct_answer": "2",
+              "options": [
+                "2",
+                "1",
+                "3",
+                "4"
               ]
             }
           ],
@@ -38,9 +50,13 @@
           "layout": {
             "rows": [
               [
-                "تجزئة الأس إلى ",
+                "(1 + i)^",
                 {
-                  "input_id": "q4_step1_input1"
+                  "input_id": "q1_s1_i1"
+                },
+                " * (1 + i)^",
+                {
+                  "input_id": "q1_s1_i2"
                 }
               ]
             ]
@@ -58,16 +74,50 @@
           "step_number": 1,
           "step_explanation": "الخارطة الذهنية: فك التربيع في المقام لكل من (2-i)^2 و (2+i)^2 مع مراعاة أن i^2 = -1.",
           "step_assistant_solution": "المقامات تصبح (3 - 4i) و (3 + 4i)",
+          "equation_template": "( {input_1} - {input_2}i ) , ( {input_3} + {input_4}i )",
           "inputs": [
             {
-              "input_id": "q1_step1_input1",
-              "label": "ما هو ناتج فك المقدار (2 - i)^2؟",
-              "correct_answer": "3 - 4i",
+              "input_id": "q2_s1_i1",
+              "label": "الجزء الحقيقي للمقام الأول",
+              "correct_answer": "3",
               "options": [
-                "3 - 4i",
-                "5 - 4i",
-                "3 + 4i",
-                "4 - 4i"
+                "3",
+                "4",
+                "5",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i2",
+              "label": "معامل i للمقام الأول",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "2",
+                "8"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i3",
+              "label": "الجزء الحقيقي للمقام الثاني",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "4",
+                "5",
+                "2"
+              ]
+            },
+            {
+              "input_id": "q2_s1_i4",
+              "label": "معامل i للمقام الثاني",
+              "correct_answer": "4",
+              "options": [
+                "4",
+                "3",
+                "2",
+                "8"
               ]
             }
           ],
@@ -83,11 +133,23 @@
           "layout": {
             "rows": [
               [
-                "المقامات تصبح (",
+                "( ",
                 {
-                  "input_id": "q1_step1_input1"
+                  "input_id": "q2_s1_i1"
                 },
-                ") و (3 + 4i)"
+                " - ",
+                {
+                  "input_id": "q2_s1_i2"
+                },
+                "i ) , ( ",
+                {
+                  "input_id": "q2_s1_i3"
+                },
+                " + ",
+                {
+                  "input_id": "q2_s1_i4"
+                },
+                "i )"
               ]
             ]
           }

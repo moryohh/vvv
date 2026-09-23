@@ -13,6 +13,37 @@ window.addEventListener('load',()=>{
   const previousNormalize=normalize,previousCanvas=canvasHtml;
   normalize=function(data){
     const questions=previousNormalize(data);
+    // ملفات الامتحانات القديمة قد تجمع نتيجتين داخل إجابة واحدة.
+    // نفصلها فقط عندما تنقسم الخيارات الأربعة بالطريقة نفسها.
+    for(const question of questions)for(const step of question.steps){
+      if(step.layout)continue;
+      const expanded=[];const rows=[];
+      for(const input of step.inputs){
+        const separator=input.correct.includes(' و ')?' و ':input.correct.includes(' ، ')?' ، ':null;
+        const pieces=separator?input.correct.split(separator).map(x=>x.trim()):[];
+        const optionParts=separator?input.options.map(x=>x.split(separator).map(y=>y.trim())):[];
+        if(pieces.length>1&&optionParts.every(parts=>parts.length===pieces.length)){
+          const row=[];
+          pieces.forEach((value,index)=>{
+            if(index)row.push(separator);
+            const id=`${input.id}_part_${index+1}`;
+            const choices=[...new Set(optionParts.map(parts=>parts[index]))];
+            const match=value.match(/\d+(?:[,.]\d+)?/);
+            if(match){let delta=1;while(choices.length<4&&delta<50){
+              const original=Number(match[0].replace(',','.'));
+              const proposed=String(original+delta).replace('.',match[0].includes(',')?',':'.');
+              const candidate=value.replace(match[0],proposed);
+              if(!choices.includes(candidate))choices.push(candidate);
+              delta++;
+            }}
+            expanded.push({...input,id,label:`${input.label} — الجزء ${index+1}`,correct:value,options:choices});
+            row.push({input_id:id});
+          });
+          rows.push(row);
+        }else{expanded.push(input);rows.push([{input_id:input.id}])}
+      }
+      if(expanded.length!==step.inputs.length){step.inputs=expanded;step.layout={rows}}
+    }
     for(const question of questions)for(const step of question.steps){
       if(!step.inputs.length)throw Error(`الخطوة ${step.id}: لا توجد مربعات إدخال.`);
       const ids=new Set();

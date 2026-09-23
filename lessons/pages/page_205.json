@@ -53,14 +53,25 @@
           "step_assistant_solution": "بالتعويض نجد المعادلة التربيعية b^2 - 14b + 48 = 0 وحلها b=6 أو b=8.",
           "inputs": [
             {
-              "input_id": "step2_input1",
-              "label": "ما هي قيم b الممكنة؟",
-              "correct_answer": "6, 8",
+              "input_id": "step2_input1_value_1",
+              "label": "ما هي قيم b الممكنة؟ — القيمة 1",
+              "correct_answer": "6",
               "options": [
-                "6, 8",
-                "10, 4",
-                "14, 0",
-                "5, 9"
+                "6",
+                "10",
+                "14",
+                "5"
+              ]
+            },
+            {
+              "input_id": "step2_input1_value_2",
+              "label": "ما هي قيم b الممكنة؟ — القيمة 2",
+              "correct_answer": "8",
+              "options": [
+                "8",
+                "4",
+                "0",
+                "9"
               ]
             }
           ],
@@ -76,9 +87,12 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيم b الممكنة؟ = ",
                 {
-                  "input_id": "step2_input1"
+                  "input_id": "step2_input1_value_1"
+                },
+                ", ",
+                {
+                  "input_id": "step2_input1_value_2"
                 }
               ]
             ]

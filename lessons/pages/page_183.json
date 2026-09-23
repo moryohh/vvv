@@ -82,14 +82,25 @@
           "step_assistant_solution": "a=6, b=5",
           "inputs": [
             {
-              "input_id": "q2b_s1_i1",
-              "label": "أوجد قيمتي a² و b²:",
-              "correct_answer": "a²=36, b²=25",
+              "input_id": "q2b_s1_i1_value_1",
+              "label": "أوجد قيمتي a² و b²: — القيمة 1",
+              "correct_answer": "36",
               "options": [
-                "a²=36, b²=25",
-                "a²=12, b²=10",
-                "a²=6, b²=5",
-                "a²=144, b²=100"
+                "36",
+                "12",
+                "6",
+                "144"
+              ]
+            },
+            {
+              "input_id": "q2b_s1_i1_value_2",
+              "label": "أوجد قيمتي a² و b²: — القيمة 2",
+              "correct_answer": "25",
+              "options": [
+                "25",
+                "10",
+                "5",
+                "100"
               ]
             }
           ],
@@ -105,9 +116,13 @@
           "layout": {
             "rows": [
               [
-                "أوجد قيمتي a² و b²: = ",
+                "a²=",
                 {
-                  "input_id": "q2b_s1_i1"
+                  "input_id": "q2b_s1_i1_value_1"
+                },
+                ", b²=",
+                {
+                  "input_id": "q2b_s1_i1_value_2"
                 }
               ]
             ]

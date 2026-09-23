@@ -71,14 +71,25 @@
           "step_assistant_solution": "x^2/16 - y^2/9 = 1",
           "inputs": [
             {
-              "input_id": "q2_step1_a",
-              "label": "المعادلة القياسية هي:",
-              "correct_answer": "x^2/16 - y^2/9 = 1",
+              "input_id": "q2_step1_a_value_2",
+              "label": "المعادلة القياسية هي: — القيمة 1",
+              "correct_answer": "16",
               "options": [
-                "x^2/16 - y^2/9 = 1",
-                "x^2/9 - y^2/16 = 1",
-                "x^2/144 - y^2/144 = 1",
-                "x^2/4 - y^2/3 = 1"
+                "16",
+                "9",
+                "144",
+                "4"
+              ]
+            },
+            {
+              "input_id": "q2_step1_a_value_4",
+              "label": "المعادلة القياسية هي: — القيمة 2",
+              "correct_answer": "9",
+              "options": [
+                "9",
+                "16",
+                "144",
+                "3"
               ]
             }
           ],
@@ -94,9 +105,20 @@
           "layout": {
             "rows": [
               [
+                "x^",
+                "2",
+                "/",
                 {
-                  "input_id": "q2_step1_a"
-                }
+                  "input_id": "q2_step1_a_value_2"
+                },
+                " - y^",
+                "2",
+                "/",
+                {
+                  "input_id": "q2_step1_a_value_4"
+                },
+                " = ",
+                "1"
               ]
             ]
           }

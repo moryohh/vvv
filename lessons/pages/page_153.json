@@ -26,14 +26,25 @@
           "step_assistant_solution": "c = 3, a = 5",
           "inputs": [
             {
-              "input_id": "step1_input1",
-              "label": "ما هي قيمة a و c؟",
-              "correct_answer": "a=5, c=3",
+              "input_id": "step1_input1_value_1",
+              "label": "ما هي قيمة a و c؟ — القيمة 1",
+              "correct_answer": "5",
               "options": [
-                "a=5, c=3",
-                "a=10, c=6",
-                "a=3, c=5",
-                "a=25, c=9"
+                "5",
+                "10",
+                "3",
+                "25"
+              ]
+            },
+            {
+              "input_id": "step1_input1_value_2",
+              "label": "ما هي قيمة a و c؟ — القيمة 2",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "6",
+                "5",
+                "9"
               ]
             }
           ],
@@ -49,9 +60,13 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة a و c؟ = ",
+                "a=",
                 {
-                  "input_id": "step1_input1"
+                  "input_id": "step1_input1_value_1"
+                },
+                ", c=",
+                {
+                  "input_id": "step1_input1_value_2"
                 }
               ]
             ]
@@ -99,14 +114,25 @@
           "step_assistant_solution": "x^2/25 + y^2/16 = 1",
           "inputs": [
             {
-              "input_id": "step3_input1",
-              "label": "ما هي المعادلة النهائية للقطع؟",
-              "correct_answer": "x^2/25 + y^2/16 = 1",
+              "input_id": "step3_input1_value_2",
+              "label": "ما هي المعادلة النهائية للقطع؟ — القيمة 1",
+              "correct_answer": "25",
               "options": [
-                "x^2/25 + y^2/16 = 1",
-                "x^2/16 + y^2/25 = 1",
-                "x^2/10 + y^2/6 = 1",
-                "x^2/5 + y^2/3 = 1"
+                "25",
+                "16",
+                "10",
+                "5"
+              ]
+            },
+            {
+              "input_id": "step3_input1_value_4",
+              "label": "ما هي المعادلة النهائية للقطع؟ — القيمة 2",
+              "correct_answer": "16",
+              "options": [
+                "16",
+                "25",
+                "6",
+                "3"
               ]
             }
           ],
@@ -122,9 +148,20 @@
           "layout": {
             "rows": [
               [
+                "x^",
+                "2",
+                "/",
                 {
-                  "input_id": "step3_input1"
-                }
+                  "input_id": "step3_input1_value_2"
+                },
+                " + y^",
+                "2",
+                "/",
+                {
+                  "input_id": "step3_input1_value_4"
+                },
+                " = ",
+                "1"
               ]
             ]
           }

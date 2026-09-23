@@ -15,14 +15,25 @@
           "step_assistant_solution": "المركز (-3, -2)، a=5، b=3",
           "inputs": [
             {
-              "input_id": "d_step1_input1",
-              "label": "ما هي قيمة a و b؟",
-              "correct_answer": "a=5, b=3",
+              "input_id": "d_step1_input1_value_1",
+              "label": "ما هي قيمة a و b؟ — القيمة 1",
+              "correct_answer": "5",
               "options": [
-                "a=5, b=3",
-                "a=3, b=5",
-                "a=25, b=9",
-                "a=9, b=25"
+                "5",
+                "3",
+                "25",
+                "9"
+              ]
+            },
+            {
+              "input_id": "d_step1_input1_value_2",
+              "label": "ما هي قيمة a و b؟ — القيمة 2",
+              "correct_answer": "3",
+              "options": [
+                "3",
+                "5",
+                "9",
+                "25"
               ]
             }
           ],
@@ -38,9 +49,13 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيمة a و b؟ = ",
+                "a=",
                 {
-                  "input_id": "d_step1_input1"
+                  "input_id": "d_step1_input1_value_1"
+                },
+                ", b=",
+                {
+                  "input_id": "d_step1_input1_value_2"
                 }
               ]
             ]

@@ -87,8 +87,10 @@ window.addEventListener('load',()=>{
   render=function(){previousRender();const problem=current();if(problem){
     problem.steps.forEach((step,index)=>{if(!step.inputs.length){const card=$('#steps').children[index];if(card){card.querySelector('.canvas').textContent='لا تتوفر اختيارات صالحة لهذه الخطوة في المصدر.';card.querySelector('.stepFoot').textContent='خطوة تحتاج مراجعة بيانات';}}});
     if(!problem.steps.length){
-    $('#steps').innerHTML='<article class="step" style="padding:20px;line-height:1.9"><b>هذا السؤال بلا خطوات تفاعلية أو اختيارات في الملف المرفوع.</b><p>يمكنك قراءة الحل النموذجي من المصدر، وستظهر المربعات فقط حين تتوفر بياناتها.</p><button class="primary" id="showModel">عرض الحل النموذجي</button><div id="modelText" class="hidden" style="white-space:pre-wrap;margin-top:13px"></div></article>';
-    $('#showModel').onclick=()=>{$('#modelText').textContent=problem.modelSolution||'لا يوجد حل نموذجي في الملف.';$('#modelText').classList.remove('hidden')};
+    $('#steps').innerHTML='<article class="step" style="padding:20px;line-height:1.9"><b>هذا السؤال بلا خطوات تفاعلية أو اختيارات في الملف المرفوع.</b><p>اقرأ الحل النموذجي تدريجيًا كما ورد في المصدر.</p><button class="primary" id="showModel">إظهار الخطوة التالية</button><div id="modelText" class="hidden" style="white-space:pre-wrap;margin-top:13px"></div></article>';
+    const pieces=(problem.modelSolution||'').split(/\n+|\s*=>\s*|\s*⇒\s*|\s*→\s*/).map(x=>x.trim()).filter(Boolean);let shown=0;
+    if(!pieces.length)$('#showModel').disabled=true;
+    $('#showModel').onclick=()=>{const output=$('#modelText');const line=document.createElement('p');line.textContent=pieces[shown++];output.append(line);output.classList.remove('hidden');if(shown===pieces.length){$('#showModel').textContent='اكتمل عرض الحل';$('#showModel').disabled=true}};
   }}};
 });
 </script>

@@ -14,14 +14,25 @@
           "step_assistant_solution": "c = 4, a = 6",
           "inputs": [
             {
-              "input_id": "q2_step1",
-              "label": "ما هي قيم a و c؟",
-              "correct_answer": "c=4, a=6",
+              "input_id": "q2_step1_value_1",
+              "label": "ما هي قيم a و c؟ — القيمة 1",
+              "correct_answer": "4",
               "options": [
-                "c=4, a=6",
-                "c=8, a=12",
-                "c=2, a=3",
-                "c=16, a=36"
+                "4",
+                "8",
+                "2",
+                "16"
+              ]
+            },
+            {
+              "input_id": "q2_step1_value_2",
+              "label": "ما هي قيم a و c؟ — القيمة 2",
+              "correct_answer": "6",
+              "options": [
+                "6",
+                "12",
+                "3",
+                "36"
               ]
             }
           ],
@@ -37,9 +48,13 @@
           "layout": {
             "rows": [
               [
-                "ما هي قيم a و c؟ = ",
+                "c=",
                 {
-                  "input_id": "q2_step1"
+                  "input_id": "q2_step1_value_1"
+                },
+                ", a=",
+                {
+                  "input_id": "q2_step1_value_2"
                 }
               ]
             ]

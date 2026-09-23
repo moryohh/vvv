@@ -48,9 +48,42 @@ def split_compound(input_data):
                 return new,sep
     return [input_data],None
 
+NUMBER = re.compile(r'(?<![\w])\d+(?:[,.]\d+)?(?![\w])')
+
+def split_numeric_slots(cell):
+    """Use only four original choices with matching numerical structure."""
+    correct=str(cell.get('correct_answer',''))
+    options=list(map(str,cell.get('options',[])))
+    if len(options)!=4 or correct not in options:return None
+    values=[correct,*options]
+    if len({NUMBER.sub('#',value) for value in values})!=1:return None
+    numbers=[NUMBER.findall(value) for value in values]
+    varying=[i for i in range(len(numbers[0])) if len({row[i] for row in numbers})>1]
+    if len(varying)<2 or any(len({row[i] for row in numbers[1:]})!=4 for i in varying):return None
+    segments=NUMBER.split(correct);boxes=[];row=[]
+    for index,digits in enumerate(numbers[0]):
+        if segments[index]:row.append(segments[index])
+        if index in varying:
+            part=dict(cell)
+            part['input_id']=f"{cell['input_id']}_value_{index+1}"
+            part['label']=f"{cell.get('label','القيمة')} — القيمة {len(boxes)+1}"
+            part['correct_answer']=digits
+            part['options']=[choice[index] for choice in numbers[1:]]
+            boxes.append(part);row.append({'input_id':part['input_id']})
+        else:row.append(digits)
+    if segments[-1]:row.append(segments[-1])
+    return boxes,row
+
 def layout_for(step):
     original=step.get('inputs') or []
     if not original:return None,0
+    if len(original)==1:
+        numeric=split_numeric_slots(original[0])
+        if numeric:
+            cells,row=numeric
+            step['inputs']=cells
+            step['layout']={'rows':[row]}
+            return [row],len(cells)-1
     expanded=[];parts=[];split_count=0
     for cell in original:
         if not cell.get('input_id') or len(cell.get('options',[]))!=4 or str(cell.get('correct_answer','')) not in list(map(str,cell.get('options',[]))):

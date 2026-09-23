@@ -1,0 +1,30 @@
+{
+  "page_number": 1,
+  "exam_questions": [
+    {
+      "question_number": "س1",
+      "question_text": "جد ناتج (1,2 × 0,5) + (3,02 × 0,2)",
+      "interactive_steps": [
+        {
+          "step_number": 1,
+          "step_explanation": "نحسب حاصل كل عملية ضرب على حدة، ثم نجمع الناتجين.",
+          "layout": {
+            "rows": [
+              ["( 1,2 × 0,5 ) + ( 3,02 × 0,2 )"],
+              [{"input_id": "first"}, " + ", {"input_id": "second"}, " = ", {"input_id": "sum"}]
+            ]
+          },
+          "inputs": [
+            {"input_id": "first", "label": "ناتج الضرب الأول", "correct_answer": "0,6", "options": ["0,6", "0,06", "6,0", "0,60"]},
+            {"input_id": "second", "label": "ناتج الضرب الثاني", "correct_answer": "0,604", "options": ["0,604", "0,0604", "6,04", "0,64"]},
+            {"input_id": "sum", "label": "ناتج الجمع", "correct_answer": "1,204", "options": ["1,204", "0,664", "1,24", "1,604"]}
+          ],
+          "hint": {
+            "step_hint_text": "اضرب الأرقام أولًا ثم ضع الفاصلة بحسب مجموع المنازل العشرية.",
+            "related_topics": [{"topic_title": "ضرب الكسور العشرية", "explanation": "اجمع المنازل العشرية في العددين قبل وضع الفاصلة في الناتج."}]
+          }
+        }
+      ]
+    }
+  ]
+}

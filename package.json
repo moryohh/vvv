@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build && node scripts/finalize-build.mjs",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
+    "start:render": "node server/render-server.mjs",
     "deploy:worker": "wrangler deploy"
   },
   "dependencies": {

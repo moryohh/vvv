@@ -61,7 +61,9 @@ const server = http.createServer(async (request, response) => {
         console.warn('Gemini model listing failed', { keyName, error: error.name });
       }
       const flash = available.filter(name => /^gemini-\d[\w.-]*flash(?:-lite)?$/.test(name) && !name.includes('preview'));
-      const candidates = [...new Set([...preferred.filter(name => available.includes(name)), ...flash])].slice(0, 2);
+      const candidates = workingModels.has(index)
+        ? [workingModels.get(index), ...preferred.filter(name => name !== workingModels.get(index))].slice(0, 2)
+        : [...new Set([...preferred.filter(name => available.includes(name)), ...flash])].slice(0, 2);
       for (const model of candidates) {
         try {
           const aiResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {

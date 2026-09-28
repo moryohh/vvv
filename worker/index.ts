@@ -1,0 +1,19 @@
+export interface Env {
+  DB2_SUPABASE_URL: string;
+  DB2_SERVICE_ROLE_KEY: string;
+  GEMINI_API_KEY?: string;
+  DEEPSEEK_API_KEY?: string;
+  ALLOWED_ORIGIN: string;
+}
+type Profile={name?:string;location?:string;grade?:string;dream?:string};
+type Row={student_id:string;dynamic_summary:Profile;current_step:number};
+const headers=(e:Env)=>({'content-type':'application/json','access-control-allow-origin':e.ALLOWED_ORIGIN||'*','access-control-allow-headers':'content-type,x-student-id','access-control-allow-methods':'POST,OPTIONS'});
+const reply=(e:Env,body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:headers(e)});
+const dbHeaders=(e:Env)=>({apikey:e.DB2_SERVICE_ROLE_KEY,authorization:`Bearer ${e.DB2_SERVICE_ROLE_KEY}`,'content-type':'application/json'});
+async function getProfile(e:Env,id:string):Promise<Row>{const r=await fetch(`${e.DB2_SUPABASE_URL}/rest/v1/ai_student_profiles?student_id=eq.${encodeURIComponent(id)}&select=student_id,dynamic_summary,current_step`,{headers:dbHeaders(e)});const rows=await r.json() as Row[];return rows[0]||{student_id:id,dynamic_summary:{},current_step:1};}
+async function saveProfile(e:Env,row:Row){await fetch(`${e.DB2_SUPABASE_URL}/rest/v1/ai_student_profiles?on_conflict=student_id`,{method:'POST',headers:{...dbHeaders(e),Prefer:'resolution=merge-duplicates'},body:JSON.stringify(row)});}
+async function addHistory(e:Env,id:string,role:string,content:string){await fetch(`${e.DB2_SUPABASE_URL}/rest/v1/chat_history`,{method:'POST',headers:dbHeaders(e),body:JSON.stringify({student_id:id,role,content})});}
+const fields=['name','location','grade','dream'] as const;
+function system(row:Row){const field=fields[row.current_step-1];return `أنت أستاذة نورة، معلمة عراقية ذكية ودافئة ومهنية. رسائلك قصيرة وطبيعية وإيموجي قليل. لا تذكري قواعد البيانات.\nالملخص الحالي: ${JSON.stringify(row.dynamic_summary)}\nالخطوة الحالية: ${row.current_step}، المطلوب: ${field||'التعلّم'}.\nأعيدي JSON فقط: {"valid":boolean,"value":string|null,"reply":string,"corrections":{}}. ارفضي الضحك والرموز والأسماء الخيالية كإجابة. استنتجي المحافظة من الوصف الجغرافي عند الثقة. لا تكرري العبارة نفسها. إذا صحح الطالب معلومة سابقة ضعيها في corrections.`;}
+async function askAI(e:Env,row:Row,message:string){if(e.GEMINI_API_KEY){const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${e.GEMINI_API_KEY}`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({system_instruction:{parts:[{text:system(row)}]},contents:[{role:'user',parts:[{text:message}]}],generationConfig:{responseMimeType:'application/json',temperature:.65}})});const j:any=await r.json();return JSON.parse(j.candidates[0].content.parts[0].text)}throw new Error('AI key missing');}
+export default {async fetch(req:Request,e:Env){if(req.method==='OPTIONS')return new Response(null,{headers:headers(e)});if(new URL(req.url).pathname!=='/api/chat'||req.method!=='POST')return reply(e,{error:'Not found'},404);const id=req.headers.get('x-student-id');if(!id||id.length>100)return reply(e,{error:'Student id required'},400);const {message}=await req.json() as {message?:string};if(!message?.trim()||message.length>1000)return reply(e,{error:'Invalid message'},400);try{const row=await getProfile(e,id);const ai=await askAI(e,row,message.trim());const profile={...row.dynamic_summary,...(ai.corrections||{})};let next=row.current_step;if(ai.valid&&next<=4){profile[fields[next-1]]=ai.value;next++;}const updated={...row,dynamic_summary:profile,current_step:next};await Promise.all([saveProfile(e,updated),addHistory(e,id,'student',message),addHistory(e,id,'teacher',ai.reply)]);return reply(e,{reply:ai.reply,profile,currentStep:next,accepted:!!ai.valid,...(next===5?{unlock:'curriculum'}:{})});}catch(error){return reply(e,{error:'Teacher service unavailable',detail:error instanceof Error?error.message:'unknown'},503);}}};

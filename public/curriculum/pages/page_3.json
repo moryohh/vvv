@@ -1,0 +1,55 @@
+{
+  "page_number": 3,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_id": "p3_q21",
+      "question_text": "مصدر ضوئي موضوع على الأرض يبعد 20m عن الحائط تسير حادلة تبليط ارتفاعها 1.6m باتجاه الحائط بسرعة 2.5m/min ما معدل التغير في ارتفاع ظل الحادلة عندما تكون على بعد 8m عن الحائط؟ وهل الارتفاع للظل يتزايد أم يتناقص؟",
+      "diagram": {
+        "diagram_id": "p3_q21_fig1",
+        "diagram_type": "رسم توضيحي ومخطط هندسي",
+        "diagram_desc": "صورة توضيحية لآلة تبليط ومخطط هندسي للمثلثات المتشابهة المستخدمة في حل مسألة معدلات التغير الزمني",
+        "diagram_box": [
+          115,
+          520,
+          330,
+          930
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_3_p3_q21_fig1_diagram_chart_geometric.png"
+      }
+    },
+    {
+      "question_id": "p3_q22",
+      "question_text": "مخروط مخروطي قاعدته أفقية ورأسه للأسفل وارتفاعه 24cm وطول قطر قاعدته 16cm يصب فيه سائل بمعدل 5cm³/s ويتسرب منه سائل بمعدل 1cm³/s جد معدل تغير عمق السائل عندما يكون عمق السائل 12cm",
+      "diagram": {
+        "diagram_id": "p3_q22_fig1",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مقطع مخروطي يوضح أبعاد المخروط ونصف قطر السائل والارتفاع",
+        "diagram_box": [
+          860,
+          530,
+          955,
+          750
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_3_p3_q22_fig1_diagram_geometric.png"
+      }
+    },
+    {
+      "question_id": "p3_q23",
+      "question_text": "مخروط مخروطي قاعدته أفقية ورأسه للأسفل وارتفاعه 24cm وطول قطر قاعدته 16cm يصب فيه سائل بمعدل 5cm³/s ويتسرب منه سائل بمعدل 1cm³/s احسب معدل التغير في نصف قطر السائل عندما يكون نصف القطر 6cm",
+      "diagram": {
+        "diagram_id": "p3_q23_fig1",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مقطع مخروطي يوضح أبعاد المخروط ونصف قطر السائل والارتفاع",
+        "diagram_box": [
+          860,
+          45,
+          955,
+          270
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_3_p3_q23_fig1_diagram_geometric.png"
+      }
+    }
+  ],
+  "page_id": 3
+}

@@ -1,0 +1,72 @@
+{
+  "page_number": 1,
+  "page_id": 1,
+  "has_math_questions": true,
+  "detected_drawings_count": 3,
+  "exam_questions": [
+    {
+      "question_number": "11",
+      "question_text": "سلم طوله 10m يستند طرفه الأعلى على حائط رأسي وطرفه الأسفل على أرض أفقية فإذا انزلق الطرف الأسفل مبتعداً عن الحائط بمعدل 2 m/s عندما يكون الطرف الأسفل على بعد 8 m جد:\nأولاً: معدل انزلاق الطرف العلوي.\nثانياً: معدل تغير الزاوية بين السلم والأرض.",
+      "ministerial_years": [
+        "2012 دور (1)",
+        "2014 دور (2)",
+        "2017 دور (2) -تطبيقي",
+        "2021 دور (1) -احيائي",
+        "2020 دور (2) -تطبيقي",
+        "2021 دور (2) -احيائي-تكميلي",
+        "2022 دور (1) -تطبيقي"
+      ],
+      "diagram": {
+        "diagram_id": "p1_q11_fig_02",
+        "diagram_level": "level_2_main_diagram",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مخطط هندسي لمثلث قائم الزاوية يوضح السلم بطول 10m (Z) مع الأبعاد x و y وزاوية الميل θ",
+        "diagram_box": [
+          624,
+          768,
+          686,
+          925
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_1_p1_q11_fig_02_diagram_geometric.png"
+      },
+      "diagrams": [
+        {
+          "diagram_id": "p1_q11_fig_01",
+          "diagram_level": "level_1_illustration",
+          "diagram_type": "مجسم",
+          "diagram_desc": "رسم توضيحي واقعي لسلم يستند على جدار حافة صخرية وأرض أفقية",
+          "diagram_box": [
+            622,
+            524,
+            696,
+            739
+          ],
+          "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_1_p1_q11_fig_01_3d_model.png",
+          "supabase_storage": {
+            "bucket_name": "drawings",
+            "file_path": "page_1/q11_illustration.png",
+            "public_url": "https://[YOUR_SUPABASE_ID].supabase.co/storage/v1/object/public/drawings/page_1/q11_illustration.png"
+          }
+        },
+        {
+          "diagram_id": "p1_q11_fig_02",
+          "diagram_level": "level_2_main_diagram",
+          "diagram_type": "رسم هندسي",
+          "diagram_desc": "مخطط هندسي كامل لمثلث قائم الزاوية يمثل السلم والمتغيرات x, y, 10m, θ",
+          "diagram_box": [
+            624,
+            768,
+            686,
+            925
+          ],
+          "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_1_p1_q11_fig_02_diagram_geometric.png",
+          "supabase_storage": {
+            "bucket_name": "drawings",
+            "file_path": "page_1/q11_main_diagram.png",
+            "public_url": "https://[YOUR_SUPABASE_ID].supabase.co/storage/v1/object/public/drawings/page_1/q11_main_diagram.png"
+          }
+        }
+      ]
+    }
+  ]
+}

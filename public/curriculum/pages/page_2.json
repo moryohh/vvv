@@ -1,0 +1,39 @@
+{
+  "page_number": 2,
+  "has_math_questions": true,
+  "exam_questions": [
+    {
+      "question_number": "19",
+      "question_text": "عمود طوله 7.2m في نهايته مصباح يتحرك رجل طوله 1.8m مبتعداً عن العمود وبسرعة 30m/min جد معدل تغير طول ظل الرجل.",
+      "diagram": {
+        "diagram_id": "p2_q19_fig",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مخطط هندسي يمثل مثلثين متشابهين يمثلان طول العمود ورجل يبتعد عنه لتوضيح تغير طول الظل",
+        "diagram_box": [
+          505,
+          530,
+          770,
+          970
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_2_p2_q19_fig_diagram_geometric.png"
+      }
+    },
+    {
+      "question_number": "20",
+      "question_text": "فنار ميناء ارتفاعه 20m يعلوه مصباح كبير تحركت سفينة ارتفاعها 5m مبتعدة عن الفنار بسرعة 50km/h جد تغير طول ظل السفينة على سطح البحر.",
+      "diagram": {
+        "diagram_id": "p2_q20_fig",
+        "diagram_type": "رسم هندسي",
+        "diagram_desc": "مخطط هندسي يمثل مثلثين متشابهين يمثلان ارتفاع الفنار وسفينة تبتعد عنه لتوضيح تغير طول الظل",
+        "diagram_box": [
+          505,
+          30,
+          770,
+          480
+        ],
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_2_p2_q20_fig_diagram_geometric.png"
+      }
+    }
+  ],
+  "page_id": 2
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "saif-qalam-teacher-api",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-09-01",
+  "vars": { "ALLOWED_ORIGIN": "https://YOUR_FRONTEND_DOMAIN" }
+}

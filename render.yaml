@@ -15,3 +15,7 @@ services:
         value: https://moryohh.github.io
       - key: GEMINI_API_KEY
         sync: false
+      - key: GEMINI_API_KEY2
+        sync: false
+      - key: GEMINI_API_KEY3
+        sync: false

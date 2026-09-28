@@ -69,6 +69,11 @@ const server = http.createServer(async (request, response) => {
           });
           console.info('Gemini request', { keyName, model, status: aiResponse.status });
           if (aiResponse.ok) { data = await aiResponse.json(); break; }
+          const failure = await aiResponse.json().catch(() => ({}));
+          console.warn('Gemini provider error', {
+            keyName, model, code: failure.error?.status,
+            message: String(failure.error?.message ?? '').replaceAll(key, '[REDACTED]').slice(0, 300)
+          });
           lastStatus = aiResponse.status;
         } catch (error) {
           console.warn('Gemini request failed', { keyName, model, error: error.name });

@@ -32,8 +32,9 @@ const server = http.createServer(async (request, response) => {
     const profile = body.profile ?? {};
     const step = Math.min(5, Math.max(1, Number(body.step) || 1));
     if (!message || message.length > 1000) return send(response, 400, { error: 'Invalid message' });
-    const geminiKeys = [process.env.GEMINI_API_KEY, process.env.GEMINI_API_KEY2, process.env.GEMINI_API_KEY3].filter(Boolean);
-    if (!geminiKeys.length) return send(response, 503, { error: 'Gemini secret is missing' });
+    const geminiKeys = [process.env.GEMINI_API_KEY, process.env.GEMINI_API_KEY2].filter(Boolean);
+    const deepSeekKey = process.env.GEMINI_API_KEY3;
+    if (!geminiKeys.length && !deepSeekKey) return send(response, 503, { error: 'AI secret is missing' });
     const field = step <= 4 ? fields[step - 1] : 'learning';
     const prompt = `أنتِ أستاذة نورة، معلمة عراقية ذكية ودافئة ومهنية. ردك قصير مثل واتساب وبلهجة عراقية خفيفة، وإيموجي واحد كحد أقصى. لا تذكري قاعدة البيانات أو الذكاء الاصطناعي. لا تكرري نفس الجملة.\nالملخص: ${JSON.stringify(profile)}\nالخطوة: ${step} والحقل المطلوب: ${field}\nآخر المحادثة: ${JSON.stringify(body.messages ?? [])}\nرسالة الطالب: ${JSON.stringify(message)}\nتحققي منطقيًا. ارفضي الضحك والرموز والتهرب ونسيت والأسماء الخيالية. استنتجي المحافظة من الوصف الجغرافي الواضح. إذا صحح معلومة سابقة ضعيها في corrections.\nأعيدي JSON فقط: {"valid":boolean,"value":string|null,"reply":string,"corrections":{}}`;
     let data;
@@ -46,6 +47,18 @@ const server = http.createServer(async (request, response) => {
       });
       if (aiResponse.ok) { data = await aiResponse.json(); break; }
       lastStatus = aiResponse.status;
+    }
+    if (!data && deepSeekKey) {
+      const deepSeekResponse = await fetch('https://api.deepseek.com/chat/completions', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', authorization: `Bearer ${deepSeekKey}` },
+        body: JSON.stringify({ model: 'deepseek-chat', messages: [{ role: 'user', content: prompt }], response_format: { type: 'json_object' }, temperature: 0.7, max_tokens: 500 })
+      });
+      lastStatus = deepSeekResponse.status;
+      if (deepSeekResponse.ok) {
+        const deepSeekData = await deepSeekResponse.json();
+        data = { candidates: [{ content: { parts: [{ text: deepSeekData.choices?.[0]?.message?.content ?? '{}' }] } }] };
+      }
     }
     if (!data) return send(response, 502, { error: 'Gemini unavailable', status: lastStatus });
     const raw = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}';

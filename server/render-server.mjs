@@ -44,7 +44,7 @@ const server = http.createServer(async (request, response) => {
     for (const [index, key] of geminiKeys.entries()) {
       if (deniedKeys.has(index)) continue;
       const keyName = index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2';
-      const preferred = ['gemini-3.1-flash-lite', 'gemini-3.5-flash-lite', 'gemini-3.5-flash', 'gemini-3.8-flash'];
+      const preferred = ['gemini-3.1-flash-lite', 'gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-3.5-flash'];
       let available = workingModels.has(index) ? [workingModels.get(index)] : [];
       if (!available.length) try {
         const listing = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000', {

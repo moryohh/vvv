@@ -1,6 +1,8 @@
 import http from 'node:http';
 
 const fields = ['name', 'location', 'grade', 'dream'];
+const deniedKeys = new Set();
+const workingModels = new Map();
 const headers = {
   'content-type': 'application/json; charset=utf-8',
   'access-control-allow-origin': 'https://moryohh.github.io',
@@ -40,10 +42,11 @@ const server = http.createServer(async (request, response) => {
     let data;
     let lastStatus = 502;
     for (const [index, key] of geminiKeys.entries()) {
+      if (deniedKeys.has(index)) continue;
       const keyName = index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2';
       const preferred = ['gemini-3.1-flash-lite', 'gemini-3.5-flash-lite', 'gemini-3.5-flash', 'gemini-3.8-flash'];
-      let available = [];
-      try {
+      let available = workingModels.has(index) ? [workingModels.get(index)] : [];
+      if (!available.length) try {
         const listing = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000', {
           headers: { 'x-goog-api-key': key },
           signal: AbortSignal.timeout(8000)
@@ -68,14 +71,14 @@ const server = http.createServer(async (request, response) => {
             signal: AbortSignal.timeout(12000)
           });
           console.info('Gemini request', { keyName, model, status: aiResponse.status });
-          if (aiResponse.ok) { data = await aiResponse.json(); break; }
+          if (aiResponse.ok) { data = await aiResponse.json(); workingModels.set(index, model); break; }
           const failure = await aiResponse.json().catch(() => ({}));
           console.warn('Gemini provider error', {
             keyName, model, code: failure.error?.status,
             message: String(failure.error?.message ?? '').replaceAll(key, '[REDACTED]').slice(0, 300)
           });
           lastStatus = aiResponse.status;
-          if (aiResponse.status === 403 && failure.error?.message?.includes('project has been denied access')) break;
+          if (aiResponse.status === 403 && failure.error?.message?.includes('project has been denied access')) { deniedKeys.add(index); break; }
         } catch (error) {
           console.warn('Gemini request failed', { keyName, model, error: error.name });
         }

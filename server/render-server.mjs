@@ -45,21 +45,7 @@ const server = http.createServer(async (request, response) => {
         headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
         body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 500 } })
       });
-      if (!aiResponse.ok) {
-        const modelsResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=1', {
-          headers: { 'x-goog-api-key': key }
-        });
-        console.info('Gemini key check', {
-          keyName: index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2',
-          generateStatus: aiResponse.status,
-          listModelsStatus: modelsResponse.status
-        });
-      } else {
-        console.info('Gemini key check', {
-          keyName: index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2',
-          generateStatus: aiResponse.status
-        });
-      }
+      console.info('Gemini key check', { keyName: index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2', status: aiResponse.status });
       if (aiResponse.ok) { data = await aiResponse.json(); break; }
       lastStatus = aiResponse.status;
     }

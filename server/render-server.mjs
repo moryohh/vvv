@@ -1,6 +1,12 @@
 import http from 'node:http';
 
 const fields = ['name', 'location', 'grade', 'dream'];
+const geminiKeys = [
+  process.env.GEMINI_API_KEY,
+  process.env.GEMINI_API_KEY2,
+  process.env.GEMINI_API_KEY3
+].filter(Boolean);
+let nextGeminiKey = 0;
 const headers = {
   'content-type': 'application/json; charset=utf-8',
   'access-control-allow-origin': process.env.ALLOWED_ORIGIN || 'https://moryohh.github.io',
@@ -32,15 +38,28 @@ const server = http.createServer(async (request, response) => {
     const profile = body.profile ?? {};
     const step = Math.min(5, Math.max(1, Number(body.step) || 1));
     if (!message || message.length > 1000) return send(response, 400, { error: 'Invalid message' });
-    if (!process.env.GEMINI_API_KEY) return send(response, 503, { error: 'Gemini secret is missing' });
+    if (!geminiKeys.length) return send(response, 503, { error: 'Gemini secret is missing' });
     const field = step <= 4 ? fields[step - 1] : 'learning';
     const prompt = `أنتِ أستاذة نورة، معلمة عراقية ذكية ودافئة ومهنية. ردك قصير مثل واتساب وبلهجة عراقية خفيفة، وإيموجي واحد كحد أقصى. لا تذكري قاعدة البيانات أو الذكاء الاصطناعي. لا تكرري نفس الجملة.\nالملخص: ${JSON.stringify(profile)}\nالخطوة: ${step} والحقل المطلوب: ${field}\nآخر المحادثة: ${JSON.stringify(body.messages ?? [])}\nرسالة الطالب: ${JSON.stringify(message)}\nتحققي منطقيًا. ارفضي الضحك والرموز والتهرب ونسيت والأسماء الخيالية. استنتجي المحافظة من الوصف الجغرافي الواضح. إذا صحح معلومة سابقة ضعيها في corrections.\nأعيدي JSON فقط: {"valid":boolean,"value":string|null,"reply":string,"corrections":{}}`;
-    const aiResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 500 } })
-    });
-    if (!aiResponse.ok) return send(response, 502, { error: 'Gemini unavailable', status: aiResponse.status });
+    const requestBody = JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 500 } });
+    let aiResponse;
+    let lastStatus = 502;
+    const startIndex = nextGeminiKey++ % geminiKeys.length;
+    for (let attempt = 0; attempt < geminiKeys.length; attempt += 1) {
+      const key = geminiKeys[(startIndex + attempt) % geminiKeys.length];
+      try {
+        aiResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
+          body: requestBody
+        });
+        lastStatus = aiResponse.status;
+        if (aiResponse.ok) break;
+      } catch (error) {
+        console.error('Gemini request failed', error);
+      }
+    }
+    if (!aiResponse?.ok) return send(response, 502, { error: 'Gemini unavailable', status: lastStatus });
     const data = await aiResponse.json();
     const raw = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}';
     const parsed = JSON.parse(raw.replace(/^```json\s*/i, '').replace(/\s*```$/, ''));

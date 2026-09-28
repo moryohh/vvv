@@ -40,14 +40,35 @@ const server = http.createServer(async (request, response) => {
     let data;
     let lastStatus = 502;
     for (const [index, key] of geminiKeys.entries()) {
-      const aiResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 500 } })
-      });
-      console.info('Gemini key check', { keyName: index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2', status: aiResponse.status });
-      if (aiResponse.ok) { data = await aiResponse.json(); break; }
-      lastStatus = aiResponse.status;
+      const keyName = index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2';
+      const preferred = ['gemini-3.5-flash-lite', 'gemini-3.5-flash', 'gemini-3.1-flash-lite', 'gemini-2.5-flash'];
+      let candidates = [process.env.GEMINI_MODEL || preferred[0]];
+      for (let attempt = 0; attempt < candidates.length && attempt < 4; attempt++) {
+        const model = candidates[attempt];
+        const aiResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
+          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 500 } })
+        });
+        console.info('Gemini request', { keyName, model, status: aiResponse.status });
+        if (aiResponse.ok) { data = await aiResponse.json(); break; }
+        lastStatus = aiResponse.status;
+        if (aiResponse.status === 404 && candidates.length === 1) {
+          const modelsResponse = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000', {
+            headers: { 'x-goog-api-key': key }
+          });
+          if (modelsResponse.ok) {
+            const available = (await modelsResponse.json()).models
+              ?.filter(item => item.supportedGenerationMethods?.includes('generateContent'))
+              .map(item => item.name?.replace(/^models\//, '')) ?? [];
+            const choices = preferred.filter(name => available.includes(name));
+            const otherFlash = available.filter(name => /^gemini-\d[\w.-]*flash(?:-lite)?$/.test(name) && !name.includes('preview'));
+            candidates = [...new Set([...candidates, ...choices, ...otherFlash])];
+            console.info('Gemini available models', { keyName, candidates });
+          }
+        }
+      }
+      if (data) break;
     }
     if (!data && deepSeekKey) {
       const deepSeekResponse = await fetch('https://api.deepseek.com/chat/completions', {

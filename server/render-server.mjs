@@ -41,7 +41,7 @@ const server = http.createServer(async (request, response) => {
     let lastStatus = 502;
     for (const [index, key] of geminiKeys.entries()) {
       const keyName = index === 0 ? 'GEMINI_API_KEY' : 'GEMINI_API_KEY2';
-      const preferred = ['gemini-3.5-flash-lite', 'gemini-3.5-flash', 'gemini-3.1-flash-lite', 'gemini-2.5-flash'];
+      const preferred = ['gemini-3.1-flash-lite', 'gemini-3.5-flash-lite', 'gemini-3.5-flash', 'gemini-3.8-flash'];
       let available = [];
       try {
         const listing = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000', {
@@ -75,6 +75,7 @@ const server = http.createServer(async (request, response) => {
             message: String(failure.error?.message ?? '').replaceAll(key, '[REDACTED]').slice(0, 300)
           });
           lastStatus = aiResponse.status;
+          if (aiResponse.status === 403 && failure.error?.message?.includes('project has been denied access')) break;
         } catch (error) {
           console.warn('Gemini request failed', { keyName, model, error: error.name });
         }
